@@ -77,6 +77,37 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: 'Events',
+      link: {
+        type: 'generated-index', 
+        title: 'emnify platform events',
+        slug: '/events'
+      },
+      items: [
+        {
+          type: 'doc',
+          label: 'Getting Started',
+          id: 'events/getting-started'
+        },
+        {
+          type: 'doc',
+          label: 'Event Types',
+          id: 'events/event-types'
+        },
+        {
+          type: 'doc',
+          label: 'MNO and Reseller Events',
+          id: 'events/mno-events'
+        },
+        {
+          type: 'doc',
+          label: 'Working with Events',
+          id: 'events/usage'
+        }
+      ],
+    },
+    {
+      type: 'category',
       label: 'Single Sign-On',
       link: { type: 'doc', id: 'sso/overview' },
       items: [
