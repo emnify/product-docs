@@ -6,15 +6,12 @@ Using this data, you can build operational dashboards that visualize device, net
 
 ## Available data streamer integrations
 
-<!-- TODO: Add links -->
-
-- Amazon Kinesis Data Streams
-- Amazon S3
-- Azure Event Hubs
-- Google Cloud Pub/Sub
-- Keen
-- Datadog
-- Webhook (generic RESTful API)
+- [Amazon](integration-guides#amazon)
+- [Azure](integration-guides#azure)
+- [Google Cloud](integration-guides#google-cloud)
+- [Keen](integration-guides#keen)
+- [Datadog](integration-guides#datadog)
+- [Webhook](integration-guides#webhook) (generic RESTful API)
 
 You can use any integration to create multiple independent data streams and operate them in parallel. 
 Each data stream can be configured to push data to a separate platform for consumption and processing. 

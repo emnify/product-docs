@@ -56,13 +56,13 @@ const sidebars = {
         },
         {
           type: 'doc',
-          label: 'Management Operations',
-          id: 'data-streamer/management-operations'
+          label: 'Managing Data Streams',
+          id: 'data-streamer/managing-data-streams'
         },
         {
           type: 'doc',
-          label: 'Management Interfaces',
-          id: 'data-streamer/management-interfaces'
+          label: 'Using the Data Streamer',
+          id: 'data-streamer/using-the-data-streamer'
         },
         {
           type: 'doc',

@@ -1,4 +1,4 @@
-# Management Operations
+# Managing data streams
 
 ## Setting up a data stream
 

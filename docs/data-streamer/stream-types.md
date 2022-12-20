@@ -12,20 +12,25 @@ These records provide information about the SIM, used service, visited network, 
 
 Usage data streams are often used for monitoring and analyzing data consumption and as input for custom billing systems.
 
-**Each usage data record contains information about the**:
+Each usage data record contains information about the:
 
-- Device (organization, endpoint, SIM, IMSI)
-- Time (start and end time)
-- Price applied for rating (tariff, tariff profile, ratezone)
-- Mobile network operator used for the service (operator, country)
-- Type of service (SMS or data)
-- Consumed service volumes (down- and upstream, total volume)
-- Costs (amount, currency)
+- **Device** (organization, endpoint, SIM, IMSI)
+- **Time** (start and end time)
+- **Price applied for rating** (tariff, tariff profile, ratezone)
+- **Mobile network operator used for the service** (operator, country)
+- **Type of service** (SMS or data)
+- **Consumed service volumes** (down- and upstream, total volume)
+- **Costs** (amount, currency)
 
 ## Event Data
 
-The emnify platform generates different types of events, and we regularly add new events types. 
-Events are often used as triggers for custom business processes and for monitoring. 
-They provide information about lifecycle transitions and config changes.
+The emnify platform generates several types of events. 
+These events allow you to track notable system occurances based on behavior.
 
-<!-- TODO: Link to Event documentation -->
+Some common use cases for events on emnify include:
+
+- **Triggers for custom business processes** (e.g., authentication or custom usage limitations configured on our Portal)
+- **Monitoring** (e.g., SIM or data connection lifecycles)
+- **Input for custom billing systems** (i.e. updating billing configuration, processing invoices, etc.)
+
+<!-- TODO: Add link to Events docs once published -->
