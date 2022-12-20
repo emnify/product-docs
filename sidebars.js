@@ -36,6 +36,43 @@ const sidebars = {
     'rest-api',
     {
       type: 'category',
+      label: 'Data Streamer',
+      link: {type: 'doc', id: 'data-streamer/introduction'},
+      items: [
+        {
+          type: 'doc',
+          label: 'Introduction',
+          id: 'data-streamer/introduction'
+        },
+        {
+          type: 'doc',
+          label: 'Connection Types',
+          id: 'data-streamer/connection-types'
+        },
+        {
+          type: 'doc',
+          label: 'Stream Types',
+          id: 'data-streamer/stream-types'
+        },
+        {
+          type: 'doc',
+          label: 'Management Operations',
+          id: 'data-streamer/management-operations'
+        },
+        {
+          type: 'doc',
+          label: 'Management Interfaces',
+          id: 'data-streamer/management-interfaces'
+        },
+        {
+          type: 'doc',
+          label: 'Integration Guides',
+          id: 'data-streamer/integration-guides'
+        }
+      ],
+    },
+    {
+      type: 'category',
       label: 'Integration Guides',
       link: {type: 'doc', id: 'integration/datastreamer-wialon-flespi'},
       items: [
