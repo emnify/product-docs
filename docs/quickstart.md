@@ -6,7 +6,7 @@ sidebar_position: 2
 
 To begin developing your IoT solutions with EMnify, you will need an
 EMnify account.
-[Sign up](https://portal.emnify.com/sign/up?utm_source=dev-hub) for free to a 60-day trial to use all functionalities.
+[Sign up](https://portal.emnify.com/sign/up) for free to a 60-day trial to use all functionalities.
 
 ## Order a free evaluation SIM package
 
@@ -41,7 +41,7 @@ Scan the QR code printed on the SIM card with your QR code scanner app and follo
 The link includes the **BIC** (Batch Identification Code) of the card.
 ![Scan QR Code](assets/QRScan.png)
 2. If you do not have a QR reader or want to do this on a desktop PC without a camera, register by manually entering the BIC.
-Login to your [EMnify account](https://portal.emnify.com?utm_source=dev-hub).
+Login to your [EMnify account](https://portal.emnify.com).
 On the dashboard, click the [REGISTER](https://portal.emnify.com/sim-registration/single) link in the "Register your SIM cards" section.
 ![Register SIM](assets/register_sims.png)
 ![Register single SIM](assets/register_single_sim.png)
