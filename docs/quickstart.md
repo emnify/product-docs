@@ -541,6 +541,6 @@ Also verify that the network is on emnify’s [NB-IoTcoverage](https://www.emnif
 
 ### Other general troubleshooting tips
 - After configuration changes, make sure they are correctly applied on the device (e.g., with a reboot).
-- A reset connectivity ![reset\_connectivity.png](./assets/reset_connectivity.png) on **Connected Devices** can also reset the network state and allow your device to freshly reattach.
+- Clicking the reset connectivity icon ![](./assets/reset_connectivity.png) on **Connected Devices** can also reset the network state and allow your device to freshly reattach.
 - The issue may only be present with one network or in the specific location (e.g., due to high interference for this network).
 You can use the **Operator Blacklist** to block the network and force the change to a different network.
