@@ -73,14 +73,6 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Integration Guides',
-      link: {type: 'doc', id: 'integration/datastreamer-wialon-flespi'},
-      items: [
-        'integration/datastreamer-wialon-flespi',
-      ],
-    },
-    {
-      type: 'category',
       label: 'Single Sign-On',
       link: { type: 'doc', id: 'sso/overview' },
       items: [
