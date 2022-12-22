@@ -41,7 +41,7 @@ const sidebars = {
       items: [
         {
           type: 'doc',
-          label: 'Introduction',
+          label: 'Getting Started',
           id: 'data-streamer/introduction'
         },
         {
@@ -66,8 +66,8 @@ const sidebars = {
         },
         {
           type: 'doc',
-          label: 'Integration Guides',
-          id: 'data-streamer/integration-guides'
+          label: 'Available Integrations',
+          id: 'data-streamer/available-integrations'
         }
       ],
     },

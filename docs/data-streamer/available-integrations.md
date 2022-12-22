@@ -46,6 +46,8 @@ Once you have configured your data stream and are storing event and usage data i
 
 :::tip Step-by-step guide
 [How to analyze emnify usage data and events in AWS QuickSight?](https://support.emnify.com/hc/en-us/articles/360010604820-How-to-analyze-EMnify-usage-data-and-events-in-AWS-Quicksight-)
+
+**_Warning: This guide uses a legacy version of the emnify Portal._**
 :::
 
 ## Azure
@@ -111,7 +113,7 @@ In conjunction with the emnify Data Streamer, it allows you to collect and analy
 You can also create dashboards and trigger alerts on specific events or situations.
 
 :::tip Step-by-step guide
-**Integration guide**: [emnify Data Streamer integration for Datadog](https://www.emnify.com/integration-guides/emnify-datastreamer-integration-for-datadog)
+[emnify Data Streamer integration for Datadog](https://www.emnify.com/integration-guides/emnify-datastreamer-integration-for-datadog)
 :::
 
 ## Webhook
