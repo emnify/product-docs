@@ -1,4 +1,4 @@
-# Integration Guides
+# Available integrations
 
 ## Amazon
 
