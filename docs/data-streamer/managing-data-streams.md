@@ -5,7 +5,7 @@
 Each [connection type](connection-types) requires specific credentials to ensure that the data streamer has permission to write data to that service. 
 API keys and configuration parameters differ by connection type.
 
-During creation, you can define the connection type (integration) and the corresponding destination settings, the stream type, and the filtering.
+During creation, you can define the connection type and the corresponding destination settings, the stream type, and the filtering.
 
 ## Filtering event data streams
 
