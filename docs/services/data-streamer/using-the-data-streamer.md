@@ -79,20 +79,37 @@ You’ll need to confirm this action.
 
 ## Data Streamer API
 
-<!-- TODO: Update this section -->
-
 You can manage your data streams using the emnify Data Streamer API. 
-Each integration requires credentials to verify that the data streamer has permission to write data to that service.
+Available entry points are listed under the [**Integrations** section of the emnify Swagger API reference](https://cdn.emnify.net/api/doc/swagger.html#/Integrations).  
 
- Visit the API Documentation section of the emnify System Documentation.
+### Authentication
 
-You can learn about the different authentication methods, and find example code snippets and interactive API Documentation.
+To use the emnify API, you need to authenticate with an authentication token. 
+We use JWTs as the authentication token. 
 
-### Getting started
+Each integration also requires credentials to verify that the data streamer has permission to write data to that service.
 
-<!-- TODO: Update this section -->
+Please refer to the [Getting Started guide in the emnify API Documentation](https://cdn.emnify.net/api/doc/getting-started.html) for detailed instructions.
 
- API keys and configuration parameters differ by connection type. Details on setting up, updating, or deleting integrations are in the emnify API section. It lists all entry points for managing data streams programmatically and contains examples of the available connection types and filtering options.
+### Specification and documentation
+
+The [emnify REST API](rest-api) is based on the OpenAPI Specification OAS3. 
+We also have [interactive API documentation in Swagger](https://cdn.emnify.net/api/doc/swagger.html).
+
+:::tip
+Prior OpenAPI knowledge isn't necessary for working with the emnify API. 
+That said, [understanding how an OpenAPI Specification is structured](https://oai.github.io/Documentation/specification.html) could help you navigate our documentation.
+:::
+
+The [Data Streamer reference page](https://cdn.emnify.net/api/doc/data-streamer.html) in the emnify System Documentation provides details about the data structure and common elements you'll encounter while working with the Data Streamer API.
+
+### Working with the Data Streamer API
+
+:::caution
+API keys and configuration parameters differ by [connection type](connection-types). 
+Details on setting up, updating, or deleting integrations are in the [emnify Swagger API reference](https://cdn.emnify.net/api/doc/swagger.html#/Integrations).
+It lists all entry points for managing data streams programmatically and contains examples of the available connection types and filtering options.
+:::
 
 The following entry points are available for managing data streams:
 
@@ -277,7 +294,3 @@ curl -X DELETE "https://cdn.emnify.net/api/v2/data_stream/123" \
 :::info API Reference
 [emnify API specification - Delete Existing Data Stream](https://cdn.emnify.net/api/doc/swagger.html#/Integrations/DeleteDataStreamerV2)
 :::
-
-<!-- ### Data References  -->
-
-<!-- TODO: Add link to new Swagger docs -->
