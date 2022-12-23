@@ -23,7 +23,7 @@ If there are no data streams configured, the **Data Streams** panel displays all
 
 If you already have a data stream configured, the panel displays all existing streams, ordered by creation date (newest on the top). 
 This list view can be used to gain an overview of the current states of different data streams. 
-Integrations marked as **Running** are properly operating, failed integrations have the **Error** status, and paused streams are marked as **Paused**.
+Data streams are marked as **Running** are properly operating, failed streams have the **Error** status, and paused streams are marked as **Paused**.
 
 <!-- SCREENSHOT -->
 
