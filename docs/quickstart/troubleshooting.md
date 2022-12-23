@@ -18,16 +18,14 @@ The device will show `Online` as long is there is no delete PDP context event.
 1. Delete PDP context - the device has ended a data transfer.
 The event details will also show the data transmitted and the device status will be set to `Offline`.
 
-![event_flow.png](assets/event_flow.png)
-
 There can be many update locations before or in between the data session.
 
 ![offline.png](assets/offline.png) **The device is offline**
 
-- click on Details → ensure that the device is enabled
-- click on Details → Events. Validate if there is any location update event created and rejected. The reasoning should indicate the resolution to the problem. If there is no location update event:
-- ensure the device is powered on and searches for a network
-- ensure that the device is in reception of any supported network
+- Click on Details → ensure that the device is enabled
+- Click on Details → Events. Validate if there is any location update event created and rejected. The reasoning should indicate the resolution to the problem. If there is no location update event:
+- Ensure the device is powered on and searches for a network
+- Ensure that the device is in reception of any supported network
 
 ![attached.png](assets/attached.png) **The device shows attached but does not transmit data**
 
