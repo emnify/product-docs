@@ -164,7 +164,7 @@ Activated SIMs are able to use network services.
 
 The SIM is patched to the **Suspended** status, temporarily suspending and blocking it from network access. 
 
-:::note
+:::tip
 Activating a SIM with the **Suspended** status again is possible at any time.
 :::
 
@@ -224,7 +224,7 @@ Triggered through the [emnify User Interface (EUI)](https://support.emnify.com/h
 
 Device is blocked from all services after exceeding device policies (e.g., reaching its traffic limit). 
 
-:::note
+:::tip
 Changing the policies will unblock the device.
 :::
 
@@ -273,7 +273,7 @@ Established connections for that device will disconnect within seconds, and new 
 
 Data quota management is enabled on a service profile. 
 
-:::note
+:::caution
 All devices using this service profile need to have an active data quota assigned to use the data service. 
 Devices without active data quotas will disconnect within seconds. 
 New connection requests will be denied until a new data quota is assigned or data quota management is disabled on the service profile.
@@ -283,7 +283,7 @@ New connection requests will be denied until a new data quota is assigned or dat
 
 Data quota management is disabled on a service profile. 
 
-:::note
+:::caution
 There will no longer be data service restrictions for devices using this service profile.
 :::
 
@@ -291,7 +291,7 @@ There will no longer be data service restrictions for devices using this service
 
 New data quota is assigned to a device. 
 
-:::note
+:::tip
 Assigning a new data quota to a device is possible at any time. 
 [Data quota management must be enabled](#data-quota-enabled) on the service profile.
 :::
@@ -361,7 +361,7 @@ Established connections for that device will disconnect within seconds, and new 
 
 SMS quota management is enabled on a service profile. 
 
-:::note
+:::caution
 All devices using this service profile need to have an active SMS quota assigned to use the SMS service. 
 Devices without active SMS quotas will disconnect within seconds. 
 New connection requests will be denied until a new SMS quota is assigned or SMS quota management is disabled on the service profile. 
@@ -371,7 +371,7 @@ New connection requests will be denied until a new SMS quota is assigned or SMS 
 
 SMS quota management is disabled on a service profile. 
 
-:::note
+:::caution
 There will no longer be SMS service restrictions for devices using this service profile.
 :::
 
@@ -379,7 +379,7 @@ There will no longer be SMS service restrictions for devices using this service 
 
 New SMS quota is assigned to a device.
 
-:::note
+:::tip
 Assigning a new SMS quota to a device is possible at any time. 
 [SMS quota management must be enabled](#sms-quota-enabled) on the service profile.
 :::

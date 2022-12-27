@@ -26,7 +26,7 @@ Reset password email is requested for a specific email address.
 
 User signed up or requested another verification email afterward. 
 
-:::info
+:::note
 This event is only needed when customers use [self-signup](#self-signup). 
 Manually invited users already verified their email.
 :::
