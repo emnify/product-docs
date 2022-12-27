@@ -28,10 +28,10 @@ Data session disconnects while applying the updated actions on the connectivity 
 
 | ID   | Description  |
 | ---- | ------------ |
-| 1    | Update location |
-| 2    | Update GPRS location |
-| 15   | Purge location |
-| 16   | Purge GPRS location |
+| 1    | [Update location](#update-location) |
+| 2    | [Update GPRS location](#update-gprs-location) |
+| 15   | [Purge location](#purge-location) |
+| 16   | [Purge GPRS location](#purge-gprs-location) |
 
 ### Update location
 
@@ -59,9 +59,9 @@ Purges the device's GPRS location after the device is inactive and doesn't send 
 
 | ID   | Description  |
 | ---- | ------------ |
-| 3    | Create PDP Context |
-| 5    | Delete PDP Context |
-| 49   | Device offline |
+| 3    | [Create PDP Context](#create-pdp-context) |
+| 5    | [Delete PDP Context](#delete-pdp-context) |
+| 49   | [Device offline](#device-offline) |
 
 ### Create PDP Context
 Indicates the activation or rejection of data connectivity. 
@@ -83,10 +83,10 @@ Device deletes a PDP context and doesn't create a new PDP context within 5 minut
 
 | ID   | Description  |
 | ---- | ------------ |
-| 6    | User authentication failed |
-| 7    | Application authentication failed |
-| 13   | Support Access |
-| 14   | Multi-factor Authentication |
+| 6    | [User authentication failed](#user-authentication-failed) |
+| 7    | [Application authentication failed](#application-authentication-failed) |
+| 13   | [Support Access](#support-access) |
+| 14   | [Multi-factor Authentication](#multi-factor-authentication) |
 
 ### User authentication failed
 Fails to authenticate someone attempting to use an email from the organization.
@@ -105,8 +105,8 @@ User removes multi-factor authentication (MFA) from their user account.
 
 | ID   | Description  |
 | ---- | ------------ |
-| 41   | User verified |
-| 46   | User deleted |
+| 41   | [User verified](#user-verified) |
+| 46   | [User deleted](#user-deleted) |
 
 ### User verified
 User successfully verifies their email.
@@ -120,16 +120,16 @@ User gets deleted by another user.
 
 | ID   | Description  |
 | ---- | ------------ |
-| 8    | SIM activation | 
-| 9    | SIM suspension |
-| 10   | SIM deletion | 
-| 42   | Endpoint enabled | 
-| 43   | Endpoint disabled |
-| 44   | SIM issued | 
-| 45   | SIM factory | 
-| 48   | SIM registration | 
-| 50   | SIM Released | 
-| 51   | SIM Assigned | 
+| 8    | [SIM activation](#sim-activation) | 
+| 9    | [SIM suspension](#sim-suspension) |
+| 10   | [SIM deletion](#sim-deletion) | 
+| 42   | [Endpoint enabled](#endpoint-enabled) | 
+| 43   | [Endpoint disabled](#endpoint-disabled) |
+| 44   | [SIM issued](#sim-issued) | 
+| 45   | [SIM factory](#sim-factory) | 
+| 48   | [SIM registration](#sim-registration) | 
+| 50   | [SIM Released](#sim-registration) | 
+| 51   | [SIM Assigned](#sim-assigned) | 
 
 ### SIM activation
 Patches a SIM to the "Activated" status (meaning it's able to use network services) after previously holding one of the following statuses: "Issued," "Suspended," or "Factory Test." 
@@ -183,8 +183,8 @@ Triggered through the [emnify User Interface (EUI)](https://support.emnify.com/h
 
 | ID   | Description  |     
 | ---- | ------------ |
-| 11   | Endpoint blocked |
-| 12   | Organization blocked |
+| 11   | [Endpoint blocked](#endpoint-blocked) |
+| 12   | [Organization blocked](#organization-blocked) |
 
 ### Endpoint blocked
 Blocks the device from all services after exceeding device policies (e.g., reaching the volume limit). 
@@ -201,13 +201,13 @@ Blocks an organization after exceeding the monthly cost limit (defined by emnify
 
 | ID   | Description  |     
 | ---- | ------------ |
-| 18   | Quota threshold reached |
-| 19   | Quota used up |
-| 52   | Data quota enabled |
-| 53   | Data quota disabled |
-| 56   | Data quota assigned |
-| 57   | Data quota deleted |
-| 60   | Data quota expired |
+| 18   | [Quota threshold reached](#quota-threshold-reached) |
+| 19   | [Quota used up](#quota-used-up) |
+| 52   | [Data quota enabled](#data-quota-enabled) |
+| 53   | [Data quota disabled](#data-quota-disabled) |
+| 56   | [Data quota assigned](#data-quota-assigned) |
+| 57   | [Data quota deleted](#data-quota-deleted) |
+| 60   | [Data quota expired](#data-quota-expired) |
 
 ### Quota threshold reached
 Remaining data quota volume falls below the configured threshold percentage. Exclusively for devices with enabled data quota management. 
@@ -259,12 +259,12 @@ Triggered through the [emnify REST API](usage#emnify-rest-api) or the [emnify Po
 
 | ID   | Description  | 
 | ---- | ------------ | 
-| 20   | SMS quota threshold reached |
-| 21   | SMS quota used up |
-| 54   | SMS quota enabled |
-| 55   | SMS quota disabled |
-| 58   | SMS quota assigned |
-| 59   | SMS quota deleted |
+| 20   | [SMS quota threshold reached](#sms-quota-threshold-reached) |
+| 21   | [SMS quota used up](#sms-quota-used-up) |
+| 54   | [SMS quota enabled](#sms-quota-enabled) |
+| 55   | [SMS quota disabled](#sms-quota-disabled) |
+| 58   | [SMS quota assigned](#sms-quota-assigned) |
+| 59   | [SMS quota deleted](#sms-quota-deleted) |
 
 ### SMS quota threshold reached
 Remaining SMS quota volume falls below the configured threshold percentage. Exclusively for devices with enabled SMS quota management.
@@ -306,11 +306,11 @@ Triggered through the [emnify REST API](usage#emnify-rest-api) or the [emnify Po
 
 | ID   | Description  | 
 | ---- | ------------ |
-| 22   | CloudConnect TGW Resource Share created |
-| 23   | CloudConnect TGW available | 
-| 25   | CloudConnect TGW breakout terminated | 
-| 26   | CloudConnect VPN breakout terminated | 
-| 27   | CloudConnect Connection State Changed |  
+| 22   | [CloudConnect TGW Resource Share created](#cloudconnect-tgw-resource-share-created) |
+| 23   | [CloudConnect TGW available](#cloudconnect-tgw-available) | 
+| 25   | [CloudConnect TGW breakout terminated](#cloudconnect-tgw-breakout-terminated) | 
+| 26   | [CloudConnect VPN breakout terminated](#cloudconnect-vpn-breakout-terminated) | 
+| 27   | [CloudConnect Connection State Changed](#cloudconnect-connection-state-changed) |  
 
 ### CloudConnect TGW Resource Share created
 Creates a [CloudConnect Transit Gateway (TGW)](https://www.emnify.com/integration-guides/emnify-cloud-connect-into-aws-transit-gateway) resource share 
@@ -333,9 +333,9 @@ Changes the CloudConnect connection state.
 
 | ID   | Description  |
 | ---- | ------------ |
-| 28   | OpenVPN connect |
-| 29   | OpenVPN disconnect |
-| 30   | OpenVPN authentication |
+| 28   | [OpenVPN connect](#openvpn-connect) |
+| 29   | [OpenVPN disconnect](#openvpn-disconnect) |
+| 30   | [OpenVPN authentication](#openvpn-authentication) |
 
 ### OpenVPN connect
 Connects an application or user to [OpenVPN](https://www.emnify.com/iot-glossary/open-vpn).
@@ -350,8 +350,8 @@ Indicates success when authenticating a client on [OpenVPN](https://www.emnify.c
 
 | ID   | Description  |
 | ---- | ------------ |
-| 31   | Organisation updated |
-| 32   | Billing configuration updated |
+| 31   | [Organisation updated](#organisation-updated) |
+| 32   | [Billing configuration updated](#billing-configuration-updated) |
 
 ### Organisation updated
 Updates an organization's country, name, or verification data.

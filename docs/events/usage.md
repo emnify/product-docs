@@ -1,8 +1,3 @@
----
-toc_min_heading_level: 2
-toc_max_heading_level: 3
----
-
 # Working with events
 
 There are three ways you can access and trigger available events:
@@ -73,21 +68,19 @@ Here's where you can find event information in the Portal:
 - **SIM Inventory** → **Details** → **Events**: List of triggered events for that particular SIM card.
 
 :::info
-Any events triggered in the [Portal](https://portal.emnify.com/) will show `API` as the [event source](./overview.md#event-source).
+Any events triggered in the [Portal](https://portal.emnify.com/) will show `API` as the [event source](./index.md#event-source).
 :::
 
 ### Available data for individual events
 
 No matter where you view events in the Portal, you'll have access to the following information for each event:
 
-- `Severity`: The [event severity](./overview#event-severity).
+- `Severity`: The [event severity](./index.md#event-severity).
 - `Date`: When the event was triggered. By default, the Portal shows the relative date (e.g., "a day ago", "15 days ago," "a month ago"). Pressing the clock icon will show an absolute date value in the `MMMM dd, yyyy hh:mm a` format.
-- `Event Source`: What [system triggered the event](./overview#event-source).
-- `Event Type`: [Name of the triggered event](./event-types) (the `description` value in the [Event Type Object](https://cdn.emnify.net/api/doc/event.html#event-type-object)). This field will also indicate the network generation (i.e., [4G](https://www.emnify.com/iot-glossary/4g), [5G](https://www.emnify.com/iot-glossary/5g), etc.) for specific events, like [PDP context lifecycles](./event-types#data-connection-lifecycle).
+- `Event Source`: What [system triggered the event](./index.md#event-source).
+- `Event Type`: [Name of the triggered event](event-types) (the `description` value in the [Event Type Object](https://cdn.emnify.net/api/doc/event.html#event-type-object)). This field will also indicate the network generation (i.e., [4G](https://www.emnify.com/iot-glossary/4g), [5G](https://www.emnify.com/iot-glossary/5g), etc.) for specific events, like [PDP context lifecycles](./event-types#data-connection-lifecycle).
 - `Device`: Name of the device impacted by the event (the `name` value from the [Endpoint Object](https://cdn.emnify.net/api/doc/event.html#endpoint-object)). This name will often link to the device's entry on the "Connected Devices" page.
 - `Operator`: [Mobile Network Operator (MNO)](https://www.emnify.com/iot-glossary/mno) the device is currently roaming on (e.g., Vodafone, AT&T). Only listed for relevant Network events.
 - `Country`: The country where the MNO listed in the `Operator` field is providing the cellular service.
 - `ID`: A generated unique identifier for the event.
 - `Description`: What happened, why (in some cases), and any additional details associated with the event type.
-
-<!-- Potential TODO: ### Tips -->

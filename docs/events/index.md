@@ -1,8 +1,3 @@
----
-toc_min_heading_level: 2
-toc_max_heading_level: 3
----
-
 # emnify Platform Events
 
 The emnify platform generates several types of events. These events allow you to track notable system occurances based on behavior.
