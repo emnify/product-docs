@@ -62,7 +62,7 @@ const sidebars = {
         {
           type: 'doc',
           label: 'Using the Data Streamer',
-          id: 'data-streamer/using-the-data-streamer'
+          id: 'data-streamer/usage'
         },
         {
           type: 'doc',
