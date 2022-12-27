@@ -2,9 +2,14 @@
 toc_max_heading_level: 2
 ---
 
-# MNO and Reseller Events
+# MNO and Reseller events
 
 The following event types are only available for [MNOs](https://www.emnify.com/iot-glossary/mno) and Resellers using emnify. 
+
+:::info
+All other event types are also available for MNO and Reseller accounts. 
+You can find those events on the [Event types](event-types) page.
+:::
 
 ## Authentication 
 
@@ -14,16 +19,19 @@ The following event types are only available for [MNOs](https://www.emnify.com/i
 | 40   | [User verification requested](#user-verification-requested) |
 
 ### Password reset requested
-Requests a reset password email for a specific email address.
+
+Reset password email is requested for a specific email address.
 
 ### User verification requested
-Requests a verification email when a user signs up or requests another verification email afterward. 
+
+User signed up or requested another verification email afterward. 
 
 :::info
-This event is only needed when customers use self-signup. Manually invited users already verified their email.
+This event is only needed when customers use [self-signup](#self-signup). 
+Manually invited users already verified their email.
 :::
 
-## Organization and Billing
+## Organization and billing
 
 | ID   | Description  |
 | ---- | ------------ |
@@ -31,12 +39,14 @@ This event is only needed when customers use self-signup. Manually invited users
 | 36   | [User invited](#user-invited) |
 
 ### Self-Signup
-Indicates that a customer used self-signup to create their account.
+
+Customer used self-signup to create their account.
 
 ### User invited
-Invites a new user to an organization.
 
-## Usage Tariff and Tariff Plan
+New user is invited to an organization.
+
+## Usage tariff and tariff plan
 
 | ID   | Description  |
 | ---- | ------------ |
@@ -44,19 +54,20 @@ Invites a new user to an organization.
 | 34   | [Usage tariff updated](#usage-tariff-updated) |
 
 ### Tariff plan updated
-Updates a tariff plan after a contract change or self-service tariff upgrade. 
 
-**Example**: A tariff plan changes from “Evaluation EUR” to “Evaluation USD” or from “Standard EUR” to “Enterprise EUR.”
+Tariff plan changed after a contract change or self-service tariff upgrade. 
+
+**Example**: A tariff plan changes from **Evaluation EUR** to **Evaluation USD** or from **Standard EUR** to **Enterprise EUR**.
 
 ### Usage tariff updated
-Assigns or removes a usage tariff. 
 
-**Example**: Adding or removing “Regional Pro,” “Global Basic,” or “Global Extended.”
+Usage tariff is assigned or removed.
 
-## SIM Order  
-<!-- https://cdn.emnify.net/api/doc/event.html#sim-object -->
+**Example**: Adding or removing **Regional Pro**, **Global Basic**, or **Global Extended**.
 
-:::caution Warning
+## SIM order  
+
+:::caution
 The following events are only available if you're using the [Embedded SIM Shop](https://cdn.emnify.net/api/doc/swagger.html?urls.primaryName=MNO#/Shop%20Inventory%20Management).
 :::
 
@@ -66,12 +77,14 @@ The following events are only available if you're using the [Embedded SIM Shop](
 | 39   | [Order updated](#order-updated) |
 
 ### Order submitted
-User submits a SIM order.
+
+SIM order is submitted by a user.
 
 ### Order updated
-Updates a SIM order.
+
+SIM order is updated.
 
 **Possible updates**:
-- Status "Paid" (if previously unpaid)
-- Status "Shipped" (including the shipping provider ID) <!-- TODO: Add sample data -->
-- Status "Canceled"
+- Status **Paid** (if previously unpaid)
+- Status **Shipped** (including the shipping provider ID) <!-- TODO: Add sample data -->
+- Status **Canceled**
