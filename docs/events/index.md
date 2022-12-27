@@ -5,7 +5,7 @@ These events allow you to track notable system occurrences based on behavior.
 
 Some common use cases for events on emnify include:
 
-- **Triggers for custom business processes** (e.g., authentication or custom usage limitations configured on the [emnify Portal](usage#the-emnify-portal))
+- **Triggers for custom business processes** (e.g., authentication or custom usage limitations configured on the [emnify Portal](usage#emnify-portal))
 - **Monitoring** (e.g., SIM or data connection lifecycles)
 - **Input for custom billing systems** (i.e., updating billing configuration, processing invoices, etc.)
 
@@ -44,7 +44,7 @@ The emnify platform can set these limitations (e.g., a device is currently block
 - **API**: The [emnify REST API](https://cdn.emnify.net/api/doc/index.html).
 
 :::info
-Any events triggered in the [emnify Portal](usage#the-emnify-portal) will show **API** as the event source. 
+Any events triggered in the [emnify Portal](usage#emnify-portal) will show **API** as the event source. 
 That's because the Portal is an interface that uses the API under the hood. 
 ::: 
 

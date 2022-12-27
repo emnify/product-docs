@@ -59,7 +59,7 @@ The [Event API](#retrieving-events-with-the-event-api) specifically allows searc
 
 :::caution
 For events, the emnify REST API uses a [pull architecture](https://dev.to/anubhavitis/push-vs-pull-api-architecture-1djo), which means you're responsible for requesting updates and retrieving new events. 
-If you'd prefer real-time updates, please use the [emnify Data Streamer](#emnifys-data-streamer).
+If you'd prefer real-time updates, use the [emnify Data Streamer](#data-streamer).
 :::
 
 ### Authentication

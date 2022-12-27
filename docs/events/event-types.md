@@ -47,7 +47,7 @@ Device attached to a network when first switched on or moved to a new location.
 It can also periodically inform the network of the device's location.
 
 **Example**: A SIM card has (re)authenticated with a different network element. 
-If successful, the device will show as **Attached** in the [emnify Portal](usage#the-emnify-portal) and can already receive SMS.
+If successful, the device will show as **Attached** in the [emnify Portal](usage#emnify-portal) and can already receive SMS.
 
 
 ### Update GPRS location
@@ -81,7 +81,7 @@ Device is inactive and doesn't send or receive any packets.
 Activation (or rejection) of data connectivity. 
 
 **Example**: A device has established a data session and started transferring data. 
-This device will show as **Online** in the [emnify Portal](usage#the-emnify-portal) (as long as there hasn't been a subsequent [Delete PDP Context](#delete-pdp-context) event).
+This device will show as **Online** in the [emnify Portal](usage#emnify-portal) (as long as there hasn't been a subsequent [Delete PDP Context](#delete-pdp-context) event).
 
 
 ### Delete PDP Context
@@ -89,7 +89,7 @@ This device will show as **Online** in the [emnify Portal](usage#the-emnify-port
 Data session between the device and the network is deleted. 
 
 **Example**: A device disconnected and ended a data transfer. 
-The event details will also show the data transmitted, and the device status will show as **Offline** in the [emnify Portal](usage#the-emnify-portal).
+The event details will also show the data transmitted, and the device status will show as **Offline** in the [emnify Portal](usage#emnify-portal).
 
 ### Device offline
 
