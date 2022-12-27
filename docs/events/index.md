@@ -60,8 +60,8 @@ The [Event Types](event-types) page provides an overview of the specific events 
 
 There are three main ways you can access and trigger events: 
 
-- [emnify's Data Streamer](usage#emnifys-data-streamer)
-- [emnify REST API](usage#emnify-rest-api) 
-- [The emnify Portal](usage#the-emnify-portal)
+- [Data Streamer](usage#data-streamer)
+- [Event API](usage#event-api) 
+- [emnify Portal](usage#emnify-portal)
 
 More information on these systems and how they compare is available on the [Working with events](usage) page.
