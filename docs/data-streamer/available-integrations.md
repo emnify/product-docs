@@ -37,8 +37,6 @@ Decryption performs when downloading the objects.
 You can enable this in the ‘Properties’ tab of the S3 bucket:
 <!-- SCREENSHOT -->
 
-<!-- TODO: Check for guide link -->
-
 ### Amazon QuickSight
 
 Amazon QuickSight allows you to create and publish interactive business intelligence dashboards that include machine learning-powered insights into your event and usage data. 
@@ -118,7 +116,7 @@ You can also create dashboards and trigger alerts on specific events or situatio
 
 ## Webhook
 
-The data streamer may also send usage and event data in JSON format to a configurable webhook URL specified by the user. 
+The data streamer may also send usage and event data in JSON format to a configurable, user-specified webhook URL. 
 In this case, users provide an application that consumes HTTP POST requests sent from the emnify platform.
 
 This is the most flexible method of processing a data stream. It allows any custom implementation of analytics, reporting, or a pipeline of tools to process usage and event data.

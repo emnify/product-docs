@@ -1,11 +1,11 @@
-# Stream Types
+# Stream types
 
 Through stream types, you can configure the type of content delivered by the data stream. 
 You may choose between receiving _event data_ or _usage data_. 
 
 Streaming event and usage data within one stream is possible but not advised, as these data records don't share a common schema definition.
 
-## Event Data
+## Event data
 
 The emnify platform generates several types of events. 
 These events allow you to track notable system occurances based on behavior.
@@ -14,11 +14,11 @@ Some common use cases for events on emnify include:
 
 - **Triggers for custom business processes** (e.g., authentication or custom usage limitations configured on our Portal)
 - **Monitoring** (e.g., SIM or data connection lifecycles)
-- **Input for custom billing systems** (i.e. updating billing configuration, processing invoices, etc.)
+- **Input for custom billing systems** (i.e., updating billing configuration, processing invoices, etc.)
 
 <!-- TODO: Add link to Events docs once published -->
 
-## Usage Data
+## Usage data
 
 Usage data records get generated when devices consume data or SMS services. 
 These records provide information about the SIM, used service, visited network, volumes, and cost. 

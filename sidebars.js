@@ -37,12 +37,12 @@ const sidebars = {
     {
       type: 'category',
       label: 'Data Streamer',
-      link: {type: 'doc', id: 'data-streamer/introduction'},
+      link: {type: 'doc', id: 'data-streamer/index'},
       items: [
         {
           type: 'doc',
           label: 'Getting Started',
-          id: 'data-streamer/introduction'
+          id: 'data-streamer/index'
         },
         {
           type: 'doc',

@@ -23,7 +23,9 @@ If there are no data streams configured, the **Data Streams** panel displays all
 
 If you already have a data stream configured, the panel displays all existing streams, ordered by creation date (newest on the top). 
 This list view can be used to gain an overview of the current states of different data streams. 
-Data streams are marked as **Running** are properly operating, failed streams have the **Error** status, and paused streams are marked as **Paused**.
+Data streams are marked as **Running** are properly operating.
+Failed streams exhibit an **Error** status.
+Paused streams are marked as **Paused**.
 
 <!-- SCREENSHOT -->
 
@@ -50,7 +52,7 @@ Provide the required settings to configure the destination.
 
 :::tip
 API keys and configuration parameters differ by connection type.
-Instructions for configuring each connection type are in the [Integration Guides](integration-guides) section. 
+Instructions for configuring each connection type are in the [Available integrations](available-integrations) section. 
 :::
 
 Click **Create** and verify the status of your new stream. 
@@ -80,7 +82,7 @@ You’ll need to confirm this action.
 ## Data Streamer API
 
 You can manage your data streams using the emnify Data Streamer API. 
-Available entry points are listed under the [**Integrations** section of the emnify Swagger API reference](https://cdn.emnify.net/api/doc/swagger.html#/Integrations).  
+Available entry points are listed under the [Integrations section of the emnify REST API reference](https://cdn.emnify.net/api/doc/swagger.html#/Integrations).
 
 ### Authentication
 
@@ -89,25 +91,27 @@ We use JWTs as the authentication token.
 
 Each integration also requires credentials to verify that the data streamer has permission to write data to that service.
 
-Please refer to the [Getting Started guide in the emnify API Documentation](https://cdn.emnify.net/api/doc/getting-started.html) for detailed instructions.
+:::tip
+The [Getting Started guide in the *emnify REST API Documentation*](https://cdn.emnify.net/api/doc/getting-started.html) provides step-by-step instructions for retrieving this token.
+:::
 
 ### Specification and documentation
 
 The [emnify REST API](rest-api) is based on the OpenAPI Specification OAS3. 
-We also have [interactive API documentation in Swagger](https://cdn.emnify.net/api/doc/swagger.html).
+We also have [interactive API documentation](https://cdn.emnify.net/api/doc/swagger.html).
 
 :::tip
 Prior OpenAPI knowledge isn't necessary for working with the emnify API. 
-That said, [understanding how an OpenAPI Specification is structured](https://oai.github.io/Documentation/specification.html) could help you navigate our documentation.
+Nevertheless, [understanding how an OpenAPI Specification is structured](https://oai.github.io/Documentation/specification.html) could help you navigate our documentation.
 :::
 
-The [Data Streamer reference page](https://cdn.emnify.net/api/doc/data-streamer.html) in the emnify System Documentation provides details about the data structure and common elements you'll encounter while working with the Data Streamer API.
+The [Data Streamer reference page](https://cdn.emnify.net/api/doc/data-streamer.html) in the *emnify REST API Documentation* provides details about the data structure and common elements you'll encounter while working with the Data Streamer API.
 
 ### Working with the Data Streamer API
 
 :::caution
 API keys and configuration parameters differ by [connection type](connection-types). 
-Details on setting up, updating, or deleting integrations are in the [emnify Swagger API reference](https://cdn.emnify.net/api/doc/swagger.html#/Integrations).
+Details on setting up, updating, or deleting integrations are in the [emnify API reference](https://cdn.emnify.net/api/doc/swagger.html#/Integrations).
 It lists all entry points for managing data streams programmatically and contains examples of the available connection types and filtering options.
 :::
 
@@ -147,7 +151,7 @@ curl -X POST "https://cdn.emnify.net/api/v2/data_stream" \
 
 The request body (set using the `-d` flag in cURL) configures the data stream's parameters. 
 
-The following JSON request body example shows how to create a stream of usage data records with the [Webhook integration](integration-guides#webhook):
+The following JSON request body example shows how to create a stream of usage data records with the [Webhook integration](available-integrations#webhook):
 
 ```json
 {
@@ -171,7 +175,7 @@ The following JSON request body example shows how to create a stream of usage da
 }
 ```
 
-You can also create an event stream with [AWS Kinesis integration](integration-guides#amazon-kinesis-data-streams) and enabled filtering, like the following JSON request body example:
+You can also create an event stream with [AWS Kinesis integration](available-integrations#amazon-kinesis-data-streams) and enabled filtering, like the following JSON request body example:
 
 ```json
 {
