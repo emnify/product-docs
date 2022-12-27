@@ -19,7 +19,6 @@ EMnify offers the following high-level products and services:
     - [User Interface](https://portal.emnify.com/sign/up) for operating and managing connectivity and SIMs
     - [Distributed Data Plane](services#distributed-data-plane)
     - with [Regional Breakout](services#regional-breakout) to ensure data does not traverse continents
-- The [Data Streamer](services#data-streamer) to integrate connectivity data into services for IoT operations
 - A holistic SASE oriented approach for a central control over [Security](services#security) and networks
     - [DNS](services#dns) 
     - [IMEI Lock](services#imei-lock)
