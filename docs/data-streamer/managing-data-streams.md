@@ -16,7 +16,7 @@ The data stream will only contain events matching the selected event types.
 
 ## Pausing or deleting a data stream
 
-You can pause a stream (e.g., if you want to take down the receiving server for maintenance) and resume once convenient by activating the data stream again via your preferred interface. 
+You can pause a stream (e.g., if you want to take down the receiving server for maintenance) and resume later when convenient by activating the data stream again via your preferred interface. 
 The event and usage data is available for 7 days after creation.
 
 If you want to remove a data stream permanently, you need to delete it.

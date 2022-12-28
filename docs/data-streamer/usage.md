@@ -1,6 +1,6 @@
 # Using the Data Streamer
 
-Data streams are managed by using the [emnify Portal](#data-streamer-in-the-portal) or the [Data Streamer API](#data-streamer-api).
+You can manage data streams with the [emnify Portal](#data-streamer-in-the-portal) or the [Data Streamer API](#data-streamer-api).
 
 ## Choosing which interface to use
 
@@ -12,7 +12,7 @@ Integrating the Data Streamer API becomes a faster and more secure approach when
 
 ## Data Streamer in the Portal
 
-To [manage your data streams](managing-data-streams), log in to your account on the [emnify Portal](https://portal.emnify.com/). 
+To [manage your data streams](managing-data-streams), log in to your [emnify Portal](https://portal.emnify.com/) account. 
 Then, navigate to the **Integrations** page by clicking the **Integrations** menu item on the sidebar.
 
 ### Viewing data streams
