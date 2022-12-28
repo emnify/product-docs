@@ -1,3 +1,7 @@
+---
+description: Configuring the type of content delivered by the data stream.
+---
+
 # Stream types
 
 Through stream types, you can configure the type of content delivered by the data stream. 

@@ -1,3 +1,7 @@
+---
+description: Setting up, filtering, pausing, or deleting data streams. 
+---
+
 # Managing data streams
 
 ## Setting up a data stream

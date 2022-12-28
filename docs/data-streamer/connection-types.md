@@ -1,3 +1,7 @@
+---
+description: Integrating real-time data streams of your devices and SIMs.
+---
+
 # Connection types
 
 The emnify Data Streamer allows you to integrate real-time connectivity data streams of your devices and SIMs into your third-party cloud services and/or business systems. 

@@ -1,4 +1,8 @@
-# emnify multicloud Data Streamer
+---
+description: Benefits of the Data Streamer and how you can get started.
+---
+
+# Getting started with the Data Streamer
 
 Before a device can send data to an application, it must communicate with the mobile network to ensure that it can send the data over that network. 
 This communication happens through signaling events, which are usually hidden from the application.

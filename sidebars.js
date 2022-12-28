@@ -37,12 +37,15 @@ const sidebars = {
     {
       type: 'category',
       label: 'Data Streamer',
-      link: {type: 'doc', id: 'data-streamer/index'},
+      link: { 
+        type: 'generated-index', 
+        title: 'emnify multicloud Data Streamer',
+      },
       items: [
         {
           type: 'doc',
           label: 'Getting Started',
-          id: 'data-streamer/index'
+          id: 'data-streamer/getting-started'
         },
         {
           type: 'doc',

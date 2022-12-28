@@ -1,3 +1,7 @@
+---
+description: Managing data streams with the emnify Portal or API.
+---
+
 # Using the Data Streamer
 
 You can manage data streams with the [emnify Portal](#data-streamer-in-the-portal) or the [Data Streamer API](#data-streamer-api).
