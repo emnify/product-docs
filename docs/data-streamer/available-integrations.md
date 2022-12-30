@@ -132,12 +132,14 @@ The emnify platform will send HTTP POST requests with JSON data payloads when ev
 When using the emnify Webhook in bulk mode, each HTTP POST will include a JSON collection instead of an individual event or usage data record. 
 The HTTP POST requests are sent at intervals and should be used if the receiving system needs to process multiple events in bulk instead of individual events as they occur.
 
-### Integromat
+### Make (formerly Integromat)
 
-Integromat is a low-code integration platform that allows you to visualize, design, and automate your workflows based on your connectivity metadata.
+[Make](https://www.make.com/en) (formerly Integromat) is a low-code integration platform that allows you to visualize, design, and automate your workflows based on your connectivity metadata.
 
 :::tip Step-by-step guide
-[Automate Business Processes with Multi-Cloud Data Streamer and Integromat](https://www.emnify.com/integration-guides/emnify-mcds-integromat-integration)
+[Automate Business Processes with Multi-Cloud Data Streamer and Make](https://www.emnify.com/integration-guides/emnify-mcds-integromat-integration)
+
+**_Warning: This guide still needs to be updated to reflect the new naming._**
 :::
 
 ### Automate.io
