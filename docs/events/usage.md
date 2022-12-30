@@ -22,7 +22,7 @@ These integrations also provide insights for IoT remote monitoring and anomaly d
 ### Managing event data streams in the Portal
 
 To manage your data streams, log in to your account on the [emnify Portal](https://portal.emnify.com/). 
-Then, navigate to the **Integrations** page by clicking the **Integrations** menu item on the sidebar.
+Then, navigate to the **Integrations** page by clicking the **Integrations** menu item in the sidebar.
 
 If there are no data streams configured, the **Data Streams** panel displays all available connection types as tiles.
 

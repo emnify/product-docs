@@ -7,20 +7,15 @@ toc_max_heading_level: 2
 
 The following is a list of available event types, including the corresponding IDs and descriptions. 
 
-:::info
-Some event types are only available for [MNO](https://www.emnify.com/iot-glossary/mno) and Reseller accounts, as they require additional authentication. 
-You can find those events on the [MNO and Reseller events](mno-events) page.
-:::
-
 :::note API Reference 
 [Event Type Object - Event API Reference Documentation](https://cdn.emnify.net/api/doc/event.html#event-type-object)
 :::
 
 ## Generic events
 
-| ID   | Description  |
-| ---- | ------------ |
-| 0    | [Generic](#generic) |
+| ID | Description         |
+|:---|:--------------------|
+| 0  | [Generic](#generic) |
 
 ### Generic
 
@@ -35,12 +30,12 @@ We'll update this list as new event types are created.
 
 ## Network attachment and location
 
-| ID   | Description  |
-| ---- | ------------ |
-| 1    | [Update location](#update-location) |
-| 2    | [Update GPRS location](#update-gprs-location) |
-| 15   | [Purge location](#purge-location) |
-| 16   | [Purge GPRS location](#purge-gprs-location) |
+| ID | Description                                   |
+|:---|:----------------------------------------------|
+| 1  | [Update location](#update-location)           |
+| 2  | [Update GPRS location](#update-gprs-location) |
+| 15 | [Purge location](#purge-location)             |
+| 16 | [Purge GPRS location](#purge-gprs-location)   |
 
 ### Update location
 
@@ -58,10 +53,9 @@ The SGSN then uses that information to provide functionality switching, security
 
 **Example**: A SIM card has successfully registered for data sessions with a different network element.
 
-
 ### Purge location
 
-Device is unreachable or switched off, and the network doesn't know its location.
+Device is unreachable or switched off, and the network doesn't know its location. The device status will show as **Offline** in the [emnify Portal](usage#emnify-portal).
 
 **Example**: The network deletes the routing information for a mobile-terminated call or mobile-terminated short message and marks the device not reachable.
 
@@ -71,11 +65,10 @@ Device is inactive and doesn't send or receive any packets.
 
 ## Data connection lifecycle  
 
-| ID   | Description  |
-| ---- | ------------ |
-| 3    | [Create PDP Context](#create-pdp-context) |
-| 5    | [Delete PDP Context](#delete-pdp-context) |
-| 49   | [Device offline](#device-offline) |
+| ID | Description                               |
+|:---|:------------------------------------------|
+| 3  | [Create PDP Context](#create-pdp-context) |
+| 5  | [Delete PDP Context](#delete-pdp-context) |
 
 ### Create PDP Context
 
@@ -90,22 +83,16 @@ This device will show as **Online** in the [emnify Portal](usage#emnify-portal) 
 Data session between the device and the network is deleted. 
 
 **Example**: A device disconnected and ended a data transfer. 
-The event details will also show the data transmitted, and the device status will show as **Offline** in the [emnify Portal](usage#emnify-portal).
+The event details will also show the data transmitted, and the device status will show as **Attached** in the [emnify Portal](usage#emnify-portal).
 
-### Device offline
+## Application and user authentication 
 
-Device deleted a PDP context and doesn't create a new PDP context within 5 minutes. 
-
-**Example**: A device is no longer attached to a network and hasn't tried to connect to a network for 24-48 hours.
-
-## Authentication 
-
-| ID   | Description  |
-| ---- | ------------ |
-| 6    | [User authentication failed](#user-authentication-failed) |
-| 7    | [Application authentication failed](#application-authentication-failed) |
-| 13   | [Support Access](#support-access) |
-| 14   | [Multi-factor Authentication](#multi-factor-authentication) |
+| ID | Description                                                             |
+|:---|:------------------------------------------------------------------------|
+| 6  | [User authentication failed](#user-authentication-failed)               |
+| 7  | [Application authentication failed](#application-authentication-failed) |
+| 13 | [Support Access](#support-access)                                       |
+| 14 | [Multi-factor Authentication](#multi-factor-authentication)             |
 
 ### User authentication failed
 
@@ -125,10 +112,10 @@ User removed multi-factor authentication (MFA) from their account.
 
 ## User management 
 
-| ID   | Description  |
-| ---- | ------------ |
-| 41   | [User verified](#user-verified) |
-| 46   | [User deleted](#user-deleted) |
+| ID | Description                     |
+|:---|:--------------------------------|
+| 41 | [User verified](#user-verified) |
+| 46 | [User deleted](#user-deleted)   |
 
 ### User verified
 
@@ -140,22 +127,24 @@ User is deleted by another user.
 
 ## Device status management
 
-| ID   | Description  |
-| ---- | ------------ |
-| 8    | [SIM activation](#sim-activation) | 
-| 9    | [SIM suspension](#sim-suspension) |
-| 10   | [SIM deletion](#sim-deletion) | 
-| 42   | [Endpoint enabled](#endpoint-enabled) | 
-| 43   | [Endpoint disabled](#endpoint-disabled) |
-| 45   | [SIM factory test](#sim-factory-test) | 
-| 48   | [SIM registration](#sim-registration) | 
-| 50   | [SIM Released](#sim-registration) | 
-| 51   | [SIM Assigned](#sim-assigned) | 
+| ID | Description                             |
+|:---|:----------------------------------------|
+| 8  | [SIM activation](#sim-activation)       |
+| 9  | [SIM suspension](#sim-suspension)       |
+| 10 | [SIM deletion](#sim-deletion)           |
+| 42 | [Endpoint enabled](#endpoint-enabled)   |
+| 43 | [Endpoint disabled](#endpoint-disabled) |
+| 45 | [SIM factory test](#sim-factory-test)   |
+| 48 | [SIM registration](#sim-registration)   |
+| 50 | [SIM Released](#sim-registration)       |
+| 51 | [SIM Assigned](#sim-assigned)           |
 
 ### SIM activation
 
 The SIM is patched to the **Activated** status after previously holding one of the following statuses: 
-**Issued**, **Suspended**, or **Factory Test**. 
+**Issued**, **Suspended**, or **Factory Test**.
+
+This event can be manually triggered through the [emnify Portal or REST API](usage) and automatically after reaching the factory test mode threshold (data or SMS).
 
 :::note
 Activated SIMs are able to use network services.
@@ -163,7 +152,7 @@ Activated SIMs are able to use network services.
 
 ### SIM suspension
 
-The SIM is patched to the **Suspended** status, temporarily suspending and blocking it from network access. 
+The SIM is patched to the **Suspended** status, temporarily suspending and blocking it from network access. Once suspended, no charges apply for that SIM starting the next month.
 
 :::tip
 Activating a SIM with the **Suspended** status again is possible at any time.
@@ -187,7 +176,7 @@ Device is disabled.
 
 ### SIM factory test
 
-SIM is patched to the **Factory Test** status (for SIM testing).
+SIM is patched from **Issued** to **Factory Test** status (for SIM testing).
 
 ### SIM registration
 
@@ -203,7 +192,7 @@ It also doesn't trigger for every SIM of a SIM batch, so the event log will only
 SIM is released from a device. 
 
 :::info
-Triggered through the [emnify User Interface (EUI)](https://support.emnify.com/hc/en-us/sections/115000969189-EMnify-User-Interface-EUI-).
+Triggered through the [emnify User Interface (EUI)](https://support.emnify.com/hc/en-us/sections/115000969189-EMnify-User-Interface-EUI-) or [REST API](usage#event-api).
 :::
 
 ### SIM Assigned
@@ -216,10 +205,10 @@ Triggered through the [emnify User Interface (EUI)](https://support.emnify.com/h
 
 ## Limit enforcement 
 
-| ID   | Description  |     
-| ---- | ------------ |
-| 11   | [Endpoint blocked](#endpoint-blocked) |
-| 12   | [Organisation blocked](#organisation-blocked) |
+| ID | Description                                   |
+|:---|:----------------------------------------------|
+| 11 | [Endpoint blocked](#endpoint-blocked)         |
+| 12 | [Organisation blocked](#organisation-blocked) |
 
 ### Endpoint blocked
 
@@ -235,15 +224,15 @@ The organization is blocked after exceeding the monthly cost limit (defined by e
 
 ## Data quota management
 
-| ID   | Description  |     
-| ---- | ------------ |
-| 18   | [Quota threshold reached](#quota-threshold-reached) |
-| 19   | [Quota used up](#quota-used-up) |
-| 52   | [Data quota enabled](#data-quota-enabled) |
-| 53   | [Data quota disabled](#data-quota-disabled) |
-| 56   | [Data quota assigned](#data-quota-assigned) |
-| 57   | [Data quota deleted](#data-quota-deleted) |
-| 60   | [Data quota expired](#data-quota-expired) |
+| ID | Description                                         |
+|:---|:----------------------------------------------------|
+| 18 | [Quota threshold reached](#quota-threshold-reached) |
+| 19 | [Quota used up](#quota-used-up)                     |
+| 52 | [Data quota enabled](#data-quota-enabled)           |
+| 53 | [Data quota disabled](#data-quota-disabled)         |
+| 56 | [Data quota assigned](#data-quota-assigned)         |
+| 57 | [Data quota deleted](#data-quota-deleted)           |
+| 60 | [Data quota expired](#data-quota-expired)           |
 
 :::note API Reference
 Quota information is in the [detail object](https://cdn.emnify.net/api/doc/event.html#detail-object) of the event.
@@ -324,14 +313,14 @@ New connection requests will be denied until an active data quota is assigned or
 
 ## SMS quota management
 
-| ID   | Description  | 
-| ---- | ------------ | 
-| 20   | [SMS quota threshold reached](#sms-quota-threshold-reached) |
-| 21   | [SMS quota used up](#sms-quota-used-up) |
-| 54   | [SMS quota enabled](#sms-quota-enabled) |
-| 55   | [SMS quota disabled](#sms-quota-disabled) |
-| 58   | [SMS quota assigned](#sms-quota-assigned) |
-| 59   | [SMS quota deleted](#sms-quota-deleted) |
+| ID | Description                                                 |
+|:---|:------------------------------------------------------------|
+| 20 | [SMS quota threshold reached](#sms-quota-threshold-reached) |
+| 21 | [SMS quota used up](#sms-quota-used-up)                     |
+| 54 | [SMS quota enabled](#sms-quota-enabled)                     |
+| 55 | [SMS quota disabled](#sms-quota-disabled)                   |
+| 58 | [SMS quota assigned](#sms-quota-assigned)                   |
+| 59 | [SMS quota deleted](#sms-quota-deleted)                     |
 
 :::note API Reference
 Quota information is in the [detail object](https://cdn.emnify.net/api/doc/event.html#detail-object) of the event.
@@ -395,11 +384,11 @@ Once deleted, devices on this service profile (with SMS quota management enabled
 
 ## CloudConnect lifecycle 
 
-| ID   | Description  | 
-| ---- | ------------ |
-| 22   | [CloudConnect TGW Resource Share created](#cloudconnect-tgw-resource-share-created) |
-| 23   | [CloudConnect TGW available](#cloudconnect-tgw-available) | 
-| 25   | [CloudConnect TGW breakout terminated](#cloudconnect-tgw-breakout-terminated) | 
+| ID | Description                                                                         |
+|:---|:------------------------------------------------------------------------------------|
+| 22 | [CloudConnect TGW Resource Share created](#cloudconnect-tgw-resource-share-created) |
+| 23 | [CloudConnect TGW available](#cloudconnect-tgw-available)                           |
+| 25 | [CloudConnect TGW breakout terminated](#cloudconnect-tgw-breakout-terminated)       |
 
 ### CloudConnect TGW Resource Share created
 
@@ -415,9 +404,9 @@ Once deleted, devices on this service profile (with SMS quota management enabled
 
 ## OpenVPN lifecycle 
 
-| ID   | Description  |
-| ---- | ------------ |
-| 30   | [OpenVPN authentication](#openvpn-authentication) |
+| ID | Description                                       |
+|:---|:--------------------------------------------------|
+| 30 | [OpenVPN authentication](#openvpn-authentication) |
 
 ### OpenVPN authentication
 
@@ -425,10 +414,10 @@ Client is successfully authenticated on [OpenVPN](https://www.emnify.com/iot-glo
 
 ## Organization and billing
 
-| ID   | Description  |
-| ---- | ------------ |
-| 31   | [Organisation updated](#organisation-updated) |
-| 32   | [Billing configuration updated](#billing-configuration-updated) |
+| ID | Description                                                     |
+|:---|:----------------------------------------------------------------|
+| 31 | [Organisation updated](#organisation-updated)                   |
+| 32 | [Billing configuration updated](#billing-configuration-updated) |
 
 ### Organisation updated
 

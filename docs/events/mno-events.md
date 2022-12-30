@@ -14,10 +14,10 @@ You can find those events on the [Event types](event-types) page.
 
 ## Authentication 
 
-| ID   | Description  |
-| ---- | ------------ |
-| 37   | [Password reset requested](#password-reset-requested) |
-| 40   | [User verification requested](#user-verification-requested) |
+| ID | Description                                                 |
+|:---|:------------------------------------------------------------|
+| 37 | [Password reset requested](#password-reset-requested)       |
+| 40 | [User verification requested](#user-verification-requested) |
 
 ### Password reset requested
 
@@ -34,10 +34,10 @@ Manually invited users already verified their email.
 
 ## Organization and billing
 
-| ID   | Description  |
-| ---- | ------------ |
-| 17   | [Self-Signup](#self-signup) |
-| 36   | [User invited](#user-invited) |
+| ID | Description                   |
+|:---|:------------------------------|
+| 17 | [Self-Signup](#self-signup)   |
+| 36 | [User invited](#user-invited) |
 
 ### Self-Signup
 
@@ -49,10 +49,10 @@ New user is invited to an organization.
 
 ## Usage tariff and tariff plan
 
-| ID   | Description  |
-| ---- | ------------ |
-| 33   | [Tariff plan updated](#tariff-plan-updated) |
-| 34   | [Usage tariff updated](#usage-tariff-updated) |
+| ID | Description                                   |
+|:---|:----------------------------------------------|
+| 33 | [Tariff plan updated](#tariff-plan-updated)   |
+| 34 | [Usage tariff updated](#usage-tariff-updated) |
 
 ### Tariff plan updated
 
@@ -72,10 +72,10 @@ Usage tariff is assigned or removed.
 The following events are only available if you're using the [Embedded SIM Shop](https://cdn.emnify.net/api/doc/swagger.html?urls.primaryName=MNO#/Shop%20Inventory%20Management).
 :::
 
-| ID   | Description  |
-| ---- | ------------ |
-| 38   | [Order submitted](#order-submitted) |
-| 39   | [Order updated](#order-updated) |
+| ID | Description                         |
+|:---|:------------------------------------|
+| 38 | [Order submitted](#order-submitted) |
+| 39 | [Order updated](#order-updated)     |
 
 ### Order submitted
 
