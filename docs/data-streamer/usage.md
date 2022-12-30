@@ -17,7 +17,7 @@ Integrating the Data Streamer API becomes a faster and more secure approach when
 ## Data Streamer in the Portal
 
 To [manage your data streams](managing-data-streams), log in to your [emnify Portal](https://portal.emnify.com/) account. 
-Then, navigate to the **Integrations** page by clicking the **Integrations** menu item on the sidebar.
+Then, navigate to the **Integrations** page by clicking the **Integrations** menu item in the sidebar.
 
 ### Viewing data streams
 
@@ -141,7 +141,7 @@ The following lookup entry points are available for retrieving possible configur
 
 ### Creating data streams
 
-Once authenticated, users can create data streams by making `POST` requests to `/api/v2/data_stream`. 
+Once authenticated, users can create data streams by sending `POST` requests to `/api/v2/data_stream`. 
 
 An example cURL to create a data stream would look like the following:
 
@@ -222,7 +222,7 @@ You can also create an event stream with [AWS Kinesis integration](available-int
 
 ### Listing data streams
 
-You can list all data streams belonging to your organization by making `GET` requests to `/api/v2/data_stream`. 
+You can list all data streams belonging to your organization by sending `GET` requests to `/api/v2/data_stream`. 
 
 An example cURL request to list data streams would look like the following:
 
@@ -288,7 +288,7 @@ The following example shows how to pause a stream and erase any filters:
 
 ### Deleting data streams
 
-Making a `DELETE` request to `/api/v2/data_stream/{data_stream_id}` will delete the data stream with that ID.
+Sending a `DELETE` request to `/api/v2/data_stream/{data_stream_id}` will delete the data stream with that ID.
 
 The `data_stream_id` path parameter is the top-level `id` property in each object returned by the [listing data streams](#listing-data-streams) request and is an ID that is unique for each data stream.
 

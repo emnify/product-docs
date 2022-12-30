@@ -8,7 +8,7 @@ description: Data streamer integrations and links to step-by-step guides.
 
 ### Amazon Kinesis Data Streams
 
-Amazon Kinesis Data Streams allows for collecting and processing large streams of event and usage data records in real-time. 
+Amazon Kinesis Data Streams allows for collecting and processing large streams of event and usage data records in real time. 
 Applications created on Amazon Kinesis Data Streams can run on Amazon EC2 instances. 
 Typical uses are to send processed records to dashboards, generate alerts, dynamically change pricing or advertising strategies, or send data to other Amazon services.
 
@@ -84,7 +84,7 @@ It allows you to use time series data insights and interactive analytics to acce
 
 ### Google Cloud Pub/Sub
 
-Pub/Sub is Google’s messaging middleware that allows you to collect and process your event and usage data in real-time. 
+Pub/Sub is Google’s messaging middleware that allows you to collect and process your event and usage data in real time. 
 It can also display and analyze data with other Google services, such as Google BigQuery.
 
 :::tip Step-by-step guide
@@ -93,7 +93,7 @@ It can also display and analyze data with other Google services, such as Google 
 
 ### Google Cloud BigQuery
 
-Google Cloud BigQuery is a data warehouse that enables you to query your connectivity metadata in real-time to gain insights and predict business outcomes.
+Google Cloud BigQuery is a data warehouse that enables you to query your connectivity metadata in real time to gain insights and predict business outcomes.
 
 :::tip Step-by-step guide
 [emnify Data Streamer integration for Google BigQuery](https://www.emnify.com/integration-guides/datastreamer-integration-google-bigquery)
