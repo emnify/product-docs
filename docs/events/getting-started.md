@@ -1,4 +1,8 @@
-# emnify platform events
+---
+description: Learn the basics and structure of emnify events.
+---
+
+# Getting started with events
 
 The emnify platform generates several types of events. 
 These events allow you to track notable system occurrences based on behavior.

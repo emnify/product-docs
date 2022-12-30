@@ -1,4 +1,5 @@
 ---
+description: List of event types exclusively for MNO and Resellers.
 toc_max_heading_level: 2
 ---
 
