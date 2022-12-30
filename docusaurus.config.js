@@ -54,46 +54,58 @@ const config = {
         style: "dark",
         links: [
           {
-            title: "Docs",
+            title: "Resources",
             items: [
               {
-                label: "Tutorial",
-                to: "/docs/intro",
+                label: "emnify website",
+                to: "https://www.emnify.com/",
               },
+              {
+                label: "Integration guides",
+                href: "https://www.emnify.com/integration-guides"
+              },
+              {
+                label: "REST API reference",
+                href: "https://cdn.emnify.net/api/doc/index.html"
+              }
             ],
           },
           {
-            title: "Community",
+            title: "Support",
             items: [
               {
-                label: "Stack Overflow",
-                href: "https://stackoverflow.com/questions/tagged/docusaurus",
+                label: "Open a ticket",
+                href: "https://support.emnify.com/hc/en-us"
               },
               {
-                label: "Discord",
-                href: "https://discordapp.com/invite/docusaurus",
+                label: "Request a feature",
+                href: "https://emnify.canny.io/"
+              },
+              {
+                label: "System status",
+                href: "https://status.emnify.com/"
+              }
+            ],
+          },
+          {
+            title: "Social",
+            items: [
+              {
+                label: "GitHub",
+                to: "https://github.com/emnify/",
+              },
+              {
+                label: "Developer blog",
+                href: "https://www.emnify.com/developer-blog"
               },
               {
                 label: "Twitter",
-                href: "https://twitter.com/docusaurus",
-              },
-            ],
-          },
-          {
-            title: "More",
-            items: [
-              {
-                label: "Blog",
-                to: "/blog",
-              },
-              {
-                label: "GitHub",
-                href: "https://github.com/facebook/docusaurus",
+                href: "https://twitter.com/emnify",
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} emnify GmbH. All rights reserved.`,
       },
       prism: {
         theme: lightCodeTheme,
