@@ -5,7 +5,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "emnify Documentation",
-  tagline: "We spark innovation in IoT.",
+  tagline: "Developer resources and documentation for the emnify SuperNetwork.",
   url: "https://docs.emnify.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
