@@ -20,7 +20,9 @@ Some common use cases for events on emnify include:
 - **Monitoring** (e.g., SIM or data connection lifecycles)
 - **Input for custom billing systems** (i.e., updating billing configuration, processing invoices, etc.)
 
-<!-- TODO: Add link to Events docs once published -->
+:::tip
+Learn more about the available event types and how to use them in the [Event documentation](../events/getting-started).
+:::
 
 ## Usage data
 

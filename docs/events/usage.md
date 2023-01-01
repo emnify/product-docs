@@ -17,7 +17,9 @@ With the emnify Data Streamer, you can configure data streams to reflect events 
 Using one of the many integrations provides you with complete network transparency to triage and resolve issues quickly and build your application or business logic based on the provided information.
 These integrations also provide insights for IoT remote monitoring and anomaly detection or detailed information about service usage (i.e., data, SMS) and cost per device. 
 
-<!-- TODO: Link to Data Streamer documentation once published -->
+:::tip
+Follow the [Data Streamer documentation](../data-streamer/getting-started) to learn more about the benefits and how to get started.
+:::
 
 ### Managing event data streams in the Portal
 
@@ -50,10 +52,8 @@ Selecting the latter will display a searchable dropdown listing all [event types
 <!-- SCREENSHOT -->
 
 :::tip
-You can also create, update, and delete data streams using the Portal. 
+You can also create, update, and delete data streams using the Portal. Learn more in the [Data Streamer usage documentation](../data-streamer/usage#data-streamer-in-the-portal).
 :::
-
-<!-- TODO: Link to Data Streamer documentation once published -->
 
 ## Event API
 
