@@ -34,7 +34,13 @@ const sidebars = {
     {
       type: 'category',
       label: 'Services',
+      link: { 
+        type: 'generated-index', 
+        title: 'Service Stack Overview',
+        slug: 'services'
+      },
       items: [
+        'services/stack-overview',
         'services/global-iot-sim',
         'services/global-iot-network',
         'services/iot-cloud-communication-platform',
