@@ -1,18 +1,63 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
-
-/* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #0065b3;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
+  --ifm-font-family-base: 'Avenir LT Pro', Helvetica, Arial, sans-serif;
+  --ifm-color-content: #000035;
+  --ifm-color-primary: #000035;
+  --ifm-footer-background-color: #F2F2F2;
+  --ifm-footer-link-color: #000035;
+  --ifm-menu-color-background-active: #010D410F;
+  --ifm-color-primary-dark: #000035;
+  --ifm-color-primary-darker: #000035;
+  --ifm-color-primary-darkest: #000035;
   --ifm-color-primary-light: #33925d;
   --ifm-color-primary-lighter: #359962;
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-content: #F5F5F5;
+  --ifm-footer-background-color: #404067;
+  --ifm-footer-link-color: #F5F5F5;
+  --ifm-color-primary: #F5F5F5;
+  --ifm-color-primary-dark: #F5F5F5;
+  --ifm-color-primary-darker: #F5F5F5;
+  --ifm-color-primary-darkest: #F5F5F5;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+html[data-theme='dark'] {
+  --ifm-background-color: #000035;
+  --ifm-background-surface-color: #000035;
+}
+
+article {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 996px) {
+  :root {
+    --ifm-font-size-base: 18px;
+  }
+  article header h1 {
+    font-size: 1.5rem !important;
+  }
+  .hero .hero__title {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 997px) {
+  :root {
+    --ifm-font-size-base: 17px;
+  }
+  article header h1 {
+    font-size: 2rem !important;
+  }
 }
