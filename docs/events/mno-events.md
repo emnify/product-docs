@@ -25,7 +25,7 @@ Reset password email is requested for a specific email address.
 
 ### User verification requested
 
-User signed up or requested another verification email afterward. 
+User signed up or requested another verification email. 
 
 :::note
 This event is only needed when customers use [self-signup](#self-signup). 
@@ -79,11 +79,11 @@ The following events are only available if you're using the [Embedded SIM Shop](
 
 ### Order submitted
 
-SIM order is submitted by a user.
+A user submitted a SIM order.
 
 ### Order updated
 
-SIM order is updated.
+SIM order has been updated.
 
 **Possible updates**:
 - Status **Paid** (if previously unpaid)

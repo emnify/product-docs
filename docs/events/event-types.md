@@ -5,7 +5,7 @@ toc_max_heading_level: 2
 
 # Event types
 
-The following is a list of available event types, including the corresponding IDs and descriptions. 
+The following is a list of available event types, including their corresponding IDs and descriptions. 
 
 :::note API Reference 
 [Event Type Object - Event API Reference Documentation](https://cdn.emnify.net/api/doc/event.html#event-type-object)
@@ -43,7 +43,7 @@ Device attached to a network when first switched on or moved to a new location.
 It can also periodically inform the network of the device's location.
 
 **Example**: A SIM card has (re)authenticated with a different network element. 
-If successful, the device will show as **Attached** in the [emnify Portal](usage#emnify-portal) and can already receive SMS.
+If successful, the device will appear as **Attached** in the [emnify Portal](usage#emnify-portal) and will be ready to receive SMS.
 
 
 ### Update GPRS location
@@ -55,7 +55,8 @@ The SGSN then uses that information to provide functionality switching, security
 
 ### Purge location
 
-Device is unreachable or switched off, and the network doesn't know its location. The device status will show as **Offline** in the [emnify Portal](usage#emnify-portal).
+Device is unreachable or switched off, and the network doesn't know its location.
+The device status will appear as **Offline** in the [emnify Portal](usage#emnify-portal).
 
 **Example**: The network deletes the routing information for a mobile-terminated call or mobile-terminated short message and marks the device not reachable.
 
@@ -75,7 +76,7 @@ Device is inactive and doesn't send or receive any packets.
 Activation (or rejection) of data connectivity. 
 
 **Example**: A device has established a data session and started transferring data. 
-This device will show as **Online** in the [emnify Portal](usage#emnify-portal) (as long as there hasn't been a subsequent [Delete PDP Context](#delete-pdp-context) event).
+This device will appear as **Online** in the [emnify Portal](usage#emnify-portal) as long as there hasn't been a subsequent [Delete PDP Context](#delete-pdp-context) event.
 
 
 ### Delete PDP Context
@@ -83,7 +84,7 @@ This device will show as **Online** in the [emnify Portal](usage#emnify-portal) 
 Data session between the device and the network is deleted. 
 
 **Example**: A device disconnected and ended a data transfer. 
-The event details will also show the data transmitted, and the device status will show as **Attached** in the [emnify Portal](usage#emnify-portal).
+The event details will also show the data transmitted, and the device will appear as **Attached** in the [emnify Portal](usage#emnify-portal).
 
 ## Application and user authentication 
 
@@ -123,7 +124,7 @@ User successfully verified their email.
 
 ### User deleted
 
-User is deleted by another user.
+A user deleted another user's account.
 
 ## Device status management
 
@@ -144,15 +145,17 @@ User is deleted by another user.
 The SIM is patched to the **Activated** status after previously holding one of the following statuses: 
 **Issued**, **Suspended**, or **Factory Test**.
 
-This event can be manually triggered through the [emnify Portal or REST API](usage) and automatically after reaching the factory test mode threshold (data or SMS).
+You can manually trigger this event by using the [emnify Portal or REST API](usage). 
+Or, it will be automatically triggered when the factory test mode threshold (data or SMS) is reached.
 
 :::note
-Activated SIMs are able to use network services.
+Activated SIMs can use network services.
 :::
 
 ### SIM suspension
 
-The SIM is patched to the **Suspended** status, temporarily suspending and blocking it from network access. Once suspended, no charges apply for that SIM starting the next month.
+The SIM is patched to the **Suspended** status, temporarily suspending and blocking it from network access. 
+Starting from the first day of the next month, the suspended SIM will not accrue any charges.
 
 :::tip
 Activating a SIM with the **Suspended** status again is possible at any time.
@@ -252,26 +255,26 @@ The threshold percentage can be submitted when the data quota is assigned to the
 ### Quota used up
 
 Data quota volume is completely depleted. 
-Exclusively for devices with enabled data quota management. 
+Exclusively for devices with data quota management enabled. 
 
 :::caution
 Once this happens, the data quota status updates from **Active** to **Exhausted**, and the device won't be able to consume from the data service. 
-Established connections for that device will disconnect within seconds, and new connection requests will be denied until a new data quota is assigned or data quota management is disabled on the service profile.
+Established connections for that device will disconnect within seconds, and new connection requests will be denied until a new data quota is assigned or data quota management is disabled in the service profile.
 :::
 
 ### Data quota enabled
 
-Data quota management is enabled on a service profile. 
+Data quota management is enabled in a service profile. 
 
 :::caution
 All devices using this service profile need to have an active data quota assigned to use the data service. 
 Devices without active data quotas will disconnect within seconds. 
-New connection requests will be denied until a new data quota is assigned or data quota management is disabled on the service profile.
+New connection requests will be denied until a new data quota is assigned or data quota management is disabled in the service profile.
 :::
 
 ### Data quota disabled
 
-Data quota management is disabled on a service profile. 
+Data quota management is disabled in a service profile. 
 
 :::caution
 There will no longer be data service restrictions for devices using this service profile.
@@ -283,7 +286,7 @@ New data quota is assigned to a device.
 
 :::tip
 Assigning a new data quota to a device is possible at any time. 
-[Data quota management must be enabled](#data-quota-enabled) on the service profile.
+[Data quota management must be enabled](#data-quota-enabled) in the service profile.
 :::
 
 **Example**: A device has a quota volume of 50 MB with daily auto-refill enabled, valid until May 27, 2025, and action on exhaustion set to block. 
@@ -296,9 +299,9 @@ On exhaustion, the data service will be blocked.”
 Data quota is deleted from a device. 
 
 :::caution
-Once deleted, devices on this service profile (with data quota management enabled) won't be able to use the data service. 
+Once deleted, devices on this service profile with data quota management enabled won't be able to use the data service. 
 Potential data connections of this device will disconnect within seconds. 
-New connection requests will be denied until an active data quota is assigned or data quota management is disabled on the service profile.
+New connection requests will be denied until an active data quota is assigned or data quota management is disabled in the service profile.
 :::
 
 ### Data quota expired
@@ -308,7 +311,7 @@ Active data quota of a device expired (and the quota status changed to **Expired
 :::caution
 Once expired, devices on this service profile (with data quota management enabled) won't be able to use the data service. 
 Potential data connections of this device will disconnect within seconds. 
-New connection requests will be denied until an active data quota is assigned or data quota management is disabled on the service profile.
+New connection requests will be denied until an active data quota is assigned or data quota management is disabled in the service profile.
 :::
 
 ## SMS quota management
@@ -323,7 +326,7 @@ New connection requests will be denied until an active data quota is assigned or
 | 59 | [SMS quota deleted](#sms-quota-deleted)                     |
 
 :::note API Reference
-Quota information is in the [detail object](https://cdn.emnify.net/api/doc/event.html#detail-object) of the event.
+Quota information is in the event's [detail object](https://cdn.emnify.net/api/doc/event.html#detail-object).
 :::
 
 ### SMS quota threshold reached
@@ -344,22 +347,22 @@ Exclusively for devices with enabled SMS quota management.
 
 :::caution
 Once this happens, the SMS quota status updates from **Active** to **Exhausted**, and the device won't be able to consume from the SMS service. 
-Established connections for that device will disconnect within seconds, and new connection requests will be denied until a new SMS quota is assigned or SMS quota management is disabled on the service profile.
+Established connections for that device will disconnect within seconds, and new connection requests will be denied until a new SMS quota is assigned or SMS quota management is disabled in the service profile.
 :::
 
 ### SMS quota enabled
 
-SMS quota management is enabled on a service profile. 
+SMS quota management is enabled in a service profile. 
 
 :::caution
 All devices using this service profile need to have an active SMS quota assigned to use the SMS service. 
 Devices without active SMS quotas will disconnect within seconds. 
-New connection requests will be denied until a new SMS quota is assigned or SMS quota management is disabled on the service profile. 
+New connection requests will be denied until a new SMS quota is assigned or SMS quota management is disabled in the service profile. 
 :::
 
 ### SMS quota disabled
 
-SMS quota management is disabled on a service profile. 
+SMS quota management is disabled in a service profile. 
 
 :::caution
 There will no longer be SMS service restrictions for devices using this service profile.
@@ -371,7 +374,7 @@ New SMS quota is assigned to a device.
 
 :::tip
 Assigning a new SMS quota to a device is possible at any time. 
-[SMS quota management must be enabled](#sms-quota-enabled) on the service profile.
+[SMS quota management must be enabled](#sms-quota-enabled) in the service profile.
 :::
 
 ### SMS quota deleted
@@ -379,7 +382,7 @@ Assigning a new SMS quota to a device is possible at any time.
 SMS quota is deleted from a device. 
 
 :::caution
-Once deleted, devices on this service profile (with SMS quota management enabled) won't be able to use the SMS service until an active SMS quota is assigned, or SMS quota management is disabled on the service profile.
+Once deleted, devices on this service profile (with SMS quota management enabled) won't be able to use the SMS service until an active SMS quota is assigned, or SMS quota management is disabled in the service profile.
 :::
 
 ## CloudConnect lifecycle 

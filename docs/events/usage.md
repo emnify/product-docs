@@ -18,12 +18,12 @@ Using one of the many integrations provides you with complete network transparen
 These integrations also provide insights for IoT remote monitoring and anomaly detection or detailed information about service usage (i.e., data, SMS) and cost per device. 
 
 :::tip
-Follow the [Data Streamer documentation](../data-streamer/getting-started) to learn more about the benefits and how to get started.
+See the [Data Streamer documentation](../data-streamer/getting-started) to learn more about its benefits and how to get started.
 :::
 
 ### Managing event data streams in the Portal
 
-To manage your data streams, log in to your account on the [emnify Portal](https://portal.emnify.com/). 
+To manage your data streams, log in to your [emnify Portal](https://portal.emnify.com/) account. 
 Then, navigate to the **Integrations** page by clicking the **Integrations** menu item in the sidebar.
 
 If there are no data streams configured, the **Data Streams** panel displays all available connection types as tiles.
@@ -52,7 +52,8 @@ Selecting the latter will display a searchable dropdown listing all [event types
 <!-- SCREENSHOT -->
 
 :::tip
-You can also create, update, and delete data streams using the Portal. Learn more in the [Data Streamer usage documentation](../data-streamer/usage#data-streamer-in-the-portal).
+You can also create, update, and delete data streams using the Portal.
+Learn more in the [Data Streamer usage documentation](../data-streamer/usage#data-streamer-in-the-portal).
 :::
 
 ## Event API
@@ -63,20 +64,21 @@ The [Event API](#retrieving-events-with-the-event-api) specifically allows searc
 
 :::caution
 For events, the emnify REST API uses a [pull architecture](https://dev.to/anubhavitis/push-vs-pull-api-architecture-1djo), which means you're responsible for requesting updates and retrieving new events. 
-If you'd prefer real-time updates, use the [emnify Data Streamer](#data-streamer).
+If you prefer real-time updates, use the [emnify Data Streamer](#data-streamer).
 :::
 
 ### Authentication
 
-To use the emnify API, you need to authenticate with an authentication token. We use JWTs as the authentication token. 
+To use the emnify API, you need to authenticate with an authentication token.
+We use JSON Web Tokens (JWTs) for our authentication tokens. 
 
 :::tip
-The [Getting Started guide in the *emnify REST API Documentation*](https://cdn.emnify.net/api/doc/getting-started.html) provides step-by-step instructions for retrieving this token.
+The [Getting Started guide in the *emnify REST API Documentation*](https://cdn.emnify.net/api/doc/getting-started.html) provides step-by-step instructions for retrieving your token.
 :::
 
 ### Specification and documentation
 
-The emnify API is based on the OpenAPI Specification OAS3. 
+The emnify API is based on the OpenAPI Specification 3.0 (OAS3). 
 We also have [interactive API documentation](https://cdn.emnify.net/api/doc/swagger.html).  
 
 :::note
@@ -92,7 +94,7 @@ The following entry points are available for retrieving a list of the events or 
 
 | Method   | Entry point     | Description   |
 | -------- | --------------- | ------------- |
-| `GET`    | [/api/v1/event](https://cdn.emnify.net/api/doc/swagger.html#/Events/GetEvents)  | Returns the list of events, filtered, sorted and paged according to query parameters. |
+| `GET`    | [/api/v1/event](https://cdn.emnify.net/api/doc/swagger.html#/Events/GetEvents)  | Returns the list of events, filtered, sorted, and paged according to query parameters. |
 | `GET`    | [/api/v1/event/type](https://cdn.emnify.net/api/doc/swagger.html#/Events/EventTypeGet)  | Provides the list of event_types (lookup). |
 
 Using the following entry points, you can also list events for specific endpoints, SIMs, or users. 
@@ -113,8 +115,8 @@ There are several ways to view or trigger events within [the emnify Portal](http
 Here's where you can find event information in the Portal: 
 
 - **Dashboard**: Overview of all event activity within your organization. 
-- **Connected Devices** → **Details** → **Events**: List of triggered events for that particular device (also referred to as "endpoint").
-- **SIM Inventory** → **Details** → **Events**: List of triggered events for that particular SIM card.
+- **Connected Devices** → **Details** → **Events**: List of triggered events for a particular device (also referred to as an "endpoint").
+- **SIM Inventory** → **Details** → **Events**: List of triggered events for a particular SIM card.
 
 :::info
 Any events triggered in the [Portal](https://portal.emnify.com/) will show **API** as the [event source](getting-started#event-source).
@@ -126,10 +128,11 @@ No matter where you view events in the Portal, you'll have access to the followi
 
 - **Severity**: The [event severity](getting-started#event-severity).
 - **Date**: When the event was triggered. By default, the Portal shows the relative date (e.g., "a day ago", "15 days ago," "a month ago"). Pressing the clock icon will show an absolute date value in the `MMMM dd, yyyy hh:mm a` format.
-- **Event Source**: What [system triggered the event](getting-started#event-source).
+- **Event Source**: Which [system triggered the event](getting-started#event-source).
 - **Event Type**: [Name of the triggered event](event-types) (the `description` value in the [Event Type Object](https://cdn.emnify.net/api/doc/event.html#event-type-object)). This field will also indicate the network generation (i.e., [4G](https://www.emnify.com/iot-glossary/4g), [5G](https://www.emnify.com/iot-glossary/5g), etc.) for specific events, like [PDP context lifecycles](event-types#data-connection-lifecycle).
 - **Device**: Name of the device impacted by the event (the `name` value from the [Endpoint Object](https://cdn.emnify.net/api/doc/event.html#endpoint-object)). This name will often link to the device's entry on the "Connected Devices" page.
-- **Operator**: [Mobile Network Operator (MNO)](https://www.emnify.com/iot-glossary/mno) the device is currently roaming on (e.g., Vodafone, AT&T). Only listed for relevant Network events.
+- **Operator**: Which [Mobile Network Operator (MNO)](https://www.emnify.com/iot-glossary/mno) the device is currently roaming on (e.g., Vodafone, AT&T).
+Only listed for relevant network events.
 - **Country**: The country where the MNO listed in the `Operator` field is providing the cellular service.
 - **ID**: A generated unique identifier for the event.
 - **Description**: What happened, why (in some cases), and any additional details associated with the event type.
