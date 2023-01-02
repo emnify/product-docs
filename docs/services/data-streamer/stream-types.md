@@ -91,10 +91,10 @@ Usage records for data are created:
         },
         "endpoint": {
             "id": 10830095,
-            "name": "Christian iphone 12",
+            "name": "Wallbox 232",
             "ip_address": "10.196.67.7",
             "tags": "V1",
-            "imei": "3570768349121414",
+            "imei": "8677300511111142",
             "balance": {
                 "amount": -0.684147,
                 "last_updated": "2022-04-26T12:02:21Z",
@@ -115,8 +115,8 @@ Usage records for data are created:
         "start_timestamp": "2022-04-26T11:53:43Z",
         "sim": {
             "id": 3324192,
-            "iccid": "8988303000005609322",
-            "msisdn": "423663920766251",
+            "iccid": "8988303000005555555",
+            "msisdn": "423663920123456",
             "production_date": "2020-09-09T06:42:59Z"
         },
         "currency": {
@@ -176,10 +176,10 @@ Usage records for SMS are created when an SMS is successfully delivered either:
         },
         "endpoint": {
             "id": 10830095,
-            "name": "Christian iphone 12",
+            "name": "Wallbox 232",
             "ip_address": "10.196.67.7",
             "tags": "V1",
-            "imei": "3570768349121414",
+            "imei": "8677300511111142",
             "balance": {
                 "amount": -0.754147,
                 "last_updated": "2022-04-26T13:13:56Z",
@@ -191,7 +191,7 @@ Usage records for SMS are created when an SMS is successfully delivered either:
                 }
             }
         },
-        "imsi": "295050901064821",
+        "imsi": "901430111111111",
         "volume": {
             "total": 1,
             "rx": 1,
@@ -200,8 +200,8 @@ Usage records for SMS are created when an SMS is successfully delivered either:
         "start_timestamp": "2022-04-26T13:13:56Z",
         "sim": {
             "id": 3324192,
-            "iccid": "8988303000005609322",
-            "msisdn": "423663920766251",
+            "iccid": "8988303000005555555",
+            "msisdn": "423663920123456",
             "production_date": "2020-09-09T06:42:59Z"
         },
         "currency": {
