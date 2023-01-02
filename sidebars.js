@@ -80,7 +80,7 @@ const sidebars = {
       label: 'Events',
       link: {
         type: 'generated-index', 
-        title: 'emnify platform events',
+        title: 'emnify system events',
         slug: '/events'
       },
       items: [

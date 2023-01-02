@@ -19,7 +19,7 @@ The following is a list of available event types, including their corresponding 
 
 ### Generic
 
-Data session disconnected while applying the updated actions on the connectivity ([PDP sessions](#data-connection-lifecycle)) or the [updated quota information](#data-quota-management).
+Data session disconnected while applying the updated actions on the connectivity ([PDP sessions](#data-connection-lifecycle)) or while applying the [updated quota information](#data-quota-management).
 
 :::info
 Other generic event triggers are possible. 

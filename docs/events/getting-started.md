@@ -4,7 +4,7 @@ description: Learn the basics and structure of emnify events.
 
 # Getting started with events
 
-The emnify platform generates several types of events. 
+The emnify system generates several types of events. 
 These events allow you to track notable system occurrences based on behavior.
 
 Some common use cases for events on emnify include:
@@ -43,8 +43,9 @@ Events are distinguished by three severity levels:
 Every event is triggered by one of three available event sources:
 
 - **Network**: The cellular network your device is connected to (e.g., a location is updated or purged).
-- **Policy Control**: The emnify system, typically to enforce a policy, quota, or otherwise set limitation. 
-The emnify platform can set these limitations (e.g., a device is currently blocked due to exceeded traffic limit) or your organization (e.g., a pre-configured SMS usage limit for a specific device has been reached).
+- **Policy Control**: Both the emnify system and your organization can define and enforce policies, quotas, or other limitations. For instance:
+  - The emnify system can block devices that exceed predefined traffic limits.
+  - Your organization could configure the maximum SMS usage for devices to limit SMS traffic.
 - **API**: The [emnify REST API](https://cdn.emnify.net/api/doc/index.html).
 
 :::info

@@ -121,13 +121,13 @@ You can also create dashboards and trigger alerts on specific events or situatio
 ## Webhook
 
 The data streamer may also send usage and event data in JSON format to a configurable, user-specified webhook URL. 
-In this case, users provide an application that consumes HTTP POST requests sent from the emnify platform.
+In this case, users provide an application that consumes HTTP POST requests sent from the emnify system.
 
 This is the most flexible method of processing a data stream. It allows any custom implementation of analytics, reporting, or a pipeline of tools to process usage and event data.
 
 To use the Webhook data stream, you must provide a web service that listens for messages from the emnify Data Streamer.
 
-The emnify platform will send HTTP POST requests with JSON data payloads when event or usage data records occur.
+The emnify system will send HTTP POST requests with JSON data payloads when event or usage data records occur.
 
 When using the emnify Webhook in bulk mode, each HTTP POST will include a JSON collection instead of an individual event or usage data record. 
 The HTTP POST requests are sent at intervals and should be used if the receiving system needs to process multiple events in bulk instead of individual events as they occur.
