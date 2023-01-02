@@ -33,14 +33,24 @@ const sidebars = {
     {
       type: 'category',
       label: 'Quickstart',
-      link: {type: 'doc', id: 'quickstart/order-a-sim-package'},
+      link: {
+        type: 'generated-index',
+        title: 'Quickstart guide',
+        slug: 'quickstart'
+      },
       items: [
+        'quickstart/order-a-sim-package',
         'quickstart/registering-sims',
         {
           type: 'category',
           label: 'Devices',
-          link: {type: 'doc', id: 'quickstart/devices/creating-a-device'},
+          link: {
+            type: 'generated-index',
+            title: 'Devices',
+            slug: 'devices',
+          },
           items: [
+            'quickstart/devices/creating-a-device',
             'quickstart/devices/getting-the-first-device-online',
             'quickstart/devices/android',
             'quickstart/devices/ios-devices',

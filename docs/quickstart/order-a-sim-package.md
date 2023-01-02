@@ -1,13 +1,12 @@
-# Quickstart
+# Sign up for an emnify account
 
-To begin developing your IoT solutions with emnify, you will need an
-emnify account.
+To begin developing your IoT solutions with emnify, you'll need an emnify account.
 [Sign up](https://portal.emnify.com/sign/up) for free to a 60-day trial to use all functionalities.
 
 ## Order a free evaluation SIM package
 
 You can order your free Evaluation SIM package on the emnify Portal with which you can test all emnify services.
-Currently, the 3 physical SIM cards can be delivered to many destinations at no charge.
+Currently, the 3 physical SIM cards can be delivered to most destinations at no charge.
 For other destinations, we do charge a small shipping fee.
 
 To get started immediately, you can download the eSIM for your smartphone or eSIM enabled tablet for free.
