@@ -39,8 +39,14 @@ We'll update this list as new event types are created.
 
 ### Update location
 
-Device attached to a network when first switched on or moved to a new location. 
-It can also periodically inform the network of the device's location.
+When a device attaches for the first time, it will send an authentication request. 
+This request is immediately followed by an `Update location` event.
+
+After the first authentication, the device will send additional `Update location` events to inform the network about the current location. 
+This happens periodically or when entering a new location area.
+
+These `Update location` events register the device in the circuit-switched (CS) domain, allowing the device to send and receive SMS. 
+Devices not using 2G or 3G may not register on the CS domain.
 
 **Example**: A SIM card has (re)authenticated with a different network element. 
 If successful, the device will appear as **Attached** in the [emnify Portal](usage#emnify-portal) and will be ready to receive SMS.
@@ -48,21 +54,30 @@ If successful, the device will appear as **Attached** in the [emnify Portal](usa
 
 ### Update GPRS location
 
-Used by the serving GPRS support node (SGSN) to update the device's location. 
-The SGSN then uses that information to provide functionality switching, security, and authentication.
+Similar to the [`Update location`](#update-location) event, the `Update GPRS location` event shows the registration on the packet-switched (PS) domain. 
+This event is also sent periodically or when changing the location area.
 
 **Example**: A SIM card has successfully registered for data sessions with a different network element.
 
+:::note
+A device can only establish a data session after registering on the PS domain.
+::: 
+
 ### Purge location
 
-Device is unreachable or switched off, and the network doesn't know its location.
-The device status will appear as **Offline** in the [emnify Portal](usage#emnify-portal).
+The `Purge location` event can be sent by the visited or home network to delete all location information for the circuit-switched (CS) domain. 
+
+The visited network may send this event if the device is unreachable or switched off for a longer period, indicating to the home network that the device is unavailable. 
+
+The home network (emnify) may send this event to delete all information on the visited network, so the device needs a new authentication.
+
+Once executed, the device status will appear as **Offline** in the [emnify Portal](usage#emnify-portal).
 
 **Example**: The network deletes the routing information for a mobile-terminated call or mobile-terminated short message and marks the device not reachable.
 
 ### Purge GPRS location
 
-Device is inactive and doesn't send or receive any packets.
+Similar to the [`Purge location`](#purge-location) event, the `Purge GPRS location` event deletes all state information in the visited or home network but for the packet-switched (PS) domain.
 
 ## Data connection lifecycle  
 
@@ -260,6 +275,9 @@ Exclusively for devices with data quota management enabled.
 :::caution
 Once this happens, the data quota status updates from **Active** to **Exhausted**, and the device won't be able to consume from the data service. 
 Established connections for that device will disconnect within seconds, and new connection requests will be denied until a new data quota is assigned or data quota management is disabled in the service profile.
+
+It is also possible to define an action on **Throttle**. 
+This means the device can still use data services with less throughput. 
 :::
 
 ### Data quota enabled
@@ -306,13 +324,8 @@ New connection requests will be denied until an active data quota is assigned or
 
 ### Data quota expired
 
-Active data quota of a device expired (and the quota status changed to **Expired**).
-
-:::caution
-Once expired, devices on this service profile (with data quota management enabled) won't be able to use the data service. 
-Potential data connections of this device will disconnect within seconds. 
-New connection requests will be denied until an active data quota is assigned or data quota management is disabled in the service profile.
-:::
+Active data quota of a device expired and the quota status changed to **Expired**.
+Once expired, the device isn't able to establish a data session.
 
 ## SMS quota management
 
