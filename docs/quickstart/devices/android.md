@@ -1,3 +1,6 @@
+---
+description: How to manually configure the APN
+---
 # Android
 
 When setting up an Android device with an emnify SIM you need to follow these 5 steps

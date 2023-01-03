@@ -1,3 +1,6 @@
+---
+description: APN (Access Point Name) configuration is the first step
+---
 # Getting the first device online
 
 Any device equipped with a SIM card requires an APN (Access Point Name) configuration to establish a data session.

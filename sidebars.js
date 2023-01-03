@@ -36,10 +36,11 @@ const sidebars = {
       link: {
         type: 'generated-index',
         title: 'Quickstart guide',
-        slug: 'quickstart'
+        slug: 'quickstart',
+        description: 'Resources for your successful IoT cellular deployment with emnify',
       },
       items: [
-        'quickstart/order-a-sim-package',
+        'quickstart/getting-started',
         'quickstart/registering-sims',
         {
           type: 'category',
@@ -48,6 +49,7 @@ const sidebars = {
             type: 'generated-index',
             title: 'Devices',
             slug: 'devices',
+            description: 'How to create and configure various types of devices',
           },
           items: [
             'quickstart/devices/creating-a-device',

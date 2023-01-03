@@ -1,3 +1,6 @@
+---
+description: Configuring Quectel, u-Blox, and several other vendors
+---
 # Cellular modules
 
 For Telit, Sierra Wireless, Cinterion/Gemalto/Thales, SIMcom, or Sequans, see [General cellular IoT modules](#general-cellular-iot-modules).

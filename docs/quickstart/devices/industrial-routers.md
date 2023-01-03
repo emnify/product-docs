@@ -1,4 +1,7 @@
-# Industrial Routers
+---
+description: How to connect to routers to configure the APN
+---
+# Industrial routers
 
 *Applies to RUT240, RUT950, RUT955, RUTX09, RUTX11, RUTX12, RUTX14, RUTXR1, RUT360*
 

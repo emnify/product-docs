@@ -1,3 +1,6 @@
+---
+description: Tips and solutions for resolving common issues
+---
 # Troubleshooting
 
 When you experience issues while connecting your device for the first time there are several common patterns that can be identified by looking at the connected device section in the portal.

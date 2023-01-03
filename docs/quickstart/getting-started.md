@@ -1,3 +1,7 @@
+---
+title: Getting started with emnify
+description: How to start developing your IoT solutions with emnify
+---
 # Sign up for an emnify account
 
 To begin developing your IoT solutions with emnify, you'll need an emnify account.
