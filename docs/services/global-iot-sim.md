@@ -36,16 +36,16 @@ The following table shows comparisons to a standard consumer SIM.
 | Parameter | Consumer SIM | Commercial | Industrial |
 | --------- | ------------ | ---------- | ---------- |
 | Available form factors | 2FF, 3FF, 4FF | 2FF, 3FF, 4FF |MFF2, 2FF, 3FF (2-in-1 or 3-in-1) |
-| Temperature Range | - | 25° - 85°C | -40° - 105°C |
+| Temperature Range | | 25° - 85°C | -40° - 105°C |
 | Data Retention | 10 years | 10 years | 15 years at 85°C |
 | Write Cycles | 100,000 | 500,000 | 1,000,000
-| Memory | 64-128 kB  | 128 kB | 128 kB |
-| Corrosion Resistance Jedec JSD22-A107 | - | CA | CC |
-| Moisture Resistance Jedec JESD22-A102 |- | 110°C / 85% RH | 130°C / 85% RH |
-| Humidity Resistance Jedec JESD22-A101 | - | - | HA |
-| Vibration Jedec JESD22-B103 | - | - | VA |
-| Mechnical Shock Jedec JESD22-B104 | - | - | SA |
-| Low Power features | - | •&nbsp;Poll Interval negotiation •&nbsp;UICC&nbsp;suspension and resume | •&nbsp;Poll Interval negotiation •&nbsp;UICC&nbsp;suspension and resume |
+| Memory | 64-128 kB | 128 kB | 128 kB |
+| Corrosion Resistance Jedec JSD22-A107 | | CA | CC |
+| Moisture Resistance Jedec JESD22-A102 | | 110°C / 85% RH | 130°C / 85% RH |
+| Humidity Resistance Jedec JESD22-A101 | | | HA |
+| Vibration Jedec JESD22-B103 | | | VA |
+| Mechnical Shock Jedec JESD22-B104 | | | SA |
+| Low Power features | | •&nbsp;Poll Interval negotiation •&nbsp;UICC&nbsp;suspension and resume | •&nbsp;Poll Interval negotiation •&nbsp;UICC&nbsp;suspension and resume |
 
 ## eSIM
 
