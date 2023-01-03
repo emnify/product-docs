@@ -4,7 +4,7 @@ Within the emnify platform, there is a separation between SIM card and the devic
 This allows you to configure policies on the device level rather than SIM level.
 The device policies can be applied on a device group as well as at an individual level.
 
-#### Service Policies
+## Service policies
 
 Service policies define which services are available for a group of devices. These policies include:
 
