@@ -5,24 +5,23 @@ Being deployed in 3 AWS cloud regions within 2-3 availability zones / data cente
 
 ## Distributed Data Plane
 
-Traditional connectivity providers have a centrally located network core. All data is backhauled to the home country of the operator which means that customer data travels across the globe and distributed latency optimized application infrastructure is not possible.
+Traditional connectivity providers have a centrally located network core.
+All data is backhauled to the home country of the operator which means that customer data travels across the globe and distributed latency optimized application infrastructure is not possible.
 
-![200](assets/traditional_operators.png)
+![Traditional operators](assets/traditional_operators.png)
 
-Traditional operators
 
-![200](assets/emnify_distributed_plane.png)
+![emnify](assets/emnify_distributed_plane.png)
 
-emnify
-
-Traditional operators vs emnify
+## Traditional operators vs emnify
 
 The data plane of emnify’s cloud communication platform is distributed across major cloud regions (Virginia/US, Ireland/Europe, Singapore/APAC) and directly connected to central peering points with the local operators.
 
 ## Regional Breakout
 
-emnify’s distributed data plane enables device data to breakout locally, keeping the customer data within the same region. Moreover, it also helps reduce network latency. You can either select a specific breakout region or the network automatically selects the breakout region closest to the device. This can be done on the emnify Portal → Service Profile which is applicable to a group of devices.
+emnify’s distributed data plane enables device data to breakout locally, keeping the customer data within the same region.
+Moreover, it also helps reduce network latency.
+You can either select a specific breakout region or the network automatically selects the breakout region closest to the device.
+This can be done on the emnify Portal → **Service Profile** which is applicable to a group of devices.
 
-![regional](assets/regional.png)
-
-Regional Breakout Setting in the emnify Portal
+![Regional Breakout Setting in the emnify Portal](assets/regional.png)
