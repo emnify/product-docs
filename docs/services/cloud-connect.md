@@ -14,8 +14,6 @@ To establish a secure private network between your devices and your application 
 
 ![emnify Cloud Connect with AWS Transit gateway](assets/tgw.png)
 
-emnify Cloud Connect with AWS Transit Gateway
-
 To integrate Cloud Connect into your application using Transit Gateway, you can follow this [tutorial](https://www.emnify.com/en/developer-hub/emnify-cloud-connect-into-aws-transit-gateway) or follow this [quick video](https://www.youtube.com/watch?v=Orb3Kvd9pZg).
 
 ## IPsec
