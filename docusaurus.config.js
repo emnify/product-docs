@@ -12,7 +12,7 @@ const config = {
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
 
-  // GitHub pages deployment config (just in case)
+  // GitHub pages deployment config
   organizationName: "emnify",
   projectName: "product-docs",
 
