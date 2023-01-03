@@ -43,36 +43,12 @@ const sidebars = {
         slug: 'data-streamer'
       },
       items: [
-        {
-          type: 'doc',
-          label: 'Getting Started',
-          id: 'data-streamer/getting-started'
-        },
-        {
-          type: 'doc',
-          label: 'Connection Types',
-          id: 'data-streamer/connection-types'
-        },
-        {
-          type: 'doc',
-          label: 'Stream Types',
-          id: 'data-streamer/stream-types'
-        },
-        {
-          type: 'doc',
-          label: 'Managing Data Streams',
-          id: 'data-streamer/managing-data-streams'
-        },
-        {
-          type: 'doc',
-          label: 'Using the Data Streamer',
-          id: 'data-streamer/usage'
-        },
-        {
-          type: 'doc',
-          label: 'Available Integrations',
-          id: 'data-streamer/available-integrations'
-        }
+        'data-streamer/getting-started',
+        'data-streamer/connection-types',
+        'data-streamer/stream-types',
+        'data-streamer/managing-data-streams',
+        'data-streamer/usage',
+        'data-streamer/available-integrations'
       ],
     },
     {
