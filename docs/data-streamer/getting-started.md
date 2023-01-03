@@ -1,4 +1,5 @@
 ---
+title: Getting started
 description: Benefits of the Data Streamer and how you can get started.
 ---
 
