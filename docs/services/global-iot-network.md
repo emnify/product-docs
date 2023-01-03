@@ -99,12 +99,12 @@ While utilizing LTE infrastructure both NB-IoT and LTE-M are also part of the 5G
 Both technologies have been specified to meet the demand for IoT use cases in terms of:
 
 - Reduced cost - to enable mass production of cellular IoT devices
-    - Removing unnecessary LTE features for IoT such as dual carrier, high modulations
+  - Removing unnecessary LTE features for IoT such as dual carrier, high modulations
 - Low power utilization - for battery powered use cases that require years of operation
-    -  Introducing power saving features such as [PSM](#psm) and [eDRX](#edrx)
-    -  Reducing the max. transmission power to less than 200mA to cater for battery max. current (GSM for example has 2A max power) 
+  -  Introducing power saving features such as [PSM](#psm) and [eDRX](#edrx)
+  -  Reducing the max. transmission power to less than 200mA to cater for battery max. current (GSM for example has 2A max power) 
 - Wider coverage - (+14 dB for LTE-M and +20 dB for NB-IoT sensitivity) for rural/indoor/underground use cases
-    - Utilizing extended coverage feature with more retransmissions to ensure data gets delivered 
+  - Utilizing extended coverage feature with more retransmissions to ensure data gets delivered 
 - Smaller module size - to enable smaller device use cases
 
 Because LTE-M and NB-IoT rely on LTE infrastructure they are also deployed in a multitude of different frequency bands.
@@ -129,60 +129,85 @@ Power-Save-Mode (PSM)
 Cellular communication for smartphones usually requires low latency on downlink, e.g., in case you are being called, your phone should ring right away.
 Because of this, there are two things the device does which require power:  
   1. Continuously listening to the radio if there is an incoming call
-  1. Transmitting location information to the network where it should be called - whenever it moves out of a tracking area and periodically every 54 minutes
+  1. Transmitting location information to the network where it should be called - whenever it moves out of a tracking area and periodically every 54 minutes  
+&nbsp;  
+&nbsp;  
 - How does **Power Save Mode** work?  
+&nbsp;  
 For most IoT use cases a downlink-initiated channel is not required.
 It is usually the device that initiates the communication to send e.g., sensor data.
-Therefore, a **Power Save Mode** is introduced that allows the device to go to sleep in case it has nothing to send.
+Therefore, a **Power Save Mode** is introduced that allows the device to go to sleep in case it has nothing to send.  
+&nbsp;  
 The **Power Save Mode** has the following characteristics:  
-- The Power Save Mode is like a power off period during which the module only consumes a couple of μA.
-- The device tells the network how long it is going periodically into PSM (timer T3412 extended).
-- The device/module will not be reachable during PSM from the outside in downlink.
-- The device can wake up the module and send data (e.g., powerkey, interrupt or pin triggered).
-- When the device wakes up, it does not need to reattach and re-establish a PDN connection (unless it has moved to a different tracking area).
-- After the device wakes up, it stays in idle mode for a configurable time (timer T3324) to listen for downlink messages (e.g., firmware updates).
-- The actual time the device is then in Power Save Mode is T3412 extended - T3324
+  - The Power Save Mode is like a power off period during which the module only consumes a couple of μA.
+  - The device tells the network how long it is going periodically into PSM (timer T3412 extended).
+  - The device/module will not be reachable during PSM from the outside in downlink.
+  - The device can wake up the module and send data (e.g., powerkey, interrupt or pin triggered).
+  - When the device wakes up, it does not need to reattach and re-establish a PDN connection (unless it has moved to a different tracking area).
+  - After the device wakes up, it stays in idle mode for a configurable time (timer T3324) to listen for downlink messages (e.g., firmware updates).
+  - The actual time the device is then in Power Save Mode is T3412 extended - T3324
 
-PSM and the 3412 and T3324 timers
+<!-- This is the "alt" text for a missing image: "PSM and the 3412 and T3324 timers" -->
    
 :::note
 Some modules which have a SIM enabled PIN, (e.g., u-blox SARA-R4/SARA-N4) do not go into sleep mode.
 The PIN is disabled on emnify SIMs.
 :::
 
-- Roaming for Power Save Mode  
+- Roaming for Power Save Mode 
+&nbsp;  
+&nbsp;   
 Be aware that not all NB-IoT and LTE-M networks have implemented PSM and even when PSM is available with the local operator this does not mean that a roaming SIM can use it.
 This makes it difficult for devices that are moving - in case they use PSM, and the new network does not support PSM - or only other timer configurations.
 We therefore regularly test the availability of PSM in our [LTE-M](https://www.emnify.com/lte-m-coverage?hsLang=en) and [NB-IoT](https://www.emnify.com/nb-iot-coverage) roaming footprint.
-- AT Command calculation and examples for PSM settings  
-The 3GPP defined AT command to configure PSM is `AT+CPSMS` which sets the T3412 extended and T3324 timers.  
+- AT Command calculation and examples for PSM settings 
+&nbsp;  
+&nbsp;   
+The 3GPP defined AT command to configure PSM is `AT+CPSMS` which sets the T3412 extended and T3324 timers. 
+&nbsp;  
+&nbsp;   
 An example command is  
-`AT+CPSMS=1,,,01001110,00000101`   
-PSM will be enabled (`1`) and the desired value for T3412 extended is 140 hours (`01001110`) and the desired value for the T3324 timer is 10s (`01001110`).  
+&nbsp;  
+`AT+CPSMS=1,,,01001110,00000101`
+&nbsp;  
+&nbsp;  
+PSM will be enabled (`1`) and the desired value for T3412 extended is 140 hours (`01001110`) and the desired value for the T3324 timer is 10s (`01001110`).
 The network does not necessarily use the desired values but utilizes supported values that are close to the desired values.
 To read the effective PSM configuration use the command  
-`AT+CPSMS?`  
-There is a good calculator that translates the intended time settings for 3412 and T3324 available from [Thales](https://www.thalesgroup.com/en/markets/digital-identity-and-security/iot/resources/developers/psm-calculation-tool).  
+&nbsp;   
+`AT+CPSMS?`
+&nbsp;  
+&nbsp;     
+There is a good calculator that translates the intended time settings for 3412 and T3324 available from [Thales](https://www.thalesgroup.com/en/markets/digital-identity-and-security/iot/resources/developers/psm-calculation-tool). 
+&nbsp;  
+&nbsp;  
 Module vendors have also implemented module specific commands, e.g. Quectel
-- `AT+QPSMS` extends PSM settings
-- `AT+QCFG=”psm/enter”,1` used to put the module immediately into PSM when the RRC connection is released (not waiting for T3324 to expire)
-- `AT+QPSMEXTCFG` modem optimization command with different attributes such as making sure that PSM is randomized between different devices so they do not send data at the same time
+  - `AT+QPSMS` extends PSM settings
+  - `AT+QCFG=”psm/enter”,1` used to put the module immediately into PSM when the RRC connection is released (not waiting for T3324 to expire)
+  - `AT+QPSMEXTCFG` modem optimization command with different attributes such as making sure that PSM is randomized between different devices so they do not send data at the same time
 
 Extended Discontinuous Reception (eDRX)
 
 - How does eDRX work?  
+&nbsp;  
   While PSM is focused on uplink-centric use cases, eDRX tries to reduce the power consumption for IoT use cases that get downlink information.
   Regular smartphones do not continuously listen on the radio for an incoming message.
   They do this only every 1.28s or 2.56s which is called DRX (discontinuous Reception).
   eDRX allows configuration of custom intervals of up to 40-175 mins - depending on the configuration the visited network allows.
-    ![200](./assets/eDRX.png)  
-    eDRX and the 3412 and T3324 timers
-- Roaming with eDRX\
+    ![eDRX and the 3412 and T3324 timers](./assets/eDRX.png)  
+&nbsp;  
+&nbsp;  
+- Roaming with eDRX  
+&nbsp;  
 As with PSM - not all NB-IoT and LTE-M networks support eDRX or the same timer configuration - and even if they do this does not guarantee that a roaming SIM card can utilize eDRX.
 We therefore also test and publish the eDRX availability on our [LTE-M](https://www.emnify.com/lte-m-coverage?hsLang=en) and [NB-IoT](https://www.emnify.com/nb-iot-coverage) roaming footprint.
 - [AT Command examples for eDRX settings](#eDRX_AT_COMMANDS)  
-The standard 3GPP defined AT-command to configure eDRX is `AT+CEDRXS`.
+&nbsp;  
+The standard 3GPP defined AT-command to configure eDRX is `AT+CEDRXS`.  
+&nbsp;   
 As an example the below command enables (`1`) eDRX for LTE-M (`4`) and an eDRX cycle of 143.36s (`1000`).
+&nbsp;  
+&nbsp;  
 `AT+CEDRXS=1,4,"1000"`
 The setting for NB-IoT would be `5` and the timer values are shown in below table  
 
@@ -204,6 +229,7 @@ The setting for NB-IoT would be `5` and the timer values are shown in below ta
 | 1 1 0 1 |  2621.44 seconds |
 | 1 1 1 0 |  5242.88 seconds |
 | 1 1 1 1 | 10485.76 seconds |
+
     
 The network will respond with the actual effective interval.
     
@@ -214,14 +240,14 @@ The network will respond with the actual effective interval.
 
 5G is the next major technology standard after LTE - which targets 3 different applications areas:
 
-1. Enhanced Mobile Broadband (eMBB)
-  - With faster throughput upto 1Gps+ and more capacity in a local area
-  - Utilizing mmWave bands (5Ghz+) for increased throughput
-1. Massive Machine Type communication (mMTC)
-  - Targeted at IoT application where a multitude of devices are in the same location and need to communicate with low power
-  - LTE-M and NB-IoT often seen as decoupled from 5G to get earlier results will fusion with 5G mMTC
+1. Enhanced Mobile Broadband (eMBB)  
+    - With faster throughput upto 1Gps+ and more capacity in a local area
+    - Utilizing mmWave bands (5Ghz+) for increased throughput
+1. Massive Machine Type communication (mMTC)  
+    - Targeted at IoT application where a multitude of devices are in the same location and need to communicate with low power
+    - LTE-M and NB-IoT often seen as decoupled from 5G to get earlier results will fusion with 5G mMTC  
 1. Ultra-Reliable Low Latency Communications (URLLC)
-  - For missing critical applications that require low latency and reliable data transmission
+    - For missing critical applications that require low latency and reliable data transmission
 
 As of today, 5G is mainly adopted for eMBB use cases - using a 5G non-standalone (NSA) deployment - meaning that the air interface uses 5G technology whereas the core network is still 4G.
 
