@@ -65,7 +65,7 @@ The eSIM can be used to test and verify all emnify functionalities including:
 ## Multi-IMSI Application
 
 emnify IoT SIM cards are equipped with a multi-IMSI applet that contains emnify’s as well as our partner operators' profiles. 
-Different operator profiles are identified by their [IMSI](glossary#imsi---international-mobile-subscriber-identity).
+Different operator profiles are identified by their [IMSI](../glossary#imsi---international-mobile-subscriber-identity).
 Each IMSI / partner operator usually has more than one network accessible per country.
 
 The SIM applet utilizes a preferred IMSI list per country.
