@@ -3,12 +3,12 @@ description: List of event types exclusively for MNO and Resellers.
 toc_max_heading_level: 2
 ---
 
-# MNO and Reseller events
+# MNO and reseller events
 
-The following event types are only available for [MNOs](https://www.emnify.com/iot-glossary/mno) and Resellers using emnify. 
+The following event types are only available for [MNOs](https://www.emnify.com/iot-glossary/mno) and resellers using emnify. 
 
 :::info
-All other event types are also available for MNO and Reseller accounts. 
+All other event types are also available for MNO and reseller accounts. 
 You can find those events on the [Event types](event-types) page.
 :::
 

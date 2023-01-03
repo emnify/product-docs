@@ -84,26 +84,10 @@ const sidebars = {
         slug: '/events'
       },
       items: [
-        {
-          type: 'doc',
-          label: 'Getting Started',
-          id: 'events/getting-started'
-        },
-        {
-          type: 'doc',
-          label: 'Event Types',
-          id: 'events/event-types'
-        },
-        {
-          type: 'doc',
-          label: 'MNO and Reseller Events',
-          id: 'events/mno-events'
-        },
-        {
-          type: 'doc',
-          label: 'Working with Events',
-          id: 'events/usage'
-        }
+        'events/getting-started',
+        'events/event-types',
+        'events/mno-events',
+        'events/usage'
       ],
     },
     {
