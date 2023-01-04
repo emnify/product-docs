@@ -28,6 +28,98 @@ We're in the process of adding more specific event types that will replace these
 We'll update this list as new event types are created.
 :::
 
+<details>
+  <summary>Example JSON response: Disconnecting data access for a device to apply throttling action</summary>
+
+```json
+{
+    "timestamp": "2021-10-27T11:59:29.000Z",
+    "alert": true,
+    "description": "Disconnecting data access for endpoint to apply throttling action.",
+    "id": 137310633115684,
+    "event_type": {
+        "id": 0,
+        "description": "Generic"
+    },
+    "event_source": {
+        "id": 1,
+        "description": "Policy Control"
+    },
+    "event_severity": {
+        "id": 1,
+        "description": "Warn"
+    },
+    "organisation": {
+        "id": 654321,
+        "name": "Sample Corp"
+    },
+    "endpoint": {
+        "id": 11089066,
+        "imei": "8677300511111142",
+        "ip_address": "100.102.41.209",
+        "name": "Test Sim 2",
+        "tags": null
+    },
+    "sim": {
+        "iccid": "8988303000005733850",
+        "id": 3577707,
+        "production_date": "2020-12-23T13:02:11.000Z"
+    },
+    "imsi": {
+        "id": 10770316,
+        "import_date": "2020-12-23T13:02:11.000Z",
+        "imsi": "295090004145444"
+    }
+}
+```
+</details>
+
+<details>
+  <summary>Example JSON response: Disconnecting data access for a device after updating the quota</summary>
+
+```json
+{
+    "timestamp": "2021-10-27T12:38:44.000Z",
+    "alert": true,
+    "description": "Disconnecting data access for endpoint, because quota has been updated.",
+    "id": 137349286510607,
+    "event_type": {
+        "id": 0,
+        "description": "Generic"
+    },
+    "event_source": {
+        "id": 1,
+        "description": "Policy Control"
+    },
+    "event_severity": {
+        "id": 1,
+        "description": "Warn"
+    },
+    "organisation": {
+        "id": 654321,
+        "name": "Sample Corp"
+    },
+    "endpoint": {
+        "id": 11089066,
+        "imei": "8677300511111142",
+        "ip_address": "100.102.41.209",
+        "name": "Test Sim 2",
+        "tags": null
+    },
+    "sim": {
+        "iccid": "8988303000005733850",
+        "id": 3577707,
+        "production_date": "2020-12-23T13:02:11.000Z"
+    },
+    "imsi": {
+        "id": 10770316,
+        "import_date": "2020-12-23T13:02:11.000Z",
+        "imsi": "295090004145444"
+    }
+}
+```
+</details>
+
 ## Network attachment and location
 
 | ID | Description                                   |
@@ -51,6 +143,75 @@ Devices not using 2G or 3G may not register on the CS domain.
 **Example**: A SIM card has (re)authenticated with a different network element. 
 If successful, the device will appear as **Attached** in the [emnify Portal](usage#emnify-portal) and will be ready to receive SMS.
 
+<details>
+  <summary>Example JSON response</summary>
+
+```json
+{
+  "id":201370709,
+  "alert":false,
+  "description":"New location received from VLR for IMSI='901430111111111', now 
+attached to VLR='491720000095'.",
+  "timestamp":"2017-10-26T07:28:00.000+0000",
+  "event_type":{
+    "id":1,
+    "description":"Update location"
+  },
+  "event_source":{
+    "id":0,
+    "description":"Network"
+  },
+  "event_severity":{
+    "id":0,
+    "description":"Info"
+  },
+  "organisation":{
+    "id":839921,
+    "name":"Demo Company"
+  },
+  "endpoint":{
+    "id":274887,
+    "name":"GPS Tracker",
+    "ip_address":"100.96.234.249",
+    "tags":null,
+    "imei":"8677300511111142"
+  },
+  "imsi":{
+    "id":105611,
+    "imsi":"901430111111111",
+    "import_date":"2016-12-27T10:09:23.000+0000"
+  },
+  "sim":{
+    "id":839999,
+    "iccid":"8988303001234567890",
+    "production_date":"2016-12-27T10:09:23.000+0000"
+  },
+  "detail":{
+    "id":3,
+    "name":"Vodafone",
+    "country":{
+      "id":74,
+      "name":"Germany",
+      "country_code":"49",
+      "mcc":"262",
+      "iso_code":"de"
+    },
+    "tapcode":[
+      {
+        "id":2,
+        "tapcode":"DEUD2"
+      }
+    ],
+    "mnc":[
+      {
+        "id":3,
+        "mnc":"02"
+      }
+    ]
+  }
+}
+```
+</details>
 
 ### Update GPRS location
 
@@ -62,6 +223,75 @@ This event is also sent periodically or when changing the location area.
 :::note
 A device can only establish a data session after registering on the PS domain.
 ::: 
+
+<details>
+  <summary>Example JSON response</summary>
+
+```json
+{
+   "timestamp":"2021-10-24T12:44:09.901Z",
+   "alert":false,
+   "description":"New location received from SGSN for IMSI='295090004444444', now attached to SGSN='324750004071717', IP='213.181.60.148'.",
+   "id":133107715407872,
+   "event_type":{
+      "id":2,
+      "description":"Update GPRS location"
+   },
+   "event_source":{
+      "id":0,
+      "description":"Network"
+   },
+   "event_severity":{
+      "id":0,
+      "description":"Info"
+   },
+   "organisation":{
+      "id":12033,
+      "name":"Test Org"
+   },
+   "endpoint":{
+      "id":11089066,
+      "imei":"8693700220077770",
+      "ip_address":"100.102.41.209",
+      "name":"Test Sim 2",
+      "tags":null
+   },
+   "sim":{
+      "iccid":"8988303000000033850",
+      "id":3577707,
+      "production_date":"2020-12-23T13:02:11.000Z"
+   },
+   "imsi":{
+      "id":10770316,
+      "import_date":"2020-12-23T13:02:11.000Z",
+      "imsi":"295090004444444"
+   },
+   "detail":{
+      "id":3,
+      "name":"Vodafone",
+      "country":{
+         "id":74,
+         "name":"Germany",
+         "country_code":"49",
+         "mcc":"262",
+         "iso_code":"de"
+      },
+      "tapcode":[
+         {
+            "id":2,
+            "tapcode":"DEUD2"
+         }
+      ],
+      "mnc":[
+         {
+            "id":3,
+            "mnc":"02"
+         }
+      ]
+   }
+}
+```
+</details>
 
 ### Purge location
 
@@ -75,9 +305,101 @@ Once executed, the device status will appear as **Offline** in the [emnify Porta
 
 **Example**: The network deletes the routing information for a mobile-terminated call or mobile-terminated short message and marks the device not reachable.
 
+<details>
+  <summary>Example JSON response</summary>
+
+```json
+{
+    "timestamp": "2021-10-27T10:49:23.673Z",
+    "alert": false,
+    "description": "VLR location information has been purged for IMSI='295090004144444'.",
+    "id": 137241622976969,
+    "event_type": {
+        "id": 15,
+        "description": "Purge location"
+    },
+    "event_source": {
+        "id": 0,
+        "description": "Network"
+    },
+    "event_severity": {
+        "id": 0,
+        "description": "Info"
+    },
+    "organisation": {
+        "id": 12021,
+        "name": "Test Org"
+    },
+    "endpoint": {
+        "id": 11088066,
+        "imei": "8693700330003770",
+        "ip_address": "100.102.41.209",
+        "name": "Test Sim 2",
+        "tags": null
+    },
+    "sim": {
+        "iccid": "8988303000005850850",
+        "id": 3577707,
+        "production_date": "2020-12-23T13:02:11.000Z"
+    },
+    "imsi": {
+        "id": 10770317,
+        "import_date": "2020-12-23T13:02:11.000Z",
+        "imsi": "295090004144444"
+    }
+}
+```
+</details>
+
 ### Purge GPRS location
 
 Similar to the [`Purge location`](#purge-location) event, the `Purge GPRS location` event deletes all state information in the visited or home network but for the packet-switched (PS) domain.
+
+<details>
+  <summary>Example JSON response</summary>
+
+```json
+{
+    "timestamp": "2021-10-24T12:43:51.486Z",
+    "alert": false,
+    "description": "SGSN location information has been purged for IMSI='295090004144444'.",
+    "id": 133107610288660,
+    "event_type": {
+        "id": 16,
+        "description": "Purge GPRS location"
+    },
+    "event_source": {
+        "id": 0,
+        "description": "Network"
+    },
+    "event_severity": {
+        "id": 0,
+        "description": "Info"
+    },
+    "organisation": {
+        "id": 13032,
+        "name": "Test Org"
+    },
+    "endpoint": {
+        "id": 11089066,
+        "imei": "8693700330003770",
+        "ip_address": "100.102.41.209",
+        "name": "Test Sim 2",
+        "tags": null
+    },
+    "sim": {
+        "iccid": "8988303000005850850",
+        "id": 3577717,
+        "production_date": "2020-12-23T13:02:11.000Z"
+    },
+    "imsi": {
+        "id": 10770317,
+        "import_date": "2020-12-23T13:02:11.000Z",
+        "imsi": "295090004144444"
+    }
+}
+```
+</details>
 
 ## Data connection lifecycle  
 
@@ -93,6 +415,163 @@ Activation (or rejection) of data connectivity.
 **Example**: A device has established a data session and started transferring data. 
 This device will appear as **Online** in the [emnify Portal](usage#emnify-portal) as long as there hasn't been a subsequent [Delete PDP Context](#delete-pdp-context) event.
 
+<details>
+  <summary>Example JSON response: Create PDP context accepted</summary>
+
+```json
+{
+    "timestamp": "2021-10-27T08:38:02.000Z",
+    "alert": false,
+    "description": "New PDP Context successfully activated with SGSN CP=213.181.61.176, DP=213.181.61.176.",
+    "id": 137112624332866,
+    "event_type": {
+        "id": 3,
+        "description": "Create PDP Context"
+    },
+    "event_source": {
+        "id": 0,
+        "description": "Network"
+    },
+    "event_severity": {
+        "id": 0,
+        "description": "Info"
+    },
+    "organisation": {
+        "id": 12033,
+        "name": "Test Org"
+    },
+    "endpoint": {
+        "id": 11089066,
+        "imei": "8693700220003770",
+        "ip_address": "100.102.41.209",
+        "name": "Test Sim 2",
+        "tags": null
+    },
+    "sim": {
+        "iccid": "8988303000005733850",
+        "id": 3577707,
+        "production_date": "2020-12-23T13:02:11.000Z"
+    },
+    "imsi": {
+        "id": 10770316,
+        "import_date": "2020-12-23T13:02:11.000Z",
+        "imsi": "295090004145444"
+    },
+    "detail": {
+        "country": {
+            "country_code": "49",
+            "mcc": "262",
+            "name": "Germany",
+            "iso_code": "de",
+            "id": 74
+        },
+        "name": "Vodafone",
+        "pdp_context": {
+            "tariff_profile_id": "407878",
+            "tx_teid_control_plane": 298053053,
+            "breakout_ip": "195.58.216.216",
+            "tariff_id": "555",
+            "rac": null,
+            "ratezone_id": "3303",
+            "ci": 5532,
+            "imeisv": "8693700220003771",
+            "lac": 644,
+            "sac": null,
+            "gtp_version": 1,
+            "rat_type": 2,
+            "mcc": "262",
+            "tx_teid_data_plane": 299083083,
+            "ue_ip_address": "100.112.45.209",
+            "ggsn_data_plane_ip_address": "185.57.211.191",
+            "tunnel_created": "2021-10-27T08:38:02",
+            "pdp_context_id": 51755555,
+            "ggsn_control_plane_ip_address": "185.57.302.198",
+            "sgsn_control_plane_ip_address": "215.181.81.176",
+            "nsapi": 5,
+            "region": "eu-west-1",
+            "apn": "em",
+            "mnc": "02",
+            "sgsn_data_plane_ip_address": "213.181.61.176",
+            "operator_id": "3",
+            "imsi": "295090004145444",
+            "rx_teid": 51755444
+        },
+        "id": 3
+    }
+}
+```
+</details>
+
+<details>
+  <summary>Example JSON response: Create PDP context rejected because data service is disabled in the service profile</summary>
+
+```json
+{
+    "timestamp": "2021-10-24T12:43:51.000Z",
+    "alert": true,
+    "description": "PDP Context Request rejected, because data service disabled in service profile.",
+    "id": 199107522174999,
+    "event_type": {
+        "id": 3,
+        "description": "Create PDP Context"
+    },
+    "event_source": {
+        "id": 1,
+        "description": "Policy Control"
+    },
+    "event_severity": {
+        "id": 1,
+        "description": "Warn"
+    },
+    "organisation": {
+        "id": 1222,
+        "name": "Test Org"
+    },
+    "endpoint": {
+        "id": 11089089,
+        "imei": "8693700110003770",
+        "ip_address": "100.102.41.209",
+        "name": "Test Sim 2",
+        "tags": null
+    },
+    "sim": {
+        "iccid": "8080303000005733850",
+        "id": 3566606,
+        "production_date": "2020-12-23T13:02:11.000Z"
+    },
+    "imsi": {
+        "id": 10000317,
+        "import_date": "2020-12-23T13:02:11.000Z",
+        "imsi": "295090004044444"
+    }
+}
+```
+</details>
+
+<details>
+  <summary>Example JSON response: Create PDP context rejected because the device has no quota</summary>
+
+```json
+
+```
+</details>
+
+<details>
+  <summary>Example JSON response</summary>
+
+```json
+
+```
+</details>
+
+<details>
+  <summary>Example JSON response</summary>
+
+```json
+
+```
+</details>
+
 
 ### Delete PDP Context
 
@@ -100,6 +579,14 @@ Data session between the device and the network is deleted.
 
 **Example**: A device disconnected and ended a data transfer. 
 The event details will also show the data transmitted, and the device will appear as **Attached** in the [emnify Portal](usage#emnify-portal).
+
+<details>
+  <summary>Example JSON response</summary>
+
+```json
+
+```
+</details>
 
 ## Application and user authentication 
 
@@ -114,17 +601,49 @@ The event details will also show the data transmitted, and the device will appea
 
 Someone tried (and failed) to authenticate using an email from your organization.
 
+<details>
+  <summary>Example JSON response</summary>
+
+```json
+
+```
+</details>
+
 ### Application authentication failed
 
 Application token failed to authenticate.
+
+<details>
+  <summary>Example JSON response</summary>
+
+```json
+
+```
+</details>
 
 ### Support Access
 
 emnify team accessed your organization on behalf of one of your users for service or support purposes.
 
+<details>
+  <summary>Example JSON response</summary>
+
+```json
+
+```
+</details>
+
 ### Multi-factor Authentication
 
 User removed multi-factor authentication (MFA) from their account.
+
+<details>
+  <summary>Example JSON response</summary>
+
+```json
+
+```
+</details>
 
 ## User management 
 
