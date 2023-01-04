@@ -1,3 +1,4 @@
+/* Overrides the default Infima (https://infima.dev/) variables */
 :root {
   /* Text and content */
   --ifm-font-family-base: 'Avenir LT Pro', Helvetica, Arial, sans-serif;
