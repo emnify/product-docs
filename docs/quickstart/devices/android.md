@@ -1,5 +1,5 @@
 ---
-description: How to manually configure the APN
+description: Manually configure the APN for an Android device
 ---
 # Android
 
