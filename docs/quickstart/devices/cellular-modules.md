@@ -67,4 +67,4 @@ The `AT+CGDCONT` command needs to be utilized to set the APN:
 AT+CGDCONT=1,"IP","em",,
 ```
 
-Check your AT command guide for further information or read [3GPP Technical Specification 27.007](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=1515).
+Check your AT command guide for further information, or read [3GPP Technical Specification 27.007](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=1515).
