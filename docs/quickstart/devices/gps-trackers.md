@@ -65,10 +65,10 @@ setconnection em
 *Applies to JM-VL01, JM-VL02, JM-BL11, JM-VL03, JM-VL04, JM-LL01,
 JM-LL02, JM-LL301, X3,Wetrack140, Wetrack2, Wetrack lite, Bl10, GT06N, OB22, ET25, HVT001, EG02, JM-VG01U, JM-VG02U, JM-VG04Q, AT1-AT6, CT10, JM-LG01, JM-LG05, TBT100*
 
-Configuring the APN for Concox GPS trackers can be done
+Configuring the APN for Concox GPS trackers can be done:
 
-1. Via the SMS console through the emnify Portal (most simple)
-1. via the emnify SMS API or Zapier Integration (when automating the configuration)
+1. Via the SMS console through the emnify Portal 
+1. Via the emnify SMS API or Zapier Integration (when automating the configuration)
 
 When the GPS tracker is turned on for the first time after the SIM is installed it is showing the status `Attached` in the emnify portal.
 At this point the device can receive SMS but not establish a data session unless the APN is setup.
