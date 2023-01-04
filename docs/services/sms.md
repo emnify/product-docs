@@ -15,9 +15,10 @@ The scenarios above can be activated and deactivated in the device policies to p
 
 You can send and receive SMSs of your devices through 3 different interfaces Portal, SMS APIs, and Zapier.
 
+<!--  
 ![sms options](assets/sms_options.png)  
 *SMS interfaces*
-
+-->
 
 ## emnify Portal
 
