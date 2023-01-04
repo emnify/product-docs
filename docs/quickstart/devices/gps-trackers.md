@@ -3,7 +3,7 @@ description: Configuring the APN for the most common GPS vendors
 ---
 # GPS trackers
 
-For other GPS vendors please consult the manual and configure the APN to be `em` or `emnify`.
+For other GPS vendors, please consult the manual and configure the APN to be `em` or `emnify`.
 
 ## Teltonika GPS APN configuration
 
