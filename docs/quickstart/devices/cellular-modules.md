@@ -9,7 +9,7 @@ For Telit, Sierra Wireless, Cinterion/Gemalto/Thales, SIMcom, or Sequans, see [G
 
 *Applies to all Quectel modules: BG95, BG96, EG25, EG91, EG95, EC21, EC25, M65, M66, M95, MC60, BG77, BG600L*
 
-With Quectel modules the APN can be set with the 3GPP standard command `AT+CGDCONT`
+With Quectel modules the APN can be set with the 3GPP standard command `AT+CGDCONT`:
 
 ```console
 AT+CGDCONT=1,"IP","em",,
