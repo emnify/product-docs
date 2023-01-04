@@ -3,7 +3,7 @@ description: How to manually configure the APN
 ---
 # Android
 
-When setting up an Android device with an emnify SIM you need to follow these 5 steps
+When setting up an Android device with an emnify SIM, you need to follow these 4 steps:
 
 1. Go to **Settings** → **Mobile network**
 1. Go to **Mobile data**
