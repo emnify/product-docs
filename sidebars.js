@@ -49,7 +49,7 @@ const sidebars = {
             type: 'generated-index',
             title: 'Devices',
             slug: 'devices',
-            description: 'How to create and configure various types of devices',
+            description: 'How to create and configure various types of devices.',
           },
           items: [
             'quickstart/devices/creating-a-device',
