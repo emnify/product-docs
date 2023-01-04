@@ -10,8 +10,7 @@ Some devices and networks auto-detect the APN but for most cases you need to con
 
 Further, some Android / iOS-based devices and cellular modules also need to be configured to allow for roaming.
 
-Select your device type and model below, to see how to configure the
-APN.
+Select your device type and model to see how to configure the APN:
 
 - [Android](android)
 - [iOS devices](ios-devices)
