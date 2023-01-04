@@ -132,7 +132,7 @@ The SMS command to set the APN for Meitrack GPS trackers is:
 
 Where `0000` is the default SMS password.
 
-On other devices the APN setting is done via the A21 command
+On other devices the APN setting is done via the `A21` command:
 
 ```
 666888,A21,1,server.meigps.com,8800,em,,
