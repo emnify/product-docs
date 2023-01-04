@@ -15,7 +15,7 @@ With Quectel modules the APN can be set with the 3GPP standard command `AT+CGDCO
 AT+CGDCONT=1,"IP","em",,
 ```
 
-Quectel also utilizes a vendor specific Command `AT+QICSGP`
+Quectel also utilizes a vendor specific command `AT+QICSGP`:
 
 ```console
 AT+QICSGP=1,1,"em","","",1
