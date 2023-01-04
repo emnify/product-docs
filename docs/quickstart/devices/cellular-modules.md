@@ -61,7 +61,7 @@ Check your u-Blox module AT command guide for more information.
 
 The commands for configuring the APN settings are 3GPP standardized and all major cellular module manufacturer support the commands.
 
-The AT+CGDCONT command needs to be utilized to set the APN.
+The `AT+CGDCONT` command needs to be utilized to set the APN:
 
 ```console
 AT+CGDCONT=1,"IP","em",,
