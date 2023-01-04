@@ -6,7 +6,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "emnify Documentation",
   tagline: "Developer resources and documentation for the emnify SuperNetwork.",
-  url: "https://docs.emnify.com",
+  url: "https://emnify.github.io/product-docs",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -15,6 +15,8 @@ const config = {
   // GitHub pages deployment config
   organizationName: "emnify",
   projectName: "product-docs",
+  deploymentBranch: "gh-pages",
+  trailingSlash: false,
 
   i18n: {
     defaultLocale: "en",
@@ -29,8 +31,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           routeBasePath: "/",
-          editUrl:
-            "https://github.com/EMnify/product-docs/blob/main/",
+          editUrl: "https://github.com/EMnify/product-docs/blob/main/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -46,8 +47,8 @@ const config = {
         title: "Developers",
         logo: {
           alt: "emnify Documentation – Home",
-          src: 'img/logo-word-blue-295x80.png',
-          srcDark: 'img/logo-word-white-295x80.png',
+          src: "img/logo-word-blue-295x80.png",
+          srcDark: "img/logo-word-white-295x80.png",
         },
       },
       footer: {
