@@ -6,7 +6,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "emnify Documentation",
   tagline: "Developer resources and documentation for the emnify SuperNetwork.",
-  url: "https://emnify.github.io/product-docs",
+  url: "https://emnify.github.io",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -63,12 +63,12 @@ const config = {
               },
               {
                 label: "Integration guides",
-                href: "https://www.emnify.com/integration-guides"
+                href: "https://www.emnify.com/integration-guides",
               },
               {
                 label: "REST API reference",
-                href: "https://cdn.emnify.net/api/doc/index.html"
-              }
+                href: "https://cdn.emnify.net/api/doc/index.html",
+              },
             ],
           },
           {
@@ -76,16 +76,16 @@ const config = {
             items: [
               {
                 label: "Open a ticket",
-                href: "https://support.emnify.com/hc/en-us"
+                href: "https://support.emnify.com/hc/en-us",
               },
               {
                 label: "Request a feature",
-                href: "https://emnify.canny.io/"
+                href: "https://emnify.canny.io/",
               },
               {
                 label: "System status",
-                href: "https://status.emnify.com/"
-              }
+                href: "https://status.emnify.com/",
+              },
             ],
           },
           {
@@ -97,7 +97,7 @@ const config = {
               },
               {
                 label: "Developer blog",
-                href: "https://www.emnify.com/developer-blog"
+                href: "https://www.emnify.com/developer-blog",
               },
               {
                 label: "Twitter",
