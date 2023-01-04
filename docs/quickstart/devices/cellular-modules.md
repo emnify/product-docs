@@ -40,7 +40,7 @@ u-Blox supports the standard 3GPP command to set APNs via `AT+CGDCONT`
 AT+CGDCONT=1,"IP","em",,
 ```
 
-u-Blox also supports a vendor specific command to configure the APN for the initial EPS bearer.
+u-Blox also supports a vendor specific command to configure the APN for the initial EPS bearer:
 
 ```console
 AT+UCGDFLT=1,"IP","em"
