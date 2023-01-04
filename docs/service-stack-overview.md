@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Service Stack Overview
 
-![350](./assets/Service_Stack.png)
+![350](assets/service-stack.png)
 
 EMnify Service Stack
 

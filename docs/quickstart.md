@@ -19,18 +19,18 @@ To get started immediately, you can download the eSIM for your smartphone or eSI
 Log into your [EMnify account](https://portal.emnify.com) and follow these steps:
 
 1. On the dashboard, click on order on **Get your FREE SIMs**
-![Order SIMs](./assets/order-SIM_step1.png)
+![Order SIMs](./assets/order-sim-step1.png)
 **Order SIMSs**
 2. Select the SIM cards of your choice.
-![Select SIM type](assets/order-SIM_step2.png)
+![Select SIM type](assets/order-sim-step2.png)
 If you select physical SIM cards, you can further choose between 3in1 (no nano SIM) or 4in1 (with nano SIM).
-![Select SIM form](assets/order-SIM_step2.1.png)
+![Select SIM form](assets/order-sim-step2.1.png)
 If you select the eSIM, you can directly download it into your eSIM compatible phone.
 You can find the instructions to do so in this [blog post](https://www.emnify.com/en/developer-hub/emnify-developer-esim).
 3. For the physical SIM cards, proceed to fill in your shipping details.
-![Shipping details](assets/order-SIM_step3.png)
+![Shipping details](assets/order-sim-step3.png)
 4. Proceed to pay the shipping charges and you will be notified when the SIM cards will be shipped.
-![Payment details](assets/order-SIM_step4.png)
+![Payment details](assets/order-sim-step4.png)
 
 ## Registering SIMs
 
@@ -39,14 +39,14 @@ Once you get your EMnify SIMs, you need to register them before you can start us
 1. If you have ordered the 3 orange evaluation SIM cards, you will have to register them one by one.
 Scan the QR code printed on the SIM card with your QR code scanner app and follow the link to associate the SIM with your account.
 The link includes the **BIC** (Batch Identification Code) of the card.
-![Scan QR Code](assets/QRScan.png)
+![Scan QR Code](assets/qrscan.png)
 2. If you do not have a QR reader or want to do this on a desktop PC without a camera, register by manually entering the BIC.
 Login to your [EMnify account](https://portal.emnify.com).
 On the dashboard, click the [REGISTER](https://portal.emnify.com/sim-registration/single) link in the "Register your SIM cards" section.
 ![Register SIM](assets/register_sims.png)
 ![Register single SIM](assets/register_single_sim.png)
 3. Enter the Batch Identification Code (**BIC** 1) in the prompt. You can find the BIC1 on the back of your SIM card.
-![BIC1](assets/BIC.png)
+![BIC1](assets/bic.png)
 4. If you have ordered more than 5 SIM cards, you need to batch register them using the **BIC2**.
 ![BIC2](assets/register_batch_sim.png)
 ![Registration complete](assets/register_sim_complete.png)
@@ -423,15 +423,15 @@ When setting up an Android device with an EMnify SIM you need to follow these 5 
 3. Enable roaming and go to Access Point Names (APN)
 4. Create a new APN with any name and configure the APN with "em"
 
-![Android\_01\_Settings.jpg](./assets/Android_01_Settings.jpg)
+![Android\_01\_Settings.jpg](./assets/android-01-settings.jpg)
 
-![Android\_02\_Mobile\_Network.jpg](./assets/Android_02_Mobile_Network.jpg)
+![Android\_02\_Mobile\_Network.jpg](./assets/android-02-mobile-network.jpg)
 
-![Android\_03\_Mobile\_Data.jpg](./assets/Android_03_Mobile_Data.jpg)
+![Android\_03\_Mobile\_Data.jpg](./assets/android-03-mobile-data.jpg)
 
-![Android\_04\_Create\_Access\_Point\_name.jpg](./assets/Android_04_Create_Access_Point_name.jpg)
+![Android\_04\_Create\_Access\_Point\_name.jpg](./assets/android-04-create-access-point-name.jpg)
 
-![Android\_05\_Configure\_APN.jpg](./assets/Android_05_Configure_APN.jpg)
+![Android\_05\_Configure\_APN.jpg](./assets/android-05-configure-apn.jpg)
 
 ### iOS devices
 
@@ -442,13 +442,13 @@ When setting up an iOS device with an EMnify IoT SIM you need to follow 4 steps
 3. Enable Roaming and Click on Mobile Data Network
 4. Set APN to `em` - leave everything else blank
 
-![iOS\_01\_Settings.png](./assets/iOS_01_Settings.png)
+![iOS\_01\_Settings.png](./assets/ios-01-settings.png)
 
-![iOS\_02\_Mobile\_Data.png](./assets/iOS_02_Mobile_Data.png)
+![iOS\_02\_Mobile\_Data.png](./assets/ios-02-mobile-data.png)
 
-![iOS\_03\_Mobile\_Network.png](./assets/iOS_03_Mobile_Network.png)
+![iOS\_03\_Mobile\_Network.png](./assets/ios-03-mobile-network.png)
 
-![iOS\_04\_APN.png](./assets/iOS_04_APN.png)
+![iOS\_04\_APN.png](./assets/ios-04-apn.png)
 
 ## Troubleshooting
 
@@ -504,5 +504,5 @@ Also verify that the network is on EMnify’s [NB-IoTcoverage](https://www.emnif
 - ensure that your data destination and DNS server (default EMnify uses googles 8.8.8.8 DNS if your device does not specify a DNS) is not blocked for the device
 
 Other general troubleshooting tips: \* after configuration changes make sure they are correctly applied on the device (e.g., with a reboot) \* a reset connectivity
-![reset\_connectivity.png](./assets/reset_connectivity.png) on Connected Devices can also reset the network state and allow your device to freshly reattach \* the issue may only be present with one network or in the specific location (e.g. due to high interference for this network).
+![reset\_connectivity.png](./assets/reset-connectivity.png) on Connected Devices can also reset the network state and allow your device to freshly reattach \* the issue may only be present with one network or in the specific location (e.g. due to high interference for this network).
 You can use the Operator Blacklist to block the network and force the change to a different network.

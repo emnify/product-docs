@@ -9,4 +9,4 @@ Cellular is the most used wireless network technology for connecting things. It 
 
 EMnify specializes in businesses utilizing cellular connectivity for the Internet of Things. EMnify has developed a communication platform which aggregates and enriches traditional cellular connectivity so that businesses can easily connect, integrate, operate, and secure hundreds and thousands of devices with a single global IoT SIM card.
 
-![EMnify Communication Platform](./assets/Cellular_IoT.png)
+![EMnify Communication Platform](assets/cellular-iot.png)

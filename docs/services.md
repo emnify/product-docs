@@ -266,7 +266,7 @@ Extended Discontinuous Reception (eDRX)
   Regular smartphones do not continuously listen on the radio for an incoming message.
   They do this only every 1.28s or 2.56s which is called DRX (discontinuous Reception).
   eDRX allows configuration of custom intervals of up to 40-175 mins - depending on the configuration the visited network allows.
-    ![200](./assets/eDRX.png)  
+    ![200](./assets/edrx.png)  
     eDRX and the 3412 and T3324 timers
 - Roaming with eDRX\
 As with PSM - not all NB-IoT and LTE-M networks support eDRX or the same timer configuration - and even if they do this does not guarantee that a roaming SIM card can utilize eDRX.
@@ -403,7 +403,7 @@ By eliminating the use of the public internet, Cloud Connect helps you better pr
 
 EMnify’s communication platform is deployed on AWS, which simplifies integrations for customers using AWS as an infrastructure. Without having to use the public internet, the integration is directly done with AWS services. To establish a secure private network between your devices and your application you only need to attach your VPC to EMnify’s Transit Gateway.
 
-![EMnify Cloud Connect with AWS Transit gateway](./assets/TGW.png)
+![EMnify Cloud Connect with AWS Transit gateway](assets/tgw.png)
 
 EMnify Cloud Connect with AWS Transit Gateway
 
@@ -425,7 +425,7 @@ EMnify’s communication platform hosts an OpenVPN service that allows to establ
 
 To use the OpenVPN service the IoT device does not need any private APN, OpenVPN software or dynamic DNS resolution. Through the EMnify SIM, every device will get a static private IP address which can be used to identify and address the device.
 
-[//]: # This image is missing: OpenVPN.png
+<!-- This image is missing: OpenVPN.png -->
 
 OpenVPN System Overview
 
@@ -485,7 +485,7 @@ Delivery notification as received in Integromat webhook for SMS with ID: 4663864
 
 When you want to send an SMS from the device to your application, your device should send the SMS to an invalid [MSISDN](#msisdn) with 8 digits or less. The SMS will then be delivered over the webhook.
 
-![200](./assets/MOSMS.png)
+![200](./assets/mosms.png)
 
 Mobile originated SMS from the device as received in Integromat Webhook
 
