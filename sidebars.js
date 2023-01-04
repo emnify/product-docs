@@ -45,6 +45,21 @@ const sidebars = {
         'services/global-iot-network',
         'services/iot-cloud-communication-platform',
         'services/data-streamer',
+        {
+          type: 'category',
+          label: 'Events',
+          link: {
+            type: 'generated-index', 
+            title: 'emnify system events',
+            slug: '/events'
+          },
+          items: [
+            'events/getting-started',
+            'events/event-types',
+            'events/mno-events',
+            'events/usage'
+          ],
+        },
         'services/security',
         'services/cloud-connect',
         'services/openvpn',
@@ -72,21 +87,6 @@ const sidebars = {
         'data-streamer/managing-data-streams',
         'data-streamer/usage',
         'data-streamer/available-integrations'
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Events',
-      link: {
-        type: 'generated-index', 
-        title: 'emnify system events',
-        slug: '/events'
-      },
-      items: [
-        'events/getting-started',
-        'events/event-types',
-        'events/mno-events',
-        'events/usage'
       ],
     },
     {
