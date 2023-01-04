@@ -19,7 +19,7 @@ Quectel also utilizes a vendor specific Command `AT+QICSGP`
 
 According to [Quectel](https://www.quectel.com/faqs/12-8-what-is-the-difference-between-cgdcont-and-qicsgp/) the command AT+QICSGP shall be used when the internal TCP/UDP stack should be used – and it also allows to configure which bearer (CSD or GPRS) is used. GPRS must be used.
 
-For managing roaming Quectel also introduced the AT+QCFG command.
+For managing roaming, Quectel also introduced the `AT+QCFG` command.
 The suggested setting is:
 
 `AT+QCFG="roamservice",2,1`
