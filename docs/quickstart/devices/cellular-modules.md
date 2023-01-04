@@ -46,7 +46,7 @@ u-Blox also supports a vendor specific command to configure the APN for the init
 AT+UCGDFLT=1,"IP","em"
 ```
 
-For roaming configuration u-blox modules utilize a vendor specific `AT+UDCONF` command.
+For roaming configuration, u-blox modules utilize a vendor-specific `AT+UDCONF` command.
 This enables automatic search in case the device cannot attach to a specific network.
 
 ```console
