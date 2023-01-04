@@ -113,14 +113,16 @@ The default password is 123456. There are no spaces between gprs/APN and the pas
 
 ## Meitrack GPS APN configuration
 
-*Applies to P88L, P99, MT90, T663L, T333, T366, T399, TS299L, TC68L, TC68SG, T622, K211G, T355G* Configuring the APN for Meitrack GPS trackers can be done
+*Applies to P88L, P99, MT90, T663L, T333, T366, T399, TS299L, TC68L, TC68SG, T622, K211G, T355G*
 
-1. Via the Meitrack manager when
-1. Via the SMS console through the emnify Portal (most simple)
-1. via the emnify SMS API or Zapier Integration (when automating the configuration)
+Configuring the APN for Meitrack GPS trackers can be done:
 
-When the GPS tracker is turned on for the first time after the SIM is installed it is showing the status `Attached` in the emnify portal.
-At this point the device can receive SMS but not establish a data session unless the APN is setup.
+1. Via the Meitrack manager
+1. Via the SMS console through the emnify Portal
+1. Via the emnify SMS API or Zapier Integration (when automating the configuration)
+
+When the GPS tracker is turned on for the first time after the SIM is installed, it shows the status **Attached** in the emnify Portal.
+At this point, the device can receive SMS but not establish a data session unless the APN is set up.
 
 The SMS command to set the APN for Meitrack GPS trackers is:
 
