@@ -1,6 +1,6 @@
 ---
 title: Getting started
-description: Learn the basics and structure of emnify events.
+description: Learn the basics and structure of emnify events
 ---
 
 # Getting started with events

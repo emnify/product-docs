@@ -1,5 +1,5 @@
 ---
-description: Integrating real-time data streams of your devices and SIMs.
+description: Integrating real-time data streams of your devices and SIMs
 ---
 
 # Connection types

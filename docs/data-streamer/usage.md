@@ -1,5 +1,5 @@
 ---
-description: Managing data streams with the emnify Portal or API.
+description: Managing data streams with the emnify Portal or API
 ---
 
 # Using the Data Streamer

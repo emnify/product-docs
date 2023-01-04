@@ -1,5 +1,5 @@
 ---
-description: Setting up, filtering, pausing, or deleting data streams. 
+description: Setting up, filtering, pausing, or deleting data streams 
 ---
 
 # Managing data streams

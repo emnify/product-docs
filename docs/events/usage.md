@@ -1,5 +1,5 @@
 ---
-description: Managing events with the Data Streamer, API, or Portal.
+description: Managing events with the Data Streamer, API, or Portal
 ---
 
 # Working with events
