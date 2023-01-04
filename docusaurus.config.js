@@ -7,7 +7,7 @@ const config = {
   title: "emnify Documentation",
   tagline: "Developer resources and documentation for the emnify SuperNetwork.",
   url: "https://emnify.github.io",
-  baseUrl: "/",
+  baseUrl: "/product-docs/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
