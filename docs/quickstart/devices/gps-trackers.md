@@ -11,7 +11,7 @@ For other GPS vendors please consult the manual and configure the APN to be `em`
 
 *Applies to FMB110, FMB120, FM130, FMB140, FMC001, FMM001, FMC125, FMC130, FMC640, FMM125, FMM130, FMM640, FMP100, FMB001, FMB002, FMB003, FMB010*
 
-Configuring the APN for Teltonika GPS trackers can be done through
+Configuring the APN for Teltonika GPS trackers can be done through:
 
 1. Teltonika Configurator over a USB, Bluetooth connection
 1. Via the SMS console through the emnify Portal (most simple)
