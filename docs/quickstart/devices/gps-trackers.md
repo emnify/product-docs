@@ -27,6 +27,7 @@ The SMS command to set the APN is:
 ```
   setparam 2001:em
 ```
+
 :::caution
 The two leading spaces are required.
 :::
