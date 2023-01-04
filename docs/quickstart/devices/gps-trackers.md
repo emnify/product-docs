@@ -15,7 +15,7 @@ Configuring the APN for Teltonika GPS trackers can be done through:
 
 1. Teltonika Configurator over a USB, Bluetooth connection
 1. Via the SMS console through the emnify Portal (most simple)
-1. via the emnify SMS API or Zapier Integration (when automating the configuration)
+1. Via the emnify SMS API or Zapier Integration (when automating the configuration)
 
 Newer Teltonika GPS versions automatically detect the emnify APN setting
 
