@@ -20,7 +20,7 @@ Configuring the APN for Teltonika GPS trackers can be done through:
 Newer Teltonika GPS versions automatically detect the emnify APN setting
 
 When the GPS tracker is turned on for the first time after the SIM is installed, it shows the status **Attached** in the emnify Portal.
-At this point the device can receive SMS but not establish a data session unless the APN is setup or detected.
+At this point, the device can receive SMS but not establish a data session unless the APN is set up or detected.
 
 The SMS command to set the APN is:
 
