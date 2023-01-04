@@ -1,3 +1,6 @@
+---
+description: Single/group device policy configuration of service and coverage
+---
 # Endpoint management and group policies
 
 Within the emnify platform, there is a separation between SIM card and the device, also referred to as "endpoint".

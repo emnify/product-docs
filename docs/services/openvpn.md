@@ -1,3 +1,6 @@
+---
+description: Overview and setup
+---
 # OpenVPN
 
 emnify’s communication platform hosts an OpenVPN service that allows to establish a private network between the device and any remote client location. 

@@ -1,3 +1,6 @@
+---
+description: Via Zapier, SMS, as well as event or application triggers
+---
 # No-code workflow automation
 
 Zapier is a service that allows you to connect more than 4000 applications - including emnify - to automate workflows.

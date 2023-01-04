@@ -1,3 +1,6 @@
+---
+description: Events, usage data, connection types, management interfaces
+---
 # Data Streamer
 
 Before each device can send data to an application, it needs to communicate with the mobile network to ensure that the data is allowed to be sent over the network.

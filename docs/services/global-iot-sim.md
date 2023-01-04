@@ -1,3 +1,6 @@
+---
+description: Form factors, quality grades, multi-IMSI, eSIM
+---
 # Global IoT SIM
 
 emnify IoT SIMs are more durable than regular SIM cards and come in different [form factors](#form-factors) and [quality grades](#quality-grades).

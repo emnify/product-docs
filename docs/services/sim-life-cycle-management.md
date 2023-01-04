@@ -1,3 +1,6 @@
+---
+description: Configure SIM state to minimize costs
+---
 # SIM life cycle management
 
 When selling connected devices, it is difficult to determine when devices will be in use and when not. 

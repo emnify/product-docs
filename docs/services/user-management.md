@@ -1,3 +1,6 @@
+---
+description: Access control of endpoint, SIM, and service profile management 
+---
 # User management
 
 The emnify platform is a powerful application to control the connectivity of devices of a production system.

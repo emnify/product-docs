@@ -1,3 +1,6 @@
+---
+description: Global, cloud-based, secure, BI, analytics, ...
+---
 # Service stack overview
 
 ![Service stack overview](assets/Service_Stack.png)

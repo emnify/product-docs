@@ -1,6 +1,10 @@
-# Business intelligence and analytics reports
+---
 
-The emnify Portal provides detailed reports on all connectivity aspects of a device.
+description: Analyze data usage, events, and device location over time
+---
+# Business intelligence & analytics reports
+
+The [emnify Portal](https://portal.emnify.com) provides detailed reports on all connectivity aspects of a device.
 You can analyze the data consumption, events, location of the devices, and compare them to previous time periods.
 
 - Data traffic per day, week, month
