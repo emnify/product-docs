@@ -16,4 +16,4 @@ Select your device type and model to see how to configure the APN:
 - [iOS devices](ios-devices)
 - [Cellular modules](cellular-modules)
 - [GPS trackers](gps-trackers)
-- [Industrial Routers](industrial-routers)
+- [Industrial routers](industrial-routers)
