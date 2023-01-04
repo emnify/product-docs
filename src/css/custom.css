@@ -1,5 +1,5 @@
 :root {
-    /* Text and content */
+  /* Text and content */
   --ifm-font-family-base: 'Avenir LT Pro', Helvetica, Arial, sans-serif;
   --ifm-color-content: #000035; 
   --ifm-color-content-secondary: #404067;
@@ -35,6 +35,22 @@
 
 .theme-doc-markdown a:hover, .theme-edit-this-page:hover {
   color: #404067;
+}
+
+.theme-doc-markdown table a {
+  text-decoration: none;
+}
+
+.theme-doc-markdown table a:hover {
+  text-decoration: underline;
+}
+
+.theme-doc-markdown .hash-link {
+  text-decoration: none;
+}
+
+.theme-doc-markdown .hash-link:hover {
+  text-decoration: underline;
 }
 
 /* Caution adminition */
