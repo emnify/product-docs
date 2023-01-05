@@ -180,7 +180,7 @@ unless the APN is set up.
 
 *Applies to RF-V6+, RF-V8, RF-V8S, RF-V13, RF-V16, RF-V18, RF-V20*
 
-The following two SMS commands need to send
+The following two SMS commands need to send:
 
 ```
 123456,sos1,[yourphonenumber]# // Bind the tracker to a specific phone number e.g. 49173871878 (instead of +49173871878). 123456 is the default SMS password.
