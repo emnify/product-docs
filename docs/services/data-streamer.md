@@ -61,6 +61,8 @@ The integration guides for the Data Streamer can be found [here](#_integration_
 
 Data Streams can be managed by using the [emnify Portal](https://portal.emnify.com/) or by using the [emnify API](https://cdn.emnify.net/api/doc/swagger.html?__hstc=115846617.4e595f58851491bb8576507ce2561f79.1670194662635.1670424207784.1670429175064.6&__hssc=115846617.2.1670429175064&__hsfp=3017379904).
 
+<!--  To be recreated
 ![integration](./assets/integration.png)
+-->
 
 Manage Integrations through the emnify Portal

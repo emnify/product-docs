@@ -40,7 +40,10 @@ This is useful to be able to use your own or private DNS servers to secure and h
 Customers can also configure to use their own DNS, no matter if it is a public or a private one.
 The DNS settings can be changed in the Portal → Device Policies → Service Policies → More Options → DNS.
 
-![dns setting](assets/dns_setting.png)*Custom DNS setting configuration*
+<!--  To be recreated
+![dns setting](assets/dns_setting.png)  
+*Custom DNS setting configuration*
+-->
 
 Utilizing a private DNS server which is not reachable via the public Internet requires to set up a private network with the machine or a network where the private DNS server is located.
 This can be done using Cloud Connect either with Amazon Transit Gateway or IPsec.

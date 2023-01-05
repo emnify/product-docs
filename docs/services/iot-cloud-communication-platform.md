@@ -24,4 +24,6 @@ Moreover, it also helps reduce network latency.
 You can either select a specific breakout region or the network automatically selects the breakout region closest to the device.
 This can be done on the emnify Portal → **Service Profile** which is applicable to a group of devices.
 
+<!--  To be recreated
 ![Regional Breakout Setting in the emnify Portal](assets/regional.png)
+-->

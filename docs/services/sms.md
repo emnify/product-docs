@@ -26,8 +26,9 @@ In the Portal → Connected Devices you can access the SMS console and directly 
 The sender can be configured as well as the console will show if the SMS is delivered or not.
 You will see all SMSs that the device receives sends out.
 
+<!--  To be recreated
 ![SMS Console](assets/sms_console.png)
-
+-->
 
 ## emnify SMS REST API and webhook
 
@@ -36,10 +37,14 @@ For sending SMS through the REST API, check out the [Sending and receiving SMS]
 For receiving SMS and delivery notifications for SMS in your application, you can use the SMS webhook which can be configured under Device Policies → Service Policies → SMS Interface.
 Select Webhook and configure the URL and optionally, secret token to where you want the SMS to be delivered.
 
+<!--  To be recreated
 ![SMS Webhook](assets/sms_webhook.png)
+-->
 
+<!--  To be recreated
 ![Delivery notification](assets/delivery_notification.png)  
 *Delivery notification as received in Integromat webhook for SMS with ID: 46638644*
+-->
 
 When you want to send an SMS from the device to your application, your device should send the SMS to an invalid [MSISDN](#msisdn) with 8 digits or less.
 The SMS will then be delivered over the webhook.
@@ -53,17 +58,22 @@ Instead of implementing the APIs in your application, emnify and Zapier provide 
 Zapier has a concept of triggers and actions – when a trigger happens multiple actions can be based on it – taking content from previous steps.
 Sending SMS to your devices is available as an action in Zapier.
 
+<!--  To be recreated
 ![SMS with Zapier](assets/sms_zap.png)
+-->
 
 For acting upon SMS delivery notification or SMSs that are sent from a device, you need to set up a webhook in Zapier.
 Create a zap using "Webhook by Zapier" and select "Catch Hook" as trigger event.
 You will get a custom webhook URL which will be used in the next step.
 
+<!--  To be recreated
 ![Catch Hook as a trigger](assets/catch_hook.png)
+-->
 
 Now you need to enter this webhook URL in the emnify Portal → Device Policies → Choose SMS interface as webhook and create a webhook with the URL.
 All SMS delivery notification and device originated SMS with this service policy will then be delivered over the webhook.
 
+<!--  To be recreated
 ![emnify Webhook as SMS interface](assets/zap_webhook.png)
-
+-->
 
