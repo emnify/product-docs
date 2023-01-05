@@ -169,7 +169,10 @@ Default password `123456`.
 
 ## Reachfar GPS APN configuration
 
-Configuring the APN for Reachfar GPS trackers can be done
+Configuring the APN for Reachfar GPS trackers can be done:
+
+1. Via the SMS console through the emnify Portal
+1. Via the emnify SMS API or Zapier Integration (when automating the configuration)
 
 When the GPS tracker is turned on for the first time after the SIM is
 installed it is showing the status `Attached` in the emnify portal. At
