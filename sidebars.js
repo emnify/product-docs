@@ -31,8 +31,25 @@ const sidebars = {
   ourSidebar: [
     'cellular-iot',
     'quickstart',
-    'service-stack-overview',
-    'services',
+    {
+      type: 'category',
+      label: 'Services',
+      items: [
+        'services/global-iot-sim',
+        'services/global-iot-network',
+        'services/iot-cloud-communication-platform',
+        'services/data-streamer',
+        'services/security',
+        'services/cloud-connect',
+        'services/openvpn',
+        'services/sms',
+        'services/user-management',
+        'services/business-intelligence-and-analytics-reports',
+        'services/no-code-workflow-automation',
+        'services/sim-life-cycle-management',
+        'services/endpoint-management-and-group-policies',
+      ],
+    },
     'rest-api',
     {
       type: 'category',
