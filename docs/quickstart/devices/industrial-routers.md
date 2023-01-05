@@ -6,7 +6,7 @@ description: How to connect to routers to configure the APN
 *Applies to RUT240, RUT950, RUT955, RUTX09, RUTX11, RUTX12, RUTX14, RUTXR1, RUT360*
 
 Newer firmware version of the Teltonika Routers should automatically detect the emnify APN.
-Nevertheless, in case the APN is not correctly detected it can be configured with 3 methods
+Nevertheless, in case the APN is not correctly detected, it can be configured with 3 methods:
 
 1. With the Teltonika WebUI over Wifi, Ethernet
 1. Via the SMS console through the emnify Portal (most simple)
