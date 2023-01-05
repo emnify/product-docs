@@ -20,9 +20,9 @@ Type in `em` in APN – there is no PIN configured on the SIM and no APN usernam
 1. Teltonika Networks Router APN configuration via SMS console / API or Zapier [Teltonika Documentation Source](https://wiki.teltonika-networks.com/view/SMS_Commands)
 
 Make sure that the Router is powered on and the SIM card is inserted and activated.
-In the emnify portal the device should show as `Attached`.
+In the emnify Portal, the device should show as **Attached**.
 
-The following SMS command need to be send to the device
+The following SMS command needs to be sent to the device:
 
 ```
 cellular apn=em
