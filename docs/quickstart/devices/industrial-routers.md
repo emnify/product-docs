@@ -11,6 +11,8 @@ Nevertheless, in case the APN is not correctly detected, it can be configured wi
 1. With the Teltonika WebUI over Wifi, Ethernet
 1. Via the SMS console through the emnify Portal (most simple)
 1. via the emnify SMS API or Zapier Integration (when automating the configuration)
+
+
 1. APN configuration through the Teltonika Router WebUI
 Connect your PC through the routers Wi-Fi using the credentials   provided on the device.
 Open the Teltonika WebUI <http://192.168.1.1> and go to the Mobile configuration.
