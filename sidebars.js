@@ -44,20 +44,60 @@ const sidebars = {
         'services/global-iot-sim',
         'services/global-iot-network',
         'services/iot-cloud-communication-platform',
-        'services/data-streamer',
+        {
+          type: 'category',
+          label: 'Data Streamer',
+          link: { 
+            type: 'generated-index', 
+            title: 'emnify multicloud Data Streamer',
+            slug: 'data-streamer'
+          },
+          items: [
+            {
+              type: 'doc',
+              label: 'Getting Started',
+              id: 'services/data-streamer/getting-started'
+            },
+            {
+              type: 'doc',
+              label: 'Connection Types',
+              id: 'services/data-streamer/connection-types'
+            },
+            {
+              type: 'doc',
+              label: 'Stream Types',
+              id: 'services/data-streamer/stream-types'
+            },
+            {
+              type: 'doc',
+              label: 'Managing Data Streams',
+              id: 'services/data-streamer/managing-data-streams'
+            },
+            {
+              type: 'doc',
+              label: 'Using the Data Streamer',
+              id: 'services/data-streamer/usage'
+            },
+            {
+              type: 'doc',
+              label: 'Available Integrations',
+              id: 'services/data-streamer/available-integrations'
+            }
+          ],
+        },
         {
           type: 'category',
           label: 'Events',
           link: {
             type: 'generated-index', 
             title: 'emnify system events',
-            slug: '/events'
+            slug: 'services/events'
           },
           items: [
-            'events/getting-started',
-            'events/event-types',
-            'events/mno-events',
-            'events/usage'
+            'services/events/getting-started',
+            'services/events/event-types',
+            'services/events/mno-events',
+            'services/events/usage'
           ],
         },
         'services/security',
@@ -72,23 +112,6 @@ const sidebars = {
       ],
     },
     'rest-api',
-    {
-      type: 'category',
-      label: 'Data Streamer',
-      link: { 
-        type: 'generated-index', 
-        title: 'emnify multicloud Data Streamer',
-        slug: 'data-streamer'
-      },
-      items: [
-        'data-streamer/getting-started',
-        'data-streamer/connection-types',
-        'data-streamer/stream-types',
-        'data-streamer/managing-data-streams',
-        'data-streamer/usage',
-        'data-streamer/available-integrations'
-      ],
-    },
     {
       type: 'category',
       label: 'Single Sign-On',
