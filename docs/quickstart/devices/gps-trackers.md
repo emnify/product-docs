@@ -231,8 +231,8 @@ The SMS command to set the APN for Bitrek GPS trackers is:
 setparam 0242 em
 ```
 
-The Bitrek GPS tracker also utilize a roaming command (setparam 0917) together with a list of enabled networks (setparam 0020-0099).
-The following SMS commands need to be send
+The Bitrek GPS tracker also utilizes a roaming command (`setparam 0917`) together with a list of enabled networks (`setparam 0020-0099`).
+The following SMS commands need to be send:
 
 ```
 setparam 0917 1 // enable romaing in all networks as defined in the next SMS
