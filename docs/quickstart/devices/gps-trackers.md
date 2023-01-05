@@ -159,7 +159,7 @@ The SMS command to set the APN for Elinz GPS trackers is:
 APN,em#
 ```
 
-On other models the APN configuration is a little different
+On other models, the APN configuration is a little different:
 
 ```
 apn[password] em
