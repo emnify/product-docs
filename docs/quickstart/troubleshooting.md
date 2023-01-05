@@ -25,8 +25,12 @@ There can be many update locations before or in between the data session.
 
 ## The device is offline
 
-- Click on Details → ensure that the device is enabled
-- Click on Details → Events. Validate if there is any location update event created and rejected. The reasoning should indicate the resolution to the problem. If there is no location update event:
+- Click on **Details** → ensure that the device is enabled
+- Click on **Details** → **Events**. 
+Validate if there is any location update event created and rejected. 
+The reasoning should indicate the resolution to the problem. 
+
+If there is no location update event:
 - Ensure the device is powered on and searches for a network
 - Ensure that the device is in reception of any supported network
 
@@ -36,17 +40,17 @@ There can be many update locations before or in between the data session.
 You can find guides for various devices in [Getting the first device online](#getting-the-first-device-online).
 - Ensure that you activate data access and the radio types (i.e., 2G, 3G, 4G) if you change policy settings.
 - Make sure mobile data is enabled and that international roaming is allowed.
-- Click Details → Events.
+- Click **Details** → **Events**.
 Validate if there is any PDP create event and rejected.
 The reason and resolution is given in the event description.
 
-The `Attached` status does not necessarily mean that the device is powered on.
+The **Attached** status does not necessarily mean that the device is powered on.
 If the device first attaches to a network and then powers off - there is no information towards the emnify network that would allow to detect this.
 
 ## The device shows online but does not transmit data
 
 - Ensure mobile data is enabled, as well as international roaming is allowed.
-- Validate under Details→Events if any `Warn` or `Error` is detected.
+- Validate under **Details** → **Events** if any `Warn` or `Error` is detected.
 - For NB-IoT and LTE-M this behavior can happen when the device automatically connects to a network - rather specify the network that shall be used with using the `AT+COPS`.
 Also, verify that the network is on emnify’s [NB-IoTcoverage](https://www.emnify.com/nb-iot-coverage) or [LTE-M network coverage](https://www.emnify.com/lte-m-coverage) list.
 - Ensure that your data destination and DNS server (default emnify uses Google's `8.8.8.8` DNS server if your device does not specify a DNS server) is not blocked for the device.
@@ -54,6 +58,6 @@ Also, verify that the network is on emnify’s [NB-IoTcoverage](https://www.emni
 **Other general troubleshooting tips**
 
 - After configuration changes, make sure they are correctly applied on the device (e.g., with a reboot).
-- Clicking the reset connectivity icon on Connected Devices can also reset the network state and allow your device to freshly reattach.
+- Clicking the reset connectivity icon on **Connected Devices** can also reset the network state and allow your device to freshly reattach.
 - The issue may only be present with one network or in the specific location (e.g., due to high interference for this network).
 You can use the Operator Blacklist to block the network and force the change to a different network.
