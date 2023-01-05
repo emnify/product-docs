@@ -242,7 +242,7 @@ setparam 0021 <MNC>
 setparam 0099 <MNC>
 ```
 
-All commands can be concatenated into one SMS (max. 160 characters) by using the ; as a delimiter.
+All commands can be concatenated into one SMS (max. 160 characters) by using the `;` as a delimiter:
 
 ```
 setparam 0242 em; setparam 0917 1; setparam 0020 <MNC>; .....
