@@ -49,7 +49,7 @@ const sidebars = {
           link: { 
             type: 'generated-index', 
             title: 'emnify multicloud Data Streamer',
-            slug: 'data-streamer'
+            slug: 'services/data-streamer'
           },
       items: [
         'services/data-streamer/getting-started',
