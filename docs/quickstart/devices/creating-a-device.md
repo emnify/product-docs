@@ -1,6 +1,4 @@
 ---
-id: creating-a-device
-title: Creating a device
 description: Defining the device to be used with the SIM
 ---
 # Creating a device
