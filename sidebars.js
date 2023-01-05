@@ -51,38 +51,14 @@ const sidebars = {
             title: 'emnify multicloud Data Streamer',
             slug: 'data-streamer'
           },
-          items: [
-            {
-              type: 'doc',
-              label: 'Getting Started',
-              id: 'services/data-streamer/getting-started'
-            },
-            {
-              type: 'doc',
-              label: 'Connection Types',
-              id: 'services/data-streamer/connection-types'
-            },
-            {
-              type: 'doc',
-              label: 'Stream Types',
-              id: 'services/data-streamer/stream-types'
-            },
-            {
-              type: 'doc',
-              label: 'Managing Data Streams',
-              id: 'services/data-streamer/managing-data-streams'
-            },
-            {
-              type: 'doc',
-              label: 'Using the Data Streamer',
-              id: 'services/data-streamer/usage'
-            },
-            {
-              type: 'doc',
-              label: 'Available Integrations',
-              id: 'services/data-streamer/available-integrations'
-            }
-          ],
+      items: [
+        'services/data-streamer/getting-started',
+        'services/data-streamer/connection-types',
+        'services/data-streamer/stream-types',
+        'services/data-streamer/managing-data-streams',
+        'services/data-streamer/usage',
+        'services/data-streamer/available-integrations'
+      ],
         },
         {
           type: 'category',
