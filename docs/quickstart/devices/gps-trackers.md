@@ -190,8 +190,7 @@ apn,em,plmn,90143#  // Send this SMS from the phone
 `123456` is the default password.
 After setting the APN the GPS tracker needs to be rebooted.
 
-*Applies to RF-V26, RF-V26+, RF-V28, RF-V30, RF-V32, RF-V34, RF-V36,
-RF-V36, RF-V38, RF-V40, RF-V42, RF-V43，RF-V44, RF-V46*
+*Applies to RF-V26, RF-V26+, RF-V28, RF-V30, RF-V32, RF-V34, RF-V36, RF-V36, RF-V38, RF-V40, RF-V42, RF-V43，RF-V44, RF-V46*
 
 The following two SMS commands need to send
 
