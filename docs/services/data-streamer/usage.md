@@ -23,7 +23,10 @@ Then, navigate to the **Integrations** page by clicking the **Integrations** men
 
 If there are no data streams configured, the **Data Streams** panel displays all available [connection types](connection-types) as tiles.
 
-![ ](assets/portal-integrations-data-streams-panel.png)
+<img
+  src={require('./assets/portal-integrations-data-streams-panel.png').default}
+  alt=""
+/>
 
 If you already have a data stream configured, the panel displays all existing streams, ordered by creation date (newest on the top).
 This list view can be used to gain an overview of the current states of different data streams.
@@ -31,23 +34,35 @@ Data streams are marked as **Running** are properly operating.
 Failed streams exhibit an **Error** status.
 Paused streams are marked as **Paused**.
 
-![](assets/portal-integrations-data-streams-status.png)
+<img
+  src={require('./assets/portal-integrations-data-streams-status.png').default}
+  alt=""
+/>
 
 The **Details** button allows you to inspect the configuration of the specific stream.
 The **Destination** configuration varies depending on the connection type.
 
-![](assets/portal-integrations-data-streams-details-usage.png)
+<img
+  src={require('./assets/portal-integrations-data-streams-details-usage.png').default}
+  alt=""
+/>
 
 ### Creating data streams
 
 When no configured data streams are available, click **Add** on the preferred connection type tile.
 
-![](assets/portal-integrations-data-streams-add-buttons.png)
+<img
+  src={require('./assets/portal-integrations-data-streams-add-buttons.png').default}
+  alt=""
+/>
 
 Otherwise, click **Add New Stream** at the top of the existing **Data Streams** list.
 This shows the connection type tiles. You can choose your preferred connection type and click **Add**.
 
-![](assets/portal-integrations-data-streams-add-new-button.png)
+<img
+  src={require('./assets/portal-integrations-data-streams-add-new-button.png').default}
+  alt=""
+/>
 
 Configure the source by selecting your desired [stream type](stream-types).
 Optionally, you can add event options for [filtering on event types](managing-data-streams#filtering-event-data-streams).
@@ -73,7 +88,10 @@ If this happens, the stream isn't created and you must correct the configuration
 
 With the **Details** button on the Data Stream tiles, you can inspect the configuration and update the [filters for event data streams](managing-data-streams#filtering-event-data-streams).
 
-![](assets/portal-integrations-data-streams-details-events-filter.png)
+<img
+  src={require('./assets/portal-integrations-data-streams-details-events-filter.png').default}
+  alt=""
+/>
 
 ### Deleting data streams
 
