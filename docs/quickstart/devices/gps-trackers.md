@@ -79,7 +79,7 @@ The SMS command to set the APN for Concox GPS trackers is:
 APN em#
 ```
 
-For some Concox models (e.g. TR02) the password (default 666666) needs to be send with the command
+For some Concox models (e.g. TR02) the password (default `666666`) needs to be send with the command
 
 ```
 APN,666666,em#
@@ -109,7 +109,8 @@ The SMS command to set the APN for Coban GPS trackers is:
 APN[your_password] em
 ```
 
-The default password is 123456. There are no spaces between gprs/APN and the password.
+The default password is `123456`.
+There are no spaces between gprs/APN and the password.
 
 ## Meitrack GPS APN configuration
 
@@ -138,9 +139,9 @@ On other devices the APN setting is done via the `A21` command:
 666888,A21,1,server.meigps.com,8800,em,,
 ```
 
-Where `666888` is the default superpassword (not the SMS password).
+Where `666888` is the default super password (not the SMS password).
 
-Both SMS and Superpassword can be changed and would then need to be replaced in the SMS command.
+Both SMS and super password can be changed and would then need to be replaced in the SMS command.
 
 ## Elinz GPS APN configuration
 
@@ -210,7 +211,7 @@ At this point the device can receive SMS but not establish a data session unless
 The SMS command to set the APN for Queclink GPS trackers is:
 
 ```
-AT+GTBSI=[password],em,,,,,,,0002$ // The password default is device model,e.g. gl200
+AT+GTBSI=[password],em,,,,,,,0002$ // The password default is device model, e.g., gl200
 ```
 
 ## Bitrek GPS APN configuration
