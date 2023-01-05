@@ -21,7 +21,8 @@ Quectel also utilizes a vendor specific command `AT+QICSGP`:
 AT+QICSGP=1,1,"em","","",1
 ```
 
-According to [Quectel](https://www.quectel.com/faqs/12-8-what-is-the-difference-between-cgdcont-and-qicsgp/) the command `AT+QICSGP` shall be used when the internal TCP/UDP stack should be used – and it also allows to configure which bearer (CSD or GPRS) is used. GPRS must be used.
+According to [Quectel](https://www.quectel.com/faqs/12-8-what-is-the-difference-between-cgdcont-and-qicsgp/) the command `AT+QICSGP` shall be used when the internal TCP/UDP stack should be used – and it also allows to configure which bearer (CSD or GPRS) is used.
+GPRS must be used.
 
 For managing roaming Quectel also introduced the `AT+QCFG` command.
 The suggested setting is:
@@ -34,7 +35,7 @@ Check your Quectel module AT command guide for more information.
 
 ## u-Blox cellular IoT modules
 
-u-Blox supports the standard 3GPP command to set APNs via `AT+CGDCONT`
+u-Blox supports the standard 3GPP command to set APNs via `AT+CGDCONT`:
 
 ```console
 AT+CGDCONT=1,"IP","em",,
@@ -46,7 +47,7 @@ u-Blox also supports a vendor specific command to configure the APN for the init
 AT+UCGDFLT=1,"IP","em"
 ```
 
-For roaming configuration, u-blox modules utilize a vendor-specific `AT+UDCONF` command.
+For roaming configuration u-blox modules utilize a vendor specific `AT+UDCONF` command.
 This enables automatic search in case the device cannot attach to a specific network.
 
 ```console
@@ -61,10 +62,10 @@ Check your u-Blox module AT command guide for more information.
 
 The commands for configuring the APN settings are 3GPP standardized and all major cellular module manufacturer support the commands.
 
-The `AT+CGDCONT` command needs to be utilized to set the APN:
+The AT+CGDCONT command needs to be utilized to set the APN.
 
 ```console
 AT+CGDCONT=1,"IP","em",,
 ```
 
-Check your AT command guide for further information, or read [3GPP Technical Specification 27.007](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=1515).
+Check your AT command guide for further information or read [3GPP Technical Specification 27.007](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=1515).
