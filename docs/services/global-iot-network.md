@@ -2,7 +2,7 @@
 
 Even when IoT devices are more often only deployed at a single location and are not moving, for a vendor selling to multiple countries it is important to have a global connectivity solution, so that there is no need to have different SIM cards in stock or have multiple contracts and tariffs.
 
-## Mobile Network Aggregation
+## Mobile network aggregation
 
 emnify uses an approach to aggregate the roaming footprint of multiple operators with the goal of offering access to every network in the world.
 Mobile operators utilize roaming in foreign countries so their subscribers can stay connected when traveling.
@@ -10,7 +10,7 @@ Often operators do not have roaming agreements with all countries or only have a
 emnify works with multiple partner operators across the globe to be able to offer more networks at a commercially viable rate.
 The emnify [multi-IMSI applet](#multi-imsi-application) makes it completely transparent for the device to identify which roaming agreement of which operator is being utilized.
 
-## Radio Access Types
+## Radio access types
 
 The emnify IoT SIM and platform supports all devices and modules using the following radio access technologies
 

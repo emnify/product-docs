@@ -3,7 +3,7 @@
 emnify’s communication platform hosts an OpenVPN service that allows to establish a private network between the device and any remote client location. 
 The remote client can either be on the application server itself, or on any machine that wants to remotely access the device (such as operational staff).
 
-## OpenVPN Overview
+## OpenVPN overview
 
 To use the OpenVPN service the IoT device does not need any private APN, OpenVPN software or dynamic DNS resolution.
 Through the emnify SIM, every device will get a static private IP address which can be used to identify and address the device.

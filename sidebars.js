@@ -36,7 +36,6 @@ const sidebars = {
       label: 'Services',
       link: { 
         type: 'generated-index', 
-        title: 'Service stack overview',
         description: 'emnify offers the following high-level products and services:',
         slug: 'services'
       },

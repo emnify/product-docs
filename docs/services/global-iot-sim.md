@@ -5,7 +5,7 @@ For testing the platform services quickly without any SIM hardware - emnify offe
 emnify also has a [multi-IMSI software application](#multi-imsi-application) directly on the SIM so different operator profiles can be used based on the location of the device.
 Using this technology, emnify can provide a superset of roaming networks from traditional operators.
 
-## Form Factors
+## Form factors
 
 The traditional, pluggable SIM card comes in 4 different form factors:
 
@@ -28,7 +28,7 @@ These eUICC-based eSIMs can come in any of the described form factors, not just 
 While eSIM/eUICC is widely adopted for consumer smartphone and watches, for IoT use cases (where the profile cannot be download via a screen or QR reader) the commercial and deployment model of the required infrastructure prohibits an easy change of operator profiles and is therefore not widely adopted.
 :::
 
-## Quality Grades
+## Quality grades
 
 The emnify SIM cards come in two different quality grades **Commercial** and **Industrial**.
 The following table shows comparisons to a standard consumer SIM.
@@ -62,7 +62,7 @@ The eSIM can be used to test and verify all emnify functionalities including:
 - Cloud Connect and Data Streamer integration
 - Zapier No-Code Integrations
 
-## Multi-IMSI Application
+## Multi-IMSI application
 
 emnify IoT SIM cards are equipped with a multi-IMSI applet that contains emnify’s as well as our partner operators' profiles. 
 Different operator profiles are identified by their [IMSI](../glossary#imsi---international-mobile-subscriber-identity).

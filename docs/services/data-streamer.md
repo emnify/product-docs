@@ -40,13 +40,13 @@ Events can be classified as follows:
 
 Please visit the [emnify API Documentation](https://cdn.emnify.net/api/doc/event.html?__hstc=115846617.4e595f58851491bb8576507ce2561f79.1670194662635.1670424207784.1670429175064.6&__hssc=115846617.2.1670429175064&__hsfp=3017379904) to learn more about the event structure.
 
-## Usage Data
+## Usage data
 
 Usage data records get generated when endpoints consume data or SMS services.
 They provide information about the used service, visited network, volume, and cost.
 Usage data streams are often used for monitoring and analyzing the data consumption and as input for custom billing system.
 
-## Connection Types
+## Connection types
 
 You can stream this data to your server, a third-party web service or push the data to one of the pre-integrated cloud services.
 
@@ -57,7 +57,7 @@ For example, one stream may be connected to a network monitoring system, another
 
 The integration guides for the Data Streamer can be found [here](#_integration_guides).
 
-## Management Interfaces
+## Management interfaces
 
 Data Streams can be managed by using the [emnify Portal](https://portal.emnify.com/) or by using the [emnify API](https://cdn.emnify.net/api/doc/swagger.html?__hstc=115846617.4e595f58851491bb8576507ce2561f79.1670194662635.1670424207784.1670429175064.6&__hssc=115846617.2.1670429175064&__hsfp=3017379904).
 

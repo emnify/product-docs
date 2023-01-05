@@ -46,7 +46,7 @@ Utilizing a private DNS server which is not reachable via the public Internet re
 This can be done using Cloud Connect either with Amazon Transit Gateway or IPsec.
 A tutorial on how to set up a DNS firewall based on a private DNS using Amazon Route 53 is available [here](https://www.emnify.com/en/developer-hub/dns-filtering).
 
-## IMEI Lock
+## IMEI lock
 
 For device manufacturers, SIM card theft is an issue because pluggable SIM cards can be removed from a device and then used to gain free internet access.
 The [IMEI lock](../glossary#imei-lock)  feature prevents the use of SIM card in any other device by bounding the SIM to an IMEI.

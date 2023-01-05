@@ -1,4 +1,4 @@
-# No-Code Workflow Automation
+# No-code workflow automation
 
 Zapier is a service that allows you to connect more than 4000 applications - including emnify - to automate workflows.
 With the available integrations you can automate device provisioning between emnify and your application.

@@ -1,4 +1,4 @@
-# Endpoint Management & Group Policies
+# Endpoint management and group policies
 
 Within the emnify platform, there is a separation between SIM card and the device, also referred to as "endpoint".
 This allows you to configure policies on the device level rather than SIM level.
@@ -16,7 +16,7 @@ Service policies define which services are available for a group of devices. The
 - Available SMS service (MO/MT/P2P/A2P)
 - Activation of Quota and Prepaid Management
 
-#### Coverage Policies
+#### Coverage policies
 
 Coverage policies define which tariff and network coverage is available for a group of devices.
 This enables you to optimize the tariff based on the intended coverage.
@@ -26,7 +26,7 @@ The coverage policies include:
 - The applied tariff for the group of devices
 - The available networks organized in rate zones
 
-#### Individual Device policies
+#### Individual device policies
 
 On a device level additional policies can be defined:
 
