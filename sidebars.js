@@ -40,7 +40,6 @@ const sidebars = {
         slug: 'services'
       },
       items: [
-        'services/stack-overview',
         'services/global-iot-sim',
         'services/global-iot-network',
         'services/iot-cloud-communication-platform',
