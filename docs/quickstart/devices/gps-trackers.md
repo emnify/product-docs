@@ -201,13 +201,13 @@ apn,em# // Send this SMS from the phone
 
 ## Queclink GPS APN configuration
 
-Configuring the APN for Queclink GPS trackers can be done
+Configuring the APN for Queclink GPS trackers can be done:
 
-1. Via the SMS console through the emnify Portal (most simple)
+1. Via the SMS console through the emnify Portal
 1. Via the emnify SMS API or Zapier Integration (when automating the configuration)
 
-When the GPS tracker is turned on for the first time after the SIM is installed it is showing the status `Attached` in the emnify portal.
-At this point the device can receive SMS but not establish a data session unless the APN is setup.
+When the GPS tracker is turned on for the first time after the SIM is installed, it shows the status **Attached** in the emnify Portal.
+At this point, the device can receive SMS but not establish a data session unless the APN is set up.
 
 The SMS command to set the APN for Queclink GPS trackers is:
 
