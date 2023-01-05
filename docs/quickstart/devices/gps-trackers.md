@@ -79,7 +79,7 @@ The SMS command to set the APN for Concox GPS trackers is:
 APN em#
 ```
 
-For some Concox models (e.g. TR02) the password (default `666666`) needs to be send with the command
+For some Concox models (e.g. TR02) the password (default `666666`) needs to be send\t with the command:
 
 ```
 APN,666666,em#
