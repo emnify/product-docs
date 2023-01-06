@@ -55,7 +55,7 @@ If the device first attaches to a network and then powers off - there is no info
 Also, verify that the network is on emnify’s [NB-IoTcoverage](https://www.emnify.com/nb-iot-coverage) or [LTE-M network coverage](https://www.emnify.com/lte-m-coverage) list.
 - Ensure that your data destination and DNS server (default emnify uses Google's `8.8.8.8` DNS server if your device does not specify a DNS server) is not blocked for the device.
 
-**Other general troubleshooting tips**
+## Other general troubleshooting tips
 
 - After configuration changes, make sure they are correctly applied on the device (e.g., with a reboot).
 - Clicking the reset connectivity icon on **Connected Devices** can also reset the network state and allow your device to freshly reattach.
