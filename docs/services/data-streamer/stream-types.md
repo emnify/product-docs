@@ -12,7 +12,7 @@ Streaming event and usage data within one stream is possible but not advised, as
 ## Event data
 
 The emnify system generates several types of events. 
-These events allow you to track notable system occurances based on behavior.
+These events allow you to track notable system occurrences based on behavior.
 
 Some common use cases for events on emnify include:
 
