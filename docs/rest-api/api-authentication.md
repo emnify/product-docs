@@ -1,3 +1,0 @@
-# API Authentication
-
-Coming soon!

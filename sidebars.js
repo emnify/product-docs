@@ -64,7 +64,6 @@ const sidebars = {
         'quickstart/troubleshooting',
       ],
     },
-    'service-stack-overview',
     {
       type: 'category',
       label: 'Services',
