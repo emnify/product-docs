@@ -30,15 +30,11 @@ const sidebars = {
   */
   ourSidebar: [
     'cellular-iot',
-<<<<<<< HEAD
-    'quickstart',
-=======
     {
       type: 'category',
       label: 'Quickstart',
-      link: {type: 'doc', id: 'quickstart/index'},
+      link: {type: 'doc', id: 'quickstart/order-a-sim-package'},
       items: [
-        'quickstart/order-a-sim-package',
         'quickstart/registering-sims',
         {
           type: 'category',
@@ -57,7 +53,6 @@ const sidebars = {
       ],
     },
     'service-stack-overview',
->>>>>>> 99e38e9 (Quickstart Guide Migration with images)
     {
       type: 'category',
       label: 'Services',
@@ -113,7 +108,16 @@ const sidebars = {
         'services/endpoint-management-and-group-policies',
       ],
     },
-    'rest-api',
+    {
+      type: 'category',
+      label: 'REST API',
+      link: {type: 'doc', id: 'rest-api/index'},
+      items: [
+        'rest-api/api-authentication',
+        'rest-api/sending-and-receiving-sms',
+        'rest-api/code-samples',
+      ],
+    },
     {
       type: 'category',
       label: 'Single Sign-On',
