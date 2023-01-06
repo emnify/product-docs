@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 
 description: Analyze data usage, events, and device location over time
@@ -13,3 +14,8 @@ You can analyze the data consumption, events, location of the devices, and compa
 - Live traffic reports
 - Network activity
 - Traffic per rate zone
+=======
+# Business Intelligence and Analytics Reports
+
+Coming soon!
+>>>>>>> b73d00d (Initial Mock-up that was presented on Wed, 21. Dec 2022)
