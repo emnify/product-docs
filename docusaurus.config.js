@@ -1,5 +1,5 @@
 // @ts-check
-const lightCodeTheme = require("prism-react-renderer/themes/github");
+const lightCodeTheme = require("prism-react-renderer/themes/vsLight");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
@@ -43,16 +43,17 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      colorMode: {
+        disableSwitch: true
+      },
       navbar: {
         title: "Developers",
         logo: {
           alt: "emnify Documentation – Home",
           src: "img/logo-word-blue-295x80.png",
-          srcDark: "img/logo-word-white-295x80.png",
         },
       },
       footer: {
-        style: "dark",
         links: [
           {
             title: "Resources",
@@ -109,8 +110,7 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} emnify GmbH. All rights reserved.`,
       },
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        theme: lightCodeTheme
       },
     }),
 };
