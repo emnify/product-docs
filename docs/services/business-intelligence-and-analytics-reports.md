@@ -1,5 +1,4 @@
 ---
-
 description: Analyze data usage, events, and device location over time
 ---
 # Business intelligence and analytics reports

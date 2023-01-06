@@ -3,7 +3,40 @@
 const sidebars = {
   mainDocsSidebar: [
     'cellular-iot',
-    'quickstart',
+    {
+      type: 'category',
+      label: 'Quickstart',
+      link: {
+        type: 'generated-index',
+        title: 'Quickstart guide',
+        slug: 'quickstart',
+        description: 'Resources for your successful IoT cellular deployment with emnify',
+      },
+      items: [
+        'quickstart/getting-started',
+        'quickstart/registering-sims',
+        {
+          type: 'category',
+          label: 'Devices',
+          link: {
+            type: 'generated-index',
+            title: 'Devices',
+            slug: 'devices',
+            description: 'How to create and configure various types of devices.',
+          },
+          items: [
+            'quickstart/devices/creating-a-device',
+            'quickstart/devices/getting-the-first-device-online',
+            'quickstart/devices/android',
+            'quickstart/devices/ios-devices',
+            'quickstart/devices/cellular-modules',
+            'quickstart/devices/gps-trackers',
+            'quickstart/devices/industrial-routers',
+          ],
+        },
+        'quickstart/troubleshooting',
+      ],
+    },
     {
       type: 'category',
       label: 'Services',
