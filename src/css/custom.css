@@ -1,30 +1,130 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
-
-/* You can override the default Infima variables here. */
+/* Overrides the default Infima (https://infima.dev/) variables */
 :root {
-  --ifm-color-primary: #0065b3;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  /* Text and content */
+  --ifm-font-family-base: 'Avenir LT Pro', Helvetica, Arial, sans-serif;
+  --ifm-color-content: #000035; 
+  --ifm-color-content-secondary: #404067;
+  --ifm-color-primary: #000035;
+  --ifm-color-primary-dark: #80809A; 
+  --ifm-color-primary-darker: #404067;
+  --ifm-color-primary-darkest: #000035;
+  --ifm-color-primary-light: #60E524;
+  --ifm-color-primary-lighter: #4EE794;
+  --ifm-color-primary-lightest: #DFF6D5;
+  --ifm-color-emphasis: #404067;
+  /* Links */
+  --ifm-link-hover-color: #404067;
+  /* Footer */
+  --ifm-footer-background-color: #F2F2F2;
+  --ifm-footer-link-color: #000035;
+  /* Sidebar */
+  --ifm-menu-color: #404067;
+  --ifm-menu-color-background-active: #010D410F;
+  --ifm-menu-color-background-hover: #010D410F;
+  /* Breadcrumb */
+  --ifm-breadcrumb-item-background-active: #010D410F;
+  /* Buttons */
+  --ifm-button-background-color: #000035;
+  /* Code blocks */
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
-  --ifm-color-primary: #000035;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+/* Links within documentation content */
+.theme-doc-markdown a, .theme-edit-this-page {
+  --ifm-link-decoration: underline;
+}
+
+.theme-doc-markdown a:hover, .theme-edit-this-page:hover {
+  color: #404067;
+}
+
+.theme-doc-markdown table a {
+  text-decoration: none;
+}
+
+.theme-doc-markdown table a:hover {
+  text-decoration: underline;
+}
+
+.theme-doc-markdown .hash-link {
+  text-decoration: none;
+}
+
+.theme-doc-markdown .hash-link:hover {
+  text-decoration: underline;
+}
+
+/* Caution adminition */
+.theme-admonition-caution {
+  background-color: #F2740014;
+  border-color: #F27400;
+  color: #263238;
+}
+
+.theme-admonition-caution a {
+  text-decoration-color: #F27400;
+}
+
+.theme-admonition-caution svg path {
+  fill: #F27400;
+}
+
+/* Tip adminition */
+.theme-admonition-tip {
+  background-color: #3D9A3214;
+  border-color: #009E19;
+  color: #263238;
+}
+
+.theme-admonition-tip a {
+  text-decoration-color: #009E19;
+}
+
+.theme-admonition-tip svg path {
+  fill: #009E19;
+}
+
+/* Danger adminition */
+.theme-admonition-danger {
+  background-color: #DA353514;
+  border-color: #DA3535;
+  color: #263238;
+}
+
+.theme-admonition-danger a {
+  text-decoration-color: #DA3535;
+}
+
+.theme-admonition-danger svg path {
+  fill: #DA3535;
+}
+
+/* Info adminition */
+.theme-admonition-info {
+  background-color: #EDF3F8;
+  border-color: #659BDF;
+  color: #263238;
+}
+
+.theme-admonition-info a {
+  text-decoration-color: #659BDF;
+}
+
+.theme-admonition-info svg path {
+  fill: #659BDF;
+}
+
+/* Note adminition */
+.theme-admonition-note {
+  background-color: #F5F5F5;
+  border-color: #E4E4E4;
+  color: #263238;
+}
+
+.theme-admonition-note a {
+  text-decoration-color: #E4E4E4;
+}
+
+.theme-admonition-note svg path {
+  fill: #263238;
 }
