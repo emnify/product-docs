@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 description: AWS Intra-Cloud Connect, IPsec
 ---
@@ -28,8 +27,3 @@ With emnify you can set up an IPsec tunnel to securely transfer your data into y
 
 To integrate Cloud Connect into your application using IPsec, you can follow this [tutorial](https://www.emnify.com/en/developer-hub/how-to-setup-an-ipsec-using-emnify-cloudconnect). 
 You can also find guide to set up IPsec for Azure and Google Cloud in among our [Integration Guides](https://www.emnify.com/integration-guides).
-=======
-# Cloud Connect
-
-Coming soon!
->>>>>>> b73d00d (Initial Mock-up that was presented on Wed, 21. Dec 2022)
