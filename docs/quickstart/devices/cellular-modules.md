@@ -11,13 +11,13 @@ For Telit, Sierra Wireless, Cinterion/Gemalto/Thales, SIMcom, or Sequans, see [G
 
 With Quectel modules the APN can be set with the 3GPP standard command `AT+CGDCONT`:
 
-```console
+```
 AT+CGDCONT=1,"IP","em",,
 ```
 
 Quectel also utilizes a vendor specific command `AT+QICSGP`:
 
-```console
+```
 AT+QICSGP=1,1,"em","","",1
 ```
 
@@ -27,7 +27,7 @@ GPRS must be used.
 For managing roaming Quectel also introduced the `AT+QCFG` command.
 The suggested setting is:
 
-```console
+```
 AT+QCFG="roamservice",2,1
 ```
 
@@ -37,20 +37,20 @@ Check your Quectel module AT command guide for more information.
 
 u-Blox supports the standard 3GPP command to set APNs via `AT+CGDCONT`:
 
-```console
+```
 AT+CGDCONT=1,"IP","em",,
 ```
 
 u-Blox also supports a vendor specific command to configure the APN for the initial EPS bearer:
 
-```console
+```
 AT+UCGDFLT=1,"IP","em"
 ```
 
 For roaming configuration u-blox modules utilize a vendor specific `AT+UDCONF` command.
 This enables automatic search in case the device cannot attach to a specific network.
 
-```console
+```
 AT+UDCONF=20,2
 ```
 
@@ -64,7 +64,7 @@ The commands for configuring the APN settings are 3GPP standardized and all majo
 
 The AT+CGDCONT command needs to be utilized to set the APN.
 
-```console
+```
 AT+CGDCONT=1,"IP","em",,
 ```
 
