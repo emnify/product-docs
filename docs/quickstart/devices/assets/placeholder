@@ -1,0 +1,10 @@
+Since Git tracks only files, not directories, this file
+exists only to keep its enclosing directory
+
+    docs/quickstart/devices/assets
+
+visible within this repository as a reminder that any
+new images for the Quickstart -> Devices content should
+be placed here.
+
+Once we have some images, this file can be removed.
