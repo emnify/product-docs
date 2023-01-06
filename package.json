@@ -1,7 +1,12 @@
 {
-  "name": "emnify-docs",
-  "version": "0.0.0",
-  "private": true,
+  "name": "product-docs",
+  "description": "Developer resources and documentation for the emnify SuperNetwork.",
+  "version": "1.0.0",
+  "author": "emnify Documentation Team <docs@emnify.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emnify/product-docs.git"
+  },
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",

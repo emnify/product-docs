@@ -1,3 +1,7 @@
+---
+description: Tips for combating common SSO issues
+---
+
 # Troubleshooting
 
 If you encounter any issues while setting up SSO, use the following suggestions to help troubleshoot.

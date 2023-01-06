@@ -1,3 +1,7 @@
+---
+description: Setup SSO with Microsoft Active Directory
+---
+
 # Setup SSO with Microsoft Active Directory
 
 This guide walks through enabling single sign-on (SSO), so your organization can access the [emnify Portal](https://portal.emnify.com/) using your Microsoft Business credentials.
