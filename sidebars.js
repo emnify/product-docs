@@ -119,16 +119,7 @@ const sidebars = {
         'services/endpoint-management-and-group-policies',
       ],
     },
-    {
-      type: 'category',
-      label: 'REST API',
-      link: {type: 'doc', id: 'rest-api/index'},
-      items: [
-        'rest-api/api-authentication',
-        'rest-api/sending-and-receiving-sms',
-        'rest-api/code-samples',
-      ],
-    },
+    'rest-api',
     {
       type: 'category',
       label: 'Single Sign-On',
