@@ -1,3 +1,7 @@
+---
+description: Setup SSO with Google Cloud Platform
+---
+
 # Setup SSO with Google Cloud Platform
 
 This guide walks through enabling single sign-on (SSO), so your organization can access the [emnify Portal](https://portal.emnify.com/) using your Google Cloud Platform credentials.
