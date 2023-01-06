@@ -44,12 +44,36 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
+<<<<<<< HEAD
         title: "Developers",
         logo: {
           alt: "emnify Documentation – Home",
           src: "img/logo-word-blue-295x80.png",
           srcDark: "img/logo-word-white-295x80.png",
         },
+=======
+        title: "",
+        logo: {
+          alt: "emnify Logo",
+          src: "img/logo.png",
+          href: "https://emnify.com/"
+        },
+/*
+        items: [
+          {
+            href: "https://",
+            position: "left",
+            label: "",
+          },
+          { to: "/blog", label: "Change Log", position: "right" },
+          {
+            href: "https://github.com/emnify/product-docs/#readme",
+            label: "GitHub",
+            position: "right",
+          },
+        ],
+*/
+>>>>>>> 99e38e9 (Quickstart Guide Migration with images)
       },
       footer: {
         style: "dark",

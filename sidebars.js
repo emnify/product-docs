@@ -30,7 +30,34 @@ const sidebars = {
   */
   ourSidebar: [
     'cellular-iot',
+<<<<<<< HEAD
     'quickstart',
+=======
+    {
+      type: 'category',
+      label: 'Quickstart',
+      link: {type: 'doc', id: 'quickstart/index'},
+      items: [
+        'quickstart/order-a-sim-package',
+        'quickstart/registering-sims',
+        {
+          type: 'category',
+          label: 'Devices',
+          link: {type: 'doc', id: 'quickstart/devices/creating-a-device'},
+          items: [
+            'quickstart/devices/getting-the-first-device-online',
+            'quickstart/devices/android',
+            'quickstart/devices/ios-devices',
+            'quickstart/devices/cellular-modules',
+            'quickstart/devices/gps-trackers',
+            'quickstart/devices/industrial-routers',
+          ],
+        },
+        'quickstart/troubleshooting',
+      ],
+    },
+    'service-stack-overview',
+>>>>>>> 99e38e9 (Quickstart Guide Migration with images)
     {
       type: 'category',
       label: 'Services',
