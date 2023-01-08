@@ -36,7 +36,7 @@ We'll update this list as new event types are created.
   "timestamp": "2021-10-27T11:59:29.000Z",
   "alert": true,
   "description": "Disconnecting data access for endpoint to apply throttling action.",
-  "id": 137310633115684,
+  "id": 543839962673704,
   "event_type": {
     "id": 0,
     "description": "Generic"
@@ -50,25 +50,25 @@ We'll update this list as new event types are created.
     "description": "Warn"
   },
   "organisation": {
-    "id": 654321,
+    "id": 891418,
     "name": "Sample Corp"
   },
   "endpoint": {
-    "id": 11089066,
-    "imei": "8677300511111142",
-    "ip_address": "100.102.41.209",
+    "id": 55214676,
+    "imei": "908525440918796",
+    "ip_address": "27.187.78.212",
     "name": "Test Sim 2",
     "tags": null
   },
   "sim": {
-    "iccid": "8988303000005733850",
-    "id": 3577707,
+    "iccid": "7772229804214642989",
+    "id": 7053671,
     "production_date": "2020-12-23T13:02:11.000Z"
   },
   "imsi": {
-    "id": 10770316,
+    "id": 51595711,
     "import_date": "2020-12-23T13:02:11.000Z",
-    "imsi": "295090004145444"
+    "imsi": "37807012732326"
   }
 }
 ```
@@ -83,7 +83,7 @@ We'll update this list as new event types are created.
   "timestamp": "2021-10-27T12:38:44.000Z",
   "alert": true,
   "description": "Disconnecting data access for endpoint, because quota has been updated.",
-  "id": 137349286510607,
+  "id": 843273935666500,
   "event_type": {
     "id": 0,
     "description": "Generic"
@@ -97,25 +97,25 @@ We'll update this list as new event types are created.
     "description": "Warn"
   },
   "organisation": {
-    "id": 654321,
+    "id": 719710,
     "name": "Sample Corp"
   },
   "endpoint": {
-    "id": 11089066,
-    "imei": "8677300511111142",
-    "ip_address": "100.102.41.209",
+    "id": 13296071,
+    "imei": "125850842548013",
+    "ip_address": "145.215.185.221",
     "name": "Test Sim 2",
     "tags": null
   },
   "sim": {
-    "iccid": "8988303000005733850",
-    "id": 3577707,
+    "iccid": "6820705229564377698",
+    "id": 3951118,
     "production_date": "2020-12-23T13:02:11.000Z"
   },
   "imsi": {
-    "id": 10770316,
+    "id": 69382468,
     "import_date": "2020-12-23T13:02:11.000Z",
-    "imsi": "295090004145444"
+    "imsi": "57019691302535"
   }
 }
 ```
@@ -150,7 +150,7 @@ If successful, the device will appear as **Attached** in the [emnify Portal](usa
 
 ```json
 {
-  "id": 201370709,
+  "id": 176777623,
   "alert": false,
   "description": "New location received from VLR for IMSI='901430111111111', now
 attached to VLR='491720000095'.",
@@ -168,24 +168,24 @@ attached to VLR='491720000095'.",
     "description": "Info"
   },
   "organisation": {
-    "id": 839921,
+    "id": 215294,
     "name": "Demo Company"
   },
   "endpoint": {
-    "id": 274887,
+    "id": 733023,
     "name": "GPS Tracker",
-    "ip_address": "100.96.234.249",
+    "ip_address": "127.137.56.181",
     "tags": null,
-    "imei": "8677300511111142"
+    "imei": "732554536373291"
   },
   "imsi": {
-    "id": 105611,
-    "imsi": "901430111111111",
+    "id": 216476,
+    "imsi": "401960166508658",
     "import_date": "2016-12-27T10:09:23.000+0000"
   },
   "sim": {
-    "id": 839999,
-    "iccid": "8988303001234567890",
+    "id": 2614385,
+    "iccid": "3590376990354243198",
     "production_date": "2016-12-27T10:09:23.000+0000"
   },
   "detail": {
@@ -234,8 +234,8 @@ A device can only establish a data session after registering on the PS domain.
 {
   "timestamp": "2021-10-24T12:44:09.901Z",
   "alert": false,
-  "description": "New location received from SGSN for IMSI='295090004444444', now attached to SGSN='324750004071717', IP='213.181.60.148'.",
-  "id": 133107715407872,
+  "description": "New location received from SGSN for IMSI='668507304809640', now attached to SGSN='569307110740151', IP='213.181.60.148'.",
+  "id": 158057547412841,
   "event_type": {
     "id": 2,
     "description": "Update GPRS location"
@@ -249,25 +249,25 @@ A device can only establish a data session after registering on the PS domain.
     "description": "Info"
   },
   "organisation": {
-    "id": 12033,
+    "id": 35030,
     "name": "Test Org"
   },
   "endpoint": {
-    "id": 11089066,
-    "imei": "8693700220077770",
-    "ip_address": "100.102.41.209",
+    "id": 11396946,
+    "imei": "818076512105738",
+    "ip_address": "163.93.166.228",
     "name": "Test Sim 2",
     "tags": null
   },
   "sim": {
-    "iccid": "8988303000000033850",
-    "id": 3577707,
+    "iccid": "14610948273291945919",
+    "id": 1748517,
     "production_date": "2020-12-23T13:02:11.000Z"
   },
   "imsi": {
-    "id": 10770316,
+    "id": 322634,
     "import_date": "2020-12-23T13:02:11.000Z",
-    "imsi": "295090004444444"
+    "imsi": "668507304809640"
   },
   "detail": {
     "id": 3,
@@ -316,8 +316,8 @@ Once executed, the device status will appear as **Offline** in the [emnify Porta
 {
   "timestamp": "2021-10-27T10:49:23.673Z",
   "alert": false,
-  "description": "VLR location information has been purged for IMSI='295090004144444'.",
-  "id": 137241622976969,
+  "description": "VLR location information has been purged for IMSI='674828638458881'.",
+  "id": 5993503928,
   "event_type": {
     "id": 15,
     "description": "Purge location"
@@ -331,25 +331,25 @@ Once executed, the device status will appear as **Offline** in the [emnify Porta
     "description": "Info"
   },
   "organisation": {
-    "id": 12021,
+    "id": 58617,
     "name": "Test Org"
   },
   "endpoint": {
-    "id": 11088066,
-    "imei": "8693700330003770",
-    "ip_address": "100.102.41.209",
+    "id": 16292274,
+    "imei": "544699331267254",
+    "ip_address": "88.8.18.46",
     "name": "Test Sim 2",
     "tags": null
   },
   "sim": {
-    "iccid": "8988303000005850850",
-    "id": 3577707,
+    "iccid": "71247175489021804405",
+    "id": 1135076,
     "production_date": "2020-12-23T13:02:11.000Z"
   },
   "imsi": {
-    "id": 10770317,
+    "id": 8245866,
     "import_date": "2020-12-23T13:02:11.000Z",
-    "imsi": "295090004144444"
+    "imsi": "674828638458881"
   }
 }
 ```
@@ -367,8 +367,8 @@ Similar to the [`Purge location`](#purge-location) event, the `Purge GPRS locati
 {
   "timestamp": "2021-10-24T12:43:51.486Z",
   "alert": false,
-  "description": "SGSN location information has been purged for IMSI='295090004144444'.",
-  "id": 133107610288660,
+  "description": "SGSN location information has been purged for IMSI='67282840195069'.",
+  "id": 311518630325,
   "event_type": {
     "id": 16,
     "description": "Purge GPRS location"
@@ -382,25 +382,25 @@ Similar to the [`Purge location`](#purge-location) event, the `Purge GPRS locati
     "description": "Info"
   },
   "organisation": {
-    "id": 13032,
+    "id": 4218,
     "name": "Test Org"
   },
   "endpoint": {
-    "id": 11089066,
-    "imei": "8693700330003770",
-    "ip_address": "100.102.41.209",
+    "id": 11914780,
+    "imei": "796069824764979",
+    "ip_address": "46.127.35.53",
     "name": "Test Sim 2",
     "tags": null
   },
   "sim": {
-    "iccid": "8988303000005850850",
-    "id": 3577717,
+    "iccid": "5061064643679211967",
+    "id": 3686752,
     "production_date": "2020-12-23T13:02:11.000Z"
   },
   "imsi": {
-    "id": 10770317,
+    "id": 78713389,
     "import_date": "2020-12-23T13:02:11.000Z",
-    "imsi": "295090004144444"
+    "imsi": "67282840195069"
   }
 }
 ```
@@ -428,8 +428,8 @@ This device will appear as **Online** in the [emnify Portal](usage#emnify-portal
 {
   "timestamp": "2021-10-27T08:38:02.000Z",
   "alert": false,
-  "description": "New PDP Context successfully activated with SGSN CP=213.181.61.176, DP=213.181.61.176.",
-  "id": 137112624332866,
+  "description": "New PDP Context successfully activated with SGSN CP=60.195.159.61, DP=117.72.59.30.",
+  "id": 31877325941,
   "event_type": {
     "id": 3,
     "description": "Create PDP Context"
@@ -443,25 +443,25 @@ This device will appear as **Online** in the [emnify Portal](usage#emnify-portal
     "description": "Info"
   },
   "organisation": {
-    "id": 12033,
+    "id": 1825,
     "name": "Test Org"
   },
   "endpoint": {
-    "id": 11089066,
-    "imei": "8693700220003770",
-    "ip_address": "100.102.41.209",
+    "id": 20200078,
+    "imei": "960407272413998",
+    "ip_address": "189.79.243.228",
     "name": "Test Sim 2",
     "tags": null
   },
   "sim": {
-    "iccid": "8988303000005733850",
-    "id": 3577707,
+    "iccid": "5746435358418205328",
+    "id": 646486,
     "production_date": "2020-12-23T13:02:11.000Z"
   },
   "imsi": {
-    "id": 10770316,
+    "id": 12105613,
     "import_date": "2020-12-23T13:02:11.000Z",
-    "imsi": "295090004145444"
+    "imsi": "693601932595201"
   },
   "detail": {
     "country": {
@@ -473,34 +473,34 @@ This device will appear as **Online** in the [emnify Portal](usage#emnify-portal
     },
     "name": "Vodafone",
     "pdp_context": {
-      "tariff_profile_id": "407878",
-      "tx_teid_control_plane": 298053053,
-      "breakout_ip": "195.58.216.216",
+      "tariff_profile_id": "395978",
+      "tx_teid_control_plane": 570842943,
+      "breakout_ip": "97.106.216.29",
       "tariff_id": "555",
       "rac": null,
-      "ratezone_id": "3303",
-      "ci": 5532,
-      "imeisv": "8693700220003771",
-      "lac": 644,
+      "ratezone_id": "8178",
+      "ci": 5174,
+      "imeisv": "6887426203768011",
+      "lac": 921,
       "sac": null,
       "gtp_version": 1,
       "rat_type": 2,
       "mcc": "262",
-      "tx_teid_data_plane": 299083083,
-      "ue_ip_address": "100.112.45.209",
-      "ggsn_data_plane_ip_address": "185.57.211.191",
+      "tx_teid_data_plane": 557727595,
+      "ue_ip_address": "101.124.109.214",
+      "ggsn_data_plane_ip_address": "150.85.110.76",
       "tunnel_created": "2021-10-27T08:38:02",
       "pdp_context_id": 51755555,
-      "ggsn_control_plane_ip_address": "185.57.302.198",
-      "sgsn_control_plane_ip_address": "215.181.81.176",
+      "ggsn_control_plane_ip_address": "60.195.159.61",
+      "sgsn_control_plane_ip_address": "117.72.59.30",
       "nsapi": 5,
       "region": "eu-west-1",
       "apn": "em",
       "mnc": "02",
-      "sgsn_data_plane_ip_address": "213.181.61.176",
+      "sgsn_data_plane_ip_address": "223.253.0.120",
       "operator_id": "3",
-      "imsi": "295090004145444",
-      "rx_teid": 51755444
+      "imsi": "82186563190127",
+      "rx_teid": 96601675
     },
     "id": 3
   }
@@ -517,7 +517,7 @@ This device will appear as **Online** in the [emnify Portal](usage#emnify-portal
   "timestamp": "2021-10-24T12:43:51.000Z",
   "alert": true,
   "description": "PDP Context Request rejected, because data service disabled in service profile.",
-  "id": 199107522174999,
+  "id": 2836707022,
   "event_type": {
     "id": 3,
     "description": "Create PDP Context"
@@ -535,21 +535,21 @@ This device will appear as **Online** in the [emnify Portal](usage#emnify-portal
     "name": "Test Org"
   },
   "endpoint": {
-    "id": 11089089,
-    "imei": "8693700110003770",
-    "ip_address": "100.102.41.209",
+    "id": 14002489,
+    "imei": "211785743231328",
+    "ip_address": "173.97.253.42",
     "name": "Test Sim 2",
     "tags": null
   },
   "sim": {
-    "iccid": "8080303000005733850",
-    "id": 3566606,
+    "iccid": "41595256071723032296",
+    "id": 801148,
     "production_date": "2020-12-23T13:02:11.000Z"
   },
   "imsi": {
-    "id": 10000317,
+    "id": 62004293,
     "import_date": "2020-12-23T13:02:11.000Z",
-    "imsi": "295090004044444"
+    "imsi": "175904061168404"
   }
 }
 ```
@@ -564,7 +564,7 @@ This device will appear as **Online** in the [emnify Portal](usage#emnify-portal
   "timestamp": "2021-10-27T08:55:59.000Z",
   "alert": true,
   "description": "PDP Context Request rejected, because endpoint has no quota.",
-  "id": 1371111119611,
+  "id": 7745432124,
   "event_type": {
     "id": 3,
     "description": "Create PDP Context"
@@ -578,25 +578,25 @@ This device will appear as **Online** in the [emnify Portal](usage#emnify-portal
     "description": "Warn"
   },
   "organisation": {
-    "id": 133,
+    "id": 177,
     "name": "Test Org"
   },
   "endpoint": {
-    "id": 11096,
-    "imei": "8693700333333770",
-    "ip_address": "100.100.40.200",
+    "id": 10238,
+    "imei": "127957062642784",
+    "ip_address": "113.252.159.78",
     "name": "Test Sim 2",
     "tags": null
   },
   "sim": {
-    "iccid": "8955505000005555550",
-    "id": 3577707,
+    "iccid": "6300267938152764468",
+    "id": 3012262,
     "production_date": "2020-12-23T13:02:11.000Z"
   },
   "imsi": {
-    "id": 10770377,
+    "id": 66367669,
     "import_date": "2020-12-23T13:02:11.000Z",
-    "imsi": "295090005555555"
+    "imsi": "85785128232645"
   }
 }
 ```
@@ -604,14 +604,14 @@ This device will appear as **Online** in the [emnify Portal](usage#emnify-portal
 </details>
 
 <details>
-  <summary>Example JSON response: PDP Context Request rejected because the device's quota volume is exhausted, and the defined action is to block data traffic</summary>
+  <summary>Example JSON response: Create PDP Context Request rejected because the device's quota volume is exhausted, and the defined action is to block data traffic</summary>
 
 ```json
 {
   "timestamp": "2021-10-27T09:12:27.000Z",
   "alert": true,
   "description": "PDP Context Request rejected, because quota volume of endpoint is exhausted and defined action is to block data traffic.",
-  "id": 137146490142720,
+  "id": 7598008306,
   "event_type": {
     "id": 3,
     "description": "Create PDP Context"
@@ -625,25 +625,25 @@ This device will appear as **Online** in the [emnify Portal](usage#emnify-portal
     "description": "Warn"
   },
   "organisation": {
-    "id": 12033,
+    "id": 8087,
     "name": "Test Org"
   },
   "endpoint": {
-    "id": 11089066,
-    "imei": "8693700220003770",
-    "ip_address": "100.102.41.209",
+    "id": 39063467,
+    "imei": "454208457191395",
+    "ip_address": "120.133.145.19",
     "name": "Test Sim 2",
     "tags": null
   },
   "sim": {
-    "iccid": "8988303000005733850",
-    "id": 3577707,
+    "iccid": "91447762462599458698",
+    "id": 609020,
     "production_date": "2020-12-23T13:02:11.000Z"
   },
   "imsi": {
-    "id": 10770316,
+    "id": 97534929,
     "import_date": "2020-12-23T13:02:11.000Z",
-    "imsi": "295090004145444"
+    "imsi": "715343715967543"
   }
 }
 ```
@@ -651,10 +651,48 @@ This device will appear as **Online** in the [emnify Portal](usage#emnify-portal
 </details>
 
 <details>
-  <summary>Example JSON response</summary>
+  <summary>Example JSON response: Create PDP context request rejected because the SIM isn't activated</summary>
 
 ```json
-
+{
+  "timestamp": "2021-10-27T12:33:17.000Z",
+  "alert": true,
+  "description": "PDP Context Request rejected, because SIM is not activated.",
+  "id": 117138486882,
+  "event_type": {
+    "id": 3,
+    "description": "Create PDP Context"
+  },
+  "event_source": {
+    "id": 1,
+    "description": "Policy Control"
+  },
+  "event_severity": {
+    "id": 1,
+    "description": "Warn"
+  },
+  "organisation": {
+    "id": 4823,
+    "name": "Test Org"
+  },
+  "endpoint": {
+    "id": 1257319,
+    "imei": "25631320011492911",
+    "ip_address": "230.105.77.310",
+    "name": "Test Sim 2",
+    "tags": null
+  },
+  "sim": {
+    "iccid": "87901100765269508687",
+    "id": 45142,
+    "production_date": "2020-12-23T13:02:11.000Z"
+  },
+  "imsi": {
+    "id": 497998,
+    "import_date": "2020-12-23T13:02:11.000Z",
+    "imsi": "76604441813689"
+  }
+}
 ```
 
 </details>
@@ -670,7 +708,87 @@ The event details will also show the data transmitted, and the device will appea
   <summary>Example JSON response</summary>
 
 ```json
-
+{
+    "timestamp": "2021-10-27T08:40:10.000Z",
+    "alert": false,
+    "description": "PDP Context deleted.",
+    "id": 1906081382592,
+    "event_type": {
+        "id": 5,
+        "description": "Delete PDP Context"
+    },
+    "event_source": {
+        "id": 0,
+        "description": "Network"
+    },
+    "event_severity": {
+        "id": 0,
+        "description": "Info"
+    },
+    "organisation": {
+        "id": 39089,
+        "name": "Test Org"
+    },
+    "endpoint": {
+        "id": 8163445,
+        "imei": "82586199276110710",
+        "ip_address": "104.86.8.106",
+        "name": "Test Sim 2",
+        "tags": null
+    },
+    "sim": {
+        "iccid": "9335742231782809262",
+        "id": 1931060,
+        "production_date": "2020-12-23T13:02:11.000Z"
+    },
+    "imsi": {
+        "id": 5216225,
+        "import_date": "2020-12-23T13:02:11.000Z",
+        "imsi": "49652622520507"
+    },
+    "detail": {
+        "country": {
+            "country_code": "49",
+            "mcc": "262",
+            "name": "Germany",
+            "iso_code": "de",
+            "id": 82
+        },
+        "name": "Vodafone",
+        "volume": {
+            "total": 0.641984,
+            "rx": 0.418811,
+            "tx": 0.223173
+        },
+        "pdp_context": {
+            "tx_teid_control_plane": 397629956,
+            "breakout_ip": null,
+            "rac": null,
+            "ci": 6471,
+            "imeisv": "4555797980633712",
+            "lac": 767,
+            "sac": null,
+            "gtp_version": 1,
+            "rat_type": 2,
+            "mcc": "262",
+            "tx_teid_data_plane": 966839357,
+            "ue_ip_address": "66.185.97.229",
+            "ggsn_data_plane_ip_address": "225.129.61.136",
+            "tunnel_created": "2021-10-27T08:38:02",
+            "pdp_context_id": 79790039,
+            "ggsn_control_plane_ip_address": "67.185.18.116",
+            "sgsn_control_plane_ip_address": "234.39.123.228",
+            "nsapi": 5,
+            "region": "eu-west-1",
+            "apn": null,
+            "mnc": "02",
+            "sgsn_data_plane_ip_address": "173.69.12.45",
+            "imsi": "369573775632443",
+            "rx_teid": 18195957
+        },
+        "id": 3
+    }
+}
 ```
 
 </details>
