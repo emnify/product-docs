@@ -131,8 +131,9 @@
 
 /* Details and summary elements */
 .custom-details-example-json-response {
-  background-color: #0000350F !important;
+  background-color: #0000350F;
   border-color: #000035 !important;
+  color: #000035;
 }
 
 .custom-details-example-json-response summary::before {
@@ -140,5 +141,5 @@
 }
 
 .custom-details-example-json-response .collapsibleContent_node_modules-\@docusaurus-theme-common-lib-components-Details-styles-module {
-  border-top: 1px solid #000035 !important;
+  border-top: 1px solid #000035;
 }
