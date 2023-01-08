@@ -807,10 +807,71 @@ The event details will also show the data transmitted, and the device will appea
 Someone tried (and failed) to authenticate using an email from your organization.
 
 <details>
-  <summary>Example JSON response</summary>
+  <summary>Example JSON response: Authentication failed due to a wrong password</summary>
 
 ```json
+{
+    "timestamp": "2021-11-04T11:47:10.517Z",
+    "alert": false,
+    "description": "Failed authentication request from 'example@yourorg.com', Reason: Invalid password from IP 176.11.24.173, 45.196.240.161",
+    "id": 13096831909,
+    "event_type": {
+        "id": 6,
+        "description": "User authentication failed"
+    },
+    "event_source": {
+        "id": 2,
+        "description": "API"
+    },
+    "event_severity": {
+        "id": 1,
+        "description": "Warn"
+    },
+    "organisation": {
+        "id": 5833,
+        "name": "Test Org"
+    },
+    "user": {
+        "id": 3492824,
+        "name": "John Doe",
+        "username": "example@yourorg.com"
+    }
+}
+```
 
+</details>
+
+<details>
+  <summary>Example JSON response: Authentication failed after too many attempts</summary>
+
+```json
+{
+    "timestamp": "2021-11-04T11:49:32.141Z",
+    "alert": false,
+    "description": "Failed authentication request from 'example@yourorg.com', Reason: Invalid password. Too many failed authentication requests from IP 139.39.233.94, 32.7.85.228",
+    "id": 975229042336,
+    "event_type": {
+        "id": 6,
+        "description": "User authentication failed"
+    },
+    "event_source": {
+        "id": 2,
+        "description": "API"
+    },
+    "event_severity": {
+        "id": 1,
+        "description": "Warn"
+    },
+    "organisation": {
+        "id": 2981,
+        "name": "Test Org"
+    },
+    "user": {
+        "id": 816899,
+        "name": "John Doe",
+        "username": "example@yourorg.com"
+    }
+}
 ```
 
 </details>
@@ -820,10 +881,10 @@ Someone tried (and failed) to authenticate using an email from your organization
 Application token failed to authenticate.
 
 <details>
-  <summary>Example JSON response</summary>
+  <summary>Example response message</summary>
 
-```json
-
+```
+Failed authentication request from 'Application Token Name', Reason: TokenStatus Revoked from IP 54.64.35.156
 ```
 
 </details>
@@ -836,7 +897,41 @@ emnify team accessed your organization on behalf of one of your users for servic
   <summary>Example JSON response</summary>
 
 ```json
-
+{
+    "timestamp": "2021-11-04T12:48:12.977Z",
+    "alert": false,
+    "description": "Support user max.mustermann@emnify.com of organisation emnify GmbH generated a support token for user example-user@test.com of organisation Test Org",
+    "id": 136301313516,
+    "event_type": {
+        "id": 13,
+        "description": "Support Access"
+    },
+    "event_source": {
+        "id": 2,
+        "description": "API"
+    },
+    "event_severity": {
+        "id": 1,
+        "description": "Warn"
+    },
+    "organisation": {
+        "id": 4511,
+        "name": "Test Org"
+    },
+    "user": {
+        "id": 601841,
+        "name": "John Doe",
+        "username": "example-user@test.com"
+    },
+    "detail": {
+        "support_username": "max.mustermann@emnify.com",
+        "support_user_org": {
+            "id": 2,
+            "name": "emnify GmbH"
+        },
+        "target_username": "example-user@test.com"
+    }
+}
 ```
 
 </details>
@@ -849,7 +944,33 @@ User removed multi-factor authentication (MFA) from their account.
   <summary>Example JSON response</summary>
 
 ```json
-
+{
+    "timestamp": "2021-11-04T12:51:40.100Z",
+    "alert": false,
+    "description": "MFA key with Id '717' of Type 'Time-Based One-Time Password' deleted for user 'user@test.com'",
+    "id": 164681229500,
+    "event_type": {
+        "id": 14,
+        "description": "Multi-factor Authentication"
+    },
+    "event_source": {
+        "id": 2,
+        "description": "API"
+    },
+    "event_severity": {
+        "id": 0,
+        "description": "Info"
+    },
+    "organisation": {
+        "id": 5253,
+        "name": "Test Org"
+    },
+    "user": {
+        "id": 176257,
+        "name": "John Doe",
+        "username": "user@test.com"
+    }
+}
 ```
 
 </details>
@@ -865,9 +986,85 @@ User removed multi-factor authentication (MFA) from their account.
 
 User successfully verified their email.
 
+<details>
+  <summary>Example JSON response</summary>
+
+```json
+{
+  "timestamp": "2021-12-20T00:12:23.000Z",
+  "alert": false,
+  "description": "User 'user@sample.com' verified successfully",
+  "id": 85170815043,
+  "event_type": {
+    "id": 41,
+    "description": "User verified"
+  },
+  "event_source": {
+    "id": 2,
+    "description": "API"
+  },
+  "event_severity": {
+    "id": 0,
+    "description": "Info"
+  },
+  "organisation": {
+    "id": 14543,
+    "name": "Sample Corp"
+  },
+  "user": {
+    "id": 676919,
+    "name": "Sample User",
+    "username": "user@sample.com"
+  }
+}
+```
+
+</details>
+
 ### User deleted
 
 A user deleted another user's account.
+
+<details>
+  <summary>Example JSON response</summary>
+
+```json
+{
+  "timestamp": "2021-12-20T08:52:10.000Z",
+  "alert": false,
+  "description": "User 'user@sample.com' deleted",
+  "id": 1082729721368,
+  "event_type": {
+    "id": 46,
+    "description": "User deleted"
+  },
+  "event_source": {
+    "id": 2,
+    "description": "API"
+  },
+  "event_severity": {
+    "id": 1,
+    "description": "Warn"
+  },
+  "organisation": {
+    "id": 53246,
+    "name": "Sample Corp"
+  },
+  "user": {
+    "id": 292,
+    "name": "Sample Admin",
+    "username": "admin@sample.com"
+  },
+  "detail": {
+    "user": {
+      "id": 82894,
+      "username": "user@sample.com"
+    }
+  }
+}
+```
+
+</details>
 
 ## Device status management
 
@@ -895,6 +1092,15 @@ Or, it will be automatically triggered when the factory test mode threshold (dat
 Activated SIMs can use network services.
 :::
 
+<details>
+  <summary>Example JSON response</summary>
+
+```json
+
+```
+
+</details>
+
 ### SIM suspension
 
 The SIM is patched to the **Suspended** status, temporarily suspending and blocking it from network access.
@@ -904,6 +1110,15 @@ Starting from the first day of the next month, the suspended SIM will not accrue
 Activating a SIM with the **Suspended** status again is possible at any time.
 :::
 
+<details>
+  <summary>Example JSON response</summary>
+
+```json
+
+```
+
+</details>
+
 ### SIM deletion
 
 The SIM is deleted and permanently removed from the SIM repository.
@@ -912,17 +1127,53 @@ The SIM is deleted and permanently removed from the SIM repository.
 Once deleted, the SIM cannot be restored for network access.
 :::
 
+<details>
+  <summary>Example JSON response</summary>
+
+```json
+
+```
+
+</details>
+
 ### Endpoint enabled
 
 Device is enabled.
+
+<details>
+  <summary>Example JSON response</summary>
+
+```json
+
+```
+
+</details>
 
 ### Endpoint disabled
 
 Device is disabled.
 
+<details>
+  <summary>Example JSON response</summary>
+
+```json
+
+```
+
+</details>
+
 ### SIM factory test
 
 SIM is patched from **Issued** to **Factory Test** status (for SIM testing).
+
+<details>
+  <summary>Example JSON response</summary>
+
+```json
+
+```
+
+</details>
 
 ### SIM registration
 
@@ -933,6 +1184,15 @@ This event doesn't trigger when the emnify team assigns SIMs to an organization.
 It also doesn't trigger for every SIM of a SIM batch, so the event log will only be visible on the individual SIM when registering single SIM batches.
 :::
 
+<details>
+  <summary>Example JSON response</summary>
+
+```json
+
+```
+
+</details>
+
 ### SIM Released
 
 SIM is released from a device.
@@ -941,6 +1201,15 @@ SIM is released from a device.
 Triggered through the [emnify User Interface (EUI)](https://support.emnify.com/hc/en-us/sections/115000969189-EMnify-User-Interface-EUI-) or [REST API](usage#event-api).
 :::
 
+<details>
+  <summary>Example JSON response</summary>
+
+```json
+
+```
+
+</details>
+
 ### SIM Assigned
 
 SIM is assigned to a device.
@@ -948,6 +1217,15 @@ SIM is assigned to a device.
 :::info
 Triggered through the [emnify User Interface (EUI)](https://support.emnify.com/hc/en-us/sections/115000969189-EMnify-User-Interface-EUI-) or while [creating an endpoint using the emnify REST API](https://cdn.emnify.net/api/doc/swagger.html#/Endpoint/CreateEndpoint).
 :::
+
+<details>
+  <summary>Example JSON response</summary>
+
+```json
+
+```
+
+</details>
 
 ## Limit enforcement
 
