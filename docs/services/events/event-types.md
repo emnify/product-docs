@@ -1246,7 +1246,45 @@ Changing the policies will unblock the device.
   <summary>Example JSON response</summary>
 
 ```json
-
+{
+    "timestamp": "2021-10-27T14:44:11.000Z",
+    "alert": true,
+    "description": "Blocking data access for endpoint, traffic limit exceeded.",
+    "id": 155295222517,
+    "event_type": {
+        "id": 11,
+        "description": "Endpoint blocked"
+    },
+    "event_source": {
+        "id": 1,
+        "description": "Policy Control"
+    },
+    "event_severity": {
+        "id": 1,
+        "description": "Warn"
+    },
+    "organisation": {
+        "id": 42855,
+        "name": "Test Org"
+    },
+    "endpoint": {
+        "id": 29232748,
+        "imei": "31397643565228411",
+        "ip_address": "188.167.183.228",
+        "name": "Factory Test Sim 3",
+        "tags": null
+    },
+    "sim": {
+        "iccid": "1919136237414891188",
+        "id": 9979202,
+        "production_date": "2020-12-23T13:02:11.000Z"
+    },
+    "imsi": {
+        "id": 705745558,
+        "import_date": "2020-12-23T13:02:11.000Z",
+        "imsi": "54450740741651"
+    }
+}
 ```
 
 </details>
@@ -1256,10 +1294,71 @@ Changing the policies will unblock the device.
 The organization is blocked after exceeding the monthly cost limit (defined by emnify) or exceeding their prepaid balance (if not set up to be postpaid).
 
 <details>
-  <summary>Example JSON response</summary>
+  <summary>Example JSON response: Prepaid balance exceeded</summary>
 
 ```json
+{
+    "id": 1697107630311,
+    "timestamp": "2021-10-06 10:42:58",
+    "event_source": {
+        "id": 1,
+        "name": "Policy Control"
+    },
+    "event_severity": {
+        "id": 1,
+        "description": "WARN"
+    },
+    "event_type": {
+        "id": 12,
+        "description": "Organisation blocked"
+    },
+    "organisation": {
+        "id": 4732,
+        "name": "Test Org"
+    },
+    "user": null,
+    "alert": 1,
+    "description": "Blocking services for organisation, because of insufficient prepaid balance.",
+    "endpoint": null,
+    "sim": null,
+    "imsi": null,
+    "detail": null
+}
+```
 
+</details>
+
+<details>
+  <summary>Example JSON response: Monthly cost limit exceeded</summary>
+
+```json
+{
+    "id": 656817714005,
+    "timestamp": "2021-10-06 10:42:58",
+    "event_source": {
+        "id": 1,
+        "name": "Policy Control"
+    },
+    "event_severity": {
+        "id": 1,
+        "description": "WARN"
+    },
+    "event_type": {
+        "id": 12,
+        "description": "Organisation blocked"
+    },
+    "organisation": {
+        "id": 6805,
+        "name": "Test Org"
+    },
+    "user": null,
+    "alert": 1,
+    "description": "Blocking services for organisation, because monthly cost limit exceeded.",
+    "endpoint": null,
+    "sim": null,
+    "imsi": null,
+    "detail": null
+}
 ```
 
 </details>
@@ -1600,7 +1699,50 @@ Client is successfully authenticated on [OpenVPN](https://www.emnify.com/iot-glo
   <summary>Example JSON response</summary>
 
 ```json
-
+{
+  "user": {
+    "username": "jane.doe@example.com",
+    "id": 225061,
+    "name": "Jane Doe"
+  },
+  "endpoint": null,
+  "event_source": {
+    "description": "API",
+    "id": 2
+  },
+  "description": "OpenVPN client (re-)authenticated successfully",
+  "event_severity": {
+    "description": "INFO",
+    "id": 0
+  },
+  "timestamp": "2021-10-27T15:17:23Z",
+  "organisation": {
+    "id": 19910,
+    "name": "Example Org"
+  },
+  "detail": {
+    "region": "eu-west-1",
+    "client": {
+      "public_ip": "53.240.46.216",
+      "version": "2.5.4",
+      "private_ip": "40.220.96.255"
+    },
+    "protocol": "udp"
+  },
+  "alert": false,
+  "keen": {
+    "timestamp": "2021-10-27T15:17:38.065Z",
+    "created_at": "2021-10-27T15:17:38.065Z",
+    "id": "11855d2331d1f324470ca3b"
+  },
+  "sim": null,
+  "id": 153792067277,
+  "imsi": null,
+  "event_type": {
+    "description": "OpenVPN authentication",
+    "id": 30
+  }
+}
 ```
 
 </details>
@@ -1620,7 +1762,50 @@ Organization's country, name, or verification data changed.
   <summary>Example JSON response</summary>
 
 ```json
-
+{
+  "timestamp": "2021-12-20T16:09:23.950Z",
+  "alert": false,
+  "description": "Organisation data updated.",
+  "id": 9807326865071,
+  "event_type": {
+    "id": 31,
+    "description": "Organisation updated"
+  },
+  "event_source": {
+    "id": 2,
+    "description": "API"
+  },
+  "event_severity": {
+    "id": 0,
+    "description": "Info"
+  },
+  "organisation": {
+    "id": 58465,
+    "name": "Sample Corp"
+  },
+  "detail": {
+    "changed_data": [
+      {
+        "name": {
+          "old": "Sample Corp",
+          "new": "Sample Corp Ltd."
+        }
+      },
+      {
+        "verification_type_id": {
+          "old": "null",
+          "new": "1"
+        }
+      },
+      {
+        "verification": {
+          "old": "null",
+          "new": "DE123456789"
+        }
+      }
+    ]
+  }
+}
 ```
 
 </details>
@@ -1633,7 +1818,44 @@ Organization's billing configuration changed.
   <summary>Example JSON response</summary>
 
 ```json
-
+{
+  "timestamp": "2021-12-20T10:18:39.000Z",
+  "alert": false,
+  "description": "Billing config has been updated.",
+  "id": 129565779460,
+  "event_type": {
+    "id": 32,
+    "description": "Billing configuration updated"
+  },
+  "event_source": {
+    "id": 2,
+    "description": "API"
+  },
+  "event_severity": {
+    "id": 1,
+    "description": "Warn"
+  },
+  "organisation": {
+    "id": 627328,
+    "name": "Sample Corp"
+  },
+  "user": {
+    "id": 278906,
+    "name": "Sample User",
+    "username": "user@sample.com"
+  },
+  "detail": {
+    "billing_config": {
+      "charging_model": {
+        "id": 0
+      },
+      "payment_term": {
+        "id": 0
+      },
+      "vatin": "DE123456789"
+    }
+  }
+}
 ```
 
 </details>
