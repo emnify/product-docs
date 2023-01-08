@@ -1242,9 +1242,27 @@ Device is blocked from all services after exceeding device policies (e.g., reach
 Changing the policies will unblock the device.
 :::
 
+<details>
+  <summary>Example JSON response</summary>
+
+```json
+
+```
+
+</details>
+
 ### Organisation blocked
 
 The organization is blocked after exceeding the monthly cost limit (defined by emnify) or exceeding their prepaid balance (if not set up to be postpaid).
+
+<details>
+  <summary>Example JSON response</summary>
+
+```json
+
+```
+
+</details>
 
 ## Data quota management
 
@@ -1273,6 +1291,15 @@ The threshold percentage can be submitted when the data quota is assigned to the
 
 **Example**: If the device's data quota volume is set to 100 MB and the threshold percentage to 15%, the system will generate an event when the remaining volume falls below 15 MB.
 
+<details>
+  <summary>Example JSON response</summary>
+
+```json
+
+```
+
+</details>
+
 ### Quota used up
 
 Data quota volume is completely depleted.
@@ -1286,6 +1313,15 @@ It is also possible to define an action on **Throttle**.
 This means the device can still use data services with less throughput.
 :::
 
+<details>
+  <summary>Example JSON response</summary>
+
+```json
+
+```
+
+</details>
+
 ### Data quota enabled
 
 Data quota management is enabled in a service profile.
@@ -1296,6 +1332,15 @@ Devices without active data quotas will disconnect within seconds.
 New connection requests will be denied until a new data quota is assigned or data quota management is disabled in the service profile.
 :::
 
+<details>
+  <summary>Example JSON response</summary>
+
+```json
+
+```
+
+</details>
+
 ### Data quota disabled
 
 Data quota management is disabled in a service profile.
@@ -1303,6 +1348,15 @@ Data quota management is disabled in a service profile.
 :::caution
 There will no longer be data service restrictions for devices using this service profile.
 :::
+
+<details>
+  <summary>Example JSON response</summary>
+
+```json
+
+```
+
+</details>
 
 ### Data quota assigned
 
@@ -1318,6 +1372,15 @@ The event description will read:
 "Data quota got assigned with a volume of 50.000000 MB with daily refill till 2025-05-27T22:56:17Z.
 On exhaustion, the data service will be blocked.”
 
+<details>
+  <summary>Example JSON response</summary>
+
+```json
+
+```
+
+</details>
+
 ### Data quota deleted
 
 Data quota is deleted from a device.
@@ -1328,10 +1391,28 @@ Potential data connections of this device will disconnect within seconds.
 New connection requests will be denied until an active data quota is assigned or data quota management is disabled in the service profile.
 :::
 
+<details>
+  <summary>Example JSON response</summary>
+
+```json
+
+```
+
+</details>
+
 ### Data quota expired
 
 Active data quota of a device expired and the quota status changed to **Expired**.
 Once expired, the device isn't able to establish a data session.
+
+<details>
+  <summary>Example JSON response</summary>
+
+```json
+
+```
+
+</details>
 
 ## SMS quota management
 
@@ -1359,6 +1440,15 @@ The threshold percentage can be submitted when the SMS quota is assigned to the 
 
 **Example**: If the device's SMS quota volume is set to 10 SMS and the threshold percentage to 50%, the system will generate an event when the remaining volume falls below 5 MB.
 
+<details>
+  <summary>Example JSON response</summary>
+
+```json
+
+```
+
+</details>
+
 ### SMS quota used up
 
 SMS quota volume is completely depleted.
@@ -1368,6 +1458,15 @@ Exclusively for devices with enabled SMS quota management.
 Once this happens, the SMS quota status updates from **Active** to **Exhausted**, and the device won't be able to consume from the SMS service.
 Established connections for that device will disconnect within seconds, and new connection requests will be denied until a new SMS quota is assigned or SMS quota management is disabled in the service profile.
 :::
+
+<details>
+  <summary>Example JSON response</summary>
+
+```json
+
+```
+
+</details>
 
 ### SMS quota enabled
 
@@ -1379,6 +1478,15 @@ Devices without active SMS quotas will disconnect within seconds.
 New connection requests will be denied until a new SMS quota is assigned or SMS quota management is disabled in the service profile.
 :::
 
+<details>
+  <summary>Example JSON response</summary>
+
+```json
+
+```
+
+</details>
+
 ### SMS quota disabled
 
 SMS quota management is disabled in a service profile.
@@ -1386,6 +1494,15 @@ SMS quota management is disabled in a service profile.
 :::caution
 There will no longer be SMS service restrictions for devices using this service profile.
 :::
+
+<details>
+  <summary>Example JSON response</summary>
+
+```json
+
+```
+
+</details>
 
 ### SMS quota assigned
 
@@ -1396,6 +1513,15 @@ Assigning a new SMS quota to a device is possible at any time.
 [SMS quota management must be enabled](#sms-quota-enabled) in the service profile.
 :::
 
+<details>
+  <summary>Example JSON response</summary>
+
+```json
+
+```
+
+</details>
+
 ### SMS quota deleted
 
 SMS quota is deleted from a device.
@@ -1403,6 +1529,15 @@ SMS quota is deleted from a device.
 :::caution
 Once deleted, devices on this service profile (with SMS quota management enabled) won't be able to use the SMS service until an active SMS quota is assigned, or SMS quota management is disabled in the service profile.
 :::
+
+<details>
+  <summary>Example JSON response</summary>
+
+```json
+
+```
+
+</details>
 
 ## CloudConnect lifecycle
 
@@ -1416,13 +1551,40 @@ Once deleted, devices on this service profile (with SMS quota management enabled
 
 [CloudConnect Transit Gateway (TGW)](https://www.emnify.com/integration-guides/emnify-cloud-connect-into-aws-transit-gateway) resource share is created.
 
+<details>
+  <summary>Example JSON response</summary>
+
+```json
+
+```
+
+</details>
+
 ### CloudConnect TGW available
 
 [CloudConnect Transit Gateway (TGW)](https://www.emnify.com/integration-guides/emnify-cloud-connect-into-aws-transit-gateway) is available.
 
+<details>
+  <summary>Example JSON response</summary>
+
+```json
+
+```
+
+</details>
+
 ### CloudConnect TGW breakout terminated
 
 [CloudConnect Transit Gateway (TGW)](https://www.emnify.com/integration-guides/emnify-cloud-connect-into-aws-transit-gateway) breakout is terminated.
+
+<details>
+  <summary>Example JSON response</summary>
+
+```json
+
+```
+
+</details>
 
 ## OpenVPN lifecycle
 
@@ -1433,6 +1595,15 @@ Once deleted, devices on this service profile (with SMS quota management enabled
 ### OpenVPN authentication
 
 Client is successfully authenticated on [OpenVPN](https://www.emnify.com/iot-glossary/open-vpn).
+
+<details>
+  <summary>Example JSON response</summary>
+
+```json
+
+```
+
+</details>
 
 ## Organization and billing
 
@@ -1445,6 +1616,24 @@ Client is successfully authenticated on [OpenVPN](https://www.emnify.com/iot-glo
 
 Organization's country, name, or verification data changed.
 
+<details>
+  <summary>Example JSON response</summary>
+
+```json
+
+```
+
+</details>
+
 ### Billing configuration updated
 
 Organization's billing configuration changed.
+
+<details>
+  <summary>Example JSON response</summary>
+
+```json
+
+```
+
+</details>
