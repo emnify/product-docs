@@ -3,6 +3,7 @@ import Translate, {translate} from '@docusaurus/Translate';
 import {PageMetadata} from '@docusaurus/theme-common';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
+import styles from './NotFound.module.css';
 
 export default function NotFound() {
   return (
@@ -35,9 +36,9 @@ export default function NotFound() {
               <p
                 id="theme.NotFound.p2"
                 description="The 2nd paragraph of the 404 page">
-                Please <a href="https://github.com/EMnify/product-docs/issues/new" target="_blank" rel="noopener noreferrer">open an issue on GitHub</a> or <a href="mailto:docs@emnify.com">contact our documentation team</a> if you're struggling to find what you need.
+                Please <a className={styles.pageLink} href="https://github.com/emnify/product-docs/issues/new" target="_blank" rel="noopener noreferrer">open an issue on GitHub</a> or <a className={styles.pageLink} href="mailto:docs@emnify.com">contact our documentation team</a> if you're struggling to find what you need.
               </p>
-              <Link to="/product-docs" className="homepage-button">Go to homepage</Link>
+              <Link to="/product-docs" className={styles.homepageButton}>Go to homepage</Link>
             </div>
           </div>
         </main>
