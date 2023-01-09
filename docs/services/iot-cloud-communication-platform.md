@@ -11,10 +11,9 @@ Being deployed in 3 AWS cloud regions within 2-3 availability zones / data cente
 Traditional connectivity providers have a centrally located network core.
 All data is backhauled to the home country of the operator which means that customer data travels across the globe and distributed latency optimized application infrastructure is not possible.
 
-![Traditional operators](assets/traditional_operators.png)
+![Traditional operators](assets/traditional-operators.png)
 
-
-![emnify](assets/emnify_distributed_plane.png)
+![emnify](assets/emnify-distributed-plane.png)
 
 ## Traditional operators vs emnify
 
@@ -27,6 +26,4 @@ Moreover, it also helps reduce network latency.
 You can either select a specific breakout region or the network automatically selects the breakout region closest to the device.
 This can be done on the emnify Portal → **Service Profile** which is applicable to a group of devices.
 
-<!--  To be recreated
-![Regional Breakout Setting in the emnify Portal](assets/regional.png)
--->
+<!-- TODO: Recreate regional.png (Regional Breakout Setting in the emnify Portal) -->
