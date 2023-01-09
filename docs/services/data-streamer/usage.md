@@ -35,7 +35,7 @@ Failed streams exhibit an **Error** status.
 Paused streams are marked as **Paused**.
 
 <img
-  src={require('./assets/portal-integrations-data-streams-status.png').default}
+  src={require('../assets/portal-integrations-data-streams-status.png').default}
   alt=""
 />
 
@@ -89,7 +89,7 @@ If this happens, the stream isn't created and you must correct the configuration
 With the **Details** button on the Data Stream tiles, you can inspect the configuration and update the [filters for event data streams](managing-data-streams#filtering-event-data-streams).
 
 <img
-  src={require('./assets/portal-integrations-data-streams-details-events-filter.png').default}
+  src={require('../assets/portal-integrations-data-streams-details-events-filter.png').default}
   alt=""
 />
 
