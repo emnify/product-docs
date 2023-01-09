@@ -58,7 +58,11 @@ const sidebars = {
             slug: 'services/data-streamer'
           },
       items: [
-        'services/data-streamer/getting-started',
+        {
+          type: 'doc',
+          label: 'Getting started',
+          id: 'services/data-streamer/getting-started'
+        },
         'services/data-streamer/connection-types',
         'services/data-streamer/stream-types',
         'services/data-streamer/managing-data-streams',
@@ -75,7 +79,11 @@ const sidebars = {
             slug: 'services/events'
           },
           items: [
-            'services/events/getting-started',
+            {
+              type: 'doc',
+              label: 'Getting started',
+              id: 'services/events/getting-started'
+            },
             'services/events/event-types',
             'services/events/mno-events',
             'services/events/usage'
