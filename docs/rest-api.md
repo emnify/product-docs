@@ -10,8 +10,6 @@ The emnify API provides a variety of HTTP requests to integrate several emnify s
 The emnify API is based on the OpenAPI Specification OAS3.
 You can try out our API using the [API reference](https://cdn.emnify.net/api/doc/swagger.html).
 
-The sections below will describe the services available through the emnify API.
-
 ## API authentication
 
 To use the emnify API, you need to authenticate with an authentication token.
@@ -62,7 +60,7 @@ Once the `auth_token` expires, you can use the `refresh_token` to retrieve t
 
 ### Authenticate with an application token
 
-Since you should not store your emnify user credentials on your application server, you can generate an `application_token` via the [emnify Portal](https://portal.emnify.com/) or the API: `/api/v1/application_token`.
+Since you shouldn't store your emnify user credentials on your application server, you can generate an `application_token` via the [emnify Portal](https://portal.emnify.com/) or the API: `/api/v1/application_token`.
 The request body should have a description of the token usually used to indicate who is using the token and can have an `expiry_date` for the token.
 
 ```
@@ -171,4 +169,4 @@ The payload is the actual text to be sent as SMS.
 
 ## Code samples
 
-Check out [JavaScript Examples](https://github.com/emnify/API_Examples_JS) with the emnify API in our GitHub repository.
+See our GitHub repository for [examples of using the emnify API with JavaScript](https://github.com/emnify/API_Examples_JS).
