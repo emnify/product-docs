@@ -30,11 +30,11 @@
 }
 
 /* Links within documentation content */
-.theme-doc-markdown a, .theme-edit-this-page {
+.theme-doc-markdown a, .theme-edit-this-page, .page-not-found-content a {
   --ifm-link-decoration: underline;
 }
 
-.theme-doc-markdown a:hover, .theme-edit-this-page:hover {
+.theme-doc-markdown a:hover, .theme-edit-this-page:hover, .page-not-found-content a:hover {
   color: #404067;
 }
 
@@ -142,4 +142,22 @@
 
 .custom-details-example-json-response .collapsibleContent_node_modules-\@docusaurus-theme-common-lib-components-Details-styles-module {
   border-top: 1px solid #000035;
+}
+
+/* 404 page button */
+.page-not-found-content .homepage-button {
+  background: #FFFFFF;
+  border: 1px solid #E0E0E0;
+  color: #263238;
+  font-family: 'Avenir LT Pro', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 750;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 20px;
+}
+
+.page-not-found-content .homepage-button:hover {
+  border: 1px solid #263238;
+  color: #263238;
 }
