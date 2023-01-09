@@ -23,7 +23,7 @@ You can find those events on the [Event types](event-types) page.
 
 Reset password email is requested for a specific email address.
 
-<details>
+<details className="custom-details-example-json-response">
   <summary>Example JSON response</summary>
 
 ```json
@@ -75,7 +75,7 @@ This event is only needed when customers use [self-signup](#self-signup).
 Manually invited users already verified their email.
 :::
 
-<details>
+<details className="custom-details-example-json-response">
   <summary>Example JSON response</summary>
 
 ```json
@@ -123,7 +123,7 @@ Manually invited users already verified their email.
 
 Customer used self-signup to create their account.
 
-<details>
+<details className="custom-details-example-json-response">
   <summary>Example JSON response</summary>
 
 ```json
@@ -161,7 +161,7 @@ Customer used self-signup to create their account.
 
 New user is invited to an organization.
 
-<details>
+<details className="custom-details-example-json-response">
   <summary>Example JSON response</summary>
 
 ```json
@@ -216,7 +216,7 @@ Tariff plan changed after a contract change or self-service tariff upgrade.
 
 **Example**: A tariff plan changes from **Evaluation EUR** to **Evaluation USD** or from **Standard EUR** to **Enterprise EUR**.
 
-<details>
+<details className="custom-details-example-json-response">
   <summary>Example JSON response</summary>
 
 ```json
@@ -306,7 +306,7 @@ Usage tariff is assigned or removed.
 
 **Example**: Adding or removing **Regional Pro**, **Global Basic**, or **Global Extended**.
 
-<details>
+<details className="custom-details-example-json-response">
   <summary>Example JSON response</summary>
 
 ```json
@@ -373,7 +373,7 @@ The following events are only available if you're using the [Embedded SIM Shop](
 
 A user submitted a SIM order.
 
-<details>
+<details className="custom-details-example-json-response">
   <summary>Example JSON response</summary>
 
 ```json
@@ -425,7 +425,7 @@ SIM order has been updated.
   ```
 - Status **Canceled**
 
-<details>
+<details className="custom-details-example-json-response">
   <summary>Example JSON response</summary>
 
 ```json

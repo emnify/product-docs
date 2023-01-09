@@ -28,7 +28,7 @@ We're in the process of adding more specific event types that will replace these
 We'll update this list as new event types are created.
 :::
 
-<details>
+<details className="custom-details-example-json-response">
   <summary>Example JSON response: Disconnecting data access for a device to apply throttling action</summary>
 
 ```json
@@ -75,7 +75,7 @@ We'll update this list as new event types are created.
 
 </details>
 
-<details>
+<details className="custom-details-example-json-response">
   <summary>Example JSON response: Disconnecting data access for a device after updating the quota</summary>
 
 ```json
@@ -145,7 +145,7 @@ Devices not using 2G or 3G may not register on the CS domain.
 **Example**: A SIM card has (re)authenticated with a different network element.
 If successful, the device will appear as **Attached** in the [emnify Portal](usage#emnify-portal) and will be ready to receive SMS.
 
-<details>
+<details className="custom-details-example-json-response">
   <summary>Example JSON response</summary>
 
 ```json
@@ -227,7 +227,7 @@ This event is also sent periodically or when changing the location area.
 A device can only establish a data session after registering on the PS domain.
 :::
 
-<details>
+<details className="custom-details-example-json-response">
   <summary>Example JSON response</summary>
 
 ```json
@@ -309,7 +309,7 @@ Once executed, the device status will appear as **Offline** in the [emnify Porta
 
 **Example**: The network deletes the routing information for a mobile-terminated call or mobile-terminated short message and marks the device not reachable.
 
-<details>
+<details className="custom-details-example-json-response">
   <summary>Example JSON response</summary>
 
 ```json
@@ -360,7 +360,7 @@ Once executed, the device status will appear as **Offline** in the [emnify Porta
 
 Similar to the [`Purge location`](#purge-location) event, the `Purge GPRS location` event deletes all state information in the visited or home network but for the packet-switched (PS) domain.
 
-<details>
+<details className="custom-details-example-json-response">
   <summary>Example JSON response</summary>
 
 ```json
@@ -421,7 +421,7 @@ Activation (or rejection) of data connectivity.
 **Example**: A device has established a data session and started transferring data.
 This device will appear as **Online** in the [emnify Portal](usage#emnify-portal) as long as there hasn't been a subsequent [Delete PDP Context](#delete-pdp-context) event.
 
-<details>
+<details className="custom-details-example-json-response">
   <summary>Example JSON response: Create PDP context accepted</summary>
 
 ```json
@@ -509,7 +509,7 @@ This device will appear as **Online** in the [emnify Portal](usage#emnify-portal
 
 </details>
 
-<details>
+<details className="custom-details-example-json-response">
   <summary>Example JSON response: Create PDP context rejected because data service is disabled in the service profile</summary>
 
 ```json
@@ -556,7 +556,7 @@ This device will appear as **Online** in the [emnify Portal](usage#emnify-portal
 
 </details>
 
-<details>
+<details className="custom-details-example-json-response">
   <summary>Example JSON response: Create PDP context rejected because the device doesn't have a quota</summary>
 
 ```json
@@ -603,7 +603,7 @@ This device will appear as **Online** in the [emnify Portal](usage#emnify-portal
 
 </details>
 
-<details>
+<details className="custom-details-example-json-response">
   <summary>Example JSON response: Create PDP Context Request rejected because the device's quota volume is exhausted, and the defined action is to block data traffic</summary>
 
 ```json
@@ -650,7 +650,7 @@ This device will appear as **Online** in the [emnify Portal](usage#emnify-portal
 
 </details>
 
-<details>
+<details className="custom-details-example-json-response">
   <summary>Example JSON response: Create PDP context request rejected because the SIM isn't activated</summary>
 
 ```json
@@ -704,7 +704,7 @@ Data session between the device and the network is deleted.
 **Example**: A device disconnected and ended a data transfer.
 The event details will also show the data transmitted, and the device will appear as **Attached** in the [emnify Portal](usage#emnify-portal).
 
-<details>
+<details className="custom-details-example-json-response">
   <summary>Example JSON response</summary>
 
 ```json
@@ -806,7 +806,7 @@ The event details will also show the data transmitted, and the device will appea
 
 Someone tried (and failed) to authenticate using an email from your organization.
 
-<details>
+<details className="custom-details-example-json-response">
   <summary>Example JSON response: Authentication failed due to a wrong password</summary>
 
 ```json
@@ -841,7 +841,7 @@ Someone tried (and failed) to authenticate using an email from your organization
 
 </details>
 
-<details>
+<details className="custom-details-example-json-response">
   <summary>Example JSON response: Authentication failed after too many attempts</summary>
 
 ```json
@@ -880,7 +880,7 @@ Someone tried (and failed) to authenticate using an email from your organization
 
 Application token failed to authenticate.
 
-<details>
+<details className="custom-details-example-json-response">
   <summary>Example response message</summary>
 
 ```
@@ -893,7 +893,7 @@ Failed authentication request from 'Application Token Name', Reason: TokenStatus
 
 emnify team accessed your organization on behalf of one of your users for service or support purposes.
 
-<details>
+<details className="custom-details-example-json-response">
   <summary>Example JSON response</summary>
 
 ```json
@@ -940,7 +940,7 @@ emnify team accessed your organization on behalf of one of your users for servic
 
 User removed multi-factor authentication (MFA) from their account.
 
-<details>
+<details className="custom-details-example-json-response">
   <summary>Example JSON response</summary>
 
 ```json
@@ -986,7 +986,7 @@ User removed multi-factor authentication (MFA) from their account.
 
 User successfully verified their email.
 
-<details>
+<details className="custom-details-example-json-response">
   <summary>Example JSON response</summary>
 
 ```json
@@ -1025,7 +1025,7 @@ User successfully verified their email.
 
 A user deleted another user's account.
 
-<details>
+<details className="custom-details-example-json-response">
   <summary>Example JSON response</summary>
 
 ```json
@@ -1092,7 +1092,7 @@ Or, it will be automatically triggered when the factory test mode threshold (dat
 Activated SIMs can use network services.
 :::
 
-<details>
+<details className="custom-details-example-json-response">
   <summary>Example JSON response: SIM status changed from <b>Suspended</b> to <b>Activated</b></summary>
 
 ```json
@@ -1139,7 +1139,7 @@ Activated SIMs can use network services.
 
 </details>
 
-<details>
+<details className="custom-details-example-json-response">
   <summary>Example JSON response: SIM activation after Factory Test volume reached</summary>
 
 ```json
@@ -1212,7 +1212,7 @@ Starting from the first day of the next month, the suspended SIM will not accrue
 Activating a SIM with the **Suspended** status again is possible at any time.
 :::
 
-<details>
+<details className="custom-details-example-json-response">
   <summary>Example JSON response</summary>
 
 ```json
@@ -1271,7 +1271,7 @@ Once deleted, the SIM cannot be restored for network access.
 
 Device is enabled.
 
-<details>
+<details className="custom-details-example-json-response">
   <summary>Example JSON response</summary>
 
 ```json
@@ -1322,7 +1322,7 @@ Device is enabled.
 
 Device is disabled.
 
-<details>
+<details className="custom-details-example-json-response">
   <summary>Example JSON response</summary>
 
 ```json
@@ -1373,7 +1373,7 @@ Device is disabled.
 
 SIM is patched from **Issued** to **Factory Test** status (for SIM testing).
 
-<details>
+<details className="custom-details-example-json-response">
   <summary>Example JSON response</summary>
 
 ```json
@@ -1429,7 +1429,7 @@ This event doesn't trigger when the emnify team assigns SIMs to an organization.
 It also doesn't trigger for every SIM of a SIM batch, so the event log will only be visible on the individual SIM when registering single SIM batches.
 :::
 
-<details>
+<details className="custom-details-example-json-response">
   <summary>Example JSON response</summary>
 
 ```json
@@ -1488,7 +1488,7 @@ SIM is released from a device.
 Triggered through the [emnify User Interface (EUI)](https://support.emnify.com/hc/en-us/sections/115000969189-EMnify-User-Interface-EUI-) or [REST API](usage#event-api).
 :::
 
-<details>
+<details className="custom-details-example-json-response">
   <summary>Example JSON response</summary>
 
 ```json
@@ -1543,7 +1543,7 @@ SIM is assigned to a device.
 Triggered through the [emnify User Interface (EUI)](https://support.emnify.com/hc/en-us/sections/115000969189-EMnify-User-Interface-EUI-) or while [creating an endpoint using the emnify REST API](https://cdn.emnify.net/api/doc/swagger.html#/Endpoint/CreateEndpoint).
 :::
 
-<details>
+<details className="custom-details-example-json-response">
   <summary>Example JSON response</summary>
 
 ```json
@@ -1608,7 +1608,7 @@ Device is blocked from all services after exceeding device policies (e.g., reach
 Changing the policies will unblock the device.
 :::
 
-<details>
+<details className="custom-details-example-json-response">
   <summary>Example JSON response</summary>
 
 ```json
@@ -1659,7 +1659,7 @@ Changing the policies will unblock the device.
 
 The organization is blocked after exceeding the monthly cost limit (defined by emnify) or exceeding their prepaid balance (if not set up to be postpaid).
 
-<details>
+<details className="custom-details-example-json-response">
   <summary>Example JSON response: Prepaid balance exceeded</summary>
 
 ```json
@@ -1694,7 +1694,7 @@ The organization is blocked after exceeding the monthly cost limit (defined by e
 
 </details>
 
-<details>
+<details className="custom-details-example-json-response">
   <summary>Example JSON response: Monthly cost limit exceeded</summary>
 
 ```json
@@ -1756,7 +1756,7 @@ The threshold percentage can be submitted when the data quota is assigned to the
 
 **Example**: If the device's data quota volume is set to 100 MB and the threshold percentage to 15%, the system will generate an event when the remaining volume falls below 15 MB.
 
-<details>
+<details className="custom-details-example-json-response">
   <summary>Example JSON response</summary>
 
 ```json
@@ -1823,7 +1823,7 @@ It is also possible to define an action on **Throttle**.
 This means the device can still use data services with less throughput.
 :::
 
-<details>
+<details className="custom-details-example-json-response">
   <summary>Example JSON response</summary>
 
 ```json
@@ -1887,7 +1887,7 @@ Devices without active data quotas will disconnect within seconds.
 New connection requests will be denied until a new data quota is assigned or data quota management is disabled in the service profile.
 :::
 
-<details>
+<details className="custom-details-example-json-response">
   <summary>Example JSON response</summary>
 
 ```json
@@ -1925,7 +1925,7 @@ Data quota management is disabled in a service profile.
 There will no longer be data service restrictions for devices using this service profile.
 :::
 
-<details>
+<details className="custom-details-example-json-response">
   <summary>Example JSON response</summary>
 
 ```json
@@ -1969,7 +1969,7 @@ The event description will read:
 "Data quota got assigned with a volume of 50.000000 MB with daily refill till 2025-05-27T22:56:17Z.
 On exhaustion, the data service will be blocked.”
 
-<details>
+<details className="custom-details-example-json-response">
   <summary>Example JSON response: Action on exhaustion set to block</summary>
 
 ```json
@@ -2036,7 +2036,7 @@ On exhaustion, the data service will be blocked.”
 
 </details>
 
-<details>
+<details className="custom-details-example-json-response">
   <summary>Example JSON response: Action on exhaustion set to throttle</summary>
 
 ```json
@@ -2113,7 +2113,7 @@ Potential data connections of this device will disconnect within seconds.
 New connection requests will be denied until an active data quota is assigned or data quota management is disabled in the service profile.
 :::
 
-<details>
+<details className="custom-details-example-json-response">
   <summary>Example JSON response</summary>
 
 ```json
@@ -2165,7 +2165,7 @@ New connection requests will be denied until an active data quota is assigned or
 Active data quota of a device expired and the quota status changed to **Expired**.
 Once expired, the device isn't able to establish a data session.
 
-<details>
+<details className="custom-details-example-json-response">
   <summary>Example JSON response</summary>
 
 ```json
@@ -2238,7 +2238,7 @@ The threshold percentage can be submitted when the SMS quota is assigned to the 
 
 **Example**: If the device's SMS quota volume is set to 10 SMS and the threshold percentage to 50%, the system will generate an event when the remaining volume falls below 5 MB.
 
-<details>
+<details className="custom-details-example-json-response">
   <summary>Example JSON response</summary>
 
 ```json
@@ -2306,7 +2306,7 @@ Once this happens, the SMS quota status updates from **Active** to **Exhausted**
 Established connections for that device will disconnect within seconds, and new connection requests will be denied until a new SMS quota is assigned or SMS quota management is disabled in the service profile.
 :::
 
-<details>
+<details className="custom-details-example-json-response">
   <summary>Example JSON response</summary>
 
 ```json
@@ -2374,7 +2374,7 @@ Devices without active SMS quotas will disconnect within seconds.
 New connection requests will be denied until a new SMS quota is assigned or SMS quota management is disabled in the service profile.
 :::
 
-<details>
+<details className="custom-details-example-json-response">
   <summary>Example JSON response</summary>
 
 ```json
@@ -2412,7 +2412,7 @@ SMS quota management is disabled in a service profile.
 There will no longer be SMS service restrictions for devices using this service profile.
 :::
 
-<details>
+<details className="custom-details-example-json-response">
   <summary>Example JSON response</summary>
 
 ```json
@@ -2451,7 +2451,7 @@ Assigning a new SMS quota to a device is possible at any time.
 [SMS quota management must be enabled](#sms-quota-enabled) in the service profile.
 :::
 
-<details>
+<details className="custom-details-example-json-response">
   <summary>Example JSON response</summary>
 
 ```json
@@ -2526,7 +2526,7 @@ SMS quota is deleted from a device.
 Once deleted, devices on this service profile (with SMS quota management enabled) won't be able to use the SMS service until an active SMS quota is assigned, or SMS quota management is disabled in the service profile.
 :::
 
-<details>
+<details className="custom-details-example-json-response">
   <summary>Example JSON response</summary>
 
 ```json
@@ -2585,7 +2585,7 @@ Once deleted, devices on this service profile (with SMS quota management enabled
 
 [CloudConnect Transit Gateway (TGW)](https://www.emnify.com/integration-guides/emnify-cloud-connect-into-aws-transit-gateway) resource share is created.
 
-<details>
+<details className="custom-details-example-json-response">
   <summary>Example JSON response</summary>
 
 ```json
@@ -2635,7 +2635,7 @@ Once deleted, devices on this service profile (with SMS quota management enabled
 
 [CloudConnect Transit Gateway (TGW)](https://www.emnify.com/integration-guides/emnify-cloud-connect-into-aws-transit-gateway) is available.
 
-<details>
+<details className="custom-details-example-json-response">
   <summary>Example JSON response</summary>
 
 ```json
@@ -2685,7 +2685,7 @@ Once deleted, devices on this service profile (with SMS quota management enabled
 
 [CloudConnect Transit Gateway (TGW)](https://www.emnify.com/integration-guides/emnify-cloud-connect-into-aws-transit-gateway) breakout is terminated.
 
-<details>
+<details className="custom-details-example-json-response">
   <summary>Example JSON response</summary>
 
 ```json
@@ -2741,7 +2741,7 @@ Once deleted, devices on this service profile (with SMS quota management enabled
 
 Client is successfully authenticated on [OpenVPN](https://www.emnify.com/iot-glossary/open-vpn).
 
-<details>
+<details className="custom-details-example-json-response">
   <summary>Example JSON response</summary>
 
 ```json
@@ -2804,7 +2804,7 @@ Client is successfully authenticated on [OpenVPN](https://www.emnify.com/iot-glo
 
 Organization's country, name, or verification data changed.
 
-<details>
+<details className="custom-details-example-json-response">
   <summary>Example JSON response</summary>
 
 ```json
@@ -2860,7 +2860,7 @@ Organization's country, name, or verification data changed.
 
 Organization's billing configuration changed.
 
-<details>
+<details className="custom-details-example-json-response">
   <summary>Example JSON response</summary>
 
 ```json
