@@ -1,5 +1,4 @@
 ---
-title: Getting started
 description: Learn the basics and structure of emnify events
 ---
 
