@@ -9,7 +9,7 @@ emnify uses a SASE approach to simplify securing devices – using several servi
 
 ## Why does IoT require SASE?
 
-![IoT security threats](assets/security_threats.png)
+![IoT security threats](assets/security-threats.png)
 
 Secure Access Service Edge ([SASE](../glossary#sase-secure-access-service-edge)) introduces a new architecture where networking and security functions are bundled in a cloud-delivered service.
 You can apply the same security standards across all your devices independent of the location.
@@ -43,10 +43,7 @@ This is useful to be able to use your own or private DNS servers to secure and h
 Customers can also configure to use their own DNS, no matter if it is a public or a private one.
 The DNS settings can be changed in the Portal → Device Policies → Service Policies → More Options → DNS.
 
-<!--  To be recreated
-![dns setting](assets/dns_setting.png)  
-*Custom DNS setting configuration*
--->
+<!-- TODO: Recreate dns_setting.png (Custom DNS setting configuration) -->
 
 Utilizing a private DNS server which is not reachable via the public Internet requires to set up a private network with the machine or a network where the private DNS server is located.
 This can be done using Cloud Connect either with Amazon Transit Gateway or IPsec.

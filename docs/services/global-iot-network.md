@@ -5,6 +5,8 @@ description: Network aggregation supporting all radio types
 
 Even when IoT devices are more often only deployed at a single location and are not moving, for a vendor selling to multiple countries it is important to have a global connectivity solution, so that there is no need to have different SIM cards in stock or have multiple contracts and tariffs.
 
+<!-- TODO: Find place for service_stack.png -->
+
 ## Mobile network aggregation
 
 emnify uses an approach to aggregate the roaming footprint of multiple operators with the goal of offering access to every network in the world.
@@ -197,7 +199,7 @@ Extended Discontinuous Reception (eDRX)
   Regular smartphones do not continuously listen on the radio for an incoming message.
   They do this only every 1.28s or 2.56s which is called DRX (discontinuous Reception).
   eDRX allows configuration of custom intervals of up to 40-175 mins - depending on the configuration the visited network allows.
-    ![eDRX and the 3412 and T3324 timers](./assets/eDRX.png)  
+    ![eDRX and the 3412 and T3324 timers](./assets/edrx.png)  
 &nbsp;  
 &nbsp;  
 - Roaming with eDRX  

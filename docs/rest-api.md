@@ -1,7 +1,3 @@
----
-sidebar_position: 5
----
-
 # REST API
 
 REST APIs are one way to integrate external services into your application.
@@ -99,7 +95,7 @@ You can alternatively generate the `application_token` in the emnify Portal:
 1. Log in to the [emnify Portal](https://portal.emnify.com/login)
 1. Navigate to **Integrations** → **Application Tokens** → **Add Token**.
 
-![generate application token](./assets/generate_app_token.png)
+<!-- TODO: Recreate generate_app_token.png (generate application token) -->
 
 To get the `auth_token` using the `application_token`, use the `/api/v1/authenticate` API. 
 The `auth_token` can then be used to authenticate all subsequent API calls.

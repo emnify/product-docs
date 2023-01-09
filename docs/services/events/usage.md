@@ -28,7 +28,7 @@ Then, navigate to the **Integrations** page by clicking the **Integrations** men
 
 If there are no data streams configured, the **Data Streams** panel displays all available connection types as tiles.
 
-<!-- SCREENSHOT -->
+<!-- TODO: Add screenshot with updated Portal branding -->
 
 If you already have a data stream configured, the panel displays all existing streams, ordered by creation date (newest on the top). 
 This list view can be used to gain an overview of the current states of different data streams. 
@@ -37,7 +37,7 @@ Data streams are marked as **Running** are properly operating.
 Failed streams exhibit an **Error** status.
 Paused streams are marked as **Paused**.
 
-<!-- SCREENSHOT -->
+<!-- TODO: Add screenshot with updated Portal branding -->
 
 The **Details** button allows you to inspect the configuration of the specific stream.
 
@@ -49,7 +49,7 @@ The data streamer can apply filtering for event data streams based on event type
 Under **Event Options**, you can choose to **Stream all events** or **Stream specific events only**. 
 Selecting the latter will display a searchable dropdown listing all [event types](event-types) available as filters. 
 
-<!-- SCREENSHOT -->
+<!-- TODO: Add screenshot with updated Portal branding -->
 
 :::tip
 You can also create, update, and delete data streams using the Portal.
