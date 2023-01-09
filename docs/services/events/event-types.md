@@ -1093,10 +1093,112 @@ Activated SIMs can use network services.
 :::
 
 <details>
-  <summary>Example JSON response</summary>
+  <summary>Example JSON response: SIM status changed from <b>Suspended</b> to <b>Activated</b></summary>
 
 ```json
+{
+    "timestamp": "2021-10-27T08:44:56.147Z",
+    "alert": false,
+    "description": "Status of SIM changed from 'Suspended' to 'Activated'",
+    "id": 2107485359,
+    "event_type": {
+        "id": 8,
+        "description": "SIM activation"
+    },
+    "event_source": {
+        "id": 2,
+        "description": "API"
+    },
+    "event_severity": {
+        "id": 0,
+        "description": "Info"
+    },
+    "organisation": {
+        "id": 624,
+        "name": "Test Org"
+    },
+    "endpoint": {
+        "id": 83173458,
+        "imei": "9953599921446542",
+        "ip_address": "174.249.170.160",
+        "name": "Factory Test Sim 2",
+        "tags": null
+    },
+    "sim": {
+        "iccid": "8242757752885188552",
+        "id": 3668977,
+        "production_date": "2020-12-23T13:02:11.000Z"
+    },
+    "imsi": {
+        "id": 323245909,
+        "import_date": "2020-12-23T13:02:11.000Z",
+        "imsi": "44137163473706"
+    }
+}
+```
 
+</details>
+
+<details>
+  <summary>Example JSON response: SIM activation after Factory Test volume reached</summary>
+
+```json
+{
+    "timestamp": "2021-10-27T11:58:15.000Z",
+    "alert": false,
+    "description": "SIM activated after factory test volume reached.",
+    "id": 15235673491,
+    "event_type": {
+        "id": 8,
+        "description": "SIM activation"
+    },
+    "event_source": {
+        "id": 1,
+        "description": "Policy Control"
+    },
+    "event_severity": {
+        "id": 0,
+        "description": "Info"
+    },
+    "organisation": {
+        "id": 35216,
+        "name": "Test Org"
+    },
+    "endpoint": {
+        "id": 39654118,
+        "imei": "8516353639994804",
+        "ip_address": "174.238.2.179",
+        "name": "Factory Test Sim 2",
+        "tags": null
+    },
+    "sim": {
+        "iccid": "57486230661905310281",
+        "id": 598611,
+        "production_date": "2020-12-23T13:02:11.000Z"
+    },
+    "imsi": {
+        "id": 7790199,
+        "import_date": "2020-12-23T13:02:11.000Z",
+        "imsi": "984189013845491"
+    },
+    "detail": {
+        "transition": {
+            "sim": {
+                "status": {
+                    "from": {
+                        "id": 4,
+                        "description": "FACTORY TEST"
+                    },
+                    "to": {
+                        "id": 1,
+                        "description": "ACTIVATED"
+                    }
+                }
+            },
+            "reason": "SIM reached factory test volume."
+        }
+    }
+}
 ```
 
 </details>
@@ -1114,7 +1216,45 @@ Activating a SIM with the **Suspended** status again is possible at any time.
   <summary>Example JSON response</summary>
 
 ```json
-
+{
+    "timestamp": "2021-10-27T08:44:46.267Z",
+    "alert": false,
+    "description": "Status of SIM changed from 'Activated' to 'Suspended'",
+    "id": 6664262361,
+    "event_type": {
+        "id": 9,
+        "description": "SIM suspension"
+    },
+    "event_source": {
+        "id": 2,
+        "description": "API"
+    },
+    "event_severity": {
+        "id": 0,
+        "description": "Info"
+    },
+    "organisation": {
+        "id": 4046,
+        "name": "Test Org"
+    },
+    "endpoint": {
+        "id": 1541102,
+        "imei": "3446623275770945",
+        "ip_address": "227.147.158.142",
+        "name": "Test Sim 2",
+        "tags": null
+    },
+    "sim": {
+        "iccid": "8930423315326577121",
+        "id": 209035,
+        "production_date": "2020-12-23T13:02:11.000Z"
+    },
+    "imsi": {
+        "id": 90246192,
+        "import_date": "2020-12-23T13:02:11.000Z",
+        "imsi": "116892797180278"
+    }
+}
 ```
 
 </details>
@@ -1127,15 +1267,6 @@ The SIM is deleted and permanently removed from the SIM repository.
 Once deleted, the SIM cannot be restored for network access.
 :::
 
-<details>
-  <summary>Example JSON response</summary>
-
-```json
-
-```
-
-</details>
-
 ### Endpoint enabled
 
 Device is enabled.
@@ -1144,7 +1275,45 @@ Device is enabled.
   <summary>Example JSON response</summary>
 
 ```json
-
+{
+    "timestamp": "2021-10-27T08:44:52.828Z",
+    "alert": false,
+    "description": "Status of Endpoint 96485463 changed to Enabled",
+    "id": 55793293648,
+    "event_type": {
+        "id": 42,
+        "description": "Endpoint enabled"
+    },
+    "event_source": {
+        "id": 2,
+        "description": "API"
+    },
+    "event_severity": {
+        "id": 0,
+        "description": "Info"
+    },
+    "organisation": {
+        "id": 6461,
+        "name": "Test Org"
+    },
+    "endpoint": {
+        "id": 96485463,
+        "imei": "1831095813329187",
+        "ip_address": "121.214.125.202",
+        "name": "Test Sim 2",
+        "tags": null
+    },
+    "sim": {
+        "iccid": "5363218780648553126",
+        "id": 9270816,
+        "production_date": "2020-12-23T13:02:11.000Z"
+    },
+    "imsi": {
+        "id": 96756141,
+        "import_date": "2020-12-23T13:02:11.000Z",
+        "imsi": "87393970592520"
+    }
+}
 ```
 
 </details>
@@ -1157,7 +1326,45 @@ Device is disabled.
   <summary>Example JSON response</summary>
 
 ```json
-
+{
+    "timestamp": "2021-10-27T08:44:49.585Z",
+    "alert": false,
+    "description": "Status of Endpoint 28778135 changed to Disabled",
+    "id": 19126170545,
+    "event_type": {
+        "id": 43,
+        "description": "Endpoint disabled"
+    },
+    "event_source": {
+        "id": 2,
+        "description": "API"
+    },
+    "event_severity": {
+        "id": 0,
+        "description": "Info"
+    },
+    "organisation": {
+        "id": 2448,
+        "name": "Test Org"
+    },
+    "endpoint": {
+        "id": 28778135,
+        "imei": "4042850244446350",
+        "ip_address": "183.104.130.246",
+        "name": "Test Sim 2",
+        "tags": null
+    },
+    "sim": {
+        "iccid": "5011996012476043533",
+        "id": 5492364,
+        "production_date": "2020-12-23T13:02:11.000Z"
+    },
+    "imsi": {
+        "id": 5508107,
+        "import_date": "2020-12-23T13:02:11.000Z",
+        "imsi": "741161647249343"
+    }
+}
 ```
 
 </details>
@@ -1170,7 +1377,45 @@ SIM is patched from **Issued** to **Factory Test** status (for SIM testing).
   <summary>Example JSON response</summary>
 
 ```json
-
+{
+    "timestamp": "2021-10-27T11:30:52.684Z",
+    "alert": false,
+    "description": "Status of SIM changed from 'Issued' to 'Factory Test'",
+    "id": 1955109934112,
+    "event_type": {
+        "id": 45,
+        "description": "SIM factory test"
+    },
+    "event_source": {
+        "id": 2,
+        "description": "API"
+    },
+    "event_severity": {
+        "id": 0,
+        "description": "Info"
+    },
+    "organisation": {
+        "id": 40163,
+        "name": "Test Org"
+    },
+    "endpoint": {
+        "id": 896737335,
+        "imei": "760116392707263",
+        "ip_address": "199.153.59.220",
+        "name": "Test Sim 2",
+        "tags": null
+    },
+    "sim": {
+        "iccid": "49176386291337319872",
+        "id": 703869,
+        "production_date": "2020-12-23T13:02:11.000Z"
+    },
+    "imsi": {
+        "id": 391022,
+        "import_date": "2020-12-23T13:02:11.000Z",
+        "imsi": "165974752113101"
+    }
+}
 ```
 
 </details>
@@ -1188,7 +1433,49 @@ It also doesn't trigger for every SIM of a SIM batch, so the event log will only
   <summary>Example JSON response</summary>
 
 ```json
-
+{
+  "timestamp": "2021-12-20T00:13:36.000Z",
+  "alert": false,
+  "description": "Batch of 1 SIM(s) registered.",
+  "id": 9539556207944,
+  "event_type": {
+    "id": 48,
+    "description": "SIM registration"
+  },
+  "event_source": {
+    "id": 2,
+    "description": "API"
+  },
+  "event_severity": {
+    "id": 0,
+    "description": "Info"
+  },
+  "organisation": {
+    "id": 3376,
+    "name": "Sample Corp"
+  },
+  "sim": {
+    "iccid": "68429007768008033558",
+    "id": 96112629,
+    "production_date": "2020-05-15T08:50:07.000Z"
+  },
+  "user": {
+    "id": 28757,
+    "name": "Sample User",
+    "username": "user@sample.com"
+  },
+  "detail": {
+    "sim_batch": {
+      "id": 57716,
+      "sim_model": {
+        "id": 9
+      },
+      "batch_size": 1,
+      "first_iccid": "68429007768008033558",
+      "last_iccid": "68429007768008033558"
+    }
+  }
+}
 ```
 
 </details>
@@ -1205,7 +1492,45 @@ Triggered through the [emnify User Interface (EUI)](https://support.emnify.com/h
   <summary>Example JSON response</summary>
 
 ```json
-
+{
+  "timestamp": "2021-12-15T07:39:24.905Z",
+  "alert": false,
+  "description": "SIM 3423335 released from endpoint 5749159",
+  "id": 9511580614964,
+  "event_type": {
+    "id": 50,
+    "description": "SIM Released"
+  },
+  "event_source": {
+    "id": 2,
+    "description": "API"
+  },
+  "event_severity": {
+    "id": 0,
+    "description": "Info"
+  },
+  "organisation": {
+    "id": 316,
+    "name": "Test Org"
+  },
+  "endpoint": {
+    "id": 5749159,
+    "imei": "601262876950445",
+    "ip_address": "182.112.132.120",
+    "name": "Factory Test Sim 3",
+    "tags": null
+  },
+  "sim": {
+    "iccid": "4423772578905695775",
+    "id": 3423335,
+    "production_date": "2020-12-23T13:02:11.000Z"
+  },
+  "imsi": {
+    "id": 63513617,
+    "import_date": "2020-12-23T13:02:11.000Z",
+    "imsi": "616139522755995"
+  }
+}
 ```
 
 </details>
@@ -1222,7 +1547,48 @@ Triggered through the [emnify User Interface (EUI)](https://support.emnify.com/h
   <summary>Example JSON response</summary>
 
 ```json
-
+{
+  "timestamp": "2021-12-15T07:45:45.807Z",
+  "alert": false,
+  "description": "SIM 2972420 assigned to endpoint 38463269",
+  "id": 60798254506111,
+  "event_type": {
+    "id": 51,
+    "description": "SIM Assigned"
+  },
+  "event_source": {
+    "id": 2,
+    "description": "API"
+  },
+  "event_severity": {
+    "id": 0,
+    "description": "Info"
+  },
+  "organisation": {
+    "id": 89698,
+    "name": "Test Org"
+  },
+  "endpoint": {
+    "id": 38463269,
+    "imei": "821536534391790",
+    "ip_address": "100.102.41.214",
+    "name": "Factory Test Sim 3",
+    "tags": null
+  },
+  "sim": {
+    "iccid": "10314787648254377158",
+    "id": 2972420,
+    "production_date": "2020-12-23T13:02:11.000Z"
+  },
+  "imsi": {
+    "id": 5236562,
+    "import_date": "2020-12-23T13:02:11.000Z",
+    "imsi": "963687450685669"
+  },
+  "detail": {
+    "imei": "821536534391790"
+  }
+}
 ```
 
 </details>
@@ -1394,7 +1760,52 @@ The threshold percentage can be submitted when the data quota is assigned to the
   <summary>Example JSON response</summary>
 
 ```json
-
+{
+    "timestamp": "2021-10-27T09:06:50.000Z",
+    "alert": true,
+    "description": "Endpoint quota threshold reached, volume is below 80%.",
+    "id": 17357540123,
+    "event_type": {
+        "id": 18,
+        "description": "Quota threshold reached"
+    },
+    "event_source": {
+        "id": 1,
+        "description": "Policy Control"
+    },
+    "event_severity": {
+        "id": 1,
+        "description": "Warn"
+    },
+    "organisation": {
+        "id": 6713,
+        "name": "Test Org"
+    },
+    "endpoint": {
+        "id": 86473615,
+        "imei": "250642987889789",
+        "ip_address": "202.37.156.180",
+        "name": "Factory Test Sim 2",
+        "tags": null
+    },
+    "sim": {
+        "iccid": "56816736458812006983",
+        "id": 1467960,
+        "production_date": "2020-12-23T13:02:11.000Z"
+    },
+    "imsi": {
+        "id": 20616184,
+        "import_date": "2020-12-23T13:02:11.000Z",
+        "imsi": "58834171155367"
+    },
+    "detail": {
+        "quota": {
+            "threshold_percentage": 80,
+            "threshold_volume": 0.8,
+            "volume": -0.00120000000000009
+        }
+    }
+}
 ```
 
 </details>
@@ -1416,7 +1827,52 @@ This means the device can still use data services with less throughput.
   <summary>Example JSON response</summary>
 
 ```json
-
+{
+    "timestamp": "2021-10-27T09:06:50.000Z",
+    "alert": true,
+    "description": "Quota volume is completely used up and data access denied for endpoint.",
+    "id": 1071715568978,
+    "event_type": {
+        "id": 19,
+        "description": "Quota used up"
+    },
+    "event_source": {
+        "id": 1,
+        "description": "Policy Control"
+    },
+    "event_severity": {
+        "id": 1,
+        "description": "Warn"
+    },
+    "organisation": {
+        "id": 649,
+        "name": "Test Org"
+    },
+    "endpoint": {
+        "id": 19565190,
+        "imei": "535561812785483",
+        "ip_address": "147.188.3.101",
+        "name": "Factory Test Sim 2",
+        "tags": null
+    },
+    "sim": {
+        "iccid": "6971715153842702145",
+        "id": 28734421,
+        "production_date": "2020-12-23T13:02:11.000Z"
+    },
+    "imsi": {
+        "id": 28726038,
+        "import_date": "2020-12-23T13:02:11.000Z",
+        "imsi": "341399783365891"
+    },
+    "detail": {
+        "quota": {
+            "threshold_percentage": 80,
+            "threshold_volume": 0.8,
+            "volume": "1.000000"
+        }
+    }
+}
 ```
 
 </details>
@@ -1435,7 +1891,28 @@ New connection requests will be denied until a new data quota is assigned or dat
   <summary>Example JSON response</summary>
 
 ```json
-
+{
+  "timestamp": "2022-07-14T13:32:49.046Z",
+  "alert": false,
+  "description": "Data quota management enabled for service profile (id = 99133 - Generic Service Profile), endpoints of this service profile without an active data quota will be throttled or blocked from data service.",
+  "id": 215900319904123,
+  "event_type": {
+    "id": 52,
+    "description": "Data quota enabled"
+  },
+  "event_source": {
+    "id": 2,
+    "description": "API"
+  },
+  "event_severity": {
+    "id": 1,
+    "description": "Warn"
+  },
+  "organisation": {
+    "id": 9684,
+    "name": "Example Org"
+  }
+}
 ```
 
 </details>
@@ -1452,7 +1929,28 @@ There will no longer be data service restrictions for devices using this service
   <summary>Example JSON response</summary>
 
 ```json
-
+{
+  "timestamp": "2022-07-14T12:11:41.640Z",
+  "alert": false,
+  "description": "Data quota management disabled for service profile (id = 99133 - Generic Service Profile).",
+  "id": 2990738287492,
+  "event_type": {
+    "id": 53,
+    "description": "Data quota disabled"
+  },
+  "event_source": {
+    "id": 2,
+    "description": "API"
+  },
+  "event_severity": {
+    "id": 1,
+    "description": "Warn"
+  },
+  "organisation": {
+    "id": 604,
+    "name": "Example Org"
+  }
+}
 ```
 
 </details>
@@ -1472,10 +1970,135 @@ The event description will read:
 On exhaustion, the data service will be blocked.”
 
 <details>
-  <summary>Example JSON response</summary>
+  <summary>Example JSON response: Action on exhaustion set to block</summary>
 
 ```json
+{
+  "timestamp": "2022-07-14T13:35:07.626Z",
+  "alert": false,
+  "description": "Data quota assigned with volume of 10.000000 MB without daily refill until 2022-07-31T00:00:00Z and action on exhaustion set to blocking.",
+  "id": 1028076751946,
+  "event_type": {
+    "id": 56,
+    "description": "Data quota assigned"
+  },
+  "event_source": {
+    "id": 2,
+    "description": "API"
+  },
+  "event_severity": {
+    "id": 0,
+    "description": "Info"
+  },
+  "organisation": {
+    "id": 2256,
+    "name": "Example Org"
+  },
+  "endpoint": {
+    "id": 5293531,
+    "imei": "5839369400489068",
+    "ip_address": "188.167.183.228",
+    "name": "Test Device",
+    "tags": null
+  },
+  "sim": {
+    "iccid": "8412861332142732293",
+    "id": 935826,
+    "production_date": "2017-05-03T20:36:28.000Z"
+  },
+  "imsi": {
+    "id": 186306,
+    "import_date": "2017-05-03T20:36:28.000Z",
+    "imsi": "175971182377611"
+  },
+  "detail": {
+    "quota": {
+      "status": {
+        "id": 1,
+        "description": "ACTIVE"
+      },
+      "action_on_exhaustion": {
+        "id": 1,
+        "description": "Block",
+        "peak_throughput": 128000
+      },
+      "volume": 10,
+      "expiryDate": "2022-07-31T00:00:00Z",
+      "lastVolumeAdded": 10,
+      "lastStatusChangeDate": "2022-07-14T13:35:06Z",
+      "autoRefill": false,
+      "thresholdPercentage": 10,
+      "thresholdVolume": 1
+    }
+  }
+}
+```
 
+</details>
+
+<details>
+  <summary>Example JSON response: Action on exhaustion set to throttle</summary>
+
+```json
+{
+  "timestamp": "2022-07-14T13:38:11.537Z",
+  "alert": false,
+  "description": "Data quota assigned with volume of 100.000000 MB without daily refill until 2022-07-14T13:39:00Z and action on exhaustion set to throttling to a throughput of 128 kbit/s.",
+  "id": 55632453271862,
+  "event_type": {
+    "id": 56,
+    "description": "Data quota assigned"
+  },
+  "event_source": {
+    "id": 2,
+    "description": "API"
+  },
+  "event_severity": {
+    "id": 0,
+    "description": "Info"
+  },
+  "organisation": {
+    "id": 2782,
+    "name": "Example Org"
+  },
+  "endpoint": {
+    "id": 5477169,
+    "imei": "2220624023468711",
+    "ip_address": "174.249.170.160",
+    "name": "Example Device",
+    "tags": null
+  },
+  "sim": {
+    "iccid": "1013367122100019039",
+    "id": 899958,
+    "production_date": "2017-05-03T20:36:28.000Z"
+  },
+  "imsi": {
+    "id": 943048,
+    "import_date": "2017-05-03T20:36:28.000Z",
+    "imsi": "209549041950251"
+  },
+  "detail": {
+    "quota": {
+      "status": {
+        "id": 1,
+        "description": "ACTIVE"
+      },
+      "action_on_exhaustion": {
+        "id": 2,
+        "description": "Throttle",
+        "peak_throughput": 128000
+      },
+      "volume": 100,
+      "expiryDate": "2022-07-14T13:39:00Z",
+      "lastVolumeAdded": 100,
+      "lastStatusChangeDate": "2022-07-14T13:38:11Z",
+      "autoRefill": false,
+      "thresholdPercentage": 15,
+      "thresholdVolume": 15
+    }
+  }
+}
 ```
 
 </details>
@@ -1494,7 +2117,45 @@ New connection requests will be denied until an active data quota is assigned or
   <summary>Example JSON response</summary>
 
 ```json
-
+{
+  "timestamp": "2022-07-14T13:35:18.686Z",
+  "alert": false,
+  "description": "Data quota deleted.",
+  "id": 44285280402507,
+  "event_type": {
+    "id": 57,
+    "description": "Data quota deleted"
+  },
+  "event_source": {
+    "id": 2,
+    "description": "API"
+  },
+  "event_severity": {
+    "id": 0,
+    "description": "Info"
+  },
+  "organisation": {
+    "id": 7806,
+    "name": "Example Org"
+  },
+  "endpoint": {
+    "id": 387316,
+    "imei": "9044128511360644",
+    "ip_address": "174.238.2.179",
+    "name": "Example Device",
+    "tags": null
+  },
+  "sim": {
+    "iccid": "7626384783536271949",
+    "id": 949644,
+    "production_date": "2017-05-03T20:36:28.000Z"
+  },
+  "imsi": {
+    "id": 108458,
+    "import_date": "2017-05-03T20:36:28.000Z",
+    "imsi": "236366434880861"
+  }
+}
 ```
 
 </details>
@@ -1508,7 +2169,45 @@ Once expired, the device isn't able to establish a data session.
   <summary>Example JSON response</summary>
 
 ```json
-
+{
+  "timestamp": "2022-07-14T13:39:03.199Z",
+  "alert": true,
+  "description": "Data quota expired.",
+  "id": 35944374073138,
+  "event_type": {
+    "id": 60,
+    "description": "Data quota expired"
+  },
+  "event_source": {
+    "id": 1,
+    "description": "Policy Control"
+  },
+  "event_severity": {
+    "id": 1,
+    "description": "Warn"
+  },
+  "organisation": {
+    "id": 8238,
+    "name": "Example Org"
+  },
+  "endpoint": {
+    "id": 501389,
+    "imei": "8134820216492081",
+    "ip_address": "227.147.158.142",
+    "name": "Example Device",
+    "tags": null
+  },
+  "sim": {
+    "iccid": "3694452932824047676",
+    "id": 103965,
+    "production_date": "2017-05-03T20:36:28.000Z"
+  },
+  "imsi": {
+    "id": 357765,
+    "import_date": "2017-05-03T20:36:28.000Z",
+    "imsi": "29821710188733"
+  }
+}
 ```
 
 </details>
@@ -1543,7 +2242,56 @@ The threshold percentage can be submitted when the SMS quota is assigned to the 
   <summary>Example JSON response</summary>
 
 ```json
-
+{
+    "timestamp": "2021-10-27T09:21:30.000Z",
+    "alert": true,
+    "description": "SMS quota threshold reached, volume is below 50%.",
+    "id": 6734033817529352,
+    "event_type": {
+        "id": 20,
+        "description": "SMS quota threshold reached"
+    },
+    "event_source": {
+        "id": 1,
+        "description": "Policy Control"
+    },
+    "event_severity": {
+        "id": 1,
+        "description": "Warn"
+    },
+    "organisation": {
+        "id": 42139,
+        "name": "Test Org"
+    },
+    "endpoint": {
+        "id": 10991244,
+        "imei": "7345023067541287",
+        "ip_address": "121.214.125.202",
+        "name": "Factory Test Sim 2",
+        "tags": null
+    },
+    "sim": {
+        "iccid": "9097920854483458667",
+        "id": 114667,
+        "production_date": "2020-12-23T13:02:11.000Z"
+    },
+    "imsi": {
+        "id": 7940611,
+        "import_date": "2020-12-23T13:02:11.000Z",
+        "imsi": "570416925414349"
+    },
+    "detail": {
+        "quota": {
+            "volume": 0,
+            "threshold_percentage": 50,
+            "threshold_volume": 1,
+            "traffic_type": {
+                "id": 6,
+                "description": "SMS"
+            }
+        }
+    }
+}
 ```
 
 </details>
@@ -1562,7 +2310,56 @@ Established connections for that device will disconnect within seconds, and new 
   <summary>Example JSON response</summary>
 
 ```json
-
+{
+    "timestamp": "2021-10-27T09:21:30.000Z",
+    "alert": true,
+    "description": "SMS quota volume is completely used up and SMS access denied for endpoint.",
+    "id": 896151190639914,
+    "event_type": {
+        "id": 21,
+        "description": "SMS quota used up"
+    },
+    "event_source": {
+        "id": 1,
+        "description": "Policy Control"
+    },
+    "event_severity": {
+        "id": 1,
+        "description": "Warn"
+    },
+    "organisation": {
+        "id": 63910,
+        "name": "Test Org"
+    },
+    "endpoint": {
+        "id": 98084339,
+        "imei": "7280773798507910",
+        "ip_address": "183.104.130.246",
+        "name": "Test Sim 2",
+        "tags": null
+    },
+    "sim": {
+        "iccid": "4786561754166784043",
+        "id": 2242607,
+        "production_date": "2020-12-23T13:02:11.000Z"
+    },
+    "imsi": {
+        "id": 3710068,
+        "import_date": "2020-12-23T13:02:11.000Z",
+        "imsi": "485182190937960"
+    },
+    "detail": {
+        "quota": {
+            "volume": "1.000000",
+            "threshold_percentage": 50,
+            "threshold_volume": 5,
+            "traffic_type": {
+                "id": 6,
+                "description": "SMS"
+            }
+        }
+    }
+}
 ```
 
 </details>
@@ -1581,7 +2378,28 @@ New connection requests will be denied until a new SMS quota is assigned or SMS 
   <summary>Example JSON response</summary>
 
 ```json
-
+{
+  "timestamp": "2022-07-14T13:32:54.252Z",
+  "alert": false,
+  "description": "SMS quota management enabled for service profile (id = 99133 - Generic Service Profile), endpoints of this service profile without an active SMS quota will be blocked from SMS service.",
+  "id": 503128940665149,
+  "event_type": {
+    "id": 54,
+    "description": "SMS quota enabled"
+  },
+  "event_source": {
+    "id": 2,
+    "description": "API"
+  },
+  "event_severity": {
+    "id": 1,
+    "description": "Warn"
+  },
+  "organisation": {
+    "id": 25885,
+    "name": "Example Org"
+  }
+}
 ```
 
 </details>
@@ -1598,7 +2416,28 @@ There will no longer be SMS service restrictions for devices using this service 
   <summary>Example JSON response</summary>
 
 ```json
-
+{
+  "timestamp": "2022-07-14T13:33:06.602Z",
+  "alert": false,
+  "description": "SMS quota management disabled for service profile (id = 99133 - Generic Service Profile).",
+  "id": 381092102647412,
+  "event_type": {
+    "id": 55,
+    "description": "SMS quota disabled"
+  },
+  "event_source": {
+    "id": 2,
+    "description": "API"
+  },
+  "event_severity": {
+    "id": 1,
+    "description": "Warn"
+  },
+  "organisation": {
+    "id": 6034,
+    "name": "Example Org"
+  }
+}
 ```
 
 </details>
@@ -1616,7 +2455,65 @@ Assigning a new SMS quota to a device is possible at any time.
   <summary>Example JSON response</summary>
 
 ```json
-
+{
+  "timestamp": "2022-07-14T13:35:11.973Z",
+  "alert": false,
+  "description": "SMS quota assigned with volume of 10 SMS without daily refill until 2022-07-31T00:00:00Z.",
+  "id": 10526095035190,
+  "event_type": {
+    "id": 58,
+    "description": "SMS quota assigned"
+  },
+  "event_source": {
+    "id": 2,
+    "description": "API"
+  },
+  "event_severity": {
+    "id": 0,
+    "description": "Info"
+  },
+  "organisation": {
+    "id": 9631,
+    "name": "Example Org"
+  },
+  "endpoint": {
+    "id": 6276513,
+    "imei": "761090808370721",
+    "ip_address": "199.153.59.220",
+    "name": "Example Device",
+    "tags": null
+  },
+  "sim": {
+    "iccid": "1099167253920209804",
+    "id": 531078,
+    "production_date": "2017-05-03T20:36:28.000Z"
+  },
+  "imsi": {
+    "id": 496809,
+    "import_date": "2017-05-03T20:36:28.000Z",
+    "imsi": "19010090094479"
+  },
+  "detail": {
+    "quota": {
+      "status": {
+        "id": 1,
+        "description": "ACTIVE"
+      },
+      "action_on_exhaustion": {
+        "id": 1,
+        "description": "Block",
+        "peak_throughput": 128000
+      },
+      "volume": 10,
+      "expiryDate": "2022-07-31T00:00:00Z",
+      "lastVolumeAdded": 10,
+      "lastStatusChangeDate": "2022-07-14T13:35:11Z",
+      "autoRefill": false,
+      "thresholdPercentage": 10,
+      "thresholdVolume": 1
+    }
+  }
+}
 ```
 
 </details>
@@ -1633,7 +2530,45 @@ Once deleted, devices on this service profile (with SMS quota management enabled
   <summary>Example JSON response</summary>
 
 ```json
-
+{
+  "timestamp": "2022-07-14T13:35:22.488Z",
+  "alert": false,
+  "description": "SMS quota deleted.",
+  "id": 41270752471139,
+  "event_type": {
+    "id": 59,
+    "description": "SMS quota deleted"
+  },
+  "event_source": {
+    "id": 2,
+    "description": "API"
+  },
+  "event_severity": {
+    "id": 0,
+    "description": "Info"
+  },
+  "organisation": {
+    "id": 6599,
+    "name": "Example Org"
+  },
+  "endpoint": {
+    "id": 3419153,
+    "imei": "7882775753194244",
+    "ip_address": "182.112.132.120",
+    "name": "Example Device",
+    "tags": null
+  },
+  "sim": {
+    "iccid": "6587040688575397618",
+    "id": 112577,
+    "production_date": "2017-05-03T20:36:28.000Z"
+  },
+  "imsi": {
+    "id": 180774,
+    "import_date": "2017-05-03T20:36:28.000Z",
+    "imsi": "310255491186321"
+  }
+}
 ```
 
 </details>
@@ -1654,7 +2589,44 @@ Once deleted, devices on this service profile (with SMS quota management enabled
   <summary>Example JSON response</summary>
 
 ```json
-
+{
+  "timestamp": "2021-12-22T10:34:13.000Z",
+  "alert": false,
+  "description": "CloudConnect Transit Gateway Resource Share created",
+  "id": 99738069602631,
+  "event_type": {
+    "id": 22,
+    "description": "CloudConnect TGW Resource Share created"
+  },
+  "event_source": {
+    "id": 2,
+    "description": "API"
+  },
+  "event_severity": {
+    "id": 0,
+    "description": "Info"
+  },
+  "organisation": {
+    "id": 7774,
+    "name": "Sample Corp"
+  },
+  "user": {
+    "id": 5177,
+    "name": "Sample User",
+    "username": "user@sample.com"
+  },
+  "detail": {
+    "username": "user@sample.com",
+    "breakout_id": 385,
+    "creation_date": "2021-12-22T10:34:11Z",
+    "deletion_date": null,
+    "region": "eu-west-1",
+    "resource_share_name": "Cloud Native Connectivity: VPC and VPN of customers connected",
+    "breakout_type_id": 1,
+    "breakout_type": "Transit Gateway",
+    "price": 149
+  }
+}
 ```
 
 </details>
@@ -1667,7 +2639,44 @@ Once deleted, devices on this service profile (with SMS quota management enabled
   <summary>Example JSON response</summary>
 
 ```json
-
+{
+  "timestamp": "2021-12-22T10:39:19.000Z",
+  "alert": false,
+  "description": "CloudConnect Transit Gateway breakout 222 is available",
+  "id": 2383714595353,
+  "event_type": {
+    "id": 23,
+    "description": "CloudConnect TGW available"
+  },
+  "event_source": {
+    "id": 2,
+    "description": "API"
+  },
+  "event_severity": {
+    "id": 0,
+    "description": "Info"
+  },
+  "organisation": {
+    "id": 739,
+    "name": "Sample Corp"
+  },
+  "user": {
+    "id": 928,
+    "name": "Sample User",
+    "username": "user@sample.com"
+  },
+  "detail": {
+    "username": "user@sample.com",
+    "breakout_id": 222,
+    "creation_date": "2021-12-22T10:34:11Z",
+    "deletion_date": null,
+    "region": "eu-west-1",
+    "resource_share_name": "Cloud Native Connectivity: VPC and VPN of customers connected",
+    "breakout_type_id": 1,
+    "breakout_type": "Transit Gateway",
+    "price": 149
+  }
+}
 ```
 
 </details>
@@ -1680,7 +2689,44 @@ Once deleted, devices on this service profile (with SMS quota management enabled
   <summary>Example JSON response</summary>
 
 ```json
-
+{
+  "timestamp": "2021-12-22T14:31:14.000Z",
+  "alert": false,
+  "description": "CloudConnect Transit Gateway breakout 316 has been terminated",
+  "id": 2634578262948,
+  "event_type": {
+    "id": 25,
+    "description": "CloudConnect TGW breakout terminated"
+  },
+  "event_source": {
+    "id": 2,
+    "description": "API"
+  },
+  "event_severity": {
+    "id": 0,
+    "description": "Info"
+  },
+  "organisation": {
+    "id": 571,
+    "name": "Sample Corp"
+  },
+  "user": {
+    "id": 40817,
+    "name": "Sample User",
+    "username": "user@sample.com"
+  },
+  "detail": {
+    "username": "user@sample.com",
+    "breakout_id": 316,
+    "creation_date": "2021-12-22T10:34:11Z",
+    "deletion_date": null,
+    "region": "eu-west-1",
+    "resource_share_name": "Cloud Native Connectivity: VPC and VPN of customers connected",
+    "breakout_type_id": 1,
+    "breakout_type": "Transit Gateway",
+    "price": 149
+  }
+}
 ```
 
 </details>
