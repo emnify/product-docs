@@ -62,7 +62,7 @@ Once the `auth_token` expires, you can use the `refresh_token` to retrieve t
 
 ### Authenticate with an application token
 
-As you should not store your emnify user credentials on your application server, you can generate an `application_token` via the [emnify Portal](https://portal.emnify.com/) or the API: `/api/v1/application_token`.
+Since you should not store your emnify user credentials on your application server, you can generate an `application_token` via the [emnify Portal](https://portal.emnify.com/) or the API: `/api/v1/application_token`.
 The request body should have a description of the token usually used to indicate who is using the token and can have an `expiry_date` for the token.
 
 ```
@@ -92,7 +92,7 @@ Authorization: Bearer {auth_token}
 }
 ```
 
-This calls returns an `application_token`. 
+This call returns an `application_token`. 
 You can use this token instead of the username and password combination. 
 The token can be revoked at any time.
 
@@ -126,7 +126,7 @@ POST https://cdn.emnify.net/api/v1/authenticate
 }
 ```
 
-Unlike user and password authentication, only `auth_token`s are returned by the server. 
+Unlike username and password authentication,  the server returns only `auth_token`s. 
 No `refresh_token` will be included in the response.
 This `auth_token` is valid for 240 minutes.
 
@@ -141,7 +141,7 @@ Then, update it after its expiration.
 You can perform the following SMS related operations using the `endpoint` API.
 
 1. List sent and received SMS: `GET /api/v1/endpoint/{endpoint_id}/sms`
-1. Send SMS to and endpoint: `POST /api/v1/endpoint/{endpoint_id}/sms`
+1. Send SMS to an endpoint: `POST /api/v1/endpoint/{endpoint_id}/sms`
 1. Get details about an endpoint SMS: `GET /api/v1/endpoint/{endpoint_id}/sms/{sms_id}`
 1. Cancel a buffered SMS: `DELETE /api/v1/endpoint/{endpoint_id}/sms/{sms_id}`
 
