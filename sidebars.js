@@ -102,6 +102,29 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: 'REST API',
+      link: {
+        type: 'generated-index',
+        title: 'emnify REST API',
+        slug: 'rest-api'
+      },
+      items: [
+        {
+          type: 'doc',
+          label: 'Getting started',
+          id: 'rest-api/getting-started'
+        },
+        'rest-api/authentication',
+        'rest-api/sms-operations',
+        {
+          type: 'link',
+          label: 'API reference',
+          href: 'https://cdn.emnify.net/api/doc/index.html'
+        }
+      ]
+    },
+    {
+      type: 'category',
       label: 'Software Development Kits',
       link: { 
         type: 'generated-index', 
@@ -137,7 +160,6 @@ const sidebars = {
         },
       ],
     },
-    'rest-api',
     {
       type: 'category',
       label: 'Single Sign-On',
