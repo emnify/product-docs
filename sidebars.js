@@ -85,7 +85,6 @@ const sidebars = {
               id: 'services/events/getting-started'
             },
             'services/events/event-types',
-            'services/events/mno-events',
             'services/events/usage'
           ],
         },
