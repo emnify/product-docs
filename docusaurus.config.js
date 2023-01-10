@@ -78,21 +78,22 @@ const config = {
         },
       },
       footer: {
+        logo: {
+          alt: "",
+          src: "img/logo-icon-only-dark.svg",
+          style: { "margin-top": "1.5rem" },
+        },
         links: [
           {
             title: "Resources",
             items: [
               {
                 label: "emnify website",
-                to: "https://www.emnify.com/",
+                href: "https://www.emnify.com/",
               },
               {
-                label: "Integration guides",
-                href: "https://www.emnify.com/integration-guides",
-              },
-              {
-                label: "REST API reference",
-                href: "https://cdn.emnify.net/api/doc/index.html",
+                label: "Developer blog",
+                href: "https://www.emnify.com/developer-blog",
               },
             ],
           },
@@ -107,10 +108,6 @@ const config = {
                 label: "Request a feature",
                 href: "https://emnify.canny.io/",
               },
-              {
-                label: "System status",
-                href: "https://status.emnify.com/",
-              },
             ],
           },
           {
@@ -118,17 +115,26 @@ const config = {
             items: [
               {
                 label: "GitHub",
-                to: "https://github.com/emnify/",
-              },
-              {
-                label: "Developer blog",
-                href: "https://www.emnify.com/developer-blog",
+                href: "https://github.com/emnify/",
               },
               {
                 label: "Twitter",
                 href: "https://twitter.com/emnify",
               },
             ],
+          },
+          {
+            title: "Legal",
+            items: [
+              {
+                label: "Imprint",
+                href: "https://www.emnify.com/imprint-disclaimer"
+              },
+              {
+                label: "Privacy policy",
+                href: "https://www.emnify.com/privacy-policy"
+              }
+            ]
           },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} emnify GmbH. All rights reserved.`,
