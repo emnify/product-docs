@@ -14,7 +14,7 @@ We use JSON Web Tokens (JWTs) as the authentication token.
 There are two ways to retrieve this token:
 
 1. [**Authenticate with user credentials**](#authenticate-with-user-credentials): Use the username and password you used while signing up for the [emnify Portal](https://portal.emnify.com/).
-2. [**Authenticate with an application token**](#authenticate-with-an-application-token): You can use the application token generated in your emnify account.
+1. [**Authenticate with an application token**](#authenticate-with-an-application-token): You can use the application token generated in your emnify account.
 
 ### Authenticate with user credentials
 
