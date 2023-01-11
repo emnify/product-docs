@@ -141,5 +141,5 @@
 }
 
 .custom-details-example-json-response .collapsibleContent_node_modules-\@docusaurus-theme-common-lib-components-Details-styles-module {
-  border-top: 1px solid #000035;
+  border-top: 1px solid #000035 !important;
 }
