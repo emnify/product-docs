@@ -1,77 +1,26 @@
-# How to contribute to the emnify Product Documentation
+# emnify product documentation for developers
 
-It is assumed that contributors, both internal and external, have some experience with [Git](https://git-scm.com/) and [Markdown](https://daringfireball.net/projects/markdown/).
-If not, here are some resources to help you get started:
-
-- **Git**
-  - [Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
-  - [An Intro to Git and GitHub for Beginners](https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners)
-- **Markdown**
-  - [Basic syntax](https://www.markdownguide.org/basic-syntax/)
-  - [Extended syntax](https://www.markdownguide.org/extended-syntax/)
-
-## Software requirements
-
-Most of the software you will need to install is free and uses only nominal system resources.
-
-### Git
-
-If you are using Git for the first time, you will probably need to install it unless your are using 
-Linux.
-
-#### Windows
-
-If your platform is Windows, follow these [instructions](https://www.atlassian.com/git/tutorials/install-git#windows).
-
-#### macOS
-
-Open **App Store** from the Dock and search for **Xcode**.
-This is an extensive package.
-Before installing **Xcode**, plan for a required reboot and at least 30 minutes of downtime.
-
-### Node.js
-
-The emnify Developer Documentation site uses [Docusaurus](https://docusaurus.io/showcase?tags=meta) for its layout, style, and navigation.
-For building the docs with Docusaurus you will need [Node.js](https://nodejs.org/en/about/).
-
-The [Node.js installer](https://nodejs.org/en/download/) includes [npm](https://docs.npmjs.com/about-npm) as the default package manager for installing and managing Node.js packages.
-
-#### Install Docusaurus using npm
-
-```
-npm init docusaurus
-```
-#### Install Docusaurus using yarn
-
-```
-yarn create docusaurus
-```
-
-#### Create an initial Docusaurus project
-
-```
-cd product-docs # Your Git repository's path
-npx create-docusaurus@latest
-```
-
-
-### An IDE
-
-Although you can use simple text editor like TextEdit or Windows Notepad, you will miss out on many features that an IDE (Integrated Development Environment) has to offer, e.g., [syntax highlighting](https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide) and a built-in previewer that shows how your Markdown will look after it is rendered as HTML.
-Some popular IDEs are:
-
-- [Aptana](http://www.aptana.com/)
-- [Eclipse](https://www.eclipse.org/downloads/)
-- [Sublime Text](https://www.sublimetext.com/blog/articles/sublime-text-4)
-- [Visual Studio](https://visualstudio.microsoft.com/) (recommended)
+Welcome to the emnify product documentation repository!
+Here you will find the content source for generating the [emnify Developer](https://emnify.github.io/product-docs/) site.
+If you have any suggestions, questions, or feedback, don't hesitate to <a  href="mailto:docs@emnify.com">contact our documentation team</a>.
 
 ## Contributing
 
-### Fork the 
+Once you have signed a Contributor License Agreement (CLA), you can choose between 2 methods of contributing:
 
-### Create a topical branch
-
-### Create a pull request
+1. Directly via this GitHub repository
+    - [Browse to the folder](https://github.com/EMnify/product-docs/tree/main/docs) where you would like to upload a file containing your changes or new content.
+    - Select **Upload Files** and browse to your file.
+    - Create a [new branch](https://help.github.com/en/desktop/contributing-to-projects/creating-a-branch-for-your-work).
+    - Submit the [Pull Request](https://docs.github.com/en/pull-requests) (PR).  
+1. Using developer tools, i.e., an IDE (like [Visual Studio Code](https://code.visualstudio.com/) and either Git or [GitHub Desktop](https://help.github.com/en/desktop/getting-started-with-github-desktop)
+    - [Fork](https://docs.github.com/github/getting-started-with-github/fork-a-repo) this repository.
+    - [Clone](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository) this repository.
+    - Create your [new branch](https://help.github.com/en/desktop/contributing-to-projects/creating-a-branch-for-your-work).
+    - Within your new branch, apply your changes or create your new content
+    - [Commit](https://docs.github.com/en/pull-requests/committing-changes-to-your-project) your changes.
+    - [Push](https://docs.github.com/en/get-started/quickstart/contributing-to-projects#making-and-pushing-changes) your changes.
+    - Create a PR and submit it for review.
 
 ### Content requirements
 
@@ -80,14 +29,3 @@ Some popular IDEs are:
 - **Lines** must be terminated with [UNIX newline](https://en.wikipedia.org/wiki/Newline#Representation) (`\n`) characters, *not* Windows CRLF (`\r\n`)
 - **Filenames** should *not* contain uppercase letters, spaces, or special characters.  
 They should be lowercase alphanumeric with words separated by a single hyphen (`-`). For example: `3-methods-for-sending-data.png`
-
-### Markdown best practices
-
-- [One sentence per line](https://asciidoctor.org/docs/asciidoc-recommended-practices/#one-sentence-per-line) has many benefits.  
-Unless you are have empty lines between sentences, they will all flow together into a single paragraph after the Markdown is rendered to HTML.
-- **Indent** using spaces, not tabs.  
-Two spaces is enough for creating a nested bulleted list beneath an element of the parent bulleted list.
-- **_One_ empty line** is enough.  
-  - There should never be a reason for creating a group of 2 or more empty lines.  
-  - A single empty line before and after each section heading is highly recommended.
-- For extended Markdown syntax, e.g., [tables](https://www.markdownguide.org/extended-syntax/#tables), consult the [MarkdownGuide.org Extended syntax](https://www.markdownguide.org/extended-syntax/) reference.
