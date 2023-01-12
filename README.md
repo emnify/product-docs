@@ -23,9 +23,8 @@ Once you have signed a Contributor License Agreement (CLA), you can choose eithe
     - [Push](https://docs.github.com/en/get-started/quickstart/contributing-to-projects#making-and-pushing-changes) your changes.
     - Create a PR and submit it for review.
 
-### Content requirements
-
 ### File requirements
+
 - **UTF-8** encoding
 - **Lines** must be terminated with [UNIX newline](https://en.wikipedia.org/wiki/Newline#Representation) (`\n`) characters, *not* Windows CRLF (`\r\n`)
 - **Filenames** should *not* contain uppercase letters, spaces, or special characters.  
