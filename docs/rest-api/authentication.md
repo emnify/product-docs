@@ -9,7 +9,7 @@ We use JSON Web Tokens (JWTs) as the authentication token.
 
 There are two ways to retrieve this token:
 
-1. [**Authenticate with user credentials**](#authenticate-with-user-credentials): Use the username and password you used while signing up for the [emnify Portal](https://portal.emnify.com/).
+1. [**Authenticate with user credentials**](#authenticate-with-user-credentials): Use the username and password you provided while signing up for the [emnify Portal](https://portal.emnify.com/).
 1. [**Authenticate with an application token**](#authenticate-with-an-application-token): You can use the application token generated in your emnify account.
 
 ## Authenticate with user credentials
@@ -53,7 +53,7 @@ Once the `auth_token` expires, you can use the `refresh_token` to retrieve t
 ## Authenticate with an application token
 
 Since you shouldn't store your emnify user credentials on your application server, you can generate an `application_token` via the [emnify Portal](https://portal.emnify.com/) or the API: `/api/v1/application_token`.
-The request body should have a description of the token usually used to indicate who is using the token and can have an `expiry_date` for the token.
+The request body should have a description of the token normally used to indicate who is using the token and can have an `expiry_date` for the token.
 
 ```
 POST https://cdn.emnify.net/api/v1/application_token
