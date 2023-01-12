@@ -3,10 +3,11 @@
 Welcome to the emnify product documentation repository!
 Here you will find the content source for generating the [emnify Developer](https://emnify.github.io/product-docs/) site.
 If you have any suggestions, questions, or feedback, don't hesitate to <a  href="mailto:docs@emnify.com">contact our documentation team</a>.
+For anything that might require an update or additional content, please [open a GitHub issue](https://github.com/emnify/product-docs/issues/new).
 
 ## Contributing
 
-Once you have signed a Contributor License Agreement (CLA), you can choose between 2 methods of contributing:
+Once you have signed a Contributor License Agreement (CLA), you can choose either of the following methods for contributing:
 
 1. Directly via this GitHub repository
     - [Browse to the folder](https://github.com/EMnify/product-docs/tree/main/docs) where you would like to upload a file containing your changes or new content.
