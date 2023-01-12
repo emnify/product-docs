@@ -106,6 +106,10 @@ You’ll need to confirm this action.
 You can manage your data streams using the emnify Data Streamer API.
 Available entry points are listed under the [Integrations section of the emnify REST API reference](https://cdn.emnify.net/api/doc/swagger.html#/Integrations).
 
+:::info
+You can find detailed information on the Data Streamer data properties and compatibility notes in the [Data Streamer API Reference](https://cdn.emnify.net/api/doc/event.html) in the *emnify System Documentation*.  
+:::
+
 ### Authentication
 
 To use the emnify API, you need to authenticate with an authentication token.
@@ -230,7 +234,7 @@ You can also create an event stream with [AWS Kinesis integration](available-int
 }
 ```
 
-:::info API Reference
+:::note API Reference
 [emnify API specification - Create Data Stream](https://cdn.emnify.net/api/doc/swagger.html#/Integrations/CreateDataStreamer).
 :::
 
@@ -246,7 +250,7 @@ curl -X GET "https://cdn.emnify.net/api/v2/data_stream" \
 -H "Authorization:Bearer AuthToken"
 ```
 
-:::info API Reference
+:::note API Reference
 [emnify API specification - List Data Stream configurations of your organization](https://cdn.emnify.net/api/doc/swagger.html#/Integrations/ListDataStreamerV2s)
 :::
 
@@ -264,7 +268,7 @@ curl -X GET "https://cdn.emnify.net/api/v2/data_stream/123" \
 -H "Authorization:Bearer AuthToken"
 ```
 
-:::info API Reference
+:::note API Reference
 [emnify API specification - Get Details on Existing Data Stream](https://cdn.emnify.net/api/doc/swagger.html#/Integrations/GetDataStreamerByIdV2)
 :::
 
@@ -296,7 +300,7 @@ The following example shows how to pause a stream and erase any filters:
 }
 ```
 
-:::info API Reference
+:::note API Reference
 [emnify API specification - Modify Existing Data Stream](https://cdn.emnify.net/api/doc/swagger.html#/Integrations/PatchV2DataStream)
 :::
 
@@ -314,6 +318,6 @@ curl -X DELETE "https://cdn.emnify.net/api/v2/data_stream/123" \
 -H "Authorization: Bearer AuthToken"
 ```
 
-:::info API Reference
+:::note API Reference
 [emnify API specification - Delete Existing Data Stream](https://cdn.emnify.net/api/doc/swagger.html#/Integrations/DeleteDataStreamerV2)
 :::
