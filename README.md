@@ -14,7 +14,7 @@ Once you have signed a Contributor License Agreement (CLA), you can choose eithe
     - Select **Upload Files** and browse to your file.
     - Create a [new branch](https://help.github.com/en/desktop/contributing-to-projects/creating-a-branch-for-your-work).
     - Submit the [Pull Request](https://docs.github.com/en/pull-requests) (PR).  
-1. Using developer tools, i.e., an IDE (like [Visual Studio Code](https://code.visualstudio.com/) and either Git or [GitHub Desktop](https://help.github.com/en/desktop/getting-started-with-github-desktop)
+1. Using developer tools, i.e., an IDE (like [Visual Studio Code](https://code.visualstudio.com/)) and either Git or [GitHub Desktop](https://help.github.com/en/desktop/getting-started-with-github-desktop)
     - [Fork](https://docs.github.com/github/getting-started-with-github/fork-a-repo) this repository.
     - [Clone](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository) this repository.
     - Create your [new branch](https://help.github.com/en/desktop/contributing-to-projects/creating-a-branch-for-your-work).
