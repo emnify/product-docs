@@ -143,3 +143,10 @@
 .custom-details-example-json-response .collapsibleContent_i85q {
   border-top: 1px solid #000035 !important;
 }
+
+/* Footer links on smaller screens */
+@media screen and (max-width: 996px) {
+  .footer__link-item {
+    padding: 0.5rem 0;
+  }
+}
