@@ -77,6 +77,11 @@ const config = {
           src: "img/logo-word-blue-295x80.png",
         },
       },
+      docs: {
+        sidebar: {
+          hideable: true,
+        },
+      },
       footer: {
         logo: {
           alt: "",
