@@ -30,7 +30,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           routeBasePath: "/",
-          editUrl: "https://github.com/EMnify/product-docs/blob/main/",
+          editUrl: "https://github.com/emnify/product-docs/blob/main/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),

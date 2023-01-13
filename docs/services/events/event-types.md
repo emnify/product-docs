@@ -1485,7 +1485,7 @@ It also doesn't trigger for every SIM of a SIM batch, so the event log will only
 SIM is released from a device.
 
 :::info
-Triggered through the [emnify User Interface (EUI)](https://support.emnify.com/hc/en-us/sections/115000969189-EMnify-User-Interface-EUI-) or [REST API](usage#event-api).
+Triggered through the [emnify User Interface (EUI)](https://support.emnify.com/hc/en-us/sections/115000969189-emnify-User-Interface-EUI-) or [REST API](usage#event-api).
 :::
 
 <details className="custom-details-example-json-response">
@@ -1540,7 +1540,7 @@ Triggered through the [emnify User Interface (EUI)](https://support.emnify.com/h
 SIM is assigned to a device.
 
 :::info
-Triggered through the [emnify User Interface (EUI)](https://support.emnify.com/hc/en-us/sections/115000969189-EMnify-User-Interface-EUI-) or while [creating an endpoint using the emnify REST API](https://cdn.emnify.net/api/doc/swagger.html#/Endpoint/CreateEndpoint).
+Triggered through the [emnify User Interface (EUI)](https://support.emnify.com/hc/en-us/sections/115000969189-emnify-User-Interface-EUI-) or while [creating an endpoint using the emnify REST API](https://cdn.emnify.net/api/doc/swagger.html#/Endpoint/CreateEndpoint).
 :::
 
 <details className="custom-details-example-json-response">

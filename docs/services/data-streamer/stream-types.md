@@ -75,7 +75,7 @@ Usage records for data are created:
         },
         "organisation": {
             "id": 11060,
-            "name": "EMnify LTEM Demo"
+            "name": "emnify LTEM Demo"
         },
         "tariff": {
             "id": 557,
@@ -160,7 +160,7 @@ Usage records for SMS are created when an SMS is successfully delivered either:
         },
         "organisation": {
             "id": 11060,
-            "name": "EMnify LTEM Demo"
+            "name": "emnify LTEM Demo"
         },
         "tariff": {
             "id": 1,

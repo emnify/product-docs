@@ -48,7 +48,7 @@ Amazon QuickSight allows you to create and publish interactive business intellig
 Once you have configured your data stream and are storing event and usage data in Amazon S3, you can use AWS QuickSight to view and analyze them.
 
 :::tip Step-by-step guide
-[How to analyze emnify usage data and events in AWS QuickSight?](https://support.emnify.com/hc/en-us/articles/360010604820-How-to-analyze-EMnify-usage-data-and-events-in-AWS-Quicksight-)
+[How to analyze emnify usage data and events in AWS QuickSight?](https://support.emnify.com/hc/en-us/articles/360010604820-How-to-analyze-emnify-usage-data-and-events-in-AWS-Quicksight-)
 
 **_Warning: This guide uses a legacy version of the emnify Portal._**
 :::
