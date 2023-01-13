@@ -22,8 +22,8 @@ Each event is represented by an object based on the [generic Event Object](https
 
 Depending on the event type, some generic properties may not apply, and some events may have additional custom fields to provide information about what happened. 
 
-:::tip
-You can find detailed information on the Event Object and its associated properties in the [Event API Reference](https://cdn.emnify.net/api/doc/event.html) in the emnify System Documentation.  
+:::info
+You can find detailed information on the Event Object and its associated properties in the [Event API Reference](https://cdn.emnify.net/api/doc/event.html) in the *emnify System Documentation*.  
 :::
 
 ### Event severity
