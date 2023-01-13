@@ -2,7 +2,7 @@
 
 Welcome to the emnify product documentation repository!
 Here you will find the content source for generating the [emnify Developer](https://emnify.github.io/product-docs/) site.
-If you have any suggestions, questions, or feedback, don't hesitate to <a  href="mailto:docs@emnify.com">contact our documentation team</a>.
+If you have any suggestions, questions, or feedback, don't hesitate to [contact our documentation team](mailto:docs@emnify.com).
 For anything that might require an update or additional content, please [open a GitHub issue](https://github.com/emnify/product-docs/issues/new).
 
 ## Contributing
