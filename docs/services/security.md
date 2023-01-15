@@ -23,8 +23,6 @@ In this way, latency and data stability is improved, and the end customer can be
 - Cloud Access Security Broker (CASB)  
 emnify allows centrally defining policies for the devices such as: networks that can be accessed, allowed IP addresses through which authorized users can remotely access devices.
 All configuration is done in the central platform and applied wherever the device is.
-- Firewall as a Service (FaaS)  
-emnify provides a firewall as a Service which limits the IP addresses that are reachable for a device, making sure that the devices cannot be misused for other purposes.
 
 In the following sections we will discuss some of the security features offered by emnify.
 
