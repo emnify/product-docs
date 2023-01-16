@@ -144,6 +144,30 @@
   border-top: 1px solid #000035 !important;
 }
 
+/* Collapse sidebar button */
+
+button[title="Collapse sidebar"] {
+  border-top: none;
+}
+
+button[title="Collapse sidebar"]:hover {
+  background-color: #010D410F;
+}
+
+button[title="Collapse sidebar"] svg path {
+  fill: #000035;
+}
+
+/* Expand sidebar "button" */
+
+div[title="Expand sidebar"] svg path {
+  fill: #000035;
+}
+
+div[title="Expand sidebar"]:hover {
+  background-color: #010D410F;
+}
+
 /* Footer links on smaller screens */
 @media screen and (max-width: 996px) {
   .footer__link-item {
