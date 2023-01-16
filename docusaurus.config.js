@@ -71,10 +71,16 @@ const config = {
         disableSwitch: true
       },
       navbar: {
-        title: "Developers",
+        title: "Documentation",
         logo: {
           alt: "emnify Documentation – Home",
           src: "img/logo-word-blue-295x80.png",
+        },
+      },
+      docs: {
+        sidebar: {
+          hideable: true,
+          autoCollapseCategories: true
         },
       },
       footer: {
