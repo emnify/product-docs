@@ -45,7 +45,16 @@ Select Webhook and configure the URL and optionally, secret token to where you w
 When you want to send an SMS from the device to your application, your device should send the SMS to an invalid [MSISDN](#msisdn) with 8 digits or less.
 The SMS will then be delivered over the webhook.
 
+<!-- 
 ![Mobile originated SMS](assets/mosms.png)  
+*Mobile originated SMS from the device as received in Integromat webhook*
+-->
+
+import mosms from './assets/mosms.png';
+
+<img src={mosms} style={{width:400}}
+   alt="Mobile originated SMS from the device as received in Integromat webhook" />
+
 *Mobile originated SMS from the device as received in Integromat webhook*
 
 ## Zapier SMS integration
