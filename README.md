@@ -102,7 +102,11 @@ git clone git@github.com:EMnify/product-docs.git
 - Within your new branch, apply your changes or create your new content
 - [Commit](https://docs.github.com/en/pull-requests/committing-changes-to-your-project) your changes.
 - [Push](https://docs.github.com/en/get-started/quickstart/contributing-to-projects#making-and-pushing-changes) your changes.
-    - Create a PR and submit it for review.
+- Create a [Pull Request](https://docs.github.com/en/pull-requests) (PR).
+- When your work is ready for review, assign a reviewer to the PR, and request a review.
+- Depending on the results of the review, it could be approved for merging.
+Otherwise, there might be some additional work mentioned under the **Conversations** tab of your PR.
+Once you have completed changes to resolve all open conversations  and pushed the new commit(s), you can request another review. 
 
 **NOTE:** Since we use [GitHub Actions](https://github.com/EMnify/product-docs/actions), whenever you push your changes to your branch on GitHub, you will see a green check mark next to the name of your PR in the [PR List](0https://github.com/EMnify/product-docs/pulls) if Docusaurus was able to build the site with your changes.
 PRs will not be reviewed until the build runs without errors.
