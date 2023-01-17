@@ -10,6 +10,6 @@ Using cellular connectivity improves end customer experience by instantly delive
 This makes cellular connectivity not only ideal for mobile use cases but also for stationary devices.
 
 emnify specializes in businesses utilizing cellular connectivity for the Internet of Things. 
-emnify has developed a communication platform that aggregates and enriches traditional cellular connectivity so businesses can easily connect, integrate, operate, and secure hundreds and thousands of devices with a single global IoT SIM card.
+emnify has developed a communication platform that aggregates and enriches traditional cellular connectivity so businesses can easily connect, integrate, operate, and secure hundreds or even thousands of devices with a single global IoT SIM card.
 
 ![EMnify Communication Platform](assets/cellular-iot.png)
