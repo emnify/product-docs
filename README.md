@@ -9,7 +9,7 @@ To request an update or additional content, please [open a GitHub issue](https:/
 ## Contents
 
 - [How to contribute to the emnify Product Documentation](#how-to-contribute-to-the-emnify-product-documentation)
-    - [Software requirements]()
+    - [Software requirements](#software-requirements)
         - [Git](#git)
         - [Node.js](#nodejs)
         - [yarn](#yarn)
