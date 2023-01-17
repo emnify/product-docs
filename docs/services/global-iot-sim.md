@@ -50,21 +50,6 @@ The following table shows comparisons to a standard consumer SIM.
 | Mechnical Shock Jedec JESD22-B104 | | | SA |
 | Low Power features | | •&nbsp;Poll Interval negotiation •&nbsp;UICC&nbsp;suspension and resume | •&nbsp;Poll Interval negotiation •&nbsp;UICC&nbsp;suspension and resume |
 
-## eSIM
-
-emnify offers an easy entry to test the services and platform by downloading an emnify eSIM profile to an eSIM compatible phone or tablet.
-During the trial period every organization has the option to download one profile which can be used instantly.
-
-The eSIM does not use a multi-IMSI applet (unlike the physical SIM cards) and therefore has some differences in the network coverage. 
-For a list of supported devices and limitations please refer to the [knowledge base](https://support.emnify.com/hc/en-us/articles/360021545600-Evaluation-eSIM-device-support-and-restrictions#h_01F7V2BVKT0RQRVXK3VNSPYQMW).
-
-The eSIM can be used to test and verify all emnify functionalities including:
-
-- Availability of networks
-- API functionality
-- Cloud Connect and Data Streamer integration
-- Zapier No-Code Integrations
-
 ## Multi-IMSI application
 
 emnify IoT SIM cards are equipped with a multi-IMSI applet that contains emnify’s as well as our partner operators' profiles. 
