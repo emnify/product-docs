@@ -46,22 +46,30 @@ For sending SMS through the REST API, check out the [Sending and receiving SMS]
 For receiving SMS and delivery notifications for SMS in your application, you can use the SMS webhook which can be configured under **Device Policies** → **Service Policies** → **SMS Interface**.
 Select Webhook and configure the URL and optionally, secret token to where you want the SMS to be delivered.
 
-<!-- TODO: Recreate sms_webhook.png (SMS Webhook) -->
+import SmsInterface from './assets/portal-device-policies-sms-interface-webhook.png';
+import ConfigureWebhook from './assets/portal-device-policies-configure-webhook.png';
+import AddWebhook from './assets/portal-device-policies-add-webhook.png';
 
-<!--  TODO: Recreate delivery_notification.png (Delivery notification as received in Integromat webhook for SMS with ID: 46638644) -->
+<div class="medium-zoom-image">
+   <img src={SmsInterface} style={{width:800}} alt="" />
+</div>
+<img src={ConfigureWebhook} style={{width:399}} alt="" />
+<img src={AddWebhook} style={{width:856}} alt="" />
+
 
 When you want to send an SMS from the device to your application, your device should send the SMS to an invalid [MSISDN](#msisdn) with 8 digits or less.
 The SMS will then be delivered over the webhook.
 
-<!-- 
-![Mobile originated SMS](assets/mosms.png)  
-*Mobile originated SMS from the device as received in Integromat webhook*
--->
+import SmsDeliveryNotification from './assets/delivery-notification.png';
 
-import mosms from './assets/mosms.png';
+<img src={SmsDeliveryNotification} style={{width:400}} alt="SMS delivery notification" />
 
-<img src={mosms} style={{width:400}}
-   alt="Mobile originated SMS from the device as received in Integromat webhook" />
+*Delivery notification as received in Integromat webhook for SMS with ID: 46638644*
+
+
+import MoSms from './assets/mosms.png';
+
+<img src={MoSms} style={{width:400}} alt="MO SMS" />
 
 *Mobile originated SMS from the device as received in Integromat webhook*
 
@@ -71,16 +79,27 @@ Instead of implementing the APIs in your application, emnify and Zapier provide 
 Zapier has a concept of triggers and actions – when a trigger happens multiple actions can be based on it – taking content from previous steps.
 Sending SMS to your devices is available as an action in Zapier.
 
-<!--  TODO: Recreate sms_zap.png (SMS with Zapier) -->
+import SmsZap from './assets/sms-zap.png';
+
+<div class="medium-zoom-image">
+  <img src={SmsZap} style={{width:400}} alt="SMS with Zapier" />
+</div>
+
+*SMS with Zapier*
 
 For acting upon SMS delivery notification or SMSs that are sent from a device, you need to set up a webhook in Zapier.
 Create a zap using "Webhook by Zapier" and select "Catch Hook" as trigger event.
 You will get a custom webhook URL which will be used in the next step.
 
-<!--  TODO: Recreate catch_hook.png (Catch Hook as a trigger) -->
+import CatchHook from './assets/catch-hook.png';
 
-Now you need to enter this webhook URL in the [emnify Portal](https://portal.emnify.com/) → **Device Policies** → **Choose SMS interface**, select **Webhook**, click **Configure Webhook**, enter the URL, then **Add Webhook**.
-All SMS delivery notification and device originated SMS with this service policy will then be delivered over the webhook.
+<div class="medium-zoom-image">
+  <img src={CatchHook} style={{width:400}} alt="" />
+</div>
 
-<!--  TODO: Recreate zap_webhook.png (emnify Webhook as SMS interface) -->
+*Catch Hook as a trigger*
+
+Now you need to enter this webhook URL in the [emnify Portal](https://portal.emnify.com/) → **Device Policies** → **SMS interface**, select **Webhook**, click **Configure Webhook**, enter the URL, then **Add Webhook**.
+All SMS delivery notification and device originated SMS with this service policy will then be delivered over the [webhook](#emnify-sms-rest-api-and-webhook).
+
 
