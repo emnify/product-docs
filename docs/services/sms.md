@@ -29,7 +29,15 @@ In the [Portal](https://portal.emnify.com/) → **Connected Devices** you can ac
 The sender can be configured as well as the console will show if the SMS is delivered or not.
 You will see all SMSs that the device receives sends out.
 
-<!-- TODO: Recreate sms_console.png (SMS Console) -->
+import SMS from './assets/portal-connected-devices-sms.png';
+import SmsMessage from './assets/portal-send-sms-message-text.png';
+import SmsSent from './assets/portal-sms-sent.png';
+
+<div class="medium-zoom-image">
+   <img src={SMS} style={{width:1027}} alt="" />
+   <img src={SmsMessage} style={{width:496}} alt="" />
+   <img src={SmsSent} style={{width:762}} alt="" />
+</div>
 
 ## emnify SMS REST API and webhook
 
