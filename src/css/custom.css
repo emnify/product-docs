@@ -169,8 +169,22 @@ div[title="Expand sidebar"]:hover {
 }
 
 /* Footer links on smaller screens */
-@media screen and (max-width: 996px) {
+@media only screen and (max-width: 996px) {
   .footer__link-item {
     padding: 0.5rem 0;
+  }
+}
+
+/* Main content container padding */
+
+.container {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+@media only screen and (max-width: 996px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
