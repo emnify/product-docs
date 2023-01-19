@@ -17,12 +17,18 @@ Configuring the APN for Teltonika GPS trackers can be done through:
 1. Via the SMS console through the emnify Portal
 1. Via the emnify SMS API or Zapier Integration (when automating the configuration)
 
-Newer Teltonika GPS versions automatically detect the emnify APN setting
+Newer Teltonika GPS versions automatically detect the emnify APN setting.
 
 When the GPS tracker is turned on for the first time after the SIM is installed, it shows the status **Attached** in the emnify Portal.
 At this point, the device can receive SMS but not establish a data session unless the APN is set up or detected.
 
-The SMS command to set the APN is:
+If you've set a username and password for the device, use the following SMS command to set the APN (replacing `USERNAME` and `PASSWORD` with your credentials):
+
+```
+USERNAME PASSWORD setparam 2001:em
+```
+
+Otherwise, if there's no username or password configured, use the following:
 
 ```
   setparam 2001:em
@@ -38,13 +44,13 @@ The two leading spaces are required.
 
 [Source Ruptela Documentation](https://doc.ruptela.lt/display/AB/Tracking+devices)
 
-Configuring the APN for Ruptela GPS trackers can be done through
+Configuring the APN for Ruptela GPS trackers can be done through:
 
 1. Ruptela Device Center over a USB, Bluetooth connection
-1. Via the SMS console through the emnify Portal (most simple)
+1. Via the SMS console through the emnify Portal
 1. via the emnify SMS API or Zapier Integration (when automating the configuration)
 
-When the GPS tracker is turned on for the first time after the SIM is installed it is showing the status `Attached` in the emnify portal.
+When the GPS tracker is turned on for the first time after the SIM is installed, it shows the status **Attached** in the emnify Portal.
 At this point the device can receive SMS but not establish a data session unless the APN is setup or detected.
 
 The SMS command to set the APN for Ruptela GPS trackers is:
@@ -53,8 +59,8 @@ The SMS command to set the APN for Ruptela GPS trackers is:
 [SMSpassword] setconnection em
 ```
 
-The \[SMSpassword\] can be setup in the Ruptela device center.
-If it is not set then the SMSpassword can be omitted and the command is only
+The \[SMSpassword\] can be set up in the Ruptela device center.
+If it isn't set, you can omit the SMSpassword, and the command is:
 
 ```
 setconnection em
@@ -62,8 +68,7 @@ setconnection em
 
 ## Concox GPS APN configuration
 
-*Applies to JM-VL01, JM-VL02, JM-BL11, JM-VL03, JM-VL04, JM-LL01,
-JM-LL02, JM-LL301, X3,Wetrack140, Wetrack2, Wetrack lite, Bl10, GT06N, OB22, ET25, HVT001, EG02, JM-VG01U, JM-VG02U, JM-VG04Q, AT1-AT6, CT10, JM-LG01, JM-LG05, TBT100*
+*Applies to JM-VL01, JM-VL02, JM-BL11, JM-VL03, JM-VL04, JM-LL01, JM-LL02, JM-LL301, X3,Wetrack140, Wetrack2, Wetrack lite, Bl10, GT06N, OB22, ET25, HVT001, EG02, JM-VG01U, JM-VG02U, JM-VG04Q, AT1-AT6, CT10, JM-LG01, JM-LG05, TBT100*
 
 Configuring the APN for Concox GPS trackers can be done:
 
@@ -79,7 +84,7 @@ The SMS command to set the APN for Concox GPS trackers is:
 APN em#
 ```
 
-For some Concox models (e.g. TR02) the password (default `666666`) needs to be send\t with the command:
+For some Concox models (e.g. TR02) the password (default `666666`) needs to be sent with the command:
 
 ```
 APN,666666,em#
@@ -133,7 +138,7 @@ The SMS command to set the APN for Meitrack GPS trackers is:
 
 Where `0000` is the default SMS password.
 
-On other devices the APN setting is done via the `A21` command:
+On other devices, the APN setting is done via the `A21` command:
 
 ```
 666888,A21,1,server.meigps.com,8800,em,,
@@ -183,11 +188,11 @@ unless the APN is set up.
 The following two SMS commands need to send:
 
 ```
-123456,sos1,[yourphonenumber]# // Bind the tracker to a specific phone number e.g. 49173871878 (instead of +49173871878). 123456 is the default SMS password.
+123456,sos1,[yourphonenumber]# // Bind the tracker to a specific phone number (e.g., 49173871878 instead of +49173871878).
 apn,em,plmn,90143#  // Send this SMS from the phone
 ```
 
-`123456` is the default password.
+`123456` is the default SMS password.
 After setting the APN the GPS tracker needs to be rebooted.
 
 *Applies to RF-V26, RF-V26+, RF-V28, RF-V30, RF-V32, RF-V34, RF-V36, RF-V36, RF-V38, RF-V40, RF-V42, RF-V43，RF-V44, RF-V46*
@@ -195,9 +200,11 @@ After setting the APN the GPS tracker needs to be rebooted.
 The following two SMS commands need to send:
 
 ```
-pw,123456,center,[yourphonenumber]# // Bind tracker to specific phone. 123456 is the default password.
+pw,123456,center,[yourphonenumber]# // Bind tracker to specific phone.
 apn,em# // Send this SMS from the phone
 ```
+
+`123456` is the default password.
 
 ## Queclink GPS APN configuration
 
