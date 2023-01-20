@@ -29,15 +29,49 @@ In the [Portal](https://portal.emnify.com/) → **Connected Devices** you can ac
 The sender can be configured as well as the console will show if the SMS is delivered or not.
 You will see all SMSs that the device receives sends out.
 
+For sending SMS messages to a single device, select **Details**:
+
+import DetailsButton from './assets/portal-connected-devices-details-button.png';
+
+<div class="medium-zoom-image">
+   <img src={DetailsButton} style={{width:1027}} alt="" />
+</div>
+
+
+An SMS/Message icon will appear to the right of the device name.
+
+import OpenSms from './assets/portal-connected-devices-details-open-sms-console.png';
+
+<img src={OpenSms} style={{width:350}} alt="" />
+
+The SMS history and input field at the bottom of the SMS console is similiar to the layout and functionality found in most mobile messaging apps.
+
+import SmsConsole from './assets/portal-connected-devices-details-sms-console.png';
+
+<img src={SmsConsole} style={{width:575}} alt="" />
+
+When you select (check) one or more devices in the list of connected devices, a group of menu items will appear that includes **SMS**.
+
 import SMS from './assets/portal-connected-devices-sms.png';
-import SmsMessage from './assets/portal-send-sms-message-text.png';
-import SmsSent from './assets/portal-sms-sent.png';
+
+
 
 <div class="medium-zoom-image">
    <img src={SMS} style={{width:1027}} alt="" />
-   <img src={SmsMessage} style={{width:496}} alt="" />
-   <img src={SmsSent} style={{width:762}} alt="" />
 </div>
+
+This SMS interface does not show a history of messages.
+
+import SmsMessage from './assets/portal-send-sms-message-text.png';
+
+<img src={SmsMessage} style={{width:496}} alt="" />
+
+However, you will receive a brief notification regarding the status of the SMS sent to the selected devices.
+
+import SmsSent from './assets/portal-sms-sent.png';
+
+<img src={SmsSent} style={{width:762}} alt="" />
+
 
 ## emnify SMS REST API and webhook
 
