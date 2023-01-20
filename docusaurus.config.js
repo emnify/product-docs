@@ -39,6 +39,27 @@ const config = {
     ],
   ],
 
+  scripts: [
+    {
+      type: 'text/javascript',
+      src: 'https://cdn.cookielaw.org/consent/0c5a33bc-8e12-407d-937d-4e4c9f6e86a0/OtAutoBlock.js',
+      defer: true
+    },
+    {
+      src: 'https://cdn.cookielaw.org/scripttemplates/otSDKStub.js',
+      'data-document-language': true,
+      type: 'text/javascript',
+      charset: 'UTF-8',
+      'data-domain-script': '0c5a33bc-8e12-407d-937d-4e4c9f6e86a0',
+      defer: true
+    },
+    {
+      type: 'text/javascript',
+      src: '/scripts/optanonWrapper.js',
+      defer: true 
+    }
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -87,7 +108,7 @@ const config = {
         logo: {
           alt: "",
           src: "img/logo-icon-only-dark.svg",
-          style: { marginTop: "1.5rem" },
+          style: { marginTop: "0.5rem" },
         },
         links: [
           {
@@ -139,6 +160,13 @@ const config = {
               {
                 label: "Privacy policy",
                 href: "https://www.emnify.com/privacy-policy"
+              },
+              {
+                html: `
+                <button style="visibility:hidden;" id="ot-sdk-btn" class="ot-sdk-show-settings">
+                  Cookie Settings
+                </button>
+              `,
               }
             ]
           },
