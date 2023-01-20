@@ -40,6 +40,10 @@ Otherwise, if there's no username or password configured, use the following:
 The two leading spaces are required.
 :::
 
+:::info
+Refer to the [Teltonika FMB Device Family Parameter list](https://wiki.teltonika-gps.com/view/Template:FMB_Device_Family_Parameter_list) for all available parameters.
+:::
+
 ## Ruptela GPS APN configuration
 
 *Applies to HCV5, LCV5, Pro5, Trace5/NA, FM-Tco4 HCV/HCV 3G, FM-Tco4 LCV/LCV 3G, FM-Pro4/Pro4 3G, FM-Eco4/4+, FM-Eco4 light/light+/3G, FM-Eco4 S Series, FM-Eco4 T Series, FM-Plug4*
