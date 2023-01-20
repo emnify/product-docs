@@ -118,7 +118,7 @@ import ZapierSmsWebhooks from './assets/portal-integrations-sms-webhooks-zapier.
 
 <img src={ZapierSmsWebhooks} style={{width:1145}} alt="" />
 
-There you will find a predefined Zap consisting of a 3 steps with interactive instructions on how to configure it or modify the steps for your specific needs:
+There you will find a predefined Zap consisting of 3 steps with interactive instructions on how to configure it or modify the steps for your specific needs:
 
 1. Catch Hook in Webhooks by Zapier (Trigger)
 1. Enable a Device in emnify (Action)
