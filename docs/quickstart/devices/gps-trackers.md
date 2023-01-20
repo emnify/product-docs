@@ -66,7 +66,7 @@ The SMS command to set the APN for Ruptela GPS trackers is:
 ```
 
 The \[SMSpassword\] can be set up in the Ruptela device center.
-If it isn't set, you can omit the SMSpassword, and the command is:
+If the SMSpassword isn't set, the command is:
 
 ```
 setconnection em
@@ -90,7 +90,7 @@ The SMS command to set the APN for Concox GPS trackers is:
 APN em#
 ```
 
-For some Concox models (e.g., TR02), the password needs to be sent with the command:
+For some Concox models, for instance TR02, the password needs to be sent with the command:
 
 ```
 APN,666666,em#
