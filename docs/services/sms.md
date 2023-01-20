@@ -112,28 +112,16 @@ import MoSms from './assets/mosms.png';
 Instead of implementing the APIs in your application, emnify and Zapier provide a no-code alternative to automate SMS workflows.
 Zapier has a concept of triggers and actions – when a trigger happens multiple actions can be based on it – taking content from previous steps.
 Sending SMS to your devices is available as an action in Zapier.
+In the **No-Code-Workflows** list of [Portal Integrations](https://portal.emnify.com/integrations), select the following:
 
-import SmsZap from './assets/sms-zap.png';
+import ZapierSmsWebhooks from './assets/portal-integrations-sms-webhooks-zapier.png';
 
-<div class="medium-zoom-image">
-  <img src={SmsZap} style={{width:400}} alt="SMS with Zapier" />
-</div>
+<img src={ZapierSmsWebhooks} style={{width:1145}} alt="" />
 
-*SMS with Zapier*
+There you will find a predefined Zap consisting of a 3 steps with interactive instructions on how to configure it or modify the steps for your specific needs:
 
-For acting upon SMS delivery notification or SMSs that are sent from a device, you need to set up a webhook in Zapier.
-Create a zap using "Webhook by Zapier" and select "Catch Hook" as trigger event.
-You will get a custom webhook URL which will be used in the next step.
+1. Catch Hook in Webhooks by Zapier (Trigger)
+1. Enable a Device in emnify (Action)
+1. Send an SMS in emnify (Action)
 
-import CatchHook from './assets/catch-hook.png';
-
-<div class="medium-zoom-image">
-  <img src={CatchHook} style={{width:400}} alt="" />
-</div>
-
-*Catch Hook as a trigger*
-
-Now you need to enter this webhook URL in the [emnify Portal](https://portal.emnify.com/) → **Device Policies** → **SMS interface**, select **Webhook**, click **Configure Webhook**, enter the URL, then **Add Webhook**.
-All SMS delivery notification and device originated SMS with this service policy will then be delivered over the [webhook](#emnify-sms-rest-api-and-webhook).
-
-
+See also Zapier's [How to connect emnify + SMS by Zapier](https://zapier.com/apps/emnify/integrations/sms) guide.
