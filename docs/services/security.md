@@ -11,11 +11,11 @@ emnify uses a SASE approach to simplify securing devices – using several servi
 
 ![IoT security threats](assets/security-threats.png)
 
-Secure Access Service Edge ([SASE](/glossary#sase-secure-access-service-edge)) introduces a new architecture where networking and security functions are bundled in a cloud-delivered service.
+Secure Access Service Edge ([SASE](/glossary#sase---secure-access-service-edge)) introduces a new architecture where networking and security functions are bundled in a cloud-delivered service.
 You can apply the same security standards across all your devices independent of the location.
 Moreover, you can integrate security features in your solutions right from the beginning.
 
-Some of the features that [SASE](/glossary#sase-secure-access-service-edge) for IoT architecture includes are as follows:
+Some of the features that [SASE](/glossary#sase---secure-access-service-edge) for IoT architecture includes are as follows:
 
 - Dynamic Data Routing with Software-Defined Wide Area Network (SD-WAN)  
 emnify utilizes a SD-WAN to route data to the closest cloud region using the [Regional Breakout](iot-cloud-communication-platform#regional-breakout) concept.
