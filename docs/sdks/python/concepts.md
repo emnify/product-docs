@@ -20,6 +20,6 @@ description: Must-knows for working with the Python SDK
 | Application Token  | Authenticates your identity when using the emnify SDK and API. [Learn how to generate an application token](https://www.emnify.com/developer-blog/how-to-use-an-application-token-for-api-authentication).  |
 
 :::tip
-More terminology and definitions are available in the [Developer Glossary](glossary). 
+More terminology and definitions are available in the [Developer Glossary](/glossary). 
 :::
 
