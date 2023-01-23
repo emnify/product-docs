@@ -58,6 +58,10 @@ const config = {
       src: "/scripts/optanonWrapper.js",
       defer: true,
     },
+    {
+      type: 'text/javascript',
+      src: '/scripts/heapAnalytics.js',
+    }
   ],
 
   themeConfig:
