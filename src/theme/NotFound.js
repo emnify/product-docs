@@ -1,17 +1,17 @@
-import React from 'react';
-import Translate, { translate } from '@docusaurus/Translate';
-import { PageMetadata } from '@docusaurus/theme-common';
-import Layout from '@theme/Layout';
-import Link from '@docusaurus/Link';
-import styles from './NotFound.module.css';
+import React from "react";
+import Translate, { translate } from "@docusaurus/Translate";
+import { PageMetadata } from "@docusaurus/theme-common";
+import Layout from "@theme/Layout";
+import Link from "@docusaurus/Link";
+import styles from "./NotFound.module.css";
 
 export default function NotFound() {
   return (
     <>
       <PageMetadata
         title={translate({
-          id: 'theme.NotFound.title',
-          message: 'Page not found',
+          id: "theme.NotFound.title",
+          message: "Page not found",
         })}
       />
       <Layout>
@@ -41,7 +41,7 @@ export default function NotFound() {
                 // eslint-disable-next-line
                 description="The 2nd paragraph of the 404 page"
               >
-                Please{' '}
+                Please{" "}
                 <a
                   className={styles.pageLink}
                   href="https://github.com/emnify/product-docs/issues/new"
@@ -49,11 +49,11 @@ export default function NotFound() {
                   rel="noopener noreferrer"
                 >
                   open an issue on GitHub
-                </a>{' '}
-                or{' '}
+                </a>{" "}
+                or{" "}
                 <a className={styles.pageLink} href="mailto:docs@emnify.com">
                   contact our documentation team
-                </a>{' '}
+                </a>{" "}
                 if you are struggling to find what you need.
               </p>
               <Link to="/product-docs" className={styles.homepageButton}>

@@ -1,7 +1,7 @@
 /* Overrides the default Infima (https://infima.dev/) variables */
 :root {
   /* Text and content */
-  --ifm-font-family-base: 'Avenir LT Pro', Helvetica, Arial, sans-serif;
+  --ifm-font-family-base: "Avenir LT Pro", Helvetica, Arial, sans-serif;
   --ifm-color-content: #000035;
   --ifm-color-content-secondary: #404067;
   --ifm-color-primary: #000035;
@@ -147,24 +147,24 @@
 }
 
 /* Collapse sidebar button */
-button[title='Collapse sidebar'] {
+button[title="Collapse sidebar"] {
   border-top: none;
 }
 
-button[title='Collapse sidebar']:hover {
+button[title="Collapse sidebar"]:hover {
   background-color: #010d410f;
 }
 
-button[title='Collapse sidebar'] svg path {
+button[title="Collapse sidebar"] svg path {
   fill: #000035;
 }
 
 /* Expand sidebar "button" */
-div[title='Expand sidebar'] svg path {
+div[title="Expand sidebar"] svg path {
   fill: #000035;
 }
 
-div[title='Expand sidebar']:hover {
+div[title="Expand sidebar"]:hover {
   background-color: #010d410f;
 }
 

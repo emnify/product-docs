@@ -1,39 +1,39 @@
 // @ts-check
-const lightCodeTheme = require('prism-react-renderer/themes/vsLight');
+const lightCodeTheme = require("prism-react-renderer/themes/vsLight");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'emnify Documentation',
-  tagline: 'Developer resources and documentation for the emnify SuperNetwork.',
-  url: 'https://emnify.github.io',
-  baseUrl: '/product-docs/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  title: "emnify Documentation",
+  tagline: "Developer resources and documentation for the emnify SuperNetwork.",
+  url: "https://emnify.github.io",
+  baseUrl: "/product-docs/",
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
+  favicon: "img/favicon.ico",
 
   // GitHub pages deployment config
-  organizationName: 'emnify',
-  projectName: 'product-docs',
-  deploymentBranch: 'gh-pages',
+  organizationName: "emnify",
+  projectName: "product-docs",
+  deploymentBranch: "gh-pages",
   trailingSlash: false,
 
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: "en",
+    locales: ["en"],
   },
 
   presets: [
     [
-      'classic',
+      "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          routeBasePath: '/',
-          editUrl: 'https://github.com/emnify/product-docs/blob/main/',
+          sidebarPath: require.resolve("./sidebars.js"),
+          routeBasePath: "/",
+          editUrl: "https://github.com/emnify/product-docs/blob/main/",
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       }),
     ],
@@ -41,23 +41,23 @@ const config = {
 
   scripts: [
     {
-      type: 'text/javascript',
-      src: 'https://cdn.cookielaw.org/consent/0c5a33bc-8e12-407d-937d-4e4c9f6e86a0/OtAutoBlock.js',
-      defer: true
+      type: "text/javascript",
+      src: "https://cdn.cookielaw.org/consent/0c5a33bc-8e12-407d-937d-4e4c9f6e86a0/OtAutoBlock.js",
+      defer: true,
     },
     {
-      src: 'https://cdn.cookielaw.org/scripttemplates/otSDKStub.js',
-      'data-document-language': true,
-      type: 'text/javascript',
-      charset: 'UTF-8',
-      'data-domain-script': '0c5a33bc-8e12-407d-937d-4e4c9f6e86a0',
-      defer: true
+      src: "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js",
+      "data-document-language": true,
+      type: "text/javascript",
+      charset: "UTF-8",
+      "data-domain-script": "0c5a33bc-8e12-407d-937d-4e4c9f6e86a0",
+      defer: true,
     },
     {
-      type: 'text/javascript',
-      src: '/scripts/optanonWrapper.js',
-      defer: true 
-    }
+      type: "text/javascript",
+      src: "/scripts/optanonWrapper.js",
+      defer: true,
+    },
   ],
 
   themeConfig:
@@ -65,27 +65,27 @@ const config = {
     ({
       metadata: [
         {
-          name: 'description',
+          name: "description",
           content:
-            'Check our documentation for emnify API and Services including Data Streamer, Cloud Connect, Security, SIM management.',
+            "Check our documentation for emnify API and Services including Data Streamer, Cloud Connect, Security, SIM management.",
         },
         {
-          property: 'og:title',
-          content: 'Documentation for Developers | emnify',
+          property: "og:title",
+          content: "Documentation for Developers | emnify",
         },
         {
-          property: 'og:description',
+          property: "og:description",
           content:
-            'Check our documentation for emnify API and Services including Data Streamer, Cloud Connect, Security, SIM management.',
+            "Check our documentation for emnify API and Services including Data Streamer, Cloud Connect, Security, SIM management.",
         },
         {
-          name: 'twitter:title',
-          content: 'Documentation for Developers | emnify',
+          name: "twitter:title",
+          content: "Documentation for Developers | emnify",
         },
         {
-          name: 'twitter:description',
+          name: "twitter:description",
           content:
-            'Check our documentation for emnify API and Services including Data Streamer, Cloud Connect, Security, SIM management.',
+            "Check our documentation for emnify API and Services including Data Streamer, Cloud Connect, Security, SIM management.",
         },
         {},
       ],
@@ -93,10 +93,10 @@ const config = {
         disableSwitch: true,
       },
       navbar: {
-        title: 'Documentation',
+        title: "Documentation",
         logo: {
-          alt: 'emnify Documentation – Home',
-          src: 'img/logo-word-blue-295x80.png',
+          alt: "emnify Documentation – Home",
+          src: "img/logo-word-blue-295x80.png",
         },
       },
       docs: {
@@ -113,54 +113,54 @@ const config = {
         },
         links: [
           {
-            title: 'Resources',
+            title: "Resources",
             items: [
               {
-                label: 'emnify website',
-                href: 'https://www.emnify.com/',
+                label: "emnify website",
+                href: "https://www.emnify.com/",
               },
               {
-                label: 'Developer blog',
-                href: 'https://www.emnify.com/developer-blog',
+                label: "Developer blog",
+                href: "https://www.emnify.com/developer-blog",
               },
             ],
           },
           {
-            title: 'Support',
+            title: "Support",
             items: [
               {
-                label: 'Open a ticket',
-                href: 'https://support.emnify.com/hc/en-us',
+                label: "Open a ticket",
+                href: "https://support.emnify.com/hc/en-us",
               },
               {
-                label: 'Request a feature',
-                href: 'https://emnify.canny.io/',
+                label: "Request a feature",
+                href: "https://emnify.canny.io/",
               },
             ],
           },
           {
-            title: 'Social',
+            title: "Social",
             items: [
               {
-                label: 'GitHub',
-                href: 'https://github.com/emnify/',
+                label: "GitHub",
+                href: "https://github.com/emnify/",
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/emnify',
+                label: "Twitter",
+                href: "https://twitter.com/emnify",
               },
             ],
           },
           {
-            title: 'Legal',
+            title: "Legal",
             items: [
               {
-                label: 'Imprint',
-                href: 'https://www.emnify.com/imprint-disclaimer',
+                label: "Imprint",
+                href: "https://www.emnify.com/imprint-disclaimer",
               },
               {
                 label: "Privacy policy",
-                href: "https://www.emnify.com/privacy-policy"
+                href: "https://www.emnify.com/privacy-policy",
               },
               {
                 html: `
@@ -168,8 +168,8 @@ const config = {
                   Cookie Settings
                 </button>
               `,
-              }
-            ]
+              },
+            ],
           },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} emnify GmbH. All rights reserved.`,
