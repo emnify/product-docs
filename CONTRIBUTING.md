@@ -1,12 +1,12 @@
 # Welcome to emnify Documentations contributing guide
 
-We are glad that you are interested in contributing to the emnify Documentation.
-Your effort in helping maintain and grow our documentation for the benefit of your own organization as well as for the greater emnify community is appreciated.
+Your interest in contributing to the emnify Documentation is greatly appreciated.
+By helping maintain and grow our documentation, your efforts will not only benefit your own organization but the greater emnify community as well.
 
 It is assumed that contributors, both internal and external, have some understanding of basic [Git](https://git-scm.com/) concepts.
 [GitHub flow](https://docs.github.com/en/get-started/quickstart/github-flow) provides the essentials for collaborating on projects hosted in GitHub.
 
-If you never worked with [Markdown](https://daringfireball.net/projects/markdown/), here are some resources to help you get started:
+If you haven't worked with [Markdown](https://daringfireball.net/projects/markdown/) before, here are some resources to help you get started:
 
 - [Basic syntax](https://www.markdownguide.org/basic-syntax/)
 - [Extended syntax](https://www.markdownguide.org/extended-syntax/)
@@ -137,7 +137,7 @@ Install [Node.js](https://nodejs.org/en/about/).
 
 Follow yarn's [installation instructions](https://classic.yarnpkg.com/en/docs/install) for your platform.
 
-After yarn is installed, you can install Docusaurs by navigating to your cloned repository in your terminal window (or PowerShell)and running yarn:
+After yarn is installed, you can install Docusaurs by navigating to your cloned repository in your terminal window (or PowerShell) and running yarn:
 
 ```
 yarn
