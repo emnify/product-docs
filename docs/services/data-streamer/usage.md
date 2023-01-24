@@ -23,7 +23,7 @@ Then, navigate to the **Integrations** page by clicking the **Integrations** men
 
 If there are no data streams configured, the **Data Streams** panel displays all available [connection types](connection-types) as tiles.
 
-<div class="medium-zoom-image">
+<div className="medium-zoom-image">
   <img
     src={require('./assets/portal-integrations-data-streams-panel.png').default}
     alt=""
@@ -36,7 +36,7 @@ Data streams are marked as **Running** are properly operating.
 Failed streams exhibit an **Error** status.
 Paused streams are marked as **Paused**.
 
-<div class="medium-zoom-image">
+<div className="medium-zoom-image">
 <img
   src={require('../assets/portal-integrations-data-streams-status.png').default}
   alt=""
@@ -46,7 +46,7 @@ Paused streams are marked as **Paused**.
 The **Details** button allows you to inspect the configuration of the specific stream.
 The **Destination** configuration varies depending on the connection type.
 
-<div class="medium-zoom-image">
+<div className="medium-zoom-image">
 <img
   src={require('./assets/portal-integrations-data-streams-details-usage.png').default}
   alt=""
@@ -57,7 +57,7 @@ The **Destination** configuration varies depending on the connection type.
 
 When no configured data streams are available, click **Add** on the preferred connection type tile.
 
-<div class="medium-zoom-image">
+<div className="medium-zoom-image">
 <img
   src={require('./assets/portal-integrations-data-streams-add-buttons.png').default}
   alt=""
@@ -67,7 +67,7 @@ When no configured data streams are available, click **Add** on the preferred co
 Otherwise, click **Add New Stream** at the top of the existing **Data Streams** list.
 This shows the connection type tiles. You can choose your preferred connection type and click **Add**.
 
-<div class="medium-zoom-image">
+<div className="medium-zoom-image">
 <img
   src={require('./assets/portal-integrations-data-streams-add-new-button.png').default}
   alt=""
@@ -98,7 +98,7 @@ If this happens, the stream isn't created and you must correct the configuration
 
 With the **Details** button on the Data Stream tiles, you can inspect the configuration and update the [filters for event data streams](managing-data-streams#filtering-event-data-streams).
 
-<div class="medium-zoom-image">
+<div className="medium-zoom-image">
 <img
   src={require('../assets/portal-integrations-data-streams-details-events-filter.png').default}
   alt=""

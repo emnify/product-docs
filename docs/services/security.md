@@ -46,10 +46,20 @@ import AddCustomDNS from './assets/portal-add-custom-dns.png';
 import ConfigCustomDNS from './assets/portal-configure-custom-dns.png';
 import ServicePolicyMoreOptions from './assets/portal-device-policies-new-service-policy-more-options.png';
 
-<div class="medium-zoom-image">
-  <img src={ServicePolicyMoreOptions} style={{width:700}} alt="Breakout regions" />
-  <img src={ConfigCustomDNS} style={{width:484}} alt="Breakout regions" />
-  <img src={AddCustomDNS} style={{width:679}} alt="Breakout regions" />
+<div className="medium-zoom-image">
+  <img 
+    src={require('./assets/portal-device-policies-new-service-policy-more-options.png').default}
+    style={{width:700}}
+    alt="Service Policy: More options"
+  />
+  <img
+    src={require('./assets/portal-configure-custom-dns.png').default}
+    style={{width:484}} alt="Configure custom DNS"
+  />
+  <img 
+    src={require('./assets/portal-add-custom-dns.png').default}
+    style={{width:679}}
+    alt="Add custom DNS" />
 </div>
 
 <!-- TODO: Recreate dns_setting.png (Custom DNS setting configuration) -->

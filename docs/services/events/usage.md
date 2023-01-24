@@ -35,7 +35,7 @@ Data streams are marked as **Running** are properly operating.
 Failed streams exhibit an **Error** status.
 Paused streams are marked as **Paused**.
 
-<div class="medium-zoom-image">
+<div className="medium-zoom-image">
 <img
   src={require('../assets/portal-integrations-data-streams-status.png').default}
   alt=""
@@ -52,7 +52,7 @@ The data streamer can apply filtering for event data streams based on event type
 Under **Event Options**, you can choose to **Stream all events** or **Stream specific events only**. 
 Selecting the latter will display a searchable dropdown listing all [event types](event-types) available as filters. 
 
-<div class="medium-zoom-image">
+<div className="medium-zoom-image">
 <img
   src={require('../assets/portal-integrations-data-streams-details-events-filter.png').default}
   alt=""
@@ -163,7 +163,7 @@ Only listed for relevant network events.
 - **ID**: A generated unique identifier for the event.
 - **Description**: What happened, why (in some cases), and any additional details associated with the event type.
 
-<div class="medium-zoom-image">
+<div className="medium-zoom-image">
 <img
   src={require('./assets/portal-dashboard-event-details.png').default}
   alt=""

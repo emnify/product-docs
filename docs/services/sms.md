@@ -31,12 +31,7 @@ You will see all SMSs that the device receives sends out.
 
 For sending SMS messages to a single device, select **Details**:
 
-import DetailsButton from './assets/portal-connected-devices-details-button.png';
-
-<div class="medium-zoom-image">
-   <img src={DetailsButton} style={{width:1027}} alt="" />
-</div>
-
+![Connected Devices: Details](assets/portal-connected-devices-details-button.png)
 
 An SMS/Message icon will appear to the right of the device name.
 
@@ -52,13 +47,7 @@ import SmsConsole from './assets/portal-connected-devices-details-sms-console.pn
 
 When you select (check) one or more devices in the list of connected devices, a group of menu items will appear that includes **SMS**.
 
-import SMS from './assets/portal-connected-devices-sms.png';
-
-
-
-<div class="medium-zoom-image">
-   <img src={SMS} style={{width:1027}} alt="" />
-</div>
+![Connected Devices: SMS](assets/portal-connected-devices-sms.png)
 
 This SMS interface does not show a history of messages.
 
@@ -84,7 +73,7 @@ import SmsInterface from './assets/portal-device-policies-sms-interface-webhook.
 import ConfigureWebhook from './assets/portal-device-policies-configure-webhook.png';
 import AddWebhook from './assets/portal-device-policies-add-webhook.png';
 
-<div class="medium-zoom-image">
+<div className="medium-zoom-image">
    <img src={SmsInterface} style={{width:800}} alt="" />
 </div>
 <img src={ConfigureWebhook} style={{width:399}} alt="" />
