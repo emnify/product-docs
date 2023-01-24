@@ -194,7 +194,6 @@ const config = {
           // Options you can specify via https://github.com/francoischalifour/medium-zoom#options
           background: {
             light: 'rgb(255, 255, 255)',
-            dark: 'rgb(50, 50, 50)',
           },
         },
       },
