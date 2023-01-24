@@ -20,47 +20,86 @@ Once you have a GitHub account and have logged in, you will be able to contribut
 
 Starting from the emnify Documentation [document root](https://github.com/EMnify/product-docs/tree/main/docs) directory, find the file you wish to edit.
 
+----
+
 ![](img/github-select-edit.png)
+
+----
 
 If you haven't already forked the [emnify/product-docs](https://github.com/EMnify/product-docs) repository, GitHub will do it for you as soon as you select the edit icon.
 
+----
+
 ![](img/github-fork-created.png)
 
+----
 Once the page updates with the message that your GitHub has **create a fork of this project** (see above) you can scroll down to find the text you wish to edit.
+
+----
 
 ![](img/github-forked-repo.png)
 
+----
+
 ![](img/github-your-repos.png)
+
+----
 
 ![](img/github-edit-file.png)
 
+----
+
 ![](img/github-scroll-to-propose-changes.png)
+
+----
 
 ### Creating a pull request
 
+----
+
 ![](img/github-comparing-changes.png)
+
+----
 
 ![](img/github-open-a-pull-request.png)
 
+----
+
 ![](img/github-opened-pull-request.png)
+
+----
 
 ## Creating new content
 
 For adding a new page to the documentation find the appropriate place and choose **Add file**.
 In the following example, we want to add a new device to the Quickstart guide.
 
+----
+
 ![](img/github-add-file.png)
+
+----
 
 Selecting **Create new file** opens the editor and prompts you to give your new file a name:
 
+----
+
 ![](img/github-create-file.png)
+
+----
 
 When your new contribution is ready, scroll to the bottom to provide a description and choose **Propose new file**.
 
-![](img/github-propose-new-file.png)
+----
+
+[](img/github-propose-new-file.png)
+
+----
 
 You will then be able to create the pull request.
 The remaining steps are the same as above for [creating a pull request](#creating-a-pull-request) with editing exiting content.
+
+----
 
 ![](img/github-comparing-changes-new.png)
 
