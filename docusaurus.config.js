@@ -191,7 +191,7 @@ const config = {
       zoom: {
         selector: '.markdown :not(em) > img',
         config: {
-          // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
+          // Options you can specify via https://github.com/francoischalifour/medium-zoom#options
           background: {
             light: 'rgb(255, 255, 255)',
             dark: 'rgb(50, 50, 50)'
