@@ -1,9 +1,10 @@
-# Welcome to emnify Documentations contributing guide
+# Welcome to the emnify documentation contributing guide
 
-Your interest in contributing to the emnify Documentation is greatly appreciated.
-By helping maintain and grow our documentation, your efforts will not only benefit your own organization but the greater emnify community as well.
+Your interest in contributing to the emnify product documentation is greatly appreciated.
+By helping maintain and grow our documentation, your efforts will not only benefit your organization but the greater emnify community as well.
 
 ---
+
 - [The basics](#the-basics)
 - [Updating the documentation](#updating-the-documentation)
   - [Navigate to the file you wish to edit](#navigate-to-the-file-you-wish-to-edit)
@@ -15,8 +16,14 @@ By helping maintain and grow our documentation, your efforts will not only benef
   - [Pull request page](#pull-request-page)
 - [Creating new content](#creating-new-content)
   - [Navigate to the containing directory](#navigate-to-the-containing-directory)
-  - 
+  - [Name your file](#name-your-file)
+  - [Propose new file](#propose-new-file)
 - [Previewing the documentation site](#previewing-the-documentation-site)
+  - [Git](git)
+  - [Clone the repository](#clone-the-repository)
+  - [Node.js](#nodejs)
+  - [yarn](#yarn)
+  - [Preview the site](#preview-the-site)
 ---
 
 ## The basics
@@ -104,43 +111,45 @@ You may want to book mark this page since it is where you can read comments from
 Please note the tabs on this page:
 
 - **Conversation**: Where all feedback, review comments, and general communication takes place
-- **Commits**: Each time you update your changes, they can be view here
-- **Checks**: If there are any syntax errors that would break the documentation build, they can be see here
+- **Commits**: Each time you update your changes, they can be viewed here.
+- **Checks**: If there are any syntax errors that would break the documentation build, they can be see here.
 - **Files changed**: Very useful for PRs that involve changes needed in multiple files
 
 ![](img/github-opened-pull-request.png)
 
-
 ## Creating new content
 
-For adding a new page to the documentation find the appropriate place and choose **Add file**.
+The process for creating new content is almost the same as [updating the documentation](#updating-the-documentation).
+
+For adding a new page to the documentation, find the appropriate containing directory and choose **Add file**.
 In the following example, we want to add a new device to the Quickstart guide.
 
+### Navigate to the containing directory
+
+From the [document root](https://github.com/EMnify/product-docs/tree/main/docs), search for a directory that matches the category of the content you wish to create.
+
+Once you have found the best fit, navigate to that directory and select **Add file**.
+In this example, we want to add a new device under `quickstart/devices/`.
+
+If you expand the list of options for the **Add file** button, you can see that it is also possible to upload multiple files.
 
 ![](img/github-add-file.png)
 
+### Name your file
 
-
-Selecting **Create new file** opens the editor and prompts you to give your new file a name:
-
-
+If you did not choose the **Upload files** option, you will be prompted to provide a name for your new file.
 
 ![](img/github-create-file.png)
 
+In this example, we supplied `device-x.md` for the name of the new file and created some content using the **<> Edit new file** interface.
 
+### Propose new file
 
-When your new contribution is ready, scroll to the bottom to provide a description and choose **Propose new file**.
+When your new contribution is ready, scroll to the bottom to provide a description and select **Propose new file**.
 
+![](img/github-propose-new-file.png)
 
-
-[](img/github-propose-new-file.png)
-
-
-
-You will then be able to create the pull request.
-The remaining steps are the same as above for [creating a pull request](#creating-a-pull-request) with editing exiting content.
-
-
+From the **Comparing changes** page, you will select **Create pull request** and follow the same steps in the "Updating the documentation" section starting with [Open a pull request](#open-a-pull-request).
 
 ![](img/github-comparing-changes-new.png)
 
