@@ -3,6 +3,24 @@
 Your interest in contributing to the emnify Documentation is greatly appreciated.
 By helping maintain and grow our documentation, your efforts will not only benefit your own organization but the greater emnify community as well.
 
+---
+- [The basics](#the-basics)
+- [Updating the documentation](#updating-the-documentation)
+  - [Navigate to the file you wish to edit](#navigate-to-the-file-you-wish-to-edit)
+  - [GitHub will fork the repository for you](#github-will-fork-the-repository-for-you)
+  - [Editing the page](#editing-the-page)
+  - [Propose changes](#propose-changes)
+  - [Comparing changes](#comparing-changes)
+  - [Open a pull request](#open-a-pull-request)
+  - [Pull request page](#pull-request-page)
+- [Creating new content](#creating-new-content)
+  - [Navigate to the containing directory](#navigate-to-the-containing-directory)
+  - 
+- [Previewing the documentation site](#previewing-the-documentation-site)
+---
+
+## The basics
+
 It is assumed that contributors, both internal and external, have some understanding of basic [Git](https://git-scm.com/) concepts.
 [GitHub flow](https://docs.github.com/en/get-started/quickstart/github-flow) provides the essentials for collaborating on projects hosted in GitHub.
 
@@ -18,88 +36,111 @@ If you haven't worked with [Markdown](https://daringfireball.net/projects/markdo
 If you don't already have a GitHub account, you will need to [sign up](https://github.com/signup) for one.
 Once you have a GitHub account and have logged in, you will be able to contribute.
 
-Starting from the emnify Documentation [document root](https://github.com/EMnify/product-docs/tree/main/docs) directory, find the file you wish to edit.
+### Navigate to the file you wish to edit
 
-----
+Starting from the emnify Documentation [document root](https://github.com/EMnify/product-docs/tree/main/docs) directory, find the file you wish to edit.
 
 ![](img/github-select-edit.png)
 
-----
+### GitHub will fork the repository for you
 
 If you haven't already forked the [emnify/product-docs](https://github.com/EMnify/product-docs) repository, GitHub will do it for you as soon as you select the edit icon.
 
-----
-
 ![](img/github-fork-created.png)
 
-----
-Once the page updates with the message that your GitHub has **create a fork of this project** (see above) you can scroll down to find the text you wish to edit.
-
-----
-
-![](img/github-forked-repo.png)
-
-----
+Viewing your forked repository isn't necessary at this point in the process, but if you are curious, you can confirm that you now have a forked **product-docs** repository:
 
 ![](img/github-your-repos.png)
 
-----
+![](img/github-forked-repo.png)
+
+### Editing the page
+
+Immediately after GitHub [forks the repository](#github-will-fork-the-repository-for-you), you are able to edit the file.
+Now you can scroll down to find the text you wish to edit.
+
+In this example below, we have edited the Glossary entry for _Dynamic IP_ to have more detail and to include a reference to the Glossary entry for _Static IP_.
 
 ![](img/github-edit-file.png)
 
-----
+### Propose changes
+
+Once you are satisfied with the changes you have made, scroll to the bottom of the file.
+There you will find an input field where you can provide a description or summary of your changes.
+Then you can select **Propose changes** if you would like submit your changes.
 
 ![](img/github-scroll-to-propose-changes.png)
 
-----
+### Comparing changes
 
-### Creating a pull request
-
-----
+After proposing your changes, the next step is to formally create a pull request (PR).
+First, you will be presented a **Comparing changes** page that shows you the file(s) you have changed, your forked repository, and the name of your branch containing the changes.
+In this example, GitHub automatically created the branch name **patch-1** for us.
+Select **Create pull request** to continue.
 
 ![](img/github-comparing-changes.png)
 
-----
+### Open a pull request
+
+Once you select **Create pull request**, you will be presented with the **Open a pull request** page.
+Here you will have the opportunity to edit the name of the PR to something more descriptive.
+In this example, we see it defaulted to the name of the file that was changed.
+
+The input field below enables you to update the summary/description you previously provided.
+
+Normally we will not edit your changes during our review.
+However, you can enforce this by unchecking the **Allow edits by maintainers**.
+If you want us to edit your changes as needed during our review, then please state this explicitly in the PR description and leave this option checked.
+
+Once you select **Create pull request**, we will see your PR in our queue of [open PRs](https://github.com/EMnify/product-docs/pulls). 
 
 ![](img/github-open-a-pull-request.png)
 
-----
+### Pull request page
+
+Immediately after creating the PR, GitHub takes you to the pull request details page.
+You may want to book mark this page since it is where you can read comments from reviewers and provide any additional information we might request.
+
+Please note the tabs on this page:
+
+- **Conversation**: Where all feedback, review comments, and general communication takes place
+- **Commits**: Each time you update your changes, they can be view here
+- **Checks**: If there are any syntax errors that would break the documentation build, they can be see here
+- **Files changed**: Very useful for PRs that involve changes needed in multiple files
 
 ![](img/github-opened-pull-request.png)
 
-----
 
 ## Creating new content
 
 For adding a new page to the documentation find the appropriate place and choose **Add file**.
 In the following example, we want to add a new device to the Quickstart guide.
 
-----
 
 ![](img/github-add-file.png)
 
-----
+
 
 Selecting **Create new file** opens the editor and prompts you to give your new file a name:
 
-----
+
 
 ![](img/github-create-file.png)
 
-----
+
 
 When your new contribution is ready, scroll to the bottom to provide a description and choose **Propose new file**.
 
-----
+
 
 [](img/github-propose-new-file.png)
 
-----
+
 
 You will then be able to create the pull request.
 The remaining steps are the same as above for [creating a pull request](#creating-a-pull-request) with editing exiting content.
 
-----
+
 
 ![](img/github-comparing-changes-new.png)
 
