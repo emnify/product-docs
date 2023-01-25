@@ -15,7 +15,7 @@ For other destinations, we do charge a small shipping fee.
 
 Log into your [emnify account](https://portal.emnify.com) and follow these steps:
 
-1. On the dashboard, click on order on **Get your FREE SIMs**
-1. Select the Free Evaluation Package with 3 Triple-cut SIMs
+1. On the dashboard, click on order on **Get your free SIMs**
+1. Select the **Free Evaluation Package with 3 Triple-cut SIMs**
 1. Fill in your **Invoice data**, **Delivery details**, and **Choose shipping option**.
 1. Proceed to pay the shipping charges and you will be notified when the SIM cards will be shipped.
