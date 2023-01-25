@@ -3,7 +3,7 @@
 Your interest in contributing to the emnify product documentation is greatly appreciated.
 By helping maintain and grow our documentation, your efforts will not only benefit your organization but the greater emnify community as well.
 
----
+## Table of contents
 
 - [The basics](#the-basics)
 - [Updating the documentation](#updating-the-documentation)
@@ -28,7 +28,6 @@ By helping maintain and grow our documentation, your efforts will not only benef
 
 ## The basics
 
-It is assumed that contributors, both internal and external, have some understanding of basic [Git](https://git-scm.com/) concepts.
 [GitHub flow](https://docs.github.com/en/get-started/quickstart/github-flow) provides the essentials for collaborating on projects hosted in GitHub.
 
 If you haven't worked with [Markdown](https://daringfireball.net/projects/markdown/) before, here are some resources to help you get started:
@@ -106,7 +105,7 @@ Once you select **Create pull request**, we will see your PR in our queue of [op
 ### Pull request page
 
 Immediately after creating the PR, GitHub takes you to the pull request details page.
-You may want to book mark this page since it is where you can read comments from reviewers and provide any additional information we might request.
+You may want to bookmark this page since it is where you can read comments from reviewers and provide any additional information we might request.
 
 Please note the tabs on this page:
 

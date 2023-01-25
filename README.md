@@ -13,3 +13,7 @@ To request an update or additional content, please [open a GitHub issue](https:/
 
 You might also consider contributing to the emnify documentation project.
 If so, please take a look at the [contributing guide](CONTRIBUTING.md) to see how easy it is to get started.
+
+## License
+
+All documentation in this repository is licensed under the MIT license.
