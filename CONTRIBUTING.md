@@ -159,9 +159,11 @@ For larger contributions, especially when adding new pages, it becomes necessary
 
 Since the documentation site is built using [Docusaurus](https://docusaurus.io/) which requires Node.js as well as a clone of this repository, there are a few steps needed to set up your environment.
 
+**Although the following steps may seem overwhelming at first, they only need to be performed once!**
+
 ### Git
 
-If you do not already have Git installed please follow the installation steps specific to your platform.
+If you do not already have Git installed, please follow the installation steps specific to your platform.
 
 - **Windows**: Follow these [instructions](https://www.atlassian.com/git/tutorials/install-git#windows).
 - **macOS**:
@@ -171,12 +173,25 @@ If you do not already have Git installed please follow the installation steps sp
 
 ### Clone the repository
 
-[Clone](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository) this repository
+Clone your forked `product-docs` repository
+
 - Open your terminal (or PowerShell).
 - Navigate to the location where you want the repository to reside.
-- Issue the following command
+- Issue the following command after you have replaced `yourUsername` with your actual GitHub username:
+
 ```
-git clone git@github.com:EMnify/product-docs.git
+git clone https://github.com/yourUsername/product-docs.git
+```
+Then navigate to the repository using
+
+```
+cd product-docs
+```
+
+Change this Git configuration setting to avoid problems on macOS and Windows platforms:
+
+```
+git config core.ignorecase false
 ```
 
 ### Node.js
@@ -187,13 +202,41 @@ Install [Node.js](https://nodejs.org/en/about/).
 
 Follow yarn's [installation instructions](https://classic.yarnpkg.com/en/docs/install) for your platform.
 
-After yarn is installed, you can install Docusaurs by navigating to your cloned repository in your terminal window (or PowerShell) and running yarn:
+After yarn is installed, you can install Docusaurus by navigating to your cloned repository in your terminal window (or PowerShell) and running yarn:
 
 ```
 yarn
 ```
 
 ### Preview the site
+
+It is important that you have the desired branch checked out when you want to preview your work.
+The default branch `main` is the public-facing version and doesn't contain your changes (yet)! 
+You will mainly be interested in previewing your work from your PR branches.
+These need to be explicitly checked out using Git.
+
+You will need to use your terminal (or PowerShell), for starting your local Docusaurus server for previewing.
+Since only a few Git commands are needed, it is easier to issue these also at the command line.
+
+**Get recently created branches**
+
+```
+git fetch origin
+```
+ 
+ **Checkout my PR branch `patch-2`**
+
+ ```
+ git checkout patch-2
+ ```
+
+ **Get the most recent changes to my current branch**
+
+```
+git pull
+```
+
+**Start previewing**
 
 Run the following and follow the instructions for opening the site in your web browser.
 
