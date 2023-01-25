@@ -140,7 +140,7 @@ If you did not choose the **Upload files** option, you will be prompted to provi
 
 ![](img/github-create-file.png)
 
-In this example, we supplied `device-x.md` for the name of the new file and created some content using the **<> Edit new file** interface.
+In this example, we supplied `device-x.md` for the name of the new file and created some content using the **Edit new file** interface.
 
 ### Propose new file
 
