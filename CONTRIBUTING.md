@@ -215,7 +215,7 @@ You will mainly be interested in previewing your work from your PR branches.
 These need to be explicitly checked out using Git.
 
 You will need to use your terminal (or PowerShell), for starting your local Docusaurus server for previewing.
-Since only a few Git commands are needed, it is easier to issue these also at the command line.
+You can issue the necessary Git commands using the command line.
 
 **Get recently created branches**
 
