@@ -61,6 +61,13 @@ const config = {
     {
       type: 'text/javascript',
       src: '/scripts/heapAnalytics.js',
+    },
+    {
+      src: '/scripts/googleTagManager.js',
+      async: true
+    },
+    {
+      src: '/scripts/jentisTagManager.js'
     }
   ],
 
