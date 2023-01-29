@@ -6,7 +6,7 @@ description: Using your emnify account to register your SIMs
 Once you get your emnify SIMs, you need to register them before you can start using them.
 If you order the free Evaluation SIM package, you will have to register each of the 3 SIMs separately.
 
-1. Log in to your [emnify account](https://portal.emnify.com).  
+1. Log in to your [emnify account](https://portal.emnify.com/sign).  
 1. From the **Get Started** menu, select [**Register SIM(s)**](https://portal.emnify.com/sim-registration)  
 <img
   src={require('./assets/portal-get-started-collapsible-register-sims-menu-item.png').default}

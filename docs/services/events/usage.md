@@ -24,7 +24,7 @@ See the [Data Streamer documentation](../data-streamer/getting-started) to learn
 ### Managing event data streams in the Portal
 
 To manage your data streams, log in to your [emnify Portal](https://portal.emnify.com/) account. 
-Then, navigate to the **Integrations** page by clicking the **Integrations** menu item in the sidebar.
+Then, navigate to the [**Integrations**](https://portal.emnify.com/integrations) page by clicking the **Integrations** menu item in the sidebar.
 
 If there are no data streams configured, the **Data Streams** panel displays all available connection types as tiles.
 
@@ -123,12 +123,12 @@ Here's where you can find event information in the Portal:
   src={require('./assets/portal-dashboard-events.png').default}
   alt=""
 />
-- **Connected Devices** → **Details** → **Events**: List of triggered events for a particular device (also referred to as an "endpoint").
+- [**Connected Devices**](https://portal.emnify.com/connected-devices) → **Details** → **Events**: List of triggered events for a particular device (also referred to as an "endpoint").
 <img
   src={require('./assets/portal-connected-devices-details-events.png').default}
   alt=""
 />
-- **SIM Inventory** → **Details** → **Events**: List of triggered events for a particular SIM card.
+- [**SIM Inventory**](https://portal.emnify.com/sim-inventory) → **Details** → **Events**: List of triggered events for a particular SIM card.
 <img
   src={require('./assets/portal-sim-inventory-details-events.png').default}
   alt=""
