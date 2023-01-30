@@ -12,7 +12,7 @@ To request an update or additional content, please [open a GitHub issue](https:/
 ## Contributing
 
 You might also consider contributing to the emnify documentation project.
-If so, please take a look at the [contributing guide](CONTRIBUTING.md) to see how to get started.
+If so, please take a look at the [contributing guide](CONTRIBUTING.md#welcome-to-the-emnify-documentation-contributing-guide) to see how to get started.
 
 ## License
 

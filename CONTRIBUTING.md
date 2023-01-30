@@ -17,15 +17,18 @@ Please read our [Code of Conduct](https://github.com/EMnify/.github/blob/add-cod
   - [Open a pull request](#open-a-pull-request)
   - [Pull request page](#pull-request-page)
 - [Creating new content](#creating-new-content)
-  - [Navigate to the containing directory](#navigate-to-the-containing-directory)
+  - [Navigate to the containing folder](#navigate-to-the-containing-folder)
   - [Name your file](#name-your-file)
   - [Propose new file](#propose-new-file)
 - [Previewing the documentation site](#previewing-the-documentation-site)
-  - [Git](git)
-  - [Clone the repository](#clone-the-repository)
-  - [Node.js](#nodejs)
-  - [yarn](#yarn)
+  - [Installation](#installation)
+    - [Git](#git)
+    - [Clone the repository](#clone-the-repository)
+    - [Node.js](#nodejs)
+    - [yarn](#yarn)
   - [Preview the site](#preview-the-site)
+    - [Frequently used git commands](#frequently-used-git-commands)
+    - [Start previewing](#start-previewing)
 ---
 
 ## The basics
@@ -46,7 +49,7 @@ Once you have a GitHub account and have logged in, you will be able to contribut
 
 ### Navigate to the file you wish to edit
 
-Starting from the emnify Documentation [document root](https://github.com/EMnify/product-docs/tree/main/docs) directory, find the file you wish to edit.
+Starting from the emnify Documentation [document root](https://github.com/EMnify/product-docs/tree/main/docs) folder, find the file you wish to edit.
 
 ![github-select-edit](https://user-images.githubusercontent.com/49970529/215493212-f4694f5a-7d7f-4d65-a77d-761225d9a3e4.png)
 
@@ -125,14 +128,14 @@ Please note the tabs on this page:
 
 The process for creating new content is almost the same as [updating the documentation](#updating-the-documentation).
 
-For adding a new page to the documentation, find the appropriate containing directory and choose **Add file**.
+For adding a new page to the documentation, find the appropriate containing folder and choose **Add file**.
 In the following example, we want to add a new device to the Quickstart guide.
 
-### Navigate to the containing directory
+### Navigate to the containing folder
 
-From the [document root](https://github.com/EMnify/product-docs/tree/main/docs), search for a directory that matches the category of the content you wish to create.
+From the [document root](https://github.com/EMnify/product-docs/tree/main/docs), search for a folder that matches the category of the content you wish to create.
 
-Once you have found the best fit, navigate to that directory and select **Add file**.
+Once you have found the best fit, navigate to that folder and select **Add file**.
 In this example, we want to add a new device under `quickstart/devices/`.
 
 If you expand the list of options for the **Add file** button, you can see that it is also possible to upload multiple files.
@@ -163,9 +166,11 @@ For larger contributions, especially when adding new pages, it becomes necessary
 
 Since the documentation site is built using [Docusaurus](https://docusaurus.io/) which requires Node.js as well as a clone of this repository, there are a few steps needed to set up your environment.
 
-**Although the following steps may seem overwhelming at first, they only need to be performed once!**
+### Installation
 
-### Git
+Although the following steps may seem overwhelming at first, they only need to be performed once!
+
+#### Git
 
 If you do not already have Git installed, please follow the installation steps specific to your platform.
 
@@ -175,7 +180,7 @@ If you do not already have Git installed, please follow the installation steps s
     - Via [Xcode](https://apps.apple.com/de/app/xcode/) from the App Store.
 - **Linux**: Preinstalled
 
-### Clone the repository
+#### Clone the repository
 
 Clone your forked `product-docs` repository
 
@@ -198,19 +203,24 @@ Change this Git configuration setting to avoid problems on macOS and Windows pla
 git config core.ignorecase false
 ```
 
-### Node.js
+#### Node.js
 
 Install [Node.js](https://nodejs.org/en/about/).
 
-### yarn
+#### yarn
 
 Follow yarn's [installation instructions](https://classic.yarnpkg.com/en/docs/install) for your platform.
 
-After yarn is installed, you can install Docusaurus by navigating to your cloned repository in your terminal window (or PowerShell) and running yarn:
+After yarn is installed, you can run yarn to install all the required Node.js applications you need to run your local documentation site on your workstation.
+Docusaurus, including all of its dependencies, will be installed in this step.
+Navigate to your cloned repository in your terminal window (or PowerShell) and start yarn:
 
 ```
 yarn
 ```
+
+This concludes the first-time installation steps for setting up your new environment.
+However, you might need to run yarn occasionally  when new versions of your Node.js apps are released. 
 
 ### Preview the site
 
@@ -222,16 +232,18 @@ These need to be explicitly checked out using Git.
 You will need to use your terminal (or PowerShell), for starting your local Docusaurus server for previewing.
 You can issue the necessary Git commands using the command line.
 
+#### Frequently used git commands
+
 **Get recently created branches**
 
 ```
 git fetch origin
 ```
  
- **Checkout my PR branch `patch-2`**
+ **Checkout my PR branch `patch-3`**
 
  ```
- git checkout patch-2
+ git checkout patch-3
  ```
 
  **Get the most recent changes to my current branch**
@@ -240,10 +252,12 @@ git fetch origin
 git pull
 ```
 
-**Start previewing**
+#### Start previewing
 
-Run the following and follow the instructions for opening the site in your web browser.
+Run the following yarn command to have your browser open a new tab displaying the documentation site.
 
 ```
 yarn start
 ```
+
+Any errors or warnings will be displayed both in the browser as well as in the terminal window.
