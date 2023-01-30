@@ -11,7 +11,7 @@ The device policies can be applied on a device group as well as at an individual
 
 Service policies define which services are available for a group of devices. These policies include:
 
-- Available radio access types (2G, 3G, 4G)
+- Available radio access types (2G, 3G, 4G, NB-IoT)
 - Monthly data and SMS limit
 - SMS API configuration
 - Custom DNS

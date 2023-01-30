@@ -40,6 +40,21 @@ This is useful to be able to use your own or private DNS servers to secure and h
 
 Customers can also configure to use their own DNS, no matter if it is a public or a private one.
 The DNS settings can be changed in the Portal → Device Policies → Service Policies → More Options → DNS.
+[emnify Portal](https://portal.emnify.com/) → **Device Policies** [emnify Portal](https://portal.emnify.com/) → **Device Policies** → **New service policy** → **More options**
+
+<img
+  src={require('./assets/portal-configure-custom-dns.png').default}
+  alt=""
+  style={{ width: 679 }} 
+/>
+
+---
+
+<img
+  src={require('./assets/portal-add-custom-dns.png').default}
+  alt=""
+  style={{ width: 679 }} 
+/>
 
 <!-- TODO: Recreate dns_setting.png (Custom DNS setting configuration) -->
 
