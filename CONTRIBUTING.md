@@ -3,6 +3,8 @@
 Your interest in contributing to the emnify product documentation is greatly appreciated.
 By helping maintain and grow our documentation, your efforts will not only benefit your organization but the greater emnify community as well.
 
+Please read our [Code of Conduct](https://github.com/EMnify/.github/blob/add-code-of-conduct/CODE_OF_CONDUCT.md#code-of-conduct) in order to help us maintain a professional, respectful, and inclusive environment for all contributors.
+
 ## Table of contents
 
 - [The basics](#the-basics)
@@ -75,7 +77,7 @@ Once you are satisfied with the changes you have made, scroll to the bottom of t
 There you will find an input field where you can provide a description or summary of your changes.
 Then you can select **Propose changes** if you would like submit your changes.
 
-![github-scroll-to-propose-changes](https://user-images.githubusercontent.com/49970529/215493210-2d0859a2-ce04-43ae-ba91-4458fded96a8.png)
+![github-scroll-to-propose-changes](https://user-images.githubusercontent.com/123376330/215520270-954324f8-5445-4669-99bc-8bd59a785c6f.png)
 
 ### Comparing changes
 
@@ -84,8 +86,7 @@ First, you will be presented a **Comparing changes** page that shows you the fil
 In this example, GitHub automatically created the branch name **patch-1** for us.
 Select **Create pull request** to continue.
 
-![github-comparing-changes](https://user-images.githubusercontent.com/49970529/215493181-953614a1-4d6f-47e7-a420-6e127c4800c4.png)
-
+![github-comparing-changes](https://user-images.githubusercontent.com/123376330/215520267-02cb74ab-0877-4ba0-98a1-3411728bb5e5.png)
 ### Open a pull request
 
 Once you select **Create pull request**, you will be presented with the **Open a pull request** page.
@@ -100,7 +101,12 @@ If you want us to edit your changes as needed during our review, then please sta
 
 Once you select **Create pull request**, we will see your PR in our queue of [open PRs](https://github.com/EMnify/product-docs/pulls). 
 
-![github-open-a-pull-request](https://user-images.githubusercontent.com/49970529/215493200-8e72fb0c-4939-443c-b8fc-04bbcc831933.png)
+We recommend that you remove the commented lines between `<!--` and `-->` and make use of the template below them, especially the **Description** heading.
+There is an **Additional Context** heading you can use as well.
+Feel free to add any other headings, screenshots, images, diagrams, etc., that may help in explaining your contribution.
+
+![github-open-a-pull-request](https://user-images.githubusercontent.com/123376330/215520265-e462ab79-47c8-465b-bc30-16f4c6950038.png)
+
 
 ### Pull request page
 
@@ -114,8 +120,7 @@ Please note the tabs on this page:
 - **Checks**: If there are any syntax errors that would break the documentation build, they can be see here.
 - **Files changed**: Very useful for PRs that involve changes needed in multiple files
 
-![github-opened-pull-request](https://user-images.githubusercontent.com/49970529/215493206-f8a193c3-a902-4ef9-8d53-b8228e23ec4a.png)
-
+![github-opened-pull-request](https://user-images.githubusercontent.com/123376330/215520259-9f02110b-579c-4353-a9cb-6a54e7d22232.png)
 ## Creating new content
 
 The process for creating new content is almost the same as [updating the documentation](#updating-the-documentation).
