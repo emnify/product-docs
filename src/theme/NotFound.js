@@ -56,7 +56,7 @@ export default function NotFound() {
                 </a>{" "}
                 if you are struggling to find what you need.
               </p>
-              <Link to="/product-docs" className={styles.homepageButton}>
+              <Link to="/" className={styles.homepageButton}>
                 Go to homepage
               </Link>
             </div>

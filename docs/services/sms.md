@@ -29,23 +29,95 @@ In the [Portal](https://portal.emnify.com/) → **Connected Devices** you can ac
 The sender can be configured as well as the console will show if the SMS is delivered or not.
 You will see all SMSs that the device receives sends out.
 
-<!-- TODO: Recreate sms_console.png (SMS Console) -->
+For sending SMS messages to a single device, select **Details**:
+
+![Portal screenshot of the Connected Devices page showing the extensive device list. There is a Details button available for each device listed.](assets/portal-connected-devices-details-button.png)
+
+An SMS/Message icon will appear to the right of the device name.
+
+<img
+  src={require('./assets/portal-connected-devices-details-open-sms-console.png').default}
+  alt=""
+  style={{ width: 350 }}
+/>
+
+The SMS history and input field at the bottom of the SMS console is similiar to the layout and functionality found in most mobile messaging apps.
+
+<img
+  src={require('./assets/portal-connected-devices-details-sms-console.png').default}
+  alt=""
+  style={{ width: 575 }}
+/>
+
+When you select (check) one or more devices in the list of connected devices, a group of menu items will appear that includes **SMS**.
+
+![Portal screenshot of the Connected Devices page. A top-level banner shows the number of devices selected and a list of options. Options from left to right: Reset, SMS, Device, IMEI Lock, More. SMS is selected.](assets/portal-connected-devices-sms.png)
+
+This SMS interface does not show a history of messages.
+
+<img
+  src={require('./assets/portal-send-sms-message-text.png').default}
+  alt=""
+  style={{ width: 496 }}
+/>
+
+However, you will receive a brief notification regarding the status of the SMS sent to the selected devices.
+
+<img
+  src={require('./assets/portal-sms-sent.png').default}
+  alt=""
+  style={{ width: 762 }}
+/>
+
 
 ## emnify SMS REST API and webhook
 
 For sending SMS through the REST API, check out the [Sending and receiving SMS](#_sending_and_receiving_sms) section.
 
 For receiving SMS and delivery notifications for SMS in your application, you can use the SMS webhook which can be configured under **Device Policies** → **Service Policies** → **SMS Interface**.
-Select Webhook and configure the URL and optionally, secret token to where you want the SMS to be delivered.
 
-<!-- TODO: Recreate sms_webhook.png (SMS Webhook) -->
 
-<!--  TODO: Recreate delivery_notification.png (Delivery notification as received in Integromat webhook for SMS with ID: 46638644) -->
+<img
+  src={require('./assets/portal-device-policies-sms-interface-webhook.png').default}
+  alt=""
+  style={{ width: 800 }}
+/>
+
+Select **Webhook**, then select  **Configure Webhook**:
+
+<img
+  src={require('./assets/portal-device-policies-configure-webhook.png').default}
+  alt=""
+  style={{ width: 399 }}
+/>
+
+In the **Add Webhook** dialog, provide the webhook URL and an optional secret key: 
+
+<img
+  src={require('./assets/portal-device-policies-add-webhook.png').default}
+  alt=""
+  style={{ width: 856 }}
+/>
 
 When you want to send an SMS from the device to your application, your device should send the SMS to an invalid [MSISDN](#msisdn) with 8 digits or less.
 The SMS will then be delivered over the webhook.
 
-![Mobile originated SMS](assets/mosms.png)  
+<!-- TODO: Write proper alt text -->
+<img
+  src={require('./assets/delivery-notification.png').default}
+  alt=""
+  style={{ width: 400 }}
+/>
+
+*Delivery notification as received in Integromat webhook for SMS with ID: 46638644*
+
+<!-- TODO: Write proper alt text -->
+<img
+  src={require('./assets/mosms.png').default}
+  alt=""
+  style={{ width: 400 }}
+/>
+
 *Mobile originated SMS from the device as received in Integromat webhook*
 
 ## Zapier SMS integration
@@ -53,17 +125,18 @@ The SMS will then be delivered over the webhook.
 Instead of implementing the APIs in your application, emnify and Zapier provide a no-code alternative to automate SMS workflows.
 Zapier has a concept of triggers and actions – when a trigger happens multiple actions can be based on it – taking content from previous steps.
 Sending SMS to your devices is available as an action in Zapier.
+In the **No-Code-Workflows** list of [Portal Integrations](https://portal.emnify.com/integrations), select the following:
 
-<!--  TODO: Recreate sms_zap.png (SMS with Zapier) -->
+<img
+  src={require('./assets/portal-integrations-sms-webhooks-zapier.png').default}
+  alt="Portal screenshot from the Integrations page. The featured integration reads, 'Enable devices and send SMSes via emnify from newly caught webhooks. emnify + Webhooks by Zapier'. Next to the text, there's a 'Use this Zap' button."
+  style={{ width: 1145 }}
+/>
 
-For acting upon SMS delivery notification or SMSs that are sent from a device, you need to set up a webhook in Zapier.
-Create a zap using "Webhook by Zapier" and select "Catch Hook" as trigger event.
-You will get a custom webhook URL which will be used in the next step.
+There you will find a predefined Zap consisting of 3 steps with interactive instructions on how to configure it or modify the steps for your specific needs:
 
-<!--  TODO: Recreate catch_hook.png (Catch Hook as a trigger) -->
+1. Catch Hook in Webhooks by Zapier (Trigger)
+1. Enable a Device in emnify (Action)
+1. Send an SMS in emnify (Action)
 
-Now you need to enter this webhook URL in the [emnify Portal](https://portal.emnify.com/) → **Device Policies** → **Choose SMS interface**, select **Webhook**, click **Configure Webhook**, enter the URL, then **Add Webhook**.
-All SMS delivery notification and device originated SMS with this service policy will then be delivered over the webhook.
-
-<!--  TODO: Recreate zap_webhook.png (emnify Webhook as SMS interface) -->
-
+See also Zapier's [How to connect emnify + SMS by Zapier](https://zapier.com/apps/emnify/integrations/sms) guide.
