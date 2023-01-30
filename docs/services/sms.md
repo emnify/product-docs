@@ -75,9 +75,7 @@ However, you will receive a brief notification regarding the status of the SMS s
 For sending SMS through the REST API, check out the [Sending and receiving SMS](#_sending_and_receiving_sms) section.
 
 For receiving SMS and delivery notifications for SMS in your application, you can use the SMS webhook which can be configured under **Device Policies** → **Service Policies** → **SMS Interface**.
-Select Webhook and configure the URL and optionally, secret token to where you want the SMS to be delivered.
 
-import AddWebhook from './assets/portal-device-policies-add-webhook.png';
 
 <img
   src={require('./assets/portal-device-policies-sms-interface-webhook.png').default}
@@ -85,11 +83,15 @@ import AddWebhook from './assets/portal-device-policies-add-webhook.png';
   style={{ width: 800 }}
 />
 
+Select **Webhook**, then select  **Configure Webhook**:
+
 <img
   src={require('./assets/portal-device-policies-configure-webhook.png').default}
   alt=""
   style={{ width: 399 }}
 />
+
+In the **Add Webhook** dialog, provide the webhook URL and an optional secret key: 
 
 <img
   src={require('./assets/portal-device-policies-add-webhook.png').default}
