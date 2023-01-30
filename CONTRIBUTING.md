@@ -46,19 +46,19 @@ Once you have a GitHub account and have logged in, you will be able to contribut
 
 Starting from the emnify Documentation [document root](https://github.com/EMnify/product-docs/tree/main/docs) directory, find the file you wish to edit.
 
-![](img/github-select-edit.png)
+![github-select-edit](https://user-images.githubusercontent.com/49970529/215493212-f4694f5a-7d7f-4d65-a77d-761225d9a3e4.png)
 
 ### GitHub will fork the repository for you
 
 If you haven't already forked the [emnify/product-docs](https://github.com/EMnify/product-docs) repository, GitHub will do it for you as soon as you select the edit icon.
 
-![](img/github-fork-created.png)
+![github-fork-created](https://user-images.githubusercontent.com/49970529/215493193-6e805d85-e647-41d4-8867-91032bc45a9b.png)
 
 Viewing your forked repository isn't necessary at this point in the process, but if you are curious, you can confirm that you now have a forked **product-docs** repository:
 
-![](img/github-your-repos.png)
+![github-your-repos](https://user-images.githubusercontent.com/49970529/215493214-1c265b19-8f99-404c-a472-740e50df3799.png)
 
-![](img/github-forked-repo.png)
+![github-forked-repo](https://user-images.githubusercontent.com/49970529/215493196-f9a9945d-c51f-433a-ab89-b6bd24536616.png)
 
 ### Editing the page
 
@@ -67,7 +67,7 @@ Now you can scroll down to find the text you wish to edit.
 
 In this example below, we have edited the Glossary entry for _Dynamic IP_ to have more detail and to include a reference to the Glossary entry for _Static IP_.
 
-![](img/github-edit-file.png)
+![github-edit-file](https://user-images.githubusercontent.com/49970529/215493191-bad58e16-b8e7-415e-9821-64f2cd414043.png)
 
 ### Propose changes
 
@@ -75,7 +75,7 @@ Once you are satisfied with the changes you have made, scroll to the bottom of t
 There you will find an input field where you can provide a description or summary of your changes.
 Then you can select **Propose changes** if you would like submit your changes.
 
-![](img/github-scroll-to-propose-changes.png)
+![github-scroll-to-propose-changes](https://user-images.githubusercontent.com/49970529/215493210-2d0859a2-ce04-43ae-ba91-4458fded96a8.png)
 
 ### Comparing changes
 
@@ -84,7 +84,7 @@ First, you will be presented a **Comparing changes** page that shows you the fil
 In this example, GitHub automatically created the branch name **patch-1** for us.
 Select **Create pull request** to continue.
 
-![](img/github-comparing-changes.png)
+![github-comparing-changes](https://user-images.githubusercontent.com/49970529/215493181-953614a1-4d6f-47e7-a420-6e127c4800c4.png)
 
 ### Open a pull request
 
@@ -100,7 +100,7 @@ If you want us to edit your changes as needed during our review, then please sta
 
 Once you select **Create pull request**, we will see your PR in our queue of [open PRs](https://github.com/EMnify/product-docs/pulls). 
 
-![](img/github-open-a-pull-request.png)
+![github-open-a-pull-request](https://user-images.githubusercontent.com/49970529/215493200-8e72fb0c-4939-443c-b8fc-04bbcc831933.png)
 
 ### Pull request page
 
@@ -114,7 +114,7 @@ Please note the tabs on this page:
 - **Checks**: If there are any syntax errors that would break the documentation build, they can be see here.
 - **Files changed**: Very useful for PRs that involve changes needed in multiple files
 
-![](img/github-opened-pull-request.png)
+![github-opened-pull-request](https://user-images.githubusercontent.com/49970529/215493206-f8a193c3-a902-4ef9-8d53-b8228e23ec4a.png)
 
 ## Creating new content
 
@@ -132,13 +132,13 @@ In this example, we want to add a new device under `quickstart/devices/`.
 
 If you expand the list of options for the **Add file** button, you can see that it is also possible to upload multiple files.
 
-![](img/github-add-file.png)
+![github-add-file](https://user-images.githubusercontent.com/49970529/215493168-91fc2b2c-6939-43a0-a3de-a6eae6487a5a.png)
 
 ### Name your file
 
 If you did not choose the **Upload files** option, you will be prompted to provide a name for your new file.
 
-![](img/github-create-file.png)
+![github-create-file](https://user-images.githubusercontent.com/49970529/215493184-00ff9bdc-2783-4b7d-9fcb-d7d2b9b7179c.png)
 
 In this example, we supplied `device-x.md` for the name of the new file and created some content using the **Edit new file** interface.
 
@@ -146,11 +146,11 @@ In this example, we supplied `device-x.md` for the name of the new file and crea
 
 When your new contribution is ready, scroll to the bottom to provide a description and select **Propose new file**.
 
-![](img/github-propose-new-file.png)
+![github-propose-new-file](https://user-images.githubusercontent.com/49970529/215493209-a8800b84-39df-474e-96df-c1fc230a1cf8.png)
 
 From the **Comparing changes** page, you will select **Create pull request** and follow the same steps in the "Updating the documentation" section starting with [Open a pull request](#open-a-pull-request).
 
-![](img/github-comparing-changes-new.png)
+![github-comparing-changes-new](https://user-images.githubusercontent.com/49970529/215493175-d5c10247-7be1-4ecb-9173-773f3c06f1fa.png)
 
 ## Previewing the documentation site
 
