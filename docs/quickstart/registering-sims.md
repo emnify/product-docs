@@ -10,7 +10,8 @@ If you order the free Evaluation SIM package, you will have to register each of 
 1. From the **Get Started** menu, select [**Register SIM(s)**](https://portal.emnify.com/sim-registration)  
 <img
   src={require('./assets/portal-get-started-collapsible-register-sims-menu-item.png').default}
-  style={{width:292}} alt=""
+  alt=""
+  style={{ width: 292 }}
 />
 
 1. Since the **Single-SIM registration** is already selected by default, enter the [Batch Identification Code](/glossary#bic---batch-identification-code) (**BIC1**) in the prompt:  
