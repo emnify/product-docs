@@ -35,12 +35,10 @@ Data streams are marked as **Running** are properly operating.
 Failed streams exhibit an **Error** status.
 Paused streams are marked as **Paused**.
 
-<div className="medium-zoom-image">
 <img
   src={require('../assets/portal-integrations-data-streams-status.png').default}
   alt=""
 />
-</div>
 
 The **Details** button allows you to inspect the configuration of the specific stream.
 
@@ -52,12 +50,10 @@ The data streamer can apply filtering for event data streams based on event type
 Under **Event Options**, you can choose to **Stream all events** or **Stream specific events only**. 
 Selecting the latter will display a searchable dropdown listing all [event types](event-types) available as filters. 
 
-<div className="medium-zoom-image">
 <img
   src={require('../assets/portal-integrations-data-streams-details-events-filter.png').default}
   alt=""
 />
-</div>
 
 :::tip
 You can also create, update, and delete data streams using the Portal.
@@ -123,26 +119,20 @@ There are several ways to view or trigger events within [the emnify Portal](http
 Here's where you can find event information in the Portal: 
 
 - **Dashboard**: Overview of all event activity within your organization. 
-<span class="medium-zoom-image">
 <img
   src={require('./assets/portal-dashboard-events.png').default}
   alt=""
 />
-</span>
 - **Connected Devices** → **Details** → **Events**: List of triggered events for a particular device (also referred to as an "endpoint").
-<span class="medium-zoom-image">
 <img
   src={require('./assets/portal-connected-devices-details-events.png').default}
   alt=""
 />
-</span>
 - **SIM Inventory** → **Details** → **Events**: List of triggered events for a particular SIM card.
-<span class="medium-zoom-image">
 <img
   src={require('./assets/portal-sim-inventory-details-events.png').default}
   alt=""
 />
-</span>
 
 :::info
 Any events triggered in the [Portal](https://portal.emnify.com/) will show **API** as the [event source](getting-started#event-source).
@@ -163,9 +153,7 @@ Only listed for relevant network events.
 - **ID**: A generated unique identifier for the event.
 - **Description**: What happened, why (in some cases), and any additional details associated with the event type.
 
-<div className="medium-zoom-image">
 <img
   src={require('./assets/portal-dashboard-event-details.png').default}
   alt=""
 />
-</div>

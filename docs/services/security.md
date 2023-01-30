@@ -42,25 +42,17 @@ Customers can also configure to use their own DNS, no matter if it is a public o
 The DNS settings can be changed in the Portal → Device Policies → Service Policies → More Options → DNS.
 [emnify Portal](https://portal.emnify.com/) → **Device Policies** [emnify Portal](https://portal.emnify.com/) → **Device Policies** → **New service policy** → **More options**
 
-import AddCustomDNS from './assets/portal-add-custom-dns.png';
-import ConfigCustomDNS from './assets/portal-configure-custom-dns.png';
-import ServicePolicyMoreOptions from './assets/portal-device-policies-new-service-policy-more-options.png';
+<img
+  src={require('./assets/portal-configure-custom-dns.png').default}
+  alt=""
+  style={{ width: 679 }} 
+/>
 
-<div className="medium-zoom-image">
-  <img 
-    src={require('./assets/portal-device-policies-new-service-policy-more-options.png').default}
-    style={{width:700}}
-    alt="Service Policy: More options"
-  />
-  <img
-    src={require('./assets/portal-configure-custom-dns.png').default}
-    style={{width:484}} alt="Configure custom DNS"
-  />
-  <img 
-    src={require('./assets/portal-add-custom-dns.png').default}
-    style={{width:679}}
-    alt="Add custom DNS" />
-</div>
+<img
+  src={require('./assets/portal-add-custom-dns.png').default}
+  alt=""
+  style={{ width: 679 }} 
+/>
 
 <!-- TODO: Recreate dns_setting.png (Custom DNS setting configuration) -->
 

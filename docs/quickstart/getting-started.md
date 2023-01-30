@@ -9,7 +9,7 @@ To begin developing your IoT solutions with emnify, you'll need an emnify accoun
 
 ## Order a free Evaluation SIM package
 
-![FREE Evaluation SIM Package](assets/portal-order-evaluation-pack.png)
+![Claim your free evaluation package with 3 triple-cut SIMs to kickstart your well-managed IoT journey. Includes: Free 3 triple-cut SIMs, form factor (Nano, Micro, Mini), our full coverage, and global fast shipping.](assets/portal-order-evaluation-pack.png)
 
 You can order your free Evaluation SIM package on the emnify Portal with which you can test all emnify services.
 Currently, the 3 triple-cut SIM cards can be delivered to most destinations at no charge.
