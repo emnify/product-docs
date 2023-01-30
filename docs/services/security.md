@@ -48,6 +48,8 @@ The DNS settings can be changed in the Portal → Device Policies → Service Po
   style={{ width: 679 }} 
 />
 
+---
+
 <img
   src={require('./assets/portal-add-custom-dns.png').default}
   alt=""
