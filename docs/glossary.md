@@ -62,6 +62,7 @@ A hierarchical decentralized naming system for computers, services, or any resou
 
 ## Dynamic IP  
 An automtaically assigned IP address that is subject to change without notice.
+They are assigned using either DHCP or PPPoE.
 See also [Static IP](#static-ip).
 
 ## eDRX - Extended discontinuous reception  
