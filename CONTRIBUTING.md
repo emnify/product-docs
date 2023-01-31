@@ -20,6 +20,12 @@ Please read our [Code of Conduct](https://github.com/EMnify/.github/blob/add-cod
   - [Navigate to the containing folder](#navigate-to-the-containing-folder)
   - [Name your file](#name-your-file)
   - [Propose new file](#propose-new-file)
+- [The review process](#the-review-process)
+  - [Ready for review](#ready-for-review)
+  - [Maintainers and reviewers](#maintainers-and-reviewers)
+  - [Submitting additional changes](#submitting-additional-changes)
+  - [Resolving open conversations](#resolving-open-conversations)
+  - [Approval](#approval)
 - [Previewing the documentation site](#previewing-the-documentation-site)
   - [Installation](#installation)
     - [Git](#git)
@@ -90,6 +96,7 @@ In this example, GitHub automatically created the branch name **patch-1** for us
 Select **Create pull request** to continue.
 
 ![github-comparing-changes](https://user-images.githubusercontent.com/123376330/215520267-02cb74ab-0877-4ba0-98a1-3411728bb5e5.png)
+
 ### Open a pull request
 
 Once you select **Create pull request**, you will be presented with the **Open a pull request** page.
@@ -160,6 +167,76 @@ From the **Comparing changes** page, you will select **Create pull request** and
 
 ![github-comparing-changes-new](https://user-images.githubusercontent.com/49970529/215493175-d5c10247-7be1-4ecb-9173-773f3c06f1fa.png)
 
+## The review process
+
+After you have created your PR, the workflow is driven by cycles of content updates and reviews.
+
+### Ready for review
+
+If you encounter an unanticipated need to make extensive changes to the PR branch that will likely delay the start of the review, please choose **Convert to draft**:
+
+![github-convert-to-draft](https://user-images.githubusercontent.com/49970529/215772000-384e6ea2-bf31-4107-aa41-3496236048be.png)
+
+In draft mode, the PR will be prominently labeled accordingly.
+When you have concluded your work, just select **Ready for review**. 
+
+![git-pr-wip](https://user-images.githubusercontent.com/49970529/215799785-66620827-c3fa-4a5f-8bf7-511c345da91e.png)
+
+### Maintainers and reviewers
+
+A member of our documentation will need to run the Test deployment script to verify that your changes will not break the build process.
+
+![github-need-maintainer](https://user-images.githubusercontent.com/49970529/215772424-af3720d3-15d9-455f-aaed-e653cbec6c37.png)
+
+Since we closely monitor the queue of PRs, it won't be long before a reviewer is assigned to your PR and has run the **Test deployment** script.
+
+![github-maintainer-approved-action](https://user-images.githubusercontent.com/49970529/215775389-ab26caac-c05f-4b4e-ba9a-796ae7873e87.png)
+
+### Submitting additional changes
+
+If you are working from a forked repository on an existing PR branch, navigate to *your* GitHub repository and find the branch assigned to your PR.
+In this example, the branch is **patch-3**: 
+
+![github-new-changes](https://user-images.githubusercontent.com/49970529/215782505-d323ec93-2ad2-4235-91b6-cae9761338a2.png)
+
+After navigating to the desired file, apply your changes, then scroll to the bottom of the GitHub page to add the commit title and details.
+When finished, choose **Commit changes**.
+
+Note: If you want to confirm which repository/branch you are on without having to scroll to the top of the page, this information can be found in the URL.
+
+![github-commit-new-changes](https://user-images.githubusercontent.com/49970529/215787839-7f19cbbb-3912-42cb-935e-b43be2462823.png)
+
+### Resolving open conversations
+
+The reviewer may ask you to make additional changes before we can merge your PR.
+If the reviewer supplied suggestions that can be applied, you can easily choose **Apply suggestion** directly through the UI.
+This will automatically commit the change and resolve the conversation.
+If there are several suggestions, they can be batched and applied all at once.
+
+If the reviewer has requested changes in the form of a comment, you will need to follow the instructions supplied when applying the changes.
+See [Submitting additional changes](#submitting-additional-changes) above for how to add changes to the current PR branch.
+
+In the following example, the reviewer opened a comment on line 65 of the text.
+You should always assume the last line shown in the right column of line numbers is the line of interest when changes are requested, unless the comment states something to the contrary. 
+
+![github-changes-requested](https://user-images.githubusercontent.com/49970529/215818630-41594c79-104d-4a58-aeea-2512b761fc69.png)
+
+Regarding the example above, the next steps would be:
+
+1. Choose which one of the tasks to work on.
+1. Edit the text to complete the task (see [Submitting additional changes](#submitting-additional-changes))
+1. Reply to the reviewer's comment with which choice you made.
+1. Select **Resolve conversation**.
+1. Resubmit it for review.
+
+### Approval
+
+Once all open conversations have been resolved, it is still possible that the reviewer might come across something else that needs to be changed, in which case the process will repeat itself again.
+
+If the PR has made it to the stage of **Review**, typically it is only a matter of time before you will see your PR in the list of PRs with a status of **Approved**.
+
+After it has been approved, it is likely to be merged without delay, in which case the changes will be publicly visible.
+
 ## Previewing the documentation site
 
 For larger contributions, especially when adding new pages, it becomes necessary to preview how the new content will look when rendered as HTML, and how it will fit it in with the existing documentation.
@@ -184,14 +261,14 @@ If you do not already have Git installed, please follow the installation steps s
 
 Clone your forked `product-docs` repository
 
-- Open your terminal (or PowerShell).
-- Navigate to the location where you want the repository to reside.
-- Issue the following command after you have replaced `yourUsername` with your actual GitHub username:
+1. Open your terminal (or PowerShell).
+1. Navigate to the location where you want the repository to reside.
+1. Issue the following command after you have replaced `yourUsername` with your actual GitHub username:
 
 ```
 git clone https://github.com/yourUsername/product-docs.git
 ```
-Then navigate to the repository using
+Then navigate to the repository using:
 
 ```
 cd product-docs
@@ -200,7 +277,7 @@ cd product-docs
 Change this Git configuration setting to avoid problems on macOS and Windows platforms:
 
 ```
-git config core.ignorecase false
+git config core.ignoreCase false
 ```
 
 #### Node.js
