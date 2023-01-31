@@ -25,7 +25,7 @@ Gives information about the registration status and access technology of the ser
 A part of [GSM](#gsm---global-system-for-mobile-communications) infrastructure, validates any SIM card attempting network connection when a phone has a live network signal.
 
 ## BIC - Batch identification code  
-A unique code for ordered SIM cards used to register the SIM cards on the [emnify Portal](https://portal.emnify.com/sim-inventory).
+A unique code for ordered SIM cards used to register the SIM cards on the [**SIM Inventory** page of the emnify Portal](https://portal.emnify.com/sim-inventory).
 
 ## Callback URL  
 URL that will be called by a service to send and receive data related to an event that caused this action.

@@ -24,7 +24,7 @@ See the [Data Streamer documentation](../data-streamer/getting-started) to learn
 ### Managing event data streams in the Portal
 
 To manage your data streams, log in to your [emnify Portal](https://portal.emnify.com/) account. 
-Then, navigate to the [**Integrations**](https://portal.emnify.com/integrations) page by clicking the **Integrations** menu item in the sidebar.
+Then, navigate to the [**Integrations** page](https://portal.emnify.com/integrations) by clicking the **Integrations** menu item in the sidebar.
 
 If there are no data streams configured, the **Data Streams** panel displays all available connection types as tiles.
 
@@ -112,7 +112,7 @@ These event lists can be filtered, sorted, and paged according to query paramete
 
 ## emnify Portal
 
-There are several ways to view or trigger events within [the emnify Portal](https://portal.emnify.com/). 
+There are several ways to view or trigger events within the [emnify Portal](https://portal.emnify.com/). 
 
 ### Events in the Portal
 

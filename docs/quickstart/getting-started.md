@@ -15,7 +15,7 @@ You can order your free Evaluation SIM package on the emnify Portal with which y
 Currently, the 3 triple-cut SIM cards can be delivered to most destinations at no charge.
 For other destinations, we do charge a small shipping fee.
 
-Log into your [emnify account](https://portal.emnify.com/sign) and follow these steps:
+[Log into your emnify account](https://portal.emnify.com/sign) and follow these steps:
 
 1. On the dashboard, click on order on **Get your free SIMs**
 1. Select the **Free Evaluation Package with 3 Triple-cut SIMs**

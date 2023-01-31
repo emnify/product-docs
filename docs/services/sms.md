@@ -25,7 +25,7 @@ You can send and receive SMSs of your devices through 3 different interfaces Por
 
 ## emnify Portal
 
-In the [Portal](https://portal.emnify.com/) → [**Connected Devices**](https://portal.emnify.com/connected-devices) you can access the SMS console and directly send SMS to the devices. 
+In the [emnify Portal](https://portal.emnify.com/) → [**Connected Devices**](https://portal.emnify.com/connected-devices) you can access the SMS console and directly send SMS to the devices. 
 The sender can be configured as well as the console will show if the SMS is delivered or not.
 You will see all SMSs that the device receives sends out.
 
@@ -125,7 +125,7 @@ The SMS will then be delivered over the webhook.
 Instead of implementing the APIs in your application, emnify and Zapier provide a no-code alternative to automate SMS workflows.
 Zapier has a concept of triggers and actions – when a trigger happens multiple actions can be based on it – taking content from previous steps.
 Sending SMS to your devices is available as an action in Zapier.
-In the **No-Code-Workflows** list of [Portal Integrations](https://portal.emnify.com/integrations), select the following:
+In the **No-Code-Workflows** list on the [**Integrations** page of the emnify Portal](https://portal.emnify.com/integrations), select the following:
 
 <img
   src={require('./assets/portal-integrations-sms-webhooks-zapier.png').default}

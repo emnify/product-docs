@@ -16,8 +16,8 @@ Integrating the Data Streamer API becomes a faster and more secure approach when
 
 ## Data Streamer in the Portal
 
-To [manage your data streams](managing-data-streams), log in to your [emnify Portal](https://portal.emnify.com/sign/) account.
-Then, navigate to the [**Integrations**](https://portal.emnify.com/integrations) page by clicking the **Integrations** menu item in the sidebar.
+To [manage your data streams](managing-data-streams), [log in to your emnify Portal account](https://portal.emnify.com/sign/).
+Then, navigate to the [**Integrations** page](https://portal.emnify.com/integrations) by clicking the **Integrations** menu item in the sidebar.
 
 ### Viewing data streams
 

@@ -57,7 +57,7 @@ You can access your client ID and secret at any time in your Google Cloud Platfo
 
 ## Configure the emnify Portal
 
-1. Log in to the [emnify Portal](https://portal.emnify.com/sign/).
+1. [Log in to the emnify Portal](https://portal.emnify.com/sign/).
 1. Go to **Organization Settings** (building icon) in the top-level navigation and click [**Single Sign-On**](https://portal.emnify.com/organisation-settings/federation).
 1. If you need SSO enabled for your account, [contact support](https://support.emnify.com/). 
 Otherwise, click **Add** under the Google SSO provider.

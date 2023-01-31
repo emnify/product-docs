@@ -16,7 +16,7 @@ For GPS vendors that aren't listed, please consult their respective manual and c
 Configuring the APN for Teltonika GPS trackers can be done through:
 
 1. Teltonika Configurator over a USB, Bluetooth connection
-1. Via the SMS console through the [emnify Portal](https://portal.emnify.com/connected-devices)
+1. Via the SMS console through the [**Connected Devices** page of the emnify Portal](https://portal.emnify.com/connected-devices)
 1. Via the [emnify SMS API](https://cdn.emnify.net/api/doc/swagger.html#/Endpoint) or [Zapier Integration](https://zapier.com/apps/emnify/integrations/sms) (when automating the configuration)
 
 Newer Teltonika GPS versions automatically detect the emnify APN setting.
@@ -53,7 +53,7 @@ Refer to the [Teltonika FMB Device Family Parameter list](https://wiki.teltonika
 Configuring the APN for Ruptela GPS trackers can be done through:
 
 1. Ruptela Device Center over a USB, Bluetooth connection
-1. Via the SMS console through the [emnify Portal](https://portal.emnify.com/connected-devices)
+1. Via the SMS console through the [**Connected Devices** page of the emnify Portal](https://portal.emnify.com/connected-devices)
 1. Via the [emnify SMS API](https://cdn.emnify.net/api/doc/swagger.html#/Endpoint) or [Zapier Integration](https://zapier.com/apps/emnify/integrations/sms) (when automating the configuration)
 
 When the GPS tracker is turned on for the first time after the SIM is installed, it shows the status **Attached** in the emnify Portal.
@@ -78,7 +78,7 @@ setconnection em
 
 Configuring the APN for Concox GPS trackers can be done:
 
-1. Via the SMS console through the [emnify Portal](https://portal.emnify.com/connected-devices)
+1. Via the SMS console through the [**Connected Devices** page of the emnify Portal](https://portal.emnify.com/connected-devices)
 1. Via the [emnify SMS API](https://cdn.emnify.net/api/doc/swagger.html#/Endpoint) or [Zapier Integration](https://zapier.com/apps/emnify/integrations/sms) (when automating the configuration)
 
 When the GPS tracker is turned on for the first time after the SIM is installed, it shows the status **Attached** in the emnify Portal.
@@ -106,7 +106,7 @@ The default password is `666666`.
 
 Configuring the APN for Coban GPS trackers can be done:
 
-1. Via the SMS console through the [emnify Portal](https://portal.emnify.com/connected-devices)
+1. Via the SMS console through the [**Connected Devices** page of the emnify Portal](https://portal.emnify.com/connected-devices)
 1. Via the [emnify SMS API](https://cdn.emnify.net/api/doc/swagger.html#/Endpoint) or [Zapier Integration](https://zapier.com/apps/emnify/integrations/sms) (when automating the configuration)
 
 When the GPS tracker is turned on for the first time after the SIM is installed, it shows the status **Attached** in the emnify Portal.
@@ -139,7 +139,7 @@ The default password is `123456`.
 Configuring the APN for Meitrack GPS trackers can be done:
 
 1. Via the Meitrack manager
-1. Via the SMS console through the [emnify Portal](https://portal.emnify.com/connected-devices)
+1. Via the SMS console through the [**Connected Devices** page of the emnify Portal](https://portal.emnify.com/connected-devices)
 1. Via the [emnify SMS API](https://cdn.emnify.net/api/doc/swagger.html#/Endpoint) or [Zapier Integration](https://zapier.com/apps/emnify/integrations/sms) (when automating the configuration)
 
 When the GPS tracker is turned on for the first time after the SIM is installed, it shows the status **Attached** in the emnify Portal.
@@ -173,7 +173,7 @@ Both SMS and super password can be changed and would then need to be replaced in
 
 Configuring the APN for Elinz GPS trackers can be done:
 
-1. Via the SMS console through the [emnify Portal](https://portal.emnify.com/connected-devices) 
+1. Via the SMS console through the [**Connected Devices** page of the emnify Portal](https://portal.emnify.com/connected-devices) 
 1. Via the [emnify SMS API](https://cdn.emnify.net/api/doc/swagger.html#/Endpoint) or [Zapier Integration](https://zapier.com/apps/emnify/integrations/sms) (when automating the configuration)
 
 When the GPS tracker is turned on for the first time after the SIM is installed, it shows the status **Attached** in the emnify Portal.
@@ -199,7 +199,7 @@ The default password is `123456`.
 
 Configuring the APN for Reachfar GPS trackers can be done:
 
-1. Via the SMS console through the [emnify Portal](https://portal.emnify.com/connected-devices)
+1. Via the SMS console through the [**Connected Devices** page of the emnify Portal](https://portal.emnify.com/connected-devices)
 1. Via the [emnify SMS API](https://cdn.emnify.net/api/doc/swagger.html#/Endpoint) or [Zapier Integration](https://zapier.com/apps/emnify/integrations/sms) (when automating the configuration)
 
 When the GPS tracker is turned on for the first time after the SIM is installed, it shows the status **Attached** in the emnify Portal. 
@@ -238,7 +238,7 @@ apn,em# // Send this SMS from the phone
 
 Configuring the APN for Queclink GPS trackers can be done:
 
-1. Via the SMS console through the [emnify Portal](https://portal.emnify.com/connected-devices)
+1. Via the SMS console through the [**Connected Devices** page of the emnify Portal](https://portal.emnify.com/connected-devices)
 1. Via the [emnify SMS API](https://cdn.emnify.net/api/doc/swagger.html#/Endpoint) or Zapier Integration (when automating the configuration)
 
 When the GPS tracker is turned on for the first time after the SIM is installed, it shows the status **Attached** in the emnify Portal.
@@ -258,7 +258,7 @@ The default password is the device model (e.g., `gl200`).
 
 Configuring the APN for Bitrek GPS trackers can be done:
 
-1. Via the SMS console through the [emnify Portal](https://portal.emnify.com/connected-devices)
+1. Via the SMS console through the [**Connected Devices** page of the emnify Portal](https://portal.emnify.com/connected-devices)
 1. Via the [emnify SMS API](https://cdn.emnify.net/api/doc/swagger.html#/Endpoint) or [Zapier Integration](https://zapier.com/apps/emnify/integrations/sms) (when automating the configuration)
 
 When the GPS tracker is turned on for the first time after the SIM is installed, it shows the status **Attached** in the emnify Portal.

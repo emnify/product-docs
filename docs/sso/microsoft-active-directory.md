@@ -108,7 +108,7 @@ Navigate to **Overview** in the sidebar and copy the **Application (client) I
 
 ## Configure the emnify Portal
 
-Log in to your [emnify account](https://portal.emnify.com/sign/), go to Organization Settings (building icon) in the top-level navigation, and click [**Single Sign-On**](https://portal.emnify.com/organisation-settings/federation).
+[Log in to your emnify account](https://portal.emnify.com/sign/), go to Organization Settings (building icon) in the top-level navigation, and click [**Single Sign-On**](https://portal.emnify.com/organisation-settings/federation).
 
 <img
   src={require('./assets/portal-organization-settings-sso.png').default}
