@@ -1,27 +1,27 @@
 /* Links within main page content */
 .pageLink {
-    --ifm-link-decoration: underline;
-  }
-  
-  .pageLink:hover {
-    color: #404067;
-  }
+  --ifm-link-decoration: underline;
+}
+
+.pageLink:hover {
+  color: #404067;
+}
 
 /* Go to homepage button */
 .homepageButton {
-    background: #FFFFFF;
-    border: 1px solid #E0E0E0;
-    color: #263238;
-    font-family: 'Avenir LT Pro', Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    font-weight: 750;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 10px 20px;
-  }
-  
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  color: #263238;
+  font-family: "Avenir LT Pro", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 750;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 20px;
+}
+
 .homepageButton:hover {
-    border: 1px solid #263238;
-    color: #263238;
-    text-decoration: none;
-  }
+  border: 1px solid #263238;
+  color: #263238;
+  text-decoration: none;
+}

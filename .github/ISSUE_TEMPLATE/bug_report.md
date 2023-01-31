@@ -11,21 +11,21 @@ assignees: ''
 
 <!-- Tell us about the bug you found -->
 
-### Steps to Reproduce
+### Steps to reproduce
 
 <!-- Steps for how we can replicate your experience (numbered lists are best) -->
 
-### Expected Result 
+### Expected result
 
 <!-- What did you expect to happen? -->
 
-### Actual Result 
+### Actual result
 
 <!-- What actually happened? -->
 
-### Additional Context
+### Additional context
 
-<!-- 
+<!--
     Anything else that will help us better understand, for example:
       * Information about your local environment
       * Screenshots

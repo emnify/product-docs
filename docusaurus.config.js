@@ -5,8 +5,8 @@ const lightCodeTheme = require("prism-react-renderer/themes/vsLight");
 const config = {
   title: "emnify Documentation",
   tagline: "Developer resources and documentation for the emnify SuperNetwork.",
-  url: "https://emnify.github.io",
-  baseUrl: "/product-docs/",
+  url: "https://docs.emnify.com",
+  baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
@@ -39,36 +39,69 @@ const config = {
     ],
   ],
 
+  scripts: [
+    {
+      type: "text/javascript",
+      src: "https://cdn.cookielaw.org/consent/0c5a33bc-8e12-407d-937d-4e4c9f6e86a0/OtAutoBlock.js",
+      defer: true,
+    },
+    {
+      src: "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js",
+      "data-document-language": true,
+      type: "text/javascript",
+      charset: "UTF-8",
+      "data-domain-script": "0c5a33bc-8e12-407d-937d-4e4c9f6e86a0",
+      defer: true,
+    },
+    {
+      type: "text/javascript",
+      src: "/scripts/optanonWrapper.js",
+      defer: true,
+    },
+    {
+      src: "/scripts/googleTagManager.js",
+      async: true,
+    },
+    {
+      src: "/scripts/jentisTagManager.js",
+    },
+    {
+      type: "text/javascript",
+      src: "/scripts/heapAnalytics.js",
+    },
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       metadata: [
         {
-          name: 'description', 
-          content: 'Check our documentation for emnify API and Services including Data Streamer, Cloud Connect, Security, SIM management.'
+          name: "description",
+          content:
+            "Check our documentation for emnify API and Services including Data Streamer, Cloud Connect, Security, SIM management.",
         },
         {
-          property: 'og:title',
-          content: 'Documentation for Developers | emnify'
+          property: "og:title",
+          content: "Documentation for Developers | emnify",
         },
         {
-          property: 'og:description',
-          content: 'Check our documentation for emnify API and Services including Data Streamer, Cloud Connect, Security, SIM management.'
+          property: "og:description",
+          content:
+            "Check our documentation for emnify API and Services including Data Streamer, Cloud Connect, Security, SIM management.",
         },
         {
-          name: 'twitter:title',
-          content: 'Documentation for Developers | emnify'
+          name: "twitter:title",
+          content: "Documentation for Developers | emnify",
         },
         {
-          name: 'twitter:description',
-          content: 'Check our documentation for emnify API and Services including Data Streamer, Cloud Connect, Security, SIM management.'
+          name: "twitter:description",
+          content:
+            "Check our documentation for emnify API and Services including Data Streamer, Cloud Connect, Security, SIM management.",
         },
-        {
-
-        }
+        {},
       ],
       colorMode: {
-        disableSwitch: true
+        disableSwitch: true,
       },
       navbar: {
         title: "Documentation",
@@ -80,14 +113,14 @@ const config = {
       docs: {
         sidebar: {
           hideable: true,
-          autoCollapseCategories: true
+          autoCollapseCategories: true,
         },
       },
       footer: {
         logo: {
           alt: "",
           src: "img/logo-icon-only-dark.svg",
-          style: { marginTop: "1.5rem" },
+          style: { marginTop: "0.5rem" },
         },
         links: [
           {
@@ -134,21 +167,39 @@ const config = {
             items: [
               {
                 label: "Imprint",
-                href: "https://www.emnify.com/imprint-disclaimer"
+                href: "https://www.emnify.com/imprint-disclaimer",
               },
               {
                 label: "Privacy policy",
-                href: "https://www.emnify.com/privacy-policy"
-              }
-            ]
+                href: "https://www.emnify.com/privacy-policy",
+              },
+              {
+                html: `
+                <button style="visibility:hidden;" id="ot-sdk-btn" class="ot-sdk-show-settings">
+                  Cookie Settings
+                </button>
+              `,
+              },
+            ],
           },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} emnify GmbH. All rights reserved.`,
       },
       prism: {
-        theme: lightCodeTheme
+        theme: lightCodeTheme,
+      },
+      zoom: {
+        // selector: '.markdown :not(em) > img',
+        config: {
+          // Options you can specify via https://github.com/francoischalifour/medium-zoom#options
+          background: {
+            light: "rgb(255, 255, 255)",
+          },
+        },
       },
     }),
+
+  plugins: [require.resolve("docusaurus-plugin-image-zoom")],
 };
 
 module.exports = config;

@@ -15,6 +15,6 @@ assignees: ''
 
 <!-- Why are you proposing this change? What problem would it be solving? -->
 
-### Additional Context
+### Additional context
 
 <!-- Anything else that will help us understand your vision -->

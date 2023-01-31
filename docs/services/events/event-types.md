@@ -1,6 +1,5 @@
 ---
 description: List of all available event types
-toc_max_heading_level: 2
 ---
 
 # Event types
@@ -139,8 +138,9 @@ This request is immediately followed by an `Update location` event.
 After the first authentication, the device will send additional `Update location` events to inform the network about the current location.
 This happens periodically or when entering a new location area.
 
-These `Update location` events register the device in the circuit-switched (CS) domain, allowing the device to send and receive SMS.
-Devices not using 2G or 3G may not register on the CS domain.
+The `Update location` event registers the device in the circuit-switched domain (2G/3G) and packet-switched domain (4G/LTE).
+It enables the network to know the location/region of the device in order to send/retrieve the subscription information.
+In 2G/3G it allows the device to send and receive SMS. 
 
 **Example**: A SIM card has (re)authenticated with a different network element.
 If successful, the device will appear as **Attached** in the [emnify Portal](usage#emnify-portal) and will be ready to receive SMS.
@@ -416,7 +416,9 @@ Similar to the [`Purge location`](#purge-location) event, the `Purge GPRS locati
 
 ### Create PDP Context
 
-Activation (or rejection) of data connectivity.
+A [Packet Data Protocol (PDP) context](/glossary/#pdp-context) allows UE to exchange IP packets over the network.
+
+A `Create PDP Context` event indicates the activation of data connectivity.
 
 **Example**: A device has established a data session and started transferring data.
 This device will appear as **Online** in the [emnify Portal](usage#emnify-portal) as long as there hasn't been a subsequent [Delete PDP Context](#delete-pdp-context) event.

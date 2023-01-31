@@ -24,6 +24,6 @@ The data plane of emnify’s cloud communication platform is distributed across 
 emnify’s distributed data plane enables device data to breakout locally, keeping the customer data within the same region.
 Moreover, it also helps reduce network latency.
 You can either select a specific breakout region or the network automatically selects the breakout region closest to the device.
-This can be done on the emnify Portal → **Service Profile** which is applicable to a group of devices.
+This can be done on the [emnify Portal](https://portal.emnify.com/) → **Device Policies** → **New service policy** which is applicable to a group of devices.
 
-<!-- TODO: Recreate regional.png (Regional Breakout Setting in the emnify Portal) -->
+![Breakout regions](assets/portal-device-policies-breakout-regions.png)
