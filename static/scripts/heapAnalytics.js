@@ -30,4 +30,4 @@
     )
       heap[p[o]] = n(p[o]);
   });
-heap.load(`${secrets.HEAP_ANALYTICS_APP_ID}`);
+heap.load(`${process.env.HEAP_ANALYTICS_APP_ID}`);

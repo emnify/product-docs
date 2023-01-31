@@ -59,15 +59,15 @@ const config = {
       defer: true,
     },
     {
-      type: "text/javascript",
-      src: "/scripts/heapAnalytics.js",
-    },
-    {
       src: "/scripts/googleTagManager.js",
       async: true,
     },
     {
       src: "/scripts/jentisTagManager.js",
+    },
+    {
+      type: "text/javascript",
+      src: "/scripts/heapAnalytics.js",
     },
   ],
 
@@ -118,9 +118,9 @@ const config = {
       },
       footer: {
         logo: {
-          alt: '',
-          src: 'img/logo-icon-only-dark.svg',
-          style: { marginTop: '0.5rem' },
+          alt: "",
+          src: "img/logo-icon-only-dark.svg",
+          style: { marginTop: "0.5rem" },
         },
         links: [
           {
@@ -193,13 +193,13 @@ const config = {
         config: {
           // Options you can specify via https://github.com/francoischalifour/medium-zoom#options
           background: {
-            light: 'rgb(255, 255, 255)',
+            light: "rgb(255, 255, 255)",
           },
         },
       },
     }),
 
-  plugins: [require.resolve('docusaurus-plugin-image-zoom')],
+  plugins: [require.resolve("docusaurus-plugin-image-zoom")],
 };
 
 module.exports = config;
