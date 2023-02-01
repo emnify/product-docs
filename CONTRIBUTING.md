@@ -120,13 +120,16 @@ Feel free to add any other headings, screenshots, images, diagrams, etc., that m
 
 ### Pull request page
 
-Immediately after creating the PR, GitHub takes you to the pull request details page.
-You may want to bookmark this page since it is where you can read comments from reviewers and provide any additional information we might request.
+Immediately after creating the PR, GitHub takes you to its details page.
+This is where you will receive feedback from reviewers and find status updates.
 
 Please note the tabs on this page:
 
-- **Conversation**: Where all feedback, review comments, and general communication takes place
-- **Commits**: Each time you update your changes, they can be viewed here.
+- **Conversation**:
+  - PR description
+  - Activity log, including each new commit
+  - Communication, i.e., conversations between the reviewer(s) and the PR assignee(s)
+- **Commits**: List of all commits
 - **Checks**: If there are any syntax errors that would break the documentation build, they can be see here.
 - **Files changed**: Very useful for PRs that involve changes needed in multiple files
 
