@@ -213,11 +213,13 @@ Note: If you want to confirm which repository/branch you are on without having t
 
 The reviewer may ask you to make additional changes before we can merge your PR.
 If the reviewer supplied suggestions that can be applied, you can easily choose **Apply suggestion** directly through the UI.
-This will automatically commit the change and resolve the conversation.
+This will automatically commit the change and [resolve](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/commenting-on-a-pull-request#resolving-conversations) the conversation.
 If there are several suggestions, they can be batched and applied all at once.
 
 If the reviewer has requested changes in the form of a comment, you will need to follow the instructions supplied when applying the changes.
 See [Submitting additional changes](#submitting-additional-changes) above for how to add changes to the current PR branch.
+
+**It is important that you [resolve](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/commenting-on-a-pull-request#resolving-conversations) all open conversations before requesting another review.**
 
 In the following example, the reviewer opened a comment on line 65 of the text.
 You should always assume the last line shown in the right column of line numbers is the line of interest when changes are requested, unless the comment states something to the contrary. 
@@ -231,6 +233,7 @@ Regarding the example above, the next steps would be:
 1. Reply to the reviewer's comment with which choice you made.
 1. Select **Resolve conversation**.
 1. Resubmit it for review.
+
 
 ### Approval
 
@@ -286,6 +289,7 @@ git config core.ignoreCase false
 #### Node.js
 
 Install [Node.js](https://nodejs.org/en/about/).
+After installation, confirm that your Node.js version meets the [Docusaurus.js requirements](https://docusaurus.io/docs/installation#requirements).
 
 #### yarn
 
