@@ -8,6 +8,7 @@ Please read our [Code of Conduct](https://github.com/EMnify/.github/blob/add-cod
 ## Table of contents
 
 - [The basics](#the-basics)
+- [Notice for internal contributors](#notice-for-internal-contributors)
 - [Updating the documentation](#updating-the-documentation)
   - [Navigate to the file you wish to edit](#navigate-to-the-file-you-wish-to-edit)
   - [GitHub will fork the repository for you](#github-will-fork-the-repository-for-you)
@@ -47,6 +48,15 @@ If you haven't worked with [Markdown](https://daringfireball.net/projects/markdo
 - [Extended syntax](https://www.markdownguide.org/extended-syntax/)
 - [Markup reference for GitHub Docs](https://github.com/github/docs/blob/main/contributing/content-markup-reference.md) used in GitHub documents and comments
 - [Docusaurus Markdown Features](https://docusaurus.io/docs/markdown-features) used in creating content for the emnify Documentation site
+
+## Notice for internal contributors
+
+If you are part of our internal emnify team, please request access to the emnify GitHub organization via Sharepoint.
+
+**Notify us when your account is active before taking any further action.**
+
+Once we have given you the appropriate permissions, you can work directly with the repository without any need to fork it.
+Consequently, please disregard any references in this guide to "your forked repository".
 
 ## Updating the documentation
 
@@ -289,7 +299,7 @@ git config core.ignoreCase false
 #### Node.js
 
 Install [Node.js](https://nodejs.org/en/about/).
-After installation, confirm that your Node.js version meets the [Docusaurus.js requirements](https://docusaurus.io/docs/installation#requirements).
+After installation, confirm that your Node.js version meets the [Docusaurus requirements](https://docusaurus.io/docs/installation#requirements).
 
 #### yarn
 
