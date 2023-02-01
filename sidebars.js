@@ -98,7 +98,7 @@ const sidebars = {
         "services/user-management",
         "services/business-intelligence-and-analytics-reports",
         "services/no-code-workflow-automation",
-        "services/sim-life-cycle-management",
+        "services/sim-lifecycle-management",
         "services/endpoint-management-and-group-policies",
       ],
     },
