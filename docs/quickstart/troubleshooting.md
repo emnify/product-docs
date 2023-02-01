@@ -3,7 +3,7 @@ description: Tips and solutions for resolving common issues
 ---
 # Troubleshooting
 
-When you experience issues while connecting your device for the first time, there are several common patterns that can be identified by looking at the **Connected Device** section in the Portal.
+When you experience issues while connecting your device for the first time, there are several common patterns that can be identified by looking at [**Connected Devices**](https://portal.emnify.com/connected-devices) in the Portal.
 If you do not have any entry in the connected devices, go back to [Creating a Device](devices/creating-a-device) and assign the SIM.
 
 The device will show different icons that indicate the status
@@ -58,6 +58,6 @@ Also, verify that the network is on emnify’s [NB-IoTcoverage](https://www.emni
 ## Other general troubleshooting tips
 
 - After configuration changes, make sure they are correctly applied on the device (e.g., with a reboot).
-- Clicking the reset connectivity icon on **Connected Devices** can also reset the network state and allow your device to freshly reattach.
+- Clicking the reset connectivity icon on [**Connected Devices**](https://portal.emnify.com/connected-devices) can also reset the network state and allow your device to freshly reattach.
 - The issue may only be present with one network or in the specific location (e.g., due to high interference for this network).
 You can use the Operator Blacklist to block the network and force the change to a different network.

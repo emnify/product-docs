@@ -16,7 +16,11 @@ The emnify platform supports:
 
 The scenarios above can be activated and deactivated in the device policies to prevent misuse (e.g., P2P SMS).
 
-You can send and receive SMSs of your devices through 3 different interfaces Portal, SMS APIs, and Zapier.
+You can send and receive SMSs of your devices through 3 different interfaces:
+
+- [emnify Portal](#emnify-portal)
+- [emnify SMS API and webhook](#emnify-sms-rest-api-and-webhook)
+- [Zapier SMS integration](#zapier-sms-integration)
 
 <!--  
 ![sms options](assets/sms_options.png)  
@@ -49,7 +53,7 @@ The SMS history and input field at the bottom of the SMS console is similiar to 
   style={{ width: 575 }}
 />
 
-When you select (check) one or more devices in the list of connected devices, a group of menu items will appear that includes **SMS**.
+When you select (check) one or more devices in the list of [**Connected Devices**](https://portal.emnify.com/connected-devices), a group of menu items will appear that includes **SMS**.
 
 ![Portal screenshot of the Connected Devices page. A top-level banner shows the number of devices selected and a list of options. Options from left to right: Reset, SMS, Device, IMEI Lock, More. SMS is selected.](assets/portal-connected-devices-sms.png)
 
@@ -74,7 +78,7 @@ However, you will receive a brief notification regarding the status of the SMS s
 
 For sending SMS through the REST API, check out the [Sending and receiving SMS](#_sending_and_receiving_sms) section.
 
-For receiving SMS and delivery notifications for SMS in your application, you can use the SMS webhook which can be configured under **Device Policies** → **Service Policies** → **SMS Interface**.
+For receiving SMS and delivery notifications for SMS in your application, you can use the SMS webhook which can be configured under [**Device Policies**](https://portal.emnify.com/device-policies) → **Service Policies** → **SMS Interface**.
 
 
 <img

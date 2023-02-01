@@ -6,14 +6,18 @@ import Uncheck from './assets/x-mark-24.png';
 
 # User management
 
-The emnify platform is a powerful application to control the connectivity of devices of a production system.
-As different types of personas (operations, finance, development, product) use the portal, emnify offers 3 levels of access to the use and manage emnify features and functionality.
+The [emnify Portal](https://portal.emnify.com/) is a powerful application to control the connectivity of devices of a production system.
+
+Employees across your organization may use the Portal, from operations and finance to development and product.
+That's why emnify offers 3 levels of access (referred to as **Roles**) to use and manage Portal features and functionality:
 
 1. Admin (has access to all services and user management)
 1. Observer (has access to limited services)
 1. User (has access to limited services)
 
-Below is a table that describes the permissions for different users.
+You can view and edit these roles on the [**Employees** page](https://portal.emnify.com/organisation-settings/users) under your **Organization settings**. 
+
+The following table describes the permissions for different roles.
 
 | Action | Admin | Observer | User |
 | ------ | :---: | :------: | :--: |

@@ -67,4 +67,4 @@ The selection of the preferred IMSI for each country is based on multiple factor
 - IMSI that has the best availability of radio access types (LTE, NB-IoT, LTE-M) or features (PSM/eDRX)
     
 The Multi-IMSI applet is transparent for the device and has no impact on the device operation. 
-In order to analyze which IMSI is currently in use, you can either check in the **emnify Portal** → **Connected devices** → **Details** or also query the device directly using the AT-command `AT+CIMI?`.
+In order to analyze which IMSI is currently in use, you can either check in the [**emnify Portal**](https://portal.emnify.com/) → [**Connected Devices**](https://portal.emnify.com/connected-devices) → **Details** or also query the device directly using the AT-command `AT+CIMI?`.

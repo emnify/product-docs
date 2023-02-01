@@ -12,8 +12,8 @@ description: Must-knows for working with the Python SDK
 | Device Status  | Primary way to control connectivity. It can be either **Enabled** or **Disabled**. When **Enabled**, a device that has a SIM assigned can go online. On the other hand, when **Disabled**, the device doesn't get any service.  |
 | SIM  | Represents a physical or eSIM issued by emnify. [Learn more about SIM cards](https://support.emnify.com/hc/en-us/sections/360000642374-SIM-cards).  |
 | SIM Status  | Status of the SIM's phase in the [SIM lifecycle](https://www.emnify.com/blog/sim-lifecycle-management). When using the SDK, avoid changing the SIM status directly. Instead, change it using the device status.  |
-| Tariff Profile  | Controls where and how your devices have coverage. Referred to as **Coverage Policy** in the Enterprise Portal. [Learn more about tariff profiles](https://cdn.emnify.net/api/doc/tariff-profile.html).  |
-| Service Profile  | Defines available services (e.g., SMS, 4G, etc.) and traffic limits for a device. Referred to as **Service Policy** in the Enterprise Portal. [Learn more about service profiles](https://cdn.emnify.net/api/doc/service-profile.html).  |
+| Tariff Profile  | Controls where and how your devices have coverage. Referred to as [**Coverage Policy** in the emnify Portal](https://portal.emnify.com/device-policies). [Learn more about tariff profiles](https://cdn.emnify.net/api/doc/tariff-profile.html).  |
+| Service Profile  | Defines available services (e.g., SMS, 4G, etc.) and traffic limits for a device. Referred to as [**Service Policy** in the emnify Portal](https://portal.emnify.com/device-policies). [Learn more about service profiles](https://cdn.emnify.net/api/doc/service-profile.html).  |
 | Blacklist Operators  | Method that allows you to restrict device connectivity to a specific operator or group of operators.  |
 | Operator  | Underlying mobile network operator (MNO) used to provide connectivity. Explore operator coverage by country and region on [our pricing page](https://www.emnify.com/pricing).  |
 | SMS  | [Learn more about SMS](../../services/sms).  |

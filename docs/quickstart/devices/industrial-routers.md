@@ -9,7 +9,7 @@ Newer firmware version of the Teltonika Routers should automatically detect the 
 Nevertheless, in case the APN is not correctly detected, it can be configured with 3 methods:
 
 1. With the Teltonika WebUI over Wifi, Ethernet
-1. Via the SMS console through the emnify Portal (most simple)
+1. Via the SMS console through the [**Connected Devices** page of the emnify Portal](https://portal.emnify.com/connected-devices)
 1. via the emnify SMS API or Zapier Integration (when automating the configuration)
 
 

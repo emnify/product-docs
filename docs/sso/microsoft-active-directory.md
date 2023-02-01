@@ -9,11 +9,13 @@ This guide walks through enabling single sign-on (SSO), so your organization can
 **Prerequisites:**
 
 - An Azure Subscription with an Active Directory license
-- An account in the emnify Portal using the same email address as the one used to sign in to Microsoft Azure
+- An [emnify Portal account](https://portal.emnify.com/sign/up/) using the same email address as the one used to sign in to Microsoft Azure
 
 :::caution
 If your email address used in the emnify Portal differs from the one used to log in to Azure, this setup won't work.
-Instead, add an additional user to the emnify Portal with **Administrator** privileges.
+You can verify your email on the [**User Settings** page](https://portal.emnify.com/user-settings).
+
+Instead, [add an additional user](https://portal.emnify.com/organisation-settings/users) to the emnify Portal with the **Administrator** role.
 :::
 
 ## SSO with Microsoft

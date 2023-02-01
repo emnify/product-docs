@@ -37,4 +37,4 @@ On a device level additional policies can be defined:
 - Network Blacklist
 - IP address
 
-If the individual device policies are to be applied across multiple devices, a bulk action is also available in the portal.
+If the individual device policies are to be applied across multiple devices, a bulk action is also available in the [**Device Policies** page of the emnify Portal](https://portal.emnify.com/device-policies).

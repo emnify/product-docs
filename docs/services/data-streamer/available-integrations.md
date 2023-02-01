@@ -50,7 +50,7 @@ Once you have configured your data stream and are storing event and usage data i
 :::tip Step-by-step guide
 [How to analyze emnify usage data and events in AWS QuickSight?](https://support.emnify.com/hc/en-us/articles/360010604820-How-to-analyze-emnify-usage-data-and-events-in-AWS-Quicksight-)
 
-**_Warning: This guide uses a legacy version of the emnify Portal._**
+**_Warning: This guide uses a legacy version of the [emnify Portal](https://portal.emnify.com/)._**
 :::
 
 ## Azure
