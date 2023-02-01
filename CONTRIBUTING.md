@@ -197,7 +197,7 @@ When you have concluded your work, just select **Ready for review**.
 
 ### Maintainers and reviewers
 
-A member of our documentation will need to run the Test deployment script to verify that your changes will not break the build process.
+A member of our documentation team will need to run the Test deployment script to verify that your changes will not break the build process.
 
 ![github-need-maintainer](https://user-images.githubusercontent.com/49970529/215772424-af3720d3-15d9-455f-aaed-e653cbec6c37.png)
 
