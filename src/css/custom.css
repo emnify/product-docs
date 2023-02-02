@@ -131,7 +131,7 @@
   fill: #263238;
 }
 
-/* Details and summary elements */
+/* Details and summary elements - Example JSON responses */
 .custom-details-example-json-response {
   background-color: #0000350f;
   border-color: #000035 !important;
@@ -144,6 +144,25 @@
 
 .custom-details-example-json-response .collapsibleContent_i85q {
   border-top: 1px solid #000035 !important;
+}
+
+/* Details and summary elements - Troubleshooting */
+.custom-details-troubleshooting {
+  background-color: #f2740014;
+  border-color: #f27400 !important;
+  color: #263238;
+}
+
+.custom-details-troubleshooting summary::before {
+  border-color: transparent transparent transparent #f27400 !important;
+}
+
+.custom-details-troubleshooting .collapsibleContent_i85q {
+  border-top: 1px solid #f27400 !important;
+}
+
+.custom-details-troubleshooting .collapsibleContent_i85q a {
+  text-decoration-color: #f27400 !important;
 }
 
 /* Collapse sidebar button */
