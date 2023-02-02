@@ -145,7 +145,7 @@ A method of wireless distribution of the software, configuration settings, or en
 A technology that allows changes to the SIM memory [over–the–air](#ota---over–the–air).
 
 ## OpenVPN  
-An open source software application that implements [virtual private network (VPN)](#vpn) techniques for creating secure point–to–point or site–to–site connections in routed or bridged configurations and remote access facilities.
+An open-source software application that implements [virtual private network (VPN)](#vpn) techniques for creating secure point–to–point or site–to–site connections in routed or bridged configurations and remote access facilities.
 
 ## P2P SMS - Peer–to–Peer SMS  
 SMS exchanged between devices.
