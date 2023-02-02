@@ -6,23 +6,25 @@ description: Step-by-step guide for installing and using the SDK
 
 ## Installation
 
-### Requirements
+The emnify Python SDK is open source and the [source code is available on GitHub](https://github.com/emnify/emnify-sdk-python).
+
+### Prerequisites
 
 - Python ([version 3.6.0](https://www.python.org/downloads/release/python-360/) or higher)
 
-### From source code
+### Install from source code
 
-```bash
+```shell
 git clone https://github.com/emnify/emnify-sdk-python.git
 cd emnify-sdk-python
 python setup.py install
 ```
 
-### Using PyPI
+### Install with pip
 
 The emnify Python SDK is also available on [PyPI as `emnify-sdk`](https://pypi.org/project/emnify-sdk/):
 
-```bash
+```shell
 pip install emnify-sdk
 ```
 

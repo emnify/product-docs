@@ -143,7 +143,7 @@ const sidebars = {
             type: "generated-index",
             title: "emnify Python SDK",
             description:
-              "The alpha release of the new emnify Python software development kit (SDK) for SIM state management and device connectivity operations.",
+              "The emnify Python software development kit (SDK) for SIM state management and device connectivity operations.",
             slug: "/sdks/python",
           },
           items: [
