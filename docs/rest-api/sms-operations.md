@@ -1,5 +1,6 @@
 ---
 description: Performing SMS related operations with the API 
+displayed_sidebar: restSidebar
 ---
 
 # Sending and receiving SMS

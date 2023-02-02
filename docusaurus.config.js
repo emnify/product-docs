@@ -109,6 +109,14 @@ const config = {
           alt: "emnify Documentation – Home",
           src: "img/logo-word-blue-295x80.png",
         },
+        items: [
+          {
+            type: "docSidebar",
+            position: "left",
+            sidebarId: "restSidebar",
+            label: "REST API",
+          },
+        ],
       },
       docs: {
         sidebar: {
