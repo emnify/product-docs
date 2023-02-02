@@ -190,7 +190,5 @@ div[title="Expand sidebar"]:hover {
 
 /* Active navigation bar links */
 .navbar__link--active {
-  /* TODO: Update with new design token colors */
-  color: #159d53 !important;
   font-weight: bold;
 }
