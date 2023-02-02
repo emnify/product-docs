@@ -132,7 +132,7 @@ const sidebars = {
         type: "generated-index",
         title: "emnify SDKs",
         description:
-          "The emnify software development kits (SDKs) allow developers to manage their IoT devices using an intuitive set of APIs, including SIM state management and device connectivity operations.",
+          "The emnify software development kits (SDKs) allow developers to manage their IoT devices using an intuitive set of APIs, including SIM state management and device connectivity operations",
         slug: "/sdks",
       },
       items: [
@@ -143,7 +143,7 @@ const sidebars = {
             type: "generated-index",
             title: "emnify Python SDK",
             description:
-              "The emnify Python software development kit (SDK) for SIM state management and device connectivity operations.",
+              "The emnify Python software development kit (SDK) for SIM state management and device connectivity operations",
             slug: "/sdks/python",
           },
           items: [
@@ -170,7 +170,7 @@ const sidebars = {
       link: {
         type: "generated-index",
         description:
-          "With Single Sign-On (SSO) enabled, your organization can access the emnify Portal using your existing account credentials.",
+          "With Single Sign-On (SSO) enabled, your organization can access the emnify Portal using your existing account credentials",
         slug: "/sso",
         title: "Single Sign-On",
       },
