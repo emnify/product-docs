@@ -133,17 +133,35 @@ Feel free to add any other headings, screenshots, images, diagrams, etc., that m
 Immediately after creating the PR, GitHub takes you to its details page.
 This is where you will receive feedback from reviewers and find status updates.
 
-Please note the tabs on this page:
+Please note the 4 tabs on this page:
 
-- **Conversation**:
-  - PR description
-  - Activity log, including each new commit
-  - Communication, i.e., conversations between the reviewer(s) and the PR assignee(s)
-- **Commits**: List of all commits
-- **Checks**: If there are any syntax errors that would break the documentation build, they can be see here.
-- **Files changed**: Very useful for PRs that involve changes needed in multiple files
+![github-pr-tabs](https://user-images.githubusercontent.com/49970529/216594159-9477ff15-701a-4d54-a927-b0fd3727d293.png)
+
+#### Conversation
+
+- PR description
+- Activity log, including each new commit
+- Communication, i.e., conversations between the reviewer(s) and the PR assignee(s)
 
 ![github-opened-pull-request](https://user-images.githubusercontent.com/123376330/215520259-9f02110b-579c-4353-a9cb-6a54e7d22232.png)
+
+#### Commits
+
+This tab provides an uncluttered view of commits ordered from oldest to newest with all other information filtered out.
+Commit details are collapsed by default.
+
+![github-pr-commits-tab-detail](https://user-images.githubusercontent.com/49970529/216596552-26756c50-c9d5-4498-9d95-451eaafb2b63.png)
+
+#### Checks
+The [Test deployment](https://github.com/EMnify/product-docs/actions/workflows/test-deploy.yml) GitHub action is triggered when your changes are pushed.
+If there are any syntax errors that would break the documentation build, you will find details about what went wrong by following the most recent link associated with your PR's name in the [workflow runs](https://github.com/EMnify/product-docs/actions/workflows/test-deploy.yml) table. 
+
+#### Files changed
+
+Very useful for PRs that involve changes needed in multiple files
+
+![github-pr-files-changed-tab](https://user-images.githubusercontent.com/49970529/216598552-8e6b5a88-d503-4c19-aee9-61678e0cfef4.png)
+
 ## Creating new content
 
 The process for creating new content is almost the same as [updating the documentation](#updating-the-documentation).
