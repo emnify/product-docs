@@ -61,7 +61,9 @@ An attack where the attacker sends multiple requests to a web resource with the 
 A hierarchical decentralized naming system for computers, services, or any resource connected to the Internet or a private network to map a hostname to an IP address.
 
 ## Dynamic IP  
-An IP that changes over time.
+An automtaically assigned IP address that is subject to change without notice.
+They are assigned using either DHCP or PPPoE.
+See also [Static IP](#static-ip).
 
 ## eDRX - Extended discontinuous reception  
 A device configuration that specifies the periodicity in which the device listens for incoming data on the radio.
