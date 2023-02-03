@@ -8,7 +8,7 @@ description: Code samples showing how to use the SDK
 
 Follow the steps in the next code block comments to get your devices online.
 
-This example demonstrates complex operations across multiple SDK [Concepts](concepts), such as:
+This example demonstrates complex operations across multiple SDK [Concepts](/sdks/concepts), such as:
 
 - [Device policies](https://portal.emnify.com/device-policies) (configures which services are available and where)
 - SIM registration
