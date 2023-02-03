@@ -8,7 +8,7 @@ To begin developing your IoT solutions with emnify, you'll need an emnify accoun
 [Sign up](https://portal.emnify.com/sign/up) for free to a 60-day trial to use all functionalities.
 
 <details className="custom-details-troubleshooting">
-  <summary>Unable to verify your phone number?</summary>
+  <summary>Need help verifying your phone number?</summary>
     <p>When filling out our <a href="https://portal.emnify.com/sign/up" target="_blank">sign-up form</a>, you may have issues verifying your phone number.</p>
     <p>Here are a few common error messages and what to do if you see them:</p>
     <b>SMS verification not possible</b>

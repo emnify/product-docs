@@ -148,21 +148,21 @@
 
 /* Details and summary elements - Troubleshooting */
 .custom-details-troubleshooting {
-  background-color: #f2740014;
-  border-color: #f27400 !important;
+  background-color: #edf3f8;
+  border-color: #659bdf !important;
   color: #263238;
 }
 
 .custom-details-troubleshooting summary::before {
-  border-color: transparent transparent transparent #f27400 !important;
+  border-color: transparent transparent transparent #659bdf !important;
 }
 
 .custom-details-troubleshooting .collapsibleContent_i85q {
-  border-top: 1px solid #f27400 !important;
+  border-top: 1px solid #659bdf !important;
 }
 
 .custom-details-troubleshooting .collapsibleContent_i85q a {
-  text-decoration-color: #f27400 !important;
+  text-decoration-color: #659bdf !important;
 }
 
 /* Collapse sidebar button */
