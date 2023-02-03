@@ -123,7 +123,7 @@ The [Getting Started guide in the _emnify REST API Documentation_](https://cdn.e
 
 ### Specification and documentation
 
-The [emnify REST API](/rest-api/getting-started) is based on the OpenAPI Specification OAS3.
+The [emnify REST API](/rest-api) is based on the OpenAPI Specification OAS3.
 We also have [interactive API documentation](https://cdn.emnify.net/api/doc/swagger.html).
 
 :::tip

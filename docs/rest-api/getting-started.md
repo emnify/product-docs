@@ -1,6 +1,7 @@
 ---
 description: Introducing the OpenAPI structure and code samples
 displayed_sidebar: restSidebar
+slug: /rest-api/
 ---
 
 # Working with the emnify REST API
