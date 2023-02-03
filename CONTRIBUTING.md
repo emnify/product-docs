@@ -28,11 +28,9 @@ Please read our [Code of Conduct](https://github.com/EMnify/.github/blob/add-cod
   - [Resolving open conversations](#resolving-open-conversations)
   - [Approval](#approval)
 - [Previewing the documentation site](#previewing-the-documentation-site)
-  - [Installation](#installation)
-    - [Git](#git)
+  - [Set up your working environment](#set-up-your-working-environment)
+    - [Software requirements](#software-requirements)
     - [Clone the repository](#clone-the-repository)
-    - [Node.js](#nodejs)
-    - [yarn](#yarn)
   - [Preview the site](#preview-the-site)
     - [Frequently used git commands](#frequently-used-git-commands)
     - [Start previewing](#start-previewing)
@@ -262,7 +260,6 @@ Regarding the example above, the next steps would be:
 1. Select **Resolve conversation**.
 1. Resubmit it for review.
 
-
 ### Approval
 
 Once all open conversations have been resolved, it is still possible that the reviewer might come across something else that needs to be changed, in which case the process will repeat itself again.
@@ -277,31 +274,32 @@ For larger contributions, especially when adding new pages, it becomes necessary
 
 Since the documentation site is built using [Docusaurus](https://docusaurus.io/) which requires Node.js as well as a clone of this repository, there are a few steps needed to set up your environment.
 
-### Installation
+### Set up your working environment
 
 Although the following steps may seem overwhelming at first, they only need to be performed once!
 
-#### Git
+#### Software requirements
 
-If you do not already have Git installed, please follow the installation steps specific to your platform.
-
-- **Windows**: Follow these [instructions](https://www.atlassian.com/git/tutorials/install-git#windows).
-- **macOS**:
-    - Via [homebrew](https://brew.sh/index) if you already have it installed, or
-    - Via [Xcode](https://apps.apple.com/de/app/xcode/) from the App Store.
-- **Linux**: Preinstalled
+- [Git](https://docs.github.com/en/get-started/quickstart/set-up-git)
+- [Node.js](https://nodejs.org/en/download/): After installation, confirm that your Node.js version meets the [Docusaurus requirements](https://docusaurus.io/docs/installation#requirements).
+- [yarn](https://classic.yarnpkg.com/en/docs/install) 
 
 #### Clone the repository
 
-Clone your forked `product-docs` repository
+Clone your forked `product-docs` repository.
+
+**Note**: If you are an internal emnify contributor, you do not need to fork the repository.
 
 1. Open your terminal (or PowerShell).
 1. Navigate to the location where you want the repository to reside.
 1. Issue the following command after you have replaced `yourUsername` with your actual GitHub username:
 
+**Note**: Internal emnify contributors should replace `yourUsername` with `EMnify`.
+
 ```
 git clone https://github.com/yourUsername/product-docs.git
 ```
+
 Then navigate to the repository using:
 
 ```
@@ -313,15 +311,6 @@ Change this Git configuration setting to avoid problems on macOS and Windows pla
 ```
 git config core.ignoreCase false
 ```
-
-#### Node.js
-
-Install [Node.js](https://nodejs.org/en/about/).
-After installation, confirm that your Node.js version meets the [Docusaurus requirements](https://docusaurus.io/docs/installation#requirements).
-
-#### yarn
-
-Follow yarn's [installation instructions](https://classic.yarnpkg.com/en/docs/install) for your platform.
 
 After yarn is installed, you can run yarn to install all the required Node.js applications you need to run your local documentation site on your workstation.
 Docusaurus, including all of its dependencies, will be installed in this step.
