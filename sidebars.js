@@ -28,12 +28,24 @@ const sidebars = {
           },
           items: [
             "quickstart/devices/creating-a-device",
-            "quickstart/devices/getting-the-first-device-online",
-            "quickstart/devices/android",
-            "quickstart/devices/ios-devices",
-            "quickstart/devices/cellular-modules",
-            "quickstart/devices/gps-trackers",
-            "quickstart/devices/industrial-routers",
+            {
+              type: "category",
+              label: "Getting the device online",
+              link: {
+                type: "generated-index",
+                title: "Getting the first device online",
+                slug: "quickstart/devices/apn-configuration",
+                description:
+                  "Configuring SIM-equipped devices with an Access Point Name (APN)",
+              },
+              items: [
+                "quickstart/devices/android",
+                "quickstart/devices/ios-devices",
+                "quickstart/devices/cellular-modules",
+                "quickstart/devices/gps-trackers",
+                "quickstart/devices/industrial-routers",
+              ],
+            },
           ],
         },
         "quickstart/troubleshooting",
