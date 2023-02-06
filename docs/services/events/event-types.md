@@ -1604,7 +1604,7 @@ Triggered through the [emnify User Interface (EUI)](https://support.emnify.com/h
 
 ### Endpoint blocked
 
-Device is blocked from all services after exceeding [device policies](../endpoint-management-and-group-policies) (e.g., reaching its traffic limit).
+Device is blocked from all services after exceeding [device policies](/services/endpoint-management-and-group-policies) (e.g., reaching its traffic limit).
 
 :::tip
 Changing the policies will unblock the device.
