@@ -18,7 +18,7 @@ Using one of the many integrations provides you with complete network transparen
 These integrations also provide insights for IoT remote monitoring and anomaly detection or detailed information about service usage (i.e., data, SMS) and cost per device. 
 
 :::tip
-See the [Data Streamer documentation](../data-streamer/getting-started) to learn more about its benefits and how to get started.
+See the [Data Streamer documentation](/services/data-streamer/getting-started) to learn more about its benefits and how to get started.
 :::
 
 ### Managing event data streams in the Portal
@@ -57,7 +57,7 @@ Selecting the latter will display a searchable dropdown listing all [event types
 
 :::tip
 You can also create, update, and delete data streams using the Portal.
-Learn more in the [Data Streamer usage documentation](../data-streamer/usage#data-streamer-in-the-portal).
+Learn more in the [Data Streamer usage documentation](/services/data-streamer/usage#data-streamer-in-the-portal).
 :::
 
 ## Event API
