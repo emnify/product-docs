@@ -1,6 +1,6 @@
 # Integration guides
 
-emnify services can be easily integrated with your existing infrastructure.
+emnify services can be integrated with your existing infrastructure.
 Here are some step-by-step integration guides to help you along the process.
 
 ## Amazon Web Services
