@@ -206,11 +206,7 @@ const sidebars = {
         },
       ],
     },
-    {
-      type: "doc",
-      label: "Integration guides",
-      id: "integration-guides/index",
-    },
+    "integration-guides/index",
     "glossary",
   ],
   restSidebar: [
