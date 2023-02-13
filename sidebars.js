@@ -206,6 +206,7 @@ const sidebars = {
         },
       ],
     },
+    "how-tos/index",
     "glossary",
   ],
   restSidebar: [
