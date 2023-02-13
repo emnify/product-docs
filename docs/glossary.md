@@ -67,6 +67,15 @@ An IP that changes over time.
 A device configuration that specifies the periodicity in which the device listens for incoming data on the radio.
 Instead of using a periodicity of 2.56ms (DRX) it can be increased up to 40mins, thus reducing power consumption.
 
+## EID - eUICC Identifier
+The eUICC Identifier (EID) provides a unique global serial number for an [eUICC](#euicc---embedded-universal-integrated-circuit-card).
+It has a fixed length of 32 digits, as indicated in the following diagram:
+
+<!-- TODO: Add EID breakdown diagram -->
+
+Unlike the [ICCID](#iccid---integrated-circuit-card-identifier), the EID remains the same throughout the life of the eSIM.
+Therefore, you can use it as a permanent identifier to keep track of your SIM cards.
+
 ## Endpoint  
 A representation of the device which has a SIM installed.
 
@@ -74,7 +83,12 @@ A representation of the device which has a SIM installed.
 The current state of the [endpoint](#endpoint): **Enabled** or **Disabled**.
 
 ## eUICC - Embedded universal integrated circuit card  
-Allows hosting multiple mobile network profiles on the SIM.
+The embedded universal integrated circuit card (eUICC) is a component of a SIM card.
+It allows consumers and IoT manufacturers to provision the SIM with a new [operator profile](https://www.emnify.com/iot-glossary/mno) [over-the-air](#ota---over–the–air).
+
+:::tip Deep dive
+Learn more about the eUICC in our blog post: [What is an eUICC and why does it matter?](https://www.emnify.com/iot-glossary/what-is-an-euicc)
+:::
 
 ## Event log  
 A log that stores all [endpoint](#endpoint) events.
@@ -104,7 +118,12 @@ Part of [GSM](#gsm---global-system-for-mobile-communications) infrastructure.
 A request method supported by the HTTP protocol, which typically includes data in the request body.
 
 ## ICCID - Integrated circuit card identifier  
-A unique number used to identify a SIM card.
+A number used to identify a SIM card.
+
+:::note
+Following the introduction of [eUICC](#euicc---embedded-universal-integrated-circuit-card) SIM cards in 2021, there are situations where the ICCID can no longer be unique. 
+For example, the ICCID value can change when a different [SIM profile](#sim-profile) is provisioned on the eSIM.
+:::
 
 ## IMEI - International mobile equipment identification number  
 A unique number used to identify cellular modems.
