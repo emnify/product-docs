@@ -46,7 +46,7 @@ An SMS/Message icon will appear to the right of the device name.
 <img
   src={require('./assets/portal-connected-devices-details-open-sms-console.png').default}
   alt=""
-  className="img-rounded-border"
+  className="img-border"
   style={{ width: 350 }}
 />
 
@@ -55,7 +55,7 @@ The SMS history and input field at the bottom of the SMS console is similiar to 
 <img
   src={require('./assets/portal-connected-devices-details-sms-console.png').default}
   alt=""
-  className="img-rounded-border"
+  className="img-border"
   style={{ width: 575 }}
 />
 
@@ -72,7 +72,7 @@ This SMS interface does not show a history of messages.
 <img
   src={require('./assets/portal-send-sms-message-text.png').default}
   alt=""
-  className="img-rounded"
+  className="img-border"
   style={{ width: 496 }}
 />
 
@@ -105,7 +105,7 @@ Select **Webhook**, then select  **Configure Webhook**:
 <img
   src={require('./assets/portal-device-policies-configure-webhook.png').default}
   alt=""
-  className="img-rounded-border"
+  className="img-border"
   style={{ width: 399 }}
 />
 
@@ -125,7 +125,7 @@ The SMS will then be delivered over the webhook.
 <img
   src={require('./assets/delivery-notification.png').default}
   alt=""
-  className="img-rounded-border"
+  className="img-border"
   style={{ width: 400 }}
 />
 
@@ -135,7 +135,7 @@ The SMS will then be delivered over the webhook.
 <img
   src={require('./assets/mosms.png').default}
   alt=""
-  className="img-rounded-border"
+  className="img-border"
   style={{ width: 400 }}
 />
 
