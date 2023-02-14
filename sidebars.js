@@ -207,6 +207,7 @@ const sidebars = {
       ],
     },
     "how-tos/index",
+    "integration-guides/index",
     "glossary",
   ],
   restSidebar: [
