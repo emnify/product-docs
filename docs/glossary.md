@@ -71,7 +71,11 @@ Instead of using a periodicity of 2.56ms (DRX) it can be increased up to 40mins,
 The eUICC Identifier (EID) provides a unique global serial number for an [eUICC](#euicc---embedded-universal-integrated-circuit-card).
 It has a fixed length of 32 digits, as indicated in the following diagram:
 
-<!-- TODO: Add EID breakdown diagram -->
+![A 32-digit EID number: "89049011803455664400046832584675". The first 18 digits are the EUM Identification Number (EIN). Within those 18 digits, the first two digits are the Major Industry Identifier (Telecom in this example). The next three digits are the Country Code (GER in this example). The next three digits are the eUICC Manufacturer. The final 10 digits of the EIN contain information about the chip, OS, and its version. After the EIN, the following 11 digits are the EUM Specific Identification Number (ESIN). This value is also the eUICC Individual Identification Number. The final two digits of the EID are the Check Digits.](assets/infographic-eid-digits.png)
+
+:::note
+The EUM specific identification number (ESIN) and check digits are for example purposes only, and the values aren't real.
+:::
 
 Unlike the [ICCID](#iccid---integrated-circuit-card-identifier), the EID remains the same throughout the life of the eSIM.
 Therefore, you can use it as a permanent identifier to keep track of your SIM cards.
@@ -118,11 +122,18 @@ Part of [GSM](#gsm---global-system-for-mobile-communications) infrastructure.
 A request method supported by the HTTP protocol, which typically includes data in the request body.
 
 ## ICCID - Integrated circuit card identifier  
-A number used to identify a SIM card.
+The integrated circuit card identifier (ICCID) is a 18-22 digit code used to identify a SIM card. 
+It includes a SIM card's country, home network, and identification number, as indicated in the following diagram:
+
+![A 20-digit ICCID number: "8983030000080139311". The first two digits are the Major Industry Identifier (Telecom in this example). The next two digits are the Country Code (non-terrestrial). The following two digits are the Issuer Identifier (emnify). After that, the next 11 digits are the Individual Account Identification. The final digit is the Check Digit.](assets/infographic-iccid-digits.png)
 
 :::note
 Following the introduction of [eUICC](#euicc---embedded-universal-integrated-circuit-card) SIM cards in 2021, there are situations where the ICCID can no longer be unique. 
 For example, the ICCID value can change when a different [SIM profile](#sim-profile) is provisioned on the eSIM.
+:::
+
+:::tip Deep dive
+Learn more about the ICCID in our blog post: [What Is an ICCID Number?](https://www.emnify.com/iot-glossary/iccid-number)
 :::
 
 ## IMEI - International mobile equipment identification number  
