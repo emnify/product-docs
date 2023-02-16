@@ -122,18 +122,14 @@ Part of [GSM](#gsm---global-system-for-mobile-communications) infrastructure.
 A request method supported by the HTTP protocol, which typically includes data in the request body.
 
 ## ICCID - Integrated circuit card identifier  
-The integrated circuit card identifier (ICCID) is a 18-22 digit code used to identify a SIM card. 
+The integrated circuit card identifier (ICCID) is a 20-digit code used to identify a SIM card. 
 It includes a SIM card's country, home network, and identification number, as indicated in the following diagram:
 
-![A 20-digit ICCID number: "8983030000080139311". The first two digits are the Major Industry Identifier (Telecom in this example). The next two digits are the Country Code (non-terrestrial). The following two digits are the Issuer Identifier (emnify). After that, the next 11 digits are the Individual Account Identification. The final digit is the Check Digit.](assets/infographic-iccid-digits.png)
+![A 20-digit ICCID number: "89883030000080139311". The first two digits are the Major Industry Identifier (Telecom in this example). The next three digits are the Country Code (non-terrestrial). The following two digits are the Issuer Identifier (emnify). After that, the next 11 digits are the Individual Account Identification. The final digit is the Check Digit.](assets/infographic-iccid-digits.png)
 
 :::note
 Following the introduction of [eUICC](#euicc---embedded-universal-integrated-circuit-card) SIM cards in 2021, there are situations where the ICCID can no longer be unique. 
 For example, the ICCID value can change when a different [SIM profile](#sim-profile) is provisioned on the eSIM.
-:::
-
-:::tip Deep dive
-Learn more about the ICCID in our blog post: [What Is an ICCID Number?](https://www.emnify.com/iot-glossary/iccid-number)
 :::
 
 ## IMEI - International mobile equipment identification number  
