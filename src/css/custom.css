@@ -228,5 +228,7 @@ div[title="Expand sidebar"]:hover {
 
 .img-border {
   border-radius: 5px;
-  border: 1px solid #989898; /* ui-grey-50 */
+  /* border: 1px solid #989898;   ui-grey-50 */
+  /* border: 1px solid #cbcbcb;   ui-grey-70 */
+  border: 1px solid #e4e4e4; /* ui-grey-80 */
 }
