@@ -31,6 +31,7 @@ const config = {
           sidebarPath: require.resolve("./sidebars.js"),
           routeBasePath: "/",
           editUrl: "https://github.com/emnify/product-docs/blob/main/",
+          showLastUpdateTime: true,
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -110,6 +111,12 @@ const config = {
           src: "img/logo-word-blue-295x80.png",
         },
         items: [
+          {
+            type: "docSidebar",
+            position: "left",
+            sidebarId: "mainDocsSidebar",
+            label: "Home",
+          },
           {
             type: "docSidebar",
             position: "left",
