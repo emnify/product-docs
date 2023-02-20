@@ -20,7 +20,7 @@ Nevertheless, in case the APN is not correctly detected, it can be configured wi
 1. Type in `em` in APN – there is no PIN configured on the SIM and no APN username or password required.
 
 
-**Teltonika Networks Router APN configuration via SMS console / API or Zapier [Teltonika Documentation Source](https://wiki.teltonika-networks.com/view/SMS_Commands)**
+**Teltonika Networks Router APN configuration via SMS console / API or Zapier **
 
 1. Make sure that the Router is powered on and the SIM card is inserted and activated.
 1. In the emnify Portal, ensure that the device is shown as **Attached**.
@@ -29,3 +29,7 @@ Nevertheless, in case the APN is not correctly detected, it can be configured wi
 ```
 cellular apn=em
 ```
+
+:::info
+See [Teltonika's SMS Commands](https://wiki.teltonika-networks.com/view/SMS_Commands) reference for a comprehensive list of SMS commands, syntax, and usage.
+:::
