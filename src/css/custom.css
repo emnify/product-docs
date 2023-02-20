@@ -34,15 +34,6 @@ code {
   color: #005f0f;
 }
 
-/* code blocks, syntax highlighting */
-.token {
-  /* color: #993434; ui-red-30      */
-  /* color: #2f8b59; brand-green-30 */
-  /* color: #003f0a; ui-green-20    */
-  color: #005f0f; /* ui-green-30  */
-
-}
-
 /* Links within documentation content */
 .theme-doc-markdown a,
 .theme-edit-this-page {

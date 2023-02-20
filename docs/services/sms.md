@@ -38,7 +38,6 @@ For sending SMS messages to a single device, select **Details**:
 <img
   src={require('./assets/portal-connected-devices-details-button.png').default}
   alt="Portal screenshot of the Connected Devices page showing the extensive device list. There is a Details button available for each device listed."
-  className="img-border"
 />
 
 An SMS/Message icon will appear to the right of the device name.
@@ -46,7 +45,6 @@ An SMS/Message icon will appear to the right of the device name.
 <img
   src={require('./assets/portal-connected-devices-details-open-sms-console.png').default}
   alt=""
-  className="img-border"
   style={{ width: 350 }}
 />
 
@@ -55,7 +53,6 @@ The SMS history and input field at the bottom of the SMS console is similiar to 
 <img
   src={require('./assets/portal-connected-devices-details-sms-console.png').default}
   alt=""
-  className="img-border"
   style={{ width: 575 }}
 />
 
@@ -64,7 +61,6 @@ When you select (check) one or more devices in the list of [**Connected Devices*
 <img
   src={require('./assets/portal-connected-devices-sms.png').default}
   alt="Portal screenshot of the Connected Devices page. A top-level banner shows the number of devices selected and a list of options. Options from left to right: Reset, SMS, Device, IMEI Lock, More. SMS is selected."
-  className="img-border"
 />
 
 This SMS interface does not show a history of messages.
@@ -72,7 +68,6 @@ This SMS interface does not show a history of messages.
 <img
   src={require('./assets/portal-send-sms-message-text.png').default}
   alt=""
-  className="img-border"
   style={{ width: 496 }}
 />
 
@@ -81,7 +76,6 @@ However, you will receive a brief notification regarding the status of the SMS s
 <img
   src={require('./assets/portal-sms-sent.png').default}
   alt=""
-  className="img-border"
   style={{ width: 762 }}
 />
 
@@ -96,7 +90,6 @@ For receiving SMS and delivery notifications for SMS in your application, you ca
 <img
   src={require('./assets/portal-device-policies-sms-interface-webhook.png').default}
   alt=""
-  className="img-border"
   style={{ width: 800 }}
 />
 
@@ -105,7 +98,6 @@ Select **Webhook**, then select  **Configure Webhook**:
 <img
   src={require('./assets/portal-device-policies-configure-webhook.png').default}
   alt=""
-  className="img-border"
   style={{ width: 399 }}
 />
 
@@ -114,7 +106,6 @@ In the **Add Webhook** dialog, provide the webhook URL and an optional secret ke
 <img
   src={require('./assets/portal-device-policies-add-webhook.png').default}
   alt=""
-  className="img-border"
   style={{ width: 856 }}
 />
 
@@ -125,7 +116,6 @@ The SMS will then be delivered over the webhook.
 <img
   src={require('./assets/delivery-notification.png').default}
   alt=""
-  className="img-border"
   style={{ width: 400 }}
 />
 
@@ -135,7 +125,6 @@ The SMS will then be delivered over the webhook.
 <img
   src={require('./assets/mosms.png').default}
   alt=""
-  className="img-border"
   style={{ width: 400 }}
 />
 
@@ -151,7 +140,6 @@ In the **No-Code-Workflows** list on the [**Integrations** page of the emnify Po
 <img
   src={require('./assets/portal-integrations-sms-webhooks-zapier.png').default}
   alt="Portal screenshot from the Integrations page. The featured integration reads, 'Enable devices and send SMSes via emnify from newly caught webhooks. emnify + Webhooks by Zapier'. Next to the text, there's a 'Use this Zap' button."
-  className="img-border"
 />
 
 There you will find a predefined Zap consisting of 3 steps with interactive instructions on how to configure it or modify the steps for your specific needs:
