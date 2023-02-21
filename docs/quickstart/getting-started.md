@@ -39,11 +39,16 @@ To begin developing your IoT solutions with emnify, you'll need an emnify accoun
 
 ![Claim your free evaluation package with 3 triple-cut SIMs to kickstart your well-managed IoT journey. Includes: Free 3 triple-cut SIMs, form factor (Nano, Micro, Mini), our full coverage, and global fast shipping.](assets/portal-order-evaluation-pack.png)
 
-You can order your free Evaluation SIM package on the emnify Portal with which you can test all emnify services.
+You can order your free Evaluation SIM package on the emnify Portal.
+The package also includes an initial 10 EUR or USD of pre-paid credit to help you test emnify's services.
+
+:::note
+You have 60 days to use this pre-paid credit.
+:::
+
 Currently, the 3 triple-cut SIM cards can be delivered to most destinations worldwide with express shipment.
 
-
-[Log into your emnify account](https://portal.emnify.com/sign) and follow these steps:
+To get your free Evaluation SIM package, [log into your emnify account](https://portal.emnify.com/sign) and follow these steps:
 
 1. On the dashboard, click on order on **Get your free SIMs**
 1. Select the **Free Evaluation Package with 3 Triple-cut SIMs**
