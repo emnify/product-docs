@@ -13,17 +13,23 @@ Nevertheless, in case the APN is not correctly detected, it can be configured wi
 1. via the emnify SMS API or Zapier Integration (when automating the configuration)
 
 
-1. APN configuration through the Teltonika Router WebUI
-Connect your PC through the routers Wi-Fi using the credentials   provided on the device.
-Open the Teltonika WebUI <http://192.168.1.1> and go to the Mobile configuration.
-Type in `em` in APN – there is no PIN configured on the SIM and no APN username or password required.
-1. Teltonika Networks Router APN configuration via SMS console / API or Zapier [Teltonika Documentation Source](https://wiki.teltonika-networks.com/view/SMS_Commands)
+**APN configuration through the Teltonika Router WebUI**
 
-Make sure that the Router is powered on and the SIM card is inserted and activated.
-In the emnify Portal, the device should show as **Attached**.
+1. Connect your PC through the routers Wi-Fi using the credentials   provided on the device.
+1. Open the Teltonika WebUI <http://192.168.1.1> and go to the Mobile configuration.
+1. Type in `em` in APN – there is no PIN configured on the SIM and no APN username or password required.
 
-The following SMS command needs to be sent to the device:
+
+**Teltonika Networks Router APN configuration via SMS console / API or Zapier **
+
+1. Make sure that the Router is powered on and the SIM card is inserted and activated.
+1. In the emnify Portal, ensure that the device is shown as **Attached**.
+1. Send the following SMS command to the device:
 
 ```
 cellular apn=em
 ```
+
+:::info
+See [Teltonika's SMS Commands](https://wiki.teltonika-networks.com/view/SMS_Commands) reference for a comprehensive list of SMS commands, syntax, and usage.
+:::

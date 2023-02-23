@@ -114,6 +114,12 @@ const config = {
           {
             type: "docSidebar",
             position: "left",
+            sidebarId: "mainDocsSidebar",
+            label: "Home",
+          },
+          {
+            type: "docSidebar",
+            position: "left",
             sidebarId: "restSidebar",
             label: "REST API",
           },
