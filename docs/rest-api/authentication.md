@@ -126,7 +126,3 @@ It's *not* advisable to generate an `auth_token` before making each API call.
 You should reuse the generated `auth_token` for 240 minutes after it's generated. 
 Then, update it after its expiration.
 :::
-
-:::info
-See also [How to use an Application Token for API authentication](https://www.emnify.com/developer-blog/how-to-use-an-application-token-for-api-authentication) for more information.
-:::
