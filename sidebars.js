@@ -223,7 +223,6 @@ const sidebars = {
       label: "API reference",
       href: "https://cdn.emnify.net/api/doc/index.html",
     },
-    "rest-api/how-tos/index",
   ],
 };
 
