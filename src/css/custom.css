@@ -71,7 +71,7 @@
   fill: #f27400;
 }
 
-/* Tip adminition */
+/* Tip admonition */
 .theme-admonition-tip {
   background-color: #3d9a3214;
   border-color: #009e19;
@@ -116,7 +116,7 @@
   fill: #659bdf;
 }
 
-/* Note adminition */
+/* Note admonition */
 .theme-admonition-note {
   background-color: #f5f5f5;
   border-color: #e4e4e4;
@@ -210,4 +210,15 @@ div[title="Expand sidebar"]:hover {
 /* Active navigation bar links */
 .navbar__link--active {
   font-weight: bold;
+}
+
+/* Add border to screenshots */
+.theme-doc-markdown img:not(.no-border) {
+  border: 1px solid #e4e4e4; /* ui-grey-80 */
+  border-radius: 5px;
+}
+
+/* Remove border from img tags within tables */
+.theme-doc-markdown table tr td img {
+  border: none !important;
 }

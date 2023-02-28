@@ -35,3 +35,7 @@ POST [https://cdn.emnify.net/api/v1/endpoint/{endpoint_id}/sms](https://cdn.emn
 
 The source address is the sender number appearing on the receiving device.
 The payload is the actual text to be sent as SMS.
+
+:::info
+See [How to send and receive SMS via the API](https://www.emnify.com/developer-blog/how-to-send-and-receive-sms-via-the-api) for more information.
+:::

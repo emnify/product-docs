@@ -25,6 +25,7 @@ Log in to Azure and navigate to **Azure Active Directoring** in the left sidebar
 <img
   src={require('./assets/sso-azure-active-directory.png').default}
   alt=""
+  className="no-border"
 />
 
 At the top of the page, click **+ Add** and then **App Registration**. 
@@ -33,6 +34,7 @@ From there:
 <img
   src={require('./assets/sso-azure-app-registration.png').default}
   alt=""
+  className="no-border"
 />
 
 - Give your app a **Name** (e.g., "emnify").
@@ -43,6 +45,7 @@ This requests a consent screen on IDP verification in the Portal later.
 <img
   src={require('./assets/sso-azure-app-registration-details.png').default}
   alt=""
+  className="no-border"
 />
 
 Navigate to **Authentication** in the left sidebar, and in the section **Implicit grand and hybrid flows**, enable `Access tokens` and `ID tokens`.
@@ -50,6 +53,7 @@ Navigate to **Authentication** in the left sidebar, and in the section **Impl
 <img
   src={require('./assets/sso-azure-authentication.png').default}
   alt=""
+  className="no-border"
 />
 
 Go to **Token configuration** in the left sidebar, click **Add optional claim**, and under **SAML**, enable the `upn` claim.
@@ -58,6 +62,7 @@ Leave the option `Turn on the Microsoft Graph profile` permission unchecked.
 <img
   src={require('./assets/sso-azure-token-configuration.png').default}
   alt=""
+  className="no-border"
 />
 
 Head to **API permissions** in the left sidebar, click the existing permission entry **Microsoft Graph (1)** and check the `email` and `profile` OpenID permissions.
@@ -65,6 +70,7 @@ Head to **API permissions** in the left sidebar, click the existing permission
 <img
   src={require('./assets/sso-azure-api-permissions-1.png').default}
   alt=""
+  className="no-border"
 />
 
 Your configuration should look like this:
@@ -72,6 +78,7 @@ Your configuration should look like this:
 <img
   src={require('./assets/sso-azure-api-permissions-2.png').default}
   alt=""
+  className="no-border"
 />
 
 In the left sidebar, go to **Expose an API**, click **Set**, and then click on **Save**.
@@ -79,6 +86,7 @@ In the left sidebar, go to **Expose an API**, click **Set**, and then click on
 <img
   src={require('./assets/sso-azure-expose-api.png').default}
   alt=""
+  className="no-border"
 />
 
 After navigating to **Certificates & Secrets** in the left sidebar, click **New client secret**.
@@ -86,6 +94,7 @@ After navigating to **Certificates & Secrets** in the left sidebar, click **N
 <img
   src={require('./assets/sso-azure-new-client-secret.png').default}
   alt=""
+  className="no-border"
 />
 
 Copy the **Value** and save it to a secure location.
@@ -97,6 +106,7 @@ This value won't be shown again.
 <img
   src={require('./assets/sso-azure-new-client-secret-returned.png').default}
   alt=""
+  className="no-border"
 />
 
 Choose an expiration date and mark your calendar to generate and configure a new secret before it expires.
@@ -106,6 +116,7 @@ Navigate to **Overview** in the sidebar and copy the **Application (client) I
 <img
   src={require('./assets/sso-azure-app-id.png').default}
   alt=""
+  className="no-border"
 />
 
 ## Configure the emnify Portal
