@@ -43,12 +43,12 @@ You can order your free Evaluation SIM package on the emnify Portal.
 This package includes a prepaid credit of 10 EUR/USD for testing emnify's services.
 
 :::note
-You have 60 days to use this pre-paid credit.
+You have 60 days to use this prepaid credit.
 :::
 
 Currently, the 3 triple-cut SIM cards can be delivered to most destinations worldwide with express shipment.
 
-To get your free Evaluation SIM package, [log into your emnify account](https://portal.emnify.com/sign) and follow these steps:
+To get your free Evaluation SIM package, [log in to your emnify account](https://portal.emnify.com/sign) and follow these steps:
 
 1. On the dashboard, click on order on **Get your free SIMs**
 1. Select the **Free Evaluation Package with 3 Triple-cut SIMs**
