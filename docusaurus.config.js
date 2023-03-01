@@ -75,6 +75,12 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      algolia: {
+        appId: "WXU9AQM67J",
+        apiKey: "a380e3840d2b7280e3def05bc7f270f3",
+        indexName: "emnify",
+        contextualSearch: true,
+      },
       metadata: [
         {
           name: "description",
