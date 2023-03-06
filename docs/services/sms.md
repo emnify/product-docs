@@ -9,9 +9,9 @@ A typical use case is the configuration of the APN setting via SMS.
 
 The emnify platform supports:
 
-- Mobile originated (MO) SMS – SMS sent from the device with the emnify SIM
-- Mobile terminated (MT) SMS – SMS that are destined for a device with the emnify SIM
-- Peer-to-Peer (P2P) SMS – SMS sent from a device with any SIM to a device with the emnify SIM
+- Mobile originated (MO) SMS – SMS sent from the device with the emnify eSIM
+- Mobile terminated (MT) SMS – SMS that are destined for a device with the emnify eSIM
+- Peer-to-Peer (P2P) SMS – SMS sent from a device with any eSIM to a device with the emnify eSIM
 - Application- to-peer (A2P) SMS – The SMS is sent and received on an application
 
 The scenarios above can be activated and deactivated in the device policies to prevent misuse (e.g., P2P SMS).

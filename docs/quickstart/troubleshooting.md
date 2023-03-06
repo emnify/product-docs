@@ -4,18 +4,18 @@ description: Tips and solutions for resolving common issues
 # Troubleshooting
 
 When you experience issues while connecting your device for the first time, there are several common patterns that can be identified by looking at [**Connected Devices**](https://portal.emnify.com/connected-devices) in the Portal.
-If you do not have any entry in the connected devices, go back to [Creating a Device](devices/creating-a-device) and assign the SIM.
+If you do not have any entry in the connected devices, go back to [Creating a Device](devices/creating-a-device) and assign the eSIM.
 
 The device will show different icons that indicate the status
 (**Offline**, **Attached**, **Online**, **Blocked**).
-If no icon is visible, assign a SIM to the device.
+If no icon is visible, assign an eSIM to the device.
 
 For most of the troubleshooting, a look at **Details** → **Events** is necessary.
 A usual event flow should look like this:
 
-1. Update Location - the SIM card is (re)authenticating with a different network element.
+1. Update Location - the eSIM card is (re)authenticating with a different network element.
 If successful the device will show as **Attached** and can already receive SMS.
-1. Update GPRS location - the SIM card has successfully registered for data sessions with a different network element.
+1. Update GPRS location - the eSIM card has successfully registered for data sessions with a different network element.
 1. Create PDP context - the device has started a data transfer.
 The device will show **Online** as long is there is no delete PDP context event.
 1. Delete PDP context - the device has ended a data transfer.

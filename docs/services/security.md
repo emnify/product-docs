@@ -35,7 +35,7 @@ Cellular providers typically provide a DNS service.
 By default, emnify routes all DNS queries over Google’s public DNS `8.8.8.8`.
 
 For some devices and modules, it is possible to configure the DNS service.
-For example, Quectel uses the `AT+QIDNSCFG` command, SIMcom `AT+CDNSCFG` command.
+For example, Quectel uses the `AT+QIDNSCFG` command, eSIMcom `AT+CDNSCFG` command.
 This is useful to be able to use your own or private DNS servers to secure and have better control over the solution.
 
 Customers can also configure to use their own DNS, no matter if it is a public or a private one.
@@ -63,8 +63,8 @@ A tutorial on how to set up a DNS firewall based on a private DNS using Amazon R
 
 ## IMEI lock
 
-For device manufacturers, SIM card theft is an issue because pluggable SIM cards can be removed from a device and then used to gain free internet access.
-The [IMEI lock](/glossary#imei-lock)  feature prevents the use of SIM card in any other device by bounding the SIM to an IMEI.
+For device manufacturers, eSIM card theft is an issue because pluggable eSIM cards can be removed from a device and then used to gain free internet access.
+The [IMEI lock](/glossary#imei-lock)  feature prevents the use of eSIM card in any other device by bounding the eSIM to an IMEI.
 The [IMEI](/glossary#imei---international-mobile-equipment-identification-number) is a unique device identifier.
-When the automatic IMEI lock is configured, the emnify platform will bind the SIM cards to the first device that establishes a data connection.
+When the automatic IMEI lock is configured, the emnify platform will bind the eSIM cards to the first device that establishes a data connection.
 All future device connections will only be allowed from this device.

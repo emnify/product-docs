@@ -21,7 +21,7 @@ Configuring the APN for Teltonika GPS trackers can be done through:
 
 Newer Teltonika GPS versions automatically detect the emnify APN setting.
 
-When the GPS tracker is turned on for the first time after the SIM is installed, it shows the status **Attached** in the emnify Portal.
+When the GPS tracker is turned on for the first time after the eSIM is installed, it shows the status **Attached** in the emnify Portal.
 At this point, the device can receive SMS but not establish a data session unless the APN is set up or detected.
 
 If you've set a username and password for the device, use the following SMS command to set the APN (replacing `USERNAME` and `PASSWORD` with your credentials):
@@ -56,7 +56,7 @@ Configuring the APN for Ruptela GPS trackers can be done through:
 1. Via the SMS console through the [**Connected Devices** page of the emnify Portal](https://portal.emnify.com/connected-devices)
 1. Via the [emnify SMS API](https://cdn.emnify.net/api/doc/swagger.html#/Endpoint) or [Zapier Integration](https://zapier.com/apps/emnify/integrations/sms) (when automating the configuration)
 
-When the GPS tracker is turned on for the first time after the SIM is installed, it shows the status **Attached** in the emnify Portal.
+When the GPS tracker is turned on for the first time after the eSIM is installed, it shows the status **Attached** in the emnify Portal.
 At this point the device can receive SMS but not establish a data session unless the APN is setup or detected.
 
 The SMS command to set the APN for Ruptela GPS trackers is:
@@ -81,7 +81,7 @@ Configuring the APN for Concox GPS trackers can be done:
 1. Via the SMS console through the [**Connected Devices** page of the emnify Portal](https://portal.emnify.com/connected-devices)
 1. Via the [emnify SMS API](https://cdn.emnify.net/api/doc/swagger.html#/Endpoint) or [Zapier Integration](https://zapier.com/apps/emnify/integrations/sms) (when automating the configuration)
 
-When the GPS tracker is turned on for the first time after the SIM is installed, it shows the status **Attached** in the emnify Portal.
+When the GPS tracker is turned on for the first time after the eSIM is installed, it shows the status **Attached** in the emnify Portal.
 At this point, the device can receive SMS but not establish a data session unless the APN is set up.
 
 The SMS command to set the APN for Concox GPS trackers is:
@@ -109,7 +109,7 @@ Configuring the APN for Coban GPS trackers can be done:
 1. Via the SMS console through the [**Connected Devices** page of the emnify Portal](https://portal.emnify.com/connected-devices)
 1. Via the [emnify SMS API](https://cdn.emnify.net/api/doc/swagger.html#/Endpoint) or [Zapier Integration](https://zapier.com/apps/emnify/integrations/sms) (when automating the configuration)
 
-When the GPS tracker is turned on for the first time after the SIM is installed, it shows the status **Attached** in the emnify Portal.
+When the GPS tracker is turned on for the first time after the eSIM is installed, it shows the status **Attached** in the emnify Portal.
 At this point, the device can receive SMS but not establish a data session unless the APN is set up and the GPRS service is activated.
 
 To turn on GPSR:
@@ -142,7 +142,7 @@ Configuring the APN for Meitrack GPS trackers can be done:
 1. Via the SMS console through the [**Connected Devices** page of the emnify Portal](https://portal.emnify.com/connected-devices)
 1. Via the [emnify SMS API](https://cdn.emnify.net/api/doc/swagger.html#/Endpoint) or [Zapier Integration](https://zapier.com/apps/emnify/integrations/sms) (when automating the configuration)
 
-When the GPS tracker is turned on for the first time after the SIM is installed, it shows the status **Attached** in the emnify Portal.
+When the GPS tracker is turned on for the first time after the eSIM is installed, it shows the status **Attached** in the emnify Portal.
 At this point, the device can receive SMS but not establish a data session unless the APN is set up.
 
 The SMS command to set the APN for Meitrack GPS trackers is:
@@ -176,7 +176,7 @@ Configuring the APN for Elinz GPS trackers can be done:
 1. Via the SMS console through the [**Connected Devices** page of the emnify Portal](https://portal.emnify.com/connected-devices) 
 1. Via the [emnify SMS API](https://cdn.emnify.net/api/doc/swagger.html#/Endpoint) or [Zapier Integration](https://zapier.com/apps/emnify/integrations/sms) (when automating the configuration)
 
-When the GPS tracker is turned on for the first time after the SIM is installed, it shows the status **Attached** in the emnify Portal.
+When the GPS tracker is turned on for the first time after the eSIM is installed, it shows the status **Attached** in the emnify Portal.
 At this point, the device can receive SMS but not establish a data session unless the APN is set up.
 
 The SMS command to set the APN for Elinz GPS trackers is:
@@ -202,7 +202,7 @@ Configuring the APN for Reachfar GPS trackers can be done:
 1. Via the SMS console through the [**Connected Devices** page of the emnify Portal](https://portal.emnify.com/connected-devices)
 1. Via the [emnify SMS API](https://cdn.emnify.net/api/doc/swagger.html#/Endpoint) or [Zapier Integration](https://zapier.com/apps/emnify/integrations/sms) (when automating the configuration)
 
-When the GPS tracker is turned on for the first time after the SIM is installed, it shows the status **Attached** in the emnify Portal. 
+When the GPS tracker is turned on for the first time after the eSIM is installed, it shows the status **Attached** in the emnify Portal. 
 At this point, the device can receive SMS but not establish a data session
 unless the APN is set up.
 
@@ -241,7 +241,7 @@ Configuring the APN for Queclink GPS trackers can be done:
 1. Via the SMS console through the [**Connected Devices** page of the emnify Portal](https://portal.emnify.com/connected-devices)
 1. Via the [emnify SMS API](https://cdn.emnify.net/api/doc/swagger.html#/Endpoint) or Zapier Integration (when automating the configuration)
 
-When the GPS tracker is turned on for the first time after the SIM is installed, it shows the status **Attached** in the emnify Portal.
+When the GPS tracker is turned on for the first time after the eSIM is installed, it shows the status **Attached** in the emnify Portal.
 At this point, the device can receive SMS but not establish a data session unless the APN is set up.
 
 The SMS command to set the APN for Queclink GPS trackers is:
@@ -261,7 +261,7 @@ Configuring the APN for Bitrek GPS trackers can be done:
 1. Via the SMS console through the [**Connected Devices** page of the emnify Portal](https://portal.emnify.com/connected-devices)
 1. Via the [emnify SMS API](https://cdn.emnify.net/api/doc/swagger.html#/Endpoint) or [Zapier Integration](https://zapier.com/apps/emnify/integrations/sms) (when automating the configuration)
 
-When the GPS tracker is turned on for the first time after the SIM is installed, it shows the status **Attached** in the emnify Portal.
+When the GPS tracker is turned on for the first time after the eSIM is installed, it shows the status **Attached** in the emnify Portal.
 At this point, the device can receive SMS but not establish a data session unless the APN is set up.
 
 The SMS command to set the APN for Bitrek GPS trackers is:

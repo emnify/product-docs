@@ -35,22 +35,22 @@ To begin developing your IoT solutions with emnify, you'll need an emnify accoun
     </ul>
 </details>
 
-## Order a free Evaluation SIM package
+## Order a free Evaluation eSIM package
 
-![Claim your free evaluation package with 3 triple-cut SIMs to kickstart your well-managed IoT journey. Includes: Free 3 triple-cut SIMs, form factor (Nano, Micro, Mini), our full coverage, and global fast shipping.](assets/portal-order-evaluation-pack.png)
+![Claim your free evaluation package with 3 triple-cut eSIMs to kickstart your well-managed IoT journey. Includes: Free 3 triple-cut eSIMs, form factor (Nano, Micro, Mini), our full coverage, and global fast shipping.](assets/portal-order-evaluation-pack.png)
 
-You can order your free Evaluation SIM package on the emnify Portal.
+You can order your free Evaluation eSIM package on the emnify Portal.
 This package includes a prepaid credit of 10 EUR/USD for testing emnify's services.
 
 :::note
 You have 60 days to use this prepaid credit.
 :::
 
-Currently, the 3 triple-cut SIM cards can be delivered to most destinations worldwide with express shipment.
+Currently, the 3 triple-cut eSIM cards can be delivered to most destinations worldwide with express shipment.
 
-To get your free Evaluation SIM package, [log in to your emnify account](https://portal.emnify.com/sign) and follow these steps:
+To get your free Evaluation eSIM package, [log in to your emnify account](https://portal.emnify.com/sign) and follow these steps:
 
-1. On the dashboard, click on order on **Get your free SIMs**
-1. Select the **Free Evaluation Package with 3 Triple-cut SIMs**
+1. On the dashboard, click on order on **Get your free eSIMs**
+1. Select the **Free Evaluation Package with 3 Triple-cut eSIMs**
 1. Fill in your **Invoice data**, **Delivery details**, and **Choose shipping option**.
-1. Proceed to pay the shipping charges and you will be notified when the SIM cards will be shipped.
+1. Proceed to pay the shipping charges and you will be notified when the eSIM cards will be shipped.

@@ -61,8 +61,8 @@ const sidebars = {
         slug: "services",
       },
       items: [
-        "services/global-iot-sim",
-        "services/global-iot-network",
+        "services/emnify-sim",
+        "services/emnify-iot-supernetwork",
         "services/iot-cloud-communication-platform",
         {
           type: "category",

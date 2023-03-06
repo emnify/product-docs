@@ -1,7 +1,7 @@
 # Glossary
 
-## Active SIM  
-When a SIM is in the active state, the charges for the SIM are applied.
+## Active eSIM  
+When a eSIM is in the active state, the charges for the eSIM are applied.
 The device can send and receive data and SMS.
 
 ## APN - Access point name  
@@ -15,17 +15,17 @@ Also used when authenticating the [OpenVPN](#openvpn) service.
 ## A2P SMS - Application–to–peer SMS  
 SMS between an application and a device or vice-versa.
 
-## Assigned SIM  
+## Assigned eSIM  
 SIM that has been assigned to an [endpoint](#endpoint).
 
 ## AT+CREG AT command 
 Gives information about the registration status and access technology of the serving cell.
 
 ## AuC - Authentication center  
-A part of [GSM](#gsm---global-system-for-mobile-communications) infrastructure, validates any SIM card attempting network connection when a phone has a live network signal.
+A part of [GSM](#gsm---global-system-for-mobile-communications) infrastructure, validates any eSIM card attempting network connection when a phone has a live network signal.
 
 ## BIC - Batch identification code  
-A unique code for ordered SIM cards used to register the SIM cards on the [**SIM Inventory** page of the emnify Portal](https://portal.emnify.com/sim-inventory).
+A unique code for ordered eSIM cards used to register the eSIM cards on the [**SIM Inventory** page of the emnify Portal](https://portal.emnify.com/sim-inventory).
 
 ## Callback URL  
 URL that will be called by a service to send and receive data related to an event that caused this action.
@@ -78,17 +78,17 @@ The EUM specific identification number (ESIN) and check digits are for example p
 :::
 
 Unlike the [ICCID](#iccid---integrated-circuit-card-identifier), the EID remains the same throughout the life of the eSIM.
-Therefore, you can use it as a permanent identifier to keep track of your SIM cards.
+Therefore, you can use it as a permanent identifier to keep track of your eSIM cards.
 
 ## Endpoint  
-A representation of the device which has a SIM installed.
+A representation of the device which has a eSIM installed.
 
 ## Endpoint status  
 The current state of the [endpoint](#endpoint): **Enabled** or **Disabled**.
 
 ## eUICC - Embedded universal integrated circuit card  
-The embedded universal integrated circuit card (eUICC) is a component of a SIM card.
-It allows consumers and IoT manufacturers to provision the SIM with a new [operator profile](https://www.emnify.com/iot-glossary/mno) [over-the-air](#ota---over–the–air).
+The embedded universal integrated circuit card (eUICC) is a component of a eSIM card.
+It allows consumers and IoT manufacturers to provision the eSIM with a new [operator profile](https://www.emnify.com/iot-glossary/mno) [over-the-air](#ota---over–the–air).
 
 :::tip Deep dive
 Learn more about the eUICC in our blog post: [What is an eUICC and why does it matter?](https://www.emnify.com/iot-glossary/what-is-an-euicc)
@@ -98,12 +98,12 @@ Learn more about the eUICC in our blog post: [What is an eUICC and why does it m
 A log that stores all [endpoint](#endpoint) events.
 
 ## Form factor  
-The form factor of a SIM card represents the SIM card format. 
+The form factor of a eSIM card represents the eSIM card format. 
 SIM cards vary in size (Mini vs. Micro vs. Nano), function (embedded vs. standard), and quality (industrial grade vs. standard):
 
-- **2FF**: Mini SIM card
-- **3FF**: Micro SIM card
-- **4FF**: Nano SIM card
+- **2FF**: Mini eSIM card
+- **3FF**: Micro eSIM card
+- **4FF**: Nano eSIM card
 
 ## GGSN - Gateway GPRS support node  
 Part of the [GSM](#gsm---global-system-for-mobile-communications) infrastructure, the [GGSN](#ggsn---gateway-gprs-support-node) is responsible for the interworking between the GPRS network and external packet switched networks.
@@ -122,13 +122,13 @@ Part of [GSM](#gsm---global-system-for-mobile-communications) infrastructure.
 A request method supported by the HTTP protocol, which typically includes data in the request body.
 
 ## ICCID - Integrated circuit card identifier  
-The integrated circuit card identifier (ICCID) is a 20-digit code used to identify a SIM card. 
-It includes a SIM card's country, home network, and identification number, as indicated in the following diagram:
+The integrated circuit card identifier (ICCID) is a 20-digit code used to identify a eSIM card. 
+It includes a eSIM card's country, home network, and identification number, as indicated in the following diagram:
 
 ![A 20-digit ICCID number: "89883030000080139311". The first two digits are the Major Industry Identifier (Telecom in this example). The next three digits are the Country Code (non-terrestrial). The following two digits are the Issuer Identifier (emnify). After that, the next 11 digits are the Individual Account Identification. The final digit is the Check Digit.](assets/infographic-iccid-digits.png)
 
 :::note
-Following the introduction of [eUICC](#euicc---embedded-universal-integrated-circuit-card) SIM cards in 2021, there are situations where the ICCID can no longer be unique. 
+Following the introduction of [eUICC](#euicc---embedded-universal-integrated-circuit-card) eSIM cards in 2021, there are situations where the ICCID can no longer be unique. 
 For example, the ICCID value can change when a different [SIM profile](#sim-profile) is provisioned on the eSIM.
 :::
 
@@ -136,7 +136,7 @@ For example, the ICCID value can change when a different [SIM profile](#sim-prof
 A unique number used to identify cellular modems.
 
 ## IMEI lock  
-The practice of strictly associating a SIM to the device with a certain IMEI number.
+The practice of strictly associating a eSIM to the device with a certain IMEI number.
 
 ## IMSI - International mobile subscriber identity  
 A unique number used to identify a [GSM](#gsm---global-system-for-mobile-communications) subscriber.
@@ -168,7 +168,7 @@ The part of [GSM](#gsm---global-system-for-mobile-communications) architecture t
 A method of wireless distribution of the software, configuration settings, or encryption keys.
 
 ## OTA Provisioning  
-A technology that allows changes to the SIM memory [over–the–air](#ota---over–the–air).
+A technology that allows changes to the eSIM memory [over–the–air](#ota---over–the–air).
 
 ## OpenVPN  
 An open-source software application that implements [virtual private network (VPN)](#vpn) techniques for creating secure point–to–point or site–to–site connections in routed or bridged configurations and remote access facilities.
@@ -202,26 +202,26 @@ An approach that allows network administrators to programmatically initialize, c
 ## Service profile  
 A profile that defines the services and functionality of a device managed through the emnify platform.
 
-## SIM batch  
-A collection of SIM cards that can be registered with a single [BIC](#bic---batch-identification-code) code.
+## eSIM batch  
+A collection of eSIM cards that can be registered with a single [BIC](#bic---batch-identification-code) code.
 
 ## SMS firewall  
 A firewall that controls the SMS flow.
 
-## SIM hosting fee  
-Monthly fee for an active SIM.
+## eSIM hosting fee  
+Monthly fee for an active eSIM.
 
-## SIM profile  
-The [mobile network operator (MNO)](https://www.emnify.com/iot-glossary/mno) ID information stored in the SIM’s memory.
+## eSIM profile  
+The [mobile network operator (MNO)](https://www.emnify.com/iot-glossary/mno) ID information stored in the eSIM’s memory.
 
-## SIM repository  
-All SIMs assigned to your organization.
+## eSIM repository  
+All eSIMs assigned to your organization.
 
 ## SMPP - Short Message Peer–to–Peer  
 A protocol used by the telecommunications industry for exchanging SMS messages between short message service centers (SMSC) and/or external short messaging entities (ESME).
 
 ## SMS console  
-An interface to send [A2P SMS](#a2p-sms---application–to–peer-sms) from the platform to the SIM card.
+An interface to send [A2P SMS](#a2p-sms---application–to–peer-sms) from the platform to the eSIM card.
 
 ## SMS MO  
 SMS originating from the device.
@@ -236,19 +236,19 @@ The address of the SMS sender as displayed on the receiving device.
 An IP that doesn’t change over time.
 
 ## Tariff profile  
-A profile that defines which networks or countries SIM should operate in.
+A profile that defines which networks or countries eSIM should operate in.
 
 ## Traffic pooling  
 A term used to describe the service model when various [endpoints](#endpoint) utilize the same data pool.
 
-## Unassigned SIM  
+## Unassigned eSIM  
 SIM that had been unassigned from an [endpoint](#endpoint).
 
 ## Usage limit  
 User–defined limit of consumption of a certain service (data, SMS) per endpoint.
 
 ## User–defined coverage  
-An ability to select which operator the customer’s SIM connects to.
+An ability to select which operator the customer’s eSIM connects to.
 
 ## User–defined networking  
 An approach that enables users to create their own virtual mobile network, define service and security policies and provision [tariff profiles](#tariff-profile) and data packages.

@@ -17,12 +17,12 @@ Nevertheless, in case the APN is not correctly detected, it can be configured wi
 
 1. Connect your PC through the routers Wi-Fi using the credentials   provided on the device.
 1. Open the Teltonika WebUI <http://192.168.1.1> and go to the Mobile configuration.
-1. Type in `em` in APN – there is no PIN configured on the SIM and no APN username or password required.
+1. Type in `em` in APN – there is no PIN configured on the eSIM and no APN username or password required.
 
 
 **Teltonika Networks Router APN configuration via SMS console / API or Zapier **
 
-1. Make sure that the Router is powered on and the SIM card is inserted and activated.
+1. Make sure that the Router is powered on and the eSIM card is inserted and activated.
 1. In the emnify Portal, ensure that the device is shown as **Attached**.
 1. Send the following SMS command to the device:
 

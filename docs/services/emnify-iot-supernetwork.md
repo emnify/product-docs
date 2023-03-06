@@ -1,7 +1,7 @@
 ---
 description: Network aggregation supporting all radio types
 ---
-# Global IoT Network
+# emnify IoT Supernetwork
 
 Even when IoT devices are more often only deployed at a single location and are not moving, for a vendor selling to multiple countries it is important to have a global connectivity solution, so that there is no need to have different SIM cards in stock or have multiple contracts and tariffs.
 
@@ -17,7 +17,7 @@ The emnify [multi-IMSI applet](#multi-imsi-application) makes it completely tr
 
 ## Radio access types
 
-The emnify IoT SIM and platform supports all devices and modules using the following radio access technologies
+The emnify eSIM and platform supports all devices and modules using the following radio access technologies
 
 - [2G (GSM/GPRS/EDGE)](#2g-gsmgprsedge)
 - [3G (UMTS/WCDMA/HPSA/HSDPA)](#3g-umtswcdmahpsahsdpa)
@@ -26,7 +26,7 @@ The emnify IoT SIM and platform supports all devices and modules using the follo
 - [LTE-M (CAT-M1)](#lpwan-lte-mnb-iot)
 - [NB-IoT (CAT-NB1, CAT-NB2)](#lpwan-lte-mnb-iot)
 
-When a device wants to connect with any of these radio technologies, the network needs to support this technology as well as the device needs to support the network-specifc frequency band for this technology.
+When a device wants to connect with any of these radio technologies, the network needs to support this technology as well as the device needs to support the network-specific frequency band for this technology.
 
 ### 2G (GSM/GPRS/EDGE)
 
@@ -156,13 +156,13 @@ The **Power Save Mode** has the following characteristics:
    
 :::note
 Some modules which have a SIM enabled PIN, (e.g., u-blox SARA-R4/SARA-N4) do not go into sleep mode.
-The PIN is disabled on emnify SIMs.
+The PIN is disabled on emnify eSIMs.
 :::
 
 - Roaming for Power Save Mode 
 &nbsp;  
 &nbsp;   
-Be aware that not all NB-IoT and LTE-M networks have implemented PSM and even when PSM is available with the local operator this does not mean that a roaming SIM can use it.
+Be aware that not all NB-IoT and LTE-M networks have implemented PSM and even when PSM is available with the local operator this does not mean that a roaming eSIM can use it.
 This makes it difficult for devices that are moving - in case they use PSM, and the new network does not support PSM - or only other timer configurations.
 We therefore regularly test the availability of PSM in our [LTE-M](https://www.emnify.com/lte-m-coverage?hsLang=en) and [NB-IoT](https://www.emnify.com/nb-iot-coverage) roaming footprint.
 - AT Command calculation and examples for PSM settings 
@@ -204,7 +204,7 @@ Extended Discontinuous Reception (eDRX)
 &nbsp;  
 - Roaming with eDRX  
 &nbsp;  
-As with PSM - not all NB-IoT and LTE-M networks support eDRX or the same timer configuration - and even if they do this does not guarantee that a roaming SIM card can utilize eDRX.
+As with PSM - not all NB-IoT and LTE-M networks support eDRX or the same timer configuration - and even if they do this does not guarantee that a roaming eSIM card can utilize eDRX.
 We therefore also test and publish the eDRX availability on our [LTE-M](https://www.emnify.com/lte-m-coverage?hsLang=en) and [NB-IoT](https://www.emnify.com/nb-iot-coverage) roaming footprint.
 - [AT Command examples for eDRX settings](#eDRX_AT_COMMANDS)  
 &nbsp;  
