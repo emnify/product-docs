@@ -173,6 +173,10 @@ A technology that allows changes to the SIM memory [over–the–air](#ota---ove
 ## OpenVPN  
 An open-source software application that implements [virtual private network (VPN)](#vpn) techniques for creating secure point–to–point or site–to–site connections in routed or bridged configurations and remote access facilities.
 
+:::tip
+[emnify hosts an OpenVPN service](/services/openvpn) that allows you to establish a private network between a device and any remote client location.
+:::
+
 ## P2P SMS - Peer–to–Peer SMS  
 SMS exchanged between devices.
 

@@ -3,31 +3,38 @@ description: Overview and setup
 ---
 # OpenVPN
 
-emnify’s communication platform hosts an OpenVPN service that allows to establish a private network between the device and any remote client location. 
-The remote client can either be on the application server itself, or on any machine that wants to remotely access the device (such as operational staff).
+emnify's communication platform hosts an OpenVPN service that allows you to establish a private network between a device and any remote client location. 
+The remote client can be on the application server or any machine that wants to access the device remotely (such as operational staff).
 
-## OpenVPN overview
+## IoT device requirements
 
-To use the OpenVPN service the IoT device does not need any private APN, OpenVPN software or dynamic DNS resolution.
-Through the emnify SIM, every device will get a static private IP address which can be used to identify and address the device.
+Your IoT device doesn't need a private APN, OpenVPN software, or dynamic DNS resolution to use the OpenVPN service.
+Through the emnify SIM, each device will have a [static](/glossary#static-ip) [private IP address](/glossary#private-ip) that you can use to identify and address the device.
 
 <!--This image is missing: OpenVPN.png -->
 <!-- image caption: OpenVPN System Overview -->
 
-At the same time the IoT device can send data through the private tunnel to the IP address of the remote machine.
+At the same time, the IoT device can send data through the private tunnel to the IP address of the remote machine.
 
-## OpenVPN setup
+## Setting up OpenVPN using the emnify Portal
 
-In order to set up OpenVPN on your machine the following high-level steps are required.
+The following steps are required to set up OpenVPN on your machine:
 
 1. In the [emnify Portal](https://portal.emnify.com/) → [**Device Policies**](https://portal.emnify.com/device-policies): Set the **Service Policy** to a VPN breakout region, e.g., `eu-west-1 (VPN)`
-1. In the [emnify Portal](https://portal.emnify.com/) → [**Integrations**](https://portal.emnify.com/integrations) → **OpenVPN**: download the VPN configuration file for your region and operating system
-1. Create a `credentials.txt` with your username / password or organisation ID / application token (recommended).
-1. Load the VPN configuration file and `credentials.txt` with your OpenVPN client
-    
+1. In the [emnify Portal](https://portal.emnify.com/) → [**Integrations**](https://portal.emnify.com/integrations) → [**Secure Connection**](https://portal.emnify.com/integrations#secure-connection) → **OpenVPN** → Click **Show Instructions** 
+1. Select your operating system and install the OpenVPN software.
+1. Download and store the VPN configuration file for your region.
+1. Create the `credentials.txt` file as instructed, using either your [user credentials](https://portal.emnify.com/user-settings) or your [organization ID](https://portal.emnify.com/organisation-settings/details) and [application token](https://portal.emnify.com/integrations#application-tokens) (recommended)
+1. Follow the remaining steps in the Portal to start the OpenVPN application or service on your operating system.
 
-For detailed instructions please refer to our knowledge base articles:
+:::caution
+You can't use accounts with multi-factor authentication (MFA) enabled to authenticate the OpenVPN tunnel.
+:::
 
-1. [OpenVPN Integration MacOS](https://support.emnify.com/hc/en-us/articles/360019625379-OpenVPN-Integration-Guide-for-MacOS)
-1. [OpenVPN Integration Windows](https://support.emnify.com/hc/en-us/articles/115001723273-OpenVPN-Integration-Guide-for-Windows) 
-1. [OpenVPN Integration Linux](https://support.emnify.com/hc/en-us/articles/115001724434-OpenVPN-Integration-Guide-for-Linux)
+:::tip
+For more detailed instructions based on your operating system, please refer to our knowledge base articles:
+
+- [MacOS](https://support.emnify.com/hc/en-us/articles/360019625379-OpenVPN-Integration-Guide-for-MacOS)
+- [Windows](https://support.emnify.com/hc/en-us/articles/115001723273-OpenVPN-Integration-Guide-for-Windows) 
+- [Linux](https://support.emnify.com/hc/en-us/articles/115001724434-OpenVPN-Integration-Guide-for-Linux)
+:::
