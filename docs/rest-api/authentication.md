@@ -53,7 +53,7 @@ Once the `auth_token` expires, you can use the `refresh_token` to retrieve t
 
 ## Authenticate with an application token
 
-Since you shouldn't store your emnify user credentials on your application server, you can generate an `application_token` via the [**Integrations** page of the emnify Portal](https://portal.emnify.com/integrations) or the API: `/api/v1/application_token`.
+Since you shouldn't store your emnify user credentials on your application server, you can generate an `application_token` via the [emnify Portal](https://portal.emnify.com/integrations#application-tokens) or the API: `/api/v1/application_token`.
 The request body should have a description of the token normally used to indicate who is using the token and can have an `expiry_date` for the token.
 
 ```
@@ -90,7 +90,7 @@ The token can be revoked at any time.
 You can alternatively generate the `application_token` in the emnify Portal:
 
 1. [Log in to the emnify Portal](https://portal.emnify.com/sign)
-1. Navigate to [**Integrations**](https://portal.emnify.com/integrations) → **Application Tokens** → **Add Token**.
+1. Navigate to [**Integrations**](https://portal.emnify.com/integrations) → [**Application Tokens**](https://portal.emnify.com/integrations#application-tokens) → **Add Token**.
 
 <!-- TODO: Recreate generate_app_token.png (generate application token) -->
 

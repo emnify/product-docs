@@ -17,11 +17,11 @@ Integrating the Data Streamer API becomes a faster and more secure approach when
 ## Data Streamer in the Portal
 
 To [manage your data streams](managing-data-streams), [log in to your emnify Portal account](https://portal.emnify.com/sign/).
-Then, navigate to the [**Integrations** page](https://portal.emnify.com/integrations) by clicking the **Integrations** menu item in the sidebar.
+Then, navigate to the [**Data Streams**](https://portal.emnify.com/integrations#data-streams) section of the [**Integrations** page](https://portal.emnify.com/integrations).
 
 ### Viewing data streams
 
-If there are no data streams configured, the **Data Streams** panel displays all available [connection types](connection-types) as tiles.
+If there are no data streams configured, the [**Data Streams**](https://portal.emnify.com/integrations#data-streams) panel displays all available [connection types](connection-types) as tiles.
 
 <img
   src={require('./assets/portal-integrations-data-streams-panel.png').default}
@@ -30,6 +30,7 @@ If there are no data streams configured, the **Data Streams** panel displays all
 
 If you already have a data stream configured, the panel displays all existing streams, ordered by creation date (newest on the top).
 This list view can be used to gain an overview of the current states of different data streams.
+
 Data streams are marked as **Running** are properly operating.
 Failed streams exhibit an **Error** status.
 Paused streams are marked as **Paused**.
@@ -56,7 +57,7 @@ When no configured data streams are available, click **Add** on the preferred co
   alt=""
 />
 
-Otherwise, click **Add New Stream** at the top of the existing **Data Streams** list.
+Otherwise, click **Add New Stream** at the top of the existing [**Data Streams**](https://portal.emnify.com/integrations#data-streams) list.
 This shows the connection type tiles. You can choose your preferred connection type and click **Add**.
 
 <img
