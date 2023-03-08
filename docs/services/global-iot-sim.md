@@ -1,35 +1,56 @@
 ---
-description: Form factors, quality grades, multi-IMSI, eSIM
+description: Form factors, quality grades, multi-IMSI, eSIM, eUICC
 ---
 # Global IoT SIM
 
 emnify IoT SIMs are more durable than regular SIM cards and come in different [form factors](#form-factors) and [quality grades](#quality-grades).
-For testing the platform services quickly without any SIM hardware - emnify offers an [eSIM](#esim) which can be downloaded directly onto a supported smartphone.
-emnify also has a [multi-IMSI software application](#multi-imsi-application) directly on the SIM so different operator profiles can be used based on the location of the device.
-Using this technology, emnify can provide a superset of roaming networks from traditional operators.
+
+emnify SIMs that shipped prior to 08 March 2023 have a [multi-IMSI software application](#multi-imsi-application) that enables different operator profiles to be used based on the device's geographical location.
+Using this technology, emnify SIMs can leverage the [emnify IoT SuperNetwork](/services/global-iot-network).
+
+As of 08 March 2023, every emnify SIM that ships is an [eUICC](/glossary#euicc---embedded-universal-integrated-circuit-card) (Embedded Subscriber Identity Module), commonly referred as an eSIM.
+Unlike consumer eSIMs, emnify eSIMs are designed for commercial M2M applications.
+
+The term *eSIM* is sometimes used for referring to the MFF2 form factor.
+However, its broader meaning refers to both the eUUIC hardware and software that allows this next-generation SIM to be physically installed once, but upgraded and reprogrammed as often as needed.
+While eSIM/eUICC technology has been widely adopted for consumer smartphones and watches, its M2M implementation for IoT use cases includes additional features needed for industrial applications.
+Some of these features include:
+
+- [OTA provisioning](/glossary#ota-provisioning)
+- OTA operator profile updates
+- Permanent roaming: eUICCs contain multiple [MNO](https://www.emnify.com/iot-glossary/mno) (Mobile Network Operator) profiles and can switch between them remotely
+- With at least 512 MB of memory, additional applications can be installed, such as security features
+
+The new eUICC-based emnify eSIMs are available also as pluggable SIM cards in various form factors, not just MFF2.
 
 ## Form factors
 
-The traditional, pluggable SIM card comes in 4 different form factors:
+emnify SIMs are available in the following form factors:
 
-- 1FF (approximately the size of a credit card) - 85 x 54 x 0,76mm
-- 2FF (mini SIM) - 25 x 15 x 0,76mm
-- 3FF (Micro SIM) - 15 x 12 x 0,76 mm
-- 4FF (Nano SIM) - 12,3 x 8,8 x 0,67 mm
+| Form factor     | Dimensions           |
+| --------------- | -------------------- |
+| 2FF (mini SIM)  | 25 x 15 x 0,76 mm    |
+| 3FF (Micro SIM) | 15 x 12 x 0,76 mm    |
+| 4FF (Nano SIM)  | 12.3 x 8.8 x 0,67 mm |
+| MFF2 (embedded) | 6 x 5 x 0.75-0.82 mm |
 
-emnify offers pre-punched SIM cards in different combinations 2-in-1 (1FF and 2FF), 3-in-1 (1FF,2FF,3FF), and 4-in-1 (1FF,2FF,3FF,4FF).
-Especially in use cases where the devices are moving, it is advisable to use a SIM that fits the device exactly and does not contain another smaller form factor punched out.
-Not only are such SIMs are more durable, but their contact with the device is firmer.
+MFF2 eSIMs need to be soldered onto a device and are not readily removable.
 
-Another form factor is MFF2 which is also referred to as an embedded SIM.
-Its dimensions  6 x 5 x 0.75-0.82 mm.
-These embedded SIMs are soldered onto a device and are not removable.
+Visit the [emnify SIM Shop](https://portal.emnify.com/sim-order) where you can choose between these packages:
 
-:::note
-The term *eSIM* is used when referring to the MFF2 factor. Nevertheless, the term eSIM is also used when referring to SIMs whose operator profiles can be updated over the air.
-These eUICC-based eSIMs can come in any of the described form factors, not just MFF2.
-While eSIM/eUICC is widely adopted for consumer smartphone and watches, for IoT use cases (where the profile cannot be download via a screen or QR reader) the commercial and deployment model of the required infrastructure prohibits an easy change of operator profiles and is therefore not widely adopted.
-:::
+- Triple-cut commercial
+  - Mini (2FF)
+  - Micro (3FF)
+  - Nano (4FF)
+- Dual-cut commercial
+  - Mini (2FF)
+  - Micro (3FF)
+- Single-cut Mini Industrial (2FF)
+- Single-cut Micro Industrial (3FF)
+- Embedded MFF2
+
+In use cases where devices are mobile, we highly recommend choosing the form factor that fits the device exactly, not multi-cut ones that include a smaller form factor than is needed.
+Not only are such pluggable SIMs more durable, but their contact with the device is also firmer.
 
 ## Quality grades
 
@@ -52,13 +73,13 @@ The following table shows comparisons to a standard consumer SIM.
 
 ## Multi-IMSI application
 
-emnify IoT SIM cards are equipped with a multi-IMSI applet that contains emnify’s as well as our partner operators' profiles. 
+emnify SIM cards are equipped with a multi-IMSI applet that contains emnify’s as well as our partner operators' profiles. 
 Different operator profiles are identified by their [IMSI](/glossary#imsi---international-mobile-subscriber-identity).
 Each IMSI / partner operator usually has more than one network accessible per country.
 
-The SIM applet utilizes a preferred IMSI list per country.
+The emnify SIM applet utilizes a preferred IMSI list per country.
 When a device moves to a different country which has a different preferred IMSI configured, the applet dynamically overwrites the previously active IMSI with the preferred IMSI for this country. 
-Similarly, when an operator’s service experiences an outage, the SIM can automatically fall back to another IMSI to ensure that the connection remains uninterrupted.
+Similarly, when an operator’s service experiences an outage, the emnify SIM can automatically fall back to another IMSI to ensure that the connection remains uninterrupted.
 
 The selection of the preferred IMSI for each country is based on multiple factors including:
 
