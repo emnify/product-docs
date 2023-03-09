@@ -5,7 +5,7 @@ description: How to start developing your IoT solutions with emnify
 # Sign up for an emnify account
 
 To begin developing your IoT solutions with emnify, you'll need an emnify account.
-[Sign up](https://portal.emnify.com/sign/up) for free to a 60-day trial to use all functionalities.
+[Sign up](https://portal.emnify.com/sign/up) for free to a 2-month trial to use all functionalities.
 
 <details className="custom-details-troubleshooting">
   <summary>Need help verifying your phone number?</summary>
@@ -50,7 +50,22 @@ Currently, the 3 triple-cut SIM cards can be delivered to most destinations worl
 
 To get your free Evaluation SIM package, [log in to your emnify account](https://portal.emnify.com/sign) and follow these steps:
 
-1. On the dashboard, click on order on **Get your free SIMs**
-1. Select the **Free Evaluation Package with 3 Triple-cut SIMs**
-1. Fill in your **Invoice data**, **Delivery details**, and **Choose shipping option**.
-1. Proceed to pay the shipping charges and you will be notified when the SIM cards will be shipped.
+1. On the [**Dashboard**](https://portal.emnify.com/) page, click **Get SIMs** on the **Get your free SIMs** panel.
+
+<img
+  src={require('./assets/portal-dashboard-get-started-get-sims-button.png').default}
+  alt=""
+/>
+
+2. Fill in your **Invoice data**, **Delivery details**, and **Choose shipping option**.
+
+<img
+  src={require('./assets/portal-order-evaluation-pack-invoice-shipping-details.png').default}
+  alt=""
+/>
+
+3. Finally, review and confirm your details. 
+
+:::info
+You'll be notified when the SIM cards will be shipped.
+:::
