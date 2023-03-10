@@ -63,7 +63,7 @@ emnify eSIMs come in three different quality grades: **Commercial**, **Industria
 | Operating voltage | 1.62V to 5.5V          | 1.62V to 5.5V     | 1.62V to 5.5V    |
 | Chipset NVM size  | 704 kB                 | 704 kB            | 704 kB           |
 | Chipset RAM size  | 20 kB                  | 20 kB             | 20 kB            |
-| Write endurance*  | 10,000,000             | 10,000,000        | 10,000,000       |
+| Write endurance*  | 10,000,000 cycles      | 10,000,000 cycles | 10,000,000 cycles |
 | Data Retention    | 15 years at 85°C       | 15 years at 85°C  | 15 years at 85°C |
 | Moisture/Reflow conditions<br /> | – | – | MSL3 (J-STD020) |
 | Humidity<br />(JESD22-A101D) | – | – | HA as per ETSI TS 102.671 |
