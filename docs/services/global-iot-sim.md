@@ -54,22 +54,24 @@ Not only are such pluggable SIMs more durable, but their contact with the device
 
 ## Quality grades
 
-emnify eSIM cards come in two different quality grades **Commercial** and **Industrial**.
-The following table shows comparisons to a standard consumer SIM.
+emnify eSIMs come in three different quality grades: **Commercial**, **Industrial**, and **MFF2**.
 
-| Parameter | Consumer SIM | Commercial | Industrial |
-| --------- | ------------ | ---------- | ---------- |
-| Available form factors | 2FF, 3FF, 4FF | 2FF, 3FF, 4FF |MFF2, 2FF, 3FF (2-in-1 or 3-in-1) |
-| Temperature Range | | -25° - 85°C | -40° - 105°C |
-| Data Retention | 10 years | 10 years | 15 years at 85°C |
-| Write Cycles | 100,000 | 500,000 | 10,000,000 cycles with OS High Endurance |
-| Memory | 64-128 kB | 128 kB | 704 kB |
-| Corrosion Resistance Jedec JSD22-A107 | | CA | CC |
-| Moisture Resistance Jedec JESD22-A102 | | 110°C / 85% RH | 130°C / 85% RH |
-| Humidity Resistance Jedec JESD22-A101 | | | HA |
-| Vibration Jedec JESD22-B103 | | | VA |
-| Mechnical Shock Jedec JESD22-B104 | | | SA |
-| Low Power features | | •&nbsp;Poll Interval negotiation •&nbsp;UICC&nbsp;suspension and resume | •&nbsp;Poll Interval negotiation •&nbsp;UICC&nbsp;suspension and resume |
+|                   | Commercial&nbsp;eUICC  | Industrial&nbsp;eUICC  | MFF2        |
+| ----------------- | :---------------------: | :---------------: | :-------------: |
+| Form factors      | Triple-cut or Dual-Cut | 2FF or 3FF        | MFF2             |
+| Temperature Range<br />(JESD22-A104) | –25°C to +85°C | –40°C to +105°C | –40°C to +105°C |
+| Operating voltage | 1.62V to 5.5V          | 1.62V to 5.5V     | 1.62V to 5.5V    |
+| Chipset NVM size  | 704 kB                 | 704 kB            | 704 kB           |
+| Chipset RAM size  | 20 kB                  | 20 kB             | 20 kB            |
+| Write endurance*  | 10,000,000             | 10,000,000        | 10,000,000       |
+| Data Retention    | 15 years at 85°C       | 15 years at 85°C  | 15 years at 85°C |
+| Moisture/Reflow conditions<br /> | – | – | MSL3 (J-STD020) |
+| Humidity<br />(JESD22-A101D) | – | – | HA as per ETSI TS 102.671 |
+| Corrosion Resistance<br />(JESD22-A107) | – | – | CX as per ETSI TS 102.671 |
+| Vibration Resistance<br />(JESD22-B103) | – | – | VX as per ETSI TS 102.671 |
+| Mechanical Shock<br />(JESD22-B104) | – | – | SX as per ETSI TS 102.671|
+| Common Criteria Certificate | CCN-CC-5/2019 | CCN-CC-5/2019 | CCN-CC-5/2019
+\* 500k erase per page with OS High Endurance
 
 ## Multi-IMSI application
 
