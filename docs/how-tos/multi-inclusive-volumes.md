@@ -1,6 +1,6 @@
 # How to set up multi-inclusive volumes
 
-We introduced a multi-inclusive volumes feature, allowing you to manage different tariffs and data plans under a single account. 
+We introduced a multi-inclusive volumes feature, allowing you to manage different tariffs and data plans from a single account. 
 Once these volumes have been enabled on your emnify account, please ensure that your coverage policies have been adjusted correctly to take advantage of this setup.
 
 ## Configuration
@@ -14,7 +14,6 @@ Log in to your [emnify account](https://portal.emnify.com/sign) and navigate to 
   alt=""
 />
 
-<!-- TODO: Replace with linked anchor to Portal section -->
 Then, scroll down to your **Coverage Policies**.
 
 <img
@@ -108,13 +107,13 @@ In the preceding example, the two selected devices (**Walking Mobile** and **Tra
 When multiple inclusive volumes are configured on your account, you can update the rate assigned to one device within the month. 
 
 :::caution
-These changes have an impact on your monthly bill.
+These changes will have an impact on your monthly bill.
 :::
 
 ### Changing a device's assigned inclusive volume
 
 If you notice that one of your devices uses more (or less) data than expected, you can update its assigned inclusive volume any time during the month. 
-Any changes will reflect on your invoice at the end of the month.
+Any changes will be reflected on your invoice at the end of the month.
 
 In the following example, we're switching the device from **Europe 500 MB** included to **Europe 1 MB** included.
 
