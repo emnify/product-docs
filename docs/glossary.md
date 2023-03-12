@@ -206,6 +206,11 @@ An approach that allows network administrators to programmatically initialize, c
 ## Service profile  
 A profile that defines the services and functionality of a device managed through the emnify platform.
 
+## SIM
+A SIM (Subscriber Identification Module) an integrated circuit (IC) available as a card in various form factors that stores data used to identify a subscriber ([IMSI](#imsi---international-mobile-subscriber-identity)) along with other other network information for connecting and authenticating with a [mobile network operator (MNO)](https://www.emnify.com/iot-glossary/mno).
+An [eSIM](https://www.emnify.com/iot-glossary/esim) is a SIM with an [eUICC](#euicc---embedded-universal-integrated-circuit-card) which can be produced as SIM card in various form factors or embedded within a device.
+The [emnify eSIM](/services/global-iot-sim) has capabilities not available with other eSIMs.
+
 ## SIM batch  
 A collection of SIM cards that can be registered with a single [BIC](#bic---batch-identification-code) code.
 
