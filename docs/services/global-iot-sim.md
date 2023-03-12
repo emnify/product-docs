@@ -70,7 +70,23 @@ emnify eSIMs come in three different quality grades: **Commercial**, **Industria
 | Corrosion Resistance<br />(JESD22-A107) | – | – | CX as per ETSI TS 102.671 |
 | Vibration Resistance<br />(JESD22-B103) | – | – | VX as per ETSI TS 102.671 |
 | Mechanical Shock<br />(JESD22-B104) | – | – | SX as per ETSI TS 102.671|
-| Common Criteria Certificate | CCN-CC-5/2019 | CCN-CC-5/2019 | CCN-CC-5/2019
+| Common Criteria Certificate | CCN-CC-5/2019 | CCN-CC-5/2019 | CCN-CC-5/2019 |
+| GSMA: SGP.01 Embedded SIM Remote Provisioning Architecture | 1.1 | 1.1 | 1.1 |
+| GSMA: SGP.02 Embedded UICC Technical Specification | 3.2 | 3.2 | 3.2 |
+| GSMA: SGP.16 M2M Compliance Process | 1.1 | 1.1 | 1.1 |
+| TCA: eUICC Profile Package Interoperable Format Technical Specification | 2.1 | 2.1 | 2.1 |
+| eUICC: Maximum number of profiles | 10 | 10 | 10 |
+| eUICC: ISD-A and ISD-R system applets | Supported | Supported | Supported |
+| eUICC: EAP-SIM and EAP-AKA authentication protocols | Supported | Supported | Supported |
+| LPWAN features:<br />Suspend and resume SIM state ETSI TS 102 221<br />Poll Interval Negotiation ETSI TS 102 221 | Supported | Supported | Supported |
+| OTA Capabilities on ISD-P:<br />Remote file management - RFM<br />Remote applet management - RAM<br />**HTTPS** | Supported | Supported | Supported |
+| OTA Capabilities on ISD-P:<br />Remote file management - RFM<br />Remote applet management - RAM<br />**TLS 1.2** | Supported | Supported | Supported |
+| OTA Capabilities on ISD-P:<br />Remote file management - RFM<br />Remote applet management - RAM<br />**AES algorithm** (128-bit, 192-bit, and 256-bit keys) | Supported | Supported | Supported |
+| GlobalPlatform: All Secure Channel Protocols | Supported | Supported | Supported |
+| Java Card: Standard Java Card APIs | Supported | Supported | Supported |
+| Java Card: GlobalPlatform API | Supported | Supported | Supported |
+| Compliance: ROHS | Yes | Yes | Yes |
+| Compliance: REACH | Yes | Yes | Yes |<br />
 \* 500k erase per page with OS High Endurance
 
 ## Multi-IMSI application
