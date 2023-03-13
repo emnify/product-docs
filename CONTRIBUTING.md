@@ -162,6 +162,11 @@ From the **Comparing changes** page, you will select **Create pull request** and
 
 ![github-comparing-changes-new](https://user-images.githubusercontent.com/49970529/215493175-d5c10247-7be1-4ecb-9173-773f3c06f1fa.png)
 
+### Update the site navigation
+
+Adding a new page to the documentation will require you to update [`sidebars.js`](https://github.com/emnify/product-docs/blob/main/sidebars.js) so that visitors will be able to navigate to it.
+If the existing `sidebars.js` configuration doesn't provide enough information on how to add your new content to the navigation, see the Docusaurus [Sidebar items](https://docusaurus.io/docs/sidebar/items) documentation.
+
 ## The review process
 
 After you have created your PR, the workflow is driven by cycles of content updates and reviews.
@@ -177,13 +182,9 @@ When you have concluded your work, just select **Ready for review**.
 
 ![git-pr-wip](https://user-images.githubusercontent.com/49970529/215799785-66620827-c3fa-4a5f-8bf7-511c345da91e.png)
 
-### Maintainers and reviewers
+### Reviewers
 
-A member of our documentation team will need to run the Test deployment script to verify that your changes will not break the build process.
-
-![github-need-maintainer](https://user-images.githubusercontent.com/49970529/215772424-af3720d3-15d9-455f-aaed-e653cbec6c37.png)
-
-Since we closely monitor the queue of PRs, it won't be long before a reviewer is assigned to your PR and has run the **Test deployment** script.
+Although we monitor the queue of PRs regularly, you can also [request a review of your PR](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/requesting-a-pull-request-review) if your PR is ready and it seems to have not been noticed.
 
 ![github-maintainer-approved-action](https://user-images.githubusercontent.com/49970529/215775389-ab26caac-c05f-4b4e-ba9a-796ae7873e87.png)
 
@@ -204,9 +205,9 @@ Note: If you want to confirm which repository/branch you are on without having t
 ### Resolving open conversations
 
 The reviewer may ask you to make additional changes before we can merge your PR.
-If the reviewer supplied suggestions that can be applied, you can easily choose **Apply suggestion** directly through the UI.
+If the reviewer supplied suggestions that can be applied, you can choose **Apply suggestion** directly through the UI.
 This will automatically commit the change and [resolve](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/commenting-on-a-pull-request#resolving-conversations) the conversation.
-If there are several suggestions, they can be batched and applied all at once.
+If there are several suggestions, they can be [batched](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/incorporating-feedback-in-your-pull-request#applying-suggested-changes) and applied all at once.
 
 If the reviewer has requested changes in the form of a comment, you will need to follow the instructions supplied when applying the changes.
 See [Submitting additional changes](#submitting-additional-changes) above for how to add changes to the current PR branch.
