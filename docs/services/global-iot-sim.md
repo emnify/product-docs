@@ -56,37 +56,91 @@ Not only are such pluggable SIMs more durable, but their contact with the device
 
 emnify eSIMs come in three different quality grades: **Commercial**, **Industrial**, and **MFF2**.
 
-|                   | Commercial&nbsp;eUICC  | Industrial&nbsp;eUICC  | MFF2        |
-| ----------------- | :---------------------: | :---------------: | :-------------: |
-| Form factors      | Triple-cut or Dual-Cut | 2FF or 3FF        | MFF2             |
-| Temperature Range<br />(JESD22-A104) | –25°C to +85°C | –40°C to +105°C | –40°C to +105°C |
-| Operating voltage | 1.62V to 5.5V          | 1.62V to 5.5V     | 1.62V to 5.5V    |
-| Chipset NVM size  | 704 kB                 | 704 kB            | 704 kB           |
-| Chipset RAM size  | 20 kB                  | 20 kB             | 20 kB            |
-| Write endurance*  | 10,000,000 cycles      | 10,000,000 cycles | 10,000,000 cycles |
-| Data Retention    | 15 years at 85°C       | 15 years at 85°C  | 15 years at 85°C |
-| Moisture/Reflow conditions<br /> | – | MSL3 (J-STD020) | MSL3 (J-STD020) |
-| Humidity<br />(JESD22-A101D) | – |  HA as per ETSI TS 102.671 | HA as per ETSI TS 102.671 |
-| Corrosion Resistance<br />(JESD22-A107) | – | – | CX as per ETSI TS 102.671 |
-| Vibration Resistance<br />(JESD22-B103) | – | – | VX as per ETSI TS 102.671 |
-| Mechanical Shock<br />(JESD22-B104) | – | – | SX as per ETSI TS 102.671|
-| Common Criteria Certificate | CCN-CC-5/2019 | CCN-CC-5/2019 | CCN-CC-5/2019 |
-| eUICC Compliance: GSMA<br />SGP.01 Embedded SIM Remote Provisioning Architecture | 1.1 | 1.1 | 1.1 |
-| eUICC Compliance: GSMA<br />SGP.02 Embedded UICC Technical Specification | 3.2 | 3.2 | 3.2 |
-| eUICC Compliance: GSMA<br />SGP.16 M2M Compliance Process | 1.1 | 1.1 | 1.1 |
-| eUICC Compliance: TCA<br />eUICC Profile Package Interoperable Format Technical Specification | 2.1 | 2.1 | 2.1 |
-| eUICC: Maximum number of profiles | 10 | 10 | 10 |
-| eUICC: ISD-A and ISD-R system applets | Supported | Supported | Supported |
-| eUICC: EAP-SIM and EAP-AKA authentication protocols | Supported | Supported | Supported |
-| LPWAN features:<br />Suspend and resume SIM state ETSI TS 102 221<br />Poll Interval Negotiation ETSI TS 102 221 | Supported | Supported | Supported |
-| OTA Capabilities on ISD-P:<br />Remote file management - RFM<br />Remote applet management - RAM | Supported | Supported | Supported |
-| GlobalPlatform: All Secure Channel Protocols | Supported | Supported | Supported |
-| Java Card: Standard Java Card APIs | Supported | Supported | Supported |
-| Java Card: GlobalPlatform API | Supported | Supported | Supported |
-| Compliance: ROHS | Yes | Yes | Yes |
-| Compliance: REACH | Yes | Yes | Yes |<br />
-\* 500k erase per page with OS High Endurance
-
+<table>
+<thead>
+    <th colspan="3"></th>
+    <th>Commercial eUICC</th>
+    <th>Industrial eUICC</th>
+    <th>MFF2</th>
+  </thead>
+<tbody>
+<tr>
+  <td rowspan="15">Hardware characteristics</td>
+  <td rowspan="2">Form Factor</td>
+  <td>Embedded/solderable</td>
+  <td align="center">-</td>
+  <td align="center">-</td>
+  <td align="center">MFF2</td>
+</tr>
+<tr>
+  <td>Removable Card</td>
+  <td>Triple-cut or Dual-Cut</td>
+  <td>2FF or 3FF</td>
+  <td align="center">-</td>
+</tr>
+<tr>
+  <td rowspan="5">Chip Type</td>
+  <td>Operational and storage temperature</td>
+  <td>–25°C to +85°C (JESD22-A104)</td>
+  <td colspan="2" align="center">–40°C to +105°C (JESD22-A104)</td>
+</tr>
+<tr>
+  <td>Operating voltage</td>
+  <td colspan="3" align="center">1.62V to 5.5V</td>
+</tr>
+<tr>
+  <td>Interface</td>
+  <td colspan="3" align="center">ISO-7816, T=0</td>
+</tr>
+<tr>
+  <td>Chipset NVM size</td>
+  <td colspan="3" align="center">704 Kbytes</td>
+</tr>
+<tr>
+  <td>Chipset RAM size</td>
+  <td colspan="3" align="center">20 Kbytes</td>
+</tr>
+<tr>
+  <td rowspan="8">NVRAM characteristics</td>
+  <td>Write Endurance</td>
+  <td colspan="3">500k erase per page 10M cycles with OS High Endurance</td>
+</tr>
+<tr>
+  <td>Data retention</td>
+  <td colspan="3" align="center">15 years @85°C</td>
+</tr>
+<tr>
+  <td>Moisture/Reflow conditions</td>
+  <td align="center">-</td>
+  <td colspan="2">MSL3 (J-STD020)</td>
+</tr>
+<tr>
+  <td>Humidity</td>
+  <td align="center">-</td>
+  <td colspan="2">HA as per ETSI TS 102.671 / (JESD22-A101D)</td>
+</tr>
+<tr>
+  <td>Corrosion</td>
+  <td align="center">-</td>
+  <td align="center">-</td>
+  <td>CX as per ETSI TS 102.671 (JESD22-A107)</td>
+</tr>
+<tr>
+  <td>Vibration</td>
+   <td align="center">-</td>
+   <td align="center">-</td>
+  <td>VX as per ETSI TS 102.671 (JESD22-B103)</td>
+</tr>
+<tr>
+  <td>Shock</td> <td align="center">-</td> <td align="center">-</td>
+  <td>SX as per ETSI TS 102.671 (JESD22-B104)</td>
+</tr>
+<tr>
+  <td>Common Criteria Certificate</td>
+  <td colspan="3" align="center">CCN-CC-5/2019</td>
+</tr>
+</tbody>
+</table>
 
 ## Compliance and software features
 
