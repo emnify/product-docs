@@ -237,7 +237,7 @@ After it has been approved, it is likely to be merged without delay, in which ca
 
 ## Previewing the documentation site
 
-For larger contributions, especially when adding new pages, it becomes necessary to preview how the new content will look when rendered as HTML, and how it will fit it in with the existing documentation.
+You can preview how the new content will look when rendered as HTML, and how it will fit it in with the existing documentation.
 
 Since the documentation site is built using [Docusaurus](https://docusaurus.io/) which requires Node.js as well as a clone of this repository, there are a few steps needed to set up your environment.
 
@@ -249,7 +249,7 @@ Although the following steps may seem overwhelming at first, they only need to b
 
 - [Git](https://docs.github.com/en/get-started/quickstart/set-up-git)
 - [Node.js](https://nodejs.org/en/download/): After installation, confirm that your Node.js version meets the [Docusaurus requirements](https://docusaurus.io/docs/installation#requirements).
-- [yarn](https://classic.yarnpkg.com/en/docs/install) 
+- [Yarn](https://classic.yarnpkg.com/en/docs/install) 
 
 #### Clone the repository
 
@@ -279,16 +279,16 @@ Change this Git configuration setting to avoid problems on macOS and Windows pla
 git config core.ignoreCase false
 ```
 
-After yarn is installed, you can run yarn to install all the required Node.js applications you need to run your local documentation site on your workstation.
+After Yarn is installed, you can run Yarn to install all the required Node.js applications you need to run your local documentation site on your workstation.
 Docusaurus, including all of its dependencies, will be installed in this step.
-Navigate to your cloned repository in your terminal window (or PowerShell) and start yarn:
+Navigate to your cloned repository in your terminal window (or PowerShell) and start Yarn:
 
 ```
 yarn
 ```
 
 This concludes the first-time installation steps for setting up your new environment.
-However, you might need to run yarn occasionally  when new versions of your Node.js apps are released. 
+However, you might need to run Yarn occasionally  when new versions of your Node.js apps are released. 
 
 ### Preview the site
 
@@ -322,7 +322,7 @@ git pull
 
 #### Start previewing
 
-Run the following yarn command to have your browser open a new tab displaying the documentation site.
+Run the following Yarn command to have your browser open a new tab displaying the documentation site.
 
 ```
 yarn start
