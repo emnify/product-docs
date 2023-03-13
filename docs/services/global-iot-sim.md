@@ -182,7 +182,7 @@ emnify eSIMs come in three different quality grades: **Commercial**, **Industria
 </tr>
 <tr>
   <td>LPWAN features</td>
-  <td>Suspend and resume SIM state ETSI TS 102 221
+  <td>Suspend and resume SIM state ETSI TS 102 221<br />
       Poll Interval Negotiation ETSI TS 102 221</td>
   <td>Supported</td>
 </tr>
