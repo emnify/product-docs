@@ -1,45 +1,16 @@
-# Welcome to the emnify documentation contributing guide
+# Contributing to the emnify Documentation
 
 Your interest in contributing to the emnify product documentation is greatly appreciated.
 By helping maintain and grow our documentation, your efforts will not only benefit your organization but the greater emnify community as well.
 
-Please read our [Code of Conduct](https://github.com/EMnify/.github/blob/add-code-of-conduct/CODE_OF_CONDUCT.md#code-of-conduct) in order to help us maintain a professional, respectful, and inclusive environment for all contributors.
-
-## Table of contents
-
-- [The basics](#the-basics)
-- [Notice for internal contributors](#notice-for-internal-contributors)
-- [Updating the documentation](#updating-the-documentation)
-  - [Navigate to the file you wish to edit](#navigate-to-the-file-you-wish-to-edit)
-  - [GitHub will fork the repository for you](#github-will-fork-the-repository-for-you)
-  - [Editing the page](#editing-the-page)
-  - [Propose changes](#propose-changes)
-  - [Comparing changes](#comparing-changes)
-  - [Open a pull request](#open-a-pull-request)
-  - [Pull request page](#pull-request-page)
-- [Creating new content](#creating-new-content)
-  - [Navigate to the containing folder](#navigate-to-the-containing-folder)
-  - [Name your file](#name-your-file)
-  - [Propose new file](#propose-new-file)
-- [The review process](#the-review-process)
-  - [Ready for review](#ready-for-review)
-  - [Maintainers and reviewers](#maintainers-and-reviewers)
-  - [Submitting additional changes](#submitting-additional-changes)
-  - [Resolving open conversations](#resolving-open-conversations)
-  - [Approval](#approval)
-- [Previewing the documentation site](#previewing-the-documentation-site)
-  - [Set up your working environment](#set-up-your-working-environment)
-    - [Software requirements](#software-requirements)
-    - [Clone the repository](#clone-the-repository)
-  - [Preview the site](#preview-the-site)
-    - [Frequently used git commands](#frequently-used-git-commands)
-    - [Start previewing](#start-previewing)
----
+Please read our [Code of Conduct](https://github.com/emnify/.github/blob/add-code-of-conduct/CODE_OF_CONDUCT.md#code-of-conduct) in order to help us maintain a professional, respectful, and inclusive environment for all contributors.
 
 ## The basics
 
 [GitHub flow](https://docs.github.com/en/get-started/quickstart/github-flow) provides the essentials for collaborating on projects hosted in GitHub.
 
+Our documentation is written in Markdown.
+[Docusaurus](https://docusaurus.io/) renders the Markdown to HTML as well as providing a theme and navigational components.
 If you haven't worked with [Markdown](https://daringfireball.net/projects/markdown/) before, here are some resources to help you get started:
 
 - [Basic syntax](https://www.markdownguide.org/basic-syntax/)
@@ -53,31 +24,25 @@ If you are part of our internal emnify team, please request access to the emnify
 
 **Notify us when your account is active before taking any further action.**
 
-Once we have given you the appropriate permissions, you can work directly with the repository without any need to fork it.
+Once you are added to our team, you can work directly with the repository without any need to fork it.
 Consequently, please disregard any references in this guide to "your forked repository".
 
 ## Updating the documentation
 
-If you don't already have a GitHub account, you will need to [sign up](https://github.com/signup) for one.
-Once you have a GitHub account and have logged in, you will be able to contribute.
+After logging in to your GitHub account, you can start contributing.
 
 ### Navigate to the file you wish to edit
 
-Starting from the emnify Documentation [document root](https://github.com/EMnify/product-docs/tree/main/docs) folder, find the file you wish to edit.
+Starting from the emnify Documentation [document root](https://github.com/emnify/product-docs/tree/main/docs) folder, find the file you wish to edit.
 
 ![github-select-edit](https://user-images.githubusercontent.com/49970529/215493212-f4694f5a-7d7f-4d65-a77d-761225d9a3e4.png)
 
 ### GitHub will fork the repository for you
 
-If you haven't already forked the [emnify/product-docs](https://github.com/EMnify/product-docs) repository, GitHub will do it for you as soon as you select the edit icon.
+If you haven't already [forked](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks) the [emnify/product-docs](https://github.com/emnify/product-docs) repository, GitHub will do it for you as soon as you select the edit icon.
 
 ![github-fork-created](https://user-images.githubusercontent.com/49970529/215493193-6e805d85-e647-41d4-8867-91032bc45a9b.png)
 
-Viewing your forked repository isn't necessary at this point in the process, but if you are curious, you can confirm that you now have a forked **product-docs** repository:
-
-![github-your-repos](https://user-images.githubusercontent.com/49970529/215493214-1c265b19-8f99-404c-a472-740e50df3799.png)
-
-![github-forked-repo](https://user-images.githubusercontent.com/49970529/215493196-f9a9945d-c51f-433a-ab89-b6bd24536616.png)
 
 ### Editing the page
 
@@ -109,7 +74,6 @@ Select **Create pull request** to continue.
 
 Once you select **Create pull request**, you will be presented with the **Open a pull request** page.
 Here you will have the opportunity to edit the name of the PR to something more descriptive.
-In this example, we see it defaulted to the name of the file that was changed.
 
 The input field below enables you to update the summary/description you previously provided.
 
@@ -117,10 +81,10 @@ Normally we will not edit your changes during our review.
 However, you can enforce this by unchecking the **Allow edits by maintainers**.
 If you want us to edit your changes as needed during our review, then please state this explicitly in the PR description and leave this option checked.
 
-Once you select **Create pull request**, we will see your PR in our queue of [open PRs](https://github.com/EMnify/product-docs/pulls). 
+Once you select **Create pull request**, we will see your PR in our queue of [open PRs](https://github.com/emnify/product-docs/pulls). 
 
-We recommend that you remove the commented lines between `<!--` and `-->` and make use of the template below them, especially the **Description** heading.
-There is an **Additional Context** heading you can use as well.
+We recommend make use of the template that includes the **Description** heading and an **Additional Context** heading if needed.
+`<!--` and `-->` serve as block comment tags, hiding any text between them. 
 Feel free to add any other headings, screenshots, images, diagrams, etc., that may help in explaining your contribution.
 
 ![github-open-a-pull-request](https://user-images.githubusercontent.com/123376330/215520265-e462ab79-47c8-465b-bc30-16f4c6950038.png)
@@ -151,12 +115,12 @@ Commit details are collapsed by default.
 ![github-pr-commits-tab-detail](https://user-images.githubusercontent.com/49970529/216596552-26756c50-c9d5-4498-9d95-451eaafb2b63.png)
 
 #### Checks
-The [Test deployment](https://github.com/EMnify/product-docs/actions/workflows/test-deploy.yml) GitHub action is triggered when your changes are pushed.
-If there are any syntax errors that would break the documentation build, you will find details about what went wrong by following the most recent link associated with your PR's name in the [workflow runs](https://github.com/EMnify/product-docs/actions/workflows/test-deploy.yml) table. 
+The [Test deployment](https://github.com/emnify/product-docs/actions/workflows/test-deploy.yml) GitHub action is triggered when your changes are pushed.
+If there are any syntax errors that would break the documentation build, you will find details about what went wrong by following the most recent link associated with your PR's name in the [workflow runs](https://github.com/emnify/product-docs/actions/workflows/test-deploy.yml) table. 
 
 #### Files changed
 
-Very useful for PRs that involve changes needed in multiple files
+This is very useful for PRs that involve changes needed in multiple files.
 
 ![github-pr-files-changed-tab](https://user-images.githubusercontent.com/49970529/216598552-8e6b5a88-d503-4c19-aee9-61678e0cfef4.png)
 
@@ -169,7 +133,7 @@ In the following example, we want to add a new device to the Quickstart guide.
 
 ### Navigate to the containing folder
 
-From the [document root](https://github.com/EMnify/product-docs/tree/main/docs), search for a folder that matches the category of the content you wish to create.
+From the [document root](https://github.com/emnify/product-docs/tree/main/docs), search for a folder that matches the category of the content you wish to create.
 
 Once you have found the best fit, navigate to that folder and select **Add file**.
 In this example, we want to add a new device under `quickstart/devices/`.
@@ -181,6 +145,8 @@ If you expand the list of options for the **Add file** button, you can see that 
 ### Name your file
 
 If you did not choose the **Upload files** option, you will be prompted to provide a name for your new file.
+
+**Note**: Please use [kebab case](https://en.wikipedia.org/wiki/Letter_case#Kebab_case) when naming your files.
 
 ![github-create-file](https://user-images.githubusercontent.com/49970529/215493184-00ff9bdc-2783-4b7d-9fcb-d7d2b9b7179c.png)
 
@@ -294,7 +260,7 @@ Clone your forked `product-docs` repository.
 1. Navigate to the location where you want the repository to reside.
 1. Issue the following command after you have replaced `yourUsername` with your actual GitHub username:
 
-**Note**: Internal emnify contributors should replace `yourUsername` with `EMnify`.
+**Note**: Internal emnify contributors should replace `yourUsername` with `emnify`.
 
 ```
 git clone https://github.com/yourUsername/product-docs.git
