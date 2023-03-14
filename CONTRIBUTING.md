@@ -280,32 +280,10 @@ However, you might need to run Yarn occasionally  when new versions of your Node
 ### Preview the site
 
 It is important that you have the desired branch checked out when you want to preview your work.
-The default branch `main` is the public-facing version and doesn't contain your changes (yet)! 
-You will mainly be interested in previewing your work from your PR branches.
-These need to be explicitly checked out using Git.
-
-You will need to open a terminal for starting your local Docusaurus server for previewing.
-You can issue the necessary Git commands using the command line.
-
-#### Frequently used git commands
-
-**Get recently created branches**
-
-```
-git fetch origin
-```
- 
- **Checkout my PR branch `patch-3`**
-
- ```
- git checkout patch-1
- ```
-
- **Get the most recent changes to my current branch**
-
-```
-git pull
-```
+The default branch `main` which only contains content that has already been approved and merged! 
+You will be mainly interested in previewing the content from your PR branches.
+See [Checking out pull requests locally](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/checking-out-pull-requests-locally?platform=linux) for how to do this in a terminal.
+You will need to use a terminal for starting your local Docusaurus server.
 
 #### Start previewing
 
