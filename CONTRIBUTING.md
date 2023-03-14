@@ -222,22 +222,6 @@ You should always assume the last line shown in the right column of line numbers
 
 ![github-resolving-open-conversations](https://user-images.githubusercontent.com/49970529/225039003-ec4195a5-7c8d-43d1-be06-fdd7a3fa5536.png)
 
-Regarding the example above, the next steps would be:
-
-1. Choose which one of the tasks to work on.
-1. Edit the text to complete the task (see [Submitting additional changes](#submitting-additional-changes))
-1. Reply to the reviewer's comment with which choice you made.
-1. Select **Resolve conversation**.
-1. Resubmit it for review.
-
-### Approval
-
-Once all open conversations have been resolved, it is still possible that the reviewer might come across something else that needs to be changed, in which case the process will repeat itself again.
-
-If the PR has made it to the stage of **Review**, typically it is only a matter of time before you will see your PR in the list of PRs with a status of **Approved**.
-
-After it has been approved, it is likely to be merged without delay, in which case the changes will be publicly visible.
-
 ## Previewing the documentation site
 
 You can preview how the new content will look when rendered as HTML, and how it will fit it in with the existing documentation.
@@ -260,7 +244,7 @@ Clone your forked `product-docs` repository.
 
 **Note**: If you are an internal emnify contributor, you do not need to fork the repository.
 
-1. Open your terminal (or PowerShell).
+1. Open your terminal.
 1. Navigate to the location where you want the repository to reside.
 1. Issue the following command after you have replaced `yourUsername` with your actual GitHub username:
 
@@ -300,7 +284,7 @@ The default branch `main` is the public-facing version and doesn't contain your 
 You will mainly be interested in previewing your work from your PR branches.
 These need to be explicitly checked out using Git.
 
-You will need to use your terminal (or PowerShell), for starting your local Docusaurus server for previewing.
+You will need to open a terminal for starting your local Docusaurus server for previewing.
 You can issue the necessary Git commands using the command line.
 
 #### Frequently used git commands
@@ -314,7 +298,7 @@ git fetch origin
  **Checkout my PR branch `patch-3`**
 
  ```
- git checkout patch-3
+ git checkout patch-1
  ```
 
  **Get the most recent changes to my current branch**
@@ -331,4 +315,7 @@ Run the following Yarn command to have your browser open a new tab displaying th
 yarn start
 ```
 
-Any errors or warnings will be displayed both in the browser as well as in the terminal window.
+#### Troubleshooting
+
+If new Node.js dependencies have been added, `yarn start` may fail.
+Enter `yarn` without any additional arguments to install missing dependencies.
