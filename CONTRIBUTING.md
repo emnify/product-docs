@@ -240,9 +240,7 @@ Although the following steps may seem overwhelming at first, they only need to b
 
 #### Clone the repository
 
-Clone your forked `product-docs` repository.
-
-**Note**: If you are an internal emnify contributor, you do not need to fork the repository.
+Clone your `product-docs` repository.
 
 1. Open your terminal.
 1. Navigate to the location where you want the repository to reside.
@@ -250,19 +248,19 @@ Clone your forked `product-docs` repository.
 
 **Note**: Internal emnify contributors should replace `yourUsername` with `emnify`.
 
-```
+```bash
 git clone https://github.com/yourUsername/product-docs.git
 ```
 
 Then navigate to the repository using:
 
-```
+```bash
 cd product-docs
 ```
 
 Change this Git configuration setting to avoid problems on macOS and Windows platforms:
 
-```
+```bash
 git config core.ignoreCase false
 ```
 
@@ -270,7 +268,7 @@ After Yarn is installed, you can run Yarn to install all the required Node.js ap
 Docusaurus, including all of its dependencies, will be installed in this step.
 Navigate to your cloned repository in your terminal window (or PowerShell) and start Yarn:
 
-```
+```bash
 yarn
 ```
 
@@ -289,7 +287,7 @@ You will need to use a terminal for starting your local Docusaurus server.
 
 Run the following Yarn command to have your browser open a new tab displaying the documentation site.
 
-```
+```bash
 yarn start
 ```
 
