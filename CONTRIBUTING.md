@@ -35,31 +35,31 @@ After logging in to your GitHub account, you can start contributing.
 
 Starting from the emnify Documentation [document root](https://github.com/emnify/product-docs/tree/main/docs) folder, find the file you wish to edit.
 
-![github-select-edit](https://user-images.githubusercontent.com/49970529/215493212-f4694f5a-7d7f-4d65-a77d-761225d9a3e4.png)
+
 
 ### GitHub will fork the repository for you
 
 If you haven't already [forked](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks) the [emnify/product-docs](https://github.com/emnify/product-docs) repository, GitHub will do it for you as soon as you select the edit icon.
 
-![github-fork-created](https://user-images.githubusercontent.com/49970529/215493193-6e805d85-e647-41d4-8867-91032bc45a9b.png)
+![github-select-edit](https://user-images.githubusercontent.com/49970529/225024094-3405c758-844f-4069-9dff-e7b0d64f67b5.png)
 
+![github-fork-created](https://user-images.githubusercontent.com/49970529/225024903-67b819d6-42db-4e5f-b116-e5693fbe6ddd.png)
 
 ### Editing the page
 
 Immediately after GitHub [forks the repository](#github-will-fork-the-repository-for-you), you are able to edit the file.
 Now you can scroll down to find the text you wish to edit.
 
-In this example below, we have edited the Glossary entry for _Dynamic IP_ to have more detail and to include a reference to the Glossary entry for _Static IP_.
-
-![github-edit-file](https://user-images.githubusercontent.com/49970529/215493191-bad58e16-b8e7-415e-9821-64f2cd414043.png)
 
 ### Propose changes
+
+In this example below, we have edited the Glossary entry for _Dynamic IP_ to have more detail and to include a reference to the Glossary entry for _Static IP_.
 
 Once you are satisfied with the changes you have made, scroll to the bottom of the file.
 There you will find an input field where you can provide a description or summary of your changes.
 Then you can select **Propose changes** if you would like submit your changes.
 
-![github-scroll-to-propose-changes](https://user-images.githubusercontent.com/123376330/215520270-954324f8-5445-4669-99bc-8bd59a785c6f.png)
+![github-propose-changes](https://user-images.githubusercontent.com/49970529/225023731-7ffbb999-a7d3-4f37-8cea-5d78b64ce78f.png)
 
 ### Comparing changes
 
@@ -68,12 +68,14 @@ First, you will be presented a **Comparing changes** page that shows you the fil
 In this example, GitHub automatically created the branch name **patch-1** for us.
 Select **Create pull request** to continue.
 
-![github-comparing-changes](https://user-images.githubusercontent.com/123376330/215520267-02cb74ab-0877-4ba0-98a1-3411728bb5e5.png)
+![github-comparing-changes](https://user-images.githubusercontent.com/49970529/225023442-e277dd1e-94f8-4dcc-929b-01c728a5632b.png)
 
 ### Open a pull request
 
 Once you select **Create pull request**, you will be presented with the **Open a pull request** page.
 Here you will have the opportunity to edit the name of the PR to something more descriptive.
+
+![github-open-a-pull-request](https://user-images.githubusercontent.com/49970529/225023289-cb453221-a972-4ccc-a7d8-b4b9982c6a94.png)
 
 The input field below enables you to update the summary/description you previously provided.
 
@@ -84,12 +86,15 @@ If you want us to edit your changes as needed during our review, then please sta
 Once you select **Create pull request**, we will see your PR in our queue of [open PRs](https://github.com/emnify/product-docs/pulls). 
 
 We recommend make use of the template that includes the **Description** heading and an **Additional Context** heading if needed.
+
+![github-edit-pr-description](https://user-images.githubusercontent.com/49970529/225023081-7709305f-93ee-41f6-89f7-c4881358eac8.png)
+
 `<!--` and `-->` serve as block comment tags, hiding any text between them. 
 Feel free to add any other headings, screenshots, images, diagrams, etc., that may help in explaining your contribution.
 
-![github-open-a-pull-request](https://user-images.githubusercontent.com/123376330/215520265-e462ab79-47c8-465b-bc30-16f4c6950038.png)
+Select the **Preview** tab to see how it will appear after it is created.
 
-
+![github-preview-pr-description](https://user-images.githubusercontent.com/49970529/225022693-2c984066-30db-4f85-bbef-fe74a5e4ff0a.png)
 ### Pull request page
 
 Immediately after creating the PR, GitHub takes you to its details page.
@@ -97,7 +102,7 @@ This is where you will receive feedback from reviewers and find status updates.
 
 Please note the 4 tabs on this page:
 
-![github-pr-tabs](https://user-images.githubusercontent.com/49970529/216594159-9477ff15-701a-4d54-a927-b0fd3727d293.png)
+![github-pull-request-page-tabs](https://user-images.githubusercontent.com/49970529/225022525-9f494255-915a-4c43-b073-8303032007f4.png)
 
 #### Conversation
 
@@ -105,14 +110,14 @@ Please note the 4 tabs on this page:
 - Activity log, including each new commit
 - Communication, i.e., conversations between the reviewer(s) and the PR assignee(s)
 
-![github-opened-pull-request](https://user-images.githubusercontent.com/123376330/215520259-9f02110b-579c-4353-a9cb-6a54e7d22232.png)
+![github-pr-conversation-tab](https://user-images.githubusercontent.com/49970529/225022154-c23a30ec-a5d4-46c4-be0d-0495a314521a.png)
 
 #### Commits
 
 This tab provides an uncluttered view of commits ordered from oldest to newest with all other information filtered out.
 Commit details are collapsed by default.
 
-![github-pr-commits-tab-detail](https://user-images.githubusercontent.com/49970529/216596552-26756c50-c9d5-4498-9d95-451eaafb2b63.png)
+![github-pr-commits-tab](https://user-images.githubusercontent.com/49970529/225019240-e1311168-e77f-4c59-a226-70b44d4baf51.png)
 
 #### Checks
 The [Test deployment](https://github.com/emnify/product-docs/actions/workflows/test-deploy.yml) GitHub action is triggered when your changes are pushed.
@@ -122,7 +127,8 @@ If there are any syntax errors that would break the documentation build, you wil
 
 This is very useful for PRs that involve changes needed in multiple files.
 
-![github-pr-files-changed-tab](https://user-images.githubusercontent.com/49970529/216598552-8e6b5a88-d503-4c19-aee9-61678e0cfef4.png)
+
+![github-pr-files-changed-tab](https://user-images.githubusercontent.com/49970529/225032027-4884ae23-ea83-4099-a751-0af5a5b8263c.png)
 
 ## Creating new content
 
@@ -140,15 +146,14 @@ In this example, we want to add a new device under `quickstart/devices/`.
 
 If you expand the list of options for the **Add file** button, you can see that it is also possible to upload multiple files.
 
-![github-add-file](https://user-images.githubusercontent.com/49970529/215493168-91fc2b2c-6939-43a0-a3de-a6eae6487a5a.png)
-
+![github-add-new-file](https://user-images.githubusercontent.com/49970529/225018839-b295ff65-214e-49c9-bca3-c4fce721fd0f.png)
 ### Name your file
 
 If you did not choose the **Upload files** option, you will be prompted to provide a name for your new file.
 
 **Note**: Please use [kebab case](https://en.wikipedia.org/wiki/Letter_case#Kebab_case) when naming your files.
 
-![github-create-file](https://user-images.githubusercontent.com/49970529/215493184-00ff9bdc-2783-4b7d-9fcb-d7d2b9b7179c.png)
+![github-name-your-file](https://user-images.githubusercontent.com/49970529/225018533-2a3e8cfb-bf9b-4e73-b7ce-9b7b854d7e91.png)
 
 In this example, we supplied `device-x.md` for the name of the new file and created some content using the **Edit new file** interface.
 
@@ -156,11 +161,11 @@ In this example, we supplied `device-x.md` for the name of the new file and crea
 
 When your new contribution is ready, scroll to the bottom to provide a description and select **Propose new file**.
 
-![github-propose-new-file](https://user-images.githubusercontent.com/49970529/215493209-a8800b84-39df-474e-96df-c1fc230a1cf8.png)
+![github-propose-new-file](https://user-images.githubusercontent.com/49970529/225033500-9eaa2d4f-2414-4785-a767-64495f33a929.png)
 
 From the **Comparing changes** page, you will select **Create pull request** and follow the same steps in the "Updating the documentation" section starting with [Open a pull request](#open-a-pull-request).
 
-![github-comparing-changes-new](https://user-images.githubusercontent.com/49970529/215493175-d5c10247-7be1-4ecb-9173-773f3c06f1fa.png)
+![github-comparing-changes](https://user-images.githubusercontent.com/49970529/225033773-1ad921f0-825d-4c8f-98ab-2cad57f9e05b.png)
 
 ### Update the site navigation
 
@@ -171,36 +176,34 @@ If the existing `sidebars.js` configuration doesn't provide enough information o
 
 After you have created your PR, the workflow is driven by cycles of content updates and reviews.
 
-### Ready for review
-
-If you encounter an unanticipated need to make extensive changes to the PR branch that will likely delay the start of the review, please choose **Convert to draft**:
-
-![github-convert-to-draft](https://user-images.githubusercontent.com/49970529/215772000-384e6ea2-bf31-4107-aa41-3496236048be.png)
-
-In draft mode, the PR will be prominently labeled accordingly.
-When you have concluded your work, just select **Ready for review**. 
-
-![git-pr-wip](https://user-images.githubusercontent.com/49970529/215799785-66620827-c3fa-4a5f-8bf7-511c345da91e.png)
-
 ### Reviewers
 
 Although we monitor the queue of PRs regularly, you can also [request a review of your PR](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/requesting-a-pull-request-review) if your PR is ready and it seems to have not been noticed.
 
-![github-maintainer-approved-action](https://user-images.githubusercontent.com/49970529/215775389-ab26caac-c05f-4b4e-ba9a-796ae7873e87.png)
+![github-maintainer-approved-action](https://user-images.githubusercontent.com/49970529/225034684-3ac3532b-af09-406f-8daa-c31988705817.png)
 
 ### Submitting additional changes
 
 If you are working from a forked repository on an existing PR branch, navigate to *your* GitHub repository and find the branch assigned to your PR.
-In this example, the branch is **patch-3**: 
+In the previous examples, the branch is **patch-1**.
+However, **main** is the default branch, so we need to navigate to our branches and select **patch-1**:
 
-![github-new-changes](https://user-images.githubusercontent.com/49970529/215782505-d323ec93-2ad2-4235-91b6-cae9761338a2.png)
+![github-forked-repo-branches](https://user-images.githubusercontent.com/49970529/225035936-33523feb-9b73-4a76-938f-306a9416abfe.png)
 
-After navigating to the desired file, apply your changes, then scroll to the bottom of the GitHub page to add the commit title and details.
+Selecting the **Yours** view of branches is recommended:
+
+![github-your-branches](https://user-images.githubusercontent.com/49970529/225036466-94a8231c-520f-48a7-8bd0-6055a201cbc8.png)
+
+Navigate to your file and select **Edit**:
+
+![github-forked-branch-edit-file](https://user-images.githubusercontent.com/49970529/225037205-4cd6ab9b-6619-4abd-b2af-005bf947ee4f.png)
+
+
+Apply your changes, then scroll to the bottom of the GitHub page to add the commit title and details.
 When finished, choose **Commit changes**.
 
-Note: If you want to confirm which repository/branch you are on without having to scroll to the top of the page, this information can be found in the URL.
+![github-forked-branch-commit-changes](https://user-images.githubusercontent.com/49970529/225038499-77befd87-cbdb-481b-9db3-29bda0618584.png)
 
-![github-commit-new-changes](https://user-images.githubusercontent.com/49970529/215787839-7f19cbbb-3912-42cb-935e-b43be2462823.png)
 
 ### Resolving open conversations
 
@@ -217,7 +220,7 @@ See [Submitting additional changes](#submitting-additional-changes) above for ho
 In the following example, the reviewer opened a comment on line 65 of the text.
 You should always assume the last line shown in the right column of line numbers is the line of interest when changes are requested, unless the comment states something to the contrary. 
 
-![github-changes-requested](https://user-images.githubusercontent.com/49970529/215818630-41594c79-104d-4a58-aeea-2512b761fc69.png)
+![github-resolving-open-conversations](https://user-images.githubusercontent.com/49970529/225039003-ec4195a5-7c8d-43d1-be06-fdd7a3fa5536.png)
 
 Regarding the example above, the next steps would be:
 
