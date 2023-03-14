@@ -264,16 +264,13 @@ Change this Git configuration setting to avoid problems on macOS and Windows pla
 git config core.ignoreCase false
 ```
 
-After Yarn is installed, you can run Yarn to install all the required Node.js applications you need to run your local documentation site on your workstation.
-Docusaurus, including all of its dependencies, will be installed in this step.
-Navigate to your cloned repository in your terminal window (or PowerShell) and start Yarn:
+Run Yarn to install Docusaurus:
 
 ```bash
 yarn
 ```
 
 This concludes the first-time installation steps for setting up your new environment.
-However, you might need to run Yarn occasionally  when new versions of your Node.js apps are released. 
 
 ### Preview the site
 
