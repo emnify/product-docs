@@ -235,7 +235,7 @@ Although the following steps may seem overwhelming at first, they only need to b
 #### Software requirements
 
 - [Git](https://docs.github.com/en/get-started/quickstart/set-up-git)
-- [Node.js](https://nodejs.org/en/download/): After installation, confirm that your Node.js version meets the [Docusaurus requirements](https://docusaurus.io/docs/installation#requirements).
+- [Node.js](https://nodejs.org/en/download/) ([version 16.14](https://docusaurus.io/docs/installation#requirements) or above)
 - [Yarn](https://classic.yarnpkg.com/en/docs/install) 
 
 #### Clone the repository
