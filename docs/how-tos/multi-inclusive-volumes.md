@@ -101,14 +101,13 @@ In the preceding example, the two selected devices (**Walking Mobile** and **Tra
 
 When multi-inclusive volumes are configured on your account, you can update the rate assigned to a device within the month. 
 
-:::caution
-These changes will have an impact on your monthly bill.
-:::
-
 ### Changing the inclusive volume
 
 If you notice that one of your devices uses more (or less) data than expected, you can update its assigned inclusive volume any time during the month. 
+
+:::info
 Any changes will be reflected on your invoice at the end of the month.
+:::
 
 In the following example, we're switching the device from **Europe 1 MB** included to **Europe 500 MB** included.
 
@@ -120,7 +119,10 @@ In the following example, we're switching the device from **Europe 1 MB** includ
 ### Changing the tariff
 
 You can also change the tariff (e.g., switching from **Global Basic Zone A** to **Regional Pro Americas**) anytime during the month. 
+
+:::info
 When creating the invoice, we check which tariff the device is assigned to and bill your account accordingly.
+:::
 
 To change a coverage policy's tariff, follow these steps:
 
