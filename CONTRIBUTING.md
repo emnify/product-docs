@@ -217,6 +217,8 @@ See [Submitting additional changes](#submitting-additional-changes) above for ho
 
 **It is important that you [resolve](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/commenting-on-a-pull-request#resolving-conversations) all open conversations before requesting another review.**
 
+**Note**: If you are not sure what needs to be done to resolve the matter described in a conversation or you need our assistance with any aspect of the PR, please reply in the conversation and let us know how we can help.
+
 In the following example, the reviewer opened a comment on line 65 of the text.
 You should always assume the last line shown in the right column of line numbers is the line of interest when changes are requested, unless the comment states something to the contrary. 
 
