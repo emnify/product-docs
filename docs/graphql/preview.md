@@ -1,3 +1,7 @@
+---
+pagination_label: Preview the GraphQL API
+---
+
 # emnify GraphQL API <span className="theme-doc-version-badge badge badge--primary">Preview</span>
 
 :::caution Compatibility Notes
