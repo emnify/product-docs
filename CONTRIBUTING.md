@@ -88,6 +88,7 @@ Feel free to add any other headings, screenshots, images, diagrams, etc., that m
 Select the **Preview** tab to see how it will appear after it is created.
 
 ![](https://user-images.githubusercontent.com/49970529/225022693-2c984066-30db-4f85-bbef-fe74a5e4ff0a.png)
+
 ### Pull request page
 
 Immediately after creating the PR, GitHub takes you to its details page.
@@ -257,7 +258,7 @@ Change this Git configuration setting to avoid problems on macOS and Windows pla
 git config core.ignoreCase false
 ```
 
-Run Yarn to install Docusaurus:
+Run Yarn to install the project dependencies:
 
 ```bash
 yarn
@@ -268,9 +269,9 @@ This concludes the first-time installation steps for setting up your new environ
 ### Preview the site
 
 It is important that you have the desired branch checked out when you want to preview your work.
-The default branch `main` which only contains content that has already been approved and merged! 
+The default branch `main` only contains content that has already been approved and merged.
 You will be mainly interested in previewing the content from your PR branches.
-See [Checking out pull requests locally](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/checking-out-pull-requests-locally?platform=linux) for how to do this in a terminal.
+See [Checking out pull requests locally](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/checking-out-pull-requests-locally) for how to do this in a terminal.
 You will need to use a terminal for starting your local Docusaurus server.
 
 #### Start previewing
@@ -280,8 +281,3 @@ Run the following Yarn command to have your browser open a new tab displaying th
 ```bash
 yarn start
 ```
-
-#### Troubleshooting
-
-If new Node.js dependencies have been added, `yarn start` may fail.
-Enter `yarn` without any additional arguments to install missing dependencies.
