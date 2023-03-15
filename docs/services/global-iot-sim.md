@@ -4,33 +4,35 @@ description: Form factors, quality grades, multi-IMSI, eSIM, eUICC
 # Global IoT SIM
 
 emnify provides eSIMs that are built specifically for IoT solutions.
-Compared to regular operator SIMs, emnify eSIMs come in different quality grades that are more durable, can be updated over the air using different eSIM remote SIM provisioning technologies, and come in different [form factors](#form-factors).  
+Compared to regular operator SIMs, emnify eSIMs come in different quality grades that are more durable.
+They can be updated [over the air (OTA)](/glossary#ota---overtheair) using different eSIM remote SIM provisioning technologies and come in different [form factors](#form-factors).
 
-emnify eSIMs have a [multi-IMSI application](#multi-imsi-application) installed on the SIM. The multi-IMSI applet ensures that the best network and network partners are used based on the location of the device.
-Using this technology, emnify provides a larger number of networks than traditional operators, giving it the largest LPWAN (LTE-M and NB.IoT) footprint which ensures regulatory network access in over 100 countries.  
+emnify eSIMs have a [multi-IMSI applet](#multi-imsi-applet) installed on the SIM.
+The multi-IMSI applet makes sure that the best network and network partners are used based a device's location.
+Using this technology, emnify provides a larger number of networks than traditional operators. With access to the largest global [LPWAN](global-iot-network#lpwan-lte-mnb-iot) (LTE-M and NB-IoT) footprint, emnify SIMs ensure regulatory network access in over 100 countries.
 
 ## eSIM technology
 
 ### M2M eSIM
 
-Every emnify SIM you order from emnify is an [M2M eSIM](https://www.gsma.com/esim/remote-sim-provisioning-for-machine-to-machine/) (compliant with SGP.01, SGP.02, and SGP.016).
-The M2M eSIM is also referred to as an [eUICC](/glossary#euicc---embedded-universal-integrated-circuit-card) (Embedded Subscriber Identity Module).
+Every new SIM you order from emnify is an [M2M eSIM](https://www.gsma.com/esim/remote-sim-provisioning-for-machine-to-machine/) (compliant with SGP.01, SGP.02, and SGP.016).
+The M2M eSIM is also referred to as an [eUICC](/glossary#euicc---embedded-universal-integrated-circuit-card) (Embedded universal integrated circuit card).
 Unlike a regular SIM (UICC), an eUICC can be updated over the air.
 Because M2M eSIMs can be updated with new configurations or profiles, this eliminates the need for SIM swaps.
 
 ### Consumer eSIM
 
-emnify also offers consumer eSIMs for Smartphones, tablets, and watches.
+emnify also offers consumer eSIMs for phones, tablets, and smart watches.
 The consumer eSIM can be downloaded to a device by scanning a QR code.
-If you are interested in consumer eSIM technology, please contact sales@emnify.com.  
+If you are interested in consumer eSIM technology, please [contact us](https://www.emnify.com/talk-to-us).
 
 ## Form factors
 
-emnify [M2M](#m2m-esim) eSIMs are available in the following form factors:
+emnify [M2M eSIMs](#m2m-esim) are available in the following form factors:
 
 | Form factor     | Dimensions             |
 | --------------- | ---------------------- |
-| **2FF** (mini SIM)  | 15 x 25 x 0.75 mm      |
+| **2FF** (Mini SIM)  | 15 x 25 x 0.75 mm      |
 | **3FF** (Micro SIM) | 12 x 15 x 0.75 mm      |
 | **4FF** (Nano SIM)  | 8.8 x 12.3 x 0.75 mm   |
 | **MFF2** (eSIM)     | 5 x 6 x 0.75 mm, 8 pin |
@@ -54,7 +56,7 @@ Not only are such pluggable SIMs more durable, but their contact with the device
 
 ## Quality grades
 
-emnify eSIMs come in three different quality grades: **Commercial**, **Industrial**, and **MFF2**.
+emnify eSIMs come in three different quality grades: **Commercial eUICC**, **Industrial eUICC**, and **MFF2**.
 
 <table>
 <thead>
@@ -227,22 +229,22 @@ emnify eSIMs come in three different quality grades: **Commercial**, **Industria
 </tbody>
 </table>
 
-## Multi-IMSI application
-
-emnify IoT eSIM cards are equipped with a multi-IMSI applet that runs in the background using minimal resources without any negative impact on the device's performance.
+## Multi-IMSI applet
+emnify eSIM cards are equipped with a multi-IMSI applet that runs in the background using minimal resources without any negative impact on the device's performance.
 This technology is similar to a mobile phone using dual-SIM technology.
-The emnify IoT eSIM basically has the cellular provider information from multiple SIM cards already included. 
-While emnify has roaming agreements and local contracts with operators around the world, emnify also uses operator partners to increase the network coverage footprint in order to provide a fallback when preferred networks experience outages.
+An emnify eSIM has cellular provider information from multiple SIM cards already included. 
+While emnify has roaming agreements and local contracts with operators around the world, emnify also uses partner operators to increase the network coverage footprint in order to provide a fallback when preferred networks experience outages.
 
 The multi-IMSI applet works in the following manner.
-emnify has its own operator identity ([IMSI](/glossary#imsi---international-mobile-subscriber-identity)) as well as the operator partner IMSI stored on the SIM card.
+emnify has its own operator identity ([IMSI](/glossary#imsi---international-mobile-subscriber-identity)) as well as the partner operator's IMSI stored on the SIM card.
 Each IMSI / partner operator usually has more than one network accessible per country.
-The SIM applet also includes a preferred IMSI list per country.
-For example, this list defines that IMSI *X* will be used for access in country *A* as highest priority – and as second priority another operator IMSI *Y* will be used in case the device is unable to connect. 
+The applet also includes a preferred IMSI list per country.
+For example, this list defines that IMSI *X* will have the highest priority for access in country *A*.
+However, if the device can't connect, another operator, IMSI *Y*, will be next on the list of priorities.
 So when a device then moves to country *A*, the applet dynamically overwrites the active IMSI with IMSI *X* based on the preferred IMSI list.
-When then operator *X* has a service outage, the SIM automatically falls back to IMSI *Y* to ensure that the device can maintain connectivity.
+Then when operator *X* has a service outage, the SIM automatically falls back to IMSI *Y* to ensure the device can maintain connectivity.
 
-The selection of the preferred IMSI for each country is based on multiple factors including:
+The selection of the preferred IMSI for each country is based on multiple factors, including:
 
 - If permanent roaming is permitted in that country
 - IMSI that has the most network partners in the country
