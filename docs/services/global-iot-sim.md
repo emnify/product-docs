@@ -146,6 +146,8 @@ emnify eSIMs come in three different quality grades: **Commercial eUICC**, **Ind
 
 ## Compliance and software features
 
+The following compliance standards and software features apply to all quality grades of emnify eSIMs.
+
 <table>
 <tbody>
 <tr>
