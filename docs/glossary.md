@@ -86,6 +86,12 @@ A representation of the device which has a SIM installed.
 ## Endpoint status  
 The current state of the [endpoint](#endpoint): **Enabled** or **Disabled**.
 
+## eSIM - Embedded SIM
+Because of the "e" (for *embedded*) in its name, *eSIM* is sometimes incorrectly used for referring to the MFF2 physical form factor of an [eUICC](#euicc---embedded-universal-integrated-circuit-card) chip that is designed to be permanently surface-mounted inside a device.
+Within the IoT industry, *eSIM* refers to the entire solution that is comprised of an eUICC-equipped [SIM](#sim---subscriber-identification-module) along with the software platform for [OTA provisioning](#ota-provisioning).
+Although eSIMs can be embedded directly in a device, they are also manufactured as pluggable SIM cards.
+The [emnify eSIM](/services/global-iot-sim) has capabilities not available with other eSIMs.
+
 ## eUICC - Embedded universal integrated circuit card  
 The embedded universal integrated circuit card (eUICC) is a component of a [SIM](#sim---subscriber-identification-module) card.
 It allows consumers and IoT manufacturers to provision the SIM with a new [operator profile](https://www.emnify.com/iot-glossary/mno) [over-the-air](#ota---over–the–air).
@@ -213,9 +219,8 @@ A profile that defines the services and functionality of a device managed throug
 A subscriber identification module (SIM) contains an integrated circuit ([IC](#ic---integrated-circuit)) that is often mounted on a plastic card.
 Pluggable SIMs mounted on plastic cards are offered in various form factors.
 A SIM stores data used to identify a subscriber ([IMSI](#imsi---international-mobile-subscriber-identity)) along with other network information for connecting and authenticating with a [mobile network operator (MNO)](https://www.emnify.com/iot-glossary/mno).
-An eSIM is a SIM with an [eUICC](#euicc---embedded-universal-integrated-circuit-card).
-Although eSIMs can be embedded directly in a device, they are also manufactured as pluggable SIM cards.
-The [emnify eSIM](/services/global-iot-sim) has capabilities not available with other eSIMs.
+See also [eSIM - Embedded SIM](#esim---embedded-sim).
+
 
 ## SIM batch  
 A collection of SIM cards that can be registered with a single [BIC](#bic---batch-identification-code) code.
