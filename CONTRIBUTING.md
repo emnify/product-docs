@@ -31,8 +31,6 @@ After logging in to your GitHub account, you can start contributing.
 
 Starting from the emnify Documentation [document root](https://github.com/emnify/product-docs/tree/main/docs) folder, find the file you wish to edit.
 
-
-
 ### GitHub will fork the repository for you
 
 If you haven't already [forked](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks) the [emnify/product-docs](https://github.com/emnify/product-docs) repository, GitHub will do it for you as soon as you select the edit icon.
@@ -45,7 +43,6 @@ If you haven't already [forked](https://docs.github.com/en/pull-requests/collabo
 
 Immediately after GitHub [forks the repository](#github-will-fork-the-repository-for-you), you are able to edit the file.
 Now you can scroll down to find the text you wish to edit.
-
 
 ### Propose changes
 
@@ -123,7 +120,6 @@ If there are any syntax errors that would break the documentation build, you wil
 
 This is very useful for PRs that involve changes needed in multiple files.
 
-
 ![github-pr-files-changed-tab](https://user-images.githubusercontent.com/49970529/225032027-4884ae23-ea83-4099-a751-0af5a5b8263c.png)
 
 ## Creating new content
@@ -199,7 +195,6 @@ Apply your changes, then scroll to the bottom of the GitHub page to add the comm
 When finished, choose **Commit changes**.
 
 ![github-forked-branch-commit-changes](https://user-images.githubusercontent.com/49970529/225038499-77befd87-cbdb-481b-9db3-29bda0618584.png)
-
 
 ### Resolving open conversations
 
