@@ -87,7 +87,7 @@ A representation of the device which has a SIM installed.
 The current state of the [endpoint](#endpoint): **Enabled** or **Disabled**.
 
 ## eUICC - Embedded universal integrated circuit card  
-The embedded universal integrated circuit card (eUICC) is a component of a SIM card.
+The embedded universal integrated circuit card (eUICC) is a component of a [SIM](#sim---subscriber-identification-module) card.
 It allows consumers and IoT manufacturers to provision the SIM with a new [operator profile](https://www.emnify.com/iot-glossary/mno) [over-the-air](#ota---over–the–air).
 
 :::tip Deep dive
@@ -120,6 +120,9 @@ Part of [GSM](#gsm---global-system-for-mobile-communications) infrastructure.
 
 ## HTTP POST request  
 A request method supported by the HTTP protocol, which typically includes data in the request body.
+
+## IC - Integrated circuit
+A semiconductor chip containing a large number of extremely small electronic components, e.g., a CPU, the chips on computer memory cards, the electronic part of a [SIM](#sim---subscriber-identification-module) card, an [eUICC](#euicc---embedded-universal-integrated-circuit-card), etc.
 
 ## ICCID - Integrated circuit card identifier  
 The integrated circuit card identifier (ICCID) is a 20-digit code used to identify a SIM card. 
@@ -206,9 +209,12 @@ An approach that allows network administrators to programmatically initialize, c
 ## Service profile  
 A profile that defines the services and functionality of a device managed through the emnify platform.
 
-## SIM
-A SIM (Subscriber Identification Module) an integrated circuit (IC) available as a card in various form factors that stores data used to identify a subscriber ([IMSI](#imsi---international-mobile-subscriber-identity)) along with other other network information for connecting and authenticating with a [mobile network operator (MNO)](https://www.emnify.com/iot-glossary/mno).
-An [eSIM](https://www.emnify.com/iot-glossary/esim) is a SIM with an [eUICC](#euicc---embedded-universal-integrated-circuit-card) which can be produced as SIM card in various form factors or embedded within a device.
+## SIM - Subscriber identification module
+A subscriber identification module (SIM) contains an integrated circuit ([IC](#ic---integrated-circuit)) that is often mounted on a plastic card.
+Pluggable SIMs mounted on plastic cards are offered in various form factors.
+A SIM stores data used to identify a subscriber ([IMSI](#imsi---international-mobile-subscriber-identity)) along with other network information for connecting and authenticating with a [mobile network operator (MNO)](https://www.emnify.com/iot-glossary/mno).
+An eSIM is a SIM with an [eUICC](#euicc---embedded-universal-integrated-circuit-card).
+Although eSIMs can be embedded directly in a device, they are also manufactured as pluggable SIM cards.
 The [emnify eSIM](/services/global-iot-sim) has capabilities not available with other eSIMs.
 
 ## SIM batch  
