@@ -18,14 +18,10 @@ If you haven't worked with [Markdown](https://daringfireball.net/projects/markdo
 - [Markup reference for GitHub Docs](https://github.com/github/docs/blob/main/contributing/content-markup-reference.md) used in GitHub documents and comments
 - [Docusaurus Markdown Features](https://docusaurus.io/docs/markdown-features) used in creating content for the emnify Documentation site
 
-## Notice for internal contributors
+## Notice for internal emnify contributors
 
-If you are part of our internal emnify team, please request access to the emnify GitHub organization via Sharepoint.
-
-**Notify us when your account is active before taking any further action.**
-
-Once you are added to our team, you can work directly with the repository without any need to fork it.
-Consequently, please disregard any references in this guide to "your forked repository".
+Please contact Squad Docs with your GitHub username or email so that we can give you direct access to the repository.
+Then, you can work directly with the repository without any need to fork it.
 
 ## Updating the documentation
 
