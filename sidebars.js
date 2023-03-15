@@ -230,6 +230,7 @@ const sidebars = {
       label: "Preview the GraphQL API",
       id: "graphql/preview",
     },
+    "graphql/using-graphiql",
   ],
 };
 
