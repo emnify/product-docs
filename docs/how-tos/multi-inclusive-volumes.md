@@ -40,7 +40,7 @@ Once enabled, you need to configure an inclusive volume for your coverage polici
 If you notice that one of your devices uses more (or less) data than expected, you can update its assigned inclusive volume any time during the month. 
 
 :::info
-Any changes will be reflected on your invoice at the end of the month.
+Any changes will be reflected on your invoice within a few hours.
 :::
 
 ### Individual device
@@ -117,6 +117,7 @@ You can also change the tariff (e.g., switching from **Global Basic Zone A** to 
 
 :::info
 When creating the invoice, we check which tariff the device is assigned to and bill your account accordingly.
+Any changes will be reflected on your invoice within a few hours.
 :::
 
 To change a coverage policy's tariff, follow these steps:
