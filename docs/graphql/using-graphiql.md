@@ -20,9 +20,8 @@ The UI is divided into three pieces:
 
 <!-- Same screenshot as the graphql-playground README -->
 <img
-  src="https://user-images.githubusercontent.com/26869552/225170559-5b3fbb34-2e0c-4ec9-8fbf-d9a778b4b861.png"
+  src="https://user-images.githubusercontent.com/25433336/225385087-37c5fa5c-4b23-4fca-a1b5-675974392473.png"
   alt=""
-  style={{ width:800 }}
 />
 
 At the top of the sidebar, there are buttons for the [documentation explorer](#documentation-explorer), history, and GraphiQL explorer. 
