@@ -1,4 +1,5 @@
 ---
+title: Preview the GraphQL API
 pagination_label: Preview the GraphQL API
 ---
 
