@@ -2,6 +2,7 @@
   "name": "product-docs",
   "description": "Developer resources and documentation for the emnify SuperNetwork.",
   "version": "1.0.0",
+  "license": "MIT",
   "author": "emnify Documentation Team <docs@emnify.com>",
   "repository": {
     "type": "git",
