@@ -12,7 +12,7 @@ With a local clone of the Git repository, you can use your IDE to develop any pa
 
 ## Software requirements
 
-- See the Docusaurus [installation instructions](CONTRIBUTING.md#installation) for:
+- For working with GitHub and previewing your contributions
   - Git
   - Node.js
   - yarn
@@ -22,74 +22,37 @@ If you don't have one yet, here are the top 3 [IDEs by market share](https://pyp
   1. [Eclipse](https://www.eclipse.org/downloads/)
   1. [PyCharm](https://www.jetbrains.com/pycharm/)
 
+## Setting up SSH
+
+Using SSH for authenticating with remote repositories is the preferred method since it works with any Git service (GitHub, GitLab, Bitbucket, etc.) as well as any Git repository on a remote host where you have your SSH public key installed.
+For a step-by-step guide, see GitHub's [About SSH](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/about-ssh) tutorial.
+
 ## Set up your working directory
 
-**If you are an internal emnify contributor, see our [notice for internal contributors](CONTRIBUTING.md#notice-for-internal-contributors) before continuing with this guide.**
+Open a terminal window and navigate to your preferred folder for your local Git repositories.
 
-If you don't already have a GitHub account, you will need to [sign up](https://github.com/signup) for one.
-
-You can either install [GitHub CLI](https://cli.github.com/) for working with your Git repository, or use the generic SSH key method that works with all of the leading Git-based source-code-hosting facilities (forges), i.e., GitHub, GitLab, Bitbucket, etc.
-In this guide we will use SSH.
-
-### Add your SSH public key to your GitHub account.
-
-Make sure you have an SSH public key available under [GitHub SSH keys](https://github.com/settings/keys).
-If not, follow GitHub's [Adding a new SSH key to your GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account?tool=webui&platform=windows) guide.
-
----
-
-### For internal emnify team members
+The next step is to determine if you need to *clone* or *fork* the [emnify/product-docs](https://github.com/emnify/product-docs) repository.
 
 
-Clone this repository:
+### For internal emnify contributors
 
-```
-git clone git@github.com:EMnify/product-docs.git
-```
-
----
+Please contact Squad Docs with your GitHub username or email address so that we can add you as a member with direct access.
+Once you have been added as a direct contributor, use the SSH method to [clone the repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository#cloning-a-repository).
 
 ### For external contributors
 
-1. After logging in with your GitHub credentials, [Fork](https://docs.github.com/github/getting-started-with-github/fork-a-repo) this repository.
-1. Clone your forked repository from GitHub to you local workstation by replacing `yourGitHubUsername` in the following command and running it:
+Follow the steps in the GitHub Docs [Fork a repo](https://docs.github.com/en/get-started/quickstart/fork-a-repo) article.
 
-```
-git clone git@github.com:yourGitHubUsername/product-docs.git
-```
+## GitHub flow
 
----
+The process of creating a branch, making changes, pushing changes, creating a pull request (PR), etc., is the same for any GitHub repository, whether it is a code project or a documentation project.
 
+If you are new to this process, please consult the [GitHub flow](https://docs.github.com/en/get-started/quickstart/github-flow) article in the **Quickstart** chapter of the GitHub Docs [Get started](https://docs.github.com/en/get-started) guide.
 
-## Workflow
+## Previewing your work
 
-### Editing/creating content
+To create a local working copy of the emnify Documentation, follow the steps in the [Previewing the documentation site](CONTRIBUTING.md#previewing-the-documentation-site) section of the [Contributing](CONTRIBUTING.md) guide.
 
-1. Use your IDE to edit/create content, then save your work.
-1. Preview your work
+## Additional resources
 
-```
-yarn start
-```
-
-### Tracking changes in Git
-
-1. Create a branch (using Jira for internal contributors) 
-
-```
-git commit -am "Enter your Git commit title/description here"
-git push origin
-```
-
-### Creating a PR
-
-### Review
-
-## Best practices
-
-In order to maintain consistency within the project, please follow these guidelines for all files.
-
-- **UTF-8** encoding
-- **Lines** must be terminated with [UNIX newline](https://en.wikipedia.org/wiki/Newline#Representation) (`\n`) characters, *not* Windows CRLF (`\r\n`)
-- **Filenames** should *not* contain uppercase letters, spaces, or special characters.  
-They should be lowercase alphanumeric with words separated by a single hyphen (`-`). For example: `3-methods-for-sending-data.png`
+For any GitHub or Git topics not covered here, please consult the GitHub Docs [Get started](https://docs.github.com/en/get-started) guide.
