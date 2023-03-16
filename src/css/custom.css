@@ -222,3 +222,16 @@ div[title="Expand sidebar"]:hover {
 .theme-doc-markdown table tr td img {
   border: none !important;
 }
+
+/* Inline code elements wrapped in an anchor tag */
+a:has(> code) {
+  text-decoration: none;
+}
+
+/* Preview badge */
+.badge--primary {
+  font-size: 50%;
+  font-weight: 500;
+  margin-bottom: 10px;
+  vertical-align: middle !important;
+}

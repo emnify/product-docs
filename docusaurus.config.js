@@ -129,6 +129,12 @@ const config = {
             sidebarId: "restSidebar",
             label: "REST API",
           },
+          {
+            type: "docSidebar",
+            position: "left",
+            sidebarId: "graphqlSidebar",
+            label: "GraphQL API",
+          },
         ],
       },
       docs: {
