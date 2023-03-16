@@ -12,7 +12,7 @@ If you're new to GraphQL, we'd recommend visiting the [official GraphQL document
 
 ## Navigating the interface
 
-The UI is divided into three pieces:
+The UI is divided into three parts:
 
 - **Sidebar** where you can open plugin panes and change settings
 - **Left panel** where you write your queries
