@@ -3,6 +3,9 @@
 We introduced a multi-inclusive volumes feature, allowing you to manage different tariffs and data plans from a single account. 
 These volumes are managed within [coverage policies](/services/endpoint-management-and-group-policies#coverage-policies).
 
+With our [**Pro** plan](https://portal.emnify.com/organisation-settings/subscription#plans), you can manage as many tariff profiles and data plans as you need.
+Those on a [**Plus** plan](https://portal.emnify.com/organisation-settings/subscription#plans) can manage up to 4. 
+
 Once multi-inclusive volumes have been enabled on your emnify account, please ensure that your coverage policies have been adjusted correctly to take advantage of this setup.
 
 ## Viewing your coverage policies
