@@ -5,10 +5,6 @@ By helping maintain and grow our documentation, your efforts will not only benef
 
 Please read our [Code of Conduct](https://github.com/emnify/.github/blob/add-code-of-conduct/CODE_OF_CONDUCT.md#code-of-conduct) in order to help us maintain a professional, respectful, and inclusive environment for all contributors.
 
-> **Note**<br />
-> This guide is for contributors who wish to use the GitHub UI.
-> If you prefer using developer tools for working with Git repositories, please see the [Developers](DEVELOPERS.md) guide.
-
 ## The basics
 
 [GitHub flow](https://docs.github.com/en/get-started/quickstart/github-flow) provides the essentials for collaborating on projects hosted in GitHub.
