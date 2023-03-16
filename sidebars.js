@@ -224,6 +224,14 @@ const sidebars = {
       href: "https://cdn.emnify.net/api/doc/index.html",
     },
   ],
+  graphqlSidebar: [
+    {
+      type: "doc",
+      label: "Preview the GraphQL API",
+      id: "graphql/preview",
+    },
+    "graphql/using-graphiql",
+  ],
 };
 
 module.exports = sidebars;
