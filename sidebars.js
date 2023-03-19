@@ -206,7 +206,26 @@ const sidebars = {
         },
       ],
     },
-    "how-tos/index",
+    {
+      type: "category",
+      label: "How-tos",
+      link: {
+        type: "doc",
+        id: "how-tos/index",
+      },
+      items: [
+        {
+          type: "doc",
+          label: "Overview",
+          id: "how-tos/index",
+        },
+        {
+          type: "doc",
+          label: "Multi-inclusive volumes",
+          id: "how-tos/multi-inclusive-volumes",
+        },
+      ],
+    },
     "integration-guides/index",
     "glossary",
   ],
