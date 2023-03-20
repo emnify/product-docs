@@ -20,3 +20,7 @@
 
 - [4 ways to send SMS to your devices manually and automatically](https://www.emnify.com/developer-blog/4-ways-to-send-sms)
 - [How to send and receive SMS via the API](https://www.emnify.com/developer-blog/how-to-send-and-receive-sms-via-the-api)
+
+## User management
+
+- [Enabling two-factor authentication on your emnify account](/how-tos/two-factor-authentication)

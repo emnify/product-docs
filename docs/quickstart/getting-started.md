@@ -9,17 +9,17 @@ To begin developing your IoT solutions with emnify, you'll need an emnify accoun
 
 <details className="custom-details-troubleshooting">
   <summary>Need help verifying your phone number?</summary>
-    <p>When filling out our <a href="https://portal.emnify.com/sign/up" target="_blank">sign-up form</a>, you may have issues verifying your phone number.</p>
+    <p>When filling out our <a href="https://portal.emnify.com/sign/up" target="_blank" rel="noopener noreferrer">sign-up form</a>, you may have issues verifying your phone number.</p>
     <p>Here are a few common error messages and what to do if you see them:</p>
     <b>SMS verification not possible</b>
     <ul>
       <li>Try registering with another phone number.</li>
-      <li><a href="https://www.emnify.com/talk-to-us" target="_blank">Contact our sales team</a> to set up your account.</li>
+      <li><a href="https://www.emnify.com/talk-to-us" target="_blank" rel="noopener noreferrer">Contact our sales team</a> to set up your account.</li>
     </ul>
     <b>You've reached the maximum login attempts</b>
     <ul>
       <li>Wait at least 10 minutes, and then try to log in again.</li>
-      <li>If you've waited and your next attempt is blocked, <a href="https://www.emnify.com/talk-to-us" target="_blank">contact our sales team</a>.</li>
+      <li>If you've waited and your next attempt is blocked, <a href="https://www.emnify.com/talk-to-us" target="_blank" rel="noopener noreferrer">contact our sales team</a>.</li>
     </ul>
     <b>The verification code you entered is incorrect</b>
     <ul>

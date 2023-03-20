@@ -224,6 +224,11 @@ const sidebars = {
           label: "Multi-inclusive volumes",
           id: "how-tos/multi-inclusive-volumes",
         },
+        {
+          type: "doc",
+          label: "Two-factor authentication",
+          id: "how-tos/two-factor-authentication",
+        },
       ],
     },
     "integration-guides/index",
