@@ -55,24 +55,41 @@ Assuming there are no errors, 2FA should be enabled for your account 🎉
   alt=""
 />
 
-Now, if you log in to the emnify Portal on a device you haven't set as trusted before or use a different browser, you'll be asked to enter a one-time password to verify your identity.
+Now, if you log in to the Portal on a device you haven't set as trusted before or use a different browser, you'll be asked to enter a one-time password to verify your identity.
+
+## Managing trusted devices
+
+Pulling out your personal device and entering a one-time password every time you need to log in to your account can be a pain, especially if you usually sign in from the same device.
+
+To bypass this process, check **Trust this device** before entering the 2FA code from your authentication app. 
+
+<img
+  src={require('./assets/portal-login-2fa-confirmation-trust-this-device-checkbox.png').default}
+  alt=""
+  style={{ width:550 }}
+/>
+
+A **Trusted Devices** section should be visible on your [**User Settings**](https://portal.emnify.com/user-settings) page under **Two-Factor Authentication**.
+
+<img
+  src={require('./assets/portal-user-settings-trusted-devices.png').default}
+  alt=""
+/>
+
+You can remove a device from your **Trusted Devices** by clicking the associated **Remove** button.
+
+<img
+  src={require('./assets/portal-user-settings-trusted-devices-remove-button.png').default}
+  alt=""
+/>
+
+:::info
+Your changes will be saved automatically. 
+:::
 
 ## Disabling two-factor authentication
 
-1. Log in to your [emnify account](https://portal.emnify.com/sign)
-2. Navigate to your [**User Settings**](https://portal.emnify.com/user-settings) page by clicking on your avatar and selecting **User Settings** from the dropdown menu
-
-<img
-  src={require('./assets/portal-dashboard-avatar-user-settings.png').default}
-  alt=""
-/>
-
-<img
-  src={require('./assets/portal-user-settings.png').default}
-  alt=""
-/>
-
-3. Scroll down to the **Two-Factor Authentication** section and click **Disable**
+If you want to disable 2FA, go to your [**User Settings**](https://portal.emnify.com/user-settings) page, scroll to the **Two-Factor Authentication** section, and click **Disable**.
 
 <img
   src={require('./assets/portal-user-settings-2fa-disable-button.png').default}
@@ -80,6 +97,5 @@ Now, if you log in to the emnify Portal on a device you haven't set as trusted b
 />
 
 :::info
-Your changes will be saved automatically. 
 You can re-enable 2FA at any time.
 :::
