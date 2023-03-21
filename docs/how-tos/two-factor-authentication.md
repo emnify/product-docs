@@ -9,23 +9,39 @@ You can enable 2FA via the emnify Portal.
 1. Log in to your [emnify account](https://portal.emnify.com/sign).
 2. Navigate to your [**User Settings**](https://portal.emnify.com/user-settings) page by clicking on your avatar and selecting **User Settings** from the dropdown menu.
 
-<!-- Screenshot -->
+<img
+  src={require('./assets/portal-dashboard-avatar-user-settings.png').default}
+  alt=""
+/>
+
+<img
+  src={require('./assets/portal-user-settings.png').default}
+  alt=""
+/>
 
 3. Scroll down to the **Two-Factor Authentication** section and click **Enable**.
 
-<!-- Screenshot -->
+<img
+  src={require('./assets/portal-user-settings-2fa-enable-button.png').default}
+  alt=""
+/>
 
-4. Enter your password to verify your identity.
+4. Enter your password to verify your identity then click **Submit**.
 
-<!-- Screenshot -->
+<img
+  src={require('./assets/portal-user-settings-2fa-password.png').default}
+  alt=""
+/>
 
 5. Activate your personal device's temporary authentication key by scanning the QR code with a 2FA app.
 Alternatively, you can copy the secret key to add it manually.
-
 After you've scanned the QR code or entered the key, a 6-digit token will appear in the app. 
 Enter this token into the text field.
 
-<!-- Screenshot -->
+<img
+  src={require('./assets/portal-user-settings-2fa-activate-key.png').default}
+  alt=""
+/>
 
 <details className="custom-details-tip">
   <summary>Need a 2FA app to scan the QR code?</summary>
@@ -34,22 +50,34 @@ Enter this token into the text field.
 
 Assuming there are no errors, 2FA should be enabled for your account 🎉
 
-<!-- Screenshot -->
+<img
+  src={require('./assets/portal-user-settings-2fa-enabled.png').default}
+  alt=""
+/>
 
 Now, if you log in to the emnify Portal on a device you haven't set as trusted before or use a different browser, you'll be asked to enter a one-time password to verify your identity.
-
-<!-- Screenshot -->
 
 ## Disabling two-factor authentication
 
 1. Log in to your [emnify account](https://portal.emnify.com/sign)
 2. Navigate to your [**User Settings**](https://portal.emnify.com/user-settings) page by clicking on your avatar and selecting **User Settings** from the dropdown menu
 
-<!-- Screenshot -->
+<img
+  src={require('./assets/portal-dashboard-avatar-user-settings.png').default}
+  alt=""
+/>
+
+<img
+  src={require('./assets/portal-user-settings.png').default}
+  alt=""
+/>
 
 3. Scroll down to the **Two-Factor Authentication** section and click **Disable**
 
-<!-- Screenshot -->
+<img
+  src={require('./assets/portal-user-settings-2fa-disable-button.png').default}
+  alt=""
+/>
 
 :::info
 Your changes will be saved automatically. 
