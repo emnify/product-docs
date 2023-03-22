@@ -1,3 +1,6 @@
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # How to use the GraphiQL IDE
 
 So you can experiment with the emnify GraphQL API, we've set up an [in-browser GraphiQL IDE](https://graphql-playground.emnify.net/). 
@@ -245,3 +248,100 @@ To see the queries you've executed during a session, click the **Show history** 
   style={{ width:350 }}
 />
 :::
+
+## Generating code from your query
+
+On the left panel are buttons allowing you to generate a cURL query, Node.js code, or Python code from your GraphQL query. 
+Clicking these buttons will copy this code to your clipboard.
+
+<img
+  src={require('./assets/graphiql-default-generate-code-buttons.png').default}
+  alt=""
+  style={{ width:450 }}
+/>
+
+The following examples show code generated from the default query:
+
+<Tabs
+  defaultValue="curl"
+  values={[
+      { label: 'cURL', value: 'curl', },
+      { label: 'Node.js', value: 'node', },
+      { label: 'Python', value: 'python', },
+  ]}
+>
+<TabItem value="curl">
+
+```shell
+curl -X POST \
+   -H "Authorization: Bearer <APP_TOKEN>" \
+   -H "Content-Type: application/json" \
+    https://cdn.emnify.net/graphql \
+    --data-raw '{"query":"{\n  myUser {\n    organisation {\n      name\n      id\n    }\n  }\n}"}'
+```
+
+</TabItem>
+<TabItem value="node">
+
+```js
+var axios = require('axios');
+var data = JSON.stringify({
+  query: `{
+  myUser {
+    organisation {
+      name
+      id
+    }
+  }
+}`,
+  variables: {}
+});
+
+var config = {
+  method: 'post',
+  url: 'https://cdn.emnify.net/graphql',
+  headers: { 
+    'Authorization': 'Bearer <APP_TOKEN>', 
+    'Content-Type': 'application/json'
+  },
+  data : data
+};
+
+axios(config)
+.then(function (response) {
+  console.log(JSON.stringify(response.data));
+})
+.catch(function (error) {
+  console.log(error);
+});
+```
+
+</TabItem>
+<TabItem value="python">
+
+```python
+import requests
+import json
+
+url = "https://cdn.emnify.net/graphql"
+
+payload = {"query": """{
+  myUser {
+    organisation {
+      name
+      id
+    }
+  }
+}"""}
+headers = {
+  'Authorization': 'Bearer <APP_TOKEN>',
+  'Content-Type': 'application/json'
+}
+
+response = requests.request("POST", url, headers=headers, data=json.dumps(payload))
+
+print(response.text)
+```
+
+</TabItem>
+</Tabs>
