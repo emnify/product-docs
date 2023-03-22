@@ -19,7 +19,7 @@ You can enable 2FA via the emnify Portal.
   alt=""
 />
 
-3. Scroll down to the **Two-Factor Authentication** section and click **Enable**.
+3. Find the [**Two-Factor Authentication**](https://portal.emnify.com/user-settings#two-factor-authentication) section and click **Enable**.
 
 <img
   src={require('./assets/portal-user-settings-2fa-enable-button.png').default}
@@ -36,7 +36,7 @@ You can enable 2FA via the emnify Portal.
 5. Activate your personal device's temporary authentication key by scanning the QR code with a 2FA app.
 Alternatively, you can copy the secret key to add it manually.
 After you've scanned the QR code or entered the key, a 6-digit token will appear in the app. 
-Enter this token into the text field.
+Finally, enter the token.
 
 <img
   src={require('./assets/portal-user-settings-2fa-activate-key.png').default}
@@ -48,7 +48,7 @@ Enter this token into the text field.
     <p>Download the Google Authenticator app from the <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&pli=1" target="_blank" rel="noopener noreferrer">Google Play Store</a> or <a href="https://apps.apple.com/app/google-authenticator/id388497605" target="_blank" rel="noopener noreferrer">App Store</a>.</p>
 </details>
 
-Assuming there are no errors, 2FA should be enabled for your account 🎉
+Assuming there are no errors, 2FA should be enabled for your account. 🎉
 
 <img
   src={require('./assets/portal-user-settings-2fa-enabled.png').default}
@@ -69,7 +69,7 @@ To bypass this process, check **Trust this device** before entering the 2FA code
   style={{ width:550 }}
 />
 
-A **Trusted Devices** section should be visible on your [**User Settings**](https://portal.emnify.com/user-settings) page under **Two-Factor Authentication**.
+A [**Trusted Devices**](https://portal.emnify.com/user-settings#trusted-devices) section should be visible on your [**User Settings**](https://portal.emnify.com/user-settings) page under [**Two-Factor Authentication**](https://portal.emnify.com/user-settings#two-factor-authentication).
 
 <img
   src={require('./assets/portal-user-settings-trusted-devices.png').default}
@@ -89,7 +89,7 @@ Your changes will be saved automatically.
 
 ## Disabling two-factor authentication
 
-If you want to disable 2FA, go to your [**User Settings**](https://portal.emnify.com/user-settings) page, scroll to the **Two-Factor Authentication** section, and click **Disable**.
+If you want to disable 2FA, go to your [**User Settings**](https://portal.emnify.com/user-settings) page, find the [**Two-Factor Authentication**](https://portal.emnify.com/user-settings#two-factor-authentication) section, and click **Disable**.
 
 <img
   src={require('./assets/portal-user-settings-2fa-disable-button.png').default}
