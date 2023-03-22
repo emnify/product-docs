@@ -206,7 +206,26 @@ const sidebars = {
         },
       ],
     },
-    "how-tos/index",
+    {
+      type: "category",
+      label: "How-tos",
+      link: {
+        type: "doc",
+        id: "how-tos/index",
+      },
+      items: [
+        {
+          type: "doc",
+          label: "Overview",
+          id: "how-tos/index",
+        },
+        {
+          type: "doc",
+          label: "Multi-inclusive volumes",
+          id: "how-tos/multi-inclusive-volumes",
+        },
+      ],
+    },
     "integration-guides/index",
     "glossary",
   ],
@@ -223,6 +242,14 @@ const sidebars = {
       label: "API reference",
       href: "https://cdn.emnify.net/api/doc/index.html",
     },
+  ],
+  graphqlSidebar: [
+    {
+      type: "doc",
+      label: "Preview the GraphQL API",
+      id: "graphql/preview",
+    },
+    "graphql/using-graphiql",
   ],
 };
 
