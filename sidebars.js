@@ -123,12 +123,13 @@ const sidebars = {
           items: [
             {
               type: "doc",
-              label: "Support options",
-              id: "services/support/options",
+              label: "Service plans",
+              id: "services/support/service-plans",
             },
-            "services/support/roaming",
-            "services/support/customer-success",
+
             "services/support/incident-management",
+            "services/support/customer-success",
+            "services/support/roaming",
           ],
         },
       ],
