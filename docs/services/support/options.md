@@ -5,7 +5,7 @@ description: Compare the different levels of support
 # Support options
 
 emnify provides a variety of support services designed to ensure that your devices operate reliably in our network.
-Standard support is included for any customer.
+Standard support is included for all customers.
 
 Business Support and Enterprise Support are the highest levels of support emnify offers and can be bundled with your emnify subscription.
 They are designed to reduce operational costs by detecting issues before they disrupt your business operations and by resolving issues faster.
