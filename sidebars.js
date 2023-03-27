@@ -163,6 +163,11 @@ const sidebars = {
         },
         {
           type: "doc",
+          label: "Ordering SIMs",
+          id: "how-tos/ordering-sims",
+        },
+        {
+          type: "doc",
           label: "Two-factor authentication",
           id: "how-tos/two-factor-authentication",
         },
