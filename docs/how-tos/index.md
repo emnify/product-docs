@@ -15,6 +15,9 @@
 - [How to fit a Raspberry Pi with mobile connectivity](https://www.emnify.com/developer-blog/how-to-fit-a-raspberry-pi-with-mobile-connectivity)
 - [How to set up multi-inclusive volumes](/how-tos/multi-inclusive-volumes)
 
+## Organization and billing
+
+- [Enabling workspaces on your Pro plan](/how-tos/enabling-workspaces)
 
 ## SMS
 
