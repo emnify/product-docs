@@ -9,15 +9,15 @@ Our service-level obligation (SLO) for the **Standard** [service plan](service-p
 However, our SLOs for the **Business** and **Enterprise** plans differentiate between *critical* and *operational* incidents. 
 
 :::info
-Inquiries referring to general questions, subscription plans, and/or services provided are not classified as incidents.
+Inquiries about subscription plans, services, or other general questions are not considered incidents.
 :::
 
 ## Critical incidents
 
-A critical incident is defined as a complete breakdown, total outage/interruption, or critical degradation of emnify's service that renders it unavailable.
+A *critical* incident is defined as a complete breakdown, total outage/interruption, or critical degradation of emnify's service that renders it unavailable.
 For example:
 
-- A complete breakdown, total outage/interruption, or critical degradation of emnify's service causing it to be unavailable
+- A complete breakdown, total outage/interruption, or critical degradation of emnify's service that causes it to be unusable
 - Data service degradation affecting a minimum of 1,000 connected devices
 - Total interruption or critical degradation of the VPN
 - emnify Portal unavailability
@@ -25,15 +25,15 @@ For example:
 
 ## Operational incidents
 
-An operational incident is characterized by emnify's service having partial functionality.
-Performance is degraded or limited, but normal services are still available.
-Immediate attention might be required if quality levels cannot be fully achieved. 
- For example:
+An *operational* incident is characterized by emnify's service having partial functionality.
+Performance is degraded or limited, but regular services are still available.
+If the quality of services remains subpar, the issue could be escalated. 
+For example:
 
 - Data service degradation affecting a minimum of 25 connected devices and a maximum of 999 connected devices
-- SMS total outage or interruption affecting a minimum of 25 connected devices
-- Degradation of the VPN service affecting a minimum of 25 devices
-- Request of BIC2 codes or invalid BIC code related issues
+- SMS total outage or interruption that affects at least 25 connected devices
+- Degradation of the VPN service that affects at least 25 devices
+- Requesting BIC2 codes or issues related to invalid BIC codes 
 - Unavailability of certain Regional Internet Breakouts
 - Data Streamer interruption
 - Data Streamer information delayed for more than 5 minutes

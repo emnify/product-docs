@@ -17,9 +17,9 @@ They are designed to reduce operational costs by detecting issues before they di
 | **Help Center & Knowledge Base** | Yes | Yes | Yes |
 | **Pre-scheduled event support** | Not included | Yes | Yes |
 | **Dedicated Support Agent** | Not included | Not included | Yes (EU-CET, US-EST or US-PST business hours) |
-| **Trace requests** | - | 1 simultaneous trace<br />Max 1 request/day<br />Max duration 24 hours/trace | 3 simultaneous traces<br />Max 1 request/day<br />Max duration 24 hours/trace | 
+| **Trace requests** | <div align="center">–</div> | 1 simultaneous trace<br />Max 1 request/day<br />Max duration 24 hours/trace | 3 simultaneous traces<br />Max 1 request/day<br />Max duration 24 hours/trace | 
 | **Guaranteed response times**:<br />• [Critical incident](incident-management#critical-incidents)<br />• [Operational incident](incident-management#operational-incidents)<br />• General issue / question | 7 business days | • 3 hours, 24 x 7 x 365<br />• 6 business hours<br />• 9 business hours | • 1 hour, 24 x 7 x 365<br />• 3 hours, 24 x 7 x 365<br />• 6 business hours  |
-| **Target time to restore service**: <br />• [Critical incident](incident-management#critical-incidents)<br />• [Operational incident](incident-management#operational-incidents) | - | • 12 hours<br />• 10 business days | • 4 hours<br />• 4 business days |
+| **Target time to restore service**: <br />• [Critical incident](incident-management#critical-incidents)<br />• [Operational incident](incident-management#operational-incidents) | <div align="center">–</div> | • 12 hours<br />• 10 business days | • 4 hours<br />• 4 business days |
 | **SLO** | Mobile Core: 98.5%<br />Internet Breakout/VPN: 98.5%<br />API/GUI: 98.5% | Mobile Core: 99.5%<br />Internet Breakout/VPN: 99.5%<br />API/GUI: 99.5% | Mobile Core: 99.95%<br />Internet Breakout/VPN: 99.9%<br />API/GUI: 99.5% |
 | **Root cause analysis** | Yes (Critical incidents) | Yes (Critical incidents) | Yes (Critical and operational incidents) |
 | **Length of service** | Monthly (automatic renewal) | Monthly (automatic renewal) | Minimum 12 months |
