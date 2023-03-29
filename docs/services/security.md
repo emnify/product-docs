@@ -68,3 +68,13 @@ The [IMEI lock](/glossary#imei-lock)  feature prevents the use of SIM card in an
 The [IMEI](/glossary#imei---international-mobile-equipment-identity) is a unique device identifier.
 When the automatic IMEI lock is configured, the emnify platform will bind the SIM cards to the first device that establishes a data connection.
 All future device connections will only be allowed from this device.
+
+## Two-factor authentication
+
+All emnify accounts can enable two-factor authentication (2FA) via the [Portal](https://portal.emnify.com/) for an additional layer of security. 
+
+Setting up 2FA makes unauthorized access to your account more improbable because your password is secured via your personal device, which generates a temporary authentication key.
+
+:::tip Step-by-step guide
+[Read our two-factor authentication guide](/how-tos/two-factor-authentication) to learn how to enable 2FA on your emnify account.
+:::

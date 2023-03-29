@@ -165,6 +165,25 @@
   text-decoration-color: #659bdf !important;
 }
 
+/* Details and summary elements - Tip */
+.custom-details-tip {
+  background-color: #3d9a3214;
+  border-color: #009e19 !important;
+  color: #263238;
+}
+
+.custom-details-tip summary::before {
+  border-color: transparent transparent transparent #009e19 !important;
+}
+
+.custom-details-tip .collapsibleContent_i85q {
+  border-top: 1px solid #009e19 !important;
+}
+
+.custom-details-tip .collapsibleContent_i85q a {
+  text-decoration-color: #009e19 !important;
+}
+
 /* Collapse sidebar button */
 button[title="Collapse sidebar"] {
   border-top: none;
