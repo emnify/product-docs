@@ -2,7 +2,7 @@
 
 Setting up two-factor authentication (2FA) makes unauthorized access to your account more improbable because your password is secured via your personal device, which generates a temporary authentication key.
 
-You can enable 2FA via the emnify Portal.
+You can [enable 2FA via the emnify Portal](https://portal.emnify.com/user-settings#two-factor-authentication).
 
 ## Configuration steps
 
@@ -59,7 +59,7 @@ Now, if you log in to the Portal on a device you haven't set as trusted before o
 
 ## Managing trusted devices
 
-Pulling out your personal device and entering a one-time password every time you need to log in to your account can be a pain, especially if you usually sign in from the same device.
+Reaching for your personal device and entering a one-time password every time you need to log in to your account can be a pain, especially if you usually sign in from the same device.
 
 To bypass this process, check **Trust this device** before entering the 2FA code from your authentication app. 
 
