@@ -65,7 +65,7 @@ A tutorial on how to set up a DNS firewall based on a private DNS using Amazon R
 
 For device manufacturers, SIM card theft is an issue because pluggable SIM cards can be removed from a device and then used to gain free internet access.
 The [IMEI lock](/glossary#imei-lock)  feature prevents the use of SIM card in any other device by bounding the SIM to an IMEI.
-The [IMEI](/glossary#imei---international-mobile-equipment-identification-number) is a unique device identifier.
+The [IMEI](/glossary#imei---international-mobile-equipment-identity) is a unique device identifier.
 When the automatic IMEI lock is configured, the emnify platform will bind the SIM cards to the first device that establishes a data connection.
 All future device connections will only be allowed from this device.
 

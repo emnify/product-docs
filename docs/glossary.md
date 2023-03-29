@@ -141,11 +141,11 @@ Following the introduction of [eUICC](#euicc---embedded-universal-integrated-cir
 For example, the ICCID value can change when a different [SIM profile](#sim-profile) is provisioned on the eSIM.
 :::
 
-## IMEI - International mobile equipment identification number  
+## IMEI - International mobile equipment identity 
 A unique number used to identify cellular modems.
 
 ## IMEI lock  
-The practice of strictly associating a SIM to the device with a certain IMEI number.
+The practice of strictly associating a SIM to the device with a certain [IMEI](#imei---international-mobile-equipment-identity) number.
 
 ## IMSI - International mobile subscriber identity  
 A unique number used to identify a [GSM](#gsm---global-system-for-mobile-communications) subscriber.
