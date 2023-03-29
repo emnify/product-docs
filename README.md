@@ -11,4 +11,6 @@ To request an update or additional content, please [open a GitHub issue](https:/
 ## Contributing
 
 You might also consider contributing to the emnify documentation project.
-If so, please take a look at the [contributing guide](CONTRIBUTING.md) to see how to get started.
+Take a look at the [contributing guide](CONTRIBUTING.md) to see how to get started.
+
+Alternatively, refer to our [development guide](./DEVELOPERS.md) if you're already familiar with software development tools and the GitHub workflow.
