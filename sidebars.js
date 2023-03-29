@@ -231,9 +231,32 @@ const sidebars = {
           id: "how-tos/two-factor-authentication",
         },
         {
-          type: "doc",
+          type: "category",
           label: "Workspaces",
-          id: "how-tos/enabling-workspaces",
+          link: {
+            type: "generated-index",
+            description:
+              "Manage additional workspaces with separate tariffs to adjust your business needs and optimize your device costs",
+            slug: "/workspaces",
+            title: "Workspaces on your Pro plan",
+          },
+          items: [
+            {
+              type: "doc",
+              label: "Create a new workspace",
+              id: "how-tos/workspaces/create-new",
+            },
+            {
+              type: "doc",
+              label: "Link an existing workspace",
+              id: "how-tos/workspaces/link-existing",
+            },
+            {
+              type: "doc",
+              label: "Switching between workspaces",
+              id: "how-tos/workspaces/switching-between",
+            },
+          ],
         },
       ],
     },
