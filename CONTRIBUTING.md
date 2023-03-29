@@ -1,5 +1,9 @@
 # Contributing to the emnify Documentation
 
+> **Note**
+> This guide is for contributors who wish to use the GitHub UI.
+> If you prefer using developer tools for working with Git repositories, please see the [development guide](DEVELOPERS.md).
+
 Your interest in contributing to the emnify product documentation is greatly appreciated.
 By helping maintain and grow our documentation, your efforts will not only benefit your organization but the greater emnify community as well.
 
