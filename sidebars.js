@@ -230,6 +230,11 @@ const sidebars = {
           label: "Two-factor authentication",
           id: "how-tos/two-factor-authentication",
         },
+        {
+          type: "doc",
+          label: "Workspaces",
+          id: "how-tos/enabling-workspaces",
+        },
       ],
     },
     "integration-guides/index",
