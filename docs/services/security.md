@@ -11,11 +11,11 @@ emnify uses a SASE approach to simplify securing devices – using several servi
 
 ![IoT security threats](assets/security-threats.png)
 
-Secure Access Service Edge ([SASE](/glossary#sase---secure-access-service-edge)) introduces a new architecture where networking and security functions are bundled in a cloud-delivered service.
+Secure Access Service Edge ([SASE](/glossary#sase)) introduces a new architecture where networking and security functions are bundled in a cloud-delivered service.
 You can apply the same security standards across all your devices independent of the location.
 Moreover, you can integrate security features in your solutions right from the beginning.
 
-Some of the features that [SASE](/glossary#sase---secure-access-service-edge) for IoT architecture includes are as follows:
+Some of the features that [SASE](/glossary#sase) for IoT architecture includes are as follows:
 
 - Dynamic Data Routing with Software-Defined Wide Area Network (SD-WAN)  
 emnify utilizes a SD-WAN to route data to the closest cloud region using the [Regional Breakout](iot-cloud-communication-platform#regional-breakout) concept.
@@ -65,7 +65,7 @@ A tutorial on how to set up a DNS firewall based on a private DNS using Amazon R
 
 For device manufacturers, SIM card theft is an issue because pluggable SIM cards can be removed from a device and then used to gain free internet access.
 The [IMEI lock](/glossary#imei-lock)  feature prevents the use of SIM card in any other device by bounding the SIM to an IMEI.
-The [IMEI](/glossary#imei---international-mobile-equipment-identity) is a unique device identifier.
+The [IMEI](/glossary#imei) is a unique device identifier.
 When the automatic IMEI lock is configured, the emnify platform will bind the SIM cards to the first device that establishes a data connection.
 All future device connections will only be allowed from this device.
 

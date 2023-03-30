@@ -5,7 +5,7 @@ description: Form factors, quality grades, multi-IMSI, eSIM, eUICC
 
 emnify provides eSIMs that are built specifically for IoT solutions.
 Compared to regular operator SIMs, emnify eSIMs come in different quality grades that are more durable.
-They can be updated [over the air (OTA)](/glossary#ota---overtheair) using different eSIM remote SIM provisioning technologies and come in different [form factors](#form-factors).
+They can be updated [over the air (OTA)](/glossary#ota) using different eSIM remote SIM provisioning technologies and come in different [form factors](#form-factors).
 
 emnify eSIMs have a [multi-IMSI applet](#multi-imsi-applet) installed on the SIM.
 The multi-IMSI applet makes sure that the best network and network partners are used based a device's location.
@@ -16,7 +16,7 @@ Using this technology, emnify provides a larger number of networks than traditio
 ### M2M eSIM
 
 Every new SIM you order from emnify is an [M2M eSIM](https://www.gsma.com/esim/remote-sim-provisioning-for-machine-to-machine/) (compliant with SGP.01, SGP.02, and SGP.016).
-The M2M eSIM is also referred to as an [eUICC](/glossary#euicc---embedded-universal-integrated-circuit-card) (Embedded universal integrated circuit card).
+The M2M eSIM is also referred to as an [eUICC](/glossary#euicc) (Embedded universal integrated circuit card).
 Unlike a regular SIM (UICC), an eUICC can be updated over the air.
 Because M2M eSIMs can be updated with new configurations or profiles, this eliminates the need for SIM swaps.
 
@@ -238,7 +238,7 @@ An emnify eSIM has cellular provider information from multiple SIM cards already
 While emnify has roaming agreements and local contracts with operators around the world, emnify also uses partner operators to increase the network coverage footprint in order to provide a fallback when preferred networks experience outages.
 
 The multi-IMSI applet works in the following manner.
-emnify has its own operator identity ([IMSI](/glossary#imsi---international-mobile-subscriber-identity)) as well as the partner operator's IMSI stored on the SIM card.
+emnify has its own operator identity ([IMSI](/glossary#imsi)) as well as the partner operator's IMSI stored on the SIM card.
 Each IMSI / partner operator usually has more than one network accessible per country.
 The applet also includes a preferred IMSI list per country.
 For example, this list defines that IMSI *X* will have the highest priority for access in country *A*.

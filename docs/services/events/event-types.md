@@ -1424,7 +1424,7 @@ SIM is patched from **Issued** to **Factory Test** status (for SIM testing).
 
 ### SIM registration
 
-SIM or SIM batch is registered to an organization via a [Batch Identification Code (BIC)](/glossary#bic---batch-identification-code). 
+SIM or SIM batch is registered to an organization via a [Batch Identification Code (BIC)](/glossary#bic). 
 
 :::note
 This event doesn't trigger when the emnify team assigns SIMs to an organization.

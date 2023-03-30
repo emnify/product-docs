@@ -14,7 +14,7 @@ If you order the free Evaluation SIM package, you will have to register each of 
   style={{ width: 292 }}
 />
 
-1. Since the **Single-SIM registration** is already selected by default, enter the [Batch Identification Code](/glossary#bic---batch-identification-code) (**BIC1**) in the prompt:  
+1. Since the **Single-SIM registration** is already selected by default, enter the [Batch Identification Code](/glossary#bic) (**BIC1**) in the prompt:  
 <img
   src={require('./assets/portal-sim-registration-enter-bic1.png').default}
   style={{width:350}} alt=""
