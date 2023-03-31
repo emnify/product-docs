@@ -112,26 +112,7 @@ const sidebars = {
         "services/no-code-workflow-automation",
         "services/sim-lifecycle-management",
         "services/endpoint-management-and-group-policies",
-        {
-          type: "category",
-          label: "Support",
-          link: {
-            type: "generated-index",
-            title: "Support",
-            slug: "services/support",
-          },
-          items: [
-            {
-              type: "doc",
-              label: "Service plans",
-              id: "services/support/service-plans",
-            },
-
-            "services/support/incident-management",
-            "services/support/customer-success",
-            "services/support/roaming",
-          ],
-        },
+        "services/support",
       ],
     },
     {
