@@ -9,6 +9,7 @@ docs
 # Ignore files
 .gitignore
 .prettierignore
+.env
 
 # Lock file
 yarn.lock
