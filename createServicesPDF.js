@@ -38,13 +38,13 @@ let merged = "<!doctype html>\n";
 merged += '<html lang="en" dir="ltr">' + "\n<head>\n";
 merged += '<meta charset="UTF-8"></meta>' + "\n";
 merged +=
-  '<link rel="stylesheet" href="/assets/css/styles.438d72b1.css"></link>' +
+  '<link rel="stylesheet" href="https://docs.emnify.com/assets/css/styles.438d72b1.css"></link>' +
   "\n";
 merged += "</head>\n<body>\n";
+//merged += "<body>\n";
 
-let file = "support.html";
-for (file of files) {
-  let filename = path + file;
+for (let thisFile of files) {
+  let filename = path + thisFile;
   let lines = fs.readFileSync(filename, "utf-8");
   lines = lines.replace(/<([a-z])/g, "\n<$1");
   let keep = 0;
@@ -62,6 +62,7 @@ for (file of files) {
 }
 
 merged += "</body>\n</html>\n";
+//console.log(merged)
 
 try {
   fs.writeFileSync(htmlFile, merged);
