@@ -7,6 +7,8 @@ const url = process.env.URL;
 const htmlFile = process.env.HTMLFILE;
 const pdfFile = process.env.PDFFILE;
 const s3Bucket = process.env.S3BUCKET;
+const runtimeMainJS = process.env.RUNTIMEMAINJS;
+const mainJS = process.env.MAINJS;
 const s3Upload = "aws s3 sync build s3://" + s3Bucket + " --acl public-read";
 const path = "build/services/";
 let files = [
@@ -46,7 +48,14 @@ merged += "</head>\n<body>\n";
 for (let thisFile of files) {
   let filename = path + thisFile;
   let lines = fs.readFileSync(filename, "utf-8");
-  lines = lines.replace(/<([a-z])/g, "\n<$1");
+  lines = lines.replace(/<details/g, "\n<details");
+  lines = lines.replace(/"true">/g, '"true"' + ">\n");
+  lines = lines.replace(/<\/details>/g, "\n</details>\n");
+  lines = lines.replace(/<h/g, "\n<h");
+  lines = lines.replace(/<t/g, "\n<t");
+  lines = lines.replace(/<p/g, "\n<p");
+  lines = lines.replace(/<summary>/g, "<b>");
+  lines = lines.replace(/<\/summary>/g, "</b>");
   let keep = 0;
   lines.split(/\r?\n/).forEach(line => {
     if (line.match(/<h1/)) {
@@ -56,11 +65,15 @@ for (let thisFile of files) {
       keep = 0;
     }
     if (keep) {
-      merged += line + "\n";
+      if (!line.match(/<details/) && !line.match(/<\/details/)) {
+        merged += line + "\n";
+      }
     }
   });
 }
 
+merged += '<script src="' + runtimeMainJS + '"></script>' + "\n";
+merged += '<script src="' + mainJS + '"></script>' + "\n";
 merged += "</body>\n</html>\n";
 //console.log(merged)
 
