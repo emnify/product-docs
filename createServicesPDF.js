@@ -9,9 +9,13 @@ const pdfFile = process.env.PDFFILE;
 const s3Bucket = process.env.S3BUCKET;
 const runtimeMainJS = process.env.RUNTIMEMAINJS;
 const mainJS = process.env.MAINJS;
+const docPath = process.env.DOCPATH;
 const s3Upload = "aws s3 sync build s3://" + s3Bucket + " --acl public-read";
-const path = "build/services/";
-let files = [
+const anchorTemplate =
+  '<a href="#{id}" class="hash-link" aria-label="Direct link to {title}" title="{title}">&ZeroWidthSpace;</a>';
+const pageBreak = '<div style="page-break-after: always"></div>';
+
+const files = [
   "global-iot-sim.html",
   "global-iot-network.html",
   "iot-cloud-communication-platform.html",
@@ -36,6 +40,7 @@ let files = [
   //"support.html"
 ];
 
+let toc = "<h1>Table of Contents</h1>\n";
 let merged = "<!doctype html>\n";
 merged += '<html lang="en" dir="ltr">' + "\n<head>\n";
 merged += '<meta charset="UTF-8"></meta>' + "\n";
@@ -46,7 +51,7 @@ merged += "</head>\n<body>\n";
 //merged += "<body>\n";
 
 for (let thisFile of files) {
-  let filename = path + thisFile;
+  let filename = docPath + thisFile;
   let lines = fs.readFileSync(filename, "utf-8");
   lines = lines.replace(/<details/g, "\n<details");
   lines = lines.replace(/"true">/g, '"true"' + ">\n");
@@ -60,13 +65,38 @@ for (let thisFile of files) {
   lines.split(/\r?\n/).forEach(line => {
     if (line.match(/<h1/)) {
       keep = 1;
+      merged += "\n" + pageBreak + "\n";
     }
     if (line.match(/<footer/)) {
       keep = 0;
     }
     if (keep) {
       if (!line.match(/<details/) && !line.match(/<\/details/)) {
-        merged += line + "\n";
+        // Process <h1> and <h2> section headings for creating the internal
+        // anchors needed for building a TOC
+        if (line.match(/<h1>/)) {
+          let sectionHeading = line.replace(/<h\d>([^<]+)<\/h\d>/, "$1");
+          let id = createAnchorId(sectionHeading);
+          let anchor = anchorTemplate.replace(/{title}/g, sectionHeading);
+          let hAttrs = ' class="anchor" id="' + id + '">';
+          line = line.replace(/>/, hAttrs);
+          merged += line + "\n";
+          anchor = anchor.replace(/{id}/g, id);
+          merged += anchor + "\n";
+          toc +=
+            '<strong><a href="#' +
+            id +
+            '">' +
+            sectionHeading +
+            "</a></strong><br />\n";
+        } else if (line.match(/<h2/)) {
+          merged += line + "\n";
+          let link = line.replace(/<h2 [^<]+(<a href="#[^"]+").*/, "$1");
+          let title = line.replace(/<[^>]+>([^<]+)<.*/, "$1");
+          toc += "&nbsp;&nbsp;" + link + ">" + title + "</a><br />\n";
+        } else {
+          merged += line + "\n";
+        }
       }
     }
   });
@@ -75,6 +105,7 @@ for (let thisFile of files) {
 merged += '<script src="' + runtimeMainJS + '"></script>' + "\n";
 merged += '<script src="' + mainJS + '"></script>' + "\n";
 merged += "</body>\n</html>\n";
+merged = toc + merged;
 //console.log(merged)
 
 try {
@@ -130,3 +161,13 @@ axios(config)
     var decoder = new TextDecoder("utf-8");
     console.log(decoder.decode(error.response.data));
   });
+
+function createAnchorId(sectionHeading) {
+  let id = sectionHeading.toLowerCase();
+  id = id.replace(/[ ,_/:()]/g, "-");
+  id = id.replace(/[.!?]/g, "");
+  id = id.replace(/(\w+)&(\w+)/g, "$1-and-$2");
+  id = id.replace(/&/g, "and");
+  id = id.replace(/--/g, "-");
+  return id;
+}
