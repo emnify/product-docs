@@ -11,8 +11,6 @@ const runtimeMainJS = process.env.RUNTIMEMAINJS;
 const mainJS = process.env.MAINJS;
 const docPath = process.env.DOCPATH;
 const s3Upload = "aws s3 sync build s3://" + s3Bucket + " --acl public-read";
-const anchorTemplate =
-  '<a href="#{id}" class="hash-link" aria-label="Direct link to {title}" title="{title}">&ZeroWidthSpace;</a>';
 const pageBreak = '<div style="page-break-after: always"></div>';
 
 const files = [
@@ -40,15 +38,17 @@ const files = [
   //"support.html"
 ];
 
-let toc = "<h1>Table of Contents</h1>\n";
-let merged = "<!doctype html>\n";
-merged += '<html lang="en" dir="ltr">' + "\n<head>\n";
-merged += '<meta charset="UTF-8"></meta>' + "\n";
-merged +=
+let head = "<!doctype html>\n";
+head += '<html lang="en" dir="ltr">' + "\n<head>\n";
+head += '<meta charset="UTF-8"></meta>' + "\n";
+head +=
   '<link rel="stylesheet" href="https://docs.emnify.com/assets/css/styles.438d72b1.css"></link>' +
   "\n";
-merged += "</head>\n<body>\n";
-//merged += "<body>\n";
+head += "</head>\n<body>\n";
+//head += "<body>\n";
+
+let toc = "<h1>Table of Contents</h1>\n";
+let body = "";
 
 for (let thisFile of files) {
   let filename = docPath + thisFile;
@@ -56,6 +56,7 @@ for (let thisFile of files) {
   lines = lines.replace(/<details/g, "\n<details");
   lines = lines.replace(/"true">/g, '"true"' + ">\n");
   lines = lines.replace(/<\/details>/g, "\n</details>\n");
+  lines = lines.replace(/<footer/g, "\n<footer");
   lines = lines.replace(/<h/g, "\n<h");
   lines = lines.replace(/<t/g, "\n<t");
   lines = lines.replace(/<p/g, "\n<p");
@@ -65,7 +66,7 @@ for (let thisFile of files) {
   lines.split(/\r?\n/).forEach(line => {
     if (line.match(/<h1/)) {
       keep = 1;
-      merged += "\n" + pageBreak + "\n";
+      body += "\n" + pageBreak + "\n";
     }
     if (line.match(/<footer/)) {
       keep = 0;
@@ -77,12 +78,8 @@ for (let thisFile of files) {
         if (line.match(/<h1>/)) {
           let sectionHeading = line.replace(/<h\d>([^<]+)<\/h\d>/, "$1");
           let id = createAnchorId(sectionHeading);
-          let anchor = anchorTemplate.replace(/{title}/g, sectionHeading);
           let hAttrs = ' class="anchor" id="' + id + '">';
           line = line.replace(/>/, hAttrs);
-          merged += line + "\n";
-          anchor = anchor.replace(/{id}/g, id);
-          merged += anchor + "\n";
           toc +=
             '<strong><a href="#' +
             id +
@@ -90,22 +87,20 @@ for (let thisFile of files) {
             sectionHeading +
             "</a></strong><br />\n";
         } else if (line.match(/<h2/)) {
-          merged += line + "\n";
           let link = line.replace(/<h2 [^<]+(<a href="#[^"]+").*/, "$1");
           let title = line.replace(/<[^>]+>([^<]+)<.*/, "$1");
           toc += "&nbsp;&nbsp;" + link + ">" + title + "</a><br />\n";
-        } else {
-          merged += line + "\n";
         }
+        body += line + "\n";
       }
     }
   });
 }
 
-merged += '<script src="' + runtimeMainJS + '"></script>' + "\n";
-merged += '<script src="' + mainJS + '"></script>' + "\n";
-merged += "</body>\n</html>\n";
-merged = toc + merged;
+body += '<script src="' + runtimeMainJS + '"></script>' + "\n";
+body += '<script src="' + mainJS + '"></script>' + "\n";
+body += "</body>\n</html>\n";
+let merged = head + toc + body;
 //console.log(merged)
 
 try {
