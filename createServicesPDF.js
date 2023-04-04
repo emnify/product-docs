@@ -14,6 +14,7 @@ const s3Upload = "aws s3 sync build s3://" + s3Bucket + " --acl public-read";
 const pageBreak = '<div style="page-break-after: always"></div>';
 
 const files = [
+  "purpose-of-this-document.html",
   "global-iot-sim.html",
   "global-iot-network.html",
   "iot-cloud-communication-platform.html",
