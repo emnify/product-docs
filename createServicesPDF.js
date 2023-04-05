@@ -2,6 +2,7 @@ const fs = require("fs");
 const exec = require("child_process").exec;
 require("dotenv").config();
 const axios = require("axios");
+const version = process.env.VERSION;
 const apiKey = process.env.APIKEY;
 const url = process.env.URL;
 const htmlFile = process.env.HTMLFILE;
@@ -12,6 +13,8 @@ const mainJS = process.env.MAINJS;
 const docPath = process.env.DOCPATH;
 const s3Upload = "aws s3 sync build s3://" + s3Bucket + " --acl public-read";
 const pageBreak = '<div style="page-break-after: always"></div>';
+
+let today = new Date().toISOString().slice(0, 10);
 
 const files = [
   "purpose-of-this-document.html",
@@ -46,10 +49,29 @@ head +=
   '<link rel="stylesheet" href="https://docs.emnify.com/assets/css/styles.438d72b1.css"></link>' +
   "\n";
 head += "</head>\n<body>\n";
-//head += "<body>\n";
+
+let coverpage =
+  '<div style="height:900px;position:relative">\
+    <div style="margin:0;position:absolute;top:50%;left:50%;\
+    margin-right: -50%;transform: translate(-50%, -50%)">\
+      {logo}\
+      <br />\
+      <h1>Service Description</h1>\
+      <br />\
+      <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' +
+  today +
+  "&nbsp;&nbsp;Version " +
+  version +
+  "</h3>\
+  </div>\
+</div>" +
+  "\n\n" +
+  pageBreak +
+  "\n";
 
 let toc = "<h1>Table of Contents</h1>\n";
 let body = "";
+let logoImage = "";
 
 for (let thisFile of files) {
   let filename = docPath + thisFile;
@@ -63,6 +85,7 @@ for (let thisFile of files) {
   lines = lines.replace(/<p/g, "\n<p");
   lines = lines.replace(/<summary>/g, "<b>");
   lines = lines.replace(/<\/summary>/g, "</b>");
+
   let keep = 0;
   lines.split(/\r?\n/).forEach(line => {
     if (line.match(/<h1/)) {
@@ -92,6 +115,33 @@ for (let thisFile of files) {
           let title = line.replace(/<[^>]+>([^<]+)<.*/, "$1");
           toc += "&nbsp;&nbsp;" + link + ">" + title + "</a><br />\n";
         }
+        /**
+         * Remove emnify logo specified in purpose-of-this-document.md
+         * and use the new build URI of it for inserting in the dynamically
+         * generated coverpage.
+         * This is what we need to cut, modify, and paste:
+         * <img
+         *   loading="lazy"
+         *   alt="emnify"
+         *   src="/assets/images/logo-emnify-print-blue-cd7b64974dd69b267f5181cba4cb8729.png"
+         *   width="910"
+         *   height="775"
+         *   class="img_ev3q medium-zoom-image">300 255
+         */
+        if (thisFile == "purpose-of-this-document.html") {
+          if (line.match(/logo-emnify-print-blue/)) {
+            logoImage = line.replace(/<p>([^>]+)/, "$1");
+            logoImage = logoImage.replace(/910/, "300");
+            logoImage = logoImage.replace(/775/, "255");
+            logoImage = logoImage.replace(
+              /class="img_ev3q medium-zoom-image"/,
+              ""
+            );
+            logoImage = logoImage.replace(/<\/p><\/div>/, "");
+            coverpage = coverpage.replace(/{logo}/, logoImage);
+            line = "";
+          }
+        }
         body += line + "\n";
       }
     }
@@ -101,7 +151,7 @@ for (let thisFile of files) {
 body += '<script src="' + runtimeMainJS + '"></script>' + "\n";
 body += '<script src="' + mainJS + '"></script>' + "\n";
 body += "</body>\n</html>\n";
-let merged = head + toc + body;
+let merged = head + coverpage + toc + body;
 //console.log(merged)
 
 try {
