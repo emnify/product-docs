@@ -116,6 +116,99 @@ const sidebars = {
     },
     {
       type: "category",
+      label: "User guide",
+      link: {
+        type: "generated-index",
+        description: "Step-by-step guides for using the emnify Portal",
+        slug: "userguide",
+      },
+      items: [
+        {
+          type: "category",
+          label: "Procurement",
+          link: {
+            type: "generated-index",
+            title: "How to order SIMs",
+            slug: "userguide/procurement",
+          },
+          items: [
+            "userguide/procurement/order-sims",
+            "userguide/procurement/register-sims",
+            "userguide/procurement/upgrade-service",
+          ],
+        },
+        {
+          type: "category",
+          label: "Device Policies",
+          link: {
+            type: "generated-index",
+            title: "Create policies for your devices",
+            slug: "userguide/devices/policies",
+          },
+          items: [
+            "userguide/devices/policies/service",
+            "userguide/devices/policies/coverage",
+          ],
+        },
+        {
+          type: "category",
+          label: "Connected Devices",
+          link: {
+            type: "generated-index",
+            title: "Connected devices",
+            slug: "userguide/devices/connected",
+          },
+          items: [
+            "userguide/devices/connected/add",
+            "userguide/devices/connected/table",
+            "userguide/devices/connected/details",
+          ],
+        },
+        {
+          type: "category",
+          label: "Network configuration",
+          link: {
+            type: "generated-index",
+            title: "Configuring your network",
+            slug: "userguide/network",
+          },
+          items: [
+            "userguide/network/ip-address-space-management",
+            {
+              type: "category",
+              label: "Secure connection",
+              link: {
+                type: "generated-index",
+                title: "Configuring secure connections",
+                slug: "userguide/network/secure-connection",
+              },
+              items: [
+                "userguide/network/secure-connection/cloud-connect",
+                "userguide/network/secure-connection/openvpn",
+                "userguide/network/secure-connection/ipsec",
+              ],
+            },
+          ],
+        },
+        {
+          type: "category",
+          label: "Integration",
+          link: {
+            type: "generated-index",
+            title: "Integration",
+            slug: "userguide/integration",
+          },
+          items: [
+            "userguide/integration/no-code-workflows",
+            "userguide/integration/data-streams",
+            "userguide/integration/application-tokens",
+          ],
+        },
+        "userguide/reports",
+      ],
+    },
+    {
+      type: "category",
       label: "Software Development Kits",
       link: {
         type: "generated-index",
