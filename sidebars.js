@@ -58,6 +58,25 @@ const sidebars = {
         type: "generated-index",
         description:
           "emnify offers the following high-level products and services:",
+        slug: "service-desc",
+      },
+      items: [
+        "service-desc/emnify-iot-esim",
+        "service-desc/emnify-iot-supernetwork",
+        "service-desc/emnify-connectivity-platform",
+        "service-desc/communication-services",
+        "service-desc/network-security-services",
+        "service-desc/emnify-premium-services",
+        "service-desc/support",
+      ],
+    },
+    {
+      type: "category",
+      label: "Legacy Services",
+      link: {
+        type: "generated-index",
+        description:
+          "emnify offers the following high-level products and services:",
         slug: "services",
       },
       items: [
