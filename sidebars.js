@@ -112,6 +112,7 @@ const sidebars = {
         "services/no-code-workflow-automation",
         "services/sim-lifecycle-management",
         "services/endpoint-management-and-group-policies",
+        "services/support",
       ],
     },
     {
