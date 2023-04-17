@@ -7,7 +7,7 @@ The device can send and receive data and SMS.
 ## APN
 _Access Point Name_
 
-A gateway between a [GSM](#gsm---global-system-for-mobile-communications), GPRS, 3G, or 4G mobile network and another computer network, usually the public Internet.
+A gateway between a [GSM](#gsm), GPRS, 3G, or 4G mobile network and another computer network, usually the public Internet.
 The APN needs to be configured on the device. For emnify, it is `em` or `emnify`.
 
 ## Application token  
@@ -28,7 +28,7 @@ Gives information about the registration status and access technology of the ser
 ## AuC
 _Authentication Center_
 
-A part of [GSM](#gsm---global-system-for-mobile-communications) infrastructure, validates any SIM card attempting network connection when a phone has a live network signal.
+A part of [GSM](#gsm) infrastructure, validates any SIM card attempting network connection when a phone has a live network signal.
 
 ## BIC
 _Batch Identification Code_
@@ -84,7 +84,7 @@ Instead of using a periodicity of 2.56ms (DRX) it can be increased up to 40mins,
 ## EID
 _eUICC Identifier_
 
-The eUICC Identifier (EID) provides a unique global serial number for an [eUICC](#euicc---embedded-universal-integrated-circuit-card).
+The eUICC Identifier (EID) provides a unique global serial number for an [eUICC](#euicc).
 It has a fixed length of 32 digits, as indicated in the following diagram:
 
 ![A 32-digit EID number: "89049011803455664400046832584675". The first 18 digits are the EUM Identification Number (EIN). Within those 18 digits, the first two digits are the Major Industry Identifier (Telecom in this example). The next three digits are the Country Code (GER in this example). The next three digits are the eUICC Manufacturer. The final 10 digits of the EIN contain information about the chip, OS, and its version. After the EIN, the following 11 digits are the EUM Specific Identification Number (ESIN). This value is also the eUICC Individual Identification Number. The final two digits of the EID are the Check Digits.](assets/infographic-eid-digits.png)
@@ -105,15 +105,15 @@ The current state of the [endpoint](#endpoint): **Enabled** or **Disabled**.
 ## eSIM
 _Embedded SIM_
 
-Because of the "e" (for *embedded*) in its name, *eSIM* is sometimes incorrectly used for referring to the MFF2 physical form factor of an [eUICC](#euicc---embedded-universal-integrated-circuit-card) chip that is designed to be permanently surface-mounted inside a device.
-Within the IoT industry, *eSIM* refers to the entire solution that is comprised of an eUICC-equipped [SIM](#sim---subscriber-identification-module) along with the software platform for [OTA provisioning](#ota-provisioning).
+Because of the "e" (for *embedded*) in its name, *eSIM* is sometimes incorrectly used for referring to the MFF2 physical form factor of an [eUICC](#euicc) chip that is designed to be permanently surface-mounted inside a device.
+Within the IoT industry, *eSIM* refers to the entire solution that is comprised of an eUICC-equipped [SIM](#sim) along with the software platform for [OTA provisioning](#ota-provisioning).
 Although eSIMs can be embedded directly in a device, they are also manufactured as pluggable SIM cards.
 The [emnify eSIM](/services/global-iot-sim) has capabilities not available with other eSIMs.
 
 ## eUICC
 _Embedded Universal Integrated Circuit Card_  
-The embedded universal integrated circuit card (eUICC) is a component of a [SIM](#sim---subscriber-identification-module) card.
-It allows consumers and IoT manufacturers to provision the SIM with a new [operator profile](https://www.emnify.com/iot-glossary/mno) [over-the-air](#ota---over–the–air).
+The embedded universal integrated circuit card (eUICC) is a component of a [SIM](#sim) card.
+It allows consumers and IoT manufacturers to provision the SIM with a new [operator profile](https://www.emnify.com/iot-glossary/mno) [over-the-air](#ota).
 
 :::tip Deep dive
 Learn more about the eUICC in our blog post: [What is an eUICC and why does it matter?](https://www.emnify.com/iot-glossary/what-is-an-euicc)
@@ -132,7 +132,7 @@ SIM cards vary in size (Mini vs. Micro vs. Nano), function (embedded vs. standar
 
 ## GGSN
 _Gateway GPRS Support Node_  
-Part of the [GSM](#gsm---global-system-for-mobile-communications) infrastructure, the [GGSN](#ggsn---gateway-gprs-support-node) is responsible for the interworking between the GPRS network and external packet switched networks.
+Part of the [GSM](#gsm) infrastructure, the [GGSN](#ggsn) is responsible for the interworking between the GPRS network and external packet switched networks.
 
 ## Globally–distributed infrastructure  
 Cloud infrastructure that is distributed globally, with several local breakout points for better traffic handling.
@@ -145,7 +145,7 @@ A standard developed by the European Telecommunications Standards Institute to d
 _Home Location Register_
 
 A database from a mobile network in which information from all mobile subscribers is stored.
-Part of [GSM](#gsm---global-system-for-mobile-communications) infrastructure. 
+Part of [GSM](#gsm) infrastructure. 
 
 ## HTTP POST request  
 A request method supported by the HTTP protocol, which typically includes data in the request body.
@@ -153,7 +153,7 @@ A request method supported by the HTTP protocol, which typically includes data i
 ## IC
 _Integrated Circuit_
 
-A semiconductor chip containing a large number of extremely small electronic components, e.g., a CPU, the chips on computer memory cards, the electronic part of a [SIM](#sim---subscriber-identification-module) card, an [eUICC](#euicc---embedded-universal-integrated-circuit-card), etc.
+A semiconductor chip containing a large number of extremely small electronic components, e.g., a CPU, the chips on computer memory cards, the electronic part of a [SIM](#sim) card, an [eUICC](#euicc), etc.
 
 ## ICCID
 _Integrated Circuit Card Identifier_
@@ -174,12 +174,12 @@ _International Mobile Equipment Identity_
 A unique number used to identify cellular modems.
 
 ## IMEI lock  
-The practice of strictly associating a SIM to the device with a certain [IMEI](#imei---international-mobile-equipment-identity) number.
+The practice of strictly associating a SIM to the device with a certain [IMEI](#imei) number.
 
 ## IMSI
 _International Mobile Subscriber Identity_
 
-A unique number used to identify a [GSM](#gsm---global-system-for-mobile-communications) subscriber.
+A unique number used to identify a [GSM](#gsm) subscriber.
 
 ## IPsec  
 A protocol suite for Secure Internet Protocol (IP) communications that works by authenticating and encrypting each IP packet of a communication session.
@@ -210,7 +210,7 @@ A unique number used to identify a mobile phone number internationally.
 ## MSC
 _Mobile Switching Center_
 
-The part of [GSM](#gsm---global-system-for-mobile-communications) architecture that controls the network switching subsystem elements.
+The part of [GSM](#gsm) architecture that controls the network switching subsystem elements.
 
 ## OTA
 _Over–the–Air_
@@ -267,9 +267,9 @@ A profile that defines the services and functionality of a device managed throug
 ## SIM
 _Subscriber Identification Module_
 
-A subscriber identification module (SIM) contains an integrated circuit ([IC](#ic---integrated-circuit)) that is often mounted on a plastic card.
+A subscriber identification module (SIM) contains an integrated circuit ([IC](#ic)) that is often mounted on a plastic card.
 Pluggable SIMs mounted on plastic cards are offered in various form factors.
-A SIM stores data used to identify a subscriber ([IMSI](#imsi---international-mobile-subscriber-identity)) along with other network information for connecting and authenticating with a [mobile network operator (MNO)](https://www.emnify.com/iot-glossary/mno).
+A SIM stores data used to identify a subscriber ([IMSI](#imsi)) along with other network information for connecting and authenticating with a [mobile network operator (MNO)](https://www.emnify.com/iot-glossary/mno).
 See also [eSIM - Embedded SIM](#esim---embedded-sim).
 
 
