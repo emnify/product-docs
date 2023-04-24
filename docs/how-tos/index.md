@@ -17,7 +17,7 @@
 
 ## Organization and billing
 
-- [Enabling workspaces on your Pro plan](/how-tos/enabling-workspaces)
+- [Enabling workspaces on your Pro plan](/how-tos/workspaces)
 
 ## SMS
 

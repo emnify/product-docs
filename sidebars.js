@@ -178,7 +178,7 @@ const sidebars = {
             type: "generated-index",
             description:
               "Manage additional workspaces with separate tariffs to adjust your business needs and optimize your device costs",
-            slug: "/workspaces",
+            slug: "/how-tos/workspaces",
             title: "Workspaces on your Pro plan",
           },
           items: [
