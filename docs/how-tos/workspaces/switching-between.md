@@ -4,6 +4,10 @@ description: Move between and manage multiple organizations
 
 # Switching between workspaces
 
+:::info
+Only **Admin** user accounts of the **Main Organization** can switch between workspaces.
+:::
+
 1. Log in to your [emnify account](https://portal.emnify.com/sign).
 You should see your organization's name at the top of the primary sidebar.
 
@@ -48,3 +52,8 @@ Now you should be in another workspace. 🎉
   src={require('./assets/portal-sidebar-workspaces-second-org.png').default}
   alt=""
 />
+
+:::tip Feature requests
+Workspaces are new to emnify, so feedback and suggestions are very welcome.
+Please [open a ticket on Canny](https://emnify.canny.io/).
+:::

@@ -4,6 +4,10 @@ description: How to submit a request for a new workspace
 
 # Create a new workspace
 
+:::info
+Only **Admin** user accounts of customers on our [**Pro** plan](https://portal.emnify.com/organisation-settings/subscription#plans) can create new workspaces.
+:::
+
 1. Log in to your [emnify account](https://portal.emnify.com/sign).
 You should see your organization's name at the top of the primary sidebar.
 
@@ -34,7 +38,12 @@ If you see the **Request Sent** modal, your request has been submitted successfu
 From there, our team will process your request and contact you to sort out the requirements.
 Then, we'll create and set up the new workspace for you.
 
-:::info
+:::note
 The process may take time, as each new workspace requires a new contract.
 It usually takes 2–7 days for your new workspace to be ready.
+:::
+
+:::tip Feature requests
+Workspaces are new to emnify, so feedback and suggestions are very welcome.
+Please [open a ticket on Canny](https://emnify.canny.io/).
 :::

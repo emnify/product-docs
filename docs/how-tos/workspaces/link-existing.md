@@ -4,6 +4,10 @@ description: If you already have one or more workspaces created
 
 # Link an existing workspace
 
+:::info
+Only **Admin** user accounts of customers on our [**Pro** plan](https://portal.emnify.com/organisation-settings/subscription#plans) can link existing workspaces.
+:::
+
 1. Log in to your [emnify account](https://portal.emnify.com/sign).
 You should see your organization's name at the top of the primary sidebar.
 
@@ -29,7 +33,12 @@ If you see the **Request Sent** modal, your request has been submitted successfu
 From there, our team will process your request and contact you to link your existing workspaces.
 We can also work with you to customize them.
 
-:::info
+:::note
 The process may take time, as each new workspace requires a new contract.
 It usually takes 2–7 days for your workspaces to be linked.
+:::
+
+:::tip Feature requests
+Workspaces are new to emnify, so feedback and suggestions are very welcome.
+Please [open a ticket on Canny](https://emnify.canny.io/).
 :::
