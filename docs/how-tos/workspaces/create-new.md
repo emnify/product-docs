@@ -4,11 +4,18 @@ description: How to submit a request for a new workspace
 
 # Create a new workspace
 
+Every [company account](/glossary#company-account) on the [**Pro** plan](https://portal.emnify.com/organisation-settings/subscription#plans) is a [workspace](/glossary#workspace) by default.
+However, there are many reasons to opt for multiple workspaces.
+For example, organizations with foreign regional subsidiaries or companies producing products in multiple industries.
+
+This guide shows you how to submit a request for a new workspace via the [emnify Portal](https://portal.emnify.com/).
+Alternatively, you can also [link existing workspaces](/how-tos/workspaces/link-existing) if you already have two or more created.
+
 :::info
-Only **Admin** user accounts of customers on our [**Pro** plan](https://portal.emnify.com/organisation-settings/subscription#plans) can create new workspaces.
+Only **Admin** [user accounts](/glossary#user-account) of customers on our [**Pro** plan](https://portal.emnify.com/organisation-settings/subscription#plans) can create new workspaces.
 :::
 
-1. Log in to your [emnify account](https://portal.emnify.com/sign).
+1. [Log in to your emnify account](https://portal.emnify.com/sign).
 You should see your organization's name at the top of the primary sidebar.
 
 <img
@@ -16,7 +23,7 @@ You should see your organization's name at the top of the primary sidebar.
   alt=""
 />
 
-2. Click this to reveal the **Workspaces** modal.
+2. Click your organization's name (or the corresponding icons) to reveal the **Workspaces** modal.
 3. Select **Create a new workspace**.
 
 <img
@@ -29,7 +36,7 @@ You should see your organization's name at the top of the primary sidebar.
 5. Click **Send Request**.
 
 :::caution
-Organizations can only submit one workspace request at a time.
+[Organizations](/glossary#organization) can only submit one workspace request at a time.
 If you need more than one workspace, include those details in the body of your request.
 :::
 

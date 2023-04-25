@@ -1,14 +1,20 @@
 ---
-description: If you already have one or more workspaces created
+description: If you already have two or more workspaces created
 ---
 
 # Link an existing workspace
 
+If you already have two or more [workspaces](/glossary#workspace) created, you can link these to a shared [main organization](/glossary#main-organization).
+These [linked workspaces](/glossary#linked-workspaces) can be centrally or individually managed.
+
+This guide shows you how to submit a request to link existing workspaces via the [emnify Portal](https://portal.emnify.com/).
+Alternatively, you can also [create a new workspace](/how-tos/workspaces/create-new).
+
 :::info
-Only **Admin** user accounts of customers on our [**Pro** plan](https://portal.emnify.com/organisation-settings/subscription#plans) can link existing workspaces.
+Only **Admin** [user accounts](/glossary#user-account) of customers on our [**Pro** plan](https://portal.emnify.com/organisation-settings/subscription#plans) can link existing workspaces.
 :::
 
-1. Log in to your [emnify account](https://portal.emnify.com/sign).
+1. [Log in to your emnify account](https://portal.emnify.com/sign).
 You should see your organization's name at the top of the primary sidebar.
 
 <img
@@ -16,7 +22,7 @@ You should see your organization's name at the top of the primary sidebar.
   alt=""
 />
 
-2. Click this to reveal the **Workspaces** modal.
+2. Click your organization's name (or the corresponding icons) to reveal the **Workspaces** modal.
 3. Select **Link existing workspace**.
 
 <img
@@ -37,6 +43,8 @@ We can also work with you to customize them.
 The process may take time, as each new workspace requires a new contract.
 It usually takes 2–7 days for your workspaces to be linked.
 :::
+
+Once linked, **Admin** user accounts of the main organization will be able to [switch between workspaces](/how-tos/workspaces/switching-between).
 
 :::tip Feature requests
 Workspaces are new to emnify, so feedback and suggestions are very welcome.
