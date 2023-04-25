@@ -135,6 +135,12 @@ const config = {
             sidebarId: "graphqlSidebar",
             label: "GraphQL API",
           },
+          {
+            type: "docSidebar",
+            position: "left",
+            sidebarId: "sdkSidebar",
+            label: "SDKs",
+          },
         ],
       },
       docs: {
