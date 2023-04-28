@@ -1,0 +1,864 @@
+\documentclass[11pt, oneside]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+\usepackage{parskip}
+\usepackage[T1]{fontenc}
+\usepackage{tgheros}
+\usepackage{tcolorbox}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{markdown}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{multirow}
+\usepackage{geometry}          % See geometry.pdf to learn the layout options. There are lots.
+\geometry{a4paper}             % ... or a4paper or a5paper or ... 
+%\geometry{landscape}          % Activate for rotated page geometry
+%\usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{expl3, graphicx}	 % Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
+								               % TeX will automatically convert eps --> pdf in pdflatex		
+%\usepackage{mwe}% example images
+%\usepackage{showframe}
+\usepackage{amssymb}
+\newcommand{\addspace}{\vspace{2mm}}
+
+\graphicspath{{assets/}}
+
+\fancyhf{}% Clear all headers/footers
+\fancyhead[R]{\includegraphics[width=1.5cm]{emnify-logo-596x300}}
+\fancyfoot[L]{
+  \includegraphics[width=14.75cm]{emnify-footer-bar} 
+  \textsc{emnify GmbH --- Confidential \& Proprietary}
+  }\fancyfoot[R]{\thepage}
+\pagestyle{fancy}
+\thispagestyle{empty}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={emnify-Service-Description},
+    pdfpagemode=FullScreen,
+}
+
+\urlstyle{same}
+
+\def\markdownRendererLink#1#2#3#4{%
+{#1}%
+}
+
+%SetFonts
+
+\begin{document}
+
+\title{Service Description}
+\author{emnify GmbH}
+\date{\today \\ \addspace Version 1.2}
+\maketitle
+
+\begin{center}
+  \includegraphics[width=5cm]{logo-emnify-print-blue}
+\end{center}
+
+\pagebreak[4]
+
+\tableofcontents
+
+\pagebreak[4]
+
+\section{Purpose of this document}
+
+\begin{markdown}
+
+This document outlines emnify's service offering for IoT solution providers who use emnify's cloud native IoT communication platform to bring their devices online, as well as integrate and manage global device connectivity.
+Throughout the document any of these types of customers are referenced as Enterprises. 
+
+The document outlines key service offerings, available functionalities of the emnify platform including private IoT networking, integration, and quota management, as well as emnify's customer support.  
+emnify provides eSIMs that are built specifically for IoT solutions.
+Compared to regular operator SIMs, emnify eSIMs come in different quality grades that are more durable.
+They can be updated [over the air (OTA)](/glossary#ota---overtheair) using different eSIM remote SIM provisioning technologies and come in different [form factors](#form-factors).
+
+\end{markdown}
+
+\section{emnify IoT eSIM}
+
+\begin{markdown}
+
+emnify eSIMs have a [multi-IMSI applet](#multi-imsi-applet) installed on the SIM.
+The multi-IMSI applet makes sure that the best network and network partners are used based a device's location.
+Using this technology, emnify provides a larger number of networks than traditional operators.
+With access to the largest global [LPWAN](emnify-iot-supernetwork#lpwan-lte-mnb-iot) (LTE-M and NB-IoT) footprint, emnify SIMs ensure regulatory network access in over 100 countries.
+
+## eSIM technology
+
+### M2M eSIM
+
+Every new SIM you order from emnify is an [M2M eSIM](https://www.gsma.com/esim/remote-sim-provisioning-for-machine-to-machine/) (compliant with SGP.01, SGP.02, and SGP.016).
+The M2M eSIM is also referred to as an [eUICC](/glossary#euicc---embedded-universal-integrated-circuit-card) (Embedded universal integrated circuit card).
+Unlike a regular SIM (UICC), an eUICC can be updated over the air.
+Because M2M eSIMs can be updated with new configurations or profiles, this eliminates the need for SIM swaps.
+
+### Consumer eSIM
+
+emnify also offers consumer eSIMs for phones, tablets, and smart watches.
+The consumer eSIM can be downloaded to a device by scanning a QR code.
+If you are interested in consumer eSIM technology, please [contact us](https://www.emnify.com/talk-to-us).
+
+\end{markdown}
+
+\pagebreak[4]
+
+\begin{markdown}
+
+## Form factors
+
+\end{markdown}
+
+emnify M2M eSIMs are available in the following form factors.
+
+\begin{table}[H]
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Form factor} & \textbf{Dimensions} \\ \hline
+2FF (Mini SIM) & 15 x 25 x 0.75 mm \\ \hline
+3FF (Micro SIM) & 12 x 15 x 0.75 mm \\ \hline
+4FF (Nano SIM) & 8.8 x 12.3 x 0.75 mm \\ \hline
+MFF2 (eSIM) & 5 x 6 x 0.75 mm, 8 pin \\ \hline
+\end{tabular}%
+\end{table}
+
+\begin{markdown}
+
+MFF2 eSIMs can be soldered onto a device and are not readily removable.
+Visit the [emnify SIM Shop](https://portal.emnify.com/sim-order) where you can choose between these packages:
+\end{markdown}
+\addspace
+\begin{markdown}
+- Triple-cut commercial
+    - Mini (2FF)
+    - Micro (3FF)
+    - Nano (4FF)
+- Dual-cut commercial
+    - Mini (2FF)
+    - Micro (3FF)
+- Single-cut Mini Industrial (2FF)
+- Single-cut Micro Industrial (3FF)
+- Embedded MFF2
+\end{markdown}
+\addspace
+\begin{markdown}
+In use cases where devices are mobile, we highly recommend choosing the form factor that fits the device exactly, not multi-cut ones that include a smaller form factor than is needed.
+Not only are such pluggable SIMs more durable, but their contact with the device is also firmer.
+
+\end{markdown}
+\pagebreak[4]
+\begin{markdown}
+
+## Quality Grades
+
+emnify eSIMs come in three different quality grades: **Commercial eUICC**, **Industrial eUICC**, and **MFF2**.
+\end{markdown}
+\begin{table}[H]
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|lll|ccl|}
+\hline
+\multicolumn{3}{|l|}{} & \multicolumn{1}{c|}{\textbf{Commercial eUICC}} & \multicolumn{1}{l|}{\textbf{Industrial eUICC}} & \multicolumn{1}{c|}{\textbf{MFF2}} \\ \hline
+\multicolumn{1}{|l|}{\multirow{15}{*}{\textbf{\begin{tabular}[c]{@{}l@{}}Hardware\\ characteristics\end{tabular}}}} & \multicolumn{1}{l|}{\multirow{2}{*}{\textbf{Form Factor}}} & Embedded/solderable & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{MFF2} \\ \cline{3-6} 
+\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{} & Removable Card & \multicolumn{1}{c|}{Triple-cut or Dual-Cut} & \multicolumn{1}{c|}{2FF or 3FF} & \multicolumn{1}{c|}{-} \\ \cline{2-6} 
+\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{\multirow{5}{*}{\textbf{Chip Type}}} & \begin{tabular}[c]{@{}l@{}}Operational and\\ storage temperature\end{tabular} & \multicolumn{1}{l|}{–25°C to +85°C (JESD22-A104)} & \multicolumn{2}{c|}{–40°C to +105°C (JESD22-A104)} \\ \cline{3-6} 
+\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{} & Operating voltage & \multicolumn{3}{c|}{1.62V to 5.5V} \\ \cline{3-6} 
+\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{} & Interface & \multicolumn{3}{c|}{ISO-7816, T=0} \\ \cline{3-6} 
+\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{} & Chipset NVM size & \multicolumn{3}{c|}{704 Kbytes} \\ \cline{3-6} 
+\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{} & Chipset RAM size & \multicolumn{3}{c|}{20 Kbytes} \\ \cline{2-6} 
+\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{\multirow{8}{*}{\textbf{\begin{tabular}[c]{@{}l@{}}NVRAM\\ characteristics\end{tabular}}}} & Write Endurance & \multicolumn{3}{c|}{500k erase per page 10M cycles with OS High Endurance} \\ \cline{3-6} 
+\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{} & Data retention & \multicolumn{3}{c|}{15 years @85°C} \\ \cline{3-6} 
+\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{} & Moisture/Reflow conditions & \multicolumn{1}{c|}{-} & \multicolumn{2}{c|}{MSL3 (J-STD020)} \\ \cline{3-6} 
+\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{} & Humidity & \multicolumn{1}{c|}{-} & \multicolumn{2}{c|}{HA as per ETSI TS 102.671 / (JESD22-A101D)} \\ \cline{3-6} 
+\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{} & Corrosion & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & CX as per ETSI TS 102.671 (JESD22-A107) \\ \cline{3-6} 
+\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{} & Vibration & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & VX as per ETSI TS 102.671 (JESD22-B103) \\ \cline{3-6} 
+\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{} & Shock & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & SX as per ETSI TS 102.671 (JESD22-B104) \\ \cline{3-6} 
+\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{} & Common Criteria Certificate & \multicolumn{3}{c|}{CCN-CC-5/2019} \\ \hline
+\end{tabular}%
+}
+\end{table}
+
+\subsection{Compliance and software features}
+
+The following compliance standards and software features apply to all quality grades of emnify eSIMs.
+
+\begin{table}[H]
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|ll|l|l|}
+\hline
+\multicolumn{1}{|l|}{\multirow{4}{*}{\textbf{emnify eUICC Compliance}}} & \multirow{3}{*}{GSMA} & \begin{tabular}[c]{@{}l@{}}SGP.01 Embedded SIM Remote\\ Provisioning Architecture\end{tabular} & 1.1 \\ \cline{3-4} 
+\multicolumn{1}{|l|}{} &  & \begin{tabular}[c]{@{}l@{}}SGP.02 Embedded UICC\\ Technical Specification\end{tabular} & 3.2 \\ \cline{3-4} 
+\multicolumn{1}{|l|}{} &  & SGP.16 M2M Compliance Process & 1.1 \\ \cline{2-4} 
+\multicolumn{1}{|l|}{} & TCA & \begin{tabular}[c]{@{}l@{}}eUICC Profile Package Interoperable\\ Format Technical Specification\end{tabular} & 2.1 \\ \hline
+\multicolumn{1}{|l|}{\multirow{10}{*}{\textbf{Software Features}}} & \multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}Embedded Universal Integrated\\ Circuit Card (eUICC)\end{tabular}} & Maximum number of profiles & 10 \\ \cline{3-4} 
+\multicolumn{1}{|l|}{} &  & ISD-A and ISD-R system applets & Supported \\ \cline{3-4} 
+\multicolumn{1}{|l|}{} &  & \begin{tabular}[c]{@{}l@{}}EAP-SIM and EAP-AKA\\ authentication protocols\end{tabular} & Supported \\ \cline{2-4} 
+\multicolumn{1}{|l|}{} & LPWAN features & \begin{tabular}[c]{@{}l@{}}Suspend and resume SIM state\\ ETSI TS 102 221\\ Poll Interval Negotiation\\ ETSI TS 102 221\end{tabular} & \multicolumn{1}{c|}{Supported} \\ \cline{2-4} 
+\multicolumn{1}{|l|}{} & \multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}OTA Capabilities on ISD-P:\\ Remote file management - RFM\\ Remote applet management - RAM\end{tabular}} & HTTPS & Supported \\ \cline{3-4} 
+\multicolumn{1}{|l|}{} &  & TLS 1.2 & Supported \\ \cline{3-4} 
+\multicolumn{1}{|l|}{} &  & \begin{tabular}[c]{@{}l@{}}AES algorithm\\ (128-bit, 192-bit, and 256-bit keys)\end{tabular} & Supported \\ \cline{2-4} 
+\multicolumn{1}{|l|}{} & GlobalPlatform & All Secure Channel Protocols & Supported \\ \cline{2-4} 
+\multicolumn{1}{|l|}{} & \multirow{2}{*}{Java Card} & Standard Java Card APIs & Supported \\ \cline{3-4} 
+\multicolumn{1}{|l|}{} &  & GlobalPlatform API & Supported \\ \hline
+\multicolumn{2}{|l|}{\multirow{2}{*}{\textbf{Compliance}}} & ROHS & Yes \\ \cline{3-4} 
+\multicolumn{2}{|l|}{} & REACH & Yes \\ \hline
+\end{tabular}%
+}
+\end{table}
+\begin{markdown}
+
+## Multi-IMSI applet
+
+emnify eSIM cards are equipped with a multi-IMSI applet that runs in the background using minimal resources without any negative impact on the device's performance.
+This technology is similar to a mobile phone using dual-SIM technology.
+An emnify eSIM has cellular provider information from multiple SIM cards already included.
+While emnify has roaming agreements and local contracts with operators around the world, emnify also uses partner operators to increase the network coverage footprint in order to provide a fallback when preferred networks experience outages.
+
+The multi-IMSI applet works in the following manner.
+emnify has its own operator identity ([IMSI](https://docs.emnify.com/glossary#imsi---international-mobile-subscriber-identity)) as well as the partner operator's IMSI stored on the SIM card.
+Each IMSI / partner operator usually has more than one network accessible per country.
+The applet also includes a preferred IMSI list per country.
+For example, this list defines that IMSI *X* will have the highest priority for access in country *A*.
+However, if the device can't connect, another operator, IMSI *Y*, will be next on the list of priorities.
+So when a device then moves to country *A*, the applet dynamically overwrites the active IMSI with IMSI *X* based on the preferred IMSI list.
+Then when operator *X* has a service outage, the SIM automatically falls back to IMSI *Y* to ensure the device can maintain connectivity.
+
+The selection of the preferred IMSI for each country is based on multiple factors, including:
+\end{markdown}
+\addspace
+\begin{markdown}
+- If permanent roaming is permitted in that country
+- IMSI that has the most network partners in the country
+- IMSI that has the best availability of radio access types (LTE, NB-IoT, LTE-M) or features (PSM/eDRX)
+\end{markdown}
+\addspace
+
+\section{emnify IoT SuperNetwork}
+
+\begin{markdown}
+
+## emnify network coverage
+
+Even when IoT devices are more often only deployed at a single location and are not moving, for a vendor selling to multiple countries it is important to have a global connectivity solution, so that there is no need to have different SIM cards in stock or have multiple contracts and tariffs.
+
+### Global coverage
+
+emnify uses an approach to aggregate the roaming footprint of multiple operators with the goal of offering access to every network in the world.
+Mobile operators utilize roaming in foreign countries so their subscribers can stay connected when traveling.
+Often operators do not have roaming agreements with all countries or only have a roaming agreement for one network – which is sufficient for roaming travelers but not ideal for devices that could be anywhere in the country.
+emnify works with multiple partner operators across the globe to be able to offer more networks at a commercially viable rate.
+The emnify [multi-IMSI applet](#multi-imsi-application) makes it completely transparent for the device to identify which roaming agreement of which operator is being utilized.
+
+### Radio access types and frequency bands
+
+The emnify IoT SIM and platform supports all devices and modules using the following radio access technologies
+\end{markdown}
+\addspace
+\begin{markdown}
+- [2G (GSM/GPRS/EDGE)](#2g-gsmgprsedge)
+- [3G (UMTS/WCDMA/HPSA/HSDPA)](#3g-umtswcdmahpsahsdpa)
+- [4G (LTE/LTE-A/LTE-CATXX)](#4g-ltelte-alte-catxx)
+- [5G (New Radio)](#5g-new-radio)
+- [LTE-M (CAT-M1)](#lpwan-lte-mnb-iot)
+- [NB-IoT (CAT-NB1, CAT-NB2)](#lpwan-lte-mnb-iot)
+\end{markdown}
+\addspace
+\begin{markdown}
+When a device wants to connect with any of these radio technologies, the network needs to support this technology as well as the device needs to support the network-specifc frequency band for this technology.
+
+### 2G (GSM/GPRS/EDGE)
+
+GSM/GPRS is still one of the most dominant IoT technologies. Although the throughput is limited (GPRS max. 120kbps, EDGE max. 1Mbps) it is more than sufficient for many IoT use cases. The modules are cheap (<10$) and the coverage is widely available throughout the world in more than 200 countries.
+
+GSM/GPRS is easy to deploy for IoT use cases because there are only 4 frequency bands utilized by operators for GSM/GPRS worldwide.
+
+In the Americas
+\end{markdown}
+\addspace
+\begin{markdown}
+- B2 (1900MHz)
+- B5 (850MHz)
+\end{markdown}
+\addspace
+\begin{markdown}
+In the rest of world
+\end{markdown}
+\addspace
+\begin{markdown}
+- B3 (1800MHz)
+- B8 (900MHz)
+\end{markdown}
+\addspace
+\begin{markdown}
+Therefore, module manufacturers offer dual-band modules that can be used either in Americas or Rest of World - or Quadband modules that can be deployed globally.
+
+Nevertheless, GSM/GPRS is being phased out in several countries to free up frequency band for newer technologies.
+[More than 60 networks have discontinued or announced to discontinue GSM technology](https://www.emnify.com/en/resources/global-2g-phase-out).
+
+### 3G (UMTS/WCDMA/HPSA/HSDPA)
+
+3G technologies like UMTS, WCDMA, HSDPA, HSUPA have been driven by the surge for more data speed.
+As an evolution of GSM, many parts of the GSM/GPRS core network and signaling are reused, where the most difference is in the radio part.
+
+Like 2G, 3G modules are easy to deploy, since there are only 5 different frequency bands utilized by operators worldwide (with exception of Japan and China).
+Most UMTS modules therefore can be deployed worldwide.
+\end{markdown}
+\addspace
+\begin{markdown}
+- B1 (2100MHz) - main UMTS band in the world
+- B2 (1900MHz) - used in the Americas
+- B4 (1700MHz) - used in the Americas
+- B5 (850MHz) - Australia / the Americas
+- B8 (900MHz) - Europe
+\end{markdown}
+\addspace
+\begin{markdown}
+For Europe, a 900/2100 MHz dual-band module is required.
+For the Americas a 850/1900 MHz dual-band module is required.
+
+3G/UMTS is also being phased out by several network operators to make room for newer technologies.
+See also the article on [GMS and UMTS networks that are being discontinued](https://www.emnify.com/en/resources/global-2g-phase-out)
+
+### 4G (LTE/LTE-A/LTE-CATXX)
+
+LTE is a 4G technology (another one would be WiMAX - which never succeeded).
+With the evolution of LTE, various LTE categories have been established, such as CAT-1, CAT-3, CAT-4, CAT-6, CAT-9, and CAT-12 Each successive category has exhibited ever-increasing data throughput when compared to its predecessors.
+For consumer phones and broadband use cases, the increased throughput is relevant.
+However, the increased costs for these modules resulted in the need to develop a lightweight LTE module for IoT use cases.
+In turn, this led to CAT-1 as the preferred LTE category for IoT applications.
+
+LTE CAT-1 offers 10Mbps in downlink, 5Mbps in uplink, and is available with network operators wherever LTE is deployed.
+Because of its wide availability and the possibility to roam between operators without limitation, LTE CAT-1 is the most common choice for IoT use cases.
+
+Deploying LTE devices on a global scale is more challenging than with GSM and UMTS because network operators worldwide use more than 27 different frequency bands.
+Therefore, most modules only support specific regions where the device can be deployed.
+
+\end{markdown}
+\pagebreak[4]
+
+\begin{markdown}
+
+Some main LTE-bands are
+
+\end{markdown}
+\addspace
+\begin{markdown}
+- B3 (1800 MHz) - Europe, Africa, APAC
+- B7 (2600 MHz) - used in the Americas, Europe, APAC
+- B20 (800 MHz) - used in Europe, Asia
+- B1 (2100 MHz) - Europe, Asia
+- B2 (1900 MHz) - the Americas
+- B4 (1700 MHz) - the Americas
+- B5 (850 MHz) - North America, APAC
+\end{markdown}
+\addspace
+
+\begin{tcolorbox}[colback=green!5!white,colframe=green!75!black,title=Tip]
+Validate the frequency bands utilized by the operators in your deployment countries before deciding on a module.
+\end{tcolorbox}
+\begin{markdown}
+
+### LPWAN: LTE-M/NB-IoT
+
+While utilizing LTE infrastructure both NB-IoT and LTE-M are also part of the 5G standardization.
+Both technologies have been specified to meet the demand for IoT use cases in terms of:
+\end{markdown}
+\addspace
+\begin{markdown}
+- Reduced cost - to enable mass production of cellular IoT devices
+    - Removing unnecessary LTE features for IoT such as dual carrier, high modulations
+- Low power utilization - for battery powered use cases that require years of operation
+    -  Introducing power saving features such as [PSM](#psm) and [eDRX](#edrx)
+    -  Reducing the max. transmission power to less than 200mA to cater for battery max. current (GSM for example has 2A max power) 
+- Wider coverage - (+14 dB for LTE-M and +20 dB for NB-IoT sensitivity) for rural/indoor/underground use cases
+    - Utilizing extended coverage feature with more retransmissions to ensure data gets delivered 
+- Smaller module size - to enable smaller device use cases
+\end{markdown}
+\addspace
+\begin{markdown}
+Because LTE-M and NB-IoT rely on LTE infrastructure they are also deployed in a multitude of different frequency bands.
+A total of 26 bands have been specified for their use.
+To deploy NB-IoT and LTE-M in multiple countries and regions, the modules need to support the operator frequency bands.
+
+Cellular LPWAN modules come in different versions
+
+- NB-IoT only or LTE-M only
+- LTE-M/NB-IoT combined
+- LTE-M/NB-IoT with 2G fallback and optional additional technologies (3G, 4G)
+
+As of today, roaming for NB-IoT is very limited between operators because of new charging models being implemented for NB-IoT.
+For LTE-M, roaming usually works over regular LTE roaming.
+Nevertheless, some operators have limited the access to their LTE-M networks and its available features (PSM, eDRX).
+
+Check the emnify [LTE-M coverage](https://www.emnify.com/lte-m-coverage) and [NB-IoT coverage](https://www.emnify.com/nb-iot-coverage), availability of PSM/eDRX and proposed frequency bands [on our Website](https://www.emnify.com/lte-m-coverage?hsLang=en).
+
+Power-Save-Mode (PSM)
+\end{markdown}
+\addspace
+\begin{markdown}
+- Why is cellular communication not ideal for IoT?  
+Cellular communication for smartphones usually requires low latency on downlink, e.g., in case you are being called, your phone should ring right away.
+Because of this, there are two things the device does which require power:  
+\end{markdown}
+\addspace
+\begin{markdown}
+  1. Continuously listening to the radio if there is an incoming call
+  1. Transmitting location information to the network where it should be called - whenever it moves out of a tracking area and periodically every 54 minutes  
+\end{markdown}
+\addspace
+\begin{markdown}
+- How does **Power Save Mode** work?  
+\end{markdown}
+\addspace
+\begin{markdown}
+For most IoT use cases a downlink-initiated channel is not required.
+It is usually the device that initiates the communication to send e.g., sensor data.
+Therefore, a **Power Save Mode** is introduced that allows the device to go to sleep in case it has nothing to send.  
+\end{markdown}
+\addspace
+\begin{markdown}
+The **Power Save Mode** has the following characteristics:
+\end{markdown}
+\addspace
+\begin{markdown}
+  - The Power Save Mode is like a power off period during which the module only consumes a couple of μA.
+  - The device tells the network how long it is going periodically into PSM (timer T3412 extended).
+  - The device/module will not be reachable during PSM from the outside in downlink.
+  - The device can wake up the module and send data (e.g., powerkey, interrupt or pin triggered).
+  - When the device wakes up, it does not need to reattach and re-establish a PDN connection (unless it has moved to a different tracking area).
+  - After the device wakes up, it stays in idle mode for a configurable time (timer T3324) to listen for downlink messages (e.g., firmware updates).
+  - The actual time the device is then in Power Save Mode is T3412 extended - T3324
+\end{markdown}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Note]
+Some modules which have a SIM enabled PIN, (e.g., u-blox SARA-R4/SARA-N4) do not go into sleep mode.
+  The PIN is disabled on emnify SIMs.
+\end{tcolorbox}
+
+\addspace
+\begin{markdown}
+- Roaming for Power Save Mode 
+\end{markdown}
+\addspace
+\begin{markdown}
+
+Be aware that not all NB-IoT and LTE-M networks have implemented PSM and even when PSM is available with the local operator this does not mean that a roaming SIM can use it.
+This makes it difficult for devices that are moving - in case they use PSM, and the new network does not support PSM - or only other timer configurations.
+We therefore regularly test the availability of PSM in our [LTE-M](https://www.emnify.com/lte-m-coverage?hsLang=en) and [NB-IoT](https://www.emnify.com/nb-iot-coverage) roaming footprint.
+
+\end{markdown}
+\addspace
+\begin{markdown}
+- AT Command calculation and examples for PSM settings 
+\end{markdown}
+\addspace
+\begin{markdown} 
+
+The 3GPP defined AT command to configure PSM is `AT+CPSMS` which sets the T3412 extended and T3324 timers. 
+
+An example command is 
+
+\end{markdown}
+
+\texttt{AT+CPSMS=1,}\texttt{,}\texttt{,01001110,00000101}
+
+\begin{markdown}
+
+PSM will be enabled (`1`) and the desired value for T3412 extended is 140 hours (`01001110`) and the desired value for the T3324 timer is 10s (`01001110`).
+The network does not necessarily use the desired values but utilizes supported values that are close to the desired values.
+To read the effective PSM configuration use the command  
+
+`AT+CPSMS?`
+
+There is a good calculator that translates the intended time settings for 3412 and T3324 available from [Thales](https://www.thalesgroup.com/en/markets/digital-identity-and-security/iot/resources/developers/psm-calculation-tool). 
+
+Module vendors have also implemented module specific commands, e.g. Quectel
+
+\end{markdown}
+\addspace
+\begin{markdown}
+- `AT+QPSMS` extends PSM settings
+- `AT+QCFG="psm/enter",1` used to put the module immediately into PSM when the RRC connection is released (not waiting for T3324 to expire)
+- `AT+QPSMEXTCFG` modem optimization command with different attributes such as making sure that PSM is randomized between different devices so they do not send data at the same time
+\end{markdown}
+
+
+\pagebreak[4]
+
+\begin{markdown}
+
+**Extended Discontinuous Reception (eDRX)**
+
+\end{markdown}
+\addspace
+\begin{markdown}
+- How does eDRX work?  
+\end{markdown}
+\addspace
+\begin{markdown}
+While PSM is focused on uplink-centric use cases, eDRX tries to reduce the power consumption for IoT use cases that get downlink information.
+Regular smartphones do not continuously listen on the radio for an incoming message.
+They do this only every 1.28s or 2.56s which is called DRX (discontinuous Reception).
+eDRX allows configuration of custom intervals of up to 40-175 mins - depending on the configuration the visited network allows.
+\end{markdown}
+\addspace
+\begin{center}
+  \includegraphics[width=10cm]{edrx}
+\end{center}
+\addspace
+\begin{markdown}
+- Roaming with eDRX  
+\end{markdown}
+\addspace
+\begin{markdown}
+As with PSM - not all NB-IoT and LTE-M networks support eDRX or the same timer configuration - and even if they do this does not guarantee that a roaming SIM card can utilize eDRX.
+We therefore also test and publish the eDRX availability on our [LTE-M](https://www.emnify.com/lte-m-coverage?hsLang=en) and [NB-IoT](https://www.emnify.com/nb-iot-coverage) roaming footprint.
+\end{markdown}
+\addspace
+\begin{markdown}
+- [AT Command examples for eDRX settings](#eDRX_AT_COMMANDS)  
+\end{markdown}
+\addspace
+\begin{markdown}
+
+The standard 3GPP defined AT-command to configure eDRX is `AT+CEDRXS`.  
+
+\end{markdown}
+\addspace
+\begin{markdown}
+
+As an example the below command enables (`1`) eDRX for LTE-M (`4`) and an eDRX cycle of 143.36s (`1000`).
+
+\end{markdown}
+\addspace
+\begin{markdown}
+
+`AT+CEDRXS=1,4,"1000"`
+
+\end{markdown}
+
+\pagebreak[4]
+\begin{markdown}
+
+The setting for NB-IoT would be `5` and the timer values are shown in below table  
+
+\end{markdown}
+
+\begin{table}[H]
+\begin{tabular}{|l|r|}
+\hline
+\textbf{Binary} & \textbf{Timer Value} \\ \hline
+0 0 0 0 & 5.12 seconds \\ \hline
+0 0 0 1 & 10.24 seconds \\ \hline
+0 0 1 0 & 20.48 seconds \\ \hline
+0 0 1 1 & 40.96 seconds \\ \hline
+0 1 0 0 & 61.44 seconds \\ \hline
+0 1 0 1 & 81.92 seconds \\ \hline
+0 1 1 0 & 102.40 seconds \\ \hline
+0 1 1 1 & 122.88 seconds \\ \hline
+1 0 0 0 & 143.36 seconds \\ \hline
+1 0 0 1 & 163.84 seconds \\ \hline
+1 0 1 0 & 327.68 seconds \\ \hline
+1 0 1 1 & 655.36 seconds \\ \hline
+1 1 0 0 & 1310.72 seconds \\ \hline
+1 1 0 1 & 2621.44 seconds \\ \hline
+1 1 1 0 & 5242.88 seconds \\ \hline
+1 1 1 1 & 10485.76 seconds \\ \hline
+\end{tabular}
+\end{table}
+
+\begin{markdown}
+The network will respond with the actual effective interval.
+    
+`+CEDRXS: [4,"1000","1000","0111"]`    
+
+### 5G (New Radio)
+
+5G is the next major technology standard after LTE - which targets 3 different applications areas:
+\end{markdown}
+\addspace
+\begin{markdown}
+1. Enhanced Mobile Broadband (eMBB)
+\end{markdown}
+\addspace
+\begin{markdown}
+  - With faster throughput upto 1Gps+ and more capacity in a local area
+  - Utilizing mmWave bands (5Ghz+) for increased throughput
+\end{markdown}
+\addspace
+\begin{markdown}
+2. Massive Machine Type communication (mMTC)  
+  - Targeted at IoT application where a multitude of devices are in the same location and need to communicate with low power
+  - LTE-M and NB-IoT often seen as decoupled from 5G to get earlier results will fusion with 5G mMTC  
+3. Ultra-Reliable Low Latency Communications (URLLC)
+\end{markdown}
+\addspace
+\begin{markdown}
+  - For missing critical applications that require low latency and reliable data transmission
+\end{markdown}
+\addspace
+\begin{markdown}
+As of today, 5G is mainly adopted for eMBB use cases - using a 5G non-standalone (NSA) deployment - meaning that the air interface uses 5G technology whereas the core network is still 4G.
+
+emnify has announced its first 5G roaming agreements in August 2020 and since then has reached agreements with more than a dozen network operators worldwide.
+
+## emnify local connectivity
+
+### Traditional home-routing vs regional breakout
+
+The data plane of emnify’s cloud communication platform is distributed across major cloud regions (Virginia/US, Ireland/Europe, Singapore/APAC) and directly connected to central peering points with the local operators.
+
+### emnify regional breakouts
+
+emnify’s distributed data plane enables device data to breakout locally, keeping the customer data within the same region.
+Moreover, it also helps reduce network latency.
+You can either select a specific breakout region or the network automatically selects the breakout region closest to the device.
+This can be done on the [emnify Portal](https://portal.emnify.com/) → [**Device Policies**](https://portal.emnify.com/device-policies) → **New service policy** which is applicable to a group of devices.
+
+\end{markdown}
+
+\begin{center}
+  \addspace
+  \includegraphics[width=15cm]{portal-device-policies-breakout-regions}
+\end{center}
+
+\pagebreak[4]
+
+\section{emnify connectivity platform}
+
+\begin{markdown}
+
+emnify's connectivity platform provides solutions for configuring, deploying, maintaining and monitoring your IoT assets globally.
+It it comprised of the following set of of tools.
+
+## emnify Portal
+
+The web-based emnify Portal is the starting point for signing up and ordering your global IoT eSIMs.
+It is where you can create service and coverage policies for your IoT devices.
+Almost every aspect of your IoT network can be managed within the emnify Portal, including integrations with third-party solutions. 
+
+### Operation Center
+\end{markdown}
+\addspace
+\begin{markdown}
+- Dashboards
+- Device details
+- Location Information
+- Network reset
+\end{markdown}
+\addspace
+\begin{markdown}
+### SIM management
+\end{markdown}
+\addspace
+\begin{markdown}
+- Ordering SIMs
+- SIM lifecycle management
+\end{markdown}
+\addspace
+\begin{markdown}
+### User and Account Management
+\end{markdown}
+\addspace
+\begin{markdown}
+- Single-Sign On
+- Multi-Factor Authentication
+- User Roles
+- Workspaces
+\end{markdown}
+\addspace
+\begin{markdown}
+## emnify APIs
+
+### REST API
+
+- -> link to events
+
+### GraphQL
+
+### Data Streamer
+
+- -> link to events
+
+### SDK
+
+### No-Code
+
+### Events
+
+\end{markdown}
+
+\section{Communication Services}
+
+\begin{markdown}
+
+## Data
+
+### Public Internet Breakout
+
+### Virtual Private Network
+\end{markdown}
+\addspace
+\begin{markdown}
+- Without private APN
+- Link to OpenVPN / Cloud Connect
+\end{markdown}
+\addspace
+\begin{markdown}
+### Inter-device communication
+
+### Regional Breakout
+
+## SMS
+
+### SMS MO/MT
+
+### P2P SMS
+
+### A2P SMS
+\end{markdown}
+\addspace
+\begin{markdown}
+- REST API
+- SMPP
+\end{markdown}
+\addspace
+\begin{markdown}
+### SMS shortcodes
+
+\end{markdown}
+
+\section{Network Security Services}
+
+\begin{markdown}
+
+## SASE Overview
+
+## Virtual Private Network Options
+
+### Private Static IP
+
+### Cloud Connect – secure data transport
+\end{markdown}
+\addspace
+\begin{markdown}
+- AWS Transit Gateway
+- IPsec
+\end{markdown}
+\addspace
+\begin{markdown}
+### OpenVPN – remote access
+
+## Custom DNS
+
+## IMEI lock
+
+## Centralized Policies
+
+### Service Policies
+
+### Coverage Policies
+
+\end{markdown}
+
+\section{emnify premium services}
+
+\begin{markdown}
+
+## Custom branding
+
+### SIM artwork
+
+### APN naming
+
+## Dedicated support agent
+
+## Data Packet Capturing
+
+## Premium data breakout
+
+\end{markdown}
+
+\pagebreak[4]
+
+\section{Support}
+
+\begin{markdown}
+
+emnify is dedicated to your success with our service.
+We provide you with a choice of different plans, a globally-based customer success team, and support with global roaming to ensure that you have connectivity wherever you need it.
+
+## Service Options
+
+emnify offers a variety of support plans designed to ensure that your devices operate reliably in our network.
+The **Standard** support plan is included for all customers at no additional cost.
+It is the default service plan when registering through our website using the [emnify Portal](https://portal.emnify.com/).
+For a detailed description of the standard services, please refer to our [Terms of Service](https://www.emnify.com/hubfs/20211001_terms_of_service_and_standard_service_level_obligations.pdf).
+
+The **Business** and **Enterprise** plans offer premium customer service and can be bundled with your emnify subscription.
+They are designed to reduce operational costs by detecting issues before they disrupt your business operations and by resolving [incidents](#incident-management) faster.
+
+\end{markdown}
+\begin{table}[H]
+  \resizebox{\textwidth}{!}{%
+  \begin{tabular}{|l|l|l|l|}
+  \hline
+  \textbf{Feature} & \textbf{Standard} & \textbf{Business} & \textbf{Enterprise} \\ \hline
+  \textbf{Operating hours} & Mon-Fri 09:00-18:00 CET & 24x7x365 & 24x7x365 \\ \hline
+  \textbf{Method of contact} & \begin{tabular}[c]{@{}l@{}}Tickets must be opened via webform.\\ Replies via email are possible.\end{tabular} & \begin{tabular}[c]{@{}l@{}}Tickets must be opened via webform.\\ Replies via email are possible.\end{tabular} & Webform, email, and phone \\ \hline
+  \textbf{Help Center \& Knowledge Base} & Yes & Yes & Yes \\ \hline
+  \textbf{Pre-scheduled event support} & Not included & Yes & Yes \\ \hline
+  \textbf{Dedicated Support Agent} & Not included & Not included & Yes (EU-CET, US-EST or US-PST business hours) \\ \hline
+  \textbf{Trace requests} & – & \begin{tabular}[c]{@{}l@{}}1 simultaneous trace\\ Max 1 request/day\\ Max duration 24 hours/trace\end{tabular} & \begin{tabular}[c]{@{}l@{}}3 simultaneous traces\\ Max 1 request/day\\ Max duration 24 hours/trace\end{tabular} \\ \hline
+  \textbf{\begin{tabular}[c]{@{}l@{}}Guaranteed response times:\\ • Critical incident\\ • Operational incident\\ • General issue / question\end{tabular}} & 7 business days & \begin{tabular}[c]{@{}l@{}}• 3 hours, 24x7x365\\ • 6 business hours\\ • 9 business hours\end{tabular} & \begin{tabular}[c]{@{}l@{}}• 1 hour, 24x7x365\\ • 3 hours, 24x7x365\\ • 6 business hours\end{tabular} \\ \hline
+  \textbf{\begin{tabular}[c]{@{}l@{}}Target time to restore service: \\ • Critical incident\\ • Operational incident\end{tabular}} & – & \begin{tabular}[c]{@{}l@{}}• 12 hours\\ • 10 business days\end{tabular} & \begin{tabular}[c]{@{}l@{}}• 4 hours\\ • 4 business days\end{tabular} \\ \hline
+  \textbf{SLO} & \begin{tabular}[c]{@{}l@{}}Mobile Core: 98.5\%\\ Internet Breakout/VPN: 98.5\%\\ API/GUI: 98.5\%\end{tabular} & \begin{tabular}[c]{@{}l@{}}Mobile Core: 99.5\%\\ Internet Breakout/VPN: 99.5\%\\ API/GUI: 99.5\%\end{tabular} & \begin{tabular}[c]{@{}l@{}}Mobile Core: 99.95\%\\ Internet Breakout/VPN: 99.9\%\\ API/GUI: 99.5\%\end{tabular} \\ \hline
+  \textbf{Root cause analysis} & Yes (Critical incidents) & Yes (Critical incidents) & Yes (Critical and operational incidents) \\ \hline
+  \textbf{Length of service} & Monthly (automatic renewal) & Monthly (automatic renewal) & Minimum 12 months \\ \hline
+  \end{tabular}%
+  }
+  \end{table}
+\begin{markdown}
+
+## Incident Management
+
+emnify's network operation center (NOC) monitors the health of all cellular networks and services that emnify offers 24x7.
+The NOC proactively identifies any degradation of service.
+In case of an incident, it starts the incident management process that alerts a team of on-call engineers to start an investigation.
+
+When an incident is triggered due to network-related events, the responding team will diagnose the fault and escalate the incident to emnify’s carrier and roaming partners if necessary.
+Optionally, any network causing a service disruption will be blocked so that devices can connect to alternate networks.
+
+During an incident, emnify updates the [Status](https://status.emnify.com/) page for all services in order keep customers informed in real time about the status of the incident and its impact.
+
+For critical and operational incidents, emnify conducts a root cause analysis (RCA) and issues a postmortem that provides details about the incident, which changes have been applied, and which measures are planned to guard against future incidents.
+
+The incident management process is reviewed annually and certified by a third party as part of emnify’s SOC2 audit.
+
+## Roaming
+
+Unlike typical mobile network operators ([MNO](https://www.emnify.com/iot-glossary/mno)s), emnify will also provide 24/7 support when your device is in roaming scenarios.
+The emnify network operation center (NOC) has visibility of all networks in the world and can detect network service degradation. 
+emnify will also investigate and follow up even when only your fleet of devices is affected.
+
+Based on the direct and IoT/M2M specific roaming relationships with network operators, emnify has service-level agreements (SLAs) to resolve critical and operational incidents within specific timelines.
+
+So you will never need to worry about roaming when your IoT devices are moved to another location, even if it is to another country or continent.
+Support for the global deployment of IoT devices is a key feature of emnify's [Global IoT Network](/services/global-iot-network).
+
+## Customer Success Manager
+
+In addition to emnify’s 24x7 support and network operation center (NOC), each customer has access to a Customer Success Manager (CSM).
+CSMs comprise a globally distributed team with local working hours.
+They are fluent in emnify's main supported languages: English, Spanish, Italian, French, and German.
+The CSM team proactively engages with their customers to help them obtain value from the product and guide them through their journey.
+They also conduct onboardings to get their customers acquainted with the platform and help with setting up integrations.
+
+\end{markdown}
+
+\end{document}  
