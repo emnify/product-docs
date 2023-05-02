@@ -26,8 +26,8 @@
 \fancyhead[R]{\includegraphics[width=1.5cm]{emnify-logo-596x300}}
 \fancyfoot[L]{
   \includegraphics[width=14.75cm]{emnify-footer-bar} 
-  \textsc{emnify GmbH --- Confidential \& Proprietary}
-  }\fancyfoot[R]{\thepage}
+  emnify GmbH --- Confidential \& Proprietary
+  }\fancyfoot[R]{\\ \thepage}
 \pagestyle{fancy}
 \thispagestyle{empty}
 
@@ -160,28 +160,29 @@ Not only are such pluggable SIMs more durable, but their contact with the device
 emnify eSIMs come in three different quality grades: **Commercial eUICC**, **Industrial eUICC**, and **MFF2**.
 \end{markdown}
 \begin{table}[H]
-\resizebox{\textwidth}{!}{%
-\begin{tabular}{|lll|ccl|}
-\hline
-\multicolumn{3}{|l|}{} & \multicolumn{1}{c|}{\textbf{Commercial eUICC}} & \multicolumn{1}{l|}{\textbf{Industrial eUICC}} & \multicolumn{1}{c|}{\textbf{MFF2}} \\ \hline
-\multicolumn{1}{|l|}{\multirow{15}{*}{\textbf{\begin{tabular}[c]{@{}l@{}}Hardware\\ characteristics\end{tabular}}}} & \multicolumn{1}{l|}{\multirow{2}{*}{\textbf{Form Factor}}} & Embedded/solderable & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{MFF2} \\ \cline{3-6} 
-\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{} & Removable Card & \multicolumn{1}{c|}{Triple-cut or Dual-Cut} & \multicolumn{1}{c|}{2FF or 3FF} & \multicolumn{1}{c|}{-} \\ \cline{2-6} 
-\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{\multirow{5}{*}{\textbf{Chip Type}}} & \begin{tabular}[c]{@{}l@{}}Operational and\\ storage temperature\end{tabular} & \multicolumn{1}{l|}{–25°C to +85°C (JESD22-A104)} & \multicolumn{2}{c|}{–40°C to +105°C (JESD22-A104)} \\ \cline{3-6} 
-\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{} & Operating voltage & \multicolumn{3}{c|}{1.62V to 5.5V} \\ \cline{3-6} 
-\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{} & Interface & \multicolumn{3}{c|}{ISO-7816, T=0} \\ \cline{3-6} 
-\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{} & Chipset NVM size & \multicolumn{3}{c|}{704 Kbytes} \\ \cline{3-6} 
-\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{} & Chipset RAM size & \multicolumn{3}{c|}{20 Kbytes} \\ \cline{2-6} 
-\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{\multirow{8}{*}{\textbf{\begin{tabular}[c]{@{}l@{}}NVRAM\\ characteristics\end{tabular}}}} & Write Endurance & \multicolumn{3}{c|}{500k erase per page 10M cycles with OS High Endurance} \\ \cline{3-6} 
-\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{} & Data retention & \multicolumn{3}{c|}{15 years @85°C} \\ \cline{3-6} 
-\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{} & Moisture/Reflow conditions & \multicolumn{1}{c|}{-} & \multicolumn{2}{c|}{MSL3 (J-STD020)} \\ \cline{3-6} 
-\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{} & Humidity & \multicolumn{1}{c|}{-} & \multicolumn{2}{c|}{HA as per ETSI TS 102.671 / (JESD22-A101D)} \\ \cline{3-6} 
-\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{} & Corrosion & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & CX as per ETSI TS 102.671 (JESD22-A107) \\ \cline{3-6} 
-\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{} & Vibration & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & VX as per ETSI TS 102.671 (JESD22-B103) \\ \cline{3-6} 
-\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{} & Shock & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & SX as per ETSI TS 102.671 (JESD22-B104) \\ \cline{3-6} 
-\multicolumn{1}{|l|}{} & \multicolumn{1}{l|}{} & Common Criteria Certificate & \multicolumn{3}{c|}{CCN-CC-5/2019} \\ \hline
-\end{tabular}%
-}
-\end{table}
+  \resizebox{\textwidth}{!}{%
+  \begin{tabular}{|l|l|lll|}
+  \hline
+  \multicolumn{1}{|c|}{\textbf{}} & \multicolumn{1}{c|}{\textbf{}} & \multicolumn{1}{c|}{\textbf{Commercial eUICC}} & \multicolumn{1}{c|}{\textbf{Industrial eUICC}} & \multicolumn{1}{c|}{\textbf{MFF2}} \\ \hline
+  \multirow{2}{*}{\textbf{Form Factor}} & Embedded/solderable & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{MFF2} \\ \cline{2-5}
+   & Removable Card & \multicolumn{1}{c|}{Triple-cut or Dual-Cut} & \multicolumn{1}{c|}{2FF or 3FF} & \multicolumn{1}{c|}{-} \\ \hline
+  \multirow{5}{*}{\textbf{Chip Type}} & Operational and storage temperature & \multicolumn{1}{l|}{–25\textdegree C to +85\textdegree C (JESD22-A104)} & \multicolumn{2}{c|}{–40\textdegree C to +105\textdegree C (JESD22-A104)} \\ \cline{2-5}
+   & Operating voltage & \multicolumn{3}{c|}{1.62V to 5.5V} \\ \cline{2-5}
+   & Interface & \multicolumn{3}{c|}{ISO-7816, T=0} \\ \cline{2-5}
+   & Chipset NVM size & \multicolumn{3}{c|}{704 Kbytes} \\ \cline{2-5}
+   & Chipset RAM size & \multicolumn{3}{c|}{20 Kbytes} \\ \hline
+  \multirow{8}{*}{\textbf{NVRAM characteristics}} & Write Endurance & \multicolumn{3}{c|}{500k erase per page 10M cycles with OS High Endurance} \\ \cline{2-5} 
+   & Data retention & \multicolumn{3}{c|}{15 years @ 85\textdegree C} \\ \cline{2-5}
+   & Moisture/Reflow conditions & \multicolumn{1}{c|}{-} & \multicolumn{2}{c|}{MSL3 (J-STD020)} \\ \cline{2-5}
+   & Humidity & \multicolumn{1}{c|}{-} & \multicolumn{2}{c|}{HA as per ETSI TS 102.671 / (JESD22-A101D)} \\ \cline{2-5}
+   & Corrosion & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & CX as per ETSI TS 102.671 (JESD22-A107) \\ \cline{2-5}
+   & Vibration & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & VX as per ETSI TS 102.671 (JESD22-B103) \\ \cline{2-5}
+   & Shock & \multicolumn{1}{c|}{-} & \multicolumn{1}{c|}{-} & SX as per ETSI TS 102.671 (JESD22-B104) \\ \cline{2-5}
+   & Common Criteria Certificate & \multicolumn{3}{c|}{CCN-CC-5/2019} \\ \hline
+  \end{tabular}%
+  }
+  \end{table}
+
 
 \subsection{Compliance and software features}
 
@@ -191,21 +192,21 @@ The following compliance standards and software features apply to all quality gr
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{|ll|l|l|}
 \hline
-\multicolumn{1}{|l|}{\multirow{4}{*}{\textbf{emnify eUICC Compliance}}} & \multirow{3}{*}{GSMA} & \begin{tabular}[c]{@{}l@{}}SGP.01 Embedded SIM Remote\\ Provisioning Architecture\end{tabular} & 1.1 \\ \cline{3-4} 
-\multicolumn{1}{|l|}{} &  & \begin{tabular}[c]{@{}l@{}}SGP.02 Embedded UICC\\ Technical Specification\end{tabular} & 3.2 \\ \cline{3-4} 
-\multicolumn{1}{|l|}{} &  & SGP.16 M2M Compliance Process & 1.1 \\ \cline{2-4} 
+\multicolumn{1}{|l|}{\multirow{4}{*}{\textbf{emnify eUICC Compliance}}} & \multirow{3}{*}{GSMA} & \begin{tabular}[c]{@{}l@{}}SGP.01 Embedded SIM Remote\\ Provisioning Architecture\end{tabular} & 1.1 \\ \cline{3-4}
+\multicolumn{1}{|l|}{} &  & \begin{tabular}[c]{@{}l@{}}SGP.02 Embedded UICC\\ Technical Specification\end{tabular} & 3.2 \\ \cline{3-4}
+\multicolumn{1}{|l|}{} &  & SGP.16 M2M Compliance Process & 1.1 \\ \cline{2-4}
 \multicolumn{1}{|l|}{} & TCA & \begin{tabular}[c]{@{}l@{}}eUICC Profile Package Interoperable\\ Format Technical Specification\end{tabular} & 2.1 \\ \hline
-\multicolumn{1}{|l|}{\multirow{10}{*}{\textbf{Software Features}}} & \multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}Embedded Universal Integrated\\ Circuit Card (eUICC)\end{tabular}} & Maximum number of profiles & 10 \\ \cline{3-4} 
-\multicolumn{1}{|l|}{} &  & ISD-A and ISD-R system applets & Supported \\ \cline{3-4} 
-\multicolumn{1}{|l|}{} &  & \begin{tabular}[c]{@{}l@{}}EAP-SIM and EAP-AKA\\ authentication protocols\end{tabular} & Supported \\ \cline{2-4} 
-\multicolumn{1}{|l|}{} & LPWAN features & \begin{tabular}[c]{@{}l@{}}Suspend and resume SIM state\\ ETSI TS 102 221\\ Poll Interval Negotiation\\ ETSI TS 102 221\end{tabular} & \multicolumn{1}{c|}{Supported} \\ \cline{2-4} 
-\multicolumn{1}{|l|}{} & \multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}OTA Capabilities on ISD-P:\\ Remote file management - RFM\\ Remote applet management - RAM\end{tabular}} & HTTPS & Supported \\ \cline{3-4} 
-\multicolumn{1}{|l|}{} &  & TLS 1.2 & Supported \\ \cline{3-4} 
-\multicolumn{1}{|l|}{} &  & \begin{tabular}[c]{@{}l@{}}AES algorithm\\ (128-bit, 192-bit, and 256-bit keys)\end{tabular} & Supported \\ \cline{2-4} 
-\multicolumn{1}{|l|}{} & GlobalPlatform & All Secure Channel Protocols & Supported \\ \cline{2-4} 
-\multicolumn{1}{|l|}{} & \multirow{2}{*}{Java Card} & Standard Java Card APIs & Supported \\ \cline{3-4} 
+\multicolumn{1}{|l|}{\multirow{10}{*}{\textbf{Software Features}}} & \multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}Embedded Universal Integrated\\ Circuit Card (eUICC)\end{tabular}} & Maximum number of profiles & 10 \\ \cline{3-4}
+\multicolumn{1}{|l|}{} &  & ISD-A and ISD-R system applets & Supported \\ \cline{3-4}
+\multicolumn{1}{|l|}{} &  & \begin{tabular}[c]{@{}l@{}}EAP-SIM and EAP-AKA\\ authentication protocols\end{tabular} & Supported \\ \cline{2-4}
+\multicolumn{1}{|l|}{} & LPWAN features & \begin{tabular}[c]{@{}l@{}}Suspend and resume SIM state\\ ETSI TS 102 221\\ Poll Interval Negotiation\\ ETSI TS 102 221\end{tabular} & \multicolumn{1}{c|}{Supported} \\ \cline{2-4}
+\multicolumn{1}{|l|}{} & \multirow{3}{*}{\begin{tabular}[c]{@{}l@{}}OTA Capabilities on ISD-P:\\ Remote file management -- RFM\\ Remote applet management -- RAM\end{tabular}} & HTTPS & Supported \\ \cline{3-4}
+\multicolumn{1}{|l|}{} &  & TLS 1.2 & Supported \\ \cline{3-4}
+\multicolumn{1}{|l|}{} &  & \begin{tabular}[c]{@{}l@{}}AES algorithm\\ (128-bit, 192-bit, and 256-bit keys)\end{tabular} & Supported \\ \cline{2-4}
+\multicolumn{1}{|l|}{} & GlobalPlatform & All Secure Channel Protocols & Supported \\ \cline{2-4}
+\multicolumn{1}{|l|}{} & \multirow{2}{*}{Java Card} & Standard Java Card APIs & Supported \\ \cline{3-4}
 \multicolumn{1}{|l|}{} &  & GlobalPlatform API & Supported \\ \hline
-\multicolumn{2}{|l|}{\multirow{2}{*}{\textbf{Compliance}}} & ROHS & Yes \\ \cline{3-4} 
+\multicolumn{2}{|l|}{\multirow{2}{*}{\textbf{Compliance}}} & ROHS & Yes \\ \cline{3-4}
 \multicolumn{2}{|l|}{} & REACH & Yes \\ \hline
 \end{tabular}%
 }
@@ -250,9 +251,9 @@ Even when IoT devices are more often only deployed at a single location and are 
 
 emnify uses an approach to aggregate the roaming footprint of multiple operators with the goal of offering access to every network in the world.
 Mobile operators utilize roaming in foreign countries so their subscribers can stay connected when traveling.
-Often operators do not have roaming agreements with all countries or only have a roaming agreement for one network – which is sufficient for roaming travelers but not ideal for devices that could be anywhere in the country.
+Often operators do not have roaming agreements with all countries or only have a roaming agreement for one network -- which is sufficient for roaming travelers but not ideal for devices that could be anywhere in the country.
 emnify works with multiple partner operators across the globe to be able to offer more networks at a commercially viable rate.
-The emnify [multi-IMSI applet](#multi-imsi-application) makes it completely transparent for the device to identify which roaming agreement of which operator is being utilized.
+The emnify [multi-IMSI applet](#multi-imsi-application) makes it completely transparent for the device to identify which roaming agreement of which operator is being utilized.
 
 ### Radio access types and frequency bands
 
@@ -273,7 +274,7 @@ When a device wants to connect with any of these radio technologies, the network
 
 ### 2G (GSM/GPRS/EDGE)
 
-GSM/GPRS is still one of the most dominant IoT technologies. Although the throughput is limited (GPRS max. 120kbps, EDGE max. 1Mbps) it is more than sufficient for many IoT use cases. The modules are cheap (<10$) and the coverage is widely available throughout the world in more than 200 countries.
+GSM/GPRS is still one of the most dominant IoT technologies. Although the throughput is limited (GPRS max. 120 kbps, EDGE max. 1 Mbps) it is more than sufficient for many IoT use cases. The modules are cheap (< $10) and the coverage is widely available throughout the world in more than 200 countries.
 
 GSM/GPRS is easy to deploy for IoT use cases because there are only 4 frequency bands utilized by operators for GSM/GPRS worldwide.
 
@@ -295,7 +296,7 @@ In the rest of world
 \end{markdown}
 \addspace
 \begin{markdown}
-Therefore, module manufacturers offer dual-band modules that can be used either in Americas or Rest of World - or Quadband modules that can be deployed globally.
+Therefore, module manufacturers offer dual-band modules that can be used either in Americas or Rest of World -- or Quadband modules that can be deployed globally.
 
 Nevertheless, GSM/GPRS is being phased out in several countries to free up frequency band for newer technologies.
 [More than 60 networks have discontinued or announced to discontinue GSM technology](https://www.emnify.com/en/resources/global-2g-phase-out).
@@ -322,17 +323,17 @@ For Europe, a 900/2100 MHz dual-band module is required.
 For the Americas a 850/1900 MHz dual-band module is required.
 
 3G/UMTS is also being phased out by several network operators to make room for newer technologies.
-See also the article on [GMS and UMTS networks that are being discontinued](https://www.emnify.com/en/resources/global-2g-phase-out)
+See also the article on [GMS and UMTS networks that are being discontinued](https://www.emnify.com/en/resources/global-2g-phase-out)
 
 ### 4G (LTE/LTE-A/LTE-CATXX)
 
-LTE is a 4G technology (another one would be WiMAX - which never succeeded).
+LTE is a 4G technology (another one would be WiMAX -- which never succeeded).
 With the evolution of LTE, various LTE categories have been established, such as CAT-1, CAT-3, CAT-4, CAT-6, CAT-9, and CAT-12 Each successive category has exhibited ever-increasing data throughput when compared to its predecessors.
 For consumer phones and broadband use cases, the increased throughput is relevant.
 However, the increased costs for these modules resulted in the need to develop a lightweight LTE module for IoT use cases.
 In turn, this led to CAT-1 as the preferred LTE category for IoT applications.
 
-LTE CAT-1 offers 10Mbps in downlink, 5Mbps in uplink, and is available with network operators wherever LTE is deployed.
+LTE CAT-1 offers 10 Mbps in downlink, 5 Mbps in uplink, and is available with network operators wherever LTE is deployed.
 Because of its wide availability and the possibility to roam between operators without limitation, LTE CAT-1 is the most common choice for IoT use cases.
 
 Deploying LTE devices on a global scale is more challenging than with GSM and UMTS because network operators worldwide use more than 27 different frequency bands.
@@ -370,14 +371,14 @@ Both technologies have been specified to meet the demand for IoT use cases in te
 \end{markdown}
 \addspace
 \begin{markdown}
-- Reduced cost - to enable mass production of cellular IoT devices
+- Reduced cost -- to enable mass production of cellular IoT devices
     - Removing unnecessary LTE features for IoT such as dual carrier, high modulations
-- Low power utilization - for battery powered use cases that require years of operation
-    -  Introducing power saving features such as [PSM](#psm) and [eDRX](#edrx)
-    -  Reducing the max. transmission power to less than 200mA to cater for battery max. current (GSM for example has 2A max power) 
-- Wider coverage - (+14 dB for LTE-M and +20 dB for NB-IoT sensitivity) for rural/indoor/underground use cases
+- Low power utilization -- for battery powered use cases that require years of operation
+    - Introducing power saving features such as [PSM](#psm) and [eDRX](#edrx)
+    - Reducing the max. transmission power to less than 200mA to cater for battery max. current (GSM for example has 2A max power) 
+- Wider coverage -- (+14 dB for LTE-M and +20 dB for NB-IoT sensitivity) for rural/indoor/underground use cases
     - Utilizing extended coverage feature with more retransmissions to ensure data gets delivered 
-- Smaller module size - to enable smaller device use cases
+- Smaller module size -- to enable smaller device use cases
 \end{markdown}
 \addspace
 \begin{markdown}
@@ -395,7 +396,7 @@ As of today, roaming for NB-IoT is very limited between operators because of new
 For LTE-M, roaming usually works over regular LTE roaming.
 Nevertheless, some operators have limited the access to their LTE-M networks and its available features (PSM, eDRX).
 
-Check the emnify [LTE-M coverage](https://www.emnify.com/lte-m-coverage) and [NB-IoT coverage](https://www.emnify.com/nb-iot-coverage), availability of PSM/eDRX and proposed frequency bands [on our Website](https://www.emnify.com/lte-m-coverage?hsLang=en).
+Check the emnify [LTE-M coverage](https://www.emnify.com/lte-m-coverage) and [NB-IoT coverage](https://www.emnify.com/nb-iot-coverage), availability of PSM/eDRX and proposed frequency bands [on our Website](https://www.emnify.com/lte-m-coverage?hsLang=en).
 
 Power-Save-Mode (PSM)
 \end{markdown}
@@ -408,7 +409,7 @@ Because of this, there are two things the device does which require power:
 \addspace
 \begin{markdown}
   1. Continuously listening to the radio if there is an incoming call
-  1. Transmitting location information to the network where it should be called - whenever it moves out of a tracking area and periodically every 54 minutes  
+  1. Transmitting location information to the network where it should be called -- whenever it moves out of a tracking area and periodically every 54 minutes
 \end{markdown}
 \addspace
 \begin{markdown}
@@ -432,7 +433,7 @@ The **Power Save Mode** has the following characteristics:
   - The device can wake up the module and send data (e.g., powerkey, interrupt or pin triggered).
   - When the device wakes up, it does not need to reattach and re-establish a PDN connection (unless it has moved to a different tracking area).
   - After the device wakes up, it stays in idle mode for a configurable time (timer T3324) to listen for downlink messages (e.g., firmware updates).
-  - The actual time the device is then in Power Save Mode is T3412 extended - T3324
+  - The actual time the device is then in Power Save Mode is T3412 extended -- T3324
 \end{markdown}
 
 \begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Note]
@@ -448,8 +449,8 @@ Some modules which have a SIM enabled PIN, (e.g., u-blox SARA-R4/SARA-N4) do not
 \begin{markdown}
 
 Be aware that not all NB-IoT and LTE-M networks have implemented PSM and even when PSM is available with the local operator this does not mean that a roaming SIM can use it.
-This makes it difficult for devices that are moving - in case they use PSM, and the new network does not support PSM - or only other timer configurations.
-We therefore regularly test the availability of PSM in our [LTE-M](https://www.emnify.com/lte-m-coverage?hsLang=en) and [NB-IoT](https://www.emnify.com/nb-iot-coverage) roaming footprint.
+This makes it difficult for devices that are moving -- in case they use PSM, and the new network does not support PSM -- or only other timer configurations.
+We therefore regularly test the availability of PSM in our [LTE-M](https://www.emnify.com/lte-m-coverage?hsLang=en) and [NB-IoT](https://www.emnify.com/nb-iot-coverage) roaming footprint.
 
 \end{markdown}
 \addspace
@@ -459,7 +460,7 @@ We therefore regularly test the availability of PSM in our [LTE-M](https://www.
 \addspace
 \begin{markdown} 
 
-The 3GPP defined AT command to configure PSM is `AT+CPSMS` which sets the T3412 extended and T3324 timers. 
+The 3GPP defined AT command to configure PSM is `AT+CPSMS` which sets the T3412 extended and T3324 timers. 
 
 An example command is 
 
@@ -475,16 +476,16 @@ To read the effective PSM configuration use the command
 
 `AT+CPSMS?`
 
-There is a good calculator that translates the intended time settings for 3412 and T3324 available from [Thales](https://www.thalesgroup.com/en/markets/digital-identity-and-security/iot/resources/developers/psm-calculation-tool). 
+There is a good calculator that translates the intended time settings for 3412 and T3324 available from [Thales](https://www.thalesgroup.com/en/markets/digital-identity-and-security/iot/resources/developers/psm-calculation-tool). 
 
 Module vendors have also implemented module specific commands, e.g. Quectel
 
 \end{markdown}
 \addspace
 \begin{markdown}
-- `AT+QPSMS` extends PSM settings
-- `AT+QCFG="psm/enter",1` used to put the module immediately into PSM when the RRC connection is released (not waiting for T3324 to expire)
-- `AT+QPSMEXTCFG` modem optimization command with different attributes such as making sure that PSM is randomized between different devices so they do not send data at the same time
+- `AT+QPSMS` extends PSM settings
+- `AT+QCFG="psm/enter",1` used to put the module immediately into PSM when the RRC connection is released (not waiting for T3324 to expire)
+- `AT+QPSMEXTCFG` modem optimization command with different attributes such as making sure that PSM is randomized between different devices so they do not send data at the same time
 \end{markdown}
 
 
@@ -504,7 +505,7 @@ Module vendors have also implemented module specific commands, e.g. Quectel
 While PSM is focused on uplink-centric use cases, eDRX tries to reduce the power consumption for IoT use cases that get downlink information.
 Regular smartphones do not continuously listen on the radio for an incoming message.
 They do this only every 1.28s or 2.56s which is called DRX (discontinuous Reception).
-eDRX allows configuration of custom intervals of up to 40-175 mins - depending on the configuration the visited network allows.
+eDRX allows configuration of custom intervals of up to 40-175 mins -- depending on the configuration the visited network allows.
 \end{markdown}
 \addspace
 \begin{center}
@@ -516,8 +517,8 @@ eDRX allows configuration of custom intervals of up to 40-175 mins - depending o
 \end{markdown}
 \addspace
 \begin{markdown}
-As with PSM - not all NB-IoT and LTE-M networks support eDRX or the same timer configuration - and even if they do this does not guarantee that a roaming SIM card can utilize eDRX.
-We therefore also test and publish the eDRX availability on our [LTE-M](https://www.emnify.com/lte-m-coverage?hsLang=en) and [NB-IoT](https://www.emnify.com/nb-iot-coverage) roaming footprint.
+As with PSM -- not all NB-IoT and LTE-M networks support eDRX or the same timer configuration -- and even if they do this does not guarantee that a roaming SIM card can utilize eDRX.
+We therefore also test and publish the eDRX availability on our [LTE-M](https://www.emnify.com/lte-m-coverage?hsLang=en) and [NB-IoT](https://www.emnify.com/nb-iot-coverage) roaming footprint.
 \end{markdown}
 \addspace
 \begin{markdown}
@@ -579,7 +580,7 @@ The network will respond with the actual effective interval.
 
 ### 5G (New Radio)
 
-5G is the next major technology standard after LTE - which targets 3 different applications areas:
+5G is the next major technology standard after LTE -- which targets 3 different applications areas:
 \end{markdown}
 \addspace
 \begin{markdown}
@@ -603,7 +604,7 @@ The network will respond with the actual effective interval.
 \end{markdown}
 \addspace
 \begin{markdown}
-As of today, 5G is mainly adopted for eMBB use cases - using a 5G non-standalone (NSA) deployment - meaning that the air interface uses 5G technology whereas the core network is still 4G.
+As of today, 5G is mainly adopted for eMBB use cases -- using a 5G non-standalone (NSA) deployment -- meaning that the air interface uses 5G technology whereas the core network is still 4G.
 
 emnify has announced its first 5G roaming agreements in August 2020 and since then has reached agreements with more than a dozen network operators worldwide.
 
@@ -611,14 +612,14 @@ emnify has announced its first 5G roaming agreements in August 2020 and since th
 
 ### Traditional home-routing vs regional breakout
 
-The data plane of emnify’s cloud communication platform is distributed across major cloud regions (Virginia/US, Ireland/Europe, Singapore/APAC) and directly connected to central peering points with the local operators.
+The data plane of emnify's cloud communication platform is distributed across major cloud regions (Virginia/US, Ireland/Europe, Singapore/APAC) and directly connected to central peering points with the local operators.
 
 ### emnify regional breakouts
 
-emnify’s distributed data plane enables device data to breakout locally, keeping the customer data within the same region.
+emnify's distributed data plane enables device data to breakout locally, keeping the customer data within the same region.
 Moreover, it also helps reduce network latency.
 You can either select a specific breakout region or the network automatically selects the breakout region closest to the device.
-This can be done on the [emnify Portal](https://portal.emnify.com/) → [**Device Policies**](https://portal.emnify.com/device-policies) → **New service policy** which is applicable to a group of devices.
+This can be done on the [emnify Portal](https://portal.emnify.com/) >> [**Device Policies**](https://portal.emnify.com/device-policies) >> **New service policy** which is applicable to a group of devices.
 
 \end{markdown}
 
@@ -677,111 +678,361 @@ Almost every aspect of your IoT network can be managed within the emnify Portal,
 
 ### REST API
 
-- -> link to events
+REST APIs are one way to integrate external services into your application.
+The emnify API provides a variety of HTTP requests to integrate several emnify services into your application.
+
+The emnify API is based on the OpenAPI Specification OAS3.
 
 ### GraphQL
 
+GraphQL is a query language that enables you to define API call responses to match your use case and technical needs.
+
+The emnify GraphQL API was initially developed internally to improve performance on the Portal.
+In early 2023, we decided to release a preview version to customers.
+We hope to collect feedback and continue adding features so that the functionality more closely matches our REST API.
+
 ### Data Streamer
 
-- -> link to events
+With the emnify Data Streamer, enterprises can integrate real-time connectivity data directly into their third-party cloud services or business systems to build operational dashboards that visualize device, network, and application information side-by-side.
+With this comprehensive view of their IoT solution and infrastructure connectivity data, they can quickly triage and resolve issues or create business reports.
 
 ### SDK
 
+The emnify software development kits (SDKs) allow developers to manage their IoT devices using an intuitive set of APIs, including SIM state management and device connectivity operations.
+emnify SDKs are currently available for Java and Python.
+
 ### No-Code
+
+Zapier is a service that allows you to connect more than 4,000 applications -- including emnify -- to automate workflows.
+With the available integrations you can automate device provisioning between emnify and your application.
+For example, you can send configuration SMS to set the proper APN, when the device connects for the first time.
+Other use cases are scheduled or application-triggered SIM activations/deactivations so that the SIM contract starts and ends with the device subscription of your customers.
+The following events are available as triggers:
+\end{markdown}
+\addspace
+\begin{markdown}
+- All events in the Data Streamer
+- Device enabled (SIM activated)
+- Device disabled (SIM deactivated)
+- Usage Limit Reached
+\end{markdown}
+\addspace
+\begin{markdown}
+
+The following actions are available:
+
+\end{markdown}
+\addspace
+\begin{markdown}
+- Send SMS to device
+- Create a device (SIM configuration)
+- Enable a device (SIM activation)
+- Block current network (blacklist the last tried network)
+\end{markdown}
+\addspace
+\begin{markdown}
+
+Using the Zapier webhook, you can also use triggers from:
+
+\end{markdown}
+\addspace
+\begin{markdown}
+- SMS delivered notification
+- Mobile originated (MO) SMS
+\end{markdown}
+\addspace
+\begin{markdown}
 
 ### Events
 
-\end{markdown}
+The emnify system generates several types of events.
+These events allow you to track notable system occurrences based on behavior.
 
-\section{Communication Services}
+Some common use cases for events on emnify include:
+
+\end{markdown}
+\addspace
+\begin{markdown}
+- **Triggers for custom business processes** (e.g., authentication or custom usage limitations configured on the [emnify Portal](usage#emnify-portal))
+- **Monitoring** (e.g., SIM or data connection lifecycles)
+- **Input for custom billing systems** (i.e., updating billing configuration, processing invoices, etc.)
+\end{markdown}
+\addspace
+\begin{markdown}
+
+Events are often used as triggers for custom business processes, for monitoring, and as input for custom billing systems.
+They provide information about lifecycle transitions and configuration changes.
+
+\end{markdown}
+\pagebreak[4]
+\section{Communication services}
 
 \begin{markdown}
 
 ## Data
 
-### Public Internet Breakout
+### Public internet breakout
+
+An internet breakout is where data passes from a private network to the public internet.
+For cellular networks the internet breakout is the home operator's central location -- the one that sold the SIM card.
+This can pose a challenge for organizations with globally distributed devices.
+Data might have to be routed through multiple countries or even across continents before arriving at the home operator's centralized data center before being sent to its final destination.
 
 ### Virtual Private Network
-\end{markdown}
-\addspace
-\begin{markdown}
-- Without private APN
-- Link to OpenVPN / Cloud Connect
-\end{markdown}
-\addspace
-\begin{markdown}
+
+**Private APN**
+
+A private Access Point Name (APN) is a solution that was developed to simply identify a gateway having specific policies for accessing a network that assigns static IP addresses to devices through which they can be remotely accessed.
+The private APN was then used as an concentrated endpoint to help secure connectivity through policies like blocking public internet access.
+Private APNs are often used in conjunction with a VPN.
+However, emnify doesn't require a private APN for using a VPN.
+
+**OpenVPN**
+
+emnify's communication platform hosts an OpenVPN service that allows you to establish a private network between a device and any remote client location.
+The remote client can be on the application server or any machine that wants to access the device remotely (such as operational staff).
+
+Your IoT device doesn't need a private APN, OpenVPN software, or dynamic DNS resolution to use the OpenVPN service.
+Through the emnify IoT eSIM, each device will have a static private IP address that you can use to identify and address the device.
+
+At the same time, the IoT device can send data through the private tunnel to the IP address of the remote machine.
+
+**Cloud Connect**
+
+The data traffic of regular SIM cards is secured within the mobile network -- but traverses the public internet between the mobile network and the application, which makes the device and application susceptible to attacks and prohibits to easily establish a remote device session.
+
+With emnify Cloud Connect your devices and application servers can communicate through a secure private network -- with a secure tunnel being established between the emnify platform and your cloud or on-premises application.
+
+By eliminating the use of the public internet, Cloud Connect helps you better protect your application infrastructure against attacks like DDoS, port scanning while giving you the possibility to remotely access the devices.
+
 ### Inter-device communication
 
-### Regional Breakout
+Traditionally, short message service center (SMSC) facilitates short message service (SMS) communications between devices on the network.
+Text messaging and many Internet of Things applications depend on SMSCs to relay communications from one device to another.
+In order to communicate with a network's SMSC, you'll need to enable your application to use Short Message Peer-to-Peer Protocol (SMPP).
+This is a complex protocol that can be difficult to work with.
+
+At emnify, we simplify SMS communication with our RESTful API.
+This enables your devices to communicate over SMS using JavaScript Object Notation (JSON), and you don't have to worry about SMPP.
+
+### Regional breakout
+
+A regional internet breakout is when a distributed network routes data through regional data centers, typically through cloud service providers like Amazon AWS, Microsoft Azure, or Google Cloud.
+
+emnify uses AWS to facilitate dynamic regional internet breakout to dynamically select the closest breakout region based on a device's location while using other availability zones as backups to prevent downtime.
 
 ## SMS
 
+SMS messages can play a pivotal role in remote IoT device management and automation.
+Since SMS works without a data connection, it's a reliable way to communicate with remote IoT devices.
+
+By designing devices to accept SMS parameters, most manufacturers have eased the burden of configuring a fleet of devices, both for the initial connectivity configuration as well as for post-deployment configuration changes.
+
+By leveraging SMS for specific tasks that would overwise require power-hungry data connections, devices can operate more efficiently by conserving battery power.
+
+With SMS in place for your remote configuration, you can also use it to trigger additional actions on a device.
+For example, if you wanted to perform an update, you could use SMS to trigger a firmware OTA update.
+
 ### SMS MO/MT
+
+The ability to send and receive point-to-pont (P2P) SMS messages is often abbreviated as follows:
+
+\end{markdown}
+\addspace
+\begin{markdown}
+- **MO** Mobile-Originated, i.e., messages can originate (be sent) from this device
+- **MT** Mobile-Terminated, i.e., messages can terminate (be received) at this device
+\end{markdown}
+\addspace
+\begin{markdown}
 
 ### P2P SMS
 
+Some countries implement a strict interpretation regarding what constitutes person-to-person (P2P) SMS communication.
+In such cases, any application-mediated messaging is considered A2P instead, even if the originator and recipient are both non-commercial, individual consumers.
+
+emnnify allows MO and MT SMS from external SMS devices.
+Devices can be reached over the assigned MSISDN number from any regular mobile phone.
+
 ### A2P SMS
+
+Application-to-Person (A2P) Short Message Service (SMS) refers to text messages sent from a software program to person or a SMS sent from a person to an application. Messages from an application are often automated and trigger based on a set of rules or conditions.
+Messages to an application involve a request or command.
+
+In the Internet of Things (IoT), end users and manufacturers rely on A2P SMS to do things like remotely set the Access Point Name (APN), reconfigure devices, "wake up" a device to go online, or send small measurement data to the application.
+
+\end{markdown}
+
+\begin{tcolorbox}[colback=blue!5!white,colframe=blue!75!black,title=Note]
+\textbf{A2P and P2P Routing}\\
+emnify distinguishes A2P SMS from P2P SMS based on the length of the source or the destination address.\\
+If there are 8 digits or less (i.e., an invalid MSISDN), an SMS will be considered A2P.\\
+If there are 9 digits or more, an SMS will be processed as MSISDN and will be considered P2P.\\
+To dispatch SMS MO to your application and at the same time have P2P SMS enabled, the destination number must be limited to 8 digits or less.
+\end{tcolorbox}
+
+
+\begin{markdown}
+
+**SMPP**
+
+Short Message Peer-to-Peer Protocol (SMPP) is the system of rules that lets devices and software applications send and receive text messages over the internet.
+Cellular Internet of Things (IoT) devices such as smart meters use the SMPP to transmit updates about resource consumption and location status.
+When an event like a break-in or fire triggers a smart alarm system, it uses the SMPP to message the building owner, potentially with a link that allows them to access a camera feed.
+
+**SMS via the emnify REST API**
+
+If you're an IoT manufacturer, your device may rely on SMS communication.
+In these cases, emnify can automate your SMS data exchange between device and application through the REST-API.
+The REST-API does not only allow to programmatically send SMS to the device but also to retrieve the SMS data the device sends.
+
+**SMS console in the emnify Portal**
+
+The emnify Portal also provides an SMS console which allows an SMS to be sent to the device with a configurable source address.
+In addition, the UI lists all SMSs that are received and sent by the device.
+
+### SMS short codes
+
+SMS short codes are often associated with automated services, each of which is assigned a unique short code and phone number.
+Within the emnify core network, there is no SMS short code configuration required per specific customer or service.
+All SMS messages that are sent and received from a specific customer will be forwarded through the API or SMPP.
+This means each customer can use their own short codes and customize them based on their use cases.
+
+\end{markdown}
+
+\section{Network security services}
+
+\begin{markdown}
+
+Given the globally distributed nature of the devices, smaller footprints and lack of resources, it can get difficult to individually secure IoT devices.
+
+emnify uses a SASE approach to simplify securing devices -- using several services specifically to protect customer data, filtering malicious content and preventing unauthorized access.
+
+## SASE overview
+
+Secure Access Service Edge ([SASE](/glossary#sase---secure-access-service-edge)) introduces a new architecture where networking and security functions are bundled in a cloud-delivered service.
+You can apply the same security standards across all your devices independent of the location.
+Moreover, you can integrate security features in your solutions right from the beginning.
+
+Some of the features that [SASE](/glossary#sase---secure-access-service-edge) for IoT architecture includes are as follows:
+
 \end{markdown}
 \addspace
 \begin{markdown}
-- REST API
-- SMPP
+- Dynamic Data Routing with Software-Defined Wide Area Network (SD-WAN)
+emnify utilizes a SD-WAN to route data to the closest cloud region using the [Regional Breakout](iot-cloud-communication-platform#regional-breakout) concept.
+In this way, latency and data stability is improved, and the end customer can be sure that data does not leave the continent and jurisdiction.
+- Cloud Access Security Broker (CASB)
+emnify allows centrally defining policies for the devices such as: networks that can be accessed, allowed IP addresses through which authorized users can remotely access devices.
+All configuration is done in the central platform and applied wherever the device is.
 \end{markdown}
 \addspace
 \begin{markdown}
-### SMS shortcodes
 
-\end{markdown}
+## Virtual Private Network options
 
-\section{Network Security Services}
+A Virtual Private Network (VPN) enables encrypted, targeted transmission of data over public networks such as the internet.
+It establishes protected and self-contained networks with various devices.
+A common use case is the connection of home offices or mobile employees.
 
-\begin{markdown}
+### Private static IP
 
-## SASE Overview
+Assigning a device a private static IP address prevents computers or other devices outside the local network from directly connecting to it.
 
-## Virtual Private Network Options
+### Cloud Connect -- secure data transport
 
-### Private Static IP
+**AWS Transit Gateway**
 
-### Cloud Connect – secure data transport
+Connect devices securely to AWS VPC without using public Internet.
+Some of the features and benefits are:
+
 \end{markdown}
 \addspace
 \begin{markdown}
-- AWS Transit Gateway
-- IPsec
+- Devices and the application infrastructure reside within the same private network.
+- Remotely access devices from AWS infrastructure via telnet / SSH.
+- Device data does not traverse public internet.
+- VPC / EC2 instances do not need public IP addresses.
+- Fully scalable and managed AWS service.
 \end{markdown}
 \addspace
 \begin{markdown}
-### OpenVPN – remote access
+
+**IPsec**
+
+If your application is not on AWS but on any other cloud services or on-premise, you can utilize Cloud Connect for establishing an IPsec VPN connection.
+
+With emnify you can set up an IPsec tunnel to securely transfer your data into your application server.
+
+### OpenVPN -- remote access
+
+OpenVPN is provided as a self-service for enterprise customers to get remote access to their devices from any OpenVPN client.
+Customer VPN clients are authenticated with the credentials and application tokens of their emnify account to get remote access to devices.
+OpenVPN establishes a single tunnel to the VPN gateways which are delivered in active-passive redundancy with automatic failover in case one VPN gateway becomes unavailable.
 
 ## Custom DNS
 
+When a device establishes a connection, it uses a Domain Name Service (DNS) server to resolve a hostname to an IP address to which it can send data.
+For example, a hostname such as `iot.example.com` will be mapped to an IP address like `192.0.2.1`.
+
+Cellular providers typically provide a DNS service.
+By default, emnify routes all DNS queries over Google's public DNS `8.8.8.8`.
+
+For some devices and modules, it is possible to configure the DNS service.
+For example, Quectel uses the `AT+QIDNSCFG` command, SIMcom `AT+CDNSCFG` command.
+This is useful to be able to use your own or private DNS servers to secure and have better control over the solution.
+
+Customers can also configure to use their own DNS, no matter if it is a public or a private one.
+The DNS settings can be changed in the [emnify Portal](https://portal.emnify.com/) >> [**Device Policies**](https://portal.emnify.com/device-policies) >>  **New service policy** >>  **More options**
+
+Utilizing a private DNS server which is not reachable via the public internet requires to set up a private network with the machine or a network where the private DNS server is located.
+This can be done using Cloud Connect either with Amazon Transit Gateway or IPsec.
+A tutorial on how to set up a DNS firewall based on a private DNS using Amazon Route 53 is available [here](https://www.emnify.com/en/developer-hub/dns-filtering).
+
 ## IMEI lock
 
-## Centralized Policies
+For device manufacturers, SIM card theft is an issue because pluggable SIM cards can be removed from a device and then used to gain free internet access.
+The [IMEI lock](/glossary#imei-lock)  feature prevents the use of SIM card in any other device by bounding the SIM to an IMEI.
+The [IMEI](/glossary#imei---international-mobile-equipment-identity) is a unique device identifier.
+When the automatic IMEI lock is configured, the emnify platform will bind the SIM cards to the first device that establishes a data connection.
+All future device connections will only be allowed from this device.
 
-### Service Policies
+## Centralized policies
 
-### Coverage Policies
+Within the emnify platform, there is a separation between SIM card and the device, also referred to as "endpoint".
+This allows you to configure policies on the device level rather than SIM level.
+The device policies can be applied on a device group as well as at an individual level.
+
+### Service policies
+
+Service policies define which services are available for a group of devices. These policies include:
 
 \end{markdown}
-
-\section{emnify premium services}
-
+\addspace
+\begin{markdown}
+- Available radio access types (2G, 3G, 4G, NB-IoT)
+- Monthly data and SMS limit
+- SMS API configuration
+- Custom DNS
+- Breakout Region
+- Available SMS service (MO/MT/P2P/A2P)
+- Activation of Quota and Prepaid Management
+\end{markdown}
+\addspace
 \begin{markdown}
 
-## Custom branding
+### Coverage policies
 
-### SIM artwork
+Coverage policies define which tariff and network coverage is available for a group of devices.
+This enables you to optimize the tariff based on the intended coverage.
 
-### APN naming
+The coverage policies include:
 
-## Dedicated support agent
-
-## Data Packet Capturing
-
-## Premium data breakout
-
+\end{markdown}
+\addspace
+\begin{markdown}
+- The applied tariff for the group of devices
+- The available networks organized in rate zones
 \end{markdown}
 
 \pagebreak[4]
@@ -810,13 +1061,13 @@ They are designed to reduce operational costs by detecting issues before they di
   \hline
   \textbf{Feature} & \textbf{Standard} & \textbf{Business} & \textbf{Enterprise} \\ \hline
   \textbf{Operating hours} & Mon-Fri 09:00-18:00 CET & 24x7x365 & 24x7x365 \\ \hline
-  \textbf{Method of contact} & \begin{tabular}[c]{@{}l@{}}Tickets must be opened via webform.\\ Replies via email are possible.\end{tabular} & \begin{tabular}[c]{@{}l@{}}Tickets must be opened via webform.\\ Replies via email are possible.\end{tabular} & Webform, email, and phone \\ \hline
-  \textbf{Help Center \& Knowledge Base} & Yes & Yes & Yes \\ \hline
+  \textbf{Method of contact} & \begin{tabular}[c]{@{}l@{}}Tickets must be opened via webform.\\ Replies via email are possible.\end{tabular} & \begin{tabular}[c]{@{}l@{}}Tickets must be opened via webform.\\ Replies via email are possible.\end{tabular} & Webform, email, and phone \\ \hline
+  \textbf{Help Center \& Knowledge Base} & Yes & Yes & Yes \\ \hline
   \textbf{Pre-scheduled event support} & Not included & Yes & Yes \\ \hline
   \textbf{Dedicated Support Agent} & Not included & Not included & Yes (EU-CET, US-EST or US-PST business hours) \\ \hline
-  \textbf{Trace requests} & – & \begin{tabular}[c]{@{}l@{}}1 simultaneous trace\\ Max 1 request/day\\ Max duration 24 hours/trace\end{tabular} & \begin{tabular}[c]{@{}l@{}}3 simultaneous traces\\ Max 1 request/day\\ Max duration 24 hours/trace\end{tabular} \\ \hline
+  \textbf{Trace requests} & -- & \begin{tabular}[c]{@{}l@{}}1 simultaneous trace\\ Max 1 request/day\\ Max duration 24 hours/trace\end{tabular} & \begin{tabular}[c]{@{}l@{}}3 simultaneous traces\\ Max 1 request/day\\ Max duration 24 hours/trace\end{tabular} \\ \hline
   \textbf{\begin{tabular}[c]{@{}l@{}}Guaranteed response times:\\ • Critical incident\\ • Operational incident\\ • General issue / question\end{tabular}} & 7 business days & \begin{tabular}[c]{@{}l@{}}• 3 hours, 24x7x365\\ • 6 business hours\\ • 9 business hours\end{tabular} & \begin{tabular}[c]{@{}l@{}}• 1 hour, 24x7x365\\ • 3 hours, 24x7x365\\ • 6 business hours\end{tabular} \\ \hline
-  \textbf{\begin{tabular}[c]{@{}l@{}}Target time to restore service: \\ • Critical incident\\ • Operational incident\end{tabular}} & – & \begin{tabular}[c]{@{}l@{}}• 12 hours\\ • 10 business days\end{tabular} & \begin{tabular}[c]{@{}l@{}}• 4 hours\\ • 4 business days\end{tabular} \\ \hline
+  \textbf{\begin{tabular}[c]{@{}l@{}}Target time to restore service: \\ • Critical incident\\ • Operational incident\end{tabular}} & -- & \begin{tabular}[c]{@{}l@{}}• 12 hours\\ • 10 business days\end{tabular} & \begin{tabular}[c]{@{}l@{}}• 4 hours\\ • 4 business days\end{tabular} \\ \hline
   \textbf{SLO} & \begin{tabular}[c]{@{}l@{}}Mobile Core: 98.5\%\\ Internet Breakout/VPN: 98.5\%\\ API/GUI: 98.5\%\end{tabular} & \begin{tabular}[c]{@{}l@{}}Mobile Core: 99.5\%\\ Internet Breakout/VPN: 99.5\%\\ API/GUI: 99.5\%\end{tabular} & \begin{tabular}[c]{@{}l@{}}Mobile Core: 99.95\%\\ Internet Breakout/VPN: 99.9\%\\ API/GUI: 99.5\%\end{tabular} \\ \hline
   \textbf{Root cause analysis} & Yes (Critical incidents) & Yes (Critical incidents) & Yes (Critical and operational incidents) \\ \hline
   \textbf{Length of service} & Monthly (automatic renewal) & Monthly (automatic renewal) & Minimum 12 months \\ \hline
@@ -831,14 +1082,14 @@ emnify's network operation center (NOC) monitors the health of all cellular netw
 The NOC proactively identifies any degradation of service.
 In case of an incident, it starts the incident management process that alerts a team of on-call engineers to start an investigation.
 
-When an incident is triggered due to network-related events, the responding team will diagnose the fault and escalate the incident to emnify’s carrier and roaming partners if necessary.
+When an incident is triggered due to network-related events, the responding team will diagnose the fault and escalate the incident to emnify's carrier and roaming partners if necessary.
 Optionally, any network causing a service disruption will be blocked so that devices can connect to alternate networks.
 
 During an incident, emnify updates the [Status](https://status.emnify.com/) page for all services in order keep customers informed in real time about the status of the incident and its impact.
 
 For critical and operational incidents, emnify conducts a root cause analysis (RCA) and issues a postmortem that provides details about the incident, which changes have been applied, and which measures are planned to guard against future incidents.
 
-The incident management process is reviewed annually and certified by a third party as part of emnify’s SOC2 audit.
+The incident management process is reviewed annually and certified by a third party as part of emnify's SOC2 audit.
 
 ## Roaming
 
@@ -853,7 +1104,7 @@ Support for the global deployment of IoT devices is a key feature of emnify's [G
 
 ## Customer Success Manager
 
-In addition to emnify’s 24x7 support and network operation center (NOC), each customer has access to a Customer Success Manager (CSM).
+In addition to emnify's 24x7 support and network operation center (NOC), each customer has access to a Customer Success Manager (CSM).
 CSMs comprise a globally distributed team with local working hours.
 They are fluent in emnify's main supported languages: English, Spanish, Italian, French, and German.
 The CSM team proactively engages with their customers to help them obtain value from the product and guide them through their journey.

@@ -81,3 +81,15 @@ Using the Zapier webhook, you can also use triggers from:
 - Mobile originated (MO) SMS
 
 ### Events
+
+The emnify system generates several types of events.
+These events allow you to track notable system occurrences based on behavior.
+
+Some common use cases for events on emnify include:
+
+- **Triggers for custom business processes** (e.g., authentication or custom usage limitations configured on the [emnify Portal](usage#emnify-portal))
+- **Monitoring** (e.g., SIM or data connection lifecycles)
+- **Input for custom billing systems** (i.e., updating billing configuration, processing invoices, etc.)
+
+Events are often used as triggers for custom business processes, for monitoring, and as input for custom billing systems.
+They provide information about lifecycle transitions and configuration changes.
