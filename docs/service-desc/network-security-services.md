@@ -1,10 +1,10 @@
-# Network Security Services
+# Network security services
 
 Given the globally distributed nature of the devices, smaller footprints and lack of resources, it can get difficult to individually secure IoT devices.
 
 emnify uses a SASE approach to simplify securing devices – using several services specifically to protect customer data, filtering malicious content and preventing unauthorized access.
 
-## SASE Overview
+## SASE overview
 
 Secure Access Service Edge ([SASE](/glossary#sase---secure-access-service-edge)) introduces a new architecture where networking and security functions are bundled in a cloud-delivered service.
 You can apply the same security standards across all your devices independent of the location.
@@ -20,9 +20,9 @@ emnify allows centrally defining policies for the devices such as: networks that
 All configuration is done in the central platform and applied wherever the device is.
 
 
-## Virtual Private Network Options
+## Virtual Private Network options
 
-A Virtual Private Network (VPN) enables encrypted, targeted transmission of data over public networks such as the Internet.
+A Virtual Private Network (VPN) enables encrypted, targeted transmission of data over public networks such as the internet.
 It establishes protected and self-contained networks with various devices.
 A common use case is the connection of home offices or mobile employees.
 
@@ -70,7 +70,7 @@ This is useful to be able to use your own or private DNS servers to secure and h
 Customers can also configure to use their own DNS, no matter if it is a public or a private one.
 The DNS settings can be changed in the [emnify Portal](https://portal.emnify.com/) → [**Device Policies**](https://portal.emnify.com/device-policies) → **New service policy** → **More options**
 
-Utilizing a private DNS server which is not reachable via the public Internet requires to set up a private network with the machine or a network where the private DNS server is located.
+Utilizing a private DNS server which is not reachable via the public internet requires to set up a private network with the machine or a network where the private DNS server is located.
 This can be done using Cloud Connect either with Amazon Transit Gateway or IPsec.
 A tutorial on how to set up a DNS firewall based on a private DNS using Amazon Route 53 is available [here](https://www.emnify.com/en/developer-hub/dns-filtering).
 
@@ -82,13 +82,13 @@ The [IMEI](/glossary#imei---international-mobile-equipment-identity) is a uniq
 When the automatic IMEI lock is configured, the emnify platform will bind the SIM cards to the first device that establishes a data connection.
 All future device connections will only be allowed from this device.
 
-## Centralized Policies
+## Centralized policies
 
 Within the emnify platform, there is a separation between SIM card and the device, also referred to as "endpoint".
 This allows you to configure policies on the device level rather than SIM level.
 The device policies can be applied on a device group as well as at an individual level.
 
-### Service Policies
+### Service policies
 
 Service policies define which services are available for a group of devices. These policies include:
 
@@ -100,7 +100,7 @@ Service policies define which services are available for a group of devices. The
 - Available SMS service (MO/MT/P2P/A2P)
 - Activation of Quota and Prepaid Management
 
-### Coverage Policies
+### Coverage policies
 
 Coverage policies define which tariff and network coverage is available for a group of devices.
 This enables you to optimize the tariff based on the intended coverage.
