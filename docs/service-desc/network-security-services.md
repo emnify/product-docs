@@ -51,7 +51,9 @@ With emnify you can set up an IPsec tunnel to securely transfer your data into y
 
 ### OpenVPN – remote access
 
-
+OpenVPN is provided as a self-service for enterprise customers to get remote access to their devices from any OpenVPN client.
+Customer VPN clients are authenticated with the credentials and application tokens of their emnify account to get remote access to devices.
+OpenVPN establishes a single tunnel to the VPN gateways which are delivered in active-passive redundancy with automatic failover in case one VPN gateway becomes unavailable.
 
 ## Custom DNS
 
