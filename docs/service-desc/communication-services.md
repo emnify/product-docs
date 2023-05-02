@@ -6,8 +6,31 @@
 
 ### Virtual Private Network
 
-- Without private APN
-- Link to OpenVPN / Cloud Connect
+**Private APN**
+
+A private Access Point Name (APN) is a solution that was developed to simply identify a gateway having specific policies for accessing a network that assigns static IP addresses to devices through which they can be remotely accessed.
+The private APN was then used as an concentrated endpoint to help secure connectivity through policies like blocking public Internet access.
+Private APNs are often used in conjunction with a VPN.
+However, emnify doesn't require a private APN for using a VPN.
+
+
+**OpenVPN**
+
+emnify's communication platform hosts an OpenVPN service that allows you to establish a private network between a device and any remote client location.
+The remote client can be on the application server or any machine that wants to access the device remotely (such as operational staff).
+
+Your IoT device doesn't need a private APN, OpenVPN software, or dynamic DNS resolution to use the OpenVPN service.
+Through the emnify IoT eSIM, each device will have a static private IP address that you can use to identify and address the device.
+
+At the same time, the IoT device can send data through the private tunnel to the IP address of the remote machine.
+
+**Cloud Connect**
+
+The data traffic of regular SIM cards is secured within the mobile network – but traverses the public internet between the mobile network and the application, which makes the device and application susceptible to attacks and prohibits to easily establish a remote device session.
+
+With emnify Cloud Connect your devices and application servers can communicate through a secure private network – with a secure tunnel being established between the emnify platform and your cloud or on-premises application.
+
+By eliminating the use of the public internet, Cloud Connect helps you better protect your application infrastructure against attacks like DDoS, port scanning while giving you the possibility to remotely access the devices.
 
 ### Inter-device communication
 
