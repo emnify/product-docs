@@ -343,3 +343,9 @@ A secure private cloud hosted within a public cloud where you can host websites,
 _Virtual Private Network_
 
 A service that protects your internet connection and privacy online.
+
+:::tip
+IPSec and [OpenVPN](#openvpn) are both protocols for securing data transmission through a VPN.
+
+Learn more: [IPSec vs OpenVPN: What's the difference?](https://www.emnify.com/iot-glossary/ipsec-vs-openvpn)
+:::

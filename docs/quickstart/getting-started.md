@@ -35,6 +35,51 @@ To begin developing your IoT solutions with emnify, you'll need an emnify accoun
     </ul>
 </details>
 
+## Starting on the Evaluation Plan
+
+After signing up, your account will automatically be assigned to the **Evaluation Plan**.
+With the Evaluation Plan, you have 60 days and 10 EUR/USD of prepaid credit for testing emnify's services.
+
+Once this expires, you'll need to [choose a new plan](https://portal.emnify.com/organisation-settings/subscription#plans).
+
+:::tip
+Information on your current balance and other details about the Evaluation plan is available in the emnify Portal: **Organization Settings** → [**Subscription**](https://portal.emnify.com/organisation-settings/subscription).
+
+<img
+  src={require('./assets/portal-nav-organization-settings-subscription.png').default}
+  alt=""
+/>
+:::
+
+### Supported features
+
+In addition to the standard emnify services, the Evaluation Plan supports the following features:
+
+<details className="custom-details-example-json-response">
+  <summary>Global virtual private network</summary>
+    <p>Establish secure private connections to your devices via a <a href="https://docs.emnify.com/glossary#vpn">virtual private network (VPN)</a>, so you can troubleshoot devices.</p>
+</details>
+
+<details className="custom-details-example-json-response">
+  <summary>Access to 500+ networks</summary>
+    <p>Connect your IoT devices to <a href="https://docs.emnify.com/services/global-iot-network">more than 540 networks in over 180 countries</a>. Get 2G, 3G, 4G, 5G, LTE-M, and NB-IoT coverage.</p>
+</details>
+
+<details className="custom-details-example-json-response">
+  <summary>Multicloud Data Streamer</summary>
+    <p>Use the tools you're familiar with to stream connectivity metadata, triage issues, collect usage insights, and more. <a href="https://docs.emnify.com/services/data-streamer/getting-started">Learn more about the Data Streamer</a> or <a href="https://docs.emnify.com/services/data-streamer/available-integrations">browse the available integrations</a>.</p>
+</details>
+
+<details className="custom-details-example-json-response">
+  <summary>Access via APIs, SDKs, Zapier</summary>
+    <p>Automate SIM management, business processes, and other workflows using our suite of developer tools.</p>
+    <ul>
+      <li>APIs (<a href="https://docs.emnify.com/rest-api">REST</a> and <a href="https://docs.emnify.com/graphql/preview">GraphQL</a>)</li>
+      <li>SDKs (<a href="https://docs.emnify.com/sdks/python">Python</a> and <a href="https://docs.emnify.com/sdks/java">Java</a>)</li>
+      <li>Zapier (for <a href="https://docs.emnify.com/services/no-code-workflow-automation">no-code workflow automation</a>)</li>
+    </ul>
+</details>
+
 ## Order a free Evaluation SIM package
 
 ![Claim your free evaluation package with 3 triple-cut SIMs to kickstart your well-managed IoT journey. Includes: Free 3 triple-cut SIMs, form factor (Nano, Micro, Mini), our full coverage, and global fast shipping.](assets/portal-order-evaluation-pack.png)
