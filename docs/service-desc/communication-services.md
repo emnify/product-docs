@@ -4,6 +4,16 @@
 
 ### Public Internet Breakout
 
+An Internet breakout is where data passes from a private network to the public Internet.
+For cellular networks the Internet breakout is the home operator's central location - the one that sold the SIM card.
+This can pose a challenge for organizations with globally distributed devices.
+Data might have to be routed through multiple countries or even across continents before arriving at the home operator's centralized data center before being sent to its final destination.
+
+A regional Internet breakout is when a distributed network routes data through regional data centers, typically through cloud service providers like Amazon AWS, Microsoft Azure, or Google Cloud.
+
+emnify uses AWS to facilitate dynamic regional Internet breakout to dynamically select the closest breakout region based on a device’s location while using other availability zones as backups to prevent downtime.
+
+
 ### Virtual Private Network
 
 **Private APN**
