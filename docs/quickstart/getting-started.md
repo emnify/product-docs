@@ -38,7 +38,7 @@ To begin developing your IoT solutions with emnify, you'll need an emnify accoun
 ## Starting on the Evaluation Plan
 
 After signing up, your account will automatically be assigned to the **Evaluation Plan**.
-With the Evaluation Plan, you have 60 days and 10 EUR/USD of prepaid credit for testing emnify's services.
+With the Evaluation Plan, you have 60 days to use the issued prepaid credit for testing emnify's services.
 
 Once this expires, you'll need to [choose a new plan](https://portal.emnify.com/organisation-settings/subscription#plans).
 
@@ -85,7 +85,7 @@ In addition to the standard emnify services, the Evaluation Plan supports the fo
 ![Claim your free evaluation package with 3 triple-cut SIMs to kickstart your well-managed IoT journey. Includes: Free 3 triple-cut SIMs, form factor (Nano, Micro, Mini), our full coverage, and global fast shipping.](assets/portal-order-evaluation-pack.png)
 
 You can order your free Evaluation SIM package on the emnify Portal.
-This package includes a prepaid credit of 10 EUR/USD for testing emnify's services.
+This package includes an issued prepaid credit for testing emnify's services.
 
 :::note
 You have 60 days to use this prepaid credit.
