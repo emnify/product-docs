@@ -93,7 +93,7 @@ It has a fixed length of 32 digits, as indicated in the following diagram:
 The EUM specific identification number (ESIN) and check digits are for example purposes only, and the values aren't real.
 :::
 
-Unlike the [ICCID](#iccid---integrated-circuit-card-identifier), the EID remains the same throughout the life of the eSIM.
+Unlike the [ICCID](#iccid), the EID remains the same throughout the life of the eSIM.
 Therefore, you can use it as a permanent identifier to keep track of your SIM cards.
 
 ## Endpoint  
@@ -164,7 +164,7 @@ It includes a SIM card's country, home network, and identification number, as in
 ![A 20-digit ICCID number: "89883030000080139311". The first two digits are the Major Industry Identifier (Telecom in this example). The next three digits are the Country Code (non-terrestrial). The following two digits are the Issuer Identifier (emnify). After that, the next 11 digits are the Individual Account Identification. The final digit is the Check Digit.](assets/infographic-iccid-digits.png)
 
 :::note
-Following the introduction of [eUICC](#euicc---embedded-universal-integrated-circuit-card) SIM cards in 2021, there are situations where the ICCID can no longer be unique. 
+Following the introduction of [eUICC](#euicc) SIM cards in 2021, there are situations where the ICCID can no longer be unique. 
 For example, the ICCID value can change when a different [SIM profile](#sim-profile) is provisioned on the eSIM.
 :::
 
@@ -218,7 +218,7 @@ _Over–the–Air_
 A method of wireless distribution of the software, configuration settings, or encryption keys.
 
 ## OTA Provisioning  
-A technology that allows changes to the SIM memory [over–the–air](#ota---over–the–air).
+A technology that allows changes to the SIM memory [over–the–air](#ota).
 
 ## OpenVPN  
 An open-source software application that implements [virtual private network (VPN)](#vpn) techniques for creating secure point–to–point or site–to–site connections in routed or bridged configurations and remote access facilities.
@@ -233,7 +233,7 @@ _Peer–to–Peer SMS_
 SMS exchanged between devices.
 
 ## PDP context  
-Data structure present on both the serving GPRS support node (SGSN) and the [gateway GPRS support node (GGSN)](#ggsn---gateway-gprs-support-node), which contains the subscriber’s session information when the subscriber has an active session.
+Data structure present on both the serving GPRS support node (SGSN) and the [gateway GPRS support node (GGSN)](#ggsn), which contains the subscriber’s session information when the subscriber has an active session.
 
 ## Private IP  
 An IP address that is not reachable from the public Internet but only through a local or virtual network.
@@ -270,11 +270,11 @@ _Subscriber Identification Module_
 A subscriber identification module (SIM) contains an integrated circuit ([IC](#ic)) that is often mounted on a plastic card.
 Pluggable SIMs mounted on plastic cards are offered in various form factors.
 A SIM stores data used to identify a subscriber ([IMSI](#imsi)) along with other network information for connecting and authenticating with a [mobile network operator (MNO)](https://www.emnify.com/iot-glossary/mno).
-See also [eSIM - Embedded SIM](#esim---embedded-sim).
+See also [eSIM - Embedded SIM](#esim).
 
 
 ## SIM batch  
-A collection of SIM cards that can be registered with a single [BIC](#bic---batch-identification-code) code.
+A collection of SIM cards that can be registered with a single [BIC](#bic) code.
 
 ## SMS firewall  
 A firewall that controls the SMS flow.
@@ -294,7 +294,7 @@ _Short Message Peer–to–Peer_
 A protocol used by the telecommunications industry for exchanging SMS messages between short message service centers (SMSC) and/or external short messaging entities (ESME).
 
 ## SMS console  
-An interface to send [A2P SMS](#a2p-sms---application–to–peer-sms) from the platform to the SIM card.
+An interface to send [A2P SMS](#a2p-sms) from the platform to the SIM card.
 
 ## SMS MO  
 SMS originating from the device.
