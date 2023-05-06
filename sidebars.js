@@ -15,6 +15,11 @@ const sidebars = {
       },
       items: [
         "quickstart/getting-started",
+        {
+          type: "doc",
+          label: "Ordering SIMs",
+          id: "quickstart/ordering-sims",
+        },
         "quickstart/registering-sims",
         {
           type: "category",
