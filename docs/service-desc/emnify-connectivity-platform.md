@@ -5,16 +5,28 @@ It it comprised of the following set of of tools.
 
 ## emnify Portal
 
-The web-based emnify Portal is the starting point for signing up and ordering your global IoT eSIMs.
-It is where you can create service and coverage policies for your IoT devices.
-Almost every aspect of your IoT network can be managed within the emnify Portal, including integrations with third-party solutions. 
+THe web-based [emnify Portal]( https://portal.emnify.com) is the Operation Center for the IoT SuperNetwork.
+The Portal allows Enterprise customers to monitor and manage all aspects of device communication – from viewing real-time volume and costs, managing the SIM lifecycle and defining service policies to troubleshooting connectivity issues and executing and managing integrations. 
+The web portal provides a fully responsive design, supporting Desktop, Mobile phones and Tablets.
+
 
 ### Operation Center
 
-  - Dashboards
-  - Device details
-  - Location Information
-  - Network reset
+The emnify Portal serves as an operation center to monitor, manage and troubleshoot the device connectivity.
+
+#### Dashboards
+The Portal provides detailed reports about data and SMS traffic, costs for individual devices or the full organization, and in which networks the service has been used.
+
+#### Device Details 
+The portal provides an overview of all relevant information, such as real-time connection status, statistics, and detailed connectivity events which include location updates and PDP session creation logs for each device.
+
+#### Device Policies
+An Enterprise can define multiple service polices and coverage polices.
+Devices can then be assigned to their respective policies thus creating groups which can simplify device management when large numbers of devices are deployed.
+Each device group's access, traffic limits, and data plan only needs to be configured once for it to be applied to all devices in the group.
+
+#### Location Information
+Based on the location of the cell tower to which the device is connected, the emnify Portal displays map indicating the device's location.  
 
 ### SIM management
 

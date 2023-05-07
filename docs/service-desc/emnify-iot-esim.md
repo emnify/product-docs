@@ -3,14 +3,10 @@ description: Form factors, quality grades, multi-IMSI, eSIM, eUICC
 ---
 # emnify IoT eSIM
 
-emnify provides eSIMs that are built specifically for IoT solutions.
-Compared to regular operator SIMs, emnify eSIMs come in different quality grades that are more durable.
-They can be updated [over the air (OTA)](/glossary#ota---overtheair) using different eSIM remote SIM provisioning technologies and come in different [form factors](#form-factors).
-
-emnify eSIMs have a [multi-IMSI applet](#multi-imsi-applet) installed on the SIM.
-The multi-IMSI applet makes sure that the best network and network partners are used based a device's location.
-Using this technology, emnify provides a larger number of networks than traditional operators.
-With access to the largest global [LPWAN](emnify-iot-supernetwork#lpwan-lte-mnb-iot) (LTE-M and NB-IoT) footprint, emnify SIMs ensure regulatory network access in over 100 countries.
+A SIM card is basically a microprocessor that allows a device to connect to cellular networks. Nevertheless, it has its own operation system, file system, and apps that differentiate it from other SIM cards. 
+The emnify IoT eSIM has been specifically designed and programmed to serve enterprises that want to deploy their devices in any part of the world.
+It's important to consider that the SIM cards in IoT devices - in contrast to consumer SIM cards used in smartphones - cannot be swapped out when delivered to a customer site. 
+With state of the art technology such as the M2M eUICC standard and software applications such as the multi-IMSI applet, the emnify IoT eSIM ensures reliable connectivity. 
 
 ## eSIM technology
 
@@ -243,8 +239,8 @@ While emnify has roaming agreements and local contracts with operators around th
 
 The multi-IMSI applet works in the following manner.
 emnify has its own operator identity ([IMSI](/glossary#imsi---international-mobile-subscriber-identity)) as well as the partner operator's IMSI stored on the SIM card.
-Each IMSI / partner operator usually has more than one network accessible per country.
-The applet also includes a preferred IMSI list per country.
+In most countries, an IMSI / partner operator will have access to multiple networks.
+The applet maintains a list of preferred IMSIs to take advantage of such alternate sources of connectivity.
 For example, this list defines that IMSI *X* will have the highest priority for access in country *A*.
 However, if the device can't connect, another operator, IMSI *Y*, will be next on the list of priorities.
 So when a device then moves to country *A*, the applet dynamically overwrites the active IMSI with IMSI *X* based on the preferred IMSI list.
