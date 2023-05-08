@@ -412,8 +412,8 @@ This can be done on the [emnify Portal](https://portal.emnify.com/) >> [**Device
 
 \begin{markdown}
 
-emnify's connectivity platform provides solutions for configuring, deploying, maintaining and monitoring your IoT assets globally.
-It it comprised of the following set of of tools.
+emnify's connectivity platform allows you to manage and monitor the connectivity services provided by emnify's IoT eSIMs via its web-based portal and APIs.
+Additionally, the platform provides network security services to protect devices against misuse and integration with cloud services.
 
 ## emnify Portal
 
@@ -442,26 +442,53 @@ Each device group's access, traffic limits, and data plan only needs to be confi
 #### Location Information
 Based on the location of the cell tower to which the device is connected, the emnify Portal displays map indicating the device's location.
 
-### SIM management
+#### SIM orders
+
+With the emnify Portal's self-service feature, an Enterprise can order emnify IoT eSIMs in any form factor with worldwide shipping destinations.
+When expedited shipping is chosen, SIM cards usually ship within the next business day. 
+
+#### SIM lifecycle management
+
+When emnify IoT eSIM cards are shipped they are in an inactive state which means no fees are incurred.
+An Enterprise can either change an eSIM's status to active, which will start the billing process for that eSIM, or put it in factory test mode.
+In factory test mode, the device can used without incurring any charges until a certain threshold of data usage is reached.
+Once the free data usage limit is reached, the eSIM automatically transitions to the active state.
+All subsequent data usage will be included in the current billing cycle. 
+SIMs can be suspended any time in order to eliminate charges for future billing cycles. 
+
+#### User management
+
+The emnify Portal provides the following user management functionality. 
+
+**User roles**
+
+Each user can be assigned one of three different roles: Observer, User, or Admin. 
 \end{markdown}
 \addspace
 \begin{markdown}
-- Ordering SIMs
-- SIM lifecycle management
+- **Observer** is able to see all the information but not do any configuration changes
+- **User** is able to see and change configuration except adding IP address ranges and adding, deleting users 
+- **Admin** can manage users and IP address ranges
 \end{markdown}
 \addspace
 \begin{markdown}
-### User and Account Management
-\end{markdown}
-\addspace
-\begin{markdown}
-- Single-Sign On
-- Multi-Factor Authentication
-- User Roles
-- Workspaces
-\end{markdown}
-\addspace
-\begin{markdown}
+  
+**Multi-Factor Authentication**
+
+The default login method is the username/password login.
+For increased security, each user can enable and disable the use of Multi-Factor Authentication (MFA).
+When chosen, an additional one-time passcode must be provided which can be retrieved using an authenticator app. 
+
+**Single Sign-On** 
+
+The emnify Portal supports signing on with a single ID which is also used for other SSO supporting applications. 
+The following authentication providers are supported: Microsoft Azure, Google OIDC.
+Additional authentication providers can be offered on request. 
+
+**Multi-Level Account Hierarchy**
+
+(Awaiting information from Pasha)
+
 ## emnify APIs
 
 ### REST API

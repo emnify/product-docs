@@ -1,14 +1,13 @@
 # emnify connectivity platform
 
-emnify's connectivity platform provides solutions for configuring, deploying, maintaining and monitoring your IoT assets globally.
-It it comprised of the following set of of tools.
+emnify's connectivity platform allows you to manage and monitor the connectivity services provided by emnify's IoT eSIMs via its web-based portal and APIs.
+Additionally, the platform provides network security services to protect devices against misuse and integration with cloud services.
 
 ## emnify Portal
 
 THe web-based [emnify Portal]( https://portal.emnify.com) is the Operation Center for the IoT SuperNetwork.
 The Portal allows Enterprise customers to monitor and manage all aspects of device communication – from viewing real-time volume and costs, managing the SIM lifecycle and defining service policies to troubleshooting connectivity issues and executing and managing integrations. 
 The web portal provides a fully responsive design, supporting Desktop, Mobile phones and Tablets.
-
 
 ### Operation Center
 
@@ -28,17 +27,47 @@ Each device group's access, traffic limits, and data plan only needs to be confi
 #### Location Information
 Based on the location of the cell tower to which the device is connected, the emnify Portal displays map indicating the device's location.  
 
-### SIM management
+#### SIM orders
 
-  - Ordering SIMs
-  - SIM lifecycle management
+With the emnify Portal's self-service feature, an Enterprise can order emnify IoT eSIMs in any form factor with worldwide shipping destinations.
+When expedited shipping is chosen, SIM cards usually ship within the next business day. 
 
-### User and Account Management
+#### SIM lifecycle management
 
-  - Single-Sign On
-  - Multi-Factor Authentication
-  - User Roles
-  - Workspaces
+When emnify IoT eSIM cards are shipped they are in an inactive state which means no fees are incurred.
+An Enterprise can either change an eSIM's status to active, which will start the billing process for that eSIM, or put it in factory test mode.
+In factory test mode, the device can used without incurring any charges until a certain threshold of data usage is reached.
+Once the free data usage limit is reached, the eSIM automatically transitions to the active state.
+All subsequent data usage will be included in the current billing cycle. 
+SIMs can be suspended any time in order to eliminate charges for future billing cycles. 
+
+#### User management
+
+The emnify Portal provides the following user management functionality. 
+
+**User roles**
+
+Each user can be assigned one of three different roles: Observer, User, or Admin. 
+
+- **Observer** is able to see all the information but not do any configuration changes
+- **User** is able to see and change configuration except adding IP address ranges and adding, deleting users 
+- **Admin** can manage users and IP address ranges
+
+**Multi-Factor Authentication**
+
+The default login method is the username/password login.
+For increased security, each user can enable and disable the use of Multi-Factor Authentication (MFA).
+When chosen, an additional one-time passcode must be provided which can be retrieved using an authenticator app. 
+
+**Single Sign-On** 
+
+The emnify Portal supports signing on with a single ID which is also used for other SSO supporting applications. 
+The following authentication providers are supported: Microsoft Azure, Google OIDC.
+Additional authentication providers can be offered on request. 
+
+**Multi-Level Account Hierarchy**
+
+(Awaiting information from Pasha)
 
 ## emnify APIs
 
