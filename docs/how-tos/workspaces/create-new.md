@@ -4,8 +4,9 @@ description: How to submit a request for a new workspace
 
 # Create a new workspace
 
-Every [company account](/glossary#company-account) on the [**Pro** plan](https://portal.emnify.com/organisation-settings/subscription#plans) is a [workspace](/glossary#workspace) by default.
-However, there are many reasons to opt for multiple workspaces.
+[Company accounts](/glossary#company-account) on the [**Pro** plan](https://portal.emnify.com/organisation-settings/subscription#plans) can have up to 5 [workspaces](/glossary#workspace).
+
+There are many reasons to opt for multiple workspaces.
 For example, organizations with foreign regional subsidiaries or companies producing products in multiple industries.
 
 This guide shows you how to submit a request for a new workspace via the [emnify Portal](https://portal.emnify.com/).

@@ -45,7 +45,7 @@ A network that does not limit or prefer any specific network in a country and es
 A company's emnify account (i.e., an [**Organization**](#organization) in the [emnify Portal](https://portal.emnify.com/)).
 
 :::note
-Every company account on the [**Pro** plan](https://portal.emnify.com/organisation-settings/subscription#plans) is a [workspace](#workspace) by default.
+Every company account (on any plan) is a [workspace](#workspace) by default.
 :::
 
 ## Connectivity status  
@@ -384,7 +384,8 @@ An independent entity in the [emnify Portal](https://portal.emnify.com/) associa
 Workspaces can be managed individually or, if [linked](#linked-workspaces), centrally by the [main organization](#main-organization) while being billed and accessed separately. 
 
 :::note
-Every [company account](#company-account) on the [**Pro** plan](https://portal.emnify.com/organisation-settings/subscription#plans) is a workspace by default.
+Every [company account](#company-account) (on any plan) is a workspace by default.
+Accounts on the [**Pro** plan](https://portal.emnify.com/organisation-settings/subscription#plans) can have up to 5 workspaces.
 :::
 
 :::tip Step-by-step guide
