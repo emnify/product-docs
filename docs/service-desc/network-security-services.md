@@ -13,7 +13,7 @@ Moreover, you can integrate security features in your solutions right from the b
 Some of the features that [SASE](/glossary#sase---secure-access-service-edge) for IoT architecture includes are as follows:
 
 - Dynamic Data Routing with Software-Defined Wide Area Network (SD-WAN)  
-emnify utilizes a SD-WAN to route data to the closest cloud region using the [Regional Breakout](iot-cloud-communication-platform#regional-breakout) concept.
+emnify utilizes a SD-WAN to route data to the closest cloud region using the [Regional Breakout](/services/iot-cloud-communication-platform#regional-breakout) concept.
 In this way, latency and data stability is improved, and the end customer can be sure that data does not leave the continent and jurisdiction.
 - Cloud Access Security Broker (CASB)  
 emnify allows centrally defining policies for the devices such as: networks that can be accessed, allowed IP addresses through which authorized users can remotely access devices.
