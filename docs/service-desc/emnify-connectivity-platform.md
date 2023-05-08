@@ -73,18 +73,19 @@ Additional authentication providers can be offered on request.
 
 ### REST API
 
-REST APIs are one way to integrate external services into your application.
-The emnify API provides a variety of HTTP requests to integrate several emnify services into your application.
+All communication management capabilities available in the emnify Portal are exposed via a REST API.
+One typical use case for integrating the REST API is synchronizing the SIM activation and deactivation with the lifecycle of devices in the field.
+Another use case is enabling end-customers to see which network is in use and allow them to block specific networks.
 
-The emnify API is based on the OpenAPI Specification OAS3.
+The [emnify REST API](https://cdn.emnify.net/api/doc/index.html) is based on the OpenAPI Specification OAS3.
 
 ### GraphQL
 
 GraphQL is a query language that enables you to define API call responses to match your use case and technical needs.
 
-The emnify GraphQL API was initially developed internally to improve performance on the Portal.
-In early 2023, we decided to release a preview version to customers.
-We hope to collect feedback and continue adding features so that the functionality more closely matches our REST API.
+While the REST API returns the entire parameter set for a specific API endpoint, GraphQL returns only the parameters needed with a single request, even when the REST API would require requests to multiple endpoints to deliver the same results.
+Using the GraphQL API can speed up response times significantly.
+It also ensures predictable results when the API evolves with additional parameters in the future. 
 
 ### Data Streamer
 

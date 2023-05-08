@@ -54,7 +54,7 @@
 
 \title{Service Description}
 \author{emnify GmbH}
-\date{\today \\ \addspace Version 1.6}
+\date{\today \\ \addspace Version 1.7}
 \maketitle
 
 \begin{center}
@@ -418,7 +418,7 @@ Additionally, the platform provides network security services to protect devices
 ## emnify Portal
 
 \end{markdown}
-The web-based \href{https://portal.emnify.com}{emnify Portal}\footnote{The emnify Portal is available via \href{https://portal.emnify.com}{https://portal.emnify.com}} is the Operation Center for the IoT SuperNetwork.
+The web-based \href{https://portal.emnify.com}{emnify Portal}\footnote{The emnify Portal is available via  \texttt{https://portal.emnify.com}} is the Operation Center for the IoT SuperNetwork.
 
 \begin{markdown}
 The Portal allows Enterprise customers to monitor and manage all aspects of device communication -- from viewing real-time volume and costs, managing the SIM lifecycle and defining service policies to troubleshooting connectivity issues and executing and managing integrations. 
@@ -493,18 +493,21 @@ Additional authentication providers can be offered on request.
 
 ### REST API
 
-REST APIs are one way to integrate external services into your application.
-The emnify API provides a variety of HTTP requests to integrate several emnify services into your application.
+All communication management capabilities available in the emnify Portal are exposed via a REST API.
+One typical use case for integrating the REST API is synchronizing the SIM activation and deactivation with the lifecycle of devices in the field.
+Another use case is enabling end-customers to see which network is in use and allow them to block specific networks.
+\end{markdown}
 
-The emnify API is based on the OpenAPI Specification OAS3.
+The \href{https://cdn.emnify.net/api/doc/index.html}{emnify REST API}\footnote{See the emnify REST API documentation: \texttt{https://cdn.emnify.net/api/doc/index.html}} is based on the OpenAPI Specification OAS3.
 
+\begin{markdown}
 ### GraphQL
 
 GraphQL is a query language that enables you to define API call responses to match your use case and technical needs.
 
-The emnify GraphQL API was initially developed internally to improve performance on the Portal.
-In early 2023, we decided to release a preview version to customers.
-We hope to collect feedback and continue adding features so that the functionality more closely matches our REST API.
+While the REST API returns the entire parameter set for a specific API endpoint, GraphQL returns only the parameters needed with a single request, even when the REST API would require requests to multiple endpoints to deliver the same results.
+Using the GraphQL API can speed up response times significantly.
+It also ensures predictable results when the API evolves with additional parameters in the future.
 
 ### Data Streamer
 
