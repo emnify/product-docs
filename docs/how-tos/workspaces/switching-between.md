@@ -1,14 +1,18 @@
 ---
-description: Move between and manage multiple organizations
+description: Move between and manage multiple workspaces
 ---
 
 # Switching between workspaces
 
+One benefit of having [linked workspaces](/glossary#linked-workspaces) is that you can manage multiple [organizations](/glossary#organization) using one emnify account.
+
+This guide shows you how to switch between your organizations via the [workspace switcher](/glossary#workspace-switcher) in the [emnify Portal](https://portal.emnify.com/).
+
 :::info
-Only **Admin** user accounts of the **Main Organization** can switch between workspaces.
+Only **Admin** [user accounts](/glossary#user-account) of the [main organization](/glossary#main-organization) can switch between workspaces.
 :::
 
-1. Log in to your [emnify account](https://portal.emnify.com/sign).
+1. [Log in to your emnify account](https://portal.emnify.com/sign).
 You should see your organization's name at the top of the primary sidebar.
 
 <img
@@ -16,11 +20,11 @@ You should see your organization's name at the top of the primary sidebar.
   alt=""
 />
 
-2. Click this to reveal the **Workspaces** modal.
+2. Click your organization's name (or the corresponding icons) to reveal the **Workspaces** modal.
 This displays a list of all the workspaces linked to your organization, as well as [**Link existing workspace**](/how-tos/workspaces/link-existing) and [**Create a new workspace**](/how-tos/workspaces/create-new) options.
-3. Select another name to navigate to that workspace.
+3. Select another [organization](/glossary#organization) name to navigate to that workspace.
 
-In the following example, we're starting from the main **AG General inc.** organization workspace and selecting the **AG EV-charging** workspace.
+In the following example, we're starting from the main **AG General inc.** workspace and selecting the **AG EV-charging** workspace.
 
 <img
   src={require('./assets/portal-sidebar-workspaces-org-list.png').default}
