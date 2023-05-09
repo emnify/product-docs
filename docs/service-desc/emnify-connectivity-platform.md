@@ -13,19 +13,27 @@ The web portal provides a fully responsive design, supporting Desktop, Mobile ph
 
 The Portal provides detailed reports about data and SMS traffic, costs for individual devices or the full organization, and in which networks the service has been used.
 
+<div className="medium-zoom-image">
+ <img
+    src={require('./assets/portal-dashboard.png').default}
+    style={{width:900}}
+    alt=""
+/>
+</div>
+
 ### Device Details 
 
 The portal provides an overview of all relevant information, such as real-time connection status, statistics, and detailed connectivity events which include location updates and PDP session creation logs for each device.
 
 ### Device Policies
 
-An Enterprise can define multiple service polices and coverage polices.
-Devices can then be assigned to their respective policies thus creating groups which can simplify device management when large numbers of devices are deployed.
-Each device group's access, traffic limits, and data plan only needs to be configured once for it to be applied to all devices in the group.
+An Enterprise can define multiple service policies and coverage policies.
+When devices are assigned to their respective policies each policy functions as a device group.
+Configuring a device group's access, traffic limits, and data plan applies the settings to all devices in the group, which reduces the burden of device management for large deployments.
 
 ### Location Information
 
-Based on the location of the cell tower to which the device is connected, the emnify Portal displays map indicating the device's location.  
+Based on the location of the cell tower to which the device is connected, the emnify Portal displays a map indicating the device's location.  
 
 ### SIM orders
 
@@ -49,8 +57,8 @@ The emnify Portal provides the following user management functionality.
 
 Each user can be assigned one of three different roles: Observer, User, or Admin. 
 
-- **Observer** is able to see all the information but not do any configuration changes
-- **User** is able to see and change configuration except adding IP address ranges and adding, deleting users 
+- **Observer** can see all the information but cannot  change configurations
+- **User** can see and change configurations, except adding IP address ranges and adding/deleting users 
 - **Admin** can manage users and IP address ranges
 
 **Multi-Factor Authentication**
@@ -65,9 +73,22 @@ The emnify Portal supports signing on with a single ID which is also used for ot
 The following authentication providers are supported: Microsoft Azure, Google OIDC.
 Additional authentication providers can be offered on request. 
 
-**Multi-Level Account Hierarchy**
+**Workspaces**
 
-(Awaiting information from Pasha)
+Workspaces is available for PRO package Enterprises.
+It is well-suited for Enterprises with complex business structures or those with a diverse set of products and services.
+
+<div className="medium-zoom-image">
+ <img
+    src={require('./assets/workspaces.png').default}
+    style={{width:900}}
+    alt=""
+/>
+</div>
+
+With the Workspaces service enabled, Enterprises can create multiple workspaces that are linked to their organization.
+Workspaces might be created based on markets (different countries/currencies), individual product lines /service types, or business units, e.g., subsidiaries.
+Each workspace functions as an independent entity that can be independently managed, or if linked, be centrally managed while being separately billed and inaccessible to regular users from other linked workspaces.
 
 ## emnify APIs
 
@@ -89,49 +110,27 @@ It also ensures predictable results when the API evolves with additional paramet
 
 ### Data Streamer
 
-With the emnify Data Streamer, enterprises can integrate real-time connectivity data directly into their third-party cloud services or business systems to build operational dashboards that visualize device, network, and application information side-by-side.
-With this comprehensive view of their IoT solution and infrastructure connectivity data, they can quickly triage and resolve issues or create business reports.
+The emnify platform provides a real-time event-based feed for ingestion into cloud services, business intelligence applications, and billing platforms.
+Enterprise customers can get real-time usage and cost records, detailed signaling, as well as policy events and alerts.
+This connectivity data provides a comprehensive view of an Enterprise's devices, network, and application data.
 
 ### SDK
 
 The emnify software development kits (SDKs) allow developers to manage their IoT devices using an intuitive set of APIs, including SIM state management and device connectivity operations.
-emnify SDKs are currently available for Java and Python.
+emnify SDKs are Open Source and currently available for Java and Python.
+For other languages, developers can use the REST API and GraphQL for creating custom applications.
 
 ### No-Code
 
-Zapier is a service that allows you to connect more than 4,000 applications - including emnify - to automate workflows.
-With the available integrations you can automate device provisioning between emnify and your application.
-For example, you can send configuration SMS to set the proper APN, when the device connects for the first time.
-Other use cases are scheduled or application-triggered SIM activations/deactivations so that the SIM contract starts and ends with the device subscription of your customers.
-The following events are available as triggers:
-
-- All events in the Data Streamer
-- Device enabled (SIM activated)
-- Device disabled (SIM deactivated)
-- Usage Limit Reached
-
-The following actions are available:
-
-- Send SMS to device
-- Create a device (SIM configuration)
-- Enable a device (SIM activation)
-- Block current network (blacklist the last tried network)
-
-Using the Zapier webhook, you can also use triggers from:
-
-- SMS delivered notification
-- Mobile originated (MO) SMS
+[Zapier](https://zapier.com/) is a service that allows you to connect more than 4,000 applications -- including emnify -- to automate workflows without needing any software development skills.
+With the available integrations you can automate tasks based on triggers.
+All Data Streamer events are available as triggers.
+For instance, a specific event might be defined as a trigger for sending an SMS.
+Another type of event might be chosen as the trigger for either activating or deactivating a SIM card.
 
 ### Events
 
 The emnify system generates several types of events.
 These events allow you to track notable system occurrences based on behavior.
-
-Some common use cases for events on emnify include:
-
-- **Triggers for custom business processes** (e.g., authentication or custom usage limitations configured on the [emnify Portal](/services/events/usage#emnify-portal))
-- **Monitoring** (e.g., SIM or data connection lifecycles)
-- **Input for custom billing systems** (i.e., updating billing configuration, processing invoices, etc.)
-
 Events are often used as triggers for custom business processes, for monitoring, and as input for custom billing systems.
 They provide information about lifecycle transitions and configuration changes.
