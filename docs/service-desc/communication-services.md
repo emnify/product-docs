@@ -5,27 +5,41 @@
 ### Public internet breakout
 
 An internet breakout is where data passes from a private network to the public internet.
-For cellular networks the internet breakout is the home operator's central location - the one that sold the SIM card.
+For cellular networks, the internet breakout is the home operator's central location - the one that sold the SIM card.
 
-The default data service on the emnify IoT SuperNetwork uses a public internet breakout.
-This means devices can connect to services using public IPs. 
-However, devices are protected by a Carrier-Grade NAT, so they are inaccessible from the public internet.
-Whenever a device opens a data session it is assigned a temporary public IP address which the destination uses for responding to the device.
-Public internet breakout IP address can change between data sessions. 
+The default data service on the emnify IoT SuperNetwork uses a public internet breakout which means devices can connect to services using public IPs.
+However, a Carrier-Grade NAT protects devices by making them inaccessible from the public internet.
+Whenever a device opens a data session, it is assigned a temporary public IP address that the destination uses for responding to the device.
+Consequently, public internet breakout IP addresses can change between data sessions.
 
 ### Virtual Private Network
 
 **Private APN**
 
-A private Access Point Name (APN) is a solution that was developed to simply identify a gateway having specific policies for accessing a network that assigns static IP addresses to devices through which they can be remotely accessed.
-The private APN was then used as an concentrated endpoint to help secure connectivity through policies like blocking public internet access.
-Private APNs are often used in conjunction with a VPN.
-However, emnify doesn't require a private APN for using a VPN.
+In legacy telecommunications infrastructure, devices need to provide a private Access Point Name (APN) to be assigned a static IP address for connecting to a secure virtual private network (VPN) on which it can communicate with the application server.
+
+The emnify IoT SuperNetwork doesn't require private APNs for connecting to a secure VPN.
+Devices can use the same standard "em" APN for both regular or secure VPN connectivity. 
+Optionally, emnify offers customized subdomain APN names to reflect Enterprise branding. 
+
+**Private static IP**
+
+Every device using an emnify IoT eSIM receives a private static IP address from an IP address range allocated solely to that specific organization and never shared.
+By definition, private static IP addresses are inaccessible from the public internet.
+However, the organization can use OpenVPN or emnify Cloud Connect to remotely access its devices on the virtual private network (VPN) or to send data downstream to them.
 
 **OpenVPN**
 
 emnify's communication platform hosts an OpenVPN service that allows you to establish a private network between a device and any remote client location.
 The remote client can be on the application server or any machine that wants to access the device remotely (such as operational staff).
+
+<div className="medium-zoom-image">
+ <img
+    src={require('./assets/vpn-options-and-public-breakout.png').default}
+    style={{width:500}}
+    alt="VPN options and public breakout"
+/>
+</div>
 
 Your IoT device doesn't need a private APN, OpenVPN software, or dynamic DNS resolution to use the OpenVPN service.
 Through the emnify IoT eSIM, each device will have a static private IP address that you can use to identify and address the device.
@@ -35,6 +49,8 @@ At the same time, the IoT device can send data through the private tunnel to the
 **Cloud Connect**
 
 The data traffic of regular SIM cards is secured within the mobile network – but traverses the public internet between the mobile network and the application, which makes the device and application susceptible to attacks and prohibits to easily establish a remote device session.
+
+
 
 With emnify Cloud Connect your devices and application servers can communicate through a secure private network – with a secure tunnel being established between the emnify platform and your cloud or on-premises application.
 

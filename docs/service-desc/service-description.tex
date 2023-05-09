@@ -9,6 +9,7 @@
 \usepackage{hyperref}
 \usepackage{float}
 \usepackage{multirow}
+\usepackage[export]{adjustbox}
 \usepackage{geometry}          % See geometry.pdf to learn the layout options. There are lots.
 \geometry{a4paper}             % ... or a4paper or a5paper or ... 
 %\geometry{landscape}          % Activate for rotated page geometry
@@ -19,6 +20,7 @@
 %\usepackage{showframe}
 \usepackage{amssymb}
 \newcommand{\addspace}{\vspace{2mm}}
+\newcommand{\removespace}{\vspace{-7mm}}
 
 \graphicspath{{assets/}}
 
@@ -54,7 +56,7 @@
 
 \title{Service Description}
 \author{emnify GmbH}
-\date{\today \\ \addspace Version 1.8}
+\date{\today \\ \addspace Version 1.8.3}
 \maketitle
 
 \begin{center}
@@ -100,9 +102,9 @@ Because M2M eSIMs can be updated with new configurations or profiles, this elimi
 
 emnify also offers consumer eSIMs for phones, tablets, and smart watches.
 The consumer eSIM can be downloaded to a device by scanning a QR code.
-If you are interested in consumer eSIM technology, please 
+For information about consumer eSIM technology, please 
 \end{markdown}
-\href{https://www.emnify.com/talk-to-us}{contact us}.
+\href{https://www.emnify.com/talk-to-us}{contact us}\footnote{Contact emnify via \texttt{https://www.emnify.com/talk-to-us}}.
 
 \pagebreak[4]
 
@@ -400,11 +402,12 @@ You can either select a specific breakout region or the network automatically se
 This can be done on the [emnify Portal](https://portal.emnify.com/) >> [**Device Policies**](https://portal.emnify.com/device-policies) >> **New service policy** which is applicable to a group of devices.
 
 \end{markdown}
-
-\begin{center}
-  \addspace
-  \includegraphics[width=15cm]{portal-device-policies-breakout-regions}
-\end{center}
+\addspace
+\begin{figure}[h]
+  \includegraphics[width=15cm, center]{portal-device-policies-breakout-regions}
+  \removespace
+  \caption{Selecting a \textbf{Breakout region} in the emnify Portal}
+\end{figure}
 
 \section{emnify connectivity platform}
 
@@ -427,11 +430,13 @@ The web portal provides a fully responsive design, supporting Desktop, Mobile ph
 The Portal provides detailed reports about data and SMS traffic, costs for individual devices or the full organization, and in which networks the service has been used.
 
 \end{markdown}
-\begin{center}
-  \addspace
+\addspace
+\begin{figure}[h]
   \includegraphics[width=15cm]{portal-dashboard}
-  \addspace
-\end{center}
+  \removespace
+  \caption{The default dashboard}
+\end{figure}
+\addspace
 \begin{markdown}
 
 ### Device Details
@@ -490,18 +495,23 @@ When chosen, an additional one-time passcode must be provided which can be retri
 The emnify Portal supports signing on with a single ID which is also used for other SSO supporting applications. 
 The following authentication providers are supported: Microsoft Azure, Google OIDC.
 Additional authentication providers can be offered on request. 
+\end{markdown}
+\pagebreak[4]
 
+\begin{markdown}
 **Workspaces**
 
 Workspaces is available for PRO package Enterprises.
 It is well-suited for Enterprises with complex business structures or those with a diverse set of products and services.
 
 \end{markdown}
-\begin{center}
-  \addspace
+\addspace
+\begin{figure}
   \includegraphics[width=15cm]{workspaces}
-  \addspace
-\end{center}
+  \removespace
+  \caption{Workspaces}
+\end{figure}
+\addspace
 \begin{markdown}
 
 With the Workspaces service enabled, Enterprises can create multiple workspaces that are linked to their organization.
@@ -581,10 +591,17 @@ Consequently, public internet breakout IP addresses can change between data sess
 
 **Private APN**
 
-A private Access Point Name (APN) is a solution that was developed to simply identify a gateway having specific policies for accessing a network that assigns static IP addresses to devices through which they can be remotely accessed.
-The private APN was then used as an concentrated endpoint to help secure connectivity through policies like blocking public internet access.
-Private APNs are often used in conjunction with a VPN.
-However, emnify doesn't require a private APN for using a VPN.
+In legacy telecommunications infrastructure, devices need to provide a private Access Point Name (APN) to be assigned a static IP address for connecting to a secure virtual private network (VPN) on which it can communicate with the application server.
+
+The emnify IoT SuperNetwork doesn't require private APNs for connecting to a secure VPN.
+Devices can use the same standard "em" APN for both regular or secure VPN connectivity. 
+Optionally, emnify offers customized subdomain APN names to reflect Enterprise branding. 
+
+**Private static IP**
+
+Every device using an emnify IoT eSIM receives a private static IP address from an IP address range allocated solely to that specific organization and never shared.
+By definition, private static IP addresses are inaccessible from the public internet.
+However, the organization can use OpenVPN or emnify Cloud Connect to remotely access its devices on the virtual private network (VPN) or to send data downstream to them.
 
 **OpenVPN**
 
@@ -599,6 +616,16 @@ At the same time, the IoT device can send data through the private tunnel to the
 **Cloud Connect**
 
 The data traffic of regular SIM cards is secured within the mobile network -- but traverses the public internet between the mobile network and the application, which makes the device and application susceptible to attacks and prohibits to easily establish a remote device session.
+
+\end{markdown}
+\addspace
+\begin{figure}[h]
+  \includegraphics[width=10cm, center]{vpn-options-and-public-breakout}
+  \removespace
+  \caption{VPN options and public breakout}
+\end{figure}
+\addspace
+\begin{markdown}
 
 With emnify Cloud Connect your devices and application servers can communicate through a secure private network -- with a secure tunnel being established between the emnify platform and your cloud or on-premises application.
 
