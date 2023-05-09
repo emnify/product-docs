@@ -122,7 +122,7 @@ For other languages, developers can use the REST API and GraphQL for creating cu
 
 ### No-Code
 
-[Zapier](https://zapier.com/) is a service that allows you to connect more than 4,000 applications -- including emnify -- to automate workflows without needing any software development skills.
+[Zapier](https://zapier.com/) is a service that allows you to connect more than 4,000 applications - including emnify - to automate workflows without needing any software development skills.
 With the available integrations you can automate tasks based on triggers.
 All Data Streamer events are available as triggers.
 For instance, a specific event might be defined as a trigger for sending an SMS.

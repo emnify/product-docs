@@ -6,8 +6,12 @@
 
 An internet breakout is where data passes from a private network to the public internet.
 For cellular networks the internet breakout is the home operator's central location - the one that sold the SIM card.
-This can pose a challenge for organizations with globally distributed devices.
-Data might have to be routed through multiple countries or even across continents before arriving at the home operator's centralized data center before being sent to its final destination.
+
+The default data service on the emnify IoT SuperNetwork uses a public internet breakout.
+This means devices can connect to services using public IPs. 
+However, devices are protected by a Carrier-Grade NAT, so they are inaccessible from the public internet.
+Whenever a device opens a data session it is assigned a temporary public IP address which the destination uses for responding to the device.
+Public internet breakout IP address can change between data sessions. 
 
 ### Virtual Private Network
 
