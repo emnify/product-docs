@@ -13,7 +13,7 @@ That's why emnify offers 3 levels of access (referred to as **Roles**) to use an
 
 1. Admin (has access to all services and user management)
 1. Observer (has access to limited services)
-1. User (has access to limited services)
+1. User (has access to all services)
 
 You can view and edit these roles on the [**Employees** page](https://portal.emnify.com/organisation-settings/users) under your **Organization settings**. 
 
