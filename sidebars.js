@@ -5,49 +5,123 @@ const sidebars = {
     "iot-supernetwork",
     {
       type: "category",
-      label: "Getting started with emnify",
+      label: "User guide",
       link: {
-        type: "doc",
-        id: "quickstart/index",
+        type: "generated-index",
+        title: "User guide",
+        slug: "userguide",
+        description: "Using the emnify Portal to manage your assets",
       },
       items: [
         {
-          type: "doc",
-          label: "Create an account",
-          id: "quickstart/index",
-        },
-        {
-          type: "doc",
-          label: "Order SIMs",
-          id: "quickstart/order-sims",
-        },
-        {
-          type: "doc",
-          label: "Register SIMs",
-          id: "quickstart/register-sims",
-        },
-        "quickstart/create-device",
-        {
           type: "category",
-          label: "Get the device online",
+          label: "Quickstart",
           link: {
-            type: "doc",
-            id: "quickstart/apn-configuration/index",
+            type: "generated-index",
+            title: "Quickstart guide",
+            slug: "quickstart",
+            description:
+              "Resources for your successful IoT cellular deployment with emnify",
           },
           items: [
+            "userguide/quickstart/getting-started",
             {
               type: "doc",
-              label: "Overview",
-              id: "quickstart/apn-configuration/index",
+              label: "Ordering SIMs",
+              id: "userguide/quickstart/ordering-sims",
             },
-            "quickstart/apn-configuration/android",
-            "quickstart/apn-configuration/ios",
-            "quickstart/apn-configuration/cellular-modules",
-            "quickstart/apn-configuration/gps-trackers",
-            "quickstart/apn-configuration/industrial-routers",
+            "userguide/quickstart/registering-sims",
+            {
+              type: "category",
+              label: "Devices",
+              link: {
+                type: "generated-index",
+                title: "Devices",
+                slug: "devices",
+                description:
+                  "How to create and configure various types of devices.",
+              },
+              items: [
+                "userguide/quickstart/devices/creating-a-device",
+                {
+                  type: "category",
+                  label: "Getting the device online",
+                  link: {
+                    type: "generated-index",
+                    title: "Getting the first device online",
+                    slug: "userguide/quickstart/devices/apn-configuration",
+                    description:
+                      "Configuring SIM-equipped devices with an Access Point Name (APN)",
+                  },
+                  items: [
+                    "userguide/quickstart/devices/android",
+                    "userguide/quickstart/devices/ios-devices",
+                    "userguide/quickstart/devices/cellular-modules",
+                    "userguide/quickstart/devices/gps-trackers",
+                    "userguide/quickstart/devices/industrial-routers",
+                  ],
+                },
+              ],
+            },
+            "userguide/quickstart/troubleshooting",
           ],
         },
-        "quickstart/troubleshooting",
+        {
+          type: "category",
+          label: "Managing SIMs and devices",
+          link: {
+            type: "generated-index",
+            title: "Managing SIMs and devices",
+            slug: "sims-and-devices",
+            description:
+              "Lifecycle management, device groups, and troubleshooting",
+          },
+          items: [
+            "userguide/sims-and-devices/lifecycle-management",
+            "userguide/sims-and-devices/device-group-policies",
+            "userguide/sims-and-devices/troubleshooting",
+          ],
+        },
+        {
+          type: "category",
+          label: "Organization management",
+          link: {
+            type: "generated-index",
+            title: "Organization management",
+            slug: "organization",
+            description: "Manage your users, security, billing, and more",
+          },
+          items: [
+            "userguide/organization/settings",
+            "userguide/organization/data",
+            "userguide/organization/users",
+            "userguide/organization/subscription",
+            "userguide/organization/billing",
+            "userguide/organization/sso",
+            "userguide/organization/workspaces",
+          ],
+        },
+        "userguide/sim-orders",
+        "userguide/sms",
+        "userguide/dashboards",
+        {
+          type: "category",
+          label: "Integrations",
+          link: {
+            type: "generated-index",
+            title: "Integrations",
+            slug: "integrations",
+            description: "Integrating with other applications and APIs",
+          },
+          items: [
+            "userguide/integrations/no-code-workflows",
+            "userguide/integrations/data-streams",
+            "userguide/integrations/secure-connection",
+            "userguide/integrations/application-tokens",
+            "userguide/integrations/ip-address-space-management",
+          ],
+        },
+        "userguide/user-settings",
       ],
     },
     {
