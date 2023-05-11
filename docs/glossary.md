@@ -17,7 +17,11 @@ Also used when authenticating the [OpenVPN](#openvpn) service.
 ## A2P SMS
 _Application–to–Peer SMS_
 
-SMS between an application and a device or vice-versa.
+The SMS sent and received between an application and a device (or vice versa).
+
+:::info
+Learn more about the [SMS types supported by the emnify platform](/services/sms) and [A2P routing via the emnify REST API](https://cdn.emnify.net/api/doc/sms-callback.html).
+:::
 
 ## Assigned SIM  
 SIM that has been assigned to an [endpoint](#endpoint).
@@ -230,7 +234,11 @@ An open-source software application that implements [virtual private network (VP
 ## P2P SMS
 _Peer–to–Peer SMS_
 
-SMS exchanged between devices.
+SMS sent from a device with any SIM to a device with the emnify SIM.
+
+:::info
+Learn more about the [SMS types supported by the emnify platform](/services/sms) and [P2P routing via the emnify REST API](https://cdn.emnify.net/api/doc/sms-callback.html).
+:::
 
 ## PDP context  
 Data structure present on both the serving GPRS support node (SGSN) and the [gateway GPRS support node (GGSN)](#ggsn), which contains the subscriber’s session information when the subscriber has an active session.
@@ -297,10 +305,28 @@ A protocol used by the telecommunications industry for exchanging SMS messages b
 An interface to send [A2P SMS](#a2p-sms) from the platform to the SIM card.
 
 ## SMS MO  
-SMS originating from the device.
+_Mobile originated SMS_
+
+SMS sent from the device with the emnify SIM.
+
+:::info
+Learn more about the [SMS types supported by the emnify platform](/services/sms).
+:::
+
+:::tip
+Using the emnify REST API, you can dispatch MO SMS from devices as HTTP `POST` requests toward a user-configurable URL.
+
+Read more: [Receive MO SMS via API Callback](https://cdn.emnify.net/api/doc/sms-callback.html)
+:::
 
 ## SMS MT  
-SMS terminated (received) by the device.
+_Mobile terminated SMS_
+
+SMS that are received by a device with an emnify SIM.
+
+:::info
+Learn more about the [SMS types supported by the emnify platform](/services/sms).
+:::
 
 ## Source address  
 The address of the SMS sender as displayed on the receiving device.
