@@ -104,7 +104,13 @@ Therefore, you can use it as a permanent identifier to keep track of your SIM ca
 A representation of the device which has a SIM installed.
 
 ## Endpoint status  
-The current state of the [endpoint](#endpoint): **Enabled** or **Disabled**.
+The current state of the [endpoint](#endpoint): 
+- **Enabled** 
+- **Disabled**
+
+:::note API Reference
+[Endpoint Status Object - emnify REST API](https://cdn.emnify.net/api/doc/endpoint.html#endpoint-status-object)
+:::
 
 ## eSIM
 _Embedded SIM_
