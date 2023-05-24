@@ -1084,7 +1084,7 @@ A user deleted another user's account.
 
 ### SIM activation
 
-The SIM is patched to the **Activated** status after previously holding one of the following statuses:
+The SIM is patched to the **Activated** [status](/glossary#sim-status) after previously holding one of the following statuses:
 **Issued**, **Suspended**, or **Factory Test**.
 
 You can manually trigger this event by using the [emnify Portal or REST API](usage).
@@ -1207,7 +1207,7 @@ Activated SIMs can use network services.
 
 ### SIM suspension
 
-The SIM is patched to the **Suspended** status, temporarily suspending and blocking it from network access.
+The SIM is patched to the **Suspended** [status](/glossary#sim-status), temporarily suspending and blocking it from network access.
 Starting from the first day of the next month, the suspended SIM will not accrue any charges.
 
 :::tip
@@ -1373,7 +1373,7 @@ Device is disabled.
 
 ### SIM factory test
 
-SIM is patched from **Issued** to **Factory Test** status (for SIM testing).
+SIM is patched from **Issued** to **Factory Test** [status](/glossary#sim-status) (for SIM testing).
 
 <details className="custom-details-example-json-response">
   <summary>Example JSON response</summary>
