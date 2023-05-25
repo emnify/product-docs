@@ -7,7 +7,7 @@ When selling connected devices, it is difficult to determine when devices will b
 Using SIM cards that cannot align with the device lifecycle incur unnecessary costs.
 
 emnify SIM cards do not incur any costs unless activated.
-The SIMs have 4 different states that can be configured via the [**SIM Inventory** page of the emnify Portal](https://portal.emnify.com/sim-inventory) or the [emnify SIM REST API](https://cdn.emnify.net/api/doc/swagger.html#/SIM):
+The SIMs have 5 different states that can be configured via the [**SIM Inventory** page of the emnify Portal](https://portal.emnify.com/sim-inventory) or the [emnify SIM REST API](https://cdn.emnify.net/api/doc/swagger.html#/SIM):
 
 - **Issued**: Initial state after the SIM has been registered to an account.
 The SIM isn't usable in this state, so it won't generate traffic or incur charges.
