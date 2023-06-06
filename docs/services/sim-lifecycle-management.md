@@ -12,8 +12,8 @@ The SIMs have 5 different states that can be configured via the [**SIM Inventory
 - **Issued**: Initial state after the SIM has been registered to an account.
 The SIM isn't usable in this state, so it won't generate traffic or incur charges.
 Issued SIMs can be tested by patching them to the _Factory Test_ state.
-- **Activated**: The SIM is enabled and can use network services. 
-The monthly charge is applied.
+- **Activated**: The SIM is enabled and can use network services if connected to a device with configured policies.
+Regardless, the SIM will be chargeable if activated anytime during the month.
 - **Suspended**: Temporarily blocks an _Activated_ SIM from network access.
 Starting from the first day of the next month, the suspended SIM will not accrue any charges.
 The SIM can be reactivated and suspended again at any time.
