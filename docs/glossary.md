@@ -127,7 +127,8 @@ Although eSIMs can be embedded directly in a device, they are also manufactured 
 The [emnify eSIM](/services/global-iot-sim) has capabilities not available with other eSIMs.
 
 ## eUICC
-_Embedded Universal Integrated Circuit Card_  
+_Embedded Universal Integrated Circuit Card_ 
+
 The embedded universal integrated circuit card (eUICC) is a component of a [SIM](#sim) card.
 It allows consumers and IoT manufacturers to provision the SIM with a new [operator profile](https://www.emnify.com/iot-glossary/mno) [over-the-air](#ota).
 
@@ -311,12 +312,8 @@ Pluggable SIMs mounted on plastic cards are offered in various form factors.
 A SIM stores data used to identify a subscriber ([IMSI](#imsi)) along with other network information for connecting and authenticating with a [mobile network operator (MNO)](https://www.emnify.com/iot-glossary/mno).
 See also [eSIM - Embedded SIM](#esim).
 
-
 ## SIM batch  
 A collection of SIM cards that can be registered with a single [BIC](#bic) code.
-
-## SMS firewall  
-A firewall that controls the SMS flow.
 
 ## SIM hosting fee  
 Monthly fee for an active SIM.
@@ -327,6 +324,13 @@ The [mobile network operator (MNO)](https://www.emnify.com/iot-glossary/mno) ID 
 ## SIM repository  
 All SIMs assigned to your organization.
 
+## SIM status
+Reflects the current state of the [SIM](#sim) in the [SIM lifecycle](/services/sim-lifecycle-management).
+
+:::note API reference
+[SIM Status Object - emnify REST API](https://cdn.emnify.net/api/doc/sim.html#status-object)
+:::
+
 ## SMPP
 _Short Message Peer–to–Peer_
 
@@ -334,6 +338,9 @@ A protocol used by the telecommunications industry for exchanging SMS messages b
 
 ## SMS console  
 An interface to send [A2P SMS](#a2p-sms) from the platform to the SIM card.
+
+## SMS firewall  
+A firewall that controls the SMS flow.
 
 ## SMS MO  
 _Mobile originated SMS_
