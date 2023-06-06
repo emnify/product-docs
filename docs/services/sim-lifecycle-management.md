@@ -14,11 +14,11 @@ The SIM isn't usable in this state, so it won't generate traffic or incur charge
 Issued SIMs can be tested by patching them to the _Factory Test_ state.
 - **Activated**: The SIM is enabled and can use network services. 
 The monthly charge is applied.
-- **Suspended**: Temporarily blocks the SIM from network access.
-Starting from the first day of the next month, the suspended SIM will not accrue any charges, so suspending an unused activated SIM can help save on costs.
-The SIM can be activated anytime afterward.
+- **Suspended**: Temporarily blocks an _Activated_ SIM from network access.
+Starting from the first day of the next month, the suspended SIM will not accrue any charges.
+The SIM can be reactivated and suspended again at any time.
 - **Factory Test**: The SIM is enabled and can generate traffic. 
 It can be used for a defined data or SMS limit without incurring charges.
-Once this limit is reached, the SIM will automatically move to the _Activated_ state.
+Once this limit is reached or 180 days have elapsed, the SIM will automatically move to the _Activated_ state.
 - **Deleted**: Permanently removes the SIM from the SIM Inventory.
 Once deleted, it cannot be restored for network access.
