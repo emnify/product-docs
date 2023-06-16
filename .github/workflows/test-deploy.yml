@@ -16,6 +16,12 @@ jobs:
           node-version: 18
           cache: yarn
 
+      - name: 🔒 Setup env file
+        run: |
+          touch .env
+          echo ALGOLIA_APP_ID='${{ secrets.ALGOLIA_APP_ID }}' >> .env
+          echo ALGOLIA_SEARCH_API_KEY='${{ secrets.ALGOLIA_SEARCH_API_KEY }}' >> .env
+          cat .env
       - name: Install dependencies
         run: yarn install --frozen-lockfile
       - name: Test build website
