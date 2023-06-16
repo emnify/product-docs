@@ -1,4 +1,6 @@
 // @ts-check
+require("dotenv").config();
+
 const lightCodeTheme = require("prism-react-renderer/themes/vsLight");
 
 /** @type {import('@docusaurus/types').Config} */
@@ -76,8 +78,8 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       algolia: {
-        appId: "WXU9AQM67J",
-        apiKey: "a380e3840d2b7280e3def05bc7f270f3",
+        appId: process.env.ALGOLIA_APP_ID,
+        apiKey: process.env.ALGOLIA_SEARCH_API_KEY,
         indexName: "emnify",
         contextualSearch: true,
       },
