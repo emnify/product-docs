@@ -236,7 +236,7 @@ You can also create an event stream with [AWS Kinesis integration](available-int
 ```
 
 :::note API Reference
-[emnify API specification - Create Data Stream](https://cdn.emnify.net/api/doc/swagger.html#/Integrations/CreateDataStreamer).
+[Create Data Stream - emnify REST API](https://cdn.emnify.net/api/doc/swagger.html#/Integrations/CreateDataStreamer).
 :::
 
 ### Listing data streams
@@ -252,7 +252,7 @@ curl -X GET "https://cdn.emnify.net/api/v2/data_stream" \
 ```
 
 :::note API Reference
-[emnify API specification - List Data Stream configurations of your organization](https://cdn.emnify.net/api/doc/swagger.html#/Integrations/ListDataStreamerV2s)
+[List data stream configurations of your organization - emnify REST API](https://cdn.emnify.net/api/doc/swagger.html#/Integrations/ListDataStreamerV2s)
 :::
 
 ### Retrieving details
@@ -270,7 +270,7 @@ curl -X GET "https://cdn.emnify.net/api/v2/data_stream/123" \
 ```
 
 :::note API Reference
-[emnify API specification - Get Details on Existing Data Stream](https://cdn.emnify.net/api/doc/swagger.html#/Integrations/GetDataStreamerByIdV2)
+[Get Details on Existing Data Stream - emnify REST API](https://cdn.emnify.net/api/doc/swagger.html#/Integrations/GetDataStreamerByIdV2)
 :::
 
 ### Updating data streams
@@ -302,7 +302,7 @@ The following example shows how to pause a stream and erase any filters:
 ```
 
 :::note API Reference
-[emnify API specification - Modify Existing Data Stream](https://cdn.emnify.net/api/doc/swagger.html#/Integrations/PatchV2DataStream)
+[Modify Existing Data Stream - emnify REST API](https://cdn.emnify.net/api/doc/swagger.html#/Integrations/PatchV2DataStream)
 :::
 
 ### Deleting data streams
@@ -320,5 +320,5 @@ curl -X DELETE "https://cdn.emnify.net/api/v2/data_stream/123" \
 ```
 
 :::note API Reference
-[emnify API specification - Delete Existing Data Stream](https://cdn.emnify.net/api/doc/swagger.html#/Integrations/DeleteDataStreamerV2)
+[Delete Existing Data Stream - emnify REST API](https://cdn.emnify.net/api/doc/swagger.html#/Integrations/DeleteDataStreamerV2)
 :::

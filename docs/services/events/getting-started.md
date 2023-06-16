@@ -35,7 +35,7 @@ Events are distinguished by three severity levels:
 * **Critical**: Serious issue that likely requires additional follow-up (e.g., charging for an invoice failed).
 
 :::note API Reference 
-[Event Severity Object - Event API Reference Documentation](https://cdn.emnify.net/api/doc/event.html#event-severity-object)
+[Event Severity Object - emnify REST API](https://cdn.emnify.net/api/doc/event.html#event-severity-object)
 :::
 
 ### Event source
@@ -54,7 +54,7 @@ That's because the Portal is an interface that uses the API under the hood.
 ::: 
 
 :::note API Reference
-[Event Source Object - Event API Reference Documentation](https://cdn.emnify.net/api/doc/event.html#event-source-object)
+[Event Source Object - emnify REST API](https://cdn.emnify.net/api/doc/event.html#event-source-object)
 :::
 
 ### Event type

@@ -7,7 +7,7 @@ description: List of all available event types
 The following is a list of available event types, including their corresponding IDs and descriptions.
 
 :::note API Reference
-[Event Type Object - Event API Reference Documentation](https://cdn.emnify.net/api/doc/event.html#event-type-object)
+[Event Type Object - emnify REST API](https://cdn.emnify.net/api/doc/event.html#event-type-object)
 :::
 
 ## Generic events
