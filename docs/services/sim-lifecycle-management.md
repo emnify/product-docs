@@ -18,7 +18,7 @@ Regardless, the SIM will be chargeable if activated anytime during the month.
 Starting from the first day of the next month, the suspended SIM will not accrue any charges.
 The SIM can be reactivated and suspended again at any time.
 - **Factory Test**: The SIM is enabled and can generate traffic. 
-It can be used for a defined data or SMS limit without incurring charges.
-Once this limit is reached or 180 days have elapsed, the SIM will automatically move to the _Activated_ state.
+It can be used up to defined data and SMS thresholds without incurring charges.
+Once either threshold is crossed or 180 days have elapsed, the SIM will automatically move to the _Activated_ state.
 - **Deleted**: Permanently removes the SIM from the SIM Inventory.
 Once deleted, it cannot be restored for network access.
