@@ -175,27 +175,24 @@ const sidebars = {
           type: "category",
           label: "Workspaces",
           link: {
-            type: "generated-index",
-            description:
-              "Manage additional workspaces with separate tariffs to adjust your business needs and optimize your device costs",
-            slug: "/how-tos/workspaces",
-            title: "Workspaces on your Pro plan",
+            type: "doc",
+            id: "how-tos/workspaces/create",
           },
           items: [
             {
               type: "doc",
               label: "Create a new workspace",
-              id: "how-tos/workspaces/create-new",
+              id: "how-tos/workspaces/create",
             },
             {
               type: "doc",
               label: "Link an existing workspace",
-              id: "how-tos/workspaces/link-existing",
+              id: "how-tos/workspaces/link",
             },
             {
               type: "doc",
               label: "Switching between workspaces",
-              id: "how-tos/workspaces/switching-between",
+              id: "how-tos/workspaces/switch",
             },
           ],
         },

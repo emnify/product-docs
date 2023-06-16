@@ -1,8 +1,11 @@
 ---
 description: How to submit a request for a new workspace
+pagination_label: Create a new workspace
+pagination_next: how-tos/workspaces/link
+slug: /workspaces/create
 ---
 
-# Create a new workspace
+# Create a new workspace <span className="theme-doc-version-badge badge badge--primary beta">Beta</span>
 
 [Company accounts](/glossary#company-account) on the [**Pro** plan](https://portal.emnify.com/organisation-settings/subscription#plans) can have up to 5 [workspaces](/glossary#workspace).
 

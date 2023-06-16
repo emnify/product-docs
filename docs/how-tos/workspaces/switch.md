@@ -1,8 +1,10 @@
 ---
 description: Move between and manage multiple workspaces
+pagination_label: Switching between workspaces
+slug: /workspaces/switch
 ---
 
-# Switching between workspaces
+# Switching between workspaces <span className="theme-doc-version-badge badge badge--primary beta">Beta</span>
 
 One benefit of having [linked workspaces](/glossary#linked-workspaces) is that you can manage multiple [organizations](/glossary#organization) using one emnify account.
 
