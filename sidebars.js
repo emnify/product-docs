@@ -171,6 +171,31 @@ const sidebars = {
           label: "Two-factor authentication",
           id: "how-tos/two-factor-authentication",
         },
+        {
+          type: "category",
+          label: "Workspaces",
+          link: {
+            type: "doc",
+            id: "how-tos/workspaces/create",
+          },
+          items: [
+            {
+              type: "doc",
+              label: "Create a new workspace",
+              id: "how-tos/workspaces/create",
+            },
+            {
+              type: "doc",
+              label: "Link an existing workspace",
+              id: "how-tos/workspaces/link",
+            },
+            {
+              type: "doc",
+              label: "Switching between workspaces",
+              id: "how-tos/workspaces/switch",
+            },
+          ],
+        },
       ],
     },
     "integration-guides/index",

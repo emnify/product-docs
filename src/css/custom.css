@@ -254,3 +254,8 @@ a:has(> code) {
   margin-bottom: 10px;
   vertical-align: middle !important;
 }
+
+/* Beta badge */
+.beta {
+  margin-bottom: 0;
+}
