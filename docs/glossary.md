@@ -254,7 +254,7 @@ Luhn checksum digits are most notably used to validate [ICCID](#iccid) and [IMEI
 Linked workspaces can be centrally or individually managed.
 
 :::tip Step-by-step guide
-[Link an existing workspace](/how-tos/workspaces/link-existing)
+[Link an existing workspace](/workspaces/link)
 :::
 
 ## Main organization
@@ -460,12 +460,12 @@ Accounts on the [**Pro** plan](https://portal.emnify.com/organisation-settings/s
 :::
 
 :::tip Step-by-step guide
-[Create a new workspace](/how-tos/workspaces/create-new)
+[Create a new workspace](/workspaces/create)
 :::
 
 ## Workspace switcher
 The feature in the [emnify Portal](https://portal.emnify.com/) allowing **Admin** [user accounts](#user-account) to switch between workspaces.
 
 :::tip Step-by-step guide
-[Switching between workspaces](/how-tos/workspaces/switching-between)
+[Switching between workspaces](/workspaces/switch)
 :::

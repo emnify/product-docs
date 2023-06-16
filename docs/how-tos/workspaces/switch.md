@@ -23,7 +23,7 @@ You should see your organization's name at the top of the primary sidebar.
 />
 
 2. Click your organization's name (or the corresponding icons) to reveal the **Workspaces** modal.
-This displays a list of all the workspaces linked to your organization, as well as [**Link existing workspace**](/how-tos/workspaces/link-existing) and [**Create a new workspace**](/how-tos/workspaces/create-new) options.
+This displays a list of all the workspaces linked to your organization, as well as [**Link existing workspace**](/workspaces/link) and [**Create a new workspace**](/workspaces/create) options.
 3. Select another [organization](/glossary#organization) name to navigate to that workspace.
 
 In the following example, we're starting from the main **AG General inc.** workspace and selecting the **AG EV-charging** workspace.

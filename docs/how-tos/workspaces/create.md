@@ -13,7 +13,7 @@ There are many reasons to opt for multiple workspaces.
 For example, organizations with foreign regional subsidiaries or companies producing products in multiple industries.
 
 This guide shows you how to submit a request for a new workspace via the [emnify Portal](https://portal.emnify.com/).
-Alternatively, you can also [link existing workspaces](/how-tos/workspaces/link-existing) if you already have two or more created.
+Alternatively, you can also [link existing workspaces](/workspaces/link) if you already have two or more created.
 
 :::info
 Only **Admin** [user accounts](/glossary#user-account) of customers on our [**Pro** plan](https://portal.emnify.com/organisation-settings/subscription#plans) can create new workspaces.
