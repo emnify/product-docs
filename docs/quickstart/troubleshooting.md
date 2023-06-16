@@ -19,7 +19,7 @@ If successful the device will show as **Attached** and can already receive SMS.
 1. Create PDP context - the device has started a data transfer.
 The device will show **Online** as long is there is no delete PDP context event.
 1. Delete PDP context - the device has ended a data transfer.
-The event details will also show the data transmitted and the device status will be set to **Offline**.
+The event details will also show the data transmitted and the [connectivity status](/glossary#connectivity-status) will be set to **Offline**.
 
 There can be many update locations before or in between the data session.
 

@@ -172,7 +172,7 @@ emnify.devices.change_status(device=device, enable=True)
 # Retrieving updated device details
 device = emnify.devices.retrieve_device(device_id=device_id)
 device_status = device.status.description  # Device status will be 'Enabled'
-sim_status = device.sim.status.description  # Device status will be 'Activated'
+sim_status = device.sim.status.description  # SIM status will be 'Activated'
 ```
 
 ### Configure a device

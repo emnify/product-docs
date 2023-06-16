@@ -46,15 +46,13 @@ URL that will be called by a service to send and receive data related to an even
 A network that does not limit or prefer any specific network in a country and establishes a connection over any network that is transparent to the device.
 
 ## Check digit
-A [checksum](#checksum) used to validate [EID](#eid) numbers.
+A checksum appended to identification data (e.g., [IMEI](#imei), [EID](#eid), or [ICCID](#iccid)) representing the preceding digits and calculated using an algorithm. 
 
-## Checksum
-A digit representing the sum of the correct digits, typically the final number(s) in a sequence.
-Checksums are often used to verify data integrity and help prevent errors in equipment databases.
+Check digits are used to validate the identifier, verify data integrity, and help prevent errors in equipment databases.
 
 :::tip
-Several identifiers have a checksum but can be calculated differently and have different names.
-For example, [ICCID](#iccid) numbers use a [_Luhn checksum digit_](#luhn-checksum-digit), while the last digits of the [EID](#eid) are called [_check digits_](#check-digit).
+Several identifiers have a check digits but can be calculated differently and have different names.
+For example, [ICCID](#iccid) numbers use a [_Luhn checksum digit_](#luhn-checksum-digit), while the last digits of the [EID](#eid) are called _check digits_.
 :::
 
 ## Connectivity status  
@@ -115,8 +113,17 @@ Therefore, you can use it as a permanent identifier to keep track of your SIM ca
 ## Endpoint  
 A representation of the device which has a SIM installed.
 
-## Endpoint status  
-The current state of the [endpoint](#endpoint): **Enabled** or **Disabled**.
+## Endpoint status
+_Also referred to as **Device status**_
+
+Reflects the current state of the [endpoint](#endpoint) or device:
+- **Enabled**: SIM is [assigned](#assigned-sim) to the device and activated.
+- **Disabled**: No SIM assigned, or the assigned SIM is deactivated.
+- **Deleted**: Permanently removed from your [Connected Devices](https://portal.emnify.com/connected-devices).
+
+:::note API Reference
+[Endpoint Status Object - emnify REST API](https://cdn.emnify.net/api/doc/endpoint.html#endpoint-status-object)
+:::
 
 ## eSIM
 _Embedded SIM_
@@ -199,7 +206,7 @@ A unique number used to identify cellular modems.
 
 :::info
 There are also "software versions" of IMEIs, referred to as _IMEISVs_. 
-In an IMEISV, there is no [checksum](#checksum), and the last two digits represent the Software Version Number (SVN).
+In an IMEISV, there is no [check digit](#check-digit), and the last two digits represent the Software Version Number (SVN).
 :::
 
 ## IMEI lock  
@@ -229,7 +236,7 @@ _Location Area Code_
 A unique 16-digit fixed-length location area identity code that identifies a phone number’s location area.
 
 ## Luhn checksum digit
-A [checksum](#checksum) calculated from the previous digits using the [Luhn algorithm](https://en.wikipedia.org/wiki/Luhn_algorithm).
+A [check digit](#check-digit) calculated from the previous digits using the [Luhn algorithm](https://en.wikipedia.org/wiki/Luhn_algorithm).
 
 :::tip
 Luhn checksum digits are most notably used to validate [ICCID](#iccid) and [IMEI](#imei) numbers.

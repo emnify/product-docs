@@ -305,7 +305,7 @@ The visited network may send this event if the device is unreachable or switched
 
 The home network (emnify) may send this event to delete all information on the visited network, so the device needs a new authentication.
 
-Once executed, the device status will appear as **Offline** in the [emnify Portal](usage#emnify-portal).
+Once executed, the [connectivity status](/glossary#connectivity-status) will appear as **Offline** in the [emnify Portal](usage#emnify-portal).
 
 **Example**: The network deletes the routing information for a mobile-terminated call or mobile-terminated short message and marks the device not reachable.
 
