@@ -246,6 +246,11 @@ const config = {
             to: "/",
             from: ["/quickstart", "/quickstart/getting-started"],
           },
+          // Home - Services
+          {
+            to: "/connectivity",
+            from: "/services",
+          },
           // Home - Support
           {
             to: "/support",
