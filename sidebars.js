@@ -54,6 +54,95 @@ const sidebars = {
     },
     {
       type: "category",
+      label: "emnify Portal",
+      link: {
+        type: "generated-index",
+        title: "Working with the emnify Portal",
+        slug: "/portal",
+      },
+      items: [
+        {
+          type: "category",
+          label: "How-tos",
+          link: {
+            type: "doc",
+            id: "how-tos/index",
+          },
+          items: [
+            {
+              type: "doc",
+              label: "Overview",
+              id: "how-tos/index",
+            },
+            {
+              type: "doc",
+              label: "Multi-inclusive volumes",
+              id: "how-tos/multi-inclusive-volumes",
+            },
+            {
+              type: "doc",
+              label: "Two-factor authentication",
+              id: "how-tos/two-factor-authentication",
+            },
+            {
+              type: "category",
+              label: "Workspaces",
+              link: {
+                type: "doc",
+                id: "how-tos/workspaces/create",
+              },
+              items: [
+                {
+                  type: "doc",
+                  label: "Create a new workspace",
+                  id: "how-tos/workspaces/create",
+                },
+                {
+                  type: "doc",
+                  label: "Link an existing workspace",
+                  id: "how-tos/workspaces/link",
+                },
+                {
+                  type: "doc",
+                  label: "Switching between workspaces",
+                  id: "how-tos/workspaces/switch",
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: "category",
+          label: "Single Sign-On",
+          link: {
+            type: "generated-index",
+            description:
+              "With Single Sign-On (SSO) enabled, your organization can access the emnify Portal using your existing account credentials",
+            slug: "/sso",
+            title: "Single Sign-On",
+          },
+          items: [
+            {
+              type: "doc",
+              label: "Microsoft Active Directory",
+              id: "sso/microsoft-active-directory",
+            },
+            {
+              type: "doc",
+              label: "Google Cloud Platform",
+              id: "sso/google-cloud-platform",
+            },
+            {
+              type: "doc",
+              label: "Troubleshooting",
+              id: "sso/troubleshooting",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      type: "category",
       label: "Services",
       link: {
         type: "generated-index",
@@ -115,84 +204,6 @@ const sidebars = {
         "services/sim-lifecycle-management",
         "services/endpoint-management-and-group-policies",
         "services/support",
-      ],
-    },
-    {
-      type: "category",
-      label: "Single Sign-On",
-      link: {
-        type: "generated-index",
-        description:
-          "With Single Sign-On (SSO) enabled, your organization can access the emnify Portal using your existing account credentials",
-        slug: "/sso",
-        title: "Single Sign-On",
-      },
-      items: [
-        {
-          type: "doc",
-          label: "Microsoft Active Directory",
-          id: "sso/microsoft-active-directory",
-        },
-        {
-          type: "doc",
-          label: "Google Cloud Platform",
-          id: "sso/google-cloud-platform",
-        },
-        {
-          type: "doc",
-          label: "Troubleshooting",
-          id: "sso/troubleshooting",
-        },
-      ],
-    },
-    {
-      type: "category",
-      label: "How-tos",
-      link: {
-        type: "doc",
-        id: "how-tos/index",
-      },
-      items: [
-        {
-          type: "doc",
-          label: "Overview",
-          id: "how-tos/index",
-        },
-        {
-          type: "doc",
-          label: "Multi-inclusive volumes",
-          id: "how-tos/multi-inclusive-volumes",
-        },
-        {
-          type: "doc",
-          label: "Two-factor authentication",
-          id: "how-tos/two-factor-authentication",
-        },
-        {
-          type: "category",
-          label: "Workspaces",
-          link: {
-            type: "doc",
-            id: "how-tos/workspaces/create",
-          },
-          items: [
-            {
-              type: "doc",
-              label: "Create a new workspace",
-              id: "how-tos/workspaces/create",
-            },
-            {
-              type: "doc",
-              label: "Link an existing workspace",
-              id: "how-tos/workspaces/link",
-            },
-            {
-              type: "doc",
-              label: "Switching between workspaces",
-              id: "how-tos/workspaces/switch",
-            },
-          ],
-        },
       ],
     },
     "integration-guides/index",
