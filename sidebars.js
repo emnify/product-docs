@@ -227,82 +227,108 @@ const sidebars = {
     "glossary",
     "support",
   ],
-  restSidebar: [
-    {
-      type: "doc",
-      label: "Getting started",
-      id: "rest/getting-started",
-    },
-    "rest/authentication",
-    "rest/sms-operations",
-    {
-      type: "link",
-      label: "API reference",
-      href: "https://cdn.emnify.net/api/doc/index.html",
-    },
-  ],
-  graphqlSidebar: [
-    {
-      type: "doc",
-      label: "Preview the GraphQL API",
-      id: "graphql/preview",
-    },
-    "graphql/using-graphiql",
-  ],
-  sdkSidebar: [
-    {
-      type: "doc",
-      label: "Getting started",
-      id: "sdks/index",
-    },
-    "sdks/concepts",
+  devResourcesSidebar: [
     {
       type: "category",
-      label: "Python",
+      label: "REST API",
       link: {
-        type: "generated-index",
-        title: "emnify Python SDK",
-        description:
-          "The emnify Python software development kit (SDK) for SIM state management and device connectivity operations",
-        slug: "/sdks/python",
+        type: "doc",
+        id: "rest/getting-started",
       },
       items: [
         {
           type: "doc",
           label: "Getting started",
-          id: "sdks/python/getting-started",
+          id: "rest/getting-started",
         },
-        "sdks/python/examples",
-        "sdks/python/help",
+        "rest/authentication",
+        "rest/sms-operations",
         {
           type: "link",
-          label: "API Reference",
-          href: "https://emnify.github.io/emnify-sdk-python/autoapi/index.html",
+          label: "API reference",
+          href: "https://cdn.emnify.net/api/doc/index.html",
         },
       ],
     },
     {
       type: "category",
-      label: "Java",
+      label: "GraphQL API",
       link: {
-        type: "generated-index",
-        title: "emnify Java SDK",
-        description:
-          "The emnify Java software development kit (SDK) for SIM state management and device connectivity operations",
-        slug: "/sdks/java",
+        type: "doc",
+        id: "graphql/preview",
+      },
+      items: [
+        {
+          type: "doc",
+          label: "Preview the GraphQL API",
+          id: "graphql/preview",
+        },
+        "graphql/using-graphiql",
+      ],
+    },
+    {
+      type: "category",
+      label: "SDKs",
+      link: {
+        type: "doc",
+        id: "sdks/index",
       },
       items: [
         {
           type: "doc",
           label: "Getting started",
-          id: "sdks/java/getting-started",
+          id: "sdks/index",
         },
-        "sdks/java/examples",
-        "sdks/java/help",
+        "sdks/concepts",
         {
-          type: "link",
-          label: "API Reference",
-          href: "https://emnify.github.io/emnify-sdk-java/",
+          type: "category",
+          label: "Python",
+          link: {
+            type: "generated-index",
+            title: "emnify Python SDK",
+            description:
+              "The emnify Python software development kit (SDK) for SIM state management and device connectivity operations",
+            slug: "/sdks/python",
+          },
+          items: [
+            {
+              type: "doc",
+              label: "Getting started",
+              id: "sdks/python/getting-started",
+            },
+            "sdks/python/examples",
+            "sdks/python/help",
+            {
+              type: "link",
+              label: "API Reference",
+              href: "https://emnify.github.io/emnify-sdk-python/autoapi/index.html",
+            },
+          ],
+        },
+        {
+          type: "category",
+          label: "Java",
+          link: {
+            type: "generated-index",
+            title: "emnify Java SDK",
+            description:
+              "The emnify Java software development kit (SDK) for SIM state management and device connectivity operations",
+            slug: "/sdks/java",
+          },
+          items: [
+            {
+              type: "doc",
+              label: "Getting started",
+              id: "sdks/java/getting-started",
+            },
+            "sdks/java/examples",
+            "sdks/java/help",
+            {
+              type: "link",
+              label: "API Reference",
+              href: "https://emnify.github.io/emnify-sdk-java/",
+            },
+          ],
         },
       ],
     },

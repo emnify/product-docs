@@ -1,6 +1,6 @@
 ---
 description: Introducing the OpenAPI structure and code samples
-displayed_sidebar: restSidebar
+displayed_sidebar: devResourcesSidebar
 slug: /rest
 ---
 

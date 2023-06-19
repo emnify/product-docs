@@ -1,6 +1,6 @@
 ---
 description: How to retrieve your authentication token 
-displayed_sidebar: restSidebar
+displayed_sidebar: devResourcesSidebar
 ---
 
 # Authentication

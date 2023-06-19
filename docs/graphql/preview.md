@@ -1,6 +1,9 @@
 ---
 title: Preview the GraphQL API
+slug: /graphql
 pagination_label: Preview the GraphQL API
+pagination_next: graphql/using-graphiql
+displayed_sidebar: devResourcesSidebar
 ---
 
 # emnify GraphQL API <span className="theme-doc-version-badge badge badge--primary">Preview</span>

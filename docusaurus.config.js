@@ -129,20 +129,8 @@ const config = {
           {
             type: "docSidebar",
             position: "left",
-            sidebarId: "restSidebar",
-            label: "REST API",
-          },
-          {
-            type: "docSidebar",
-            position: "left",
-            sidebarId: "graphqlSidebar",
-            label: "GraphQL API",
-          },
-          {
-            type: "docSidebar",
-            position: "left",
-            sidebarId: "sdkSidebar",
-            label: "SDKs",
+            sidebarId: "devResourcesSidebar",
+            label: "Developer Resources",
           },
         ],
       },
@@ -256,7 +244,7 @@ const config = {
             to: "/support",
             from: "/services/support",
           },
-          // REST API
+          // Developer Resources - REST API
           {
             to: "/rest",
             from: "/rest-api",
@@ -268,6 +256,11 @@ const config = {
           {
             to: "/rest/sms-operations",
             from: "/rest-api/sms-operations",
+          },
+          // Developer Resources - GraphQL API
+          {
+            to: "/graphql",
+            from: "/graphql/preview",
           },
         ],
       },
