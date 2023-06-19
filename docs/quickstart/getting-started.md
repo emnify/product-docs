@@ -1,6 +1,7 @@
 ---
 title: Getting started with emnify
 description: How to start developing your IoT solutions with emnify
+slug: /
 ---
 # Sign up for an emnify account
 
@@ -74,7 +75,7 @@ In addition to the standard emnify services, the Evaluation Plan supports the fo
   <summary>Access via APIs, SDKs, Zapier</summary>
     <p>Automate SIM management, business processes, and other workflows using our suite of developer tools.</p>
     <ul>
-      <li>APIs (<a href="https://docs.emnify.com/rest-api">REST</a> and <a href="https://docs.emnify.com/graphql/preview">GraphQL</a>)</li>
+      <li>APIs (<a href="https://docs.emnify.com/rest">REST</a> and <a href="https://docs.emnify.com/graphql/preview">GraphQL</a>)</li>
       <li>SDKs (<a href="https://docs.emnify.com/sdks/python">Python</a> and <a href="https://docs.emnify.com/sdks/java">Java</a>)</li>
       <li>Zapier (for <a href="https://docs.emnify.com/services/no-code-workflow-automation">no-code workflow automation</a>)</li>
     </ul>

@@ -2,16 +2,12 @@
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
   mainDocsSidebar: [
-    "cellular-iot",
     {
       type: "category",
       label: "Quickstart",
       link: {
-        type: "generated-index",
-        title: "Quickstart guide",
-        slug: "quickstart",
-        description:
-          "Resources for your successful IoT cellular deployment with emnify",
+        type: "doc",
+        id: "quickstart/getting-started",
       },
       items: [
         "quickstart/getting-started",
@@ -66,6 +62,7 @@ const sidebars = {
         slug: "services",
       },
       items: [
+        "cellular-iot",
         "services/global-iot-sim",
         "services/global-iot-network",
         "services/iot-cloud-communication-platform",
@@ -205,10 +202,10 @@ const sidebars = {
     {
       type: "doc",
       label: "Getting started",
-      id: "rest-api/getting-started",
+      id: "rest/getting-started",
     },
-    "rest-api/authentication",
-    "rest-api/sms-operations",
+    "rest/authentication",
+    "rest/sms-operations",
     {
       type: "link",
       label: "API reference",

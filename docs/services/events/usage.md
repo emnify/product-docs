@@ -62,7 +62,7 @@ Learn more in the [Data Streamer usage documentation](/services/data-streamer/us
 
 ## Event API
 
-The [emnify REST API](/rest-api) provides a variety of HTTP requests to integrate several emnify services into your application, including triggering and monitoring events.
+The [emnify REST API](/rest) provides a variety of HTTP requests to integrate several emnify services into your application, including triggering and monitoring events.
 
 The [Event API](#retrieving-events-with-the-event-api) specifically allows searching for recent events and supports various types of result filtering.
 

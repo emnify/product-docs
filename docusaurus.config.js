@@ -116,6 +116,7 @@ const config = {
         title: "Documentation",
         logo: {
           alt: "emnify Documentation – Home",
+          href: "/",
           src: "img/logo-word-blue-295x80.png",
         },
         items: [
@@ -234,7 +235,34 @@ const config = {
       },
     }),
 
-  plugins: [require.resolve("docusaurus-plugin-image-zoom")],
+  plugins: [
+    require.resolve("docusaurus-plugin-image-zoom"),
+    [
+      "@docusaurus/plugin-client-redirects",
+      {
+        redirects: [
+          // Home - Quickstart
+          {
+            to: "/",
+            from: ["/quickstart", "/quickstart/getting-started"],
+          },
+          // REST API
+          {
+            to: "/rest",
+            from: "/rest-api",
+          },
+          {
+            to: "/rest/authentication",
+            from: "/rest-api/authentication",
+          },
+          {
+            to: "/rest/sms-operations",
+            from: "/rest-api/sms-operations",
+          },
+        ],
+      },
+    ],
+  ],
 };
 
 module.exports = config;

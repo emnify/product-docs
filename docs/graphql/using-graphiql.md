@@ -100,7 +100,7 @@ We recommend storing it in a safe place (e.g., a password manager).
 Your new token should now be available at the bottom of the **Application Tokens** list.
 
 :::info
-Alternatively, you can retrieve your application token from the [emnify REST API](/rest-api/authentication#authenticate-with-an-application-token).
+Alternatively, you can retrieve your application token from the [emnify REST API](/rest/authentication#authenticate-with-an-application-token).
 :::
 
 ### Adding your application token to GraphiQL

@@ -72,8 +72,8 @@ You can use environment variables for storing configuration settings like an app
 | Name               | Description                                                              |
 |--------------------|--------------------------------------------------------------------------|
 | `EMNIFY_BASE_PATH` | Base URL to form a request. Default value:  `https://cdn.emnify.net` |
-| `EMNIFY_APPLICATION_TOKEN`  | Variable for authenticating via an [application token](/rest-api/authentication#authenticate-with-an-application-token). |
-| `EMNIFY_USERNAME` and `EMNIFY_PASSWORD` | Variables for authenticating via [username and password](/rest-api/authentication#authenticate-with-user-credentials). |
+| `EMNIFY_APPLICATION_TOKEN`  | Variable for authenticating via an [application token](/rest/authentication#authenticate-with-an-application-token). |
+| `EMNIFY_USERNAME` and `EMNIFY_PASSWORD` | Variables for authenticating via [username and password](/rest/authentication#authenticate-with-user-credentials). |
 
 ## Explore more 
 

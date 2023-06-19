@@ -17,7 +17,7 @@ description: Must-knows for working with the emnify SDKs
 | Blacklist Operators  | Method that allows you to restrict device connectivity to a specific operator or group of operators.  |
 | Operator  | Underlying mobile network operator (MNO) used to provide connectivity. Explore operator coverage by country and region on [our pricing page](https://www.emnify.com/pricing).  |
 | SMS  | [Learn more about SMS](/services/sms).  |
-| Application Token  | Authenticates your identity when using the emnify SDK and API. [Learn how to generate an application token](/rest-api/authentication#authenticate-with-an-application-token).  |
+| Application Token  | Authenticates your identity when using the emnify SDK and API. [Learn how to generate an application token](/rest/authentication#authenticate-with-an-application-token).  |
 
 :::tip
 More terminology and definitions are available in the [Developer Glossary](/glossary). 
