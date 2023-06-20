@@ -30,13 +30,15 @@ const sidebars = {
           type: "category",
           label: "Get the device online",
           link: {
-            type: "generated-index",
-            title: "Get the device online",
-            slug: "apn-configuration",
-            description:
-              "Configure SIM-equipped devices with an Access Point Name (APN)",
+            type: "doc",
+            id: "quickstart/devices/index",
           },
           items: [
+            {
+              type: "doc",
+              label: "Overview",
+              id: "quickstart/devices/index",
+            },
             "quickstart/devices/android",
             "quickstart/devices/ios-devices",
             "quickstart/devices/cellular-modules",

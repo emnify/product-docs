@@ -8,7 +8,7 @@ description: Must-knows for working with the emnify SDKs
 
 | Name      | Description |
 | :-------- | :---------- |
-| Device  | Any physical device supplied with a SIM that obtains connectivity. It's important not to mix up the terms 'Device' and 'Endpoint.' A device is a superset of the endpoint and SIM acting as a whole. [Learn more about devices](/devices).  |
+| Device  | Any physical device supplied with a SIM that obtains connectivity. It's important not to mix up the terms 'Device' and 'Endpoint.' A device is a superset of the endpoint and SIM acting as a whole. [Learn more about devices](/create-device).  |
 | Device Status  | Primary way to control connectivity. It can be either **Enabled** or **Disabled**. When **Enabled**, a device that has a SIM assigned can go online. On the other hand, when **Disabled**, the device doesn't get any service.  |
 | SIM  | Represents a physical or eSIM issued by emnify. [Learn more about SIM cards](https://support.emnify.com/hc/en-us/sections/360000642374-SIM-cards).  |
 | SIM Status  | Status of the SIM's phase in the [SIM lifecycle](/services/sim-lifecycle-management). When using the SDK, avoid changing the SIM status directly. Instead, change it using the device status.  |

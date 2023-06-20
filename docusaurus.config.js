@@ -235,15 +235,15 @@ const config = {
             from: ["/quickstart", "/quickstart/getting-started"],
           },
           {
-            to: "/devices",
-            from: [
-              "/quickstart/devices/creating-a-device",
-              "/quickstart/devices",
-            ],
+            to: "/create-device",
+            from: "/quickstart/devices/creating-a-device",
           },
           {
             to: "/apn-configuration",
-            from: "/quickstart/devices/apn-configuration",
+            from: [
+              "/quickstart/devices/apn-configuration",
+              "/quickstart/devices",
+            ],
           },
           // Home - Services
           {
