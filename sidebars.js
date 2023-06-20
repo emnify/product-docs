@@ -4,26 +4,38 @@ const sidebars = {
   mainDocsSidebar: [
     {
       type: "category",
-      label: "Quickstart",
+      label: "Getting started with emnify",
       link: {
         type: "doc",
         id: "quickstart/getting-started",
       },
       items: [
-        "quickstart/getting-started",
         {
           type: "doc",
-          label: "Ordering SIMs",
+          label: "Create an account",
+          id: "quickstart/getting-started",
+        },
+        {
+          type: "doc",
+          label: "Order SIMs",
           id: "quickstart/ordering-sims",
         },
-        "quickstart/registering-sims",
-        "quickstart/devices/creating-a-device",
+        {
+          type: "doc",
+          label: "Register SIMs",
+          id: "quickstart/registering-sims",
+        },
+        {
+          type: "doc",
+          label: "Create a device",
+          id: "quickstart/devices/creating-a-device",
+        },
         {
           type: "category",
-          label: "Getting the device online",
+          label: "Get the device online",
           link: {
             type: "generated-index",
-            title: "Getting the first device online",
+            title: "Get the first device online",
             slug: "apn-configuration",
             description:
               "Configuring SIM-equipped devices with an Access Point Name (APN)",
@@ -44,7 +56,7 @@ const sidebars = {
       label: "emnify Portal",
       link: {
         type: "generated-index",
-        title: "Working with the emnify Portal",
+        title: "Work with the emnify Portal",
         slug: "/portal",
       },
       items: [
@@ -65,6 +77,34 @@ const sidebars = {
               type: "doc",
               label: "Multi-inclusive volumes",
               id: "how-tos/multi-inclusive-volumes",
+            },
+            {
+              type: "category",
+              label: "Single Sign-On",
+              link: {
+                type: "generated-index",
+                description:
+                  "With Single Sign-On (SSO) enabled, your organization can access the emnify Portal using your existing account credentials",
+                slug: "/sso",
+                title: "Single Sign-On",
+              },
+              items: [
+                {
+                  type: "doc",
+                  label: "Microsoft Active Directory",
+                  id: "sso/microsoft-active-directory",
+                },
+                {
+                  type: "doc",
+                  label: "Google Cloud Platform",
+                  id: "sso/google-cloud-platform",
+                },
+                {
+                  type: "doc",
+                  label: "Troubleshooting",
+                  id: "sso/troubleshooting",
+                },
+              ],
             },
             {
               type: "doc",
@@ -91,7 +131,7 @@ const sidebars = {
                 },
                 {
                   type: "doc",
-                  label: "Switching between workspaces",
+                  label: "Switch between workspaces",
                   id: "how-tos/workspaces/switch",
                 },
               ],
@@ -99,42 +139,26 @@ const sidebars = {
           ],
         },
         {
-          type: "category",
-          label: "Single Sign-On",
-          link: {
-            type: "generated-index",
-            description:
-              "With Single Sign-On (SSO) enabled, your organization can access the emnify Portal using your existing account credentials",
-            slug: "/sso",
-            title: "Single Sign-On",
-          },
-          items: [
-            {
-              type: "doc",
-              label: "Microsoft Active Directory",
-              id: "sso/microsoft-active-directory",
-            },
-            {
-              type: "doc",
-              label: "Google Cloud Platform",
-              id: "sso/google-cloud-platform",
-            },
-            {
-              type: "doc",
-              label: "Troubleshooting",
-              id: "sso/troubleshooting",
-            },
-          ],
+          type: "doc",
+          label: "Reports",
+          id: "services/business-intelligence-and-analytics-reports",
         },
-        "services/business-intelligence-and-analytics-reports",
-        "services/endpoint-management-and-group-policies",
-        "services/no-code-workflow-automation",
+        {
+          type: "doc",
+          label: "Device policies",
+          id: "services/endpoint-management-and-group-policies",
+        },
+        {
+          type: "doc",
+          label: "No-code automation",
+          id: "services/no-code-workflow-automation",
+        },
         "services/user-management",
       ],
     },
     {
       type: "category",
-      label: "Connectivity Services",
+      label: "Connectivity services",
       link: {
         type: "generated-index",
         slug: "connectivity",
@@ -148,7 +172,7 @@ const sidebars = {
     },
     {
       type: "category",
-      label: "Platform Services",
+      label: "Platform services",
       link: {
         type: "generated-index",
         slug: "platform",
@@ -166,13 +190,21 @@ const sidebars = {
           items: [
             {
               type: "doc",
-              label: "Getting started",
+              label: "Overview",
               id: "services/data-streamer/getting-started",
             },
             "services/data-streamer/connection-types",
             "services/data-streamer/stream-types",
-            "services/data-streamer/managing-data-streams",
-            "services/data-streamer/usage",
+            {
+              type: "doc",
+              label: "Manage data streams",
+              id: "services/data-streamer/managing-data-streams",
+            },
+            {
+              type: "doc",
+              label: "Usage",
+              id: "services/data-streamer/usage",
+            },
             "services/data-streamer/available-integrations",
           ],
         },
@@ -187,11 +219,15 @@ const sidebars = {
           items: [
             {
               type: "doc",
-              label: "Getting started",
+              label: "Overview",
               id: "services/events/getting-started",
             },
             "services/events/event-types",
-            "services/events/usage",
+            {
+              type: "doc",
+              label: "Usage",
+              id: "services/events/usage",
+            },
           ],
         },
         "services/security",
@@ -206,7 +242,11 @@ const sidebars = {
       },
       items: [
         "services/global-iot-network",
-        "services/iot-cloud-communication-platform",
+        {
+          type: "doc",
+          label: "IoT communication platform",
+          id: "services/iot-cloud-communication-platform",
+        },
         "services/cloud-connect",
         "services/openvpn",
       ],
@@ -225,11 +265,15 @@ const sidebars = {
       items: [
         {
           type: "doc",
-          label: "Getting started",
+          label: "Overview",
           id: "rest/getting-started",
         },
         "rest/authentication",
-        "rest/sms-operations",
+        {
+          type: "doc",
+          label: "Send and receive SMS",
+          id: "rest/sms-operations",
+        },
         {
           type: "link",
           label: "API reference",
@@ -250,7 +294,11 @@ const sidebars = {
           label: "Preview the GraphQL API",
           id: "graphql/preview",
         },
-        "graphql/using-graphiql",
+        {
+          type: "doc",
+          label: "Use the GraphiQL IDE",
+          id: "graphql/using-graphiql",
+        },
       ],
     },
     {
@@ -263,7 +311,7 @@ const sidebars = {
       items: [
         {
           type: "doc",
-          label: "Getting started",
+          label: "Overview",
           id: "sdks/index",
         },
         "sdks/concepts",
