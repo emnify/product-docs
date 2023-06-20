@@ -1,5 +1,6 @@
 ---
 description: Defining the device to be used with the SIM
+slug: /devices
 ---
 # Creating a device
 

@@ -234,6 +234,17 @@ const config = {
             to: "/",
             from: ["/quickstart", "/quickstart/getting-started"],
           },
+          {
+            to: "/devices",
+            from: [
+              "/quickstart/devices/creating-a-device",
+              "/quickstart/devices",
+            ],
+          },
+          {
+            to: "/apn-configuration",
+            from: "/quickstart/devices/apn-configuration",
+          },
           // Home - Services
           {
             to: "/connectivity",

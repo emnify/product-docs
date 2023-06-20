@@ -17,36 +17,23 @@ const sidebars = {
           id: "quickstart/ordering-sims",
         },
         "quickstart/registering-sims",
+        "quickstart/devices/creating-a-device",
         {
           type: "category",
-          label: "Devices",
+          label: "Getting the device online",
           link: {
             type: "generated-index",
-            title: "Devices",
-            slug: "devices",
+            title: "Getting the first device online",
+            slug: "apn-configuration",
             description:
-              "How to create and configure various types of devices.",
+              "Configuring SIM-equipped devices with an Access Point Name (APN)",
           },
           items: [
-            "quickstart/devices/creating-a-device",
-            {
-              type: "category",
-              label: "Getting the device online",
-              link: {
-                type: "generated-index",
-                title: "Getting the first device online",
-                slug: "quickstart/devices/apn-configuration",
-                description:
-                  "Configuring SIM-equipped devices with an Access Point Name (APN)",
-              },
-              items: [
-                "quickstart/devices/android",
-                "quickstart/devices/ios-devices",
-                "quickstart/devices/cellular-modules",
-                "quickstart/devices/gps-trackers",
-                "quickstart/devices/industrial-routers",
-              ],
-            },
+            "quickstart/devices/android",
+            "quickstart/devices/ios-devices",
+            "quickstart/devices/cellular-modules",
+            "quickstart/devices/gps-trackers",
+            "quickstart/devices/industrial-routers",
           ],
         },
         "quickstart/troubleshooting",
@@ -208,7 +195,6 @@ const sidebars = {
           ],
         },
         "services/security",
-        "services/cloud-connect",
       ],
     },
     {
@@ -221,6 +207,7 @@ const sidebars = {
       items: [
         "services/global-iot-network",
         "services/iot-cloud-communication-platform",
+        "services/cloud-connect",
         "services/openvpn",
       ],
     },
