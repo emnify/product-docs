@@ -5,7 +5,7 @@ displayed_sidebar: devResourcesSidebar
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# How to use the GraphiQL IDE
+# Use the GraphiQL IDE
 
 So you can experiment with the emnify GraphQL API, we've set up an [in-browser GraphiQL IDE](https://graphql-playground.emnify.net/). 
 
@@ -17,7 +17,7 @@ Notable features include autocompleting, syntax highlighting, interactive docume
 If you're new to GraphQL, we'd recommend visiting the [official GraphQL documentation](https://graphql.org/learn/) to familiarize yourself with how the query language is structured.
 :::
 
-## Navigating the interface
+## Navigate the interface
 
 The UI is divided into three parts:
 
@@ -58,7 +58,7 @@ Lines that start with a `#` are ignored.
 
 To make calls from this IDE, you need to provide an [application token](#retrieving-your-application-token) in the [**Headers** section](#adding-your-application-token-to-graphiql).
 
-### Retrieving your application token
+### Retrieve your application token
 
 You can generate an application token in the emnify Portal:
 
@@ -107,7 +107,7 @@ Your new token should now be available at the bottom of the **Application Tokens
 Alternatively, you can retrieve your application token from the [emnify REST API](/rest/authentication#authenticate-with-an-application-token).
 :::
 
-### Adding your application token to GraphiQL
+### Add your application token to GraphiQL
 
 Once you have an [application token created and safely stored](#retrieving-your-application-token), you need to pass that token to the GraphiQL IDE.
 
@@ -132,7 +132,7 @@ By default, this section will have the following placeholder:
 
 To test that you're authorized, click the **Execute query** button (▶️) and check your result.
 
-## Executing your first query
+## Execute your first query
 
 When you first visit our GraphiQL IDE, you'll see a pre-populated example query in the left panel.
 
@@ -206,7 +206,7 @@ Finally, when we execute the query, it returns a `data` object with our requeste
   alt=""
 />
 
-## Writing your own query
+## Write your own query
 
 Remove any content in the left panel and begin typing:
 
@@ -253,7 +253,7 @@ To see the queries you've executed during a session, click the **Show history** 
 />
 :::
 
-## Generating code from your query
+## Generate code from your query
 
 On the left panel are buttons allowing you to generate a cURL query, Node.js code, or Python code from your GraphQL query. 
 Clicking these buttons will copy this code to your clipboard.

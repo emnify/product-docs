@@ -1,4 +1,4 @@
-# How to set up multi-inclusive volumes
+# Set up multi-inclusive volumes
 
 We introduced a multi-inclusive volumes feature, allowing you to manage different tariffs and data plans from a single account. 
 These volumes are managed within [coverage policies](/services/endpoint-management-and-group-policies#coverage-policies).
@@ -8,7 +8,7 @@ Those on a [**Plus** plan](https://portal.emnify.com/organisation-settings/subsc
 
 Once multi-inclusive volumes have been enabled on your emnify account, please ensure that your coverage policies have been adjusted correctly to take advantage of this setup.
 
-## Viewing your coverage policies
+## View your coverage policies
 
 Log in to your [emnify account](https://portal.emnify.com/sign) and navigate to the [**Device Policies**](https://portal.emnify.com/device-policies) page.
 
@@ -38,7 +38,7 @@ This coverage policy has **500 MB** in **Europe Basic (Main zone)** included on 
 Once enabled, you need to configure an inclusive volume for your coverage policies to use them with devices.
 :::
 
-## Changing the inclusive volume
+## Change the inclusive volume
 
 If you notice that one of your devices uses more (or less) data than expected, you can update its assigned inclusive volume any time during the month. 
 
@@ -114,7 +114,7 @@ In the following example, we're switching the device from **Europe 1 MB** includ
 
 In the preceding example, the two selected devices (**Walking Mobile** and **TravelSpot**) will now be assigned our **New coverage policy**.
 
-## Changing the tariff
+## Change the tariff
 
 You can also change the tariff (e.g., switching from **Global Basic Zone A** to **Regional Pro Americas**) anytime during the month. 
 

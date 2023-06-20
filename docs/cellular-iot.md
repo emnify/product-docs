@@ -1,3 +1,7 @@
+---
+description: Overview of emnify's cellular connectivity for IoT
+---
+
 # Cellular IoT
 
 Cellular is the most used wireless network technology for connecting things. 

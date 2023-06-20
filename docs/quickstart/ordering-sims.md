@@ -1,4 +1,4 @@
-# Ordering SIMs from the SIM Shop
+# Order SIMs from the SIM Shop
 
 Here's how you can order SIM cards any time on the emnify Portal.
 

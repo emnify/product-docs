@@ -2,7 +2,7 @@
 description: Step-by-step guide for installing and using the SDK
 ---
 
-# Getting started with the emnify Java SDK
+# Get started with the emnify Java SDK
 
 ## Supported Java versions 
 

@@ -1,7 +1,8 @@
 ---
-description: Using your emnify account to register your SIMs
+description: Use your emnify account to register your SIMs
 ---
-# Registering SIMs
+
+# Register emnify SIMs
 
 Once you get your emnify SIMs, you need to register them before you can start using them.
 If you order the free Evaluation SIM package, you will have to register each of the 3 SIMs separately.

@@ -1,5 +1,5 @@
 ---
-description: Configuring Quectel, u-Blox, and several other vendors
+description: Configure Quectel, u-Blox, and several other vendors
 ---
 # Cellular modules
 

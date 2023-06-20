@@ -1,10 +1,10 @@
 ---
-description: Defining the device to be used with the SIM
+description: Define the device to be used with the SIM
 slug: /devices
 ---
-# Creating a device
+# Create a device
 
-After you register a SIM, you need to create a virtual representation of the device associated with the SIM.
+After you [register a SIM](/quickstart/registering-sims), you need to create a virtual representation of the device associated with the SIM.
 To create a device, give it a name and assign a service and coverage policy.
 
 <img

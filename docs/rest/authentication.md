@@ -1,5 +1,5 @@
 ---
-description: How to retrieve your authentication token 
+description: Retrieve your authentication token 
 displayed_sidebar: devResourcesSidebar
 ---
 

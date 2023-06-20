@@ -2,7 +2,7 @@
 description: Step-by-step guide for installing and using the SDK
 ---
 
-# Getting started with the emnify Python SDK
+# Get started with the emnify Python SDK
 
 ## Installation
 
@@ -37,7 +37,7 @@ You can do this via the [**Integrations** page of the emnify Portal](https://por
 
 Once created, you'll apply it to initiate the SDK.
 
-### Using the SDK
+### Use the SDK
 
 ```python
 TOKEN = '<PASTE YOUR APPLICATION TOKEN HERE>'

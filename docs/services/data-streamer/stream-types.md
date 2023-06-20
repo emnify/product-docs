@@ -1,5 +1,5 @@
 ---
-description: Configuring the type of content delivered by the data stream
+description: Configure the type of content delivered by the data stream
 ---
 
 # Stream types

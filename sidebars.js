@@ -4,7 +4,7 @@ const sidebars = {
   mainDocsSidebar: [
     {
       type: "category",
-      label: "Getting started with emnify",
+      label: "Get started with emnify",
       link: {
         type: "doc",
         id: "quickstart/getting-started",
@@ -25,20 +25,16 @@ const sidebars = {
           label: "Register SIMs",
           id: "quickstart/registering-sims",
         },
-        {
-          type: "doc",
-          label: "Create a device",
-          id: "quickstart/devices/creating-a-device",
-        },
+        "quickstart/devices/creating-a-device",
         {
           type: "category",
           label: "Get the device online",
           link: {
             type: "generated-index",
-            title: "Get the first device online",
+            title: "Get the device online",
             slug: "apn-configuration",
             description:
-              "Configuring SIM-equipped devices with an Access Point Name (APN)",
+              "Configure SIM-equipped devices with an Access Point Name (APN)",
           },
           items: [
             "quickstart/devices/android",
@@ -56,7 +52,7 @@ const sidebars = {
       label: "emnify Portal",
       link: {
         type: "generated-index",
-        title: "Work with the emnify Portal",
+        title: "emnify Portal",
         slug: "/portal",
       },
       items: [
@@ -73,11 +69,8 @@ const sidebars = {
               label: "Overview",
               id: "how-tos/index",
             },
-            {
-              type: "doc",
-              label: "Multi-inclusive volumes",
-              id: "how-tos/multi-inclusive-volumes",
-            },
+            "how-tos/multi-inclusive-volumes",
+            "how-tos/two-factor-authentication",
             {
               type: "category",
               label: "Single Sign-On",
@@ -107,11 +100,6 @@ const sidebars = {
               ],
             },
             {
-              type: "doc",
-              label: "Two-factor authentication",
-              id: "how-tos/two-factor-authentication",
-            },
-            {
               type: "category",
               label: "Workspaces",
               link: {
@@ -119,6 +107,7 @@ const sidebars = {
                 id: "how-tos/workspaces/create",
               },
               items: [
+                // Labels need to be manually entered because of the beta badge
                 {
                   type: "doc",
                   label: "Create a new workspace",
@@ -145,7 +134,7 @@ const sidebars = {
         },
         {
           type: "doc",
-          label: "Device policies",
+          label: "Group policies",
           id: "services/endpoint-management-and-group-policies",
         },
         {
@@ -195,16 +184,8 @@ const sidebars = {
             },
             "services/data-streamer/connection-types",
             "services/data-streamer/stream-types",
-            {
-              type: "doc",
-              label: "Manage data streams",
-              id: "services/data-streamer/managing-data-streams",
-            },
-            {
-              type: "doc",
-              label: "Usage",
-              id: "services/data-streamer/usage",
-            },
+            "services/data-streamer/managing-data-streams",
+            "services/data-streamer/usage",
             "services/data-streamer/available-integrations",
           ],
         },
@@ -223,11 +204,7 @@ const sidebars = {
               id: "services/events/getting-started",
             },
             "services/events/event-types",
-            {
-              type: "doc",
-              label: "Usage",
-              id: "services/events/usage",
-            },
+            "services/events/usage",
           ],
         },
         "services/security",
@@ -235,7 +212,7 @@ const sidebars = {
     },
     {
       type: "category",
-      label: "Network Services",
+      label: "Network services",
       link: {
         type: "generated-index",
         slug: "network",
@@ -269,11 +246,7 @@ const sidebars = {
           id: "rest/getting-started",
         },
         "rest/authentication",
-        {
-          type: "doc",
-          label: "Send and receive SMS",
-          id: "rest/sms-operations",
-        },
+        "rest/sms-operations",
         {
           type: "link",
           label: "API reference",
@@ -294,11 +267,7 @@ const sidebars = {
           label: "Preview the GraphQL API",
           id: "graphql/preview",
         },
-        {
-          type: "doc",
-          label: "Use the GraphiQL IDE",
-          id: "graphql/using-graphiql",
-        },
+        "graphql/using-graphiql",
       ],
     },
     {
@@ -328,7 +297,7 @@ const sidebars = {
           items: [
             {
               type: "doc",
-              label: "Getting started",
+              label: "Get started",
               id: "sdks/python/getting-started",
             },
             "sdks/python/examples",
@@ -353,7 +322,7 @@ const sidebars = {
           items: [
             {
               type: "doc",
-              label: "Getting started",
+              label: "Get started",
               id: "sdks/java/getting-started",
             },
             "sdks/java/examples",

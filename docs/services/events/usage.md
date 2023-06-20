@@ -1,8 +1,8 @@
 ---
-description: Managing events with the Data Streamer, API, or Portal
+description: Manage events with the Data Streamer, API, or Portal
 ---
 
-# Working with events
+# Work with events
 
 There are three ways you can access and trigger available events:
 
@@ -21,7 +21,7 @@ These integrations also provide insights for IoT remote monitoring and anomaly d
 See the [Data Streamer documentation](/services/data-streamer/getting-started) to learn more about its benefits and how to get started.
 :::
 
-### Managing event data streams in the Portal
+### Manage event data streams in the Portal
 
 To manage your data streams, log in to your [emnify Portal](https://portal.emnify.com/) account.
 Then, navigate to the [**Data Streams**](https://portal.emnify.com/integrations#data-streams) section of the [**Integrations** page](https://portal.emnify.com/integrations).
@@ -92,7 +92,7 @@ Nevertheless, understanding [how an OpenAPI Specification is structured](https:/
 
 The [Events Reference page](https://cdn.emnify.net/api/doc/event.html) in the *emnify REST API Documentation* provides details about the event structure and common elements you'll encounter while working with the Event API.
 
-### Retrieving events with the Event API
+### Retrieve events with the Event API
 
 The following entry points are available for retrieving a list of the events or event types available to your organization: 
 

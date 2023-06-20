@@ -1,6 +1,5 @@
 ---
-title: Getting started with emnify
-description: How to start developing your IoT solutions with emnify
+description: Start developing your IoT solutions with emnify
 slug: /
 ---
 # Sign up for an emnify account
@@ -36,7 +35,7 @@ To begin developing your IoT solutions with emnify, you'll need an emnify accoun
     </ul>
 </details>
 
-## Starting on the Evaluation Plan
+## emnify's Evaluation Plan
 
 After signing up, your account will automatically be assigned to the **Evaluation Plan**.
 With the Evaluation Plan, you have 60 days to use the issued prepaid credit for testing emnify's services.

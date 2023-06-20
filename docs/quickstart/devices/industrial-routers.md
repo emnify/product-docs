@@ -1,5 +1,5 @@
 ---
-description: How to connect to routers to configure the APN
+description: Connect to routers to configure the APN
 ---
 # Industrial routers
 

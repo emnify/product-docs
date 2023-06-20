@@ -1,10 +1,10 @@
 ---
-description: Introducing the OpenAPI structure and code samples
+description: Introduce the OpenAPI structure and code samples
 displayed_sidebar: devResourcesSidebar
 slug: /rest
 ---
 
-# Working with the emnify REST API
+# emnify REST API
 
 REST APIs are one way to integrate external services into your application.
 The emnify API provides a variety of HTTP requests to integrate several emnify services into your application.

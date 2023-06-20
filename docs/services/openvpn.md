@@ -16,7 +16,7 @@ Through the emnify SIM, each device will have a [static](/glossary#static-ip) [p
 
 At the same time, the IoT device can send data through the private tunnel to the IP address of the remote machine.
 
-## Setting up OpenVPN using the emnify Portal
+## Set up OpenVPN using the emnify Portal
 
 The following steps are required to set up OpenVPN on your machine:
 

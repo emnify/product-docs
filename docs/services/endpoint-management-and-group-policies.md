@@ -19,7 +19,7 @@ Service policies define which services are available for a group of devices. The
 - Available SMS service (MO/MT/P2P/A2P)
 - Activation of Quota and Prepaid Management
 
-#### Coverage policies
+## Coverage policies
 
 Coverage policies define which tariff and network coverage is available for a group of devices.
 This enables you to optimize the tariff based on the intended coverage.
@@ -29,7 +29,7 @@ The coverage policies include:
 - The applied tariff for the group of devices
 - The available networks organized in rate zones
 
-#### Individual device policies
+## Individual device policies
 
 On a device level additional policies can be defined:
 

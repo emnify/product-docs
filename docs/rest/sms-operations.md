@@ -1,9 +1,9 @@
 ---
-description: Performing SMS related operations with the API 
+description: Perform SMS related operations with the API 
 displayed_sidebar: devResourcesSidebar
 ---
 
-# Sending and receiving SMS
+# Send and receive SMS
 
 You can perform the following SMS related operations using the `endpoint` API.
 

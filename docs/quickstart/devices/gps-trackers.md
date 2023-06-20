@@ -1,5 +1,5 @@
 ---
-description: Configuring the APN for the most common GPS vendors
+description: Configure the APN for the most common GPS vendors
 ---
 # GPS trackers
 

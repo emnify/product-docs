@@ -1,12 +1,12 @@
 ---
-description: Managing data streams with the emnify Portal or API
+description: Manage data streams with the emnify Portal or API
 ---
 
-# Using the Data Streamer
+# Use the Data Streamer
 
 You can manage data streams with the [emnify Portal](#data-streamer-in-the-portal) or the [Data Streamer API](#data-streamer-api).
 
-## Choosing which interface to use
+## Choose which interface to use
 
 **[emnify Portal](#data-streamer-in-the-portal)**  
 Managing data streams with the Portal is convenient when taking the first steps or if you don't expect configuration changes to be needed often.
@@ -19,7 +19,7 @@ Integrating the Data Streamer API becomes a faster and more secure approach when
 To [manage your data streams](managing-data-streams), [log in to your emnify Portal account](https://portal.emnify.com/sign/).
 Then, navigate to the [**Data Streams**](https://portal.emnify.com/integrations#data-streams) section of the [**Integrations** page](https://portal.emnify.com/integrations).
 
-### Viewing data streams
+### View data streams
 
 If there are no data streams configured, the [**Data Streams**](https://portal.emnify.com/integrations#data-streams) panel displays all available [connection types](connection-types) as tiles.
 
@@ -48,7 +48,7 @@ The **Destination** configuration varies depending on the connection type.
   alt=""
 />
 
-### Creating data streams
+### Create data streams
 
 When no configured data streams are available, click **Add** on the preferred connection type tile.
 
@@ -85,7 +85,7 @@ If the configuration is invalid, a warning will display along with an error mess
 If this happens, the stream isn't created and you must correct the configuration.
 :::
 
-### Inspecting and updating data streams
+### Inspect and update data streams
 
 With the **Details** button on the Data Stream tiles, you can inspect the configuration and update the [filters for event data streams](managing-data-streams#filtering-event-data-streams).
 
@@ -94,7 +94,7 @@ With the **Details** button on the Data Stream tiles, you can inspect the config
   alt=""
 />
 
-### Deleting data streams
+### Delete data streams
 
 To permanently delete a data stream, click the trash bin icon near the **Details** button.
 
@@ -134,7 +134,7 @@ Nevertheless, [understanding how an OpenAPI Specification is structured](https:/
 
 The [Data Streamer reference page](https://cdn.emnify.net/api/doc/data-streamer.html) in the _emnify REST API Documentation_ provides details about the data structure and common elements you'll encounter while working with the Data Streamer API.
 
-### Working with the Data Streamer API
+### Work with the Data Streamer API
 
 :::caution
 API keys and configuration parameters differ by [connection type](connection-types).
@@ -162,7 +162,7 @@ The following lookup entry points are available for retrieving possible configur
 | `GET`  | `/api/v2/data_stream/type`              | List possible data stream types.            |
 | `GET`  | `/api/v2/data_stream/filter_field_type` | List possible data stream filter fields.    |
 
-### Creating data streams
+### Create data streams
 
 Once authenticated, users can create data streams by sending `POST` requests to `/api/v2/data_stream`.
 
@@ -239,7 +239,7 @@ You can also create an event stream with [AWS Kinesis integration](available-int
 [Create Data Stream - emnify REST API](https://cdn.emnify.net/api/doc/swagger.html#/Integrations/CreateDataStreamer).
 :::
 
-### Listing data streams
+### List data streams
 
 You can list all data streams belonging to your organization by sending `GET` requests to `/api/v2/data_stream`.
 
@@ -255,7 +255,7 @@ curl -X GET "https://cdn.emnify.net/api/v2/data_stream" \
 [List data stream configurations of your organization - emnify REST API](https://cdn.emnify.net/api/doc/swagger.html#/Integrations/ListDataStreamerV2s)
 :::
 
-### Retrieving details
+### Retrieve details
 
 Retrieving details of an existing data stream is possible by making a `GET` request to `/api/v2/data_stream/{data_stream_id}`.
 
@@ -273,7 +273,7 @@ curl -X GET "https://cdn.emnify.net/api/v2/data_stream/123" \
 [Get Details on Existing Data Stream - emnify REST API](https://cdn.emnify.net/api/doc/swagger.html#/Integrations/GetDataStreamerByIdV2)
 :::
 
-### Updating data streams
+### Update data streams
 
 Authenticated users may update data streams belonging to their organization by making a `PATCH` request to `/api/v2/data_stream/{data_stream_id}`.
 
@@ -305,7 +305,7 @@ The following example shows how to pause a stream and erase any filters:
 [Modify Existing Data Stream - emnify REST API](https://cdn.emnify.net/api/doc/swagger.html#/Integrations/PatchV2DataStream)
 :::
 
-### Deleting data streams
+### Delete data streams
 
 Sending a `DELETE` request to `/api/v2/data_stream/{data_stream_id}` will delete the data stream with that ID.
 
