@@ -1,5 +1,6 @@
 ---
 description: Configure the type of content delivered by the data stream
+slug: /emnify-multicloud-data-streamer-stream-types
 ---
 
 # Stream types
@@ -16,7 +17,7 @@ These events allow you to track notable system occurrences based on behavior.
 
 Some common use cases for events on emnify include:
 
-- **Triggers for custom business processes** (e.g., authentication or custom usage limitations configured on the [emnify Portal](usage#data-streamer-in-the-portal))
+- **Triggers for custom business processes** (e.g., authentication or custom usage limitations configured on the [emnify Portal](/emnify-multicloud-data-streamer-usage#data-streamer-in-the-portal))
 - **Monitoring** (e.g., SIM or data connection lifecycles)
 - **Input for custom billing systems** (i.e., updating billing configuration, processing invoices, etc.)
 

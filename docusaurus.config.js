@@ -288,8 +288,36 @@ const config = {
             from: "/services/data-streamer",
           },
           {
+            to: "/emnify-multicloud-data-streamer-connection-types",
+            from: "/services/data-streamer/connection-types",
+          },
+          {
+            to: "/emnify-multicloud-data-streamer-stream-types",
+            from: "/services/data-streamer/stream-types",
+          },
+          {
+            to: "/emnify-multicloud-data-streamer-manage-data-streams",
+            from: "/services/data-streamer/managing-data-streams",
+          },
+          {
+            to: "/emnify-multicloud-data-streamer-usage",
+            from: "/services/data-streamer/usage",
+          },
+          {
+            to: "/emnify-multicloud-data-streamer-integrations",
+            from: "/services/data-streamer/available-integrations",
+          },
+          {
             to: "/emnify-system-events",
             from: "/services/events",
+          },
+          {
+            to: "/emnify-system-events-event-types",
+            from: "/services/events/event-types",
+          },
+          {
+            to: "/emnify-system-events-usage",
+            from: "/services/events/usage",
           },
           // Home - Support
           {

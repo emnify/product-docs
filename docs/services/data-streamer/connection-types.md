@@ -1,5 +1,6 @@
 ---
-description: Integrate real-time data streams of your devices and SIMs
+description: Integrate real-time data streams of your devices and SIMs with the emnify multicloud Data Streamer
+slug: /emnify-multicloud-data-streamer-connection-types
 ---
 
 # Connection types
@@ -10,12 +11,12 @@ Using this data, you can build operational dashboards that visualize device, net
 
 ## Available data streamer integrations
 
-- [Amazon](available-integrations#amazon)
-- [Azure](available-integrations#azure)
-- [Google Cloud](available-integrations#google-cloud)
-- [Keen](available-integrations#keen)
-- [Datadog](available-integrations#datadog)
-- [Webhook](available-integrations#webhook) (generic RESTful API)
+- [Amazon](/emnify-multicloud-data-streamer-integrations#amazon)
+- [Azure](/emnify-multicloud-data-streamer-integrations#azure)
+- [Google Cloud](/emnify-multicloud-data-streamer-integrations#google-cloud)
+- [Keen](/emnify-multicloud-data-streamer-integrations#keen)
+- [Datadog](/emnify-multicloud-data-streamer-integrations#datadog)
+- [Webhook](/emnify-multicloud-data-streamer-integrations#webhook) (generic RESTful API)
 
 You can use any integration to create multiple independent data streams and operate them in parallel. 
 Each data stream can be configured to push data to a separate platform for consumption and processing. 

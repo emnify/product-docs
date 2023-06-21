@@ -185,9 +185,9 @@ const sidebars = {
             },
             "services/data-streamer/connection-types",
             "services/data-streamer/stream-types",
-            "services/data-streamer/managing-data-streams",
+            "services/data-streamer/data-streams",
             "services/data-streamer/usage",
-            "services/data-streamer/available-integrations",
+            "services/data-streamer/integrations",
           ],
         },
         {
