@@ -1,8 +1,9 @@
 ---
 description: Learn the basics and structure of emnify events
+slug: /emnify-system-events
 ---
 
-# Get started with events
+# emnify system events
 
 The emnify system generates several types of events. 
 These events allow you to track notable system occurrences based on behavior.

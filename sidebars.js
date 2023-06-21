@@ -151,8 +151,8 @@ const sidebars = {
       type: "category",
       label: "Connectivity services",
       link: {
-        type: "generated-index",
-        slug: "connectivity",
+        type: "doc",
+        id: "cellular-iot",
       },
       items: [
         "cellular-iot",
@@ -165,8 +165,8 @@ const sidebars = {
       type: "category",
       label: "Platform services",
       link: {
-        type: "generated-index",
-        slug: "platform",
+        type: "doc",
+        id: "integration-guides/index",
       },
       items: [
         "integration-guides/index",
@@ -174,15 +174,14 @@ const sidebars = {
           type: "category",
           label: "Data Streamer",
           link: {
-            type: "generated-index",
-            title: "emnify multicloud Data Streamer",
-            slug: "services/data-streamer",
+            type: "doc",
+            id: "services/data-streamer/index",
           },
           items: [
             {
               type: "doc",
               label: "Overview",
-              id: "services/data-streamer/getting-started",
+              id: "services/data-streamer/index",
             },
             "services/data-streamer/connection-types",
             "services/data-streamer/stream-types",
@@ -195,15 +194,14 @@ const sidebars = {
           type: "category",
           label: "Events",
           link: {
-            type: "generated-index",
-            title: "emnify system events",
-            slug: "services/events",
+            type: "doc",
+            id: "services/events/index",
           },
           items: [
             {
               type: "doc",
               label: "Overview",
-              id: "services/events/getting-started",
+              id: "services/events/index",
             },
             "services/events/event-types",
             "services/events/usage",
@@ -216,8 +214,8 @@ const sidebars = {
       type: "category",
       label: "Network services",
       link: {
-        type: "generated-index",
-        slug: "network",
+        type: "doc",
+        id: "services/global-iot-network",
       },
       items: [
         "services/global-iot-network",

@@ -277,10 +277,19 @@ const config = {
             to: "/quickstart-troubleshooting",
             from: "/quickstart/troubleshooting",
           },
-          // Home - Services
+          // Home - Connectivity services
           {
-            to: "/connectivity",
+            to: "/cellular-iot",
             from: "/services",
+          },
+          // Home - Platform services
+          {
+            to: "/emnify-multicloud-data-streamer",
+            from: "/services/data-streamer",
+          },
+          {
+            to: "/emnify-system-events",
+            from: "/services/events",
           },
           // Home - Support
           {

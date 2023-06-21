@@ -21,7 +21,7 @@ Some common use cases for events on emnify include:
 - **Input for custom billing systems** (i.e., updating billing configuration, processing invoices, etc.)
 
 :::tip
-Learn more about the available event types and how to use them in the [Event documentation](/services/events/getting-started).
+Learn more about the available event types and how to use them in the [Event documentation](/emnify-system-events).
 :::
 
 ## Usage data

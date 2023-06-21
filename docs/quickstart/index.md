@@ -68,7 +68,8 @@ In addition to the standard emnify services, the Evaluation Plan supports the fo
 
 <details className="custom-details-example-json-response">
   <summary>Multicloud Data Streamer</summary>
-    <p>Use the tools you're familiar with to stream connectivity metadata, triage issues, collect usage insights, and more. <a href="https://docs.emnify.com/services/data-streamer/getting-started">Learn more about the Data Streamer</a> or <a href="https://docs.emnify.com/services/data-streamer/available-integrations">browse the available integrations</a>.</p>
+    <p>Use the tools you're familiar with to stream connectivity metadata, triage issues, collect usage insights, and more. 
+    <a href="https://docs.emnify.com/emnify-multicloud-data-streamer">Learn more about the Data Streamer</a> or <a href="https://docs.emnify.com/services/data-streamer/available-integrations">browse the available integrations</a>.</p>
 </details>
 
 <details className="custom-details-example-json-response">
