@@ -2,6 +2,7 @@
 description: Start developing your IoT solutions with emnify
 slug: /
 ---
+
 # Sign up for an emnify account
 
 To begin developing your IoT solutions with emnify, you'll need an emnify account.

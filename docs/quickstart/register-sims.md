@@ -1,5 +1,6 @@
 ---
 description: Use your emnify account to register your SIMs
+slug: /register-emnify-sims
 ---
 
 # Register emnify SIMs

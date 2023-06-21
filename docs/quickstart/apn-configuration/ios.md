@@ -1,6 +1,8 @@
 ---
 description: Manually configure the APN for an iOS device
+slug: /ios-apn-configuration
 ---
+
 # iOS
 
 When setting up an iOS device with an emnify IoT SIM, you need to follow 4 steps:

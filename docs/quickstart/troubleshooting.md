@@ -1,6 +1,8 @@
 ---
-description: Tips and solutions for resolving common issues
+description: Tips and solutions for resolving common issues when setting up your emnify account
+slug: /quickstart-troubleshooting
 ---
+
 # Troubleshooting
 
 When you experience issues while connecting your device for the first time, there are several common patterns that can be identified by looking at [**Connected Devices**](https://portal.emnify.com/connected-devices) in the Portal.

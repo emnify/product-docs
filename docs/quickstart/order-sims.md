@@ -1,10 +1,15 @@
-# Order SIMs from the SIM Shop
+---
+description: Step-by-step guide to order emnify SIMs from the SIM Shop
+slug: /order-emnify-sims
+---
+
+# Order emnify SIMs from the SIM Shop
 
 Here's how you can order SIM cards any time on the emnify Portal.
 
 <details className="custom-details-troubleshooting">
   <summary>First time ordering SIM cards on emnify?</summary>
-    <p>If you're new to emnify and interested in testing our services free of charge, please refer to our <a href="https://docs.emnify.com/quickstart/getting-started#order-a-free-evaluation-sim-package">Order a free Evaluation SIM package</a> guide.</p>
+    <p>If you're new to emnify and interested in testing our services free of charge, please refer to our <a href="https://docs.emnify.com/#order-a-free-evaluation-sim-package">Order a free Evaluation SIM package</a> guide.</p>
 </details>
 
 1. [Log in to your emnify account](https://portal.emnify.com/sign).
@@ -47,7 +52,7 @@ The benefit of batches is that they can be registered all at once, whereas singl
     style={{ width: 700 }}
 />
 
-Learn more in our [Registering SIMs](/quickstart/registering-sims) guide.
+Learn more in our [Registering SIMs](/register-emnify-sims) guide.
 :::
 
 6. Fill in your **Invoice and shipping details**, and specify your **Shipping option**.

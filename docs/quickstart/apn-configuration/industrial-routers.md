@@ -1,6 +1,8 @@
 ---
 description: Connect to routers to configure the APN
+slug: /industrial-routers-apn-configuration
 ---
+
 # Industrial routers
 
 *Applies to RUT240, RUT950, RUT955, RUTX09, RUTX11, RUTX12, RUTX14, RUTXR1, RUT360*

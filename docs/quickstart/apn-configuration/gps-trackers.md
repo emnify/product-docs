@@ -1,6 +1,8 @@
 ---
 description: Configure the APN for the most common GPS vendors
+slug: /gps-trackers-apn-configuration
 ---
+
 # GPS trackers
 
 :::info

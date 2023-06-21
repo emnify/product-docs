@@ -229,10 +229,18 @@ const config = {
       "@docusaurus/plugin-client-redirects",
       {
         redirects: [
-          // Home - Quickstart
+          // Home - Getting started with emnify
           {
             to: "/",
             from: ["/quickstart", "/quickstart/getting-started"],
+          },
+          {
+            to: "/order-emnify-sims",
+            from: "/quickstart/ordering-sims",
+          },
+          {
+            to: "/register-emnify-sims",
+            from: "/quickstart/registering-sims",
           },
           {
             to: "/create-device",
@@ -244,6 +252,30 @@ const config = {
               "/quickstart/devices/apn-configuration",
               "/quickstart/devices",
             ],
+          },
+          {
+            to: "/android-apn-configuration",
+            from: "/quickstart/devices/android",
+          },
+          {
+            to: "/ios-apn-configuration",
+            from: "/quickstart/devices/ios-devices",
+          },
+          {
+            to: "/cellular-modules-apn-configuration",
+            from: "/quickstart/devices/cellular-modules",
+          },
+          {
+            to: "/gps-trackers-apn-configuration",
+            from: "/quickstart/devices/gps-trackers",
+          },
+          {
+            to: "/industrial-routers-apn-configuration",
+            from: "/quickstart/devices/industrial-routers",
+          },
+          {
+            to: "/quickstart-troubleshooting",
+            from: "/quickstart/troubleshooting",
           },
           // Home - Services
           {

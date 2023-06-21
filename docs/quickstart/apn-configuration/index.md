@@ -14,8 +14,8 @@ Further, some Android or iOS-based devices and cellular modules also need to be 
 
 Select your device type and model to see how to configure the APN:
 
-- [Android](/quickstart/devices/android)
-- [iOS devices](/quickstart/devices/ios-devices)
-- [Cellular modules](/quickstart/devices/cellular-modules)
-- [GPS trackers](/quickstart/devices/gps-trackers)
-- [Industrial routers](/quickstart/devices/industrial-routers)
+- [Android](/android-apn-configuration)
+- [iOS devices](/ios-apn-configuration)
+- [Cellular modules](/cellular-modules-apn-configuration)
+- [GPS trackers](/gps-trackers-apn-configuration)
+- [Industrial routers](/industrial-routers-apn-configuration)

@@ -1,6 +1,8 @@
 ---
 description: Configure Quectel, u-Blox, and several other vendors
+slug: /cellular-modules-apn-configuration
 ---
+
 # Cellular modules
 
 For Telit, Sierra Wireless, Cinterion/Gemalto/Thales, SIMcom, or Sequans, see [General cellular IoT modules](#general-cellular-iot-modules).

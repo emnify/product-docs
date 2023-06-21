@@ -1,6 +1,8 @@
 ---
 description: Manually configure the APN for an Android device
+slug: /android-apn-configuration
 ---
+
 # Android
 
 When setting up an Android device with an emnify SIM, you need to follow these 4 steps:
