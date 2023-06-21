@@ -1,6 +1,6 @@
 ---
 description: Step-by-step guide to order emnify SIMs from the SIM Shop
-slug: /order-emnify-sims
+slug: /order-sims
 ---
 
 # Order emnify SIMs from the SIM Shop
@@ -52,7 +52,7 @@ The benefit of batches is that they can be registered all at once, whereas singl
     style={{ width: 700 }}
 />
 
-Learn more in our [Registering SIMs](/register-emnify-sims) guide.
+Learn more in our [Registering SIMs](/register-sims) guide.
 :::
 
 6. Fill in your **Invoice and shipping details**, and specify your **Shipping option**.

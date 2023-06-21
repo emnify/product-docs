@@ -116,7 +116,7 @@ const config = {
         title: "Documentation",
         logo: {
           alt: "emnify Documentation – Home",
-          href: "/",
+          href: "/quickstart",
           src: "img/logo-word-blue-295x80.png",
         },
         items: [
@@ -231,15 +231,15 @@ const config = {
         redirects: [
           // Home - Getting started with emnify
           {
-            to: "/",
-            from: ["/quickstart", "/quickstart/getting-started"],
+            to: "/quickstart",
+            from: ["/", "/quickstart/getting-started"],
           },
           {
-            to: "/order-emnify-sims",
+            to: "/order-sims",
             from: "/quickstart/ordering-sims",
           },
           {
-            to: "/register-emnify-sims",
+            to: "/register-sims",
             from: "/quickstart/registering-sims",
           },
           {
@@ -277,6 +277,19 @@ const config = {
             to: "/quickstart-troubleshooting",
             from: "/quickstart/troubleshooting",
           },
+          // Home - emnify Portal - How-tos - SSO
+          {
+            to: "/sso-microsoft-active-directory",
+            from: ["/sso", "/sso/microsoft-active-directory"],
+          },
+          {
+            to: "/sso-google-cloud-platform",
+            from: "/sso/google-cloud-platform",
+          },
+          {
+            to: "/sso-troubleshooting",
+            from: "/sso/troubleshooting",
+          },
           // Home - Connectivity services
           {
             to: "/cellular-iot",
@@ -284,39 +297,39 @@ const config = {
           },
           // Home - Platform services
           {
-            to: "/emnify-multicloud-data-streamer",
+            to: "/multicloud-data-streamer",
             from: "/services/data-streamer",
           },
           {
-            to: "/emnify-multicloud-data-streamer-connection-types",
+            to: "/multicloud-data-streamer-connection-types",
             from: "/services/data-streamer/connection-types",
           },
           {
-            to: "/emnify-multicloud-data-streamer-stream-types",
+            to: "/multicloud-data-streamer-stream-types",
             from: "/services/data-streamer/stream-types",
           },
           {
-            to: "/emnify-multicloud-data-streamer-manage-data-streams",
+            to: "/multicloud-data-streamer-manage-data-streams",
             from: "/services/data-streamer/managing-data-streams",
           },
           {
-            to: "/emnify-multicloud-data-streamer-usage",
+            to: "/multicloud-data-streamer-usage",
             from: "/services/data-streamer/usage",
           },
           {
-            to: "/emnify-multicloud-data-streamer-integrations",
+            to: "/multicloud-data-streamer-integrations",
             from: "/services/data-streamer/available-integrations",
           },
           {
-            to: "/emnify-system-events",
+            to: "/system-events",
             from: "/services/events",
           },
           {
-            to: "/emnify-system-events-event-types",
+            to: "/system-events-event-types",
             from: "/services/events/event-types",
           },
           {
-            to: "/emnify-system-events-usage",
+            to: "/system-events-usage",
             from: "/services/events/usage",
           },
           // Home - Support
@@ -341,6 +354,35 @@ const config = {
           {
             to: "/graphql",
             from: "/graphql/preview",
+          },
+          // Developer Resources - SDKs
+          {
+            to: "/sdks-concepts",
+            from: "/sdks/concepts",
+          },
+          {
+            to: "/python-sdk-quickstart",
+            from: ["/sdks/python", "/sdks/python/getting-started"],
+          },
+          {
+            to: "/python-sdk-examples",
+            from: "/sdks/python/examples",
+          },
+          {
+            to: "/python-sdk-support",
+            from: "/sdks/python/help",
+          },
+          {
+            to: "/java-sdk-quickstart",
+            from: ["/sdks/java", "/sdks/java/getting-started"],
+          },
+          {
+            to: "/java-sdk-examples",
+            from: "/sdks/java/examples",
+          },
+          {
+            to: "/java-sdk-support",
+            from: "/sdks/java/help",
           },
         ],
       },

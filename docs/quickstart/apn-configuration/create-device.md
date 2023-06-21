@@ -5,7 +5,7 @@ slug: /create-device
 
 # Create a device
 
-After you [register a SIM](/register-emnify-sims), you need to create a virtual representation of the device associated with the SIM.
+After you [register a SIM](/register-sims), you need to create a virtual representation of the device associated with the SIM.
 To create a device, give it a name and assign a service and coverage policy.
 
 <img

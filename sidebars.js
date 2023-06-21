@@ -4,7 +4,7 @@ const sidebars = {
   mainDocsSidebar: [
     {
       type: "category",
-      label: "Get started with emnify",
+      label: "Getting started with emnify",
       link: {
         type: "doc",
         id: "quickstart/index",
@@ -77,27 +77,24 @@ const sidebars = {
               type: "category",
               label: "Single Sign-On",
               link: {
-                type: "generated-index",
-                description:
-                  "With Single Sign-On (SSO) enabled, your organization can access the emnify Portal using your existing account credentials",
-                slug: "/sso",
-                title: "Single Sign-On",
+                type: "doc",
+                id: "how-tos/sso/microsoft-active-directory",
               },
               items: [
                 {
                   type: "doc",
                   label: "Microsoft Active Directory",
-                  id: "sso/microsoft-active-directory",
+                  id: "how-tos/sso/microsoft-active-directory",
                 },
                 {
                   type: "doc",
                   label: "Google Cloud Platform",
-                  id: "sso/google-cloud-platform",
+                  id: "how-tos/sso/google-cloud-platform",
                 },
                 {
                   type: "doc",
                   label: "Troubleshooting",
-                  id: "sso/troubleshooting",
+                  id: "how-tos/sso/troubleshooting",
                 },
               ],
             },
@@ -288,20 +285,17 @@ const sidebars = {
           type: "category",
           label: "Python",
           link: {
-            type: "generated-index",
-            title: "emnify Python SDK",
-            description:
-              "The emnify Python software development kit (SDK) for SIM state management and device connectivity operations",
-            slug: "/sdks/python",
+            type: "doc",
+            id: "sdks/python/quickstart",
           },
           items: [
             {
               type: "doc",
-              label: "Get started",
-              id: "sdks/python/getting-started",
+              label: "Getting started",
+              id: "sdks/python/quickstart",
             },
             "sdks/python/examples",
-            "sdks/python/help",
+            "sdks/python/support",
             {
               type: "link",
               label: "API Reference",
@@ -313,20 +307,17 @@ const sidebars = {
           type: "category",
           label: "Java",
           link: {
-            type: "generated-index",
-            title: "emnify Java SDK",
-            description:
-              "The emnify Java software development kit (SDK) for SIM state management and device connectivity operations",
-            slug: "/sdks/java",
+            type: "doc",
+            id: "sdks/java/quickstart",
           },
           items: [
             {
               type: "doc",
-              label: "Get started",
-              id: "sdks/java/getting-started",
+              label: "Getting started",
+              id: "sdks/java/quickstart",
             },
             "sdks/java/examples",
-            "sdks/java/help",
+            "sdks/java/support",
             {
               type: "link",
               label: "API Reference",

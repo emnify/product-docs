@@ -1,5 +1,6 @@
 ---
-description: Setup SSO with Google Cloud Platform
+description: Setup SSO for your emnify account with Google Cloud Platform
+slug: /sso-google-cloud-platform
 ---
 
 # Setup SSO with Google Cloud Platform
@@ -72,5 +73,5 @@ You must complete the final step and verify the provider to configure SSO.
 :::
 
 :::tip
-We have a [Troubleshooting page](troubleshooting#general) if you encounter issues while setting up SSO.
+We have a [Troubleshooting page](/sso-troubleshooting#general) if you encounter issues while setting up SSO.
 :::

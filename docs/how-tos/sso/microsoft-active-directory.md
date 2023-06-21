@@ -1,5 +1,6 @@
 ---
-description: Setup SSO with Microsoft Active Directory
+description: Setup SSO for your emnify account with Microsoft Active Directory
+slug: /sso-microsoft-active-directory
 ---
 
 # Setup SSO with Microsoft Active Directory
@@ -145,5 +146,5 @@ You must complete the final step and verify the provider to configure SSO.
 :::
 
 :::tip
-We have a [Troubleshooting page](troubleshooting#microsoft-active-directory) if you encounter issues while setting up SSO.
+We have a [Troubleshooting page](/sso-troubleshooting#microsoft-active-directory) if you encounter issues while setting up SSO.
 :::

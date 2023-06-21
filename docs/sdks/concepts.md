@@ -1,5 +1,6 @@
 ---
 description: Must-knows for working with the emnify SDKs
+slug: /sdks-concepts
 ---
 
 # Concepts
