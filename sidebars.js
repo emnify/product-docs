@@ -53,11 +53,15 @@ const sidebars = {
       type: "category",
       label: "emnify Portal",
       link: {
-        type: "generated-index",
-        title: "emnify Portal",
-        slug: "/portal",
+        type: "doc",
+        id: "portal/index",
       },
       items: [
+        {
+          type: "doc",
+          label: "Overview",
+          id: "portal/index",
+        },
         {
           type: "category",
           label: "How-tos",

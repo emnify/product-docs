@@ -1,5 +1,6 @@
 ---
-description: Configure SIM-equipped devices with an Access Point Name (APN)
+description: Configure SIM-equipped devices with an Access Point Name (APN) via the emnify Portal
+pagination_next: quickstart/apn-configuration/android
 slug: /apn-configuration
 ---
 
