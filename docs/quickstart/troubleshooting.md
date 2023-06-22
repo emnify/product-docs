@@ -1,6 +1,6 @@
 ---
 description: Tips and solutions for resolving common issues when setting up your emnify account
-slug: /quickstart-troubleshooting
+slug: /quickstart/troubleshooting
 ---
 
 # Troubleshooting

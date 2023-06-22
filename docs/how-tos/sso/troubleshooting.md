@@ -1,6 +1,6 @@
 ---
 description: Tips for combating common issues when setting up SSO for your emnify account
-slug: /sso-troubleshooting
+slug: /sso/troubleshooting
 ---
 
 # Troubleshooting
@@ -10,7 +10,7 @@ If you encounter any issues while setting up SSO, use the following suggestions 
 ## Microsoft Active Directory
 
 - Are you part of the Azure Tenant?
-- Do you see a "User canceled social login" message? Make sure the [application registration is set to **Multitenant**](/sso-microsoft-active-directory#sso-with-microsoft).
+- Do you see a "User canceled social login" message? Make sure the [application registration is set to **Multitenant**](/sso/microsoft-active-directory#sso-with-microsoft).
 
 ## General
 

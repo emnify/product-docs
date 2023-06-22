@@ -1,6 +1,6 @@
 ---
 description: Connect to routers to configure the APN
-slug: /industrial-routers-apn-configuration
+slug: /apn-configuration/industrial-routers
 ---
 
 # Industrial routers

@@ -1,3 +1,8 @@
+---
+description: How to set up multi-inclusive volumes via the emnify Portal
+slug: /set-up-multi-inclusive-volumes
+---
+
 # Set up multi-inclusive volumes
 
 We introduced a multi-inclusive volumes feature, allowing you to manage different tariffs and data plans from a single account. 

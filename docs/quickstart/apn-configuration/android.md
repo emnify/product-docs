@@ -1,6 +1,6 @@
 ---
 description: Manually configure the APN for an Android device
-slug: /android-apn-configuration
+slug: /apn-configuration/android
 ---
 
 # Android

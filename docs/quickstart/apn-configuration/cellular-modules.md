@@ -1,6 +1,6 @@
 ---
 description: Configure Quectel, u-Blox, and several other vendors
-slug: /cellular-modules-apn-configuration
+slug: /apn-configuration/cellular-modules
 ---
 
 # Cellular modules

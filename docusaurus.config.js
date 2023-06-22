@@ -254,41 +254,38 @@ const config = {
             ],
           },
           {
-            to: "/android-apn-configuration",
+            to: "/apn-configuration/android",
             from: "/quickstart/devices/android",
           },
           {
-            to: "/ios-apn-configuration",
+            to: "/apn-configuration/ios",
             from: "/quickstart/devices/ios-devices",
           },
           {
-            to: "/cellular-modules-apn-configuration",
+            to: "/apn-configuration/cellular-modules",
             from: "/quickstart/devices/cellular-modules",
           },
           {
-            to: "/gps-trackers-apn-configuration",
+            to: "/apn-configuration/gps-trackers",
             from: "/quickstart/devices/gps-trackers",
           },
           {
-            to: "/industrial-routers-apn-configuration",
+            to: "/apn-configuration/industrial-routers",
             from: "/quickstart/devices/industrial-routers",
           },
+          // Home - emnify Portal - How-tos
           {
-            to: "/quickstart-troubleshooting",
-            from: "/quickstart/troubleshooting",
+            to: "/set-up-multi-inclusive-volumes",
+            from: "/how-tos/multi-inclusive-volumes",
+          },
+          {
+            to: "/enable-two-factor-authentication",
+            from: "/how-tos/two-factor-authentication",
           },
           // Home - emnify Portal - How-tos - SSO
           {
-            to: "/sso-microsoft-active-directory",
-            from: ["/sso", "/sso/microsoft-active-directory"],
-          },
-          {
-            to: "/sso-google-cloud-platform",
-            from: "/sso/google-cloud-platform",
-          },
-          {
-            to: "/sso-troubleshooting",
-            from: "/sso/troubleshooting",
+            to: "/sso/microsoft-active-directory",
+            from: "/sso",
           },
           // Home - Connectivity services
           {

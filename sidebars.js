@@ -25,7 +25,7 @@ const sidebars = {
           label: "Register SIMs",
           id: "quickstart/register-sims",
         },
-        "quickstart/apn-configuration/create-device",
+        "quickstart/create-device",
         {
           type: "category",
           label: "Get the device online",

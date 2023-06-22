@@ -1,6 +1,6 @@
 ---
 description: Manually configure the APN for an iOS device
-slug: /ios-apn-configuration
+slug: /apn-configuration/ios
 ---
 
 # iOS
