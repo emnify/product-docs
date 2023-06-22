@@ -1,7 +1,7 @@
 ---
 description: Overview of emnify's cellular connectivity for IoT
 pagination_prev: portal/index
-pagination_next: services/global-iot-sim
+pagination_next: services/connectivity/global-iot-sim
 slug: /services/cellular-iot
 ---
 

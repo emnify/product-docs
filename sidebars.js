@@ -133,17 +133,17 @@ const sidebars = {
         {
           type: "doc",
           label: "Reports",
-          id: "services/business-intelligence-and-analytics-reports",
+          id: "portal/reports",
         },
         {
           type: "doc",
           label: "Group policies",
-          id: "services/endpoint-management-and-group-policies",
+          id: "portal/group-policies",
         },
         {
           type: "doc",
           label: "No-code automation",
-          id: "services/no-code-workflow-automation",
+          id: "portal/no-code-automation",
         },
         "services/user-management",
       ],
@@ -153,13 +153,13 @@ const sidebars = {
       label: "Connectivity services",
       link: {
         type: "doc",
-        id: "services/cellular-iot",
+        id: "services/connectivity/cellular-iot",
       },
       items: [
-        "services/cellular-iot",
-        "services/global-iot-sim",
-        "services/sim-lifecycle-management",
-        "services/sms",
+        "services/connectivity/cellular-iot",
+        "services/connectivity/global-iot-sim",
+        "services/connectivity/sim-lifecycle-management",
+        "services/connectivity/sms",
       ],
     },
     {

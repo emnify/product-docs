@@ -79,7 +79,7 @@ In addition to the standard emnify services, the Evaluation Plan supports the fo
     <ul>
       <li>APIs (<a href="https://docs.emnify.com/rest">REST</a> and <a href="https://docs.emnify.com/graphql">GraphQL</a>)</li>
       <li>SDKs (<a href="https://docs.emnify.com/sdks/python/quickstart">Python</a> and <a href="https://docs.emnify.com/sdks/java/quickstart">Java</a>)</li>
-      <li>Zapier (for <a href="https://docs.emnify.com/services/no-code-workflow-automation">no-code workflow automation</a>)</li>
+      <li>Zapier (for <a href="https://docs.emnify.com/portal/no-code-automation">no-code workflow automation</a>)</li>
     </ul>
 </details>
 

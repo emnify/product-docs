@@ -273,6 +273,19 @@ const config = {
             to: "/apn-configuration/industrial-routers",
             from: "/quickstart/devices/industrial-routers",
           },
+          // Home - emnify Portal
+          {
+            to: "/portal/reports",
+            from: "/services/business-intelligence-and-analytics-reports",
+          },
+          {
+            to: "/portal/group-policies",
+            from: "/services/endpoint-management-and-group-policies",
+          },
+          {
+            to: "/portal/no-code-automation",
+            from: "/services/no-code-workflow-automation",
+          },
           // Home - emnify Portal - How-tos
           {
             to: "/set-up-multi-inclusive-volumes",

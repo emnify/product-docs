@@ -3,6 +3,7 @@ description: Network aggregation supporting all radio types
 pagination_next: services/iot-cloud-communication-platform
 slug: /services/global-iot-network
 ---
+
 # Global IoT Network
 
 Even when IoT devices are more often only deployed at a single location and are not moving, for a vendor selling to multiple countries it is important to have a global connectivity solution, so that there is no need to have different SIM cards in stock or have multiple contracts and tariffs.

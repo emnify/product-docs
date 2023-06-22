@@ -1,6 +1,8 @@
 ---
 description: Analyze data usage, events, and device location over time
+slug: /portal/reports
 ---
+
 # Business intelligence and analytics reports
 
 The [emnify Portal provides detailed reports](https://portal.emnify.com/reports/default) on all connectivity aspects of a device.
