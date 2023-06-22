@@ -1,7 +1,7 @@
 ---
 description: Learn the basics and structure of emnify system events
-pagination_prev: services/data-streamer/index
-pagination_next: services/events/event-types
+pagination_prev: services/platform/data-streamer/index
+pagination_next: services/platform/events/event-types
 slug: /system-events
 ---
 

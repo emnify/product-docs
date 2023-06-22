@@ -1,6 +1,6 @@
 ---
 description: Benefits of emnify's multicloud Data Streamer and how to get started
-pagination_next: services/data-streamer/connection-types
+pagination_next: services/platform/data-streamer/connection-types
 slug: /multicloud-data-streamer
 ---
 

@@ -1,5 +1,5 @@
 ---
-pagination_next: services/data-streamer/index
+pagination_next: services/platform/data-streamer/index
 slug: /integration-guides
 ---
 

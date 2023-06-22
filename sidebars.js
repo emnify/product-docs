@@ -167,32 +167,32 @@ const sidebars = {
       label: "Platform services",
       link: {
         type: "doc",
-        id: "services/integration-guides/index",
+        id: "services/platform/integration-guides/index",
       },
       items: [
-        "services/integration-guides/index",
+        "services/platform/integration-guides/index",
         {
           type: "category",
           label: "Data Streamer",
           link: {
             type: "doc",
-            id: "services/data-streamer/index",
+            id: "services/platform/data-streamer/index",
           },
           items: [
             {
               type: "doc",
               label: "Overview",
-              id: "services/data-streamer/index",
+              id: "services/platform/data-streamer/index",
             },
-            "services/data-streamer/connection-types",
-            "services/data-streamer/stream-types",
-            "services/data-streamer/data-streams",
+            "services/platform/data-streamer/connection-types",
+            "services/platform/data-streamer/stream-types",
+            "services/platform/data-streamer/data-streams",
             {
               type: "doc",
               label: "Usage",
-              id: "services/data-streamer/usage",
+              id: "services/platform/data-streamer/usage",
             },
-            "services/data-streamer/integrations",
+            "services/platform/data-streamer/integrations",
           ],
         },
         {
@@ -200,23 +200,23 @@ const sidebars = {
           label: "Events",
           link: {
             type: "doc",
-            id: "services/events/index",
+            id: "services/platform/events/index",
           },
           items: [
             {
               type: "doc",
               label: "Overview",
-              id: "services/events/index",
+              id: "services/platform/events/index",
             },
-            "services/events/event-types",
+            "services/platform/events/event-types",
             {
               type: "doc",
               label: "Usage",
-              id: "services/events/usage",
+              id: "services/platform/events/usage",
             },
           ],
         },
-        "services/security",
+        "services/platform/security",
       ],
     },
     {
