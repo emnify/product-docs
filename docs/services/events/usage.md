@@ -1,6 +1,6 @@
 ---
 description: Manage events with emnify's Data Streamer, REST API, or Portal
-slug: /system-events-usage
+slug: /system-events/usage
 ---
 
 # Work with events
@@ -49,7 +49,7 @@ You can distinguish event data streams by checking if the **Stream Type** on a s
 
 The data streamer can apply filtering for event data streams based on event types. 
 Under **Event Options**, you can choose to **Stream all events** or **Stream specific events only**. 
-Selecting the latter will display a searchable dropdown listing all [event types](/system-events-event-types) available as filters. 
+Selecting the latter will display a searchable dropdown listing all [event types](/system-events/event-types) available as filters. 
 
 <img
   src={require('../assets/portal-integrations-data-streams-details-events-filter.png').default}
@@ -58,7 +58,7 @@ Selecting the latter will display a searchable dropdown listing all [event types
 
 :::tip
 You can also create, update, and delete data streams using the Portal.
-Learn more in the [Data Streamer usage documentation](/multicloud-data-streamer-usage#data-streamer-in-the-portal).
+Learn more in the [Data Streamer usage documentation](/multicloud-data-streamer/usage#data-streamer-in-the-portal).
 :::
 
 ## Event API
@@ -147,8 +147,8 @@ No matter where you view events in the Portal, you'll have access to the followi
 - **Date**: When the event was triggered. By default, the Portal shows the relative date (e.g., "a day ago", "15 days ago," "a month ago"). 
 Pressing the clock icon will show an absolute date value in the `MMMM dd, yyyy hh:mm a` format.
 - **Event Source**: Which [system triggered the event](/system-events#event-source).
-- **Event Type**: [Name of the triggered event](/system-events-event-types) (the `description` value in the [Event Type Object](https://cdn.emnify.net/api/doc/event.html#event-type-object)). 
-This field will also indicate the network generation (i.e., [4G](https://www.emnify.com/iot-glossary/4g), [5G](https://www.emnify.com/iot-glossary/5g), etc.) for specific events, like [PDP context lifecycles](/system-events-event-types#data-connection-lifecycle).
+- **Event Type**: [Name of the triggered event](/system-events/event-types) (the `description` value in the [Event Type Object](https://cdn.emnify.net/api/doc/event.html#event-type-object)). 
+This field will also indicate the network generation (i.e., [4G](https://www.emnify.com/iot-glossary/4g), [5G](https://www.emnify.com/iot-glossary/5g), etc.) for specific events, like [PDP context lifecycles](/system-events/  event-types#data-connection-lifecycle).
 - **Device**: Name of the device impacted by the event (the `name` value from the [Endpoint Object](https://cdn.emnify.net/api/doc/event.html#endpoint-object)). 
 This name will often link to the device's entry on the [**Connected Devices** page of the emnify Portal](https://portal.emnify.com/connected-devices).
 - **Operator**: Which [Mobile Network Operator (MNO)](https://www.emnify.com/iot-glossary/mno) the device is currently roaming on (e.g., Vodafone, AT&T).

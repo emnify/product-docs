@@ -153,10 +153,10 @@ const sidebars = {
       label: "Connectivity services",
       link: {
         type: "doc",
-        id: "cellular-iot",
+        id: "services/cellular-iot",
       },
       items: [
-        "cellular-iot",
+        "services/cellular-iot",
         "services/global-iot-sim",
         "services/sim-lifecycle-management",
         "services/sms",
@@ -167,10 +167,10 @@ const sidebars = {
       label: "Platform services",
       link: {
         type: "doc",
-        id: "integration-guides/index",
+        id: "services/integration-guides/index",
       },
       items: [
-        "integration-guides/index",
+        "services/integration-guides/index",
         {
           type: "category",
           label: "Data Streamer",
@@ -187,7 +187,11 @@ const sidebars = {
             "services/data-streamer/connection-types",
             "services/data-streamer/stream-types",
             "services/data-streamer/data-streams",
-            "services/data-streamer/usage",
+            {
+              type: "doc",
+              label: "Usage",
+              id: "services/data-streamer/usage",
+            },
             "services/data-streamer/integrations",
           ],
         },
@@ -205,7 +209,11 @@ const sidebars = {
               id: "services/events/index",
             },
             "services/events/event-types",
-            "services/events/usage",
+            {
+              type: "doc",
+              label: "Usage",
+              id: "services/events/usage",
+            },
           ],
         },
         "services/security",

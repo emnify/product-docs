@@ -1,6 +1,6 @@
 ---
 description: List of all available event types
-slug: /system-events-event-types
+slug: /system-events/event-types
 ---
 
 # Event types
@@ -144,7 +144,7 @@ It enables the network to know the location/region of the device in order to sen
 In 2G/3G it allows the device to send and receive SMS. 
 
 **Example**: A SIM card has (re)authenticated with a different network element.
-If successful, the device will appear as **Attached** in the [emnify Portal](/system-events-usage#emnify-portal) and will be ready to receive SMS.
+If successful, the device will appear as **Attached** in the [emnify Portal](/system-events/usage#emnify-portal) and will be ready to receive SMS.
 
 <details className="custom-details-example-json-response">
   <summary>Example JSON response</summary>
@@ -306,7 +306,7 @@ The visited network may send this event if the device is unreachable or switched
 
 The home network (emnify) may send this event to delete all information on the visited network, so the device needs a new authentication.
 
-Once executed, the [connectivity status](/glossary#connectivity-status) will appear as **Offline** in the [emnify Portal](/system-events-usage#emnify-portal).
+Once executed, the [connectivity status](/glossary#connectivity-status) will appear as **Offline** in the [emnify Portal](/system-events/usage#emnify-portal).
 
 **Example**: The network deletes the routing information for a mobile-terminated call or mobile-terminated short message and marks the device not reachable.
 
@@ -422,7 +422,7 @@ A [Packet Data Protocol (PDP) context](/glossary/#pdp-context) allows UE to exch
 A `Create PDP Context` event indicates the activation of data connectivity.
 
 **Example**: A device has established a data session and started transferring data.
-This device will appear as **Online** in the [emnify Portal](/system-events-usage#emnify-portal) as long as there hasn't been a subsequent [Delete PDP Context](#delete-pdp-context) event.
+This device will appear as **Online** in the [emnify Portal](/system-events/usage#emnify-portal) as long as there hasn't been a subsequent [Delete PDP Context](#delete-pdp-context) event.
 
 <details className="custom-details-example-json-response">
   <summary>Example JSON response: Create PDP context accepted</summary>
@@ -705,7 +705,7 @@ This device will appear as **Online** in the [emnify Portal](/system-events-usag
 Data session between the device and the network is deleted.
 
 **Example**: A device disconnected and ended a data transfer.
-The event details will also show the data transmitted, and the device will appear as **Attached** in the [emnify Portal](/system-events-usage#emnify-portal).
+The event details will also show the data transmitted, and the device will appear as **Attached** in the [emnify Portal](/system-events/usage#emnify-portal).
 
 <details className="custom-details-example-json-response">
   <summary>Example JSON response</summary>
@@ -1088,7 +1088,7 @@ A user deleted another user's account.
 The SIM is patched to the **Activated** [status](/glossary#sim-status) after previously holding one of the following statuses:
 **Issued**, **Suspended**, or **Factory Test**.
 
-You can manually trigger this event by using the [emnify Portal or REST API](/system-events-usage).
+You can manually trigger this event by using the [emnify Portal or REST API](/system-events/usage).
 Or, it will be automatically triggered when the factory test mode threshold (data or SMS) is reached.
 
 :::note
@@ -1488,7 +1488,7 @@ It also doesn't trigger for every SIM of a SIM batch, so the event log will only
 SIM is released from a device.
 
 :::info
-Triggered through the [emnify User Interface (EUI)](https://support.emnify.com/hc/en-us/sections/115000969189-emnify-User-Interface-EUI-) or [REST API](/system-events-usage#event-api).
+Triggered through the [emnify User Interface (EUI)](https://support.emnify.com/hc/en-us/sections/115000969189-emnify-User-Interface-EUI-) or [REST API](/system-events/usage#event-api).
 :::
 
 <details className="custom-details-example-json-response">

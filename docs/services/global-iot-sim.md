@@ -1,6 +1,8 @@
 ---
-description: Form factors, quality grades, multi-IMSI, eSIM, eUICC
+description: Overview of the available emnify SIMs, including form factors, quality grades, multi-IMSI, eSIM, and eUICC
+slug: /services/global-iot-sim
 ---
+
 # Global IoT SIM
 
 emnify provides eSIMs that are built specifically for IoT solutions.

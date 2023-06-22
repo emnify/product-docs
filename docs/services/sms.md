@@ -1,6 +1,8 @@
 ---
 description: Send/receive SMS via the emnify Portal, SMS APIs, or Zapier
+slug: /services/sms
 ---
+
 # SMS
 
 Short Message Services (SMS) were one of the first cellular services made available after voice.

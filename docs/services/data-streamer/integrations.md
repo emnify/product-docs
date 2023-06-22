@@ -1,6 +1,6 @@
 ---
 description: List of available third-party integrations for the emnify multicloud Data streamer and links to step-by-step implementation guides
-slug: /multicloud-data-streamer-integrations
+slug: /multicloud-data-streamer/integrations
 ---
 
 # Available integrations

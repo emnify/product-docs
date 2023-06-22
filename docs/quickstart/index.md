@@ -70,7 +70,7 @@ In addition to the standard emnify services, the Evaluation Plan supports the fo
 <details className="custom-details-example-json-response">
   <summary>Multicloud Data Streamer</summary>
     <p>Use the tools you're familiar with to stream connectivity metadata, triage issues, collect usage insights, and more. 
-    <a href="https://docs.emnify.com/multicloud-data-streamer">Learn more about the Data Streamer</a> or <a href="https://docs.emnify.com/multicloud-data-streamer-integrations">browse the available integrations</a>.</p>
+    <a href="https://docs.emnify.com/multicloud-data-streamer">Learn more about the Data Streamer</a> or <a href="https://docs.emnify.com/multicloud-data-streamer/integrations">browse the available integrations</a>.</p>
 </details>
 
 <details className="custom-details-example-json-response">
@@ -78,7 +78,7 @@ In addition to the standard emnify services, the Evaluation Plan supports the fo
     <p>Automate SIM management, business processes, and other workflows using our suite of developer tools.</p>
     <ul>
       <li>APIs (<a href="https://docs.emnify.com/rest">REST</a> and <a href="https://docs.emnify.com/graphql">GraphQL</a>)</li>
-      <li>SDKs (<a href="https://docs.emnify.com/python-sdk-quickstart">Python</a> and <a href="https://docs.emnify.com/java-sdk-quickstart">Java</a>)</li>
+      <li>SDKs (<a href="https://docs.emnify.com/sdks/python/quickstart">Python</a> and <a href="https://docs.emnify.com/sdks/java/quickstart">Java</a>)</li>
       <li>Zapier (for <a href="https://docs.emnify.com/services/no-code-workflow-automation">no-code workflow automation</a>)</li>
     </ul>
 </details>

@@ -294,7 +294,7 @@ const config = {
           },
           // Home - Connectivity services
           {
-            to: "/cellular-iot",
+            to: "/services/cellular-iot",
             from: "/services",
           },
           // Home - Platform services
@@ -303,23 +303,23 @@ const config = {
             from: "/services/data-streamer",
           },
           {
-            to: "/multicloud-data-streamer-connection-types",
+            to: "/multicloud-data-streamer/connection-types",
             from: "/services/data-streamer/connection-types",
           },
           {
-            to: "/multicloud-data-streamer-stream-types",
+            to: "/multicloud-data-streamer/stream-types",
             from: "/services/data-streamer/stream-types",
           },
           {
-            to: "/multicloud-data-streamer-manage-data-streams",
+            to: "/multicloud-data-streamer/manage-data-streams",
             from: "/services/data-streamer/managing-data-streams",
           },
           {
-            to: "/multicloud-data-streamer-usage",
+            to: "/multicloud-data-streamer/usage",
             from: "/services/data-streamer/usage",
           },
           {
-            to: "/multicloud-data-streamer-integrations",
+            to: "/multicloud-data-streamer/integrations",
             from: "/services/data-streamer/available-integrations",
           },
           {
@@ -327,11 +327,11 @@ const config = {
             from: "/services/events",
           },
           {
-            to: "/system-events-event-types",
+            to: "/system-events/event-types",
             from: "/services/events/event-types",
           },
           {
-            to: "/system-events-usage",
+            to: "/system-events/usage",
             from: "/services/events/usage",
           },
           // Home - Support

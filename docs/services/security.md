@@ -1,6 +1,8 @@
 ---
 description: SASE approach, DNS, IMEI lock
+slug: /services/security
 ---
+
 # Security
 
 Given the globally distributed nature of the devices, smaller footprints and lack of resources, it can get difficult to individually secure IoT devices.

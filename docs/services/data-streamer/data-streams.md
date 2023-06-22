@@ -1,13 +1,13 @@
 ---
 description: Set up, filter, pause, or delete data streams with the emnify multicloud Data Streamer
-slug: /multicloud-data-streamer-manage-data-streams
+slug: /multicloud-data-streamer/manage-data-streams
 ---
 
 # Manage data streams
 
 ## Set up a data stream
 
-Each [connection type](/multicloud-data-streamer-connection-types) requires specific credentials to ensure that the data streamer has permission to write data to that service. 
+Each [connection type](/multicloud-data-streamer/connection-types) requires specific credentials to ensure that the data streamer has permission to write data to that service. 
 API keys and configuration parameters differ by connection type.
 
 During creation, you can define the connection type and the corresponding destination settings, the stream type, and the filtering.

@@ -1,6 +1,6 @@
 ---
 description: Manage data streams with the emnify Portal or REST API
-slug: /multicloud-data-streamer-usage
+slug: /multicloud-data-streamer/usage
 ---
 
 # Use the Data Streamer
@@ -17,12 +17,12 @@ Integrating the Data Streamer API becomes a faster and more secure approach when
 
 ## Data Streamer in the Portal
 
-To [manage your data streams](/multicloud-data-streamer-manage-data-streams), [log in to your emnify Portal account](https://portal.emnify.com/sign/).
+To [manage your data streams](/multicloud-data-streamer/manage-data-streams), [log in to your emnify Portal account](https://portal.emnify.com/sign/).
 Then, navigate to the [**Data Streams**](https://portal.emnify.com/integrations#data-streams) section of the [**Integrations** page](https://portal.emnify.com/integrations).
 
 ### View data streams
 
-If there are no data streams configured, the [**Data Streams**](https://portal.emnify.com/integrations#data-streams) panel displays all available [connection types](/multicloud-data-streamer-connection-types) as tiles.
+If there are no data streams configured, the [**Data Streams**](https://portal.emnify.com/integrations#data-streams) panel displays all available [connection types](/multicloud-data-streamer/connection-types) as tiles.
 
 <img
   src={require('./assets/portal-integrations-data-streams-panel.png').default}
@@ -66,14 +66,14 @@ This shows the connection type tiles. You can choose your preferred connection t
   alt=""
 />
 
-Configure the source by selecting your desired [stream type](/multicloud-data-streamer-stream-types).
-Optionally, you can add event options for [filtering on event types](/multicloud-data-streamer-manage-data-streams#filter-event-data-streams).
+Configure the source by selecting your desired [stream type](/multicloud-data-streamer/stream-types).
+Optionally, you can add event options for [filtering on event types](/multicloud-data-streamer/manage-data-streams#filter-event-data-streams).
 
 Provide the required settings to configure the destination.
 
 :::tip
 API keys and configuration parameters differ by connection type.
-Instructions for configuring each connection type are in the [Available integrations](/multicloud-data-streamer-integrations) section.
+Instructions for configuring each connection type are in the [Available integrations](/multicloud-data-streamer/integrations) section.
 :::
 
 Click **Create** and verify the status of your new stream.
@@ -88,7 +88,7 @@ If this happens, the stream isn't created and you must correct the configuration
 
 ### Inspect and update data streams
 
-With the **Details** button on the Data Stream tiles, you can inspect the configuration and update the [filters for event data streams](/multicloud-data-streamer-manage-data-streams#filter-event-data-streams).
+With the **Details** button on the Data Stream tiles, you can inspect the configuration and update the [filters for event data streams](/multicloud-data-streamer/manage-data-streams#filter-event-data-streams).
 
 <img
   src={require('../assets/portal-integrations-data-streams-details-events-filter.png').default}
@@ -138,7 +138,7 @@ The [Data Streamer reference page](https://cdn.emnify.net/api/doc/data-streamer.
 ### Work with the Data Streamer API
 
 :::caution
-API keys and configuration parameters differ by [connection type](/multicloud-data-streamer-connection-types).
+API keys and configuration parameters differ by [connection type](/multicloud-data-streamer/connection-types).
 Details on setting up, updating, or deleting integrations are in the [emnify API reference](https://cdn.emnify.net/api/doc/swagger.html#/Integrations).
 It lists all entry points for managing data streams programmatically and contains examples of the available connection types and filtering options.
 :::
@@ -179,7 +179,7 @@ curl -X POST "https://cdn.emnify.net/api/v2/data_stream" \
 
 The request body (set using the `-d` flag in cURL) configures the data stream's parameters.
 
-The following JSON request body example shows how to create a stream of usage data records with the [Webhook integration](/multicloud-data-streamer-integrations#webhook):
+The following JSON request body example shows how to create a stream of usage data records with the [Webhook integration](/multicloud-data-streamer/integrations#webhook):
 
 ```json
 {
@@ -203,7 +203,7 @@ The following JSON request body example shows how to create a stream of usage da
 }
 ```
 
-You can also create an event stream with [AWS Kinesis integration](/multicloud-data-streamer-integrations#amazon-kinesis-data-streams) and enabled filtering, like the following JSON request body example:
+You can also create an event stream with [AWS Kinesis integration](/multicloud-data-streamer/integrations#amazon-kinesis-data-streams) and enabled filtering, like the following JSON request body example:
 
 ```json
 {

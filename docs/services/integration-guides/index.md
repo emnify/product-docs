@@ -1,3 +1,8 @@
+---
+pagination_next: services/data-streamer/index
+slug: /integration-guides
+---
+
 # Integration guides
 
 emnify services can be integrated with your existing infrastructure.
