@@ -2,7 +2,8 @@
 title: Preview the GraphQL API
 slug: /graphql
 pagination_label: Preview the GraphQL API
-pagination_next: graphql/using-graphiql
+pagination_prev: rest/index
+pagination_next: graphql/graphiql-ide
 displayed_sidebar: devResourcesSidebar
 ---
 

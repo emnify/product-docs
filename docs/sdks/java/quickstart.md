@@ -1,6 +1,8 @@
 ---
 description: Step-by-step guide for installing and using the emnify Java SDK
-slug: /java-sdk-quickstart
+pagination_prev: sdks/python/quickstart
+pagination_next: sdks/java/examples
+slug: /sdks/java/quickstart
 ---
 
 # Getting started with the emnify Java SDK
@@ -80,8 +82,8 @@ You can use environment variables for storing configuration settings like an app
 
 Now that you have the SDK configured, it's time to learn what you can do with it.
 
-If you're new to IoT connectivity and emnify, start by learning some [common terminology and concepts](/sdks-concepts). 
+If you're new to IoT connectivity and emnify, start by learning some [common terminology and concepts](/sdks/concepts). 
 
-Once you're comfortable with these [concepts](/sdks-concepts), you can explore some use cases that show what the SDK is capable of based on a few [Examples](/java-sdk-examples). 
+Once you're comfortable with these [concepts](/sdks/concepts), you can explore some use cases that show what the SDK is capable of based on a few [Examples](/sdks/java/examples). 
 
 Also, see the [*emnify System Documentation*](https://cdn.emnify.net/api/doc/index.html) and our [OpenAPI Specification](https://cdn.emnify.net/api/doc/swagger.html).

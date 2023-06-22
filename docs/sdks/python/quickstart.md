@@ -1,6 +1,7 @@
 ---
 description: Step-by-step guide for installing and using the emnify Python SDK
-slug: /python-sdk-quickstart
+pagination_next: sdks/python/examples
+slug: /sdks/python/quickstart
 ---
 
 # Getting started with the emnify Python SDK
@@ -60,8 +61,8 @@ print([device for device in devices])
 
 Now that you have the SDK configured, it's time to learn what you can do with it.
 
-If you're new to IoT connectivity and emnify, start by learning the [common terminology and concepts](/sdks-concepts). 
+If you're new to IoT connectivity and emnify, start by learning the [common terminology and concepts](/sdks/concepts). 
 
-Once you're comfortable with these [concepts](/sdks-concepts), you can explore some use cases that show what the SDK is capable of based on a few [Examples](/python-sdk-examples). 
+Once you're comfortable with these [concepts](/sdks/concepts), you can explore some use cases that show what the SDK is capable of based on a few [Examples](/sdks/python/examples). 
 
 Also, see the [*emnify System Documentation*](https://cdn.emnify.net/api/doc/index.html) and our [OpenAPI Specification](https://cdn.emnify.net/api/doc/swagger.html).

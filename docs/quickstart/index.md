@@ -1,7 +1,7 @@
 ---
 description: Start developing your IoT solutions with emnify
 pagination_next: quickstart/order-sims
-slug: /quickstart
+slug: /
 ---
 
 # Sign up for an emnify account

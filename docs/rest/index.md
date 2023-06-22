@@ -1,6 +1,7 @@
 ---
 description: Introduce the OpenAPI structure and code samples
 displayed_sidebar: devResourcesSidebar
+pagination_next: rest/authentication
 slug: /rest
 ---
 

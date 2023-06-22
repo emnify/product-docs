@@ -1,6 +1,6 @@
 ---
 description: Code samples showing how to use the emnify Java SDK
-slug: /java-sdk-examples
+slug: /sdks/java/examples
 ---
 
 # Examples

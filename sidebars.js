@@ -233,18 +233,19 @@ const sidebars = {
     "support",
   ],
   devResourcesSidebar: [
+    "developer-resources/index",
     {
       type: "category",
       label: "REST API",
       link: {
         type: "doc",
-        id: "rest/getting-started",
+        id: "rest/index",
       },
       items: [
         {
           type: "doc",
           label: "Overview",
-          id: "rest/getting-started",
+          id: "rest/index",
         },
         "rest/authentication",
         "rest/sms-operations",
@@ -268,7 +269,7 @@ const sidebars = {
           label: "Preview the GraphQL API",
           id: "graphql/preview",
         },
-        "graphql/using-graphiql",
+        "graphql/graphiql-ide",
       ],
     },
     {
@@ -299,7 +300,6 @@ const sidebars = {
               id: "sdks/python/quickstart",
             },
             "sdks/python/examples",
-            "sdks/python/support",
             {
               type: "link",
               label: "API Reference",
@@ -321,7 +321,6 @@ const sidebars = {
               id: "sdks/java/quickstart",
             },
             "sdks/java/examples",
-            "sdks/java/support",
             {
               type: "link",
               label: "API Reference",
@@ -329,6 +328,7 @@ const sidebars = {
             },
           ],
         },
+        "sdks/support",
       ],
     },
   ],

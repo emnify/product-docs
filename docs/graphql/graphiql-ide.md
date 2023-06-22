@@ -1,5 +1,6 @@
 ---
 displayed_sidebar: devResourcesSidebar
+slug: /graphql/graphiql-ide
 ---
 
 import Tabs from '@theme/Tabs';

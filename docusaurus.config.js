@@ -116,7 +116,7 @@ const config = {
         title: "Documentation",
         logo: {
           alt: "emnify Documentation – Home",
-          href: "/quickstart",
+          href: "/",
           src: "img/logo-word-blue-295x80.png",
         },
         items: [
@@ -231,8 +231,8 @@ const config = {
         redirects: [
           // Home - Getting started with emnify
           {
-            to: "/quickstart",
-            from: ["/", "/quickstart/getting-started"],
+            to: "/",
+            from: ["/quickstart", "/quickstart/getting-started"],
           },
           {
             to: "/order-sims",
@@ -286,6 +286,11 @@ const config = {
           {
             to: "/sso/microsoft-active-directory",
             from: "/sso",
+          },
+          // Home - emnify Portal - How-tos - Workspaces
+          {
+            to: "/workspaces/create",
+            from: "/workspaces",
           },
           // Home - Connectivity services
           {
@@ -352,34 +357,22 @@ const config = {
             to: "/graphql",
             from: "/graphql/preview",
           },
+          {
+            to: "/graphql/graphiql-ide",
+            from: "/graphql/using-graphiql",
+          },
           // Developer Resources - SDKs
           {
-            to: "/sdks-concepts",
-            from: "/sdks/concepts",
-          },
-          {
-            to: "/python-sdk-quickstart",
+            to: "/sdks/python/quickstart",
             from: ["/sdks/python", "/sdks/python/getting-started"],
           },
           {
-            to: "/python-sdk-examples",
-            from: "/sdks/python/examples",
-          },
-          {
-            to: "/python-sdk-support",
-            from: "/sdks/python/help",
-          },
-          {
-            to: "/java-sdk-quickstart",
+            to: "/sdks/java/quickstart",
             from: ["/sdks/java", "/sdks/java/getting-started"],
           },
           {
-            to: "/java-sdk-examples",
-            from: "/sdks/java/examples",
-          },
-          {
-            to: "/java-sdk-support",
-            from: "/sdks/java/help",
+            to: "/sdks/support",
+            from: ["/sdks/java/help", "/sdks/python/help"],
           },
         ],
       },
