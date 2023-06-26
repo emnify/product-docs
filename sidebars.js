@@ -53,15 +53,13 @@ const sidebars = {
       type: "category",
       label: "emnify Portal",
       link: {
-        type: "doc",
-        id: "portal/index",
+        type: "generated-index",
+        title: "emnify Portal",
+        slug: "/portal",
+        description:
+          "Track and explore costs, network activity, critical events, geographic distribution, and more with the emnify Portal web application",
       },
       items: [
-        {
-          type: "doc",
-          label: "Overview",
-          id: "portal/index",
-        },
         {
           type: "category",
           label: "How-tos",
@@ -237,7 +235,6 @@ const sidebars = {
     "support",
   ],
   devResourcesSidebar: [
-    "developer-resources/index",
     {
       type: "category",
       label: "REST API",
