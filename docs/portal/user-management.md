@@ -1,6 +1,8 @@
 ---
 description: Access control of endpoint, SIM, and service profile management 
+slug: /portal/user-management
 ---
+
 import Check from './assets/check-mark-3-24.png';
 import Uncheck from './assets/x-mark-24.png';
 

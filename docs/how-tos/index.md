@@ -1,6 +1,7 @@
 ---
 description: Step-by-step how to guides that teach you how to use the emnify platform
 pagination_next: how-tos/multi-inclusive-volumes
+slug: /how-tos
 ---
 
 # How-tos

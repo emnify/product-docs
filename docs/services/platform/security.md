@@ -1,5 +1,6 @@
 ---
 description: SASE approach, DNS, IMEI lock
+pagination_prev: services/platform/events/index
 slug: /services/security
 ---
 

@@ -1,6 +1,6 @@
 ---
 description: Network aggregation supporting all radio types
-pagination_next: services/iot-cloud-communication-platform
+pagination_next: services/network/iot-cloud-communication-platform
 slug: /services/global-iot-network
 ---
 

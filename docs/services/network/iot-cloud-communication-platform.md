@@ -1,6 +1,8 @@
 ---
 description: Distributed data plane, traditional operators vs emnify, regional breakout
+slug: /services/iot-cloud-communication-platform
 ---
+
 # IoT cloud communication platform
 
 emnify’s platform (consisting of a mobile core network and a communication platform dedicated for IoT) has been built up cloud-natively.

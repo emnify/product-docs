@@ -1,6 +1,8 @@
 ---
 description: AWS Intra-Cloud Connect, IPsec
+slug: /services/cloud-connect
 ---
+
 # Cloud Connect
 
 The data traffic of regular SIM cards is secured within the mobile network – but traverses the public internet between the mobile network and the application, which makes the device and application susceptible to attacks and prohibits to easily establish a remote device session.

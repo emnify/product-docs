@@ -3,7 +3,7 @@ description: Manage events with emnify's Data Streamer, REST API, or Portal
 slug: /system-events/usage
 ---
 
-# Work with events
+# Work with system events
 
 There are three ways you can access and trigger available events:
 

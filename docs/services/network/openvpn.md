@@ -1,6 +1,8 @@
 ---
 description: Overview and setup
+slug: /services/openvpn
 ---
+
 # OpenVPN
 
 emnify's communication platform hosts an OpenVPN service that allows you to establish a private network between a device and any remote client location. 

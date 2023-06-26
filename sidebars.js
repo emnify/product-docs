@@ -95,11 +95,7 @@ const sidebars = {
                   label: "Google Cloud Platform",
                   id: "how-tos/sso/google-cloud-platform",
                 },
-                {
-                  type: "doc",
-                  label: "Troubleshooting",
-                  id: "how-tos/sso/troubleshooting",
-                },
+                "how-tos/sso/troubleshooting",
               ],
             },
             {
@@ -145,7 +141,7 @@ const sidebars = {
           label: "No-code automation",
           id: "portal/no-code-automation",
         },
-        "services/user-management",
+        "portal/user-management",
       ],
     },
     {
@@ -224,17 +220,17 @@ const sidebars = {
       label: "Network services",
       link: {
         type: "doc",
-        id: "services/global-iot-network",
+        id: "services/network/global-iot-network",
       },
       items: [
-        "services/global-iot-network",
+        "services/network/global-iot-network",
         {
           type: "doc",
           label: "IoT communication platform",
-          id: "services/iot-cloud-communication-platform",
+          id: "services/network/iot-cloud-communication-platform",
         },
-        "services/cloud-connect",
-        "services/openvpn",
+        "services/network/cloud-connect",
+        "services/network/openvpn",
       ],
     },
     "glossary",

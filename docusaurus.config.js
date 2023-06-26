@@ -286,6 +286,10 @@ const config = {
             to: "/portal/no-code-automation",
             from: "/services/no-code-workflow-automation",
           },
+          {
+            to: "/portal/user-management",
+            from: "/services/user-management",
+          },
           // Home - emnify Portal - How-tos
           {
             to: "/set-up-multi-inclusive-volumes",
