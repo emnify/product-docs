@@ -6,7 +6,7 @@ slug: /quickstart/troubleshooting
 # Troubleshooting
 
 When you experience issues while connecting your device for the first time, there are several common patterns that can be identified by looking at [**Connected Devices**](https://portal.emnify.com/connected-devices) in the Portal.
-If you do not have any entry in the connected devices, go back to [Create a device](/create-device) and assign the SIM.
+If you do not have any entry in the connected devices, go back to [Create a device](/quickstart/create-device) and assign the SIM.
 
 The device will show different icons that indicate the status
 (**Offline**, **Attached**, **Online**, **Blocked**).

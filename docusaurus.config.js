@@ -230,19 +230,19 @@ const config = {
         redirects: [
           // Home - Getting started with emnify
           {
-            to: "/",
-            from: ["/quickstart", "/quickstart/getting-started"],
+            to: "/quickstart",
+            from: "/quickstart/getting-started",
           },
           {
-            to: "/order-sims",
+            to: "/quickstart/order-sims",
             from: "/quickstart/ordering-sims",
           },
           {
-            to: "/register-sims",
+            to: "/quickstart/register-sims",
             from: "/quickstart/registering-sims",
           },
           {
-            to: "/create-device",
+            to: "/quickstart/create-device",
             from: "/quickstart/devices/creating-a-device",
           },
           {
@@ -289,15 +289,6 @@ const config = {
             to: "/portal/user-management",
             from: "/services/user-management",
           },
-          // Home - emnify Portal - How-tos
-          {
-            to: "/set-up-multi-inclusive-volumes",
-            from: "/how-tos/multi-inclusive-volumes",
-          },
-          {
-            to: "/enable-two-factor-authentication",
-            from: "/how-tos/two-factor-authentication",
-          },
           // Home - emnify Portal - How-tos - SSO
           {
             to: "/sso/microsoft-active-directory",
@@ -310,7 +301,7 @@ const config = {
           },
           // Home - Connectivity services
           {
-            to: "/services/cellular-iot",
+            to: "/services/global-iot-sim",
             from: "/services",
           },
           // Home - Platform services

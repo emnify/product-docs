@@ -1,6 +1,6 @@
 ---
 description: How to set up multi-inclusive volumes via the emnify Portal
-slug: /set-up-multi-inclusive-volumes
+slug: /how-tos/multi-inclusive-volumes
 ---
 
 # Set up multi-inclusive volumes

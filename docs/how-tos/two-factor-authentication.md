@@ -1,6 +1,6 @@
 ---
 description: How to enable two-factor authentication on your emnify account
-slug: /enable-two-factor-authentication
+slug: /how-tos/two-factor-authentication
 ---
 
 # Enable two-factor authentication

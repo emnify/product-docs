@@ -2,6 +2,7 @@
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
   mainDocsSidebar: [
+    "iot-supernetwork",
     {
       type: "category",
       label: "Getting started with emnify",
@@ -147,10 +148,9 @@ const sidebars = {
       label: "Connectivity services",
       link: {
         type: "doc",
-        id: "services/connectivity/cellular-iot",
+        id: "services/connectivity/global-iot-sim",
       },
       items: [
-        "services/connectivity/cellular-iot",
         "services/connectivity/global-iot-sim",
         "services/connectivity/sim-lifecycle-management",
         "services/connectivity/sms",
