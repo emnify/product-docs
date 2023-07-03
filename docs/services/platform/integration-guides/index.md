@@ -41,4 +41,3 @@ Here are some step-by-step integration guides to help you along the process.
 - [emnify Data Streamer integration for Datadog](https://www.emnify.com/en/developer-hub/emnify-datastreamer-integration-for-datadog)
 - [How to setup an IPsec using emnify Cloud Connect](https://www.emnify.com/en/developer-hub/how-to-setup-an-ipsec-using-emnify-cloudconnect)
 - [emnify Data Streamer integration for Keen.io](https://www.emnify.com/integration-guides/emnify-datastreamer-integration-for-keen-io)
-- [USSD integration guide](https://www.emnify.com/en/developer-hub/ussd-integration-guide)
