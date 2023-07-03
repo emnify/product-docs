@@ -1,4 +1,6 @@
 ---
+pagination_prev: graphql/preview
+pagination_next: sdks/concepts
 slug: /sdks
 ---
 
@@ -12,5 +14,5 @@ The [Concepts](/sdks/concepts) page covers helpful terms to know while working w
 
 ## Available languages
 
-- [Python](/sdks/python)
-- [Java](/sdks/java)
+- [Python](/sdks/python/quickstart)
+- [Java](/sdks/java/quickstart)

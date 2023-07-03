@@ -116,6 +116,7 @@ const config = {
         title: "Documentation",
         logo: {
           alt: "emnify Documentation – Home",
+          href: "/",
           src: "img/logo-word-blue-295x80.png",
         },
         items: [
@@ -128,27 +129,14 @@ const config = {
           {
             type: "docSidebar",
             position: "left",
-            sidebarId: "restSidebar",
-            label: "REST API",
-          },
-          {
-            type: "docSidebar",
-            position: "left",
-            sidebarId: "graphqlSidebar",
-            label: "GraphQL API",
-          },
-          {
-            type: "docSidebar",
-            position: "left",
-            sidebarId: "sdkSidebar",
-            label: "SDKs",
+            sidebarId: "devResourcesSidebar",
+            label: "Developer Resources",
           },
         ],
       },
       docs: {
         sidebar: {
           hideable: true,
-          autoCollapseCategories: true,
         },
       },
       footer: {
@@ -234,7 +222,169 @@ const config = {
       },
     }),
 
-  plugins: [require.resolve("docusaurus-plugin-image-zoom")],
+  plugins: [
+    require.resolve("docusaurus-plugin-image-zoom"),
+    [
+      "@docusaurus/plugin-client-redirects",
+      {
+        redirects: [
+          // Home - Getting started with emnify
+          {
+            to: "/quickstart",
+            from: "/quickstart/getting-started",
+          },
+          {
+            to: "/quickstart/order-sims",
+            from: "/quickstart/ordering-sims",
+          },
+          {
+            to: "/quickstart/register-sims",
+            from: "/quickstart/registering-sims",
+          },
+          {
+            to: "/quickstart/create-device",
+            from: "/quickstart/devices/creating-a-device",
+          },
+          {
+            to: "/apn-configuration",
+            from: [
+              "/quickstart/devices/apn-configuration",
+              "/quickstart/devices",
+            ],
+          },
+          {
+            to: "/apn-configuration/android",
+            from: "/quickstart/devices/android",
+          },
+          {
+            to: "/apn-configuration/ios",
+            from: "/quickstart/devices/ios-devices",
+          },
+          {
+            to: "/apn-configuration/cellular-modules",
+            from: "/quickstart/devices/cellular-modules",
+          },
+          {
+            to: "/apn-configuration/gps-trackers",
+            from: "/quickstart/devices/gps-trackers",
+          },
+          {
+            to: "/apn-configuration/industrial-routers",
+            from: "/quickstart/devices/industrial-routers",
+          },
+          // Home - emnify Portal
+          {
+            to: "/portal/reports",
+            from: "/services/business-intelligence-and-analytics-reports",
+          },
+          {
+            to: "/portal/group-policies",
+            from: "/services/endpoint-management-and-group-policies",
+          },
+          {
+            to: "/portal/no-code-automation",
+            from: "/services/no-code-workflow-automation",
+          },
+          {
+            to: "/portal/user-management",
+            from: "/services/user-management",
+          },
+          // Home - emnify Portal - How-tos - SSO
+          {
+            to: "/sso/microsoft-active-directory",
+            from: "/sso",
+          },
+          // Home - emnify Portal - How-tos - Workspaces
+          {
+            to: "/workspaces/create",
+            from: "/workspaces",
+          },
+          // Home - Connectivity services
+          {
+            to: "/services/global-iot-sim",
+            from: "/services",
+          },
+          // Home - Platform services
+          {
+            to: "/multicloud-data-streamer",
+            from: "/services/data-streamer",
+          },
+          {
+            to: "/multicloud-data-streamer/connection-types",
+            from: "/services/data-streamer/connection-types",
+          },
+          {
+            to: "/multicloud-data-streamer/stream-types",
+            from: "/services/data-streamer/stream-types",
+          },
+          {
+            to: "/multicloud-data-streamer/manage-data-streams",
+            from: "/services/data-streamer/managing-data-streams",
+          },
+          {
+            to: "/multicloud-data-streamer/usage",
+            from: "/services/data-streamer/usage",
+          },
+          {
+            to: "/multicloud-data-streamer/integrations",
+            from: "/services/data-streamer/available-integrations",
+          },
+          {
+            to: "/system-events",
+            from: "/services/events",
+          },
+          {
+            to: "/system-events/event-types",
+            from: "/services/events/event-types",
+          },
+          {
+            to: "/system-events/usage",
+            from: "/services/events/usage",
+          },
+          // Home - Support
+          {
+            to: "/support",
+            from: "/services/support",
+          },
+          // Developer Resources - REST API
+          {
+            to: "/rest",
+            from: "/rest-api",
+          },
+          {
+            to: "/rest/authentication",
+            from: "/rest-api/authentication",
+          },
+          {
+            to: "/rest/sms-operations",
+            from: "/rest-api/sms-operations",
+          },
+          // Developer Resources - GraphQL API
+          {
+            to: "/graphql",
+            from: "/graphql/preview",
+          },
+          {
+            to: "/graphql/graphiql-ide",
+            from: "/graphql/using-graphiql",
+          },
+          // Developer Resources - SDKs
+          {
+            to: "/sdks/python/quickstart",
+            from: ["/sdks/python", "/sdks/python/getting-started"],
+          },
+          {
+            to: "/sdks/java/quickstart",
+            from: ["/sdks/java", "/sdks/java/getting-started"],
+          },
+          {
+            to: "/sdks/support",
+            from: ["/sdks/java/help", "/sdks/python/help"],
+          },
+        ],
+      },
+    ],
+  ],
 };
 
 module.exports = config;

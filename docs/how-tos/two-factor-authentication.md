@@ -1,4 +1,9 @@
-# Enabling two-factor authentication on your emnify account
+---
+description: How to enable two-factor authentication on your emnify account
+slug: /how-tos/two-factor-authentication
+---
+
+# Enable two-factor authentication
 
 Setting up two-factor authentication (2FA) makes unauthorized access to your account more improbable because your password is secured via your personal device, which generates a temporary authentication key.
 
@@ -57,7 +62,7 @@ Assuming there are no errors, 2FA should be enabled for your account. 🎉
 
 Now, if you log in to the Portal on a device you haven't set as trusted before or use a different browser, you'll be asked to enter a one-time password to verify your identity.
 
-## Managing trusted devices
+## Manage trusted devices
 
 Reaching for your personal device and entering a one-time password every time you need to log in to your account can be a pain, especially if you usually sign in from the same device.
 
@@ -87,7 +92,7 @@ You can remove a device from your **Trusted Devices** by clicking the associated
 Your changes will be saved automatically. 
 :::
 
-## Disabling two-factor authentication
+## Disable two-factor authentication
 
 If you want to disable 2FA, go to your [**User Settings**](https://portal.emnify.com/user-settings) page, find the [**Two-Factor Authentication**](https://portal.emnify.com/user-settings#two-factor-authentication) section, and click **Disable**.
 

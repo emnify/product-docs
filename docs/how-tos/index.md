@@ -1,3 +1,9 @@
+---
+description: Step-by-step how to guides that teach you how to use the emnify platform
+pagination_next: how-tos/multi-inclusive-volumes
+slug: /how-tos
+---
+
 # How-tos
 
 ## Automation
@@ -17,7 +23,7 @@
 
 ## Organization and billing
 
-- [Enabling workspaces on your Pro plan](/workspaces/create)
+- [Enable workspaces on your Pro plan](/workspaces/create)
 
 ## SMS
 
@@ -26,4 +32,4 @@
 
 ## User management
 
-- [Enabling two-factor authentication on your emnify account](/how-tos/two-factor-authentication)
+- [Enable two-factor authentication on your emnify account](/how-tos/two-factor-authentication)

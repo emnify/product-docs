@@ -2,55 +2,49 @@
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
   mainDocsSidebar: [
-    "cellular-iot",
+    "iot-supernetwork",
     {
       type: "category",
-      label: "Quickstart",
+      label: "Getting started with emnify",
       link: {
-        type: "generated-index",
-        title: "Quickstart guide",
-        slug: "quickstart",
-        description:
-          "Resources for your successful IoT cellular deployment with emnify",
+        type: "doc",
+        id: "quickstart/index",
       },
       items: [
-        "quickstart/getting-started",
         {
           type: "doc",
-          label: "Ordering SIMs",
-          id: "quickstart/ordering-sims",
+          label: "Create an account",
+          id: "quickstart/index",
         },
-        "quickstart/registering-sims",
+        {
+          type: "doc",
+          label: "Order SIMs",
+          id: "quickstart/order-sims",
+        },
+        {
+          type: "doc",
+          label: "Register SIMs",
+          id: "quickstart/register-sims",
+        },
+        "quickstart/create-device",
         {
           type: "category",
-          label: "Devices",
+          label: "Get the device online",
           link: {
-            type: "generated-index",
-            title: "Devices",
-            slug: "devices",
-            description:
-              "How to create and configure various types of devices.",
+            type: "doc",
+            id: "quickstart/apn-configuration/index",
           },
           items: [
-            "quickstart/devices/creating-a-device",
             {
-              type: "category",
-              label: "Getting the device online",
-              link: {
-                type: "generated-index",
-                title: "Getting the first device online",
-                slug: "quickstart/devices/apn-configuration",
-                description:
-                  "Configuring SIM-equipped devices with an Access Point Name (APN)",
-              },
-              items: [
-                "quickstart/devices/android",
-                "quickstart/devices/ios-devices",
-                "quickstart/devices/cellular-modules",
-                "quickstart/devices/gps-trackers",
-                "quickstart/devices/industrial-routers",
-              ],
+              type: "doc",
+              label: "Overview",
+              id: "quickstart/apn-configuration/index",
             },
+            "quickstart/apn-configuration/android",
+            "quickstart/apn-configuration/ios",
+            "quickstart/apn-configuration/cellular-modules",
+            "quickstart/apn-configuration/gps-trackers",
+            "quickstart/apn-configuration/industrial-routers",
           ],
         },
         "quickstart/troubleshooting",
@@ -58,226 +52,284 @@ const sidebars = {
     },
     {
       type: "category",
-      label: "Services",
+      label: "emnify Portal",
       link: {
         type: "generated-index",
+        title: "emnify Portal",
+        slug: "/portal",
         description:
-          "emnify offers the following high-level products and services:",
-        slug: "services",
+          "Track and explore costs, network activity, critical events, geographic distribution, and more with the emnify Portal web application",
       },
       items: [
-        "services/global-iot-sim",
-        "services/global-iot-network",
-        "services/iot-cloud-communication-platform",
         {
           type: "category",
-          label: "Data Streamer",
+          label: "How-tos",
           link: {
-            type: "generated-index",
-            title: "emnify multicloud Data Streamer",
-            slug: "services/data-streamer",
+            type: "doc",
+            id: "how-tos/index",
           },
           items: [
             {
               type: "doc",
-              label: "Getting started",
-              id: "services/data-streamer/getting-started",
+              label: "Overview",
+              id: "how-tos/index",
             },
-            "services/data-streamer/connection-types",
-            "services/data-streamer/stream-types",
-            "services/data-streamer/managing-data-streams",
-            "services/data-streamer/usage",
-            "services/data-streamer/available-integrations",
+            "how-tos/multi-inclusive-volumes",
+            "how-tos/two-factor-authentication",
+            {
+              type: "category",
+              label: "Single Sign-On",
+              link: {
+                type: "doc",
+                id: "how-tos/sso/microsoft-active-directory",
+              },
+              items: [
+                {
+                  type: "doc",
+                  label: "Microsoft Active Directory",
+                  id: "how-tos/sso/microsoft-active-directory",
+                },
+                {
+                  type: "doc",
+                  label: "Google Cloud Platform",
+                  id: "how-tos/sso/google-cloud-platform",
+                },
+                "how-tos/sso/troubleshooting",
+              ],
+            },
+            {
+              type: "category",
+              label: "Workspaces",
+              link: {
+                type: "doc",
+                id: "how-tos/workspaces/create",
+              },
+              items: [
+                // Labels need to be manually entered because of the beta badge
+                {
+                  type: "doc",
+                  label: "Create a new workspace",
+                  id: "how-tos/workspaces/create",
+                },
+                {
+                  type: "doc",
+                  label: "Link an existing workspace",
+                  id: "how-tos/workspaces/link",
+                },
+                {
+                  type: "doc",
+                  label: "Switch between workspaces",
+                  id: "how-tos/workspaces/switch",
+                },
+              ],
+            },
+          ],
+        },
+        {
+          type: "doc",
+          label: "Reports",
+          id: "portal/reports",
+        },
+        {
+          type: "doc",
+          label: "Group policies",
+          id: "portal/group-policies",
+        },
+        {
+          type: "doc",
+          label: "No-code automation",
+          id: "portal/no-code-automation",
+        },
+        "portal/user-management",
+      ],
+    },
+    {
+      type: "category",
+      label: "Connectivity services",
+      link: {
+        type: "doc",
+        id: "services/connectivity/global-iot-sim",
+      },
+      items: [
+        "services/connectivity/global-iot-sim",
+        "services/connectivity/sim-lifecycle-management",
+        "services/connectivity/sms",
+      ],
+    },
+    {
+      type: "category",
+      label: "Platform services",
+      link: {
+        type: "doc",
+        id: "services/platform/integration-guides/index",
+      },
+      items: [
+        "services/platform/integration-guides/index",
+        {
+          type: "category",
+          label: "Data Streamer",
+          link: {
+            type: "doc",
+            id: "services/platform/data-streamer/index",
+          },
+          items: [
+            {
+              type: "doc",
+              label: "Overview",
+              id: "services/platform/data-streamer/index",
+            },
+            "services/platform/data-streamer/connection-types",
+            "services/platform/data-streamer/stream-types",
+            "services/platform/data-streamer/data-streams",
+            {
+              type: "doc",
+              label: "Usage",
+              id: "services/platform/data-streamer/usage",
+            },
+            "services/platform/data-streamer/integrations",
           ],
         },
         {
           type: "category",
           label: "Events",
           link: {
-            type: "generated-index",
-            title: "emnify system events",
-            slug: "services/events",
+            type: "doc",
+            id: "services/platform/events/index",
           },
           items: [
             {
               type: "doc",
-              label: "Getting started",
-              id: "services/events/getting-started",
+              label: "Overview",
+              id: "services/platform/events/index",
             },
-            "services/events/event-types",
-            "services/events/usage",
+            "services/platform/events/event-types",
+            {
+              type: "doc",
+              label: "Usage",
+              id: "services/platform/events/usage",
+            },
           ],
         },
-        "services/security",
-        "services/cloud-connect",
-        "services/openvpn",
-        "services/sms",
-        "services/user-management",
-        "services/business-intelligence-and-analytics-reports",
-        "services/no-code-workflow-automation",
-        "services/sim-lifecycle-management",
-        "services/endpoint-management-and-group-policies",
-        "services/support",
+        "services/platform/security",
       ],
     },
     {
       type: "category",
-      label: "Single Sign-On",
-      link: {
-        type: "generated-index",
-        description:
-          "With Single Sign-On (SSO) enabled, your organization can access the emnify Portal using your existing account credentials",
-        slug: "/sso",
-        title: "Single Sign-On",
-      },
-      items: [
-        {
-          type: "doc",
-          label: "Microsoft Active Directory",
-          id: "sso/microsoft-active-directory",
-        },
-        {
-          type: "doc",
-          label: "Google Cloud Platform",
-          id: "sso/google-cloud-platform",
-        },
-        {
-          type: "doc",
-          label: "Troubleshooting",
-          id: "sso/troubleshooting",
-        },
-      ],
-    },
-    {
-      type: "category",
-      label: "How-tos",
+      label: "Network services",
       link: {
         type: "doc",
-        id: "how-tos/index",
+        id: "services/network/global-iot-network",
+      },
+      items: [
+        "services/network/global-iot-network",
+        {
+          type: "doc",
+          label: "IoT communication platform",
+          id: "services/network/iot-cloud-communication-platform",
+        },
+        "services/network/cloud-connect",
+        "services/network/openvpn",
+      ],
+    },
+    "glossary",
+    "support",
+  ],
+  devResourcesSidebar: [
+    {
+      type: "category",
+      label: "REST API",
+      link: {
+        type: "doc",
+        id: "rest/index",
       },
       items: [
         {
           type: "doc",
           label: "Overview",
-          id: "how-tos/index",
+          id: "rest/index",
         },
+        "rest/authentication",
+        "rest/sms-operations",
+        {
+          type: "link",
+          label: "API reference",
+          href: "https://cdn.emnify.net/api/doc/index.html",
+        },
+      ],
+    },
+    {
+      type: "category",
+      label: "GraphQL API",
+      link: {
+        type: "doc",
+        id: "graphql/preview",
+      },
+      items: [
         {
           type: "doc",
-          label: "Multi-inclusive volumes",
-          id: "how-tos/multi-inclusive-volumes",
+          label: "Preview the GraphQL API",
+          id: "graphql/preview",
         },
+        "graphql/graphiql-ide",
+      ],
+    },
+    {
+      type: "category",
+      label: "SDKs",
+      link: {
+        type: "doc",
+        id: "sdks/index",
+      },
+      items: [
         {
           type: "doc",
-          label: "Two-factor authentication",
-          id: "how-tos/two-factor-authentication",
+          label: "Overview",
+          id: "sdks/index",
         },
+        "sdks/concepts",
         {
           type: "category",
-          label: "Workspaces",
+          label: "Python",
           link: {
             type: "doc",
-            id: "how-tos/workspaces/create",
+            id: "sdks/python/quickstart",
           },
           items: [
             {
               type: "doc",
-              label: "Create a new workspace",
-              id: "how-tos/workspaces/create",
+              label: "Getting started",
+              id: "sdks/python/quickstart",
             },
+            "sdks/python/examples",
             {
-              type: "doc",
-              label: "Link an existing workspace",
-              id: "how-tos/workspaces/link",
-            },
-            {
-              type: "doc",
-              label: "Switching between workspaces",
-              id: "how-tos/workspaces/switch",
+              type: "link",
+              label: "API Reference",
+              href: "https://emnify.github.io/emnify-sdk-python/autoapi/index.html",
             },
           ],
         },
-      ],
-    },
-    "integration-guides/index",
-    "glossary",
-  ],
-  restSidebar: [
-    {
-      type: "doc",
-      label: "Getting started",
-      id: "rest-api/getting-started",
-    },
-    "rest-api/authentication",
-    "rest-api/sms-operations",
-    {
-      type: "link",
-      label: "API reference",
-      href: "https://cdn.emnify.net/api/doc/index.html",
-    },
-  ],
-  graphqlSidebar: [
-    {
-      type: "doc",
-      label: "Preview the GraphQL API",
-      id: "graphql/preview",
-    },
-    "graphql/using-graphiql",
-  ],
-  sdkSidebar: [
-    {
-      type: "doc",
-      label: "Getting started",
-      id: "sdks/index",
-    },
-    "sdks/concepts",
-    {
-      type: "category",
-      label: "Python",
-      link: {
-        type: "generated-index",
-        title: "emnify Python SDK",
-        description:
-          "The emnify Python software development kit (SDK) for SIM state management and device connectivity operations",
-        slug: "/sdks/python",
-      },
-      items: [
         {
-          type: "doc",
-          label: "Getting started",
-          id: "sdks/python/getting-started",
+          type: "category",
+          label: "Java",
+          link: {
+            type: "doc",
+            id: "sdks/java/quickstart",
+          },
+          items: [
+            {
+              type: "doc",
+              label: "Getting started",
+              id: "sdks/java/quickstart",
+            },
+            "sdks/java/examples",
+            {
+              type: "link",
+              label: "API Reference",
+              href: "https://emnify.github.io/emnify-sdk-java/",
+            },
+          ],
         },
-        "sdks/python/examples",
-        "sdks/python/help",
-        {
-          type: "link",
-          label: "API Reference",
-          href: "https://emnify.github.io/emnify-sdk-python/autoapi/index.html",
-        },
-      ],
-    },
-    {
-      type: "category",
-      label: "Java",
-      link: {
-        type: "generated-index",
-        title: "emnify Java SDK",
-        description:
-          "The emnify Java software development kit (SDK) for SIM state management and device connectivity operations",
-        slug: "/sdks/java",
-      },
-      items: [
-        {
-          type: "doc",
-          label: "Getting started",
-          id: "sdks/java/getting-started",
-        },
-        "sdks/java/examples",
-        "sdks/java/help",
-        {
-          type: "link",
-          label: "API Reference",
-          href: "https://emnify.github.io/emnify-sdk-java/",
-        },
+        "sdks/support",
       ],
     },
   ],

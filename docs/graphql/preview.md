@@ -1,6 +1,10 @@
 ---
 title: Preview the GraphQL API
+slug: /graphql
 pagination_label: Preview the GraphQL API
+pagination_prev: rest/index
+pagination_next: graphql/graphiql-ide
+displayed_sidebar: devResourcesSidebar
 ---
 
 # emnify GraphQL API <span className="theme-doc-version-badge badge badge--primary">Preview</span>
@@ -15,10 +19,10 @@ pagination_label: Preview the GraphQL API
 
 The emnify GraphQL API was initially developed internally to improve performance on the [Portal](https://portal.emnify.com/).
 In early 2023, we decided to release a preview version to customers. 
-We hope to collect feedback and continue adding features so that the functionality more closely matches our [REST API](/rest-api). 
+We hope to collect feedback and continue adding features so that the functionality more closely matches our [REST API](/rest). 
 
 :::info
-There are no plans to deprecate the [REST API](/rest-api). 
+There are no plans to deprecate the [REST API](/rest). 
 Instead, we plan to support both APIs in parallel. 
 :::
 

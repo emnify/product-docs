@@ -1,10 +1,11 @@
 ---
-description: Code samples showing how to use the SDK
+description: Code samples showing how to use the emnify python SDK
+slug: /sdks/python/examples
 ---
 
 # Examples
 
-## Getting your first device online
+## Get your first device online
 
 Follow the steps in the next code block comments to get your devices online.
 
