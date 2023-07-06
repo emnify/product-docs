@@ -21,6 +21,8 @@ Starting from the first day of the next month, the suspended SIM will not accrue
 The SIM can be reactivated and suspended again at any time.
 - **Factory Test**: The SIM is enabled and can generate traffic. 
 It can be used up to defined data and SMS thresholds without incurring charges.
-Once either threshold is crossed or 180 days have elapsed, the SIM will automatically move to the _Activated_ state.
+Once either threshold is crossed or the test period has elapsed, the SIM will automatically move to the _Activated_ state.
+By default, the test period is 180 days with data and SMS thresholds of 100 kB and 5 SMS.
+These limits can be customized per organization.
 - **Deleted**: Permanently removes the SIM from the SIM Inventory.
 Once deleted, it cannot be restored for network access.
