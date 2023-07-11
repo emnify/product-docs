@@ -1,6 +1,7 @@
 ---
 description: Improve network security and simplify user administration
 ---
+
 # Single sign-on
 
 The emnify Portal offers single sign-on (SSO) with select providers.

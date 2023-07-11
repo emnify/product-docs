@@ -1,5 +1,3 @@
-
-
 # Subscription
 
 The **Subscription** page is where you can view your current plan's details or learn about the other plans.
@@ -98,7 +96,7 @@ You will then be directed to the **Tariff upgrade** page.
 On the **Tariff upgrade** page you will have an opportunity to confirm the following:
 
 1. [**Organization details**](https://portal.emnify.com/organisation-settings/details)
-1. [**Contact information**](/userguide/organization/data#contact-information)
+1. [**Contact information**](/portal/organization/data#contact-information)
 1. **Payment details** (choose an option)
     - Card
     - PayPal

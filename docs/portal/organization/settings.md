@@ -1,6 +1,7 @@
 ---
 description: The starting point for managing your organization
 ---
+
 # Organization settings
 
 The organization settings icon is directly accessible from all emnify Portal pages.

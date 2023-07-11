@@ -1,6 +1,7 @@
 ---
 description: Invite, assign a role, suspend, and delete users
 ---
+
 # User management
 
 You can view and administer your organization's users by navigating to [**Employees**](https://portal.emnify.com/organisation-settings/users).
@@ -9,7 +10,7 @@ You can view and administer your organization's users by navigating to [**Employ
 Only users with the **Administrator** role have visibility to the list of users within their organization.
 :::
 
-## Viewing users
+## View users
 
 The paged list of users shows the following information for each user:
 
@@ -30,7 +31,7 @@ The paged list of users shows the following information for each user:
     />
 </details>
 
-## Adding a new user
+## Add a new user
 
 Select the **Invite** button, provide the user's name, email address, and role.
 Then, select the **Send Invite** button. 
@@ -43,7 +44,7 @@ Then, select the **Send Invite** button.
     />
 </details>
 
-## Finding users
+## Find users
 
 The **Filter by** dropdown offers three options:
 
@@ -51,10 +52,9 @@ The **Filter by** dropdown offers three options:
 - **Name**: Matches can be partial. This is the only filter that can return multiple results.
 - **Email**: Only an exact match will return the user's account.
 
-## Updating a user's account
+## Update a user's account
 
 The only user account attributes that an **Administrator** can change are:
 
 - **Name**: You can edit a user's name directly in the **Organization Employees** list.
 - **Status**: You can suspend an active account or activate a suspended account.
-

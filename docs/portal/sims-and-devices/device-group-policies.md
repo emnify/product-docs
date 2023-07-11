@@ -22,9 +22,9 @@ However, by creating a service policy you can control the following:
   - Allow/deny the exchange of SMS between devices
   - Allow/deny the exchange of SMS with external parties
 - **SMS Interface**
-  - [Web Portal](/userguide/sms#sending-sms-using-the-emnify-portal) (default)
+  - [Web Portal](/portal/sms#sending-sms-using-the-emnify-portal) (default)
   - [Webhook](#webhook-sms-interface)
-  - [SMPP](/userguide/sms#sms-via-smpp)
+  - [SMPP](/portal/sms#sms-via-smpp)
 
 To create a new **Service Policy**, navigate to [**Device Policies**](https://portal.emnify.com/device-policies) and select **New Service Policy**.
 
@@ -122,12 +122,12 @@ This will make device selections easier when performing bulk assignments to devi
 :::
 
 :::caution Warning
-If you change a device's policy, be sure to [reset its connectivity](/userguide/sims-and-devices/lifecycle-management#reset-connectivity) for the change to take effect.
+If you change a device's policy, be sure to [reset its connectivity](/portal/sims-and-devices/lifecycle-management#reset-connectivity) for the change to take effect.
 :::
 
 ### Single device assignment
 
-When viewing [Device Details](/userguide/sims-and-devices/lifecycle-management#getting-device-information) you can select **Edit** for either **Service Policy** or **Coverage Policy**.
+When viewing [Device Details](/portal/sims-and-devices/lifecycle-management#getting-device-information) you can select **Edit** for either **Service Policy** or **Coverage Policy**.
 You will be presented a dropdown list to choose from.
 Select your policy from the list.
 You should see a real-time notification confirming the change.
@@ -166,7 +166,7 @@ As soon as you change the service policy, it is pushed to all 100 devices.
 ### Changing a device's policy assignments
 
 Another way to change a device's group policy is to switch from its current policy to another one.
-For a single device, you can select its new policy from a dropdown list when viewing the [Device Details](/userguide/sims-and-devices/lifecycle-management#getting-device-information) by selecting **Edit**  as described above in [Single device assignment](#single-device-assignment).
+For a single device, you can select its new policy from a dropdown list when viewing the [Device Details](/portal/sims-and-devices/lifecycle-management#getting-device-information) by selecting **Edit**  as described above in [Single device assignment](#single-device-assignment).
 
 For changing a group of devices to a new policy, just follow the procedure describe above for [bulk assignments](#bulk-assignments). 
 

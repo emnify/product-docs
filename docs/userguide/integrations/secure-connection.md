@@ -1,3 +1,0 @@
-# Secure Connection
-
-Coming soon!

@@ -1,6 +1,7 @@
 ---
 description: Your profile and preferences
 ---
+
 # User settings
 
 The [User settings](https://portal.emnify.com/user-settings) page is where you can manage your profile and preferences.

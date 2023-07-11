@@ -17,7 +17,7 @@ Currently, the threshold is set to 100 kB.
 
 ### Active
 
- If you choose to bypass factory test mode by setting your eSIMs to **Active**, all data and SMS usage will be billed according to your [subscription](/userguide/organization/subscription) plan. 
+ If you choose to bypass factory test mode by setting your eSIMs to **Active**, all data and SMS usage will be billed according to your [subscription](/portal/organization/subscription) plan. 
 
  If you chose to use factory test mode and exceeded the free data usage limit, your eSIMs will automatically transition to the **Active** state.
  All subsequent data usage will be included in the current billing cycle.
@@ -47,23 +47,23 @@ To expand your SIM inventory, follow the appropriate link at the top of the page
 - To visit the [SIM Shop](https://portal.emnify.com/sim-order) select **Order SIMs**
 - To [register SIMs](https://portal.emnify.com/sim-registration), either individually or in batches, select **Register SIMs**.
 
-## Managing devices
+## Manage devices
 
 You can manage your devices from the [Connected Devices](https://portal.emnify.com/connected-devices) page.
 
 
-#### Creating a new device 
+#### Create a new device 
 
-As part of the SIM registration process, you can [create a new device](/userguide/quickstart/registering-sims#creating-a-new-device) for the newly registered SIM while you are still in the SIM registration dialog.
+As part of the SIM registration process, you can [create a new device](/quickstart/register-sims#create-a-new-device) for the newly registered SIM while you are still in the SIM registration dialog.
 
 If you want to create a new device to be used with an unattached SIM, navigate to [Connected Devices](https://portal.emnify.com/connected-devices) and select **Add Device**.
 After providing a name for the new device and selecting device policies, you can select a SIM from the list of registered, unassigned SIMs, or you can search for a specific SIM under **Assign SIM (optional)**.
 
-### Getting your device online
+### Get your device online
 
-If this is your first time configuring a device for network connectivity, see the instructions in the [Quickstart guide](/quickstart/) for how to [get your first device online](/userguide/quickstart/devices/apn-configuration).
+If this is your first time configuring a device for network connectivity, see the instructions in the [Quickstart guide](/quickstart/) for how to [get your first device online](/apn-configuration).
 
-### Getting device information 
+### Get device information 
 
 To view all information about a device, navigate to [Connected Devices](https://portal.emnify.com/connected-devices), find it in the list, and select **Details**.
 

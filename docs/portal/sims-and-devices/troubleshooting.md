@@ -147,4 +147,4 @@ If so, these additional events should be logged with **Create PDP Context** bein
 ##  Troubleshooting tips
 
 Data connectivity problems can be caused by a number of factors.
-The [Troubleshooting](/userguide/quickstart/troubleshooting) section of the Quickstart guide provides detailed troubleshooting steps for specific issues that can prevent a device from functioning as expected.
+The [Troubleshooting](/quickstart/troubleshooting) section of the Quickstart guide provides detailed troubleshooting steps for specific issues that can prevent a device from functioning as expected.

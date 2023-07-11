@@ -2,7 +2,7 @@
 
 To view your billing details navigate to **Organization settings** → [Billing](https://portal.emnify.com/organisation-settings/billing) where you will find the following:
 
-## Payment Information
+## Payment information
 
 - **Payment Type**, e.g., Postpaid
 - **Billing**, e.g., Monthly, during the first week of every month
@@ -11,7 +11,7 @@ To view your billing details navigate to **Organization settings** → [Billing]
 - **VAT rate**, e.g., 19%
 - **Currency**, e.g., € EUR
 
-## Monthly Cost Details
+## Monthly cost details
 
 This section has a **Month** dropdown that defaults to **Current month (preview)**. 
 

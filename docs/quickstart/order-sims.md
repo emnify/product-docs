@@ -52,13 +52,7 @@ The benefit of batches is that they can be registered all at once, whereas singl
     style={{ width: 700 }}
 />
 
-<<<<<<<< HEAD:docs/userguide/quickstart/order-sims.md
 Learn more in our [Registering SIMs](/quickstart/register-sims) guide.
-|||||||| parent of a411f760 (Initial user guide implementation):docs/quickstart/ordering-sims.md
-Learn more in our [Registering SIMs](/quickstart/registering-sims) guide.
-========
-Learn more in our [Registering SIMs](/userguide/quickstart/registering-sims) guide.
->>>>>>>> a411f760 (Initial user guide implementation):docs/userguide/quickstart/ordering-sims.md
 :::
 
 6. Fill in your **Invoice and shipping details**, and specify your **Shipping option**.

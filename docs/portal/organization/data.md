@@ -1,6 +1,7 @@
 ---
 description: Keep your organization's information up to date
 ---
+
 # Organization data
 
 The **Organization Data** forms allow you to keep your information up to date.

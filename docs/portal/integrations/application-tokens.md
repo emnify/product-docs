@@ -1,4 +1,4 @@
-# Application Tokens
+# Application tokens
 
 To add or view existing application tokens, navigate to [Integrations](https://portal.emnify.com/integrations) and scroll down to [Application Tokens](https://portal.emnify.com/integrations#application-tokens).
 
