@@ -162,14 +162,16 @@ SIM cards vary in size (Mini vs. Micro vs. Nano), function (embedded vs. standar
 - **4FF**: Nano SIM card
 
 ## GGSN
-_Gateway GPRS Support Node_  
+_Gateway GPRS Support Node_
+
 Part of the [GSM](#gsm) infrastructure, the [GGSN](#ggsn) is responsible for the interworking between the GPRS network and external packet switched networks.
 
 ## Globally–distributed infrastructure  
 Cloud infrastructure that is distributed globally, with several local breakout points for better traffic handling.
 
 ## GSM
-_Global System for Mobile Communications_ 
+_Global System for Mobile Communications_
+
 A standard developed by the European Telecommunications Standards Institute to describe the protocols for second-generation digital cellular networks used by mobile devices.
 
 ## HLR
