@@ -8,7 +8,7 @@ If you want a summary of your usage for the current billing cycle, the [Dashboar
   - Uploaded volume
   - Downloaded volume
 - **Inclusive Volume (per active device)**  
-  This is the free data volume based on (the [Main zone](/device-group-policies#zones)) you chose for your [Coverage Policy](/device-group-policies#coverage-policies).
+  This is the free data volume based on (the [Main zone](/portal/group-policies#zones)) you chose for your [Coverage Policy](/portal/group-policies#coverage-policies).
   For instance, if you selected **Europe Basic** as your *Main zone*, your first 100 MB (pooled across multiple devices) are free.
   If the rate for this zone is €0.10 per MB, then you will see **100 MB in Europe Basic € 1.00** here.
 - **Current Data/SMS Cost** (running balance of total costs in your currency)

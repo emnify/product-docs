@@ -1,5 +1,6 @@
 ---
-description: Keep your organization's information up to date
+description: Keep your organization's information up to date in the emnify Portal
+slug: /portal/org/data
 ---
 
 # Organization data

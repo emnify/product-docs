@@ -1,36 +1,34 @@
-# Workspaces
+---
+title: Workspaces
+description: Organizations with complex business structures or diverse product lines can benefit from Workspaces in the emnify Portal
+slug: /workspaces
+---
 
-This feature is only available to [**Pro**](https://portal.emnify.com/organisation-settings/subscription) plan subscribers.
-It is designed to address the needs of organizations with complex business structures as well as those with diverse product lines.
+# Workspaces <span className="theme-doc-version-badge badge badge--primary beta">Beta</span>
 
-## Concepts
+This feature is only available to [**Pro** plan](https://portal.emnify.com/organisation-settings/subscription) subscribers.
+It's designed to address the needs of organizations with complex business structures and those with diverse product lines.
 
-### Workspace
+## Useful terms
 
-A workspace is an independent [emnify Portal](https://portal.emnify.com/) entity associated with an organization.
-Each workspace operates independently from other workspaces, i.e., it is accessed, managed, and billed separately.
+The following terms are commonly used when discussing the Workspaces feature.
+Each listed term includes a link to its associated [Glossary](/glossary) entry:
 
-### Linked Workspaces
-
-Linked workspaces are those that have been linked together by their main organization.
-Linked workspaces can be centrally or individually managed.
-
-### Main Organization
-
-The main organization is the organization that has permissions to manage multiple workspaces.
-
-### Workspace Switcher
-
-The workspace switcher is the user interface that enables an administrator to switch between linked workspaces.
+- [Workspaces](/glossary#workspace)
+- [Linked workspaces](/glossary#linked-workspaces)
+- [Main organization](/glossary#main-organization)
+- [Workspace switcher](/glossary#workspace-switcher)
 
 ## Features
 
 Implementing **Workspaces** will reduce operational costs and management complexity for organizations that meet the specified criteria.
-The administrators who have privileges to manage linked workspaces will only need one set of login credentials to administer them all.
+Administrators with privileges to manage linked workspaces will only need one set of login credentials to administer them all.
 
-There are other benefits and solutions that **Workspaces** can provide but these will vary depending on the organization, such as:
+There are other benefits and solutions that **Workspaces** can provide, but these will vary depending on the organization, such as:
 
-### Partitioning of business units to facilitate requirements for supporting fundamental differences in:
+### Partition of business units 
+
+This helps facilitate requirements for supporting fundamental differences in:
 
 - IoT businesses
 - Services or product lines
@@ -38,7 +36,7 @@ There are other benefits and solutions that **Workspaces** can provide but these
 - Currencies
 - Tax requirements
 
-### Partitioning access and visibility
+### Partition access and visibility
 
 - Workspace users see only the IoT assets they need to manage.
 - Administrators manage only the users in their business unit.
@@ -53,10 +51,18 @@ There are other benefits and solutions that **Workspaces** can provide but these
   alt=""
 />
 
-### Created multiple workspaces
+### Multiple workspaces created
 
 <img
   src={require('./assets/workspaces-created.png').default}
   style={{width:300}}
   alt=""
 />
+
+## Available guides
+
+The following guides offer step-by-step guidance for configuring Workspaces for your organization:
+
+- [Create a new workspace](/workspaces/create)
+- [Link an existing workspace](/workspaces/link)
+- [Switch between workspaces](/workspaces/switch)

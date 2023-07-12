@@ -289,16 +289,6 @@ const config = {
             to: "/portal/user-management",
             from: "/services/user-management",
           },
-          // Home - emnify Portal - How-tos - SSO
-          {
-            to: "/sso/microsoft-active-directory",
-            from: "/sso",
-          },
-          // Home - emnify Portal - How-tos - Workspaces
-          {
-            to: "/workspaces/create",
-            from: "/workspaces",
-          },
           // Home - Connectivity services
           {
             to: "/services/global-iot-sim",

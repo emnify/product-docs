@@ -86,7 +86,7 @@ const sidebars = {
           items: [
             "portal/organization/settings",
             "portal/organization/data",
-            "portal/organization/users",
+            "portal/organization/employees",
             "portal/organization/subscription",
             "portal/organization/billing",
             "portal/organization/sso",
@@ -141,7 +141,7 @@ const sidebars = {
             "how-tos/two-factor-authentication",
             {
               type: "category",
-              label: "Single Sign-On",
+              label: "Single sign-on",
               link: {
                 type: "doc",
                 id: "how-tos/sso/microsoft-active-directory",

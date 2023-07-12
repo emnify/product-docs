@@ -33,7 +33,6 @@ However, by creating a service policy, you can control the following:
 
 To create a new **Service Policy**, navigate to [**Device Policies**](https://portal.emnify.com/device-policies) and select **New Service Policy**.
 
-
 ### Webhook SMS interface
 
 When selecting **Webhook** as your **SMS Interface**, you need to provide the URL for your webhook.

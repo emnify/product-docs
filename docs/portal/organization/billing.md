@@ -1,19 +1,26 @@
+---
+description: View your organization's billing details in the emnify Portal
+slug: /portal/org/billing
+---
+
 # Billing
 
-To view your billing details navigate to **Organization settings** → [Billing](https://portal.emnify.com/organisation-settings/billing) where you will find the following:
+To view your billing details, navigate to **Organization settings** → [**Billing**](https://portal.emnify.com/organisation-settings/billing) where you will find the following:
 
 ## Payment information
 
-- **Payment Type**, e.g., Postpaid
-- **Billing**, e.g., Monthly, during the first week of every month
-- **Pay with**, e.g., Visa •••• •••• •••• 1234 **Change**
-- **VAT**, e.g., Add VAT Number
-- **VAT rate**, e.g., 19%
-- **Currency**, e.g., € EUR
+- **Payment Type** (e.g., Postpaid)
+- **Billing** (e.g., Monthly, during the first week of every month)
+- **Pay with** (e.g., Visa •••• •••• •••• 1234 **Change**)
+- **VAT** (e.g., Add VAT Number)
+- **VAT rate** (e.g., 19%)
+- **Currency** (e.g., € EUR)
 
 ## Monthly cost details
 
-This section has a **Month** dropdown that defaults to **Current month (preview)**. 
+This section has a **Month** dropdown that defaults to **Current month (preview)**.
+
+The following is an example of the shown table and potential values:
 
 | Item | Description | Settlement | Cost | Volume | Total |
 | ---- | ----------- | ---------- | ---- | ------ | ----- |

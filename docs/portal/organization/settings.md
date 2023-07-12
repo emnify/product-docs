@@ -1,5 +1,7 @@
 ---
-description: The starting point for managing your organization
+description: The starting point for managing your organization in the emnify Portal
+pagination_next: portal/organization/data
+slug: /portal/org
 ---
 
 # Organization settings
