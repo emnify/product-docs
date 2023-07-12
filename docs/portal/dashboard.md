@@ -1,6 +1,7 @@
 ---
 description: The dashboard on the emnify Portal shows a summary of your usage for the current billing cycle
-slug: /portal/dashboard
+pagination_next: portal/sims-and-devices/sim-inventory
+slug: /portal
 ---
 
 # Dashboard
@@ -15,7 +16,7 @@ It shows you a summary of your usage for the current billing cycle, as well as r
   - Downloaded volume
 
 **Inclusive Volume (per active device)**  
-This is the free data volume based on (the [Main zone](/portal/group-policies#zones)) you chose for your [Coverage Policy](/portal/group-policies#coverage-policies).
+This is the free data volume based on (the [Main zone](/portal/device-policies#zones)) you chose for your [Coverage Policy](/portal/device-policies#coverage-policies).
 
 For instance, if you selected **Europe Basic** as your *Main zone*, your first 100 MB (pooled across multiple devices) are free.
 If the rate for this zone is €0.10 per MB, then you will see **100 MB in Europe Basic € 1.00** here.

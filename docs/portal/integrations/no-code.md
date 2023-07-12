@@ -4,7 +4,7 @@ pagination_next: portal/integrations/application-tokens
 slug: /portal/no-code
 ---
 
-# No-code workflows
+# No-Code Workflows
 
 Zapier is a service that allows you to connect more than 4000 applications—including emnify—to automate workflows.
 

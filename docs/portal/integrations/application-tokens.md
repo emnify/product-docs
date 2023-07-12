@@ -3,7 +3,7 @@ description: Add or view existing application tokens on the Integrations page of
 slug: /portal/application-tokens
 ---
 
-# Application tokens
+# Application Tokens
 
 To add or view existing application tokens, navigate to [**Integrations**](https://portal.emnify.com/integrations) and scroll down to [**Application Tokens**](https://portal.emnify.com/integrations#application-tokens).
 

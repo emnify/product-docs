@@ -278,8 +278,11 @@ const config = {
             from: "/services/business-intelligence-and-analytics-reports",
           },
           {
-            to: "/portal/group-policies",
-            from: "/services/endpoint-management-and-group-policies",
+            to: "/portal/device-policies",
+            from: [
+              "/services/endpoint-management-and-group-policies",
+              "/portal/group-policies",
+            ],
           },
           {
             to: "/portal/no-code",

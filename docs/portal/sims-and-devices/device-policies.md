@@ -1,9 +1,9 @@
 ---
 description: Single/group device policy configuration of service and coverage
-slug: /portal/group-policies
+slug: /portal/device-policies
 ---
 
-# Device group policies
+# Device Policies
 
 You can use [**Device Policies**](https://portal.emnify.com/device-policies) to create device groups to ease the management of large deployments.
 There are two types of policies, **Service Policies** and **Coverage Policies**.

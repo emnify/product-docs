@@ -52,12 +52,13 @@ const sidebars = {
     },
     {
       type: "category",
-      label: "User guide",
+      label: "emnify Portal",
       link: {
         type: "doc",
-        id: "portal/sims-and-devices/sim-inventory",
+        id: "portal/dashboard",
       },
       items: [
+        "portal/dashboard",
         {
           type: "category",
           label: "Manage SIMs and devices",
@@ -68,14 +69,29 @@ const sidebars = {
           items: [
             "portal/sims-and-devices/sim-inventory",
             "portal/sims-and-devices/connected-devices",
+            "portal/sims-and-devices/device-policies",
             {
-              type: "doc",
-              id: "portal/sims-and-devices/device-group-policies",
-              label: "Group policies",
+              type: "link",
+              label: "Orders",
+              href: "/quickstart/order-sims",
             },
             "portal/sims-and-devices/troubleshooting",
           ],
         },
+        "portal/sms",
+        {
+          type: "category",
+          label: "Integrations",
+          link: {
+            type: "doc",
+            id: "portal/integrations/no-code",
+          },
+          items: [
+            "portal/integrations/no-code",
+            "portal/integrations/application-tokens",
+          ],
+        },
+        "portal/reports",
         {
           type: "category",
           label: "Organization management",
@@ -93,34 +109,8 @@ const sidebars = {
             "portal/organization/workspaces",
           ],
         },
-        "portal/sms",
-        "portal/dashboard",
-        {
-          type: "category",
-          label: "Integrations",
-          link: {
-            type: "doc",
-            id: "portal/integrations/no-code",
-          },
-          items: [
-            "portal/integrations/no-code",
-            "portal/integrations/application-tokens",
-          ],
-        },
         "portal/user-settings",
-      ],
-    },
-    {
-      type: "category",
-      label: "emnify Portal",
-      link: {
-        type: "generated-index",
-        title: "emnify Portal",
-        slug: "/portal",
-        description:
-          "Track and explore costs, network activity, critical events, geographic distribution, and more with the emnify Portal web application",
-      },
-      items: [
+        "portal/roles",
         {
           type: "category",
           label: "How-to guides",
@@ -185,8 +175,6 @@ const sidebars = {
             },
           ],
         },
-        "portal/reports",
-        "portal/roles",
       ],
     },
     {
