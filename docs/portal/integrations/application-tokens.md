@@ -9,10 +9,10 @@ To add or view existing application tokens, navigate to [Integrations](https://p
 1. Select **Create Application Token**.
 1. Select **Copy Token** and paste it in a secure location for future use.
 
-<details>
-  <summary>Show me.</summary>
+<details className="custom-details-troubleshooting">
+  <summary>Show me how to add a new token in the Portal</summary>
 
-  *Collapse* the following sections if you don't want to scroll down 3 or more screens.  
+  Collapse the following sections if you don't want to scroll down 3 or more screens.  
   <img
     src={require('./assets/integrations-application-tokens.png').default}
     alt=""

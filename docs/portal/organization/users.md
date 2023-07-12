@@ -23,7 +23,7 @@ The paged list of users shows the following information for each user:
 - **Activate** or **Suspend** button: For activating/suspending the user's account
 - **Trash bin** icon: For deleting the user's account
 
-<details>
+<details className="custom-details-example">
   <summary>Show me an example</summary>
     <img
         src={require('./assets/org-user-list.png').default}
@@ -36,7 +36,7 @@ The paged list of users shows the following information for each user:
 Select the **Invite** button, provide the user's name, email address, and role.
 Then, select the **Send Invite** button. 
 
-<details>
+<details className="custom-details-example">
   <summary>Show me an example</summary>
     <img
         src={require('./assets/org-invite-a-colleague.png').default}

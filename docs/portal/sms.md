@@ -24,7 +24,7 @@ Because the costs of sending SMS from an IoT device are higher than the cost of 
 Using the emnify [**REST API**](#sending-sms-using-the-emnify-rest-api), you can dispatch SMS MO from devices as HTTP `POST` requests toward a user-configurable URL.
 
 To enable or disable SMS MO or MT for a group of devices, you can use the toggle switches in a new or existing **Service Policy** that the devices are assigned to.
-See [Service Policies](/portal/sims-and-devices/device-group-policies#service-policies) for more details.
+See [Service Policies](/portal/device-group-policies#service-policies) for more details.
 
 ## Sending SMS using the emnify Portal
 
@@ -82,7 +82,7 @@ In this list, you will find these two "Zaps" for getting you started with sendin
 Short Message Peer–to–Peer (SMPP) is a protocol that the telecommunication industry uses for exchanging SMS messages between short message service centers (SMSC) and/or external short messaging entities (ESME).
 Telematics platforms, SMS services, and operators often use SMPP to enable sending SMS to and from devices.
 
-You can [select and configure SMPP](/portal/sims-and-devices/device-group-policies#smpp-sms-interface) as your **SMS Interface** via a new or existing Service Policy under [Device Policies](https://portal.emnify.com/device-policies).
+You can [select and configure SMPP](/portal/device-group-policies#smpp-sms-interface) as your **SMS Interface** via a new or existing Service Policy under [Device Policies](https://portal.emnify.com/device-policies).
 
 :::info
 For an example of integrating SMPP with a third-party application, see [emnify SMS via SMPP integration with Gurtam's flespi and Wialon](https://www.emnify.com/integration-guides/smpp-integration-flespi-wialon-gurtam).

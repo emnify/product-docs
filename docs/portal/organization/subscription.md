@@ -57,7 +57,7 @@ Choose between **Pay as you go** and **Inclusive volume** *(your estimated month
 
 The **Tariff Coverage Map** is a global map that shows the coverage you will have based on your selections.
 
-<details>
+<details className="custom-details-example">
   <summary>Show me the Tariff Coverage Map with Basic coverage.</summary>
   <img
     src={require('./assets/tariff-coverage-map-basic.png').default}
@@ -78,7 +78,7 @@ The **Coverage List** provides the names and number of operators per country.
 Each country's listing can be expanded to reveal the rate zone, plan coverage, data rates, as well as SMS sending and receiving rates.
 You can search the list by country name or select **By Rate Zones** to see which countries and their respective operators belong to each rate zone.
 
-<details>
+<details className="custom-details-example">
   <summary>Show me some of the countries in rate zone C.</summary>
   <img
     src={require('./assets/coverage-list-rate-zone-c.png').default}

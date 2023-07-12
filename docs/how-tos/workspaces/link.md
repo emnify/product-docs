@@ -1,4 +1,5 @@
 ---
+title: Link an existing workspace
 description: If you already have two or more workspaces created
 pagination_label: Link an existing workspace
 slug: /workspaces/link

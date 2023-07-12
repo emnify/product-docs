@@ -58,23 +58,23 @@ Information on your current balance and other details about the Evaluation plan 
 
 In addition to the standard emnify services, the Evaluation Plan supports the following features:
 
-<details className="custom-details-example-json-response">
+<details className="custom-details-example">
   <summary>Global virtual private network</summary>
     <p>Establish secure private connections to your devices via a <a href="https://docs.emnify.com/glossary#vpn">virtual private network (VPN)</a>, so you can troubleshoot devices.</p>
 </details>
 
-<details className="custom-details-example-json-response">
+<details className="custom-details-example">
   <summary>Access to 500+ networks</summary>
     <p>Connect your IoT devices to <a href="https://docs.emnify.com/services/global-iot-network">more than 540 networks in over 180 countries</a>. Get 2G, 3G, 4G, 5G, LTE-M, and NB-IoT coverage.</p>
 </details>
 
-<details className="custom-details-example-json-response">
+<details className="custom-details-example">
   <summary>Multicloud Data Streamer</summary>
     <p>Use the tools you're familiar with to stream connectivity metadata, triage issues, collect usage insights, and more. 
     <a href="https://docs.emnify.com/multicloud-data-streamer">Learn more about the Data Streamer</a> or <a href="https://docs.emnify.com/multicloud-data-streamer/integrations">browse the available integrations</a>.</p>
 </details>
 
-<details className="custom-details-example-json-response">
+<details className="custom-details-example">
   <summary>Access via APIs, SDKs, Zapier</summary>
     <p>Automate SIM management, business processes, and other workflows using our suite of developer tools.</p>
     <ul>

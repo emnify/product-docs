@@ -132,17 +132,17 @@
 }
 
 /* Details and summary elements - Example JSON responses */
-.custom-details-example-json-response {
+.custom-details-example {
   background-color: #0000350f;
   border-color: #000035 !important;
   color: #000035;
 }
 
-.custom-details-example-json-response summary::before {
+.custom-details-example summary::before {
   border-color: transparent transparent transparent #000035 !important;
 }
 
-.custom-details-example-json-response .collapsibleContent_i85q {
+.custom-details-example .collapsibleContent_i85q {
   border-top: 1px solid #000035 !important;
 }
 

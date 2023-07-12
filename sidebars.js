@@ -55,7 +55,7 @@ const sidebars = {
       label: "User guide",
       link: {
         type: "doc",
-        id: "portal/sims-and-devices/lifecycle-management",
+        id: "portal/sims-and-devices/sim-inventory",
       },
       items: [
         {
@@ -63,11 +63,16 @@ const sidebars = {
           label: "Manage SIMs and devices",
           link: {
             type: "doc",
-            id: "portal/sims-and-devices/lifecycle-management",
+            id: "portal/sims-and-devices/sim-inventory",
           },
           items: [
-            "portal/sims-and-devices/lifecycle-management",
-            "portal/sims-and-devices/device-group-policies",
+            "portal/sims-and-devices/sim-inventory",
+            "portal/sims-and-devices/connected-devices",
+            {
+              type: "doc",
+              id: "portal/sims-and-devices/device-group-policies",
+              label: "Group policies",
+            },
             "portal/sims-and-devices/troubleshooting",
           ],
         },
@@ -88,7 +93,6 @@ const sidebars = {
             "portal/organization/workspaces",
           ],
         },
-        "portal/sim-orders",
         "portal/sms",
         "portal/dashboards",
         {
@@ -122,7 +126,7 @@ const sidebars = {
       items: [
         {
           type: "category",
-          label: "How-tos",
+          label: "How-to guides",
           link: {
             type: "doc",
             id: "how-tos/index",
@@ -188,11 +192,6 @@ const sidebars = {
           type: "doc",
           label: "Reports",
           id: "portal/reports",
-        },
-        {
-          type: "doc",
-          label: "Group policies",
-          id: "portal/group-policies",
         },
         {
           type: "doc",

@@ -1,4 +1,5 @@
 ---
+title: Create a new workspace
 description: How to submit a request for a new workspace
 pagination_label: Create a new workspace
 pagination_next: how-tos/workspaces/link

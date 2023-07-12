@@ -38,7 +38,7 @@ If you [order the free Evaluation SIM package](/quickstart), you will have to re
 
 As part of the SIM registration, you can create a new device for the newly registered SIM while you are still in the SIM registration dialog.
 
-<details>
+<details className="custom-details-example">
   <summary>Show me an example</summary>
 
   1. After confirming your BIC1 is correct, select **Register SIM Card**.
