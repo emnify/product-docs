@@ -282,8 +282,11 @@ const config = {
             from: "/services/endpoint-management-and-group-policies",
           },
           {
-            to: "/portal/no-code-automation",
-            from: "/services/no-code-workflow-automation",
+            to: "/portal/no-code",
+            from: [
+              "/services/no-code-workflow-automation",
+              "/portal/no-code-automation",
+            ],
           },
           {
             to: "/portal/user-management",

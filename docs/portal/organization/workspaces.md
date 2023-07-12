@@ -28,7 +28,7 @@ There are other benefits and solutions that **Workspaces** can provide, but thes
 
 ### Partition of business units 
 
-This helps facilitate requirements for supporting fundamental differences in:
+This helps facilitate requirements for supporting fundamental differences in the following:
 
 - IoT businesses
 - Services or product lines

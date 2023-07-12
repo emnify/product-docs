@@ -100,14 +100,11 @@ const sidebars = {
           label: "Integrations",
           link: {
             type: "doc",
-            id: "portal/integrations/no-code-workflows",
+            id: "portal/integrations/no-code",
           },
           items: [
-            "portal/integrations/no-code-workflows",
-            "portal/integrations/data-streams",
-            "portal/integrations/secure-connection",
+            "portal/integrations/no-code",
             "portal/integrations/application-tokens",
-            "portal/integrations/ip-address-space-management",
           ],
         },
         "portal/user-settings",
@@ -192,11 +189,6 @@ const sidebars = {
           type: "doc",
           label: "Reports",
           id: "portal/reports",
-        },
-        {
-          type: "doc",
-          label: "No-code automation",
-          id: "portal/no-code-automation",
         },
         "portal/user-management",
       ],
