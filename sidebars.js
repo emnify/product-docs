@@ -94,7 +94,7 @@ const sidebars = {
           ],
         },
         "portal/sms",
-        "portal/dashboards",
+        "portal/dashboard",
         {
           type: "category",
           label: "Integrations",
@@ -185,12 +185,8 @@ const sidebars = {
             },
           ],
         },
-        {
-          type: "doc",
-          label: "Reports",
-          id: "portal/reports",
-        },
-        "portal/user-management",
+        "portal/reports",
+        "portal/roles",
       ],
     },
     {

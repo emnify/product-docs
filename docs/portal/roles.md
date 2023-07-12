@@ -1,17 +1,17 @@
 ---
-description: Access control of endpoint, SIM, and service profile management 
-slug: /portal/user-management
+description: Review the emnify account permissions for various roles
+slug: /portal/roles
 ---
 
 import Check from './assets/check-mark-3-24.png';
 import Uncheck from './assets/x-mark-24.png';
 
-# User management
+# Roles and permissions
 
 The [emnify Portal](https://portal.emnify.com/) is a powerful application to control the connectivity of devices of a production system.
 
 Employees across your organization may use the Portal, from operations and finance to development and product.
-That's why emnify offers 3 levels of access (referred to as **Roles**) to use and manage Portal features and functionality:
+That's why emnify offers three levels of access (referred to as **Roles**) to use and manage Portal features and functionality:
 
 1. Admin (has access to all services and user management)
 1. Observer (has access to limited services)

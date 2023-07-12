@@ -289,8 +289,8 @@ const config = {
             ],
           },
           {
-            to: "/portal/user-management",
-            from: "/services/user-management",
+            to: "/portal/roles",
+            from: ["/services/user-management", "/portal/user-management"],
           },
           // Home - Connectivity services
           {

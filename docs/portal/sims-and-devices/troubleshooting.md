@@ -115,7 +115,7 @@ For instance, if you filter for the **Warning** severity and see any of the foll
 - **User authentication failed**
 
 :::info
-For more detailed information about events, see [**emnify system events**](/services/events).
+For more detailed information about events, see [**emnify system events**](/system-events).
 :::
 
 ### Events indicating normal operation

@@ -27,7 +27,7 @@ However, by creating a service policy, you can control the following:
   - Allow/deny the exchange of SMS between devices
   - Allow/deny the exchange of SMS with external parties
 - **SMS Interface**
-  - [Web Portal](/portal/sms#sending-sms-using-the-emnify-portal) (default)
+  - [Web Portal](/portal/sms#send-sms-using-the-emnify-portal) (default)
   - [Webhook](#webhook-sms-interface)
   - [SMPP](/portal/sms#sms-via-smpp)
 

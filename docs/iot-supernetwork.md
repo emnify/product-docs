@@ -23,7 +23,7 @@ Unlike mobile virtual network operators (MVNOs), it isn't constrained by depende
 
 - **New to emnify?**
 Follow the [getting started guide](/quickstart).
-- **Want to learn more about what the SuperNetwork can do?** Explore the available [services](/services).
+- **Want to learn more about what the SuperNetwork can do?** Explore the available [services](/services/global-iot-sim).
 - **Looking for APIs and SDKs?**
 Check out the [developer resources](/rest).
 - **Using the [emnify Portal](/portal)?**
