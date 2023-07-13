@@ -9,7 +9,7 @@ Here's how you can order SIM cards any time on the emnify Portal.
 
 <details className="custom-details-troubleshooting">
   <summary>First time ordering SIM cards on emnify?</summary>
-    <p>If you're new to emnify and interested in testing our services free of charge, please refer to our <a href="https://docs.emnify.com/#order-a-free-evaluation-sim-package">Order a free Evaluation SIM package</a> guide.</p>
+    <p>If you're new to emnify and interested in testing our services free of charge, please refer to our <a href="https://docs.emnify.com/quickstart#order-a-free-evaluation-sim-package">Order a free Evaluation SIM package</a> guide.</p>
 </details>
 
 1. [Log in to your emnify account](https://portal.emnify.com/sign).
@@ -24,7 +24,7 @@ Here's how you can order SIM cards any time on the emnify Portal.
 4. Click **Step 2 - Choose Amount** to confirm your choice.
 
 :::tip
-Learn more about the various [form factors](https://docs.emnify.com/services/global-iot-sim#form-factors) and [quality grades](https://docs.emnify.com/services/global-iot-sim#form-factors) on our [Global IoT SIM](https://docs.emnify.com/services/global-iot-sim) page.
+Learn more about the various [form factors](/services/global-iot-sim#form-factors) and [quality grades](/services/global-iot-sim#quality-grades) on our [Global IoT SIM](/services/global-iot-sim) page.
 :::
 
 <img
