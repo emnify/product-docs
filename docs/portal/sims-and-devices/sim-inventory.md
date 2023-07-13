@@ -4,7 +4,7 @@ pagination_next: portal/sims-and-devices/connected-devices
 slug: /portal/sim-inventory
 ---
 
-# SIM Inventory
+# SIM inventory
 
 ## SIM states
 

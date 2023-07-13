@@ -3,9 +3,9 @@ description: Single/group device policy configuration of service and coverage
 slug: /portal/device-policies
 ---
 
-# Device Policies
+# Device policies
 
-You can use [**Device Policies**](https://portal.emnify.com/device-policies) to create device groups to ease the management of large deployments.
+You can use [**Device Policies**](https://portal.emnify.com/device-policies) to create unique coverage and network configurations that can be assigned to devices.
 There are two types of policies, **Service Policies** and **Coverage Policies**.
 
 ## Service policies
@@ -121,12 +121,12 @@ Device group policies only become useful after you start assigning devices to th
 
 :::tip
 Develop a strategy for grouping your devices according to certain criteria related to your use cases, deployment regions, product lines, or services.
-Choose device group policy names and device tags related to these criteria.
-This will make device selections easier when performing bulk assignments to device group policies.
+Choose service policy names and device tags related to these criteria.
+This will make device selections easier when performing bulk assignments to service policies.
 :::
 
 :::caution Warning
-If you change a device's policy, be sure to [reset its connectivity](/portal/connected-devices#reset-connectivity) for the change to take effect.
+If you change a device's service or coverage policy, be sure to [reset its connectivity](/portal/connected-devices#reset-connectivity) for the change to take effect.
 :::
 
 ### Single device assignment

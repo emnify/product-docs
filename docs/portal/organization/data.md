@@ -3,7 +3,7 @@ description: Keep your organization's information up to date in the emnify Porta
 slug: /portal/org/data
 ---
 
-# Organization Data
+# Organization data
 
 The **Organization Data** forms allow you to keep your information up to date.
 
@@ -12,7 +12,6 @@ The **Organization Data** forms allow you to keep your information up to date.
 - Company name
 - Address
 - Tax ID
-- Verification document type
 
 ## Contact information
 

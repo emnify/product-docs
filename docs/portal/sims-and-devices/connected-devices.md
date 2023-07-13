@@ -3,7 +3,7 @@ description: Learn how to manage your devices via the Connected Devices page in 
 slug: /portal/connected-devices
 ---
 
-# Connected Devices
+# Connected devices
 
  [**Connected Devices**](https://portal.emnify.com/connected-devices) is where you manage your devices.
 
@@ -30,45 +30,14 @@ To view all information about a device, navigate to [**Connected Devices**](http
   />
 </details>
 
-### IMSI
+### Useful terms
 
-The international mobile subscriber identity (IMSI) is a unique number used to identify a GSM subscriber. 
-Therefore it will change if a device connects to a different operator while roaming.
+The following terms are particularly useful to know when looking at the Device Details.
+Each listed term includes a link to its associated [Glossary](/glossary) entry:
 
-<details className="custom-details-tip">
-  <summary>See how the IMSI is constructed</summary>
-  An IMSI is usually a 15-digit number but can be 14 digits in some cases.   
-  
-  It comprises three components: MCC, MNC, and MSIN.
-
-  MCC: 3-digit country identifier  
-  MNC: Operator identifier (2 or 3 digits)  
-  MSIN: Identifier for the connected device (9 or 10 digits)  
-
-  <img
-    src={require('./assets/imsi-components-table.png').default}
-    style={{width:300}}
-    alt=""
-  />
-</details> 
-
-### MSISDN
-
-The mobile station international subscriber directory number (MSISDN) is essentially the telephone number assigned to each SIM.
-For an emnify IoT eSIM, this number is needed for its ability to receive SMS messages (i.e., [SMS MT](/glossary#sms-mt)).
-
-### IMEI
-
-The international mobile equipment identity (IMEI) is a unique number used to identify cellular modems.
-
-<details className="custom-details-tip">
-  <summary>Learn more about IMEIs</summary>
-  An IMEI has 15 digits (14 digits plus a check digit).
-
-  An IMEISV has 16 digits (14 digits plus two software version digits).
-
-  For more detailed information, see emnify's IoT Glossary article: [What is an IMEI number?](https://www.emnify.com/iot-glossary/imei-number)
-</details>
+- [IMSI](/glossary#imsi)
+- [MSISDN](/glossary#msisdn)
+- [IMEI](/glossary#imei)
 
 ## Device status
 
@@ -78,10 +47,12 @@ You can toggle one or more devices between these states to control their data us
 A disabled device doesn't incur any charges.
 
 When you want a device to connect to a network, change its status to **Enabled**.
+To do this, use the **Status** toggle from the **Connected Devices** list or the device's **Details** page.
 
-To change a device's status, use the **Status** toggle from the **Connected Devices** list or the device's **Details** page.
+### Bulk actions
 
 You can also perform a bulk Enable/Disable operation on a group of devices.
+
 Use a filter to display a list of the targeted devices.
 Once their checkboxes indicate that they have been selected, the bulk actions menu bar appears at the top of the screen.
 Select **Device** and then one of the actions:
@@ -90,14 +61,14 @@ Select **Device** and then one of the actions:
 - Disable Device(s)
 
 <details className="custom-details-troubleshooting">
-  <summary>Show me how to enable/disable multiple devices</summary>
+  <summary>Show me where this happens in the Portal</summary>
   <img
     src={require('./assets/bulk-enable-disable.png').default}
     alt=""
   />
 </details>
 
-:::info
+:::caution
 Devices cannot be deleted.
 You can rename/repurpose unwanted devices for use with unassigned SIMs.
 :::
@@ -107,7 +78,7 @@ You can rename/repurpose unwanted devices for use with unassigned SIMs.
 You can reset a device's connectivity by selecting its **Reset connectivity** icon while viewing it in the list of [**Connected Devices**](https://portal.emnify.com/connected-devices) or by selecting the **Reset Connectivity** link for **Connection** located in the **Status** column of the **General** view of the device's **Details** modal.
 
 <details className="custom-details-troubleshooting">
-  <summary>Show me where I can reset a device's connectivity</summary>
+  <summary>Show me where this happens in the Portal</summary>
   <img
     src={require('./assets/connected-devices-reset-connectivity.png').default}
     style={{width:900}}

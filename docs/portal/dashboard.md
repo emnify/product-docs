@@ -11,15 +11,32 @@ It summarizes your usage during the current billing cycle and provides a log of 
 
 ## Usage summary 
 
+<details className="custom-details-example">
+  <summary>Show an example of the current usage summary</summary>
+  <img
+    src={require('./assets/dashboard-usage.png').default}
+    style={{width:695}}
+    alt=""
+  />
+</details>
+
 **Current Month Data Volume**
   - Uploaded volume
   - Downloaded volume
 
 **Inclusive Volume (per active device)**  
-This is the free data volume based on (the [Main zone](/portal/device-policies#zones)) you chose for your [Coverage Policy](/portal/device-policies#coverage-policies).
+This is the data volume based on (the [Main zone](/portal/device-policies#zones)) you chose for your [Coverage Policy](/portal/device-policies#coverage-policies).
 
-For instance, if you selected **Europe Basic** as your *Main zone*, your first 100 MB (pooled across multiple devices) are free.
-If the rate for this zone is €0.10 per MB, then you will see **100 MB in Europe Basic € 1.00** here.
+:::note
+This section is only shown if you've [set up multi-inclusive volumes](/how-tos/multi-inclusive-volumes).
+:::
+
+**Prepaid Balance**  
+The remaining balance of your prepaid credit.
+
+:::note
+This section is only shown if you're on the [Evaluation Plan](/quickstart#emnifys-evaluation-plan).
+:::
 
 **Current Data/SMS Cost**  
 The running balance of total costs in your currency.
@@ -31,19 +48,10 @@ The running balance of total costs in your currency.
 **Device Traffic**  
 A chart showing the last 4 hours of upload/download volumes.
 
-**Devices Status**
+[**Devices Status**](/glossary#endpoint-status)
   - **Online** (count)
   - **Disabled** (count)
   - **Offline** (count)
-
-<details className="custom-details-example">
-  <summary>Show an example of the current usage summary</summary>
-  <img
-    src={require('./assets/dashboard-usage.png').default}
-    style={{width:695}}
-    alt=""
-  />
-</details>
 
 ## Events
 
