@@ -6,7 +6,7 @@ slug: /workspaces
 
 # Workspaces <span className="theme-doc-version-badge badge badge--primary beta">Beta</span>
 
-This feature is only available to [**Pro** plan](https://portal.emnify.com/organisation-settings/subscription) subscribers.
+This feature comes with the [**Pro** plan](https://portal.emnify.com/organisation-settings/subscription) subscribers.
 It's designed to address the needs of organizations with complex business structures and those with diverse product lines.
 
 ## Useful terms

@@ -5,7 +5,7 @@ slug: /portal/connected-devices
 
 # Connected Devices
 
-You can manage your devices from the [**Connected Devices**](https://portal.emnify.com/connected-devices) page.
+ [**Connected Devices**](https://portal.emnify.com/connected-devices) is where you manage your devices.
 
 ## Create a new device 
 
@@ -77,7 +77,7 @@ A device has only two states: **Enabled** or **Disabled**.
 You can toggle one or more devices between these states to control their data usage.
 A disabled device doesn't incur any charges.
 
-When you are ready to deploy a device and want it to connect to a network, change its status to **Enabled**.
+When you want a device to connect to a network, change its status to **Enabled**.
 
 To change a device's status, use the **Status** toggle from the **Connected Devices** list or the device's **Details** page.
 

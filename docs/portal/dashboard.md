@@ -6,8 +6,8 @@ slug: /portal
 
 # Dashboard
 
-The [**Dashboard**](https://portal.emnify.com/) is the first page you'll see after logging in to the emnify Portal.
-It shows you a summary of your usage for the current billing cycle, as well as recent events.
+The first page you'll see in the emnify Portal is the [**Dashboard**](https://portal.emnify.com/).
+It summarizes your usage during the current billing cycle and provides a log of recent events. 
 
 ## Usage summary 
 

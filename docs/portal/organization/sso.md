@@ -6,10 +6,10 @@ slug: /sso
 # Single sign-on
 
 The emnify Portal offers single sign-on (SSO) with select providers.
-SSO provides several benefits, including improved network security and simplified administration.
+SSO improves account security and simplifies user administration.
 
 :::info
-Single sign-on (SSO) is only available with the [**Pro** plan](https://portal.emnify.com/organisation-settings/subscription).
+Single sign-on (SSO) comes with the [**Pro** plan](https://portal.emnify.com/organisation-settings/subscription).
 :::
 
 ## Providers
