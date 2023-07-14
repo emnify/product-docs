@@ -9,6 +9,10 @@ slug: /portal
 The first page you'll see in the emnify Portal is the [**Dashboard**](https://portal.emnify.com/).
 It summarizes your usage during the current billing cycle and provides a log of recent events. 
 
+:::info
+Any changes will be reflected in each chart within a few hours.
+:::
+
 ## Usage summary 
 
 <details className="custom-details-example">

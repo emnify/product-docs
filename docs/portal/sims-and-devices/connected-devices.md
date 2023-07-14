@@ -32,7 +32,7 @@ To view all information about a device, navigate to [**Connected Devices**](http
 
 ### Useful terms
 
-The following terms are particularly useful to know when looking at the Device Details.
+The following terms are particularly useful to know when looking at the **Device Details**.
 Each listed term includes a link to its associated [Glossary](/glossary) entry:
 
 - [IMSI](/glossary#imsi)

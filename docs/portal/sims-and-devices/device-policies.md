@@ -126,19 +126,22 @@ This will make device selections easier when performing bulk assignments to serv
 :::
 
 :::caution Warning
-If you change a device's service or coverage policy, be sure to [reset its connectivity](/portal/connected-devices#reset-connectivity) for the change to take effect.
+Devices don't automatically reset if you change the service or coverage policy.
+Due to caching, it can also take up to 24 hours before changes are applied to a device.
+
+Be sure to [reset its connectivity](/portal/connected-devices#reset-connectivity) for the change to take effect sooner.
 :::
 
 ### Single device assignment
 
-When viewing [Device Details](/portal/connected-devices#get-device-information), you can select **Edit** for either **Service Policy** or **Coverage Policy**.
+When viewing [**Device Details**](/portal/connected-devices#get-device-information), you can select **Edit** for either **Service Policy** or **Coverage Policy**.
 You'll be presented with a dropdown list to choose from.
 Select your policy from the list.
 You should see a real-time notification confirming the change.
 
 ### Bulk assignments 
 
-Navigate to [Connected Devices](https://portal.emnify.com/connected-devices) and search for the devices you wish to assign to a policy.
+Navigate to [**Connected Devices**](https://portal.emnify.com/connected-devices) and search for the devices you wish to assign to a policy.
 If you followed the previous tip, you might be able to use only one or two tags to filter only the devices to be assigned.
 
 If the filtered list looks good, select the top checkbox in the table heading to select them all.
@@ -170,7 +173,7 @@ As soon as you change the service policy, it is pushed to all 100 devices.
 ### Change a device's policy assignments
 
 Another way to change a device's group policy is to switch from its current policy to another one.
-For a single device, you can select its new policy from a dropdown list when viewing the [Device Details](/portal/connected-devices#get-device-information) by selecting **Edit**  as described earlier in [Single device assignment](#single-device-assignment).
+For a single device, you can select its new policy from a dropdown list when viewing the [**Device Details**](/portal/connected-devices#get-device-information) by selecting **Edit**  as described earlier in [Single device assignment](#single-device-assignment).
 
 For changing a group of devices to a new policy, follow the procedure described for [bulk assignments](#bulk-assignments). 
 

@@ -83,7 +83,7 @@ See [Sending and receiving SMS](/rest/sms-operations) in the [emnify REST API](/
 
 ## SMS via Zapier
 
-Navigate to the emnify Portal [Integrations](https://portal.emnify.com/integrations) under the **No-Code Workflows** where you will find a list of Zapier integrations.
+Navigate to the emnify Portal [**Integrations**](https://portal.emnify.com/integrations) under the **No-Code Workflows** where you will find a list of Zapier integrations.
 In this list, you will find these two "Zaps" for getting you started with sending SMS from your devices.
 
 - Send SMSes via Twilio when new devices reach usage limits in emnify
