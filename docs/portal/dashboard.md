@@ -32,7 +32,8 @@ Any changes will be reflected in each chart within a few hours.
 This is the data volume based on (the [Main zone](/portal/device-policies#zones)) you chose for your [Coverage Policy](/portal/device-policies#coverage-policies).
 
 :::note
-This section is only shown if you've [set up multi-inclusive volumes](/how-tos/multi-inclusive-volumes).
+Inclusive volume statistics are only shown if you've [set up multi-inclusive volumes](/how-tos/multi-inclusive-volumes).
+If you're in a pay-per-use model, this section of the Dashboard is empty.
 :::
 
 **Prepaid Balance**  

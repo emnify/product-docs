@@ -29,6 +29,8 @@ The following actions are available:
 - Create a device (SIM configuration)
 - Enable a device (SIM activation)
 - Block current network (add the last tried network to the blocklist)
+- Reconfigure a device
+- Disable a device
 
 Using the Zapier webhook, you can also use triggers from:
 

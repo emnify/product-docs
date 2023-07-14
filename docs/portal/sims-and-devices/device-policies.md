@@ -1,5 +1,5 @@
 ---
-description: Single/group device policy configuration of service and coverage
+description: Configure service and coverage policies for your devices on the emnify Portal
 slug: /portal/device-policies
 ---
 
@@ -115,9 +115,9 @@ You can browse the entire list of countries in the **Coverage List** or search f
   />
 </details>
 
-## Assigning devices to a device group policy
+## Assign devices to a policy
 
-Device group policies only become useful after you start assigning devices to them.
+Service policies only become useful after you start assigning devices to them.
 
 :::tip
 Develop a strategy for grouping your devices according to certain criteria related to your use cases, deployment regions, product lines, or services.
