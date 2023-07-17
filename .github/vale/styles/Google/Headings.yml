@@ -31,3 +31,12 @@ exceptions:
   # emnify
   - emnify Documentation
   - emnify IoT SuperNetwork
+  # Glossary
+  - AuC
+  - DDoS
+  - eDRX
+  - eUICC
+  - eSIM
+  - IPsec
+  - OpenVPN
+  - RESTful API

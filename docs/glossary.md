@@ -8,14 +8,14 @@ The device can send and receive data and SMS.
 _Access Point Name_
 
 A gateway between a [GSM](#gsm), GPRS, 3G, or 4G mobile network and another computer network, usually the public Internet.
-The APN needs to be configured on the device. For emnify, it is `em` or `emnify`.
+The APN needs to be configured on the device. For emnify, it's `em` or `emnify`.
 
 ## Application token  
 A unique identification key used to authenticate emnify's APIs.
 Also used when authenticating the [OpenVPN](#openvpn) service.
 
 ## A2P SMS
-_Application–to–Peer SMS_
+_Application-to-Peer SMS_
 
 The SMS sent and received between an application and a device (or vice versa).
 
@@ -40,13 +40,18 @@ _Batch Identification Code_
 A unique code for ordered SIM cards used to register the SIM cards on the [**SIM Inventory** page of the emnify Portal](https://portal.emnify.com/sim-inventory).
 
 ## Callback URL  
+<!-- vale Google.Will = NO -->
+<!-- Future tense when discussing callbacks is ok -->
 URL that will be called by a service to send and receive data related to an event that caused this action.
+<!-- vale Google.Will = YES -->
 
 ## Carrier-agnostic network  
-A network that does not limit or prefer any specific network in a country and establishes a connection over any network that is transparent to the device.
+A network that doesn't limit or prefer any specific network in a country and establishes a connection over any network that's transparent to the device.
 
+<!-- vale Google.WordList = NO -->
+<!-- 'check' isn't referring to a selector -->
 ## Check digit
-A checksum appended to identification data (e.g., [IMEI](#imei), [EID](#eid), or [ICCID](#iccid)) representing the preceding digits and calculated using an algorithm. 
+A checksum appended to identification data (for example, [IMEI](#imei), [EID](#eid), or [ICCID](#iccid)) representing the preceding digits and calculated using an algorithm. 
 
 Check digits are used to validate the identifier, verify data integrity, and help prevent errors in equipment databases.
 
@@ -54,9 +59,13 @@ Check digits are used to validate the identifier, verify data integrity, and hel
 Several identifiers have a check digits but can be calculated differently and have different names.
 For example, [ICCID](#iccid) numbers use a [_Luhn checksum digit_](#luhn-checksum-digit), while the last digits of the [EID](#eid) are called _check digits_.
 :::
+<!-- vale Google.WordList = YES -->
 
 ## Company account
-A company's emnify account (i.e., an [**Organization**](#organization) in the [emnify Portal](https://portal.emnify.com/)).
+<!-- vale Google.Contractions = NO -->
+<!-- 'That is' is used as an alternative for 'i.e.' -->
+A company's emnify account (that is, an [**Organization**](#organization) in the [emnify Portal](https://portal.emnify.com/)).
+<!-- vale Google.Contractions = YES -->
 
 :::note
 Every company account (on any plan) is a [workspace](#workspace) by default.
@@ -67,7 +76,7 @@ This is the connectivity status of an [endpoint](#endpoint).
 It can be set to:
 
 - **Online**: Device is transmitting or can transmit data through a data tunnel.
-- **Attached**: Device is attached to a network but has not established a data tunnel.
+- **Attached**: Device is attached to a network but hasn't established a data tunnel.
 - **Offline**: Device isn’t attached to a network.
 - **Blocked**
 
@@ -100,7 +109,7 @@ An IP that changes over time.
 _Extended Discontinuous Reception_
 
 A device configuration that specifies the periodicity in which the device listens for incoming data on the radio.
-Instead of using a periodicity of 2.56ms (DRX) it can be increased up to 40mins, thus reducing power consumption.
+Instead of using a periodicity of 2.56 ms (DRX) it can be increased up to 40 minutes, thus reducing power consumption.
 
 ## EID
 _eUICC Identifier_
@@ -108,10 +117,13 @@ _eUICC Identifier_
 The eUICC Identifier (EID) provides a unique global serial number for an [eUICC](#euicc).
 It has a fixed length of 32 digits, as indicated in the following diagram:
 
-![A 32-digit EID number: "89049011803455664400046832584675". The first 18 digits are the EUM Identification Number (EIN). Within those 18 digits, the first two digits are the Major Industry Identifier (Telecom in this example). The next three digits are the Country Code (GER in this example). The next three digits are the eUICC Manufacturer. The final 10 digits of the EIN contain information about the chip, OS, and its version. After the EIN, the following 11 digits are the EUM Specific Identification Number (ESIN). This value is also the eUICC Individual Identification Number. The final two digits of the EID are the Check Digits.](assets/infographic-eid-digits.png)
+![A 32-digit EID number: "89049011803455664400046832584675" The first 18 digits are the EUM Identification Number (EIN). Within those 18 digits, the first two digits are the Major Industry Identifier (Telecom in this example). The next three digits are the Country Code (GER in this example). The next three digits are the eUICC Manufacturer. The final 10 digits of the EIN contain information about the chip, OS, and its version. After the EIN, the following 11 digits are the EUM Specific Identification Number (ESIN). This value is also the eUICC Individual Identification Number. The final two digits of the EID are the Check Digits.](assets/infographic-eid-digits.png)
 
 :::note
+<!-- vale Google.WordList = NO -->
+<!-- 'check' isn't referring to a selector -->
 The EUM specific identification number (ESIN) and [check digits](#check-digit) are for example purposes only, and the values aren't real.
+<!-- vale Google.WordList = YES -->
 :::
 
 Unlike the [ICCID](#iccid), the EID remains the same throughout the life of the eSIM.
@@ -135,9 +147,9 @@ Reflects the current state of the [endpoint](#endpoint) or device:
 ## eSIM
 _Embedded SIM_
 
-Because of the "e" (for *embedded*) in its name, *eSIM* is sometimes incorrectly used for referring to the MFF2 physical form factor of an [eUICC](#euicc) chip that is designed to be permanently surface-mounted inside a device.
-Within the IoT industry, *eSIM* refers to the entire solution that is comprised of an eUICC-equipped [SIM](#sim) along with the software platform for [OTA provisioning](#ota-provisioning).
-Although eSIMs can be embedded directly in a device, they are also manufactured as pluggable SIM cards.
+Because of the "e" (for *embedded*) in its name, *eSIM* is sometimes incorrectly used for referring to the MFF2 physical form factor of an [eUICC](#euicc) chip that's designed to be permanently surface-mounted inside a device.
+Within the IoT industry, *eSIM* refers to the entire solution that's comprised of an eUICC-equipped [SIM](#sim) along with the software platform for [OTA provisioning](#ota-provisioning).
+Although eSIMs can be embedded directly in a device, they're also manufactured as pluggable SIM cards.
 The [emnify eSIM](/services/global-iot-sim) has capabilities not available with other eSIMs.
 
 ## eUICC
@@ -147,7 +159,12 @@ The embedded universal integrated circuit card (eUICC) is a component of a [SIM]
 It allows consumers and IoT manufacturers to provision the SIM with a new [operator profile](https://www.emnify.com/iot-glossary/mno) [over-the-air](#ota).
 
 :::tip Deep dive
-Learn more about the eUICC in our blog post: [What is an eUICC and why does it matter?](https://www.emnify.com/iot-glossary/what-is-an-euicc)
+<!-- vale Google.Contractions = NO -->
+<!-- vale Google.Colons = NO -->
+<!-- Follows the blog post title formatting -->
+Learn more about the eUICC in the blog post: [What is an eUICC and why does it matter?](https://www.emnify.com/iot-glossary/what-is-an-euicc)
+<!-- vale Google.Contractions = YES -->
+<!-- vale Google.Colons = YES -->
 :::
 
 ## Event log  
@@ -164,10 +181,10 @@ SIM cards vary in size (Mini vs. Micro vs. Nano), function (embedded vs. standar
 ## GGSN
 _Gateway GPRS Support Node_
 
-Part of the [GSM](#gsm) infrastructure, the [GGSN](#ggsn) is responsible for the interworking between the GPRS network and external packet switched networks.
+Part of the [GSM](#gsm) infrastructure, the [GGSN](#ggsn) is responsible for the interworkings between the GPRS network and external packet switched networks.
 
-## Globally–distributed infrastructure  
-Cloud infrastructure that is distributed globally, with several local breakout points for better traffic handling.
+## Globally-distributed infrastructure  
+Cloud infrastructure that's distributed globally, with several local breakout points for better traffic handling.
 
 ## GSM
 _Global System for Mobile Communications_
@@ -186,7 +203,8 @@ A request method supported by the HTTP protocol, which typically includes data i
 ## IC
 _Integrated Circuit_
 
-A semiconductor chip containing a large number of extremely small electronic components, e.g., a CPU, the chips on computer memory cards, the electronic part of a [SIM](#sim) card, an [eUICC](#euicc), etc.
+A semiconductor chip containing a large number of extremely small electronic components.
+For example, a CPU, the chips on computer memory cards, the electronic part of a [SIM](#sim) card, an [eUICC](#euicc), etc.
 
 ## ICCID
 _Integrated Circuit Card Identifier_
@@ -194,7 +212,7 @@ _Integrated Circuit Card Identifier_
 The integrated circuit card identifier (ICCID) is a 20-digit code used to identify a SIM card. 
 It includes a SIM card's country, home network, and identification number, as indicated in the following diagram:
 
-![A 20-digit ICCID number: "89883030000080139311". The first two digits are the Major Industry Identifier (Telecom in this example). The next three digits are the Country Code (non-terrestrial). The following two digits are the Issuer Identifier (emnify). After that, the next 11 digits are the Individual Account Identification. The final digit is the Check Digit.](assets/infographic-iccid-digits.png)
+![A 20-digit ICCID number: "89883030000080139311" The first two digits are the Major Industry Identifier (Telecom in this example). The next three digits are the Country Code (non-terrestrial). The following two digits are the Issuer Identifier (emnify). After that, the next 11 digits are the Individual Account Identification. The final digit is the Check Digit.](assets/infographic-iccid-digits.png)
 
 :::info
 Following the introduction of [eUICC](#euicc) SIM cards in 2021, there are situations where the ICCID can no longer be unique. 
@@ -205,8 +223,12 @@ For example, the ICCID value can change when a different [SIM profile](#sim-prof
 The emnify REST API returns two ICCID values: `iccid` and `iccid_with_luhn`.
 The `iccid_with_luhn` value _includes_ the final [Luhn checksum digit](#luhn-checksum-digit), while the `iccid` value doesn't. 
 
+<!-- vale Google.Colons = NO -->
+<!-- 'SIM' is a proper noun -->
+<!-- https://developers.google.com/style/capitalization#capitalization-and-colons -->
 API references: [SIM Object](https://cdn.emnify.net/api/doc/sim.html#sim-object) and [Endpoint Object](https://cdn.emnify.net/api/doc/endpoint.html#sim-object)
 :::
+<!-- vale Google.Colons = YES -->
 
 ## IMEI
 _International Mobile Equipment Identity_
@@ -215,7 +237,10 @@ A unique number used to identify cellular modems.
 
 :::info
 There are also "software versions" of IMEIs, referred to as _IMEISVs_. 
+<!-- vale Google.WordList = NO -->
+<!-- 'check' isn't referring to a selector -->
 In an IMEISV, there is no [check digit](#check-digit), and the last two digits represent the Software Version Number (SVN).
+<!-- vale Google.WordList = YES -->
 :::
 
 ## IMEI lock  
@@ -235,9 +260,8 @@ A logical subdivision of an IP network.
 ## JSON
 _JavaScript Object Notation_
 
-A lightweight data-interchange format.
-It is easier for humans to read and write compared to other formats.
-It is easy for machines to parse and generate.
+A lightweight format for storing and transporting data.
+It's often used when data is sent from a server to a web page.
 
 ## LAC
 _Location Area Code_
@@ -245,7 +269,10 @@ _Location Area Code_
 A unique 16-digit fixed-length location area identity code that identifies a phone number’s location area.
 
 ## Luhn checksum digit
+<!-- vale Google.WordList = NO -->
+<!-- 'check' isn't referring to a selector -->
 A [check digit](#check-digit) calculated from the previous digits using the [Luhn algorithm](https://en.wikipedia.org/wiki/Luhn_algorithm).
+<!-- vale Google.WordList = YES -->
 
 :::tip
 Luhn checksum digits are most notably used to validate [ICCID](#iccid) and [IMEI](#imei) numbers.
@@ -262,8 +289,8 @@ Linked workspaces can be centrally or individually managed.
 ## Main organization
 The [organization](#organization) that has permission to manage multiple [workspaces](#workspace).
 
-## MFA Key  
-A combination generated by an external device or a service that is used to authenticate the user.
+## MFA key  
+A combination generated by an external device or a service that's used to authenticate the user.
 
 ## MSISDN
 _Mobile Station International Subscriber Directory Number_
@@ -283,22 +310,22 @@ Information on your organization, employees, subscriptions, and more are availab
 :::
 
 ## OTA
-_Over–the–Air_
+_Over-the-Air_
 
 A method of wireless distribution of the software, configuration settings, or encryption keys.
 
-## OTA Provisioning  
-A technology that allows changes to the SIM memory [over–the–air](#ota).
+## OTA provisioning  
+A technology that allows changes to the SIM memory [over-the-air](#ota).
 
 ## OpenVPN  
-An open-source software application that implements [virtual private network (VPN)](#vpn) techniques for creating secure point–to–point or site–to–site connections in routed or bridged configurations and remote access facilities.
+An open source software application that implements [virtual private network (VPN)](#vpn) techniques for creating secure point-to-point or site-to-site connections in routed or bridged configurations and remote access facilities.
 
 :::tip
 [emnify hosts an OpenVPN service](/services/openvpn) that allows you to establish a private network between a device and any remote client location.
 :::
 
 ## P2P SMS
-_Peer–to–Peer SMS_
+_Peer-to-Peer SMS_
 
 SMS sent from a device with any SIM to a device with the emnify SIM.
 
@@ -310,14 +337,14 @@ Learn more about the [SMS types supported by the emnify platform](/services/sms)
 Data structure present on both the serving GPRS support node (SGSN) and the [gateway GPRS support node (GGSN)](#ggsn), which contains the subscriber’s session information when the subscriber has an active session.
 
 ## Private IP  
-An IP address that is not reachable from the public Internet but only through a local or virtual network.
+An IP address that's not reachable from the public Internet but only through a local or virtual network.
 [Dynamic private IPs](#dynamic-ip) keep changing, whereas static private IP addresses don't change.
 
 ## PSM
 _Power Saving Mode_
 
-While in PSM, the device tells the network that it will power off for a specific time and will send periodic updates in longer-than-usual intervals.
-When the device comes back online, it does not need to reattach to a network but can use an already-created PDP context, thus saving power.
+While in power saving mode (PSM), the device tells the network that it's powering off for a specific time and sending periodic updates in longer-than-usual intervals.
+When the device comes back online, it doesn't need to reattach to a network but can use an already-created PDP context, thus saving power.
 
 ## Public IP  
 An IP address accessible from the public Internet.
@@ -331,17 +358,17 @@ _Secure Access Service Edge_
 SASE is a term coined by Gartner which combines software-defined networking ([SDN](#sdn)) and security and serves it as cloud-based Security-as-a-Service.
 
 ## SDN
-_Software–Defined Networking_
+_Software-Defined Networking_
 
-An approach that allows network administrators to programmatically initialize, control, change and manage network behavior dynamically via open interfaces.
+An approach that allows network administrators to programmatically initialize, control, change, and manage network behavior dynamically via open interfaces.
 
 ## Service profile  
-A profile that defines the services and functionality of a device managed through the emnify platform.
+A profile that defines the services and capabilities of a device managed through the emnify platform.
 
 ## SIM
 _Subscriber Identification Module_
 
-A subscriber identification module (SIM) contains an integrated circuit ([IC](#ic)) that is often mounted on a plastic card.
+A subscriber identification module (SIM) contains an integrated circuit ([IC](#ic)) that's often mounted on a plastic card.
 Pluggable SIMs mounted on plastic cards are offered in various form factors.
 A SIM stores data used to identify a subscriber ([IMSI](#imsi)) along with other network information for connecting and authenticating with a [mobile network operator (MNO)](https://www.emnify.com/iot-glossary/mno).
 See also [eSIM - Embedded SIM](#esim).
@@ -366,7 +393,7 @@ Reflects the current state of the [SIM](#sim) in the [SIM lifecycle](/services/s
 :::
 
 ## SMPP
-_Short Message Peer–to–Peer_
+_Short Message Peer-to-Peer_
 
 A protocol used by the telecommunications industry for exchanging SMS messages between short message service centers (SMSC) and/or external short messaging entities (ESME).
 
@@ -388,7 +415,10 @@ Learn more about the [SMS types supported by the emnify platform](/services/sms)
 :::tip
 Using the emnify REST API, you can dispatch MO SMS from devices as HTTP `POST` requests toward a user-configurable URL.
 
+<!-- vale Google.Colons = NO -->
+<!-- Follows the API reference title formatting -->
 Read more: [Receive MO SMS via API Callback](https://cdn.emnify.net/api/doc/sms-callback.html)
+<!-- vale Google.Colons = YES -->
 :::
 
 ## SMS MT  
@@ -416,16 +446,16 @@ A term used to describe the service model when various [endpoints](#endpoint) ut
 SIM that had been unassigned from an [endpoint](#endpoint).
 
 ## Usage limit  
-User–defined limit of consumption of a certain service (data, SMS) per endpoint.
+User-defined limit of consumption of a certain service (data, SMS) per endpoint.
 
 ## User account
 An account associated with a specific person and used to log in to one or more [workspaces](#workspace).
-User accounts can be assigned a role (e.g., **Admin**).
+User accounts can be assigned a role (for example, **Admin**).
 
-## User–defined coverage  
+## User-defined coverage  
 An ability to select which operator the customer’s SIM connects to.
 
-## User–defined networking  
+## User-defined networking  
 An approach that enables users to create their own virtual mobile network, define service and security policies and provision [tariff profiles](#tariff-profile) and data packages.
 
 ## USSD
@@ -449,7 +479,10 @@ A service that protects your internet connection and privacy online.
 :::tip
 IPSec and [OpenVPN](#openvpn) are both protocols for securing data transmission through a VPN.
 
-Learn more: [IPSec vs OpenVPN: What's the difference?](https://www.emnify.com/iot-glossary/ipsec-vs-openvpn)
+<!-- vale Google.Colons = NO -->
+<!-- Follows the IoT Glossary post title formatting -->
+Learn more: [IPSec vs OpenVPN: What's the Difference?](https://www.emnify.com/iot-glossary/ipsec-vs-openvpn)
+<!-- vale Google.Colons = YES -->
 :::
 
 ## Workspace
