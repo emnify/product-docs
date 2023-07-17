@@ -63,9 +63,3 @@ exceptions:
   - XSS
   - YAML
   - ZIP
-  # emnify
-  - AWS
-  - LTE
-  - MNO
-  - MVNO
-  - SIM

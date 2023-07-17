@@ -477,11 +477,11 @@ _Virtual Private Network_
 A service that protects your internet connection and privacy online.
 
 :::tip
-IPSec and [OpenVPN](#openvpn) are both protocols for securing data transmission through a VPN.
+IPsec and [OpenVPN](#openvpn) are both protocols for securing data transmission through a VPN.
 
 <!-- vale Google.Colons = NO -->
 <!-- Follows the IoT Glossary post title formatting -->
-Learn more: [IPSec vs OpenVPN: What's the Difference?](https://www.emnify.com/iot-glossary/ipsec-vs-openvpn)
+Learn more: [IPsec vs OpenVPN: What's the Difference?](https://www.emnify.com/iot-glossary/ipsec-vs-openvpn)
 <!-- vale Google.Colons = YES -->
 :::
 

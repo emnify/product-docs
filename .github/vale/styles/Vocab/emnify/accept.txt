@@ -1,22 +1,27 @@
-API[s]
+AuC
+AWS
+CSM[s]
+DDoS
+eDRX
 emnify
-[Ii]nfographic
+emnify Documentation
+emnify IoT SuperNetwork
+eSIM
+eUICC
+Gartner
+IMEI[s]
+IMEISV[s]
+IPsec
+LTE
+Luhn
 MNO[s]
 MVNO[s]
-SDK[s]
-Telia
-Vodafone
-CSM[s]
-SLA[s]
-[Oo]nboarding
-Luhn
-[Hh]ostname
-Telecom
-eSIM[s]
-[Pp]luggable
-IMEI[s]
-IP[s]
 Nano
-interworkings
-subnet
-Gartner
+OpenVPN
+RESTful API
+SIM
+SLA[s]
+Telecom
+Telia
+Vale
+Vodafone
