@@ -5,6 +5,10 @@ slug: /sdks/python/examples
 
 # Examples
 
+Introduction Text..
+This guide shows a listing of the main examples to get devices online...
+etc...
+
 ## 1 Example Table
 | Task                             | Description   | Link |
 |---|---|---|
