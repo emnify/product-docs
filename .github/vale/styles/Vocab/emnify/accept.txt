@@ -1,6 +1,8 @@
+alex
 AuC
 AWS
 Code of Conduct
+CDR[s]
 CSM[s]
 DDoS
 Docusaurus
@@ -9,27 +11,45 @@ emnify
 emnify Documentation
 emnify Documentation Development Guide
 emnify IoT SuperNetwork
+emnify Portal
 eSIM
 ESLint
 eUICC
+flespi
 Gartner
 GitHub Pages
+Google
+Google Cloud Platform
+Gurtam
 IMEI[s]
 IMEISV[s]
 IPsec
 Jira
 LTE
 Luhn
+Microsoft
+Microsoft Active Directory
 MNO[s]
 MVNO[s]
 Nano
+OAuth
 OpenVPN
+[Rr]atezone
 RESTful API
 SIM
+Sixfab
 SLA[s]
 SuperNetwork
 Telecom
 Telia
+Teltonika
+Twilio
 Vale
 Vodafone
+<<<<<<< HEAD
 Zendesk
+||||||| parent of 9e49f9e2 (Run Portal user guide through Vale)
+=======
+Wialon
+Zapier
+>>>>>>> 9e49f9e2 (Run Portal user guide through Vale)

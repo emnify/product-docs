@@ -258,4 +258,5 @@ a:has(> code) {
 /* Beta badge */
 .beta {
   margin-bottom: 0;
+  text-transform: capitalize;
 }

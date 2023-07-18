@@ -19,10 +19,10 @@ slug: /how-tos
 - [Create an IoT gateway with emnify, Raspberry Pi, and Sixfab](https://www.emnify.com/developer-blog/getting-started-on-your-iot-journey-with-emnify-and-raspberry-pi)
 - [How to access any IoT device or web server behind a Teltonika Networks router](https://www.emnify.com/developer-blog/how-to-access-iot-device-or-web-server-behind-a-teltonika-router)
 - [How to fit a Raspberry Pi with mobile connectivity](https://www.emnify.com/developer-blog/how-to-fit-a-raspberry-pi-with-mobile-connectivity)
-- [How to set up multi-inclusive volumes](/how-tos/multi-inclusive-volumes)
 
 ## Organization and billing
 
+- [Set up multi-inclusive volumes](/how-tos/multi-inclusive-volumes)
 - [Enable workspaces on your Pro plan](/workspaces/create)
 
 ## SMS

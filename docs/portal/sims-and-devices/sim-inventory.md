@@ -8,12 +8,12 @@ slug: /portal/sim-inventory
 
 ## SIM states
 
-A SIM can transition through five states during its lifecycle: **Issued**, **Activated**, **Suspended**, **Factory Test**, and **Deleted**.
+A SIM can transition through five states during its lifecycle, **Issued**, **Activated**, **Suspended**, **Factory Test**, and **Deleted**.
 
 These states are sometimes referred to as the [SIM status](/glossary#sim-status).
 
 :::info
-Learn more about each SIM state and what they mean in our [SIM lifecycle management](/services/sim-lifecycle-management) overview.
+Learn more about each SIM state and what they mean in the [SIM lifecycle management](/services/sim-lifecycle-management) overview.
 :::
 
 ## SIM management
@@ -28,7 +28,7 @@ The **Details** view of a SIM shows all identifiers as well as:
 - **Memory** 
 - **Produced** (date and time)
 - **Model**
-- **SIM Type** (e.g., triple-cut commercial)
+- **SIM Type** (for example, triple-cut commercial)
 
 **Events** and **Statistics** are additional views that provide logs and aggregated usage, respectively, if the SIM has been assigned to a device and is **Active**.
 

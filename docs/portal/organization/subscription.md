@@ -9,11 +9,11 @@ The **Subscription** page lets you view your current plan's details or learn abo
 
 ## Current plan details
 
-If your plan is active, you will see the following information.
+If your plan is active, you see the following information:
 
 - **Plan** (Standard, Plus, or Pro)
 - **Price**
-- **Billing type** (e.g., Monthly billing)
+- **Billing type** (for example, Monthly billing)
 - **Additional features**
 
 ## Choose a plan
@@ -21,17 +21,20 @@ If your plan is active, you will see the following information.
 Visit your [**Subscription**](https://portal.emnify.com/organisation-settings/subscription) page to compare the differences in features, services, and pricing between the plans:
 
 - Standard (Select **Upgrade**)
+<!-- vale Google.We = NO -->
+<!-- 'Us' is part of the referenced UI elements -->
 - Plus (Select **Contact Us**)
 - Pro (Select **Contact Us**)
+<!-- vale Google.We = YES -->
 
 ## Pricing
 
 If you select **Upgrade**, you'll be taken to the **Pricing** page.
-To finalize your payment plan, you need to provide some estimates regarding your deployment plans, the geographical coverage you will need, and which price model you prefer.
+To finalize your payment plan, you need to provide some estimates regarding your deployment plans, the geographical coverage you need, and which price model you prefer.
 
 ### Deployment
 
-In this section, your estimates of how many devices you plan to deploy and their average monthly data consumption will be used to assess the resource requirements of your deployment.
+In this section, your estimates of how many devices you plan to deploy and their average monthly data consumption are used to assess the resource requirements of your deployment.
 
 #### Active device
 
@@ -39,7 +42,7 @@ Select the **number of active devices** you plan to have.
 The slider provides a range from 1 to 1,000,000 devices.
 
 :::info
-If you want to specify an exact number of devices that the slider is not providing, you can select the current number in the input field next to **Active device** and type in the desired value.
+If you want to specify an exact number of devices that the slider isn't providing, you can select the current number in the input field next to **Active device** and type in the desired value.
 :::
 
 #### Average device consumption per month
@@ -48,7 +51,7 @@ Select a value between 0.25 MB and 2 GB using the slider.
 
 #### Deployment option
 
-If the default selection **Global** is not your preference, select *one* from more than a dozen other regions, e.g., **Africa Extended**, **Americas**, **APAC**, **Europe Basic**, **Middle East**, **USA**, etc.
+If the default selection **Global** isn't your preference, select *one* from more than a dozen other regions, for example, **Africa Extended**, **Americas**, **APAC**, **Europe Basic**, **Middle East**, **USA**, etc.
 
 ### Coverage
 
@@ -60,10 +63,10 @@ Choose between **Pay as you go** and **Inclusive volume** *(your estimated month
 
 ## Tariff coverage map
 
-The **Tariff Coverage Map** is a global map that shows the coverage you will have based on your selections.
+The **Tariff Coverage Map** is a global map that shows the coverage you have based on your selections.
 
 <details className="custom-details-example">
-  <summary>Show me the Tariff Coverage Map with Basic coverage</summary>
+  <summary>Show the Tariff Coverage Map with Basic coverage</summary>
   <img
     src={require('./assets/tariff-coverage-map-basic.png').default}
     alt=""
@@ -74,7 +77,7 @@ The **Tariff Coverage Map** is a global map that shows the coverage you will hav
     alt=""
   />
 
-  **Note**: The Basic coverage shown here includes **Zone D** and **Zone E**.
+  **Note**: the Basic coverage shown here includes **Zone D** and **Zone E**.
 </details>
 
 ## Coverage list
@@ -84,7 +87,7 @@ Each country's listing can be expanded to reveal the rate zone, plan coverage, d
 You can search the list by country name or select **By Rate Zones** to see which countries and their respective operators belong to each rate zone.
 
 <details className="custom-details-example">
-  <summary>Show me some of the countries in rate Zone C</summary>
+  <summary>Show some of the countries in rate Zone C</summary>
   <img
     src={require('./assets/coverage-list-rate-zone-c.png').default}
     alt=""

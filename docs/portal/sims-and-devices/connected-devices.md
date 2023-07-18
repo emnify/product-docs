@@ -23,7 +23,7 @@ If this is your first time configuring a device for network connectivity, see th
 To view all information about a device, navigate to [**Connected Devices**](https://portal.emnify.com/connected-devices), find it in the list, and select **Details**.
 
 <details className="custom-details-example">
-  <summary>Show me an example of Device Details</summary>
+  <summary>Show an example of Device Details</summary>
   <img
     src={require('./assets/device-details.png').default}
     alt=""
@@ -41,10 +41,13 @@ Each listed term includes a link to its associated [Glossary](/glossary) entry:
 
 ## Device status
 
-A device has only two states: **Enabled** or **Disabled**.
+<!-- vale Google.WordList = NO -->
+<!-- State names are written the same as they're shown in the Portal -->
+A device has only two states, **Enabled** or **Disabled**.
 
 You can toggle one or more devices between these states to control their data usage.
 A disabled device doesn't incur any charges.
+<!-- vale Google.WordList = YES -->
 
 When you want a device to connect to a network, change its status to **Enabled**.
 To do this, use the **Status** toggle from the **Connected Devices** list or the device's **Details** page.
@@ -57,11 +60,14 @@ Use a filter to display a list of the targeted devices.
 Once their checkboxes indicate that they have been selected, the bulk actions menu bar appears at the top of the screen.
 Select **Device** and then one of the actions:
 
+<!-- vale Google.OptionalPlurals = NO -->
+<!-- Action names are written the same as they're shown in the Portal -->
 - Enable Device(s)
 - Disable Device(s)
+<!-- vale Google.OptionalPlurals = YES -->
 
 <details className="custom-details-troubleshooting">
-  <summary>Show me where this happens in the Portal</summary>
+  <summary>Show where this happens in the Portal</summary>
   <img
     src={require('./assets/bulk-enable-disable.png').default}
     alt=""
@@ -69,7 +75,7 @@ Select **Device** and then one of the actions:
 </details>
 
 :::caution
-Devices cannot be deleted.
+Devices can't be deleted.
 You can rename/repurpose unwanted devices for use with unassigned SIMs.
 :::
 
@@ -78,7 +84,7 @@ You can rename/repurpose unwanted devices for use with unassigned SIMs.
 You can reset a device's connectivity by selecting its **Reset connectivity** icon while viewing it in the list of [**Connected Devices**](https://portal.emnify.com/connected-devices) or by selecting the **Reset Connectivity** link for **Connection** located in the **Status** column of the **General** view of the device's **Details** modal.
 
 <details className="custom-details-troubleshooting">
-  <summary>Show me where this happens in the Portal</summary>
+  <summary>Show where this happens in the Portal</summary>
   <img
     src={require('./assets/connected-devices-reset-connectivity.png').default}
     style={{width:900}}

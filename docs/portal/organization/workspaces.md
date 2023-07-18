@@ -4,7 +4,7 @@ description: Organizations with complex business structures or diverse product l
 slug: /workspaces
 ---
 
-# Workspaces <span className="theme-doc-version-badge badge badge--primary beta">Beta</span>
+# Workspaces <span className="theme-doc-version-badge badge badge--primary beta">beta</span>
 
 This feature comes with the [**Pro** plan](https://portal.emnify.com/organisation-settings/subscription) subscribers.
 It's designed to address the needs of organizations with complex business structures and those with diverse product lines.
@@ -21,10 +21,10 @@ Each listed term includes a link to its associated [Glossary](/glossary) entry:
 
 ## Features
 
-Implementing **Workspaces** will reduce operational costs and management complexity for organizations that meet the specified criteria.
-Administrators with privileges to manage linked workspaces will only need one set of login credentials to administer them all.
+Implementing **Workspaces** reduces operational costs and management complexity for organizations that meet the specified criteria.
+Administrators with privileges to manage linked workspaces only need one set of login credentials to administer them all.
 
-There are other benefits and solutions that **Workspaces** can provide, but these will vary depending on the organization, such as:
+There are other benefits and solutions that **Workspaces** can provide, but these vary depending on the organization, such as:
 
 ### Partition of business units 
 

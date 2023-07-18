@@ -6,8 +6,8 @@ slug: /portal/org
 
 # Organization settings
 
-The **Organization Settings** icon is directly accessible from all emnify Portal pages.
-It is your starting point for managing all aspects of your organization.
+The [**Organization Settings**](https://portal.emnify.com/organisation-settings/) icon is directly accessible from all emnify Portal pages.
+It's your starting point for managing all aspects of your organization.
 
 <img
     src={require('./assets/org-settings.png').default}

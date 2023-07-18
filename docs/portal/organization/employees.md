@@ -15,6 +15,9 @@ Only users with the **Administrator** role have visibility to the list of employ
 
 The paged list of employees shows the following information for each employee:
 
+<!-- vale Google.WordList = NO -->
+<!-- 'check mark' is referring to an icon -->
+
 | State            | Description                                      |
 |:-----------------|:-------------------------------------------------|
 | **ID**      | A unique numeric value that can be used for finding a specific employee.  |
@@ -26,8 +29,10 @@ The paged list of employees shows the following information for each employee:
 | **Activate** or **Suspend** button     | For activating/suspending the employee's account.  |
 | **Trash bin** icon  | For deleting the employee's account.  |
 
+<!-- vale Google.WordList = YES -->
+
 <details className="custom-details-example">
-  <summary>Show me an example</summary>
+  <summary>Show an example</summary>
     <img
         src={require('./assets/org-user-list.png').default}
         alt=""
@@ -37,11 +42,11 @@ The paged list of employees shows the following information for each employee:
 ## Add a new employee
 
 Select the **Invite** button.
-Provide the employees's name, email address, and [role](/portal/roles).
+Provide the employees' name, email address, and [role](/portal/roles).
 Then, select the **Send Invite** button. 
 
 <details className="custom-details-example">
-  <summary>Show me an example</summary>
+  <summary>Show an example</summary>
     <img
         src={require('./assets/org-invite-a-colleague.png').default}
         alt=""
@@ -56,7 +61,7 @@ The **Filter by** dropdown offers three options:
 |:-----------------|:--------------------------------------------------------|
 | **User ID**      | A single number that must match exactly.                |
 | **Name**         | Matches can be partial. This is the only filter that can return multiple results.  |
-| **Email**        | Only an exact match will return the employee's account. |
+| **Email**        | Only an exact match returns the employee's account. |
 
 ## Update an employee's account
 

@@ -6,7 +6,7 @@ pagination_next: how-tos/workspaces/link
 slug: /workspaces/create
 ---
 
-# Create a new workspace <span className="theme-doc-version-badge badge badge--primary beta">Beta</span>
+# Create a new workspace <span className="theme-doc-version-badge badge badge--primary beta">beta</span>
 
 [Company accounts](/glossary#company-account) on the [**Pro** plan](https://portal.emnify.com/organisation-settings/subscription#plans) can have up to 5 [workspaces](/glossary#workspace).
 
@@ -17,7 +17,7 @@ This guide shows you how to submit a request for a new workspace via the [emnify
 Alternatively, you can also [link existing workspaces](/workspaces/link) if you already have two or more created.
 
 :::info
-Only **Admin** [user accounts](/glossary#user-account) of customers on our [**Pro** plan](https://portal.emnify.com/organisation-settings/subscription#plans) can create new workspaces.
+Only **Administrator** [user accounts](/glossary#user-account) of customers on the [**Pro** plan](https://portal.emnify.com/organisation-settings/subscription#plans) can create new workspaces.
 :::
 
 1. [Log in to your emnify account](https://portal.emnify.com/sign).
@@ -47,12 +47,12 @@ If you need more than one workspace, include those details in the body of your r
 
 If you see the **Request Sent** modal, your request has been submitted successfully. 🎉
 
-From there, our team will process your request and contact you to sort out the requirements.
-Then, we'll create and set up the new workspace for you.
+From there, the emnify team processes your request and contacts you to sort out the requirements.
+Then, the new workspace are created and set up for you.
 
 :::note
 The process may take time, as each new workspace requires a new contract.
-It usually takes 2–7 days for your new workspace to be ready.
+It usually takes 2-7 days for your new workspace to be ready.
 :::
 
 :::tip Feature requests

@@ -10,7 +10,7 @@ You can analyze the devices' data consumption, events, and location and compare 
 
 This [**Reports**](https://portal.emnify.com/reports/default) page includes the following reports:
 
-- CDRs
+- Call detail records (CDRs)
 - Data traffic per ratezone
 - Data usage per device policy
 - Device list

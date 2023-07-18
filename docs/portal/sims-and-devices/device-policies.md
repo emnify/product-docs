@@ -18,7 +18,7 @@ However, by creating a service policy, you can control the following:
 - **Breakout Region** (automatic or manual selection)
 - **Data**
   - Usage limit
-  - Service type, e.g., 2G, 3G, 4G, NB-IoT
+  - Service type (for example, 2G, 3G, 4G, NB-IoT)
 - **SMS**
   - SMS MO (Devices may send SMS)
     - Sending limit
@@ -39,7 +39,7 @@ When selecting **Webhook** as your **SMS Interface**, you need to provide the UR
 Optionally, you can provide a secret key to prevent unauthorized access.
 
 <details className="custom-details-troubleshooting">
-  <summary>Show me how to configure a webhook</summary>
+  <summary>Show how to configure a webhook</summary>
 
   Select **Configure Webhook**.  
 
@@ -61,7 +61,7 @@ Optionally, you can provide a secret key to prevent unauthorized access.
 When selecting **SMPP** as your **SMS Interface**, you are provided a **System ID** and **Password** for accessing the emnify **SMPP Server**.
 
 <details className="custom-details-troubleshooting">
-  <summary>Show me where this happens in the Portal</summary>
+  <summary>Show where this happens in the Portal</summary>
   <img
     src={require('./assets/device-policies-sms-interface-smpp.png').default}
     alt=""
@@ -77,7 +77,7 @@ The default coverage policy depends on your current subscription plan.
 To create a new **Coverage Policy**, collapse the **Service Policies** list and select **New Coverage Policy**.
 
 <details className="custom-details-troubleshooting">
-  <summary>Show me where to create a new Coverage Policy</summary>
+  <summary>Show where to create a new Coverage Policy</summary>
   <img
     src={require('./assets/coverage-policies.png').default}
     style={{width:650}}
@@ -93,11 +93,11 @@ The **Tariff** dropdown shows a list of plan names with a **Global** plan select
 
 The list of zones varies depending on which **Tariff** (global, regional, etc.) you selected.
 
-The **Tariff Coverage Map** is a global map that shows the coverage you will have based on your selections.
+The **Tariff Coverage Map** is a global map that shows the coverage you have based on your selections.
 You can browse the entire list of countries in the **Coverage List** or search for a specific country where you plan to deploy your devices.
 
 <details className="custom-details-example">
-  <summary>Show me the default coverage on the Tariff Coverage Map</summary>
+  <summary>Show the default coverage on the Tariff Coverage Map</summary>
 
   <img
     src={require('./assets/tariff-coverage-map.png').default}
@@ -122,7 +122,7 @@ Service policies only become useful after you start assigning devices to them.
 :::tip
 Develop a strategy for grouping your devices according to certain criteria related to your use cases, deployment regions, product lines, or services.
 Choose service policy names and device tags related to these criteria.
-This will make device selections easier when performing bulk assignments to service policies.
+This helps with selections when performing bulk assignments to service policies.
 :::
 
 :::caution Warning
@@ -145,14 +145,14 @@ Navigate to [**Connected Devices**](https://portal.emnify.com/connected-devices)
 If you followed the previous tip, you might be able to use only one or two tags to filter only the devices to be assigned.
 
 If the filtered list looks good, select the top checkbox in the table heading to select them all.
-A new menu will appear at the top of the page that provides bulk operations.
+A new menu appears at the top of the page that provides bulk operations.
 Select **More** and then either **Change Service Policy** or **Change Coverage Policy**.
 You'll be presented a with dropdown list to choose from.
 Select your policy from the list and then select **Save**.
-The devices you selected will be assigned to their new policy, and you will see a real-time notification confirming the change.
+The devices you selected are assigned to their new policy, and you should see a real-time notification confirming the change.
 
 <details className="custom-details-example">
-  <summary>Show me an example</summary>
+  <summary>Show an example</summary>
   <img
     src={require('./assets/bulk-policy-change.png').default}
     style={{width:900}}
@@ -166,9 +166,9 @@ In addition to creating device group policies and assigning devices to them, you
 
 ### Update policies
 
-When several devices are deployed and assigned to the same policies, your changes to the policy will be automatically pushed to devices in the group.
+When several devices are deployed and assigned to the same policies, your changes to the policy are automatically pushed to devices in the group.
 For instance, you might want to increase the data usage limits for a service policy that has 100 devices assigned to it.
-As soon as you change the service policy, it is pushed to all 100 devices.
+As soon as you change the service policy, it's pushed to all 100 devices.
 
 ### Change a device's policy assignments
 
@@ -180,10 +180,10 @@ For changing a group of devices to a new policy, follow the procedure described 
 ### Make sure the changes take effect immediately
 
 Resetting connectivity is also available as a bulk option.
-Once you have selected the devices using the [bulk assignments](#bulk-assignments) procedure described above, select **Reset**.
+Once you have selected the devices using the [bulk assignments](#bulk-assignments) procedure, select **Reset**.
 
 <details className="custom-details-troubleshooting">
-  <summary>Show me where to check my changes</summary>
+  <summary>Show where to confirm the changes</summary>
   <img
     src={require('./assets/connected-devices-bulk-reset.png').default}
     style={{width:900}}

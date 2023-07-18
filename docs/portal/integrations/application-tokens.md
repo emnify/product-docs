@@ -22,7 +22,7 @@ If your token is compromised, the **IP restriction** helps limit the attacker's 
 4. Select **Copy Token** and paste it into a secure location for future use.
 
 <details className="custom-details-troubleshooting">
-  <summary>Show me how to add a new token in the Portal</summary>
+  <summary>Show how to add a new token in the Portal</summary>
 
   Collapse the following sections or scroll down to **Application Tokens**.  
   <img
@@ -44,11 +44,11 @@ If your token is compromised, the **IP restriction** helps limit the attacker's 
     alt=""
   /> 
 
-  Your token will then be generated.
+  This generates your token.
   Select **Copy Token** and paste it in a secure location for future use.
 
-  **Warning**: The token can only be copied during this session.
-  You cannot retrieve it later in another session.
+  **Warning**: the token can only be copied during this session.
+  You can't retrieve it later in another session.
 
   <img
     src={require('./assets/token-created.png').default}
