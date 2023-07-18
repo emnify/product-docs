@@ -6,6 +6,10 @@ static/.nojekyll
 docs
 *.md
 
+# Vale config
+.vale.ini
+.github/vale
+
 # Ignore files
 .gitignore
 .prettierignore
