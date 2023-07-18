@@ -5,6 +5,7 @@ slug: /sdks/python/examples
 
 # Examples
 
+## 1 Example Table
 | Task                             | Description   | Link |
 |---|---|---|
 | Get your first device online     |               |  [here]( https://github.com/emnify/product-docs/blob/project-redo/docs/sdks/python/examples.md#get-your-first-device-online )  |
@@ -17,9 +18,24 @@ slug: /sdks/python/examples
 | Filtering and sorting |   | [here](https://github.com/emnify/product-docs/blob/project-redo/docs/sdks/python/examples.md#filtering-and-sorting)  |
 | Manage device connectivity | [Connectivity troubleshooting](https://www.emnify.com/developer-blog/5-ways-to-detect-and-solve-connectivity-issues#network-events) | [here](https://github.com/emnify/product-docs/blob/project-redo/docs/sdks/python/examples.md#manage-device-connectivity)  |
 
+## 2 Example Table
+| Task                             | Description   |
+|---|---|
+| [Get your first device online]( https://github.com/emnify/product-docs/blob/project-redo/docs/sdks/python/examples.md#get-your-first-device-online )  |      |
+| [Initialization of the SDK client](https://github.com/emnify/product-docs/blob/project-redo/docs/sdks/python/examples.md#initialization-of-the-sdk-client) |      |
+| [Create and activate a device](https://github.com/emnify/product-docs/blob/project-redo/docs/sdks/python/examples.md#create-and-activate-a-device)  |  <ul><li>Device creation</li><li>SIM registration</li><li>SIMs listing</li><li>Device details retrieval</li><li>Device activation or deactivation</li></ul> |
+| [Configure a device](https://github.com/emnify/product-docs/blob/project-redo/docs/sdks/python/examples.md#configure-a-device) |        |
+|[Configure operator blocklist for device](https://github.com/emnify/product-docs/blob/project-redo/docs/sdks/python/examples.md#configure-operator-blocklist-for-device)  | You may want to refrain from using a specific operator to avoid incurring costs with the device.  |
+| [Disable device](https://github.com/emnify/product-docs/blob/project-redo/docs/sdks/python/examples.md#disable-device)  |        |
+| [Delete device](https://github.com/emnify/product-docs/blob/project-redo/docs/sdks/python/examples.md#delete-device) |        |
+| [Filtering and sorting](https://github.com/emnify/product-docs/blob/project-redo/docs/sdks/python/examples.md#filtering-and-sorting)  |        |
+| [Manage device connectivity](https://github.com/emnify/product-docs/blob/project-redo/docs/sdks/python/examples.md#manage-device-connectivity)  | [Connectivity troubleshooting](https://www.emnify.com/developer-blog/5-ways-to-detect-and-solve-connectivity-issues#network-events) |
+
 <!-- Maybe useful -->
 <!-- &darr; -->
 <!-- <p align="center"><a href="">...</a></p> -->
+
+## 3 Old overview
 
 <details>
 <summary>Get your first device online?</summary>
