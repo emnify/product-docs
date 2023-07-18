@@ -147,7 +147,7 @@ Every push to the `main` branch automatically triggers a [GitHub Action](https:/
 Because the site uses GitHub Pages for hosting, the following commands are another way to build the website and push to the [`gh-pages` branch](https://github.com/emnify/product-docs/tree/gh-pages).
 
 > **Warning**
-> You need admin rights to deploy the emnify Documentation manually.
+> You need administrator rights to deploy the emnify Documentation manually.
 
 Using SSH:
 
