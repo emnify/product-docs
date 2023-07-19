@@ -1,17 +1,18 @@
 ---
+title: Switch between workspaces
 description: Move between and manage multiple workspaces
 pagination_label: Switching between workspaces
 slug: /workspaces/switch
 ---
 
-# Switching between workspaces <span className="theme-doc-version-badge badge badge--primary beta">Beta</span>
+# Switch between workspaces <span className="theme-doc-version-badge badge badge--primary beta">beta</span>
 
 One benefit of having [linked workspaces](/glossary#linked-workspaces) is that you can manage multiple [organizations](/glossary#organization) using one emnify account.
 
 This guide shows you how to switch between your organizations via the [workspace switcher](/glossary#workspace-switcher) in the [emnify Portal](https://portal.emnify.com/).
 
 :::info
-Only **Admin** [user accounts](/glossary#user-account) of the [main organization](/glossary#main-organization) can switch between workspaces.
+Only **Administrator** [user accounts](/glossary#user-account) of the [main organization](/glossary#main-organization) can switch between workspaces.
 :::
 
 1. [Log in to your emnify account](https://portal.emnify.com/sign).
@@ -26,7 +27,7 @@ You should see your organization's name at the top of the primary sidebar.
 This displays a list of all the workspaces linked to your organization, as well as [**Link existing workspace**](/workspaces/link) and [**Create a new workspace**](/workspaces/create) options.
 3. Select another [organization](/glossary#organization) name to navigate to that workspace.
 
-In the following example, we're starting from the main **AG General inc.** workspace and selecting the **AG EV-charging** workspace.
+The following example starts from the main **AG General inc.** workspace and selects the **AG EV-charging** workspace.
 
 <img
   src={require('./assets/portal-sidebar-workspaces-org-list.png').default}
@@ -35,7 +36,7 @@ In the following example, we're starting from the main **AG General inc.** works
 />
 
 :::note
-The main organization workspace will be indicated with a building icon.
+The main organization workspace is indicated with a building icon.
 
 <img
   src={require('./assets/portal-sidebar-workspaces-main-org-icon.png').default}
@@ -43,7 +44,7 @@ The main organization workspace will be indicated with a building icon.
   style={{ width:300 }}
 />
 
-The workspace you're currently in will be indicated with a green checkmark.
+The workspace you're currently in is indicated with a green checkmark.
 
 <img
   src={require('./assets/portal-sidebar-workspaces-current-org-icon.png').default}

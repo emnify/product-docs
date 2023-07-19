@@ -18,7 +18,7 @@ The emnify platform supports:
 
 The scenarios above can be activated and deactivated in the device policies to prevent misuse (e.g., P2P SMS).
 
-You can send and receive SMSs of your devices through 3 different interfaces:
+You can send and receive SMS of your devices through 3 different interfaces:
 
 - [emnify Portal](#emnify-portal)
 - [emnify SMS API and webhook](#emnify-sms-rest-api-and-webhook)
@@ -33,7 +33,7 @@ You can send and receive SMSs of your devices through 3 different interfaces:
 
 In the [emnify Portal](https://portal.emnify.com/) → [**Connected Devices**](https://portal.emnify.com/connected-devices) you can access the SMS console and directly send SMS to the devices. 
 The sender can be configured as well as the console will show if the SMS is delivered or not.
-You will see all SMSs that the device receives sends out.
+You will see all SMS that the device receives sends out.
 
 For sending SMS messages to a single device, select **Details**:
 
@@ -134,7 +134,7 @@ Zapier has a concept of triggers and actions – when a trigger happens multiple
 Sending SMS to your devices is available as an action in Zapier.
 In the [**No-Code-Workflows**](https://portal.emnify.com/integrations#no-code-workflows) list on the [**Integrations** page of the emnify Portal](https://portal.emnify.com/integrations), select the following:
 
-![Portal screenshot from the Integrations page. The featured integration reads, "Enable devices and send SMSes via emnify from newly caught webhooks. emnify + Webhooks by Zapier". Next to the text, there's a "Use this Zap" button.](assets/portal-integrations-sms-webhooks-zapier.png)
+![Portal screenshot from the Integrations page. The featured integration reads, "Enable devices and send SMS via emnify from newly caught webhooks. emnify + Webhooks by Zapier". Next to the text, there's a "Use this Zap" button.](assets/portal-integrations-sms-webhooks-zapier.png)
 
 There you will find a predefined Zap consisting of 3 steps with interactive instructions on how to configure it or modify the steps for your specific needs:
 

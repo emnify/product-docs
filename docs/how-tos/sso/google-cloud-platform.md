@@ -10,7 +10,7 @@ This guide walks through enabling single sign-on (SSO), so your organization can
 **Prerequisites:**
 
 - A Google account that's a user within a [Google Cloud Platform organization](https://cloud.google.com/resource-manager/docs/creating-managing-organization)
-- An [emnify Portal account](https://portal.emnify.com/sign/up/) using the same email address as the one used to sign into Google 
+- An [emnify Portal account](https://portal.emnify.com/sign/up/) using the same email address as the one used to sign in to Google 
 
 :::caution
 If your email address in the emnify Portal differs from the one used to log in to Google, this setup won't work. 
@@ -33,7 +33,7 @@ If you don't already have a designated project, create one with the following st
 
 1. Click **New Project**.
 1. If prompted, agree to the terms of service.
-1. Enter a **Project name** (e.g., "emnify SSO") and **Location**.
+1. Enter a **Project name** (for example, "emnify SSO") and **Location**.
 1. Click **Create**, then you should land on the **Enabled APIs & Services** page.
 1. In the APIs & Services navigation bar, click **OAuth consent screen**.
 1. Choose the [**User Type**](https://support.google.com/cloud/answer/10311615#user-type) for your project.
@@ -49,7 +49,7 @@ Use the **Credentials** option to retrieve the OAuth client ID and secret that y
 1. Head to **Credentials** in the APIs & Services navigation bar.
 1. Click **+ Create Credentials** (on the top next to the page header), then select the `OAuth client ID` option.
 1. In the **Application type** list, select `Web application`.
-1. Enter a **Name** (e.g., "emnify Portal" or "Enterprise Portal").
+1. Enter a **Name** (for example, "emnify Portal" or "Enterprise Portal").
 1. Set an **Authorized redirect URI** with the value: `https://prod-e5.okta.com/oauth2/v1/authorize/callback`
 1. Click **Create** and wait for the **OAuth client created** modal to appear.
 1. Copy the displayed values (you'll need them later) or download the provided JSON.
@@ -73,5 +73,5 @@ You must complete the final step and verify the provider to configure SSO.
 :::
 
 :::tip
-We have a [Troubleshooting page](/sso/troubleshooting#general) if you encounter issues while setting up SSO.
+Refer to the [Troubleshooting page](/sso/troubleshooting#general) if you encounter issues while setting up SSO.
 :::

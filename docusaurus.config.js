@@ -278,26 +278,22 @@ const config = {
             from: "/services/business-intelligence-and-analytics-reports",
           },
           {
-            to: "/portal/group-policies",
-            from: "/services/endpoint-management-and-group-policies",
+            to: "/portal/device-policies",
+            from: [
+              "/services/endpoint-management-and-group-policies",
+              "/portal/group-policies",
+            ],
           },
           {
-            to: "/portal/no-code-automation",
-            from: "/services/no-code-workflow-automation",
+            to: "/portal/no-code",
+            from: [
+              "/services/no-code-workflow-automation",
+              "/portal/no-code-automation",
+            ],
           },
           {
-            to: "/portal/user-management",
-            from: "/services/user-management",
-          },
-          // Home - emnify Portal - How-tos - SSO
-          {
-            to: "/sso/microsoft-active-directory",
-            from: "/sso",
-          },
-          // Home - emnify Portal - How-tos - Workspaces
-          {
-            to: "/workspaces/create",
-            from: "/workspaces",
+            to: "/portal/roles",
+            from: ["/services/user-management", "/portal/user-management"],
           },
           // Home - Connectivity services
           {

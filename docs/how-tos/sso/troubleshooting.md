@@ -3,7 +3,7 @@ description: Tips for combating common issues when setting up SSO for your emnif
 slug: /sso/troubleshooting
 ---
 
-# SSO Troubleshooting
+# SSO troubleshooting
 
 If you encounter any issues while setting up SSO, use the following suggestions to help troubleshoot.
 

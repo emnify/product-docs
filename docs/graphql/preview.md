@@ -31,4 +31,4 @@ Instead, we plan to support both APIs in parallel.
 To help you explore and experiment with the emnify GraphQL API, we've set up an [in-browser GraphiQL IDE](https://graphql-playground.emnify.net/). 
 Within this IDE, you can also find interactive documentation and examples.
 
-[Learn more about how to use the GraphiQL IDE](/graphql/using-graphiql).
+[Learn more about how to use the GraphiQL IDE](/graphql/graphiql-ide).

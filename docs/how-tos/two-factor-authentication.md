@@ -40,7 +40,7 @@ You can [enable 2FA via the emnify Portal](https://portal.emnify.com/user-settin
 
 5. Activate your personal device's temporary authentication key by scanning the QR code with a 2FA app.
 Alternatively, you can copy the secret key to add it manually.
-After you've scanned the QR code or entered the key, a 6-digit token will appear in the app. 
+After you've scanned the QR code or entered the key, a 6-digit token appears in the app. 
 Finally, enter the token.
 
 <img
@@ -66,7 +66,7 @@ Now, if you log in to the Portal on a device you haven't set as trusted before o
 
 Reaching for your personal device and entering a one-time password every time you need to log in to your account can be a pain, especially if you usually sign in from the same device.
 
-To bypass this process, check **Trust this device** before entering the 2FA code from your authentication app. 
+To bypass this process, select **Trust this device** before entering the 2FA code from your authentication app. 
 
 <img
   src={require('./assets/portal-login-2fa-confirmation-trust-this-device-checkbox.png').default}
@@ -89,17 +89,21 @@ You can remove a device from your **Trusted Devices** by clicking the associated
 />
 
 :::info
-Your changes will be saved automatically. 
+Your changes are saved automatically. 
 :::
 
 ## Disable two-factor authentication
 
-If you want to disable 2FA, go to your [**User Settings**](https://portal.emnify.com/user-settings) page, find the [**Two-Factor Authentication**](https://portal.emnify.com/user-settings#two-factor-authentication) section, and click **Disable**.
+If you want to turn off 2FA, go to your [**User Settings**](https://portal.emnify.com/user-settings) page, find the [**Two-Factor Authentication**](https://portal.emnify.com/user-settings#two-factor-authentication) section, and click **Disable**.
 
+<!-- vale Google.WordList = NO -->
+<!-- 'disable' refers to the button text -->
 <img
   src={require('./assets/portal-user-settings-2fa-disable-button.png').default}
   alt=""
 />
+
+<!-- vale Google.WordList = YES -->
 
 :::info
 You can re-enable 2FA at any time.

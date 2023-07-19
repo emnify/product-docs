@@ -33,3 +33,55 @@ If you [order the free Evaluation SIM package](/quickstart), you will have to re
   src={require('./assets/portal-sim-registration-enter-bic2.png').default}
   style={{width:350}} alt=""
 />
+
+## Create a new device
+
+As part of the SIM registration, you can create a new device for the newly registered SIM while you are still in the SIM registration dialog.
+
+<details className="custom-details-example">
+  <summary>Show me an example</summary>
+
+  1. After confirming your BIC1 is correct, select **Register SIM Card**.
+
+
+  <img
+    src={require('./assets/sim-enter-bic1-register-sim-card.png').default}
+    style={{width:370}} alt=""
+  />
+
+  2. After your SIM is registered, select **Create Device**.
+
+  <img
+    src={require('./assets/sim-registered-create-device.png').default}
+    style={{width:575}} alt=""
+  />
+
+  3. In the **Create a new device** dialog, make sure you replace **Add Device name** with an appropriate name for the new device.
+
+  <img
+    src={require('./assets/sim-create-new-device.png').default}
+    style={{width:475}} alt=""
+  />
+
+  4. Inspect your choices for device name and tags before selecting **Create Device**.
+
+  <img
+    src={require('./assets/sim-create-new-device-with-name-tags.png').default}
+    style={{width:475}} alt=""
+  />
+
+  5. Confirm your choice to create and activate the device by selecting **Activate**.
+
+  <img
+    src={require('./assets/sim-create-and-activate.png').default}
+    style={{width:475}} alt=""
+  />
+
+  6.  Once created, your device should be ready to go online if it has been configured with the correct APN and data roaming is enabled.
+
+  <img
+    src={require('./assets/sim-apn-setup.png').default}
+    style={{width:610}} alt=""
+  />
+
+</details>

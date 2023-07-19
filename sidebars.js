@@ -54,93 +54,63 @@ const sidebars = {
       type: "category",
       label: "emnify Portal",
       link: {
-        type: "generated-index",
-        title: "emnify Portal",
-        slug: "/portal",
-        description:
-          "Track and explore costs, network activity, critical events, geographic distribution, and more with the emnify Portal web application",
+        type: "doc",
+        id: "portal/dashboard",
       },
       items: [
+        "portal/dashboard",
         {
           type: "category",
-          label: "How-tos",
+          label: "Manage SIMs and devices",
           link: {
             type: "doc",
-            id: "how-tos/index",
+            id: "portal/sims-and-devices/sim-inventory",
           },
           items: [
+            "portal/sims-and-devices/sim-inventory",
+            "portal/sims-and-devices/connected-devices",
+            "portal/sims-and-devices/device-policies",
             {
-              type: "doc",
-              label: "Overview",
-              id: "how-tos/index",
+              type: "link",
+              label: "Orders",
+              href: "/quickstart/order-sims",
             },
-            "how-tos/multi-inclusive-volumes",
-            "how-tos/two-factor-authentication",
-            {
-              type: "category",
-              label: "Single Sign-On",
-              link: {
-                type: "doc",
-                id: "how-tos/sso/microsoft-active-directory",
-              },
-              items: [
-                {
-                  type: "doc",
-                  label: "Microsoft Active Directory",
-                  id: "how-tos/sso/microsoft-active-directory",
-                },
-                {
-                  type: "doc",
-                  label: "Google Cloud Platform",
-                  id: "how-tos/sso/google-cloud-platform",
-                },
-                "how-tos/sso/troubleshooting",
-              ],
-            },
-            {
-              type: "category",
-              label: "Workspaces",
-              link: {
-                type: "doc",
-                id: "how-tos/workspaces/create",
-              },
-              items: [
-                // Labels need to be manually entered because of the beta badge
-                {
-                  type: "doc",
-                  label: "Create a new workspace",
-                  id: "how-tos/workspaces/create",
-                },
-                {
-                  type: "doc",
-                  label: "Link an existing workspace",
-                  id: "how-tos/workspaces/link",
-                },
-                {
-                  type: "doc",
-                  label: "Switch between workspaces",
-                  id: "how-tos/workspaces/switch",
-                },
-              ],
-            },
+            "portal/sims-and-devices/troubleshooting",
           ],
         },
+        "portal/sms",
         {
-          type: "doc",
-          label: "Reports",
-          id: "portal/reports",
+          type: "category",
+          label: "Integrations",
+          link: {
+            type: "doc",
+            id: "portal/integrations/no-code",
+          },
+          items: [
+            "portal/integrations/no-code",
+            "portal/integrations/application-tokens",
+          ],
         },
+        "portal/reports",
         {
-          type: "doc",
-          label: "Group policies",
-          id: "portal/group-policies",
+          type: "category",
+          label: "Organization management",
+          link: {
+            type: "doc",
+            id: "portal/organization/settings",
+          },
+          items: [
+            "portal/organization/settings",
+            "portal/organization/data",
+            "portal/organization/employees",
+            "portal/organization/subscription",
+            "portal/organization/billing",
+            "portal/organization/sso",
+            "portal/organization/workspaces",
+          ],
         },
-        {
-          type: "doc",
-          label: "No-code automation",
-          id: "portal/no-code-automation",
-        },
-        "portal/user-management",
+        "portal/user-settings",
+        "portal/roles",
       ],
     },
     {
@@ -229,6 +199,70 @@ const sidebars = {
         },
         "services/network/cloud-connect",
         "services/network/openvpn",
+      ],
+    },
+    {
+      type: "category",
+      label: "How-to guides",
+      link: {
+        type: "doc",
+        id: "how-tos/index",
+      },
+      items: [
+        {
+          type: "doc",
+          label: "Overview",
+          id: "how-tos/index",
+        },
+        "how-tos/multi-inclusive-volumes",
+        "how-tos/two-factor-authentication",
+        {
+          type: "category",
+          label: "Single sign-on",
+          link: {
+            type: "doc",
+            id: "how-tos/sso/microsoft-active-directory",
+          },
+          items: [
+            {
+              type: "doc",
+              label: "Microsoft Active Directory",
+              id: "how-tos/sso/microsoft-active-directory",
+            },
+            {
+              type: "doc",
+              label: "Google Cloud Platform",
+              id: "how-tos/sso/google-cloud-platform",
+            },
+            "how-tos/sso/troubleshooting",
+          ],
+        },
+        {
+          type: "category",
+          label: "Workspaces",
+          link: {
+            type: "doc",
+            id: "how-tos/workspaces/create",
+          },
+          items: [
+            // Labels need to be manually entered because of the beta badge
+            {
+              type: "doc",
+              label: "Create a new workspace",
+              id: "how-tos/workspaces/create",
+            },
+            {
+              type: "doc",
+              label: "Link an existing workspace",
+              id: "how-tos/workspaces/link",
+            },
+            {
+              type: "doc",
+              label: "Switch between workspaces",
+              id: "how-tos/workspaces/switch",
+            },
+          ],
+        },
       ],
     },
     "glossary",
