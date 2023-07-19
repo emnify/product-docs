@@ -1,17 +1,23 @@
 AuC
 AWS
+Code of Conduct
 CSM[s]
 DDoS
+Docusaurus
 eDRX
 emnify
 emnify Documentation
+emnify Documentation Development Guide
 emnify IoT SuperNetwork
 eSIM
+ESLint
 eUICC
 Gartner
+GitHub Pages
 IMEI[s]
 IMEISV[s]
 IPsec
+Jira
 LTE
 Luhn
 MNO[s]
@@ -21,7 +27,9 @@ OpenVPN
 RESTful API
 SIM
 SLA[s]
+SuperNetwork
 Telecom
 Telia
 Vale
 Vodafone
+Zendesk
