@@ -46,10 +46,6 @@ Teltonika
 Twilio
 Vale
 Vodafone
-<<<<<<< HEAD
-Zendesk
-||||||| parent of 9e49f9e2 (Run Portal user guide through Vale)
-=======
 Wialon
 Zapier
->>>>>>> 9e49f9e2 (Run Portal user guide through Vale)
+Zendesk

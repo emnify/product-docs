@@ -1,9 +1,0 @@
-extends: existence
-message: "Replace placeholder text."
-ignorecase: false
-scope: raw
-level: warning
-tokens:
-  - FIXME
-  - TODO
-  - NOTE

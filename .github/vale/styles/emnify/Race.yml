@@ -1,4 +1,5 @@
----
+# emnify.Race
+# Subset of the Race.yml from the alex package: https://alexjs.com/
 extends: substitution
 message: Consider using '%s' instead of '%s'.
 ignorecase: true
