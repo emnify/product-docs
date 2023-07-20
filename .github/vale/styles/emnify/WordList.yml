@@ -1,15 +1,19 @@
+# emnify.WordList
+# Extends Google.WordList and applies any exceptions for the emnify Documentation
+#
+# Full list and explanation of terms: https://developers.google.com/style/word-list
 extends: substitution
 message: "Use '%s' instead of '%s'."
-link: "https://developers.google.com/style/word-list"
-level: warning
+level: error
 ignorecase: false
 action:
   name: replace
 swap:
   "(?:API Console|dev|developer) key": API key
+  "(?:admin|Admin)": administrator|Administrator
   "(?:cell ?phone|smart ?phone)": phone|mobile phone
   "(?:dev|developer|APIs) console": API console
-  "(?:e-mail|Email|E-mail)": email
+  "(?:e-mail|E-mail)": email
   "(?:file ?path|path ?name)": path
   "(?:kill|terminate|abort)": stop|exit|cancel|end
   "(?:OAuth ?2|Oauth)": OAuth 2.0
@@ -23,13 +27,11 @@ swap:
   above: preceding
   account name: username
   action bar: app bar
-  admin: administrator
   Ajax: AJAX
   a\.k\.a|aka: or|also known as
   Android device: Android-powered device
   android: Android
   API explorer: APIs Explorer
-  application: app
   approx\.: approximately
   authN: authentication
   authZ: authorization
@@ -41,7 +43,6 @@ swap:
   check: select
   CLI: command-line tool
   click on: click|click in
-  Cloud: Google Cloud Platform|GCP
   Container Engine: Kubernetes Engine
   content type: media type
   curated roles: predefined roles
@@ -53,8 +54,6 @@ swap:
   file name: filename
   firewalls: firewall rules
   functionality: capability|feature
-  Google account: Google Account
-  Google accounts: Google Accounts
   Googling: search with Google
   grayed-out: unavailable
   HTTPs: HTTPS
@@ -69,7 +68,6 @@ swap:
   regex: regular expression
   SHA1: SHA-1|HAS-SHA1
   sign into: sign in to
-  sign-?on: single sign-on
   static IP address: static external IP address
   stylesheet: style sheet
   synch: sync

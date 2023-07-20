@@ -37,7 +37,18 @@ emnify uses the following [Vale Styles](https://vale.sh/docs/topics/styles/):
 
 - [Vale](https://vale.sh/docs/topics/styles/#extension-points) (default linting)
 - Google (for the [Google developer documentation style guide](https://developers.google.com/style))
-- [alex](https://alexjs.com/) (for catching condescending language) 
+- emnify (customized styles)
+  - `Condescending.yml`, based on `alex.Condescending` from [alex](https://alexjs.com/) to catch condescending language
+  - `FixMe.yml`, custom rule to ensure annotations are removed
+  - `Race.yml`, based on `alex.Race` from [alex](https://alexjs.com/) to flag polarizing race-related phrasing
+  - `spelling-exceptions.txt`, used in `Spelling.yml`
+  - `Spelling.yml`, which extends `Vale.Spelling` to include emnify-specific spelling exceptions
+
+<details>
+<summary>Why not use the alex package?</summary>
+The emnify Documentation only requires two of the 10 rules in the alex package for Vale.
+These two rules are also further customized (more terms added, altered severity levels, etc.), so it makes more sense to maintain an emnify-specific version of the rules.
+</details>
 
 > **Note** 
 > emnify has made some modifications to these packages to remove duplicates or add emnify-specific terms.
