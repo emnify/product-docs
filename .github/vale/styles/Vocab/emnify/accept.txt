@@ -10,6 +10,7 @@ eDRX
 emnify
 emnify Documentation
 emnify Documentation Development Guide
+emnify GraphQL API
 emnify IoT SuperNetwork
 emnify Portal
 eSIM
@@ -20,6 +21,7 @@ Gartner
 GitHub Pages
 Google
 Google Cloud Platform
+GraphiQL IDE
 Gurtam
 IMEI[s]
 IMEISV[s]

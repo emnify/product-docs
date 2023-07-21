@@ -252,6 +252,7 @@ a:has(> code) {
   font-size: 50%;
   font-weight: 500;
   margin-bottom: 10px;
+  text-transform: capitalize;
   vertical-align: middle !important;
 }
 

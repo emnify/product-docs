@@ -8,14 +8,14 @@ import TabItem from '@theme/TabItem';
 
 # Use the GraphiQL IDE
 
-So you can experiment with the emnify GraphQL API, we've set up an [in-browser GraphiQL IDE](https://graphql-playground.emnify.net/). 
+So you can experiment with the emnify GraphQL API, emnify has an [in-browser GraphiQL IDE](https://graphql-playground.emnify.net/). 
 
 Similar to OpenAPI in the REST world, [GraphiQL](https://github.com/graphql/graphiql) (pronounced "graphical") helps you accurately structure and validate queries, then run them directly against the server endpoint.
-It's equipped with tools to help you try out our GraphQL API.
+It's equipped with tools to help you try out the GraphQL API.
 Notable features include autocompleting, syntax highlighting, interactive documentation, and schema explorers.
 
 :::tip
-If you're new to GraphQL, we'd recommend visiting the [official GraphQL documentation](https://graphql.org/learn/) to familiarize yourself with how the query language is structured.
+If you're new to GraphQL, visit the [official GraphQL documentation](https://graphql.org/learn/) to familiarize yourself with how the query language is structured.
 :::
 
 ## Navigate the interface
@@ -24,7 +24,7 @@ The UI is divided into three parts:
 
 - **Sidebar** where you can open plugin panes and change settings
 - **Left panel** where you write your queries
-- **Right panel** where the results of your queries will be displayed
+- **Right panel** where the results of your queries are displayed
 
 <!-- Same screenshot as the graphql-playground README -->
 <img
@@ -35,10 +35,10 @@ The UI is divided into three parts:
 At the top of the sidebar, there are buttons for the [documentation explorer](#documentation-explorer), history, and GraphiQL explorer. 
 Underneath, the sidebar shows buttons that allow you to re-fetch the GraphQL schema, see the keyboard shortcuts, and change settings.
 
-The bottom of the left panel has two sections: **Variables** and **Headers**.
+The bottom of the left panel has two sections, **Variables** and **Headers**.
 By default, you'll see a placeholder for the [**Authorization** header](#authentication).
 
-When you type queries into this side of the screen, the IDE provides autocompletes based on the current GraphQL type schema and live syntax and validation error highlighting.
+When you type queries into this side of the screen, the IDE provides autocomplete based on the current GraphQL type schema and live syntax and validation error highlighting.
 
 An example GraphQL query might look like this:
 
@@ -81,7 +81,7 @@ You can generate an application token in the emnify Portal:
 4. Fill out the token's **Description** and **Expiry date (UTC)**, and indicate whether you want to **Add IP restriction**. 
 Click **Create application token** to confirm your choices.
 
-In the following example, we are creating a new application token with the description **Testing the GraphQL API**, expiring **June 30, 2023**, with no additional IP restrictions.
+In the following example, a new application token is created with the description **Testing the GraphQL API**, expiring **June 30, 2023**, with no additional IP restrictions.
 
 <img
   src={require('./assets/portal-integrations-application-tokens-add-token-form.png').default}
@@ -94,7 +94,7 @@ When you're ready, click **Close**.
 
 :::caution
 After closing, you won't be able to retrieve this token value again.
-We recommend storing it in a safe place (e.g., a password manager).
+Consider storing it in a safe place (for example, a password manager).
 :::
 
 <img
@@ -121,7 +121,7 @@ Once you have an [application token created and safely stored](#retrieving-your-
   style={{ width:800 }}
 />
 
-By default, this section will have the following placeholder:
+By default, this section has the following placeholder:
 
 ```graphql
 {
@@ -131,11 +131,14 @@ By default, this section will have the following placeholder:
 
 3. Replace `<APP_TOKEN>` with your application token value
 
+<!-- vale emnify.WordList = NO -->
+<!-- 'check' isn't referring a selector -->
 To test that you're authorized, click the **Execute query** button (▶️) and check your result.
+<!-- vale emnify.WordList = YES -->
 
 ## Execute your first query
 
-When you first visit our GraphiQL IDE, you'll see a pre-populated example query in the left panel.
+When you first visit the GraphiQL IDE, you'll see a pre-populated example query in the left panel.
 
 <img
   src={require('./assets/graphiql-default-query.png').default}
@@ -144,7 +147,7 @@ When you first visit our GraphiQL IDE, you'll see a pre-populated example query 
 />
 
 :::note
-We'll use GraphiQL's interactive documentation throughout this example. 
+GraphiQL's interactive documentation is used throughout this example. 
 To follow along, click the **Show Documentation Explorer** button in the sidebar.
 
 <img
@@ -156,7 +159,7 @@ To follow along, click the **Show Documentation Explorer** button in the sidebar
 Once the **Docs** are visible, choose `Query`, then find and select `myUser`.
 :::
 
-Let's take a closer look:
+Take a closer look:
 
 ```graphql
 {
@@ -182,8 +185,8 @@ What's happening in this example:
 In GraphQL, the `!` means that [variable definition](https://graphql.org/learn/queries/#variable-definitions) is required.
 :::
 
-- Within `myUser`, `User` is listed as a required [object type](https://graphql.org/learn/schema/#object-types-and-fields) and indicates which [fields](https://graphql.org/learn/queries/#fields) we can use in this query. 
-Because `User` is the only type available, we don't need to type it out explicitly.
+- Within `myUser`, `User` is listed as a required [object type](https://graphql.org/learn/schema/#object-types-and-fields) and indicates which [fields](https://graphql.org/learn/queries/#fields) you can use in this query. 
+Because `User` is the only type available, you don't need to type it out explicitly.
 
 <img
   src={require('./assets/graphiql-docs-query-myuser-user.png').default}
@@ -192,7 +195,7 @@ Because `User` is the only type available, we don't need to type it out explicit
 />
 
 - This example uses the `organisation` field, which requires the `Organisation` object type. 
-We want to receive the `name` and `id` fields from that object type.
+You want to receive the `name` and `id` fields from that object type.
 
 <img
   src={require('./assets/graphiql-docs-query-myuser-user-organisation.png').default}
@@ -200,7 +203,7 @@ We want to receive the `name` and `id` fields from that object type.
   style={{ width:700 }}
 />
 
-Finally, when we execute the query, it returns a `data` object with our requested information.
+Finally, when you execute the query, it returns a `data` object with your requested information.
 
 <img
   src={require('./assets/graphiql-default-query-response.png').default}
@@ -219,7 +222,7 @@ Remove any content in the left panel and begin typing:
 
 Inside the curly braces, you can start typing or use the keyboard shortcuts to open the autocomplete window.
 
-In the following example, we started typing "end", and the IDE suggested `endpoint`, `endpoints`, and `endpointsQuery`.
+In the following example, the IDE suggests `endpoint`, `endpoints`, and `endpointsQuery` once you've started typing "end."
 
 <img
   src={require('./assets/graphiql-query-autocomplete.png').default}
@@ -235,8 +238,8 @@ If you need help with what to write, click the **Show GraphiQL Explorer** button
   style={{ width:450 }}
 />
 
-This will display an interactive overview of the current GraphQL schema.
-Open and select your desired fields, and the query will build and format itself automatically.
+This displays an interactive overview of the current GraphQL schema.
+Open and select your desired fields, and the query builds and formats itself automatically.
 
 <img
   src={require('./assets/graphiql-graphiql-explorer-endpoints.png').default}
@@ -257,7 +260,7 @@ To see the queries you've executed during a session, click the **Show history** 
 ## Generate code from your query
 
 On the left panel are buttons allowing you to generate a cURL query, Node.js code, or Python code from your GraphQL query. 
-Clicking these buttons will copy this code to your clipboard.
+Clicking these buttons copies this code to your clipboard.
 
 <img
   src={require('./assets/graphiql-default-generate-code-buttons.png').default}
