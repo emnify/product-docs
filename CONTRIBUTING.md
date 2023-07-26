@@ -61,7 +61,7 @@ Then you can select **Propose changes** if you would like submit your changes.
 ### Comparing changes
 
 After proposing your changes, the next step is to formally create a pull request (PR).
-First, you will be presented a **Comparing changes** page that shows you the file(s) you have changed, your forked repository, and the name of your branch containing the changes.
+First, you will be presented a **Comparing changes** page that shows you the files you have changed, your forked repository, and the name of your branch containing the changes.
 In this example, GitHub automatically created the branch name **patch-1** for us.
 Select **Create pull request** to continue.
 
@@ -70,17 +70,17 @@ Select **Create pull request** to continue.
 ### Open a pull request
 
 Once you select **Create pull request**, you will be presented with the **Open a pull request** page.
-Here you will have the opportunity to edit the name of the PR to something more descriptive.
+Here you will have the opportunity to edit the name of the pull request to something more descriptive.
 
 ![](https://user-images.githubusercontent.com/49970529/225023289-cb453221-a972-4ccc-a7d8-b4b9982c6a94.png)
 
 The input field below enables you to update the summary/description you previously provided.
 
 Normally we will not edit your changes during our review.
-However, you can enforce this by unchecking the **Allow edits by maintainers**.
-If you want us to edit your changes as needed during our review, then please state this explicitly in the PR description and leave this option checked.
+However, you can enforce this by deselecting the **Allow edits by maintainers**.
+If you want us to edit your changes as needed during our review, then please state this explicitly in the pull request description and leave this option checked.
 
-Once you select **Create pull request**, we will see your PR in our queue of [open PRs](https://github.com/emnify/product-docs/pulls). 
+Once you select **Create pull request**, we will see your pull request in our queue of [open pull requests](https://github.com/emnify/product-docs/pulls). 
 
 We recommend make use of the template that includes the **Description** heading and an **Additional Context** heading if needed.
 
@@ -104,9 +104,9 @@ Please note the 4 tabs on this page:
 
 #### Conversation
 
-- PR description
+- Pull request description
 - Activity log, including each new commit
-- Communication, i.e., conversations between the reviewer(s) and the PR assignee(s)
+- Communication (that is, conversations between the reviewers and the assignees)
 
 ![](https://user-images.githubusercontent.com/49970529/225022154-c23a30ec-a5d4-46c4-be0d-0495a314521a.png)
 
@@ -119,11 +119,11 @@ Commit details are collapsed by default.
 
 #### Checks
 The [Test deployment](https://github.com/emnify/product-docs/actions/workflows/test-deploy.yml) GitHub action is triggered when your changes are pushed.
-If there are any syntax errors that would break the documentation build, you will find details about what went wrong by following the most recent link associated with your PR's name in the [workflow runs](https://github.com/emnify/product-docs/actions/workflows/test-deploy.yml) table. 
+If there are any syntax errors that would break the documentation build, you will find details about what went wrong by following the most recent link associated with your pull request's name in the [workflow runs](https://github.com/emnify/product-docs/actions/workflows/test-deploy.yml) table. 
 
 #### Files changed
 
-This is very useful for PRs that involve changes needed in multiple files.
+This is very useful for pull requests that involve changes needed in multiple files.
 
 ![](https://user-images.githubusercontent.com/49970529/225032027-4884ae23-ea83-4099-a751-0af5a5b8263c.png)
 
@@ -175,13 +175,13 @@ After you have created your PR, the workflow is driven by cycles of content upda
 
 ### Reviewers
 
-Although we monitor the queue of PRs regularly, you can also [request a review of your PR](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/requesting-a-pull-request-review) if your PR is ready and it seems to have not been noticed.
+Although we monitor the queue of pull requests regularly, you can also [request a review of your PR](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/requesting-a-pull-request-review) if your pull request is ready and it seems to have not been noticed.
 
 ![](https://user-images.githubusercontent.com/49970529/225034684-3ac3532b-af09-406f-8daa-c31988705817.png)
 
 ### Submitting additional changes
 
-If you are working from a forked repository on an existing PR branch, navigate to *your* GitHub repository and find the branch assigned to your PR.
+If you are working from a forked repository on an existing branch, navigate to *your* GitHub repository and find the branch assigned to your pull request.
 In the previous examples, the branch is **patch-1**.
 However, **main** is the default branch, so we need to navigate to our branches and select **patch-1**:
 
@@ -209,7 +209,7 @@ This will automatically commit the change and [resolve](https://docs.github.com/
 If there are several suggestions, they can be [batched](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/incorporating-feedback-in-your-pull-request#applying-suggested-changes) and applied all at once.
 
 If the reviewer has requested changes in the form of a comment, you will need to follow the instructions supplied when applying the changes.
-See [Submitting additional changes](#submitting-additional-changes) above for how to add changes to the current PR branch.
+See [Submitting additional changes](#submitting-additional-changes) above for how to add changes to the current branch.
 
 **It is important that you [resolve](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/commenting-on-a-pull-request#resolving-conversations) all open conversations before requesting another review.**
 
@@ -228,7 +228,7 @@ Since the documentation site is built using [Docusaurus](https://docusaurus.io/)
 
 ### Set up your working environment
 
-Although the following steps may seem overwhelming at first, they only need to be performed once!
+Although the following steps may seem overwhelming at first, they only need to be performed once.
 
 #### Software requirements
 
@@ -274,7 +274,7 @@ This concludes the first-time installation steps for setting up your new environ
 
 It is important that you have the desired branch checked out when you want to preview your work.
 The default branch `main` only contains content that has already been approved and merged.
-You will be mainly interested in previewing the content from your PR branches.
+You will be mainly interested in previewing the content from your branches.
 See [Checking out pull requests locally](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/checking-out-pull-requests-locally) for how to do this in a terminal.
 You will need to use a terminal for starting your local Docusaurus server.
 

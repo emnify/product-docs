@@ -5,7 +5,7 @@ slug: /apn-configuration/cellular-modules
 
 # Cellular modules
 
-For Telit, Sierra Wireless, Cinterion/Gemalto/Thales, SIMcom, or Sequans, see [General cellular IoT modules](#general-cellular-iot-modules).
+For Telit, Sierra Wireless, Cinterion/Gemalto/Thales, SIMCom, or Sequans, see [General cellular IoT modules](#general-cellular-iot-modules).
 
 ## Quectel cellular IoT modules
 
@@ -23,7 +23,7 @@ Quectel also utilizes a vendor specific command `AT+QICSGP`:
 AT+QICSGP=1,1,"em","","",1
 ```
 
-According to [Quectel](https://www.quectel.com/faqs/12-8-what-is-the-difference-between-cgdcont-and-qicsgp/) the command `AT+QICSGP` shall be used when the internal TCP/UDP stack should be used – and it also allows to configure which bearer (CSD or GPRS) is used.
+According to [Quectel](https://www.quectel.com/faqs/12-8-what-is-the-difference-between-cgdcont-and-qicsgp/) the command `AT+QICSGP` shall be used when the internal TCP/UDP stack should be used—and it also allows to configure which bearer (CSD or GPRS) is used.
 GPRS must be used.
 
 For managing roaming Quectel also introduced the `AT+QCFG` command.
@@ -60,7 +60,7 @@ Check your u-Blox module AT command guide for more information.
 
 ## General cellular IoT modules
 
-*Applies to a cellular module vendors: Fibocom, Telit, Sierra Wireless, SIMcom, Cinterion, Gemalto, Thales, Sequans*
+*Applies to a cellular module vendors: Fibocom, Telit, Sierra Wireless, SIMCom, Cinterion, Gemalto, Thales, Sequans*
 
 The commands for configuring the APN settings are 3GPP standardized and all major cellular module manufacturer support the commands.
 

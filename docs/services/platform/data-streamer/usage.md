@@ -13,7 +13,7 @@ You can manage data streams with the [emnify Portal](#data-streamer-in-the-porta
 Managing data streams with the Portal is convenient when taking the first steps or if you don't expect configuration changes to be needed often.
 
 **[Data Streamer API](#data-streamer-api)**  
-Integrating the Data Streamer API becomes a faster and more secure approach when multiple data streams need to be managed as part of the daily business or in the case of advanced operations (e.g., seamless migration from one data stream to another without lags or duplicates).
+Integrating the Data Streamer API becomes a faster and more secure approach when multiple data streams need to be managed as part of the daily business or in the case of advanced operations (for example, seamless migration from one data stream to another without lags or duplicates).
 
 ## Data Streamer in the Portal
 

@@ -21,7 +21,7 @@ Typical uses are to send processed records to dashboards, generate alerts, dynam
 
 Amazon S3 is an object storage service that stores the raw event and usage data as it arrives from a data stream.
 Shortly after creating the stream, a CSV file containing your event or usage data records is uploaded to the S3 bucket.
-The CSV files can then be sent to other Amazon services (e.g., Amazon QuickSight) or consumed by a third-party analytics or business intelligence tool for generating insights.
+The CSV files can then be sent to other Amazon services (for example, Amazon QuickSight) or consumed by a third-party analytics or business intelligence tool for generating insights.
 
 :::tip Step-by-step guide
 [emnify Data Streamer Integration into AWS S3](https://www.emnify.com/integration-guides/emnify-datastreamer-integration-into-aws-s3)

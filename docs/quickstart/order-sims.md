@@ -20,7 +20,7 @@ Here's how you can order SIM cards any time on the emnify Portal.
   alt=""
 />
 
-3. Once you're in the [**SIM Shop**](https://portal.emnify.com/sim-order), select your preferred SIM type(s).
+3. Once you're in the [**SIM Shop**](https://portal.emnify.com/sim-order), select your preferred SIM type.
 4. Click **Step 2 - Choose Amount** to confirm your choice.
 
 :::tip
@@ -42,7 +42,7 @@ Here, you can specify the amount of each SIM type you want to receive.
 
 :::note
 You may see the **Order Split** option depending on how many SIMs you order. 
-This allows you to split orders into [batches](/glossary#sim-batch) (e.g., collections of 25, 100, or 500 SIMs).
+This allows you to split orders into [batches](/glossary#sim-batch) (for example, collections of 25, 100, or 500 SIMs).
 
 The benefit of batches is that they can be registered all at once, whereas single SIMs can only be registered individually.
 
@@ -58,7 +58,7 @@ Learn more in our [Registering SIMs](/quickstart/register-sims) guide.
 6. Fill in your **Invoice and shipping details**, and specify your **Shipping option**.
 7. Then, choose a way to pay in **Payment details**:
 
-- **Online payment** (i.e., card or PayPal) is possible for any order size.
+- **Online payment** (that is, card or PayPal) is possible for any order size.
 - **Bank transfer** is only available when ordering 100 or more SIMs.
 
 Click **Next** to confirm your payment option.

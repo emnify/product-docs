@@ -22,7 +22,7 @@ At the same time, the IoT device can send data through the private tunnel to the
 
 The following steps are required to set up OpenVPN on your machine:
 
-1. In the [emnify Portal](https://portal.emnify.com/) → [**Device Policies**](https://portal.emnify.com/device-policies): Set the **Service Policy** to a VPN breakout region, e.g., `eu-west-1 (VPN)`
+1. In the [emnify Portal](https://portal.emnify.com/) → [**Device Policies**](https://portal.emnify.com/device-policies): Set the **Service Policy** to a VPN breakout region, for example, `eu-west-1 (VPN)`
 1. In the [emnify Portal](https://portal.emnify.com/) → [**Integrations**](https://portal.emnify.com/integrations) → [**Secure Connection**](https://portal.emnify.com/integrations#secure-connection) → **OpenVPN** → Click **Show Instructions** 
 1. Select your operating system and install the OpenVPN software.
 1. Download and store the VPN configuration file for your region.

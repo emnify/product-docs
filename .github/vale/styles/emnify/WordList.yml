@@ -18,7 +18,7 @@ swap:
   "(?:kill|terminate|abort)": stop|exit|cancel|end
   "(?:OAuth ?2|Oauth)": OAuth 2.0
   "(?:ok|Okay)": OK|okay
-  "(?:WiFi|wifi)": Wi-Fi
+  "(?:WiFi|wifi|Wifi)": Wi-Fi
   '[\.]+apk': APK
   '3\-D': 3D
   'Google (?:I\-O|IO)': Google I/O
@@ -56,6 +56,7 @@ swap:
   functionality: capability|feature
   Googling: search with Google
   grayed-out: unavailable
+  hard-coded?: hardcode|hardcoded
   HTTPs: HTTPS
   in order to: to
   ingest: import|load

@@ -40,7 +40,7 @@ If there is no location update event:
 
 - Verify that the APN is correctly set to *em* or use *emnify* instead since some devices do not support two-digit APNs.
 You can find guides for various devices in [Getting the first device online](#getting-the-first-device-online).
-- Ensure that you activate data access and the radio types (i.e., 2G, 3G, 4G) if you change policy settings.
+- Ensure that you activate data access and the radio types (that is, 2G, 3G, 4G) if you change policy settings.
 - Make sure mobile data is enabled and that international roaming is allowed.
 - Click **Details** → **Events**.
 Validate if there is any PDP create event and rejected.
@@ -59,7 +59,7 @@ Also, verify that the network is on emnify’s [NB-IoTcoverage](https://www.emni
 
 ## Other general troubleshooting tips
 
-- After configuration changes, make sure they are correctly applied on the device (e.g., with a reboot).
+- After configuration changes, make sure they are correctly applied on the device (for example, with a reboot).
 - Clicking the reset connectivity icon on [**Connected Devices**](https://portal.emnify.com/connected-devices) can also reset the network state and allow your device to freshly reattach.
-- The issue may only be present with one network or in the specific location (e.g., due to high interference for this network).
+- The issue may only be present with one network or in the specific location (for example, due to high interference for this network).
 You can use the Operator Blacklist to block the network and force the change to a different network.

@@ -6,17 +6,17 @@ slug: /services/sms
 # SMS
 
 Short Message Services (SMS) were one of the first cellular services made available after voice.
-SMS is still very relevant for IoT use cases – as SMS provides a simple, inexpensive way to configure the device remotely without the need for a data connection.
+SMS is still very relevant for IoT use cases—as SMS provides an inexpensive way to configure the device remotely without the need for a data connection.
 A typical use case is the configuration of the APN setting via SMS.
 
 The emnify platform supports:
 
-- Mobile originated (MO) SMS – SMS sent from the device with the emnify SIM
-- Mobile terminated (MT) SMS – SMS that are destined for a device with the emnify SIM
-- Peer-to-Peer (P2P) SMS – SMS sent from a device with any SIM to a device with the emnify SIM
-- Application- to-peer (A2P) SMS – The SMS is sent and received on an application
+- Mobile originated (MO) SMS - SMS sent from the device with the emnify SIM
+- Mobile terminated (MT) SMS - SMS that are destined for a device with the emnify SIM
+- Peer-to-Peer (P2P) SMS - SMS sent from a device with any SIM to a device with the emnify SIM
+- Application- to-peer (A2P) SMS - The SMS is sent and received on an application
 
-The scenarios above can be activated and deactivated in the device policies to prevent misuse (e.g., P2P SMS).
+The scenarios above can be activated and deactivated in the device policies to prevent misuse (for example, P2P SMS).
 
 You can send and receive SMS of your devices through 3 different interfaces:
 
@@ -48,7 +48,7 @@ An SMS/Message icon will appear to the right of the device name.
   style={{ width: 350 }}
 />
 
-The SMS history and input field at the bottom of the SMS console is similiar to the layout and functionality found in most mobile messaging apps.
+The SMS history and input field at the bottom of the SMS console is similar to the layout and functionality found in most mobile messaging apps.
 
 <img
   src={require('./assets/portal-connected-devices-details-sms-console.png').default}
@@ -116,7 +116,7 @@ The SMS will then be delivered over the webhook.
   style={{ width: 400 }}
 />
 
-*Delivery notification as received in Integromat webhook for SMS with ID: 46638644*
+*Delivery notification as received in Make (Integromat) webhook for SMS with ID: 46638644*
 
 <!-- TODO: Write proper alt text -->
 <img
@@ -130,7 +130,7 @@ The SMS will then be delivered over the webhook.
 ## Zapier SMS integration
 
 Instead of implementing the APIs in your application, emnify and Zapier provide a no-code alternative to automate SMS workflows.
-Zapier has a concept of triggers and actions – when a trigger happens multiple actions can be based on it – taking content from previous steps.
+Zapier has a concept of triggers and actions—when a trigger happens multiple actions can be based on it—taking content from previous steps.
 Sending SMS to your devices is available as an action in Zapier.
 In the [**No-Code-Workflows**](https://portal.emnify.com/integrations#no-code-workflows) list on the [**Integrations** page of the emnify Portal](https://portal.emnify.com/integrations), select the following:
 

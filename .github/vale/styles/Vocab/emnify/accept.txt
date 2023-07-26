@@ -1,12 +1,22 @@
 alex
+APN[s]
 AuC
 AWS
-Code of Conduct
+Bitrek
 CDR[s]
+[Cc]hipset
+Cinterion
+Coban
+Code of Conduct
+Concox
 CSM[s]
+Datadog
 DDoS
 Docusaurus
+[Dd]ownlink
+[Dd]ual-band
 eDRX
+Elinz
 emnify
 emnify Documentation
 emnify Documentation Development Guide
@@ -16,38 +26,54 @@ emnify Portal
 eSIM
 ESLint
 eUICC
+Fibocom
 flespi
 Gartner
+Gemalto
 GitHub Pages
 Google
 Google Cloud Platform
+Gradle
 GraphiQL IDE
 Gurtam
 IMEI[s]
 IMEISV[s]
+Integromat
 IPsec
 Jira
+Kinesis
 LTE
 Luhn
+Meitrack
 Microsoft
 Microsoft Active Directory
 MNO[s]
+[Mm]ulticloud
 MVNO[s]
 Nano
 OAuth
 OpenVPN
+Quad-band
+Queclink
+Quectel
 [Rr]atezone
+ReachFar
 RESTful API
-SIM
+Ruptela
+Sequans
+SIMCom
 Sixfab
 SLA[s]
 SuperNetwork
 Telecom
 Telia
+Telit
 Teltonika
 Twilio
+[Uu]plink
 Vale
 Vodafone
+WeTrack
 Wialon
 Zapier
 Zendesk

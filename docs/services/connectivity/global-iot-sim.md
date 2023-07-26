@@ -86,8 +86,8 @@ emnify eSIMs come in three different quality grades: **Commercial eUICC**, **Ind
 <tr>
   <td rowspan="5">Chip Type</td>
   <td>Operational and storage temperature</td>
-  <td>–25°C to +85°C (JESD22-A104)</td>
-  <td colspan="2" align="center">–40°C to +105°C (JESD22-A104)</td>
+  <td>-25°C to +85°C (JESD22-A104)</td>
+  <td colspan="2" align="center">-40°C to +105°C (JESD22-A104)</td>
 </tr>
 <tr>
   <td>Operating voltage</td>
@@ -99,11 +99,11 @@ emnify eSIMs come in three different quality grades: **Commercial eUICC**, **Ind
 </tr>
 <tr>
   <td>Chipset NVM size</td>
-  <td colspan="3" align="center">704 Kbytes</td>
+  <td colspan="3" align="center">704 kilobytes</td>
 </tr>
 <tr>
   <td>Chipset RAM size</td>
-  <td colspan="3" align="center">20 Kbytes</td>
+  <td colspan="3" align="center">20 kilobytes</td>
 </tr>
 <tr>
   <td rowspan="8">NVRAM characteristics</td>

@@ -5,9 +5,9 @@ slug: /services/cloud-connect
 
 # Cloud Connect
 
-The data traffic of regular SIM cards is secured within the mobile network – but traverses the public internet between the mobile network and the application, which makes the device and application susceptible to attacks and prohibits to easily establish a remote device session.
+The data traffic of regular SIM cards is secured within the mobile network—but traverses the public internet between the mobile network and the application, which makes the device and application susceptible to attacks and prohibits establishing a remote device session.
 
-With emnify Cloud Connect your devices and application servers can communicate through a secure private network – with a secure tunnel being established between the emnify platform and your cloud or on-premises application.
+With emnify Cloud Connect your devices and application servers can communicate through a secure private network—with a secure tunnel being established between the emnify platform and your cloud or on-premises application.
 
 By eliminating the use of the public internet, Cloud Connect helps you better protect your application infrastructure against attacks like DDoS, port scanning while giving you the possibility to remotely access the devices.
 

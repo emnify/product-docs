@@ -12,9 +12,9 @@ These events allow you to track notable system occurrences based on behavior.
 
 Some common use cases for events on emnify include:
 
-- **Triggers for custom business processes** (e.g., authentication or custom usage limitations configured on the [emnify Portal](/system-events/usage#emnify-portal))
-- **Monitoring** (e.g., SIM or data connection lifecycles)
-- **Input for custom billing systems** (i.e., updating billing configuration, processing invoices, etc.)
+- **Triggers for custom business processes** (for example, authentication or custom usage limitations configured on the [emnify Portal](/system-events/usage#emnify-portal))
+- **Monitoring** (for example, SIM or data connection lifecycles)
+- **Input for custom billing systems** (that is, updating billing configuration, processing invoices, etc.)
 
 Events are often used as triggers for custom business processes, for monitoring, and as input for custom billing systems. 
 They provide information about lifecycle transitions and configuration changes. 
@@ -33,9 +33,9 @@ You can find detailed information on the Event Object and its associated propert
 
 Events are distinguished by three severity levels:
 
-* **Info**: Expected behavior of the executed event (e.g., a device successfully attaches to a network).
-* **Warn**: Problem or unusual behavior, but doesn't necessarily require immediate action (e.g., a credit card expires in 60 days).
-* **Critical**: Serious issue that likely requires additional follow-up (e.g., charging for an invoice failed).
+* **Info**: Expected behavior of the executed event (for example, a device successfully attaches to a network).
+* **Warn**: Problem or unusual behavior, but doesn't necessarily require immediate action (for example, a credit card expires in 60 days).
+* **Critical**: Serious issue that likely requires additional follow-up (for example, charging for an invoice failed).
 
 :::note API Reference 
 [Event Severity Object - emnify REST API](https://cdn.emnify.net/api/doc/event.html#event-severity-object)
@@ -45,7 +45,7 @@ Events are distinguished by three severity levels:
 
 Every event is triggered by one of three available event sources:
 
-- **Network**: The cellular network your device is connected to (e.g., a location is updated or purged).
+- **Network**: The cellular network your device is connected to (for example, a location is updated or purged).
 - **Policy Control**: Both the emnify system and your organization can define and enforce policies, quotas, or other limitations. For instance:
   - The emnify system can block devices that exceed predefined traffic limits.
   - Your organization could configure the maximum SMS usage for devices to limit SMS traffic.

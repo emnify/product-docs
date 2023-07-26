@@ -67,8 +67,8 @@ The SMS command to set the APN for Ruptela GPS trackers is:
 [SMSpassword] setconnection em
 ```
 
-The \[SMSpassword\] can be set up in the Ruptela device center.
-If the SMSpassword isn't set, the command is:
+The `[SMSpassword]` can be set up in the Ruptela device center.
+If the `SMSpassword` isn't set, the command is:
 
 ```
 setconnection em
@@ -76,7 +76,7 @@ setconnection em
 
 ## Concox GPS APN configuration
 
-*Applies to JM-VL01, JM-VL02, JM-BL11, JM-VL03, JM-VL04, JM-LL01, JM-LL02, JM-LL301, X3,Wetrack140, Wetrack2, Wetrack lite, Bl10, GT06N, OB22, ET25, HVT001, EG02, JM-VG01U, JM-VG02U, JM-VG04Q, AT1-AT6, CT10, JM-LG01, JM-LG05, TBT100*
+*Applies to JM-VL01, JM-VL02, JM-BL11, JM-VL03, JM-VL04, JM-LL01, JM-LL02, JM-LL301, X3, WeTrack140, WeTrack2, WeTrack lite, Bl10, GT06N, OB22, ET25, HVT001, EG02, JM-VG01U, JM-VG02U, JM-VG04Q, AT1-AT6, CT10, JM-LG01, JM-LG05, TBT100*
 
 Configuring the APN for Concox GPS trackers can be done:
 
@@ -197,9 +197,9 @@ apn[password] em
 The default password is `123456`.
 :::
 
-## Reachfar GPS APN configuration
+## ReachFar GPS APN configuration
 
-Configuring the APN for Reachfar GPS trackers can be done:
+Configuring the APN for ReachFar GPS trackers can be done:
 
 1. Via the SMS console through the [**Connected Devices** page of the emnify Portal](https://portal.emnify.com/connected-devices)
 1. Via the [emnify SMS API](https://cdn.emnify.net/api/doc/swagger.html#/Endpoint) or [Zapier Integration](https://zapier.com/apps/emnify/integrations/sms) (when automating the configuration)
@@ -253,7 +253,7 @@ AT+GTBSI=[password],em,,,,,,,0002$
 ```
 
 :::note
-The default password is the device model (e.g., `gl200`).
+The default password is the device model (for example, `gl200`).
 :::
 
 ## Bitrek GPS APN configuration

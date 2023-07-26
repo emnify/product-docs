@@ -8,7 +8,7 @@ slug: /services/security
 
 Given the globally distributed nature of the devices, smaller footprints and lack of resources, it can get difficult to individually secure IoT devices.
 
-emnify uses a SASE approach to simplify securing devices – using several services specifically to protect customer data, filtering malicious content and preventing unauthorized access.
+emnify uses a SASE approach to simplify securing devices—using several services specifically to protect customer data, filtering malicious content and preventing unauthorized access.
 
 ## Why does IoT require SASE?
 
@@ -38,7 +38,7 @@ Cellular providers typically provide a DNS service.
 By default, emnify routes all DNS queries over Google’s public DNS `8.8.8.8`.
 
 For some devices and modules, it is possible to configure the DNS service.
-For example, Quectel uses the `AT+QIDNSCFG` command, SIMcom `AT+CDNSCFG` command.
+For example, Quectel uses the `AT+QIDNSCFG` command, SIMCom `AT+CDNSCFG` command.
 This is useful to be able to use your own or private DNS servers to secure and have better control over the solution.
 
 Customers can also configure to use their own DNS, no matter if it is a public or a private one.
