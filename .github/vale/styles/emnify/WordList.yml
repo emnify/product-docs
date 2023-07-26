@@ -4,7 +4,7 @@
 # Full list and explanation of terms: https://developers.google.com/style/word-list
 extends: substitution
 message: "Use '%s' instead of '%s'."
-level: error
+level: warning
 ignorecase: false
 action:
   name: replace

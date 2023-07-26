@@ -40,16 +40,11 @@ _Batch Identification Code_
 A unique code for ordered SIM cards used to register the SIM cards on the [**SIM Inventory** page of the emnify Portal](https://portal.emnify.com/sim-inventory).
 
 ## Callback URL  
-<!-- vale Google.Will = NO -->
-<!-- Future tense when discussing callbacks is ok -->
 URL that will be called by a service to send and receive data related to an event that caused this action.
-<!-- vale Google.Will = YES -->
 
 ## Carrier-agnostic network  
 A network that doesn't limit or prefer any specific network in a country and establishes a connection over any network that's transparent to the device.
 
-<!-- vale Google.WordList = NO -->
-<!-- 'check' isn't referring to a selector -->
 ## Check digit
 A checksum appended to identification data (for example, [IMEI](#imei), [EID](#eid), or [ICCID](#iccid)) representing the preceding digits and calculated using an algorithm. 
 
@@ -59,13 +54,9 @@ Check digits are used to validate the identifier, verify data integrity, and hel
 Several identifiers have a check digits but can be calculated differently and have different names.
 For example, [ICCID](#iccid) numbers use a [_Luhn checksum digit_](#luhn-checksum-digit), while the last digits of the [EID](#eid) are called _check digits_.
 :::
-<!-- vale Google.WordList = YES -->
 
 ## Company account
-<!-- vale Google.Contractions = NO -->
-<!-- 'That is' is used as an alternative for 'i.e.' -->
 A company's emnify account (that is, an [**Organization**](#organization) in the [emnify Portal](https://portal.emnify.com/)).
-<!-- vale Google.Contractions = YES -->
 
 :::note
 Every company account (on any plan) is a [workspace](#workspace) by default.
@@ -120,10 +111,7 @@ It has a fixed length of 32 digits, as indicated in the following diagram:
 ![A 32-digit EID number: "89049011803455664400046832584675" The first 18 digits are the EUM Identification Number (EIN). Within those 18 digits, the first two digits are the Major Industry Identifier (Telecom in this example). The next three digits are the Country Code (GER in this example). The next three digits are the eUICC Manufacturer. The final 10 digits of the EIN contain information about the chip, OS, and its version. After the EIN, the following 11 digits are the EUM Specific Identification Number (ESIN). This value is also the eUICC Individual Identification Number. The final two digits of the EID are the Check Digits.](assets/infographic-eid-digits.png)
 
 :::note
-<!-- vale Google.WordList = NO -->
-<!-- 'check' isn't referring to a selector -->
 The EUM specific identification number (ESIN) and [check digits](#check-digit) are for example purposes only, and the values aren't real.
-<!-- vale Google.WordList = YES -->
 :::
 
 Unlike the [ICCID](#iccid), the EID remains the same throughout the life of the eSIM.
@@ -163,12 +151,7 @@ The embedded universal integrated circuit card (eUICC) is a component of a [SIM]
 It allows consumers and IoT manufacturers to provision the SIM with a new [operator profile](https://www.emnify.com/iot-glossary/mno) [over-the-air](#ota).
 
 :::tip Deep dive
-<!-- vale Google.Contractions = NO -->
-<!-- vale Google.Colons = NO -->
-<!-- Follows the blog post title formatting -->
 Learn more about the eUICC in the blog post: [What is an eUICC and why does it matter?](https://www.emnify.com/iot-glossary/what-is-an-euicc)
-<!-- vale Google.Contractions = YES -->
-<!-- vale Google.Colons = YES -->
 :::
 
 ## Event log  
@@ -227,12 +210,8 @@ For example, the ICCID value can change when a different [SIM profile](#sim-prof
 The emnify REST API returns two ICCID values: `iccid` and `iccid_with_luhn`.
 The `iccid_with_luhn` value _includes_ the final [Luhn checksum digit](#luhn-checksum-digit), while the `iccid` value doesn't. 
 
-<!-- vale Google.Colons = NO -->
-<!-- 'SIM' is a proper noun -->
-<!-- https://developers.google.com/style/capitalization#capitalization-and-colons -->
 API references: [SIM Object](https://cdn.emnify.net/api/doc/sim.html#sim-object) and [Endpoint Object](https://cdn.emnify.net/api/doc/endpoint.html#sim-object)
 :::
-<!-- vale Google.Colons = YES -->
 
 ## IMEI
 _International Mobile Equipment Identity_
@@ -250,10 +229,7 @@ A unique number used to identify cellular modems.
 
 :::info
 There are also "software versions" of IMEIs, referred to as _IMEISVs_. 
-<!-- vale Google.WordList = NO -->
-<!-- 'check' isn't referring to a selector -->
 In an IMEISV, there is no [check digit](#check-digit), and the last two digits represent the Software Version Number (SVN).
-<!-- vale Google.WordList = YES -->
 :::
 
 ## IMEI lock  
@@ -300,10 +276,7 @@ _Location Area Code_
 A unique 16-digit fixed-length location area identity code that identifies a phone number’s location area.
 
 ## Luhn checksum digit
-<!-- vale Google.WordList = NO -->
-<!-- 'check' isn't referring to a selector -->
 A [check digit](#check-digit) calculated from the previous digits using the [Luhn algorithm](https://en.wikipedia.org/wiki/Luhn_algorithm).
-<!-- vale Google.WordList = YES -->
 
 :::tip
 Luhn checksum digits are most notably used to validate [ICCID](#iccid) and [IMEI](#imei) numbers.
@@ -447,10 +420,7 @@ Learn more about the [SMS types supported by the emnify platform](/services/sms)
 :::tip
 Using the emnify REST API, you can dispatch MO SMS from devices as HTTP `POST` requests toward a user-configurable URL.
 
-<!-- vale Google.Colons = NO -->
-<!-- Follows the API reference title formatting -->
 Read more: [Receive MO SMS via API Callback](https://cdn.emnify.net/api/doc/sms-callback.html)
-<!-- vale Google.Colons = YES -->
 :::
 
 ## SMS MT  
@@ -511,10 +481,7 @@ A service that protects your internet connection and privacy online.
 :::tip
 IPsec and [OpenVPN](#openvpn) are both protocols for securing data transmission through a VPN.
 
-<!-- vale Google.Colons = NO -->
-<!-- Follows the IoT Glossary post title formatting -->
 Learn more: [IPsec vs OpenVPN: What's the Difference?](https://www.emnify.com/iot-glossary/ipsec-vs-openvpn)
-<!-- vale Google.Colons = YES -->
 :::
 
 ## Workspace

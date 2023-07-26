@@ -131,10 +131,7 @@ By default, this section has the following placeholder:
 
 3. Replace `<APP_TOKEN>` with your application token value
 
-<!-- vale emnify.WordList = NO -->
-<!-- 'check' isn't referring a selector -->
 To test that you're authorized, click the **Execute query** button (▶️) and check your result.
-<!-- vale emnify.WordList = YES -->
 
 ## Execute your first query
 

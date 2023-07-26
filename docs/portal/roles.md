@@ -3,17 +3,10 @@ description: Review the emnify account permissions for various roles
 slug: /portal/roles
 ---
 
-# Roles and permissions
-
-<!-- vale Google.WordList = NO -->
-<!-- 
-    Temporarily disabling so we don't need to refactor every instance of 'check' on this page
-    Also needed to move the imports under the h1 to avoid impacting how the page renders
--->
 import Check from './assets/check-mark-3-24.png';
 import Uncheck from './assets/x-mark-24.png';
 
-<!-- vale Google.WordList = YES -->
+# Roles and permissions
 
 The [emnify Portal](https://portal.emnify.com/) is a powerful application to control the connectivity of devices of a production system.
 
@@ -28,13 +21,7 @@ You can view and edit these roles on the [**Employees** page](https://portal.emn
 
 The following tables describe the permissions for different roles.
 
-<!-- vale Google.FirstPerson = NO -->
-<!-- Terms like 'my' are used in the tables to refer to user actions -->
-
 ## Endpoint management
-
-<!-- vale alex.Race = NO -->
-<!-- 'blacklist' needs to be renamed but unfortunately that's what it's called in the interface -->
 
 | Action | Admin | Observer | User |
 | ------ | :---: | :------: | :--: |
@@ -45,8 +32,6 @@ The following tables describe the permissions for different roles.
 | List all Endpoints | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> |
 | Create new endpoint | <img src={Check} alt="✓" /> | <img src={Uncheck} alt="×" /> | <img src={Check} alt="✓" /> |
 | Retrieve connectivity information of an Endpoint | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> |
-
-<!-- vale alex.Race = YES -->
 
 ## SIM management
 

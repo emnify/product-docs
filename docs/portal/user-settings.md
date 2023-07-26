@@ -35,10 +35,7 @@ If you have set up 2FA, it displays as **MFA - Activated** for your account unde
 [Read the two-factor authentication guide](/how-tos/two-factor-authentication) to learn how to enable 2FA on your emnify account.
 :::
 
-<!-- vale Google.FirstPerson = NO -->
-<!-- 'my' refers to an element in the Portal UI -->
 There is also a **Download my GDPR data** link that allows you to save a `gdpr.txt` file containing the following information specific to your account:
-<!-- vale Google.FirstPerson = YES -->
 
 - **User ID**
 - **Username/Email**

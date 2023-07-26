@@ -9,9 +9,6 @@ displayed_sidebar: devResourcesSidebar
 
 # emnify GraphQL API <span className="theme-doc-version-badge badge badge--primary">preview</span>
 
-<!-- vale Google.We = NO -->
-<!-- This page introduces the GraphQL API from the perspective of emnify -->
-
 :::caution Compatibility Notes
 **The emnify GraphQL API is under active development** and is subject to change. 
 

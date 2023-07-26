@@ -20,10 +20,7 @@ The following events are available as triggers:
 
 - All events in the Data Streamer
 - Device enabled (SIM activated)
-<!-- vale Google.WordList = NO -->
-<!-- 'disabled' is part of the trigger name -->
 - Device disabled (SIM deactivated)
-<!-- vale Google.WordList = YES -->
 - Usage Limit Reached
 
 The following actions are available:

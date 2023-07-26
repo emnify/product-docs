@@ -137,10 +137,7 @@ If you reset connectivity for a device, the expected series of events would be:
 
 1. Info: SIM suspension
 1. Info: Delete PDP Context
-<!-- vale Google.WordList = NO -->
-<!-- 'Endpoint disabled' is the event description -->
 1. Info: Endpoint disabled
-<!-- vale Google.WordList = YES -->
 1. Info: Endpoint enabled
 1. Info: SIM activation
 1. Info: Update location

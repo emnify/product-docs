@@ -21,11 +21,8 @@ If your plan is active, you see the following information:
 Visit your [**Subscription**](https://portal.emnify.com/organisation-settings/subscription) page to compare the differences in features, services, and pricing between the plans:
 
 - Standard (Select **Upgrade**)
-<!-- vale Google.We = NO -->
-<!-- 'Us' is part of the referenced UI elements -->
 - Plus (Select **Contact Us**)
 - Pro (Select **Contact Us**)
-<!-- vale Google.We = YES -->
 
 ## Pricing
 

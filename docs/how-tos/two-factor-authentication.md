@@ -96,14 +96,10 @@ Your changes are saved automatically.
 
 If you want to turn off 2FA, go to your [**User Settings**](https://portal.emnify.com/user-settings) page, find the [**Two-Factor Authentication**](https://portal.emnify.com/user-settings#two-factor-authentication) section, and click **Disable**.
 
-<!-- vale Google.WordList = NO -->
-<!-- 'disable' refers to the button text -->
 <img
   src={require('./assets/portal-user-settings-2fa-disable-button.png').default}
   alt=""
 />
-
-<!-- vale Google.WordList = YES -->
 
 :::info
 You can re-enable 2FA at any time.
