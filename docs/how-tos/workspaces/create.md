@@ -8,7 +8,7 @@ slug: /workspaces/create
 
 # Create a new workspace <span className="theme-doc-version-badge badge badge--primary beta">beta</span>
 
-[Company accounts](/glossary#company-account) on the [**Pro** plan](https://portal.emnify.com/organisation-settings/subscription#plans) can have up to 5 [workspaces](/glossary#workspace).
+[Company accounts](/glossary#company-account) on the [**Pro** plan](https://portal.emnify.com/organisation-settings/subscription#plans) can have up to five [workspaces](/glossary#workspace).
 
 There are many reasons to opt for multiple workspaces.
 For example, organizations with foreign regional subsidiaries or companies producing products in multiple industries.

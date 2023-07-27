@@ -9,7 +9,7 @@ Here's how you can order SIM cards any time on the emnify Portal.
 
 <details className="custom-details-troubleshooting">
   <summary>First time ordering SIM cards on emnify?</summary>
-    <p>If you're new to emnify and interested in testing our services free of charge, please refer to our <a href="https://docs.emnify.com/quickstart#order-a-free-evaluation-sim-package">Order a free Evaluation SIM package</a> guide.</p>
+    <p>If you're new to emnify and interested in testing our services free of charge, please refer to the <a href="https://docs.emnify.com/quickstart#order-a-free-evaluation-sim-package">Order a free Evaluation SIM package</a> guide.</p>
 </details>
 
 1. [Log in to your emnify account](https://portal.emnify.com/sign).
@@ -24,7 +24,7 @@ Here's how you can order SIM cards any time on the emnify Portal.
 4. Click **Step 2 - Choose Amount** to confirm your choice.
 
 :::tip
-Learn more about the various [form factors](/services/global-iot-sim#form-factors) and [quality grades](/services/global-iot-sim#quality-grades) on our [Global IoT SIM](/services/global-iot-sim) page.
+Learn more about the various [form factors](/services/global-iot-sim#form-factors) and [quality grades](/services/global-iot-sim#quality-grades) on the [Global IoT SIM](/services/global-iot-sim) page.
 :::
 
 <img
@@ -52,7 +52,7 @@ The benefit of batches is that they can be registered all at once, whereas singl
     style={{ width: 700 }}
 />
 
-Learn more in our [Registering SIMs](/quickstart/register-sims) guide.
+Learn more in the [Registering SIMs](/quickstart/register-sims) guide.
 :::
 
 6. Fill in your **Invoice and shipping details**, and specify your **Shipping option**.

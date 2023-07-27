@@ -8,7 +8,7 @@ slug: /sdks/python/quickstart
 
 ## Installation
 
-The emnify Python SDK is open-source and the [source code is available on GitHub](https://github.com/emnify/emnify-sdk-python).
+The emnify Python SDK is open source and the [source code is available on GitHub](https://github.com/emnify/emnify-sdk-python).
 
 ### Prerequisites
 

@@ -15,9 +15,12 @@ swap:
   "(?:dev|developer|APIs) console": API console
   "(?:e-mail|E-mail)": email
   "(?:file ?path|path ?name)": path
+  "(?:graphql|Graphql|graphQL)": GraphQL
+  "(?:ios|IOS)": iOS
   "(?:kill|terminate|abort)": stop|exit|cancel|end
   "(?:OAuth ?2|Oauth)": OAuth 2.0
   "(?:ok|Okay)": OK|okay
+  "(?:REST-API|Rest-API|Rest API)": REST API
   "(?:WiFi|wifi|Wifi)": Wi-Fi
   '[\.]+apk': APK
   '3\-D': 3D

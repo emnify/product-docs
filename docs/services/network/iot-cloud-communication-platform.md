@@ -6,12 +6,12 @@ slug: /services/iot-cloud-communication-platform
 # IoT cloud communication platform
 
 emnify’s platform (consisting of a mobile core network and a communication platform dedicated for IoT) has been built up cloud-natively.
-Being deployed in 3 AWS cloud regions within 2-3 availability zones / data centers per region increases the availability of the solution - even when one cloud data center becomes unavailable, data will still be transported over the emnify network.
+Being deployed in three AWS cloud regions within 2-3 availability zones / data centers per region increases the availability of the solution—even when one cloud data center becomes unavailable, data is still transported over the emnify network.
 
 ## Distributed data plane
 
 Traditional connectivity providers have a centrally located network core.
-All data is backhauled to the home country of the operator which means that customer data travels across the globe and distributed latency optimized application infrastructure is not possible.
+All data is backhauled to the home country of the operator which means that customer data travels across the globe and distributed latency optimized application infrastructure isn't possible.
 
 ![Traditional operators](assets/traditional-operators.png)
 

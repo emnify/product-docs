@@ -9,7 +9,7 @@ The emnify Data Streamer allows you to integrate real-time connectivity data str
 
 Using this data, you can build operational dashboards that visualize device, network, and application information side-by-side. 
 
-## Available data streamer integrations
+## Available Data Streamer integrations
 
 - [Amazon](/multicloud-data-streamer/integrations#amazon)
 - [Azure](/multicloud-data-streamer/integrations#azure)

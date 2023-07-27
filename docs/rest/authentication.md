@@ -5,8 +5,8 @@ displayed_sidebar: devResourcesSidebar
 
 # Authentication
 
-To use the emnify API, you need to authenticate with an authentication token.
-We use JSON Web Tokens (JWTs) as the authentication token.
+To use the emnify REST API, you need to authenticate with an authentication token.
+emnify uses JSON Web Tokens (JWTs) as the authentication token.
 
 There are two ways to retrieve this token:
 
@@ -34,8 +34,8 @@ POST https://cdn.emnify.net/api/v1/authenticate
 ```
 
 :::note
-If you signed up using the [emnify Portal](https://portal.emnify.com/), you'll need to enter the password as a SHA1 hashed string.
-The SHA1 of a password can be generated online or in the terminal via the following command: `echo -n 'my_password' | openssl sha1`
+If you signed up using the [emnify Portal](https://portal.emnify.com/), you'll need to enter the password as a SHA-1 hashed string.
+The SHA-1 of a password can be generated online or in the terminal via the following command: `echo -n 'my_password' | openssl sha1`
 :::
 
 **Response**:
@@ -118,7 +118,7 @@ POST https://cdn.emnify.net/api/v1/authenticate
 ```
 
 Unlike username and password authentication,  the server returns only `auth_token`s. 
-No `refresh_token` will be included in the response.
+No `refresh_token` is included in the response.
 This `auth_token` is valid for 240 minutes.
 
 :::caution

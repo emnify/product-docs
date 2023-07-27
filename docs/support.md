@@ -69,7 +69,7 @@ For example:
 - VPN service degradation affecting a minimum of 25 devices
 - Requesting BIC2 codes or invalid BIC code related issues 
 - Unavailability of Regional Internet Breakouts
-- Data Streamer interruption or delay of 5 minutes
+- Data Streamer interruption or delay of five minutes
 
 ## Customer success managers
  

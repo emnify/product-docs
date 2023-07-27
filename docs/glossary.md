@@ -239,7 +239,7 @@ The practice of strictly associating a SIM to the device with a certain [IMEI](#
 _International Mobile Subscriber Identity_
 
 A unique number used to identify a [GSM](#gsm) subscriber.
-Therefore it will change if a device connects to a different operator while roaming.
+Therefore it changes if a device connects to a different operator while roaming.
 
 <details className="custom-details-example">
   <summary>See how the IMSI is constructed</summary>
@@ -248,8 +248,8 @@ Therefore it will change if a device connects to a different operator while roam
   It comprises three components: MCC, MNC, and MSIN.
 
   MCC: 3-digit country identifier  
-  MNC: Operator identifier (2 or 3 digits)  
-  MSIN: Identifier for the connected device (9 or 10 digits)  
+  MNC: operator identifier (two or three digits)  
+  MSIN: identifier for the connected device (nine or 10 digits)  
 
   <img
     src={require('./assets/imsi-components-table.png').default}
@@ -452,7 +452,7 @@ User-defined limit of consumption of a certain service (data, SMS) per endpoint.
 
 ## User account
 An account associated with a specific person and used to log in to one or more [workspaces](#workspace).
-User accounts can be assigned a role (for example, **Admin**).
+User accounts can be assigned a role (for example, **Administrator**).
 
 ## User-defined coverage  
 An ability to select which operator the customer’s SIM connects to.
@@ -490,7 +490,7 @@ Workspaces can be managed individually or, if [linked](#linked-workspaces), cent
 
 :::note
 Every [company account](#company-account) (on any plan) is a workspace by default.
-Accounts on the [**Pro** plan](https://portal.emnify.com/organisation-settings/subscription#plans) can have up to 5 workspaces.
+Accounts on the [**Pro** plan](https://portal.emnify.com/organisation-settings/subscription#plans) can have up to five workspaces.
 :::
 
 :::tip Step-by-step guide
@@ -498,7 +498,7 @@ Accounts on the [**Pro** plan](https://portal.emnify.com/organisation-settings/s
 :::
 
 ## Workspace switcher
-The feature in the [emnify Portal](https://portal.emnify.com/) allowing **Admin** [user accounts](#user-account) to switch between workspaces.
+The feature in the [emnify Portal](https://portal.emnify.com/) allowing **Administrator** [user accounts](#user-account) to switch between workspaces.
 
 :::tip Step-by-step guide
 [Switching between workspaces](/workspaces/switch)

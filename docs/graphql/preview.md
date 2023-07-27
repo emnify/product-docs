@@ -18,7 +18,7 @@ displayed_sidebar: devResourcesSidebar
 [GraphQL](https://graphql.org/) is a query language that enables you to define API call responses to match your use case and technical needs. 
 
 The emnify GraphQL API was initially developed internally to improve performance on the [Portal](https://portal.emnify.com/).
-In early 2023, emnify decided to release a preview version to customers. 
+In early 2023, we decided to release a preview version to customers. 
 We hope to collect feedback and continue adding features so that the capability more closely matches the [REST API](/rest). 
 
 :::info

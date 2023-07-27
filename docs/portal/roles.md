@@ -13,7 +13,7 @@ The [emnify Portal](https://portal.emnify.com/) is a powerful application to con
 Employees across your organization may use the Portal, from operations and finance to development and product.
 That's why emnify offers three levels of access (referred to as **Roles**) to use and manage Portal features:
 
-1. Admin (has access to all services and user management)
+1. Administrator (has access to all services and user management)
 1. Observer (has access to limited services)
 1. User (has access to all services)
 
@@ -23,7 +23,7 @@ The following tables describe the permissions for different roles.
 
 ## Endpoint management
 
-| Action | Admin | Observer | User |
+| Action | Administrator | Observer | User |
 | ------ | :---: | :------: | :--: |
 | Retrieve an endpoint by ID | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> |
 | Update, Delete an endpoint by ID | <img src={Check} alt="✓" /> | <img src={Uncheck} alt="×" /> | <img src={Check} alt="✓" /> |
@@ -35,7 +35,7 @@ The following tables describe the permissions for different roles.
 
 ## SIM management
 
-| Action | Admin | Observer | User |
+| Action | Administrator | Observer | User |
 | ------ | :---: | :------: | :--: |
 | Retrieve SIMs by ID | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> |
 | Update, Delete SIMs by ID | <img src={Check} alt="✓" /> | <img src={Uncheck} alt="×" /> | <img src={Check} alt="✓" /> |
@@ -44,7 +44,7 @@ The following tables describe the permissions for different roles.
 
 ## Service profile
 
-| Action | Admin | Observer | User |
+| Action | Administrator | Observer | User |
 | ------ | :---: | :------: | :--: |
 | Retrieve list of available Countries | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> |
 | Retrieve list of available Currencies | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> |
@@ -61,7 +61,7 @@ The following tables describe the permissions for different roles.
 
 ## Tariff profile
 
-| Action | Admin | Observer | User |
+| Action | Administrator | Observer | User |
 | ------ | :---: | :------: | :--: |
 | List of available Ratezone Statuses | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> |
 | List of available Tariff Statuses | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> |
@@ -77,7 +77,7 @@ The following tables describe the permissions for different roles.
 
 ## User management
 
-| Action | Admin | Observer | User |
+| Action | Administrator | Observer | User |
 | ------ | :---: | :------: | :--: |
 | Create Support Token to assume permissions of a User by ID | <img src={Uncheck} alt="×" /> | <img src={Uncheck} alt="×" /> | <img src={Uncheck} alt="×" /> |
 | Update, Delete Users | <img src={Check} alt="✓" /> | <img src={Uncheck} alt="×" /> | <img src={Uncheck} alt="×" /> |
@@ -91,7 +91,7 @@ The following tables describe the permissions for different roles.
 
 ## Alerts
 
-| Action | Admin | Observer | User |
+| Action | Administrator | Observer | User |
 | ------ | :---: | :------: | :--: |
 | Retrieve Organization/Endpoint Alerts | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> |
 | Retrieve events of a User by ID | <img src={Check} alt="✓" /> | <img src={Uncheck} alt="×" /> | <img src={Uncheck} alt="×" /> |
@@ -99,7 +99,7 @@ The following tables describe the permissions for different roles.
 
 ## MFA keys
 
-| Action | Admin | Observer | User |
+| Action | Administrator | Observer | User |
 | ------ | :---: | :------: | :--: |
 | Generate user shared secret key for MFA | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> |
 | Activate user shared secret key for MFA | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> |

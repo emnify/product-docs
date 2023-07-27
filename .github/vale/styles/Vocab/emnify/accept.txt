@@ -10,6 +10,7 @@ Coban
 Code of Conduct
 Concox
 CSM[s]
+Data Streamer
 Datadog
 DDoS
 Docusaurus
@@ -19,10 +20,12 @@ eDRX
 Elinz
 emnify
 emnify Documentation
-emnify Documentation Development Guide
 emnify GraphQL API
 emnify IoT SuperNetwork
 emnify Portal
+emnify REST API
+emnify SDKs
+emnify SIMs
 eSIM
 ESLint
 eUICC
@@ -39,7 +42,9 @@ Gurtam
 IMEI[s]
 IMEISV[s]
 Integromat
+IoT
 IPsec
+Java
 Jira
 Kinesis
 LTE
@@ -70,6 +75,7 @@ Telia
 Telit
 Teltonika
 Twilio
+u-blox
 [Uu]plink
 Vale
 Vodafone

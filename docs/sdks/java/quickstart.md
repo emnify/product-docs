@@ -22,7 +22,7 @@ Refer to the [SSL Report table](https://www.ssllabs.com/ssltest/analyze.html?d=c
 
 ## Installation
 
-The emnify Java SDK is open-source and the [source code is available on GitHub](https://github.com/EMnify/emnify-sdk-java).
+The emnify Java SDK is open source and the [source code is available on GitHub](https://github.com/EMnify/emnify-sdk-java).
 
 The recommended method for installing the SDK is with a build automation tool, like Maven or Gradle. 
 You can add the emnify dependency to your existing project, specifying the latest version.

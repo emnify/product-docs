@@ -38,7 +38,7 @@ The following steps are the minimum security requirements for storing this data 
 1. Ensure that the S3 bucket isn't publicly accessible.   
    You can block public access in the **Permissions** tab of the S3 bucket:
    ![Screenshot from a test S3 bucket in the AWS console. The "Permissions" tab is active at the top. Underneath, "Block public access" is selected. There is a description about the block public access bucket settings, followed by a panel indicating that "Block all public access" is marked as "On." There is also an "Edit" button in this panel.](assets/aws-s3-bucket-permissions-blocking-public-access.png)
-1. Server-side encryption can be enabled for each bucket, and S3 will encrypt objects before they are saved to disk.
+1. Server-side encryption can be enabled for each bucket, and S3 encrypts objects before they're saved to disk.
    Decryption performs when downloading the objects.  
    You can enable this in the **Properties** tab of the S3 bucket:
    ![Screenshot from the same test S3 bucket. The "Properties" tab is active, showing various available properties and their status. In this screenshot, all are disabled except "Default encryption," which has "AES-256" as the selected value. A modal is visible, prompting you to "View bucket policy."](assets/aws-s3-bucket-properties-encryption.png)
@@ -51,7 +51,7 @@ Once you have configured your data stream and are storing event and usage data i
 :::tip Step-by-step guide
 [How to analyze emnify usage data and events in AWS QuickSight?](https://support.emnify.com/hc/en-us/articles/360010604820-How-to-analyze-emnify-usage-data-and-events-in-AWS-Quicksight-)
 
-**_Warning: This guide uses a legacy version of the [emnify Portal](https://portal.emnify.com/)._**
+**_Warning: this guide uses a legacy version of the [emnify Portal](https://portal.emnify.com/)._**
 :::
 
 ## Azure
@@ -122,16 +122,16 @@ You can also create dashboards and trigger alerts on specific events or situatio
 
 ## Webhook
 
-The data streamer may also send usage and event data in JSON format to a configurable, user-specified webhook URL.
+The Data Streamer may also send usage and event data in JSON format to a configurable, user-specified webhook URL.
 In this case, users provide an application that consumes HTTP POST requests sent from the emnify system.
 
 This is the most flexible method of processing a data stream. It allows any custom implementation of analytics, reporting, or a pipeline of tools to process usage and event data.
 
 To use the Webhook data stream, you must provide a web service that listens for messages from the emnify Data Streamer.
 
-The emnify system will send HTTP POST requests with JSON data payloads when event or usage data records occur.
+The emnify system sends HTTP POST requests with JSON data payloads when event or usage data records occur.
 
-When using the emnify Webhook in bulk mode, each HTTP POST will include a JSON collection instead of an individual event or usage data record.
+When using the emnify Webhook in bulk mode, each HTTP POST includes a JSON collection instead of an individual event or usage data record.
 The HTTP POST requests are sent at intervals and should be used if the receiving system needs to process multiple events in bulk instead of individual events as they occur.
 
 ### Make (formerly Integromat)
@@ -141,7 +141,7 @@ The HTTP POST requests are sent at intervals and should be used if the receiving
 :::tip Step-by-step guide
 [Automate Business Processes with Multi-Cloud Data Streamer and Make](https://www.emnify.com/integration-guides/emnify-mcds-integromat-integration)
 
-**_Warning: This guide still needs to be updated to reflect the new naming._**
+**_Warning: this guide still needs to be updated to reflect the new naming._**
 :::
 
 ### Automate.io

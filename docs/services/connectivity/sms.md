@@ -16,9 +16,9 @@ The emnify platform supports:
 - Peer-to-Peer (P2P) SMS - SMS sent from a device with any SIM to a device with the emnify SIM
 - Application- to-peer (A2P) SMS - The SMS is sent and received on an application
 
-The scenarios above can be activated and deactivated in the device policies to prevent misuse (for example, P2P SMS).
+The preceding scenarios can be activated and deactivated in the device policies to prevent misuse (for example, P2P SMS).
 
-You can send and receive SMS of your devices through 3 different interfaces:
+You can send and receive SMS of your devices through three different interfaces:
 
 - [emnify Portal](#emnify-portal)
 - [emnify SMS API and webhook](#emnify-sms-rest-api-and-webhook)
@@ -32,15 +32,15 @@ You can send and receive SMS of your devices through 3 different interfaces:
 ## emnify Portal
 
 In the [emnify Portal](https://portal.emnify.com/) → [**Connected Devices**](https://portal.emnify.com/connected-devices) you can access the SMS console and directly send SMS to the devices. 
-The sender can be configured as well as the console will show if the SMS is delivered or not.
-You will see all SMS that the device receives sends out.
+The sender can be configured as well as the console shows if the SMS is delivered or not.
+You'll see all SMS that the device receives sends out.
 
 For sending SMS messages to a single device, select **Details**:
 
 ![Portal screenshot of the Connected Devices page showing the extensive device list. There is a Details button available for each device listed.](assets/portal-connected-devices-details-button.png)
 
 
-An SMS/Message icon will appear to the right of the device name.
+An SMS/Message icon appears to the right of the device name.
 
 <img
   src={require('./assets/portal-connected-devices-details-open-sms-console.png').default}
@@ -48,7 +48,7 @@ An SMS/Message icon will appear to the right of the device name.
   style={{ width: 350 }}
 />
 
-The SMS history and input field at the bottom of the SMS console is similar to the layout and functionality found in most mobile messaging apps.
+The SMS history and input field at the bottom of the SMS console is similar to the layout and features found in most mobile messaging apps.
 
 <img
   src={require('./assets/portal-connected-devices-details-sms-console.png').default}
@@ -56,11 +56,11 @@ The SMS history and input field at the bottom of the SMS console is similar to t
   style={{ width: 575 }}
 />
 
-When you select (check) one or more devices in the list of [**Connected Devices**](https://portal.emnify.com/connected-devices), a group of menu items will appear that includes **SMS**.
+When you select one or more devices in the list of [**Connected Devices**](https://portal.emnify.com/connected-devices), a group of menu items appear that includes **SMS**.
 
 ![Portal screenshot of the Connected Devices page. A top-level banner shows the number of devices selected and a list of options. Options from left to right: Reset, SMS, Device, IMEI Lock, More. SMS is selected.](assets/portal-connected-devices-sms.png)
 
-This SMS interface does not show a history of messages.
+This SMS interface doesn't show a history of messages.
 
 <img
   src={require('./assets/portal-send-sms-message-text.png').default}
@@ -68,7 +68,7 @@ This SMS interface does not show a history of messages.
   style={{ width: 496 }}
 />
 
-However, you will receive a brief notification regarding the status of the SMS sent to the selected devices.
+However, you receive a brief notification regarding the status of the SMS sent to the selected devices.
 
 <img
   src={require('./assets/portal-sms-sent.png').default}
@@ -106,8 +106,8 @@ In the **Add Webhook** dialog, provide the webhook URL and an optional secret ke
   style={{ width: 856 }}
 />
 
-When you want to send an SMS from the device to your application, your device should send the SMS to an invalid [MSISDN](#msisdn) with 8 digits or less.
-The SMS will then be delivered over the webhook.
+When you want to send an SMS from the device to your application, your device should send the SMS to an invalid [MSISDN](#msisdn) with eight digits or less.
+The SMS is then delivered over the webhook.
 
 <!-- TODO: Write proper alt text -->
 <img
@@ -136,7 +136,7 @@ In the [**No-Code-Workflows**](https://portal.emnify.com/integrations#no-code-wo
 
 ![Portal screenshot from the Integrations page. The featured integration reads, "Enable devices and send SMS via emnify from newly caught webhooks. emnify + Webhooks by Zapier". Next to the text, there's a "Use this Zap" button.](assets/portal-integrations-sms-webhooks-zapier.png)
 
-There you will find a predefined Zap consisting of 3 steps with interactive instructions on how to configure it or modify the steps for your specific needs:
+There you'll find a predefined Zap consisting of three steps with interactive instructions on how to configure it or modify the steps for your specific needs:
 
 1. Catch Hook in Webhooks by Zapier (Trigger)
 1. Enable a Device in emnify (Action)

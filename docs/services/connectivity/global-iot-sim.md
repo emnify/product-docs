@@ -27,7 +27,7 @@ Because M2M eSIMs can be updated with new configurations or profiles, this elimi
 
 emnify also offers consumer eSIMs for phones, tablets, and smart watches.
 The consumer eSIM can be downloaded to a device by scanning a QR code.
-If you are interested in consumer eSIM technology, please [contact us](https://www.emnify.com/talk-to-us).
+If you are interested in consumer eSIM technology, please [contact the emnify sales team](https://www.emnify.com/talk-to-us).
 
 ## Form factors
 
@@ -40,7 +40,7 @@ emnify [M2M eSIMs](#m2m-esim) are available in the following form factors:
 | **4FF** (Nano SIM)  | 8.8 x 12.3 x 0.75 mm   |
 | **MFF2** (eSIM)     | 5 x 6 x 0.75 mm, 8 pin |
 
-MFF2 eSIMs can be soldered onto a device and are not readily removable.
+MFF2 eSIMs can be soldered onto a device and aren't readily removable.
 Visit the [emnify SIM Shop](https://portal.emnify.com/sim-order) where you can choose between these packages:
 
 - Triple-cut commercial
@@ -238,14 +238,14 @@ The following compliance standards and software features apply to all quality gr
 emnify eSIM cards are equipped with a multi-IMSI applet that runs in the background using minimal resources without any negative impact on the device's performance.
 This technology is similar to a mobile phone using dual-SIM technology.
 An emnify eSIM has cellular provider information from multiple SIM cards already included. 
-While emnify has roaming agreements and local contracts with operators around the world, emnify also uses partner operators to increase the network coverage footprint in order to provide a fallback when preferred networks experience outages.
+While emnify has roaming agreements and local contracts with operators around the world, emnify also uses partner operators to increase the network coverage footprint to provide a fallback when preferred networks experience outages.
 
 The multi-IMSI applet works in the following manner.
 emnify has its own operator identity ([IMSI](/glossary#imsi)) as well as the partner operator's IMSI stored on the SIM card.
 Each IMSI / partner operator usually has more than one network accessible per country.
 The applet also includes a preferred IMSI list per country.
-For example, this list defines that IMSI *X* will have the highest priority for access in country *A*.
-However, if the device can't connect, another operator, IMSI *Y*, will be next on the list of priorities.
+For example, this list defines that IMSI *X* has the highest priority for access in country *A*.
+However, if the device can't connect, another operator, IMSI *Y*, is next on the priority list.
 So when a device then moves to country *A*, the applet dynamically overwrites the active IMSI with IMSI *X* based on the preferred IMSI list.
 Then when operator *X* has a service outage, the SIM automatically falls back to IMSI *Y* to ensure the device can maintain connectivity.
 

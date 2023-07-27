@@ -23,9 +23,9 @@ To integrate Cloud Connect into your application using Transit Gateway, you can 
 
 ## IPsec
 
-If your application is not on AWS but on any other cloud services or on-premise, you can utilize Cloud Connect for establishing an IPsec VPN connection.
+If your application isn't on AWS but on any other cloud services or on-premise, you can utilize Cloud Connect for establishing an IPsec VPN connection.
 
 With emnify you can set up an IPsec tunnel to securely transfer your data into your application server.
 
 To integrate Cloud Connect into your application using IPsec, you can follow this [tutorial](https://www.emnify.com/en/developer-hub/how-to-setup-an-ipsec-using-emnify-cloudconnect). 
-You can also find guide to set up IPsec for Azure and Google Cloud in among our [Integration Guides](https://www.emnify.com/integration-guides).
+You can also find guides to set up IPsec for Azure and Google Cloud in the [Integration Guides](https://www.emnify.com/integration-guides).

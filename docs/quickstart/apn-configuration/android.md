@@ -5,7 +5,7 @@ slug: /apn-configuration/android
 
 # Android
 
-When setting up an Android device with an emnify SIM, you need to follow these 4 steps:
+When setting up an Android-powered device with an emnify SIM, you need to follow these four steps:
 
 1. Go to **Settings** → **Mobile network**
 1. Go to **Mobile data**

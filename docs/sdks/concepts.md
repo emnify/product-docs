@@ -5,7 +5,7 @@ slug: /sdks/concepts
 
 # Concepts
 
-## SDK Glossary
+## SDK glossary
 
 | Name      | Description |
 | :-------- | :---------- |
@@ -16,7 +16,7 @@ slug: /sdks/concepts
 | Tariff Profile  | Controls where and how your devices have coverage. Referred to as [**Coverage Policy** in the emnify Portal](https://portal.emnify.com/device-policies). [Learn more about tariff profiles](https://cdn.emnify.net/api/doc/tariff-profile.html).  |
 | Service Profile  | Defines available services (for example, SMS, 4G, etc.) and traffic limits for a device. Referred to as [**Service Policy** in the emnify Portal](https://portal.emnify.com/device-policies). [Learn more about service profiles](https://cdn.emnify.net/api/doc/service-profile.html).  |
 | Blacklist Operators  | Method that allows you to restrict device connectivity to a specific operator or group of operators.  |
-| Operator  | Underlying mobile network operator (MNO) used to provide connectivity. Explore operator coverage by country and region on [our pricing page](https://www.emnify.com/pricing).  |
+| Operator  | Underlying mobile network operator (MNO) used to provide connectivity. Explore operator coverage by country and region on [emnify's pricing page](https://www.emnify.com/pricing).  |
 | SMS  | [Learn more about SMS](/services/sms).  |
 | Application Token  | Authenticates your identity when using the emnify SDK and API. [Learn how to generate an application token](/rest/authentication#authenticate-with-an-application-token).  |
 

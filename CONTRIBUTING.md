@@ -98,7 +98,7 @@ Select the **Preview** tab to see how it will appear after it is created.
 Immediately after creating the PR, GitHub takes you to its details page.
 This is where you will receive feedback from reviewers and find status updates.
 
-Please note the 4 tabs on this page:
+Please note the four tabs on this page:
 
 ![](https://user-images.githubusercontent.com/49970529/225022525-9f494255-915a-4c43-b073-8303032007f4.png)
 

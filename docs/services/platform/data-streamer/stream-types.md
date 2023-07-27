@@ -17,9 +17,9 @@ These events allow you to track notable system occurrences based on behavior.
 
 Some common use cases for events on emnify include:
 
-- **Triggers for custom business processes** (e.g., authentication or custom usage limitations configured on the [emnify Portal](/multicloud-data-streamer/usage#data-streamer-in-the-portal))
-- **Monitoring** (e.g., SIM or data connection lifecycles)
-- **Input for custom billing systems** (i.e., updating billing configuration, processing invoices, etc.)
+- **Triggers for custom business processes** (for example, authentication or custom usage limitations configured on the [emnify Portal](/multicloud-data-streamer/usage#data-streamer-in-the-portal))
+- **Monitoring** (for example, SIM or data connection lifecycles)
+- **Input for custom billing systems** (that is, updating billing configuration, processing invoices, etc.)
 
 :::tip
 Learn more about the available event types and how to use them in the [Event documentation](/system-events).
@@ -51,7 +51,7 @@ Each usage data record contains information about the:
 
 #### Data
 
-Usage records for data are created:
+Data usage records are created:
 
 - Every 45 seconds for open PDP contexts (when at least 100 KB of data is consumed)
 - After the PDP context is closed

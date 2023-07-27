@@ -11,7 +11,7 @@ The remote client can be on the application server or any machine that wants to 
 ## IoT device requirements
 
 Your IoT device doesn't need a private APN, OpenVPN software, or dynamic DNS resolution to use the OpenVPN service.
-Through the emnify SIM, each device will have a [static](/glossary#static-ip) [private IP address](/glossary#private-ip) that you can use to identify and address the device.
+Through the emnify SIM, each device has a [static](/glossary#static-ip) [private IP address](/glossary#private-ip) that you can use to identify and address the device.
 
 <!--This image is missing: OpenVPN.png -->
 <!-- image caption: OpenVPN System Overview -->
@@ -34,7 +34,7 @@ You can't use accounts with multi-factor authentication (MFA) enabled to authent
 :::
 
 :::tip
-For more detailed instructions based on your operating system, please refer to our knowledge base articles:
+For more detailed instructions based on your operating system, please refer to the following knowledge base articles:
 
 - [MacOS](https://support.emnify.com/hc/en-us/articles/360019625379-OpenVPN-Integration-Guide-for-MacOS)
 - [Windows](https://support.emnify.com/hc/en-us/articles/115001723273-OpenVPN-Integration-Guide-for-Windows) 
