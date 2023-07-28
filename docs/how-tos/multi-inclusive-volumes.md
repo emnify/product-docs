@@ -103,7 +103,7 @@ In the following example, the device switches from **Europe 1 MB** included to *
   alt=""
 />
 
-3. Locate the **More** dropdown menu on the banner at the top of the page and select **Change Coverage Policy**.
+3. Locate the **More** dropdown menu on the banner and select **Change Coverage Policy**.
 
 <img
   src={require('./assets/portal-connected-devices-bulk-actions-more-change-coverage-policy.png').default}

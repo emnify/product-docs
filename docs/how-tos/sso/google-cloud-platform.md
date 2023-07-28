@@ -66,7 +66,7 @@ You can access your client ID and secret at any time in your Google Cloud Platfo
 1. If you need SSO enabled for your account, [contact emnify support](https://support.emnify.com/). 
 Otherwise, click **Add** under the Google SSO provider.
 1. Fill in the **Client ID** and **Client Secret** you copied earlier, then click **Create and Activate**.
-1. Once you're back on the Single Sign-On page of the **Organization Settings**, you should see Google listed as a **Provider**.
+1. Once you're back on **Single Sign-On**, you should see Google listed as a **Provider**.
 1. Finally, click **Verify Integration** and follow the prompts.
 
 :::caution

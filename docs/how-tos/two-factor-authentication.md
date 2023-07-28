@@ -12,7 +12,7 @@ You can enable 2FA via the emnify Portal.
 ## Configuration steps
 
 1. Log in to your [emnify account](https://portal.emnify.com/sign).
-2. Navigate to your [**User Settings**](https://portal.emnify.com/user-settings) page by clicking on your avatar and selecting **User Settings** from the dropdown menu.
+2. Navigate to [**User Settings**](https://portal.emnify.com/user-settings) by clicking on your avatar and selecting **User Settings** from the dropdown menu.
 
 <img
   src={require('./assets/portal-dashboard-avatar-user-settings.png').default}
@@ -74,7 +74,7 @@ To bypass this process, select **Trust this device** before entering the 2FA cod
   style={{ width:550 }}
 />
 
-A [**Trusted Devices**](https://portal.emnify.com/user-settings#trusted-devices) section should be visible on your [**User Settings**](https://portal.emnify.com/user-settings) page under [**Two-Factor Authentication**](https://portal.emnify.com/user-settings#two-factor-authentication).
+In **User Settings**, [**Trusted Devices**](https://portal.emnify.com/user-settings#trusted-devices) should be visible in the **Two-Factor Authentication** section.
 
 <img
   src={require('./assets/portal-user-settings-trusted-devices.png').default}
@@ -94,7 +94,7 @@ Your changes are saved automatically.
 
 ## Disable two-factor authentication
 
-If you want to turn off 2FA, go to your [**User Settings**](https://portal.emnify.com/user-settings) page, find the [**Two-Factor Authentication**](https://portal.emnify.com/user-settings#two-factor-authentication) section, and click **Disable**.
+If you want to turn off 2FA, go to **User Settings**, find the [**Two-Factor Authentication**](https://portal.emnify.com/user-settings#two-factor-authentication) section, and click **Disable**.
 
 <img
   src={require('./assets/portal-user-settings-2fa-disable-button.png').default}
@@ -102,5 +102,5 @@ If you want to turn off 2FA, go to your [**User Settings**](https://portal.emnif
 />
 
 :::info
-You can re-enable 2FA at any time.
+You can turn on 2FA again at any time.
 :::

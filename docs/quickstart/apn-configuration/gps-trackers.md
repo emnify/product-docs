@@ -18,7 +18,7 @@ For GPS vendors that aren't listed, please consult their respective manual and c
 Configuring the APN for Teltonika GPS trackers can be done through:
 
 1. Teltonika Configurator over a USB, Bluetooth connection
-1. Via the SMS console through the [**Connected Devices** page of the emnify Portal](https://portal.emnify.com/connected-devices)
+1. Via the SMS console through the [**Connected Devices**](https://portal.emnify.com/connected-devices) page of the emnify Portal
 1. Via the [emnify SMS API](https://cdn.emnify.net/api/doc/swagger.html#/Endpoint) or [Zapier Integration](https://zapier.com/apps/emnify/integrations/sms) (when automating the configuration)
 
 Newer Teltonika GPS versions automatically detect the emnify APN setting.
@@ -26,11 +26,13 @@ Newer Teltonika GPS versions automatically detect the emnify APN setting.
 When the GPS tracker is turned on for the first time after the SIM is installed, it shows the status **Attached** in the emnify Portal.
 At this point, the device can receive SMS but not establish a data session unless the APN is set up or detected.
 
-If you've set a username and password for the device, use the following SMS command to set the APN (replacing `USERNAME` and `PASSWORD` with your credentials):
+If you've set a username and password for the device, use the following SMS command to set the APN:
 
 ```
 USERNAME PASSWORD setparam 2001:em
 ```
+
+Replace *`USERNAME`* and *`PASSWORD`* with your credentials.
 
 Otherwise, if there's no username or password configured, use the following:
 
@@ -55,7 +57,7 @@ Refer to the [Teltonika FMB Device Family Parameter list](https://wiki.teltonika
 Configuring the APN for Ruptela GPS trackers can be done through:
 
 1. Ruptela Device Center over a USB, Bluetooth connection
-1. Via the SMS console through the [**Connected Devices** page of the emnify Portal](https://portal.emnify.com/connected-devices)
+1. Via the SMS console through the [**Connected Devices**](https://portal.emnify.com/connected-devices) page of the emnify Portal
 1. Via the [emnify SMS API](https://cdn.emnify.net/api/doc/swagger.html#/Endpoint) or [Zapier Integration](https://zapier.com/apps/emnify/integrations/sms) (when automating the configuration)
 
 When the GPS tracker is turned on for the first time after the SIM is installed, it shows the status **Attached** in the emnify Portal.
@@ -80,7 +82,7 @@ setconnection em
 
 Configuring the APN for Concox GPS trackers can be done:
 
-1. Via the SMS console through the [**Connected Devices** page of the emnify Portal](https://portal.emnify.com/connected-devices)
+1. Via the SMS console through the [**Connected Devices**](https://portal.emnify.com/connected-devices) page of the emnify Portal
 1. Via the [emnify SMS API](https://cdn.emnify.net/api/doc/swagger.html#/Endpoint) or [Zapier Integration](https://zapier.com/apps/emnify/integrations/sms) (when automating the configuration)
 
 When the GPS tracker is turned on for the first time after the SIM is installed, it shows the status **Attached** in the emnify Portal.
@@ -108,7 +110,7 @@ The default password is `666666`.
 
 Configuring the APN for Coban GPS trackers can be done:
 
-1. Via the SMS console through the [**Connected Devices** page of the emnify Portal](https://portal.emnify.com/connected-devices)
+1. Via the SMS console through the [**Connected Devices**](https://portal.emnify.com/connected-devices) page of the emnify Portal
 1. Via the [emnify SMS API](https://cdn.emnify.net/api/doc/swagger.html#/Endpoint) or [Zapier Integration](https://zapier.com/apps/emnify/integrations/sms) (when automating the configuration)
 
 When the GPS tracker is turned on for the first time after the SIM is installed, it shows the status **Attached** in the emnify Portal.
@@ -117,21 +119,25 @@ At this point, the device can receive SMS but not establish a data session unles
 To turn on GPSR:
 
 ```
-gprs[your_password]
+gprs[PASSWORD]
 ```
 
-The SMS command to set the APN for Coban GPS trackers is:
+Replace *`[PASSWORD]`* with your password.
+
+The SMS command to set the `APN` for Coban GPS trackers is:
 
 ```
-APN[your_password] em
+APN[PASSWORD] em
 ```
 
-:::caution
-There are no spaces between `gprs`/`APN` and the password.
-:::
+Replace *`[PASSWORD]`* with your password.
 
 :::note
 The default password is `123456`.
+:::
+
+:::caution
+There are no spaces between `gprs`/`APN` and the password.
 :::
 
 ## Meitrack GPS APN configuration
@@ -141,7 +147,7 @@ The default password is `123456`.
 Configuring the APN for Meitrack GPS trackers can be done:
 
 1. Via the Meitrack manager
-1. Via the SMS console through the [**Connected Devices** page of the emnify Portal](https://portal.emnify.com/connected-devices)
+1. Via the SMS console through the [**Connected Devices**](https://portal.emnify.com/connected-devices) page of the emnify Portal
 1. Via the [emnify SMS API](https://cdn.emnify.net/api/doc/swagger.html#/Endpoint) or [Zapier Integration](https://zapier.com/apps/emnify/integrations/sms) (when automating the configuration)
 
 When the GPS tracker is turned on for the first time after the SIM is installed, it shows the status **Attached** in the emnify Portal.
@@ -175,7 +181,7 @@ Both SMS and super password can be changed and would then need to be replaced in
 
 Configuring the APN for Elinz GPS trackers can be done:
 
-1. Via the SMS console through the [**Connected Devices** page of the emnify Portal](https://portal.emnify.com/connected-devices) 
+1. Via the SMS console through the [**Connected Devices**](https://portal.emnify.com/connected-devices)  page of the emnify Portal
 1. Via the [emnify SMS API](https://cdn.emnify.net/api/doc/swagger.html#/Endpoint) or [Zapier Integration](https://zapier.com/apps/emnify/integrations/sms) (when automating the configuration)
 
 When the GPS tracker is turned on for the first time after the SIM is installed, it shows the status **Attached** in the emnify Portal.
@@ -190,10 +196,11 @@ APN,em#
 On other models, the APN configuration is a little different:
 
 ```
-apn[password] em
+apnPASSWORD em
 ```
 
 :::note
+*`PASSWORD`* represents your password.
 The default password is `123456`.
 :::
 
@@ -201,7 +208,7 @@ The default password is `123456`.
 
 Configuring the APN for ReachFar GPS trackers can be done:
 
-1. Via the SMS console through the [**Connected Devices** page of the emnify Portal](https://portal.emnify.com/connected-devices)
+1. Via the SMS console through the [**Connected Devices**](https://portal.emnify.com/connected-devices) page of the emnify Portal
 1. Via the [emnify SMS API](https://cdn.emnify.net/api/doc/swagger.html#/Endpoint) or [Zapier Integration](https://zapier.com/apps/emnify/integrations/sms) (when automating the configuration)
 
 When the GPS tracker is turned on for the first time after the SIM is installed, it shows the status **Attached** in the emnify Portal. 
@@ -213,7 +220,7 @@ unless the APN is set up.
 The following two SMS commands need to send:
 
 ```
-123456,sos1,[yourphonenumber]# // Bind the tracker to a specific phone number (e.g., 49173871878 instead of +49173871878).
+123456,sos1,PHONE_NUMBER# // Bind the tracker to a specific phone number (e.g., 49173871878 instead of +49173871878).
 apn,em,plmn,90143#  // Send this SMS from the phone
 ```
 
@@ -228,7 +235,7 @@ After setting the APN, the GPS tracker needs to be rebooted.
 The following two SMS commands need to send:
 
 ```
-pw,123456,center,[yourphonenumber]# // Bind tracker to specific phone.
+pw,123456,center,PHONE_NUMBER# // Bind tracker to specific phone.
 apn,em# // Send this SMS from the phone
 ```
 
@@ -240,7 +247,7 @@ apn,em# // Send this SMS from the phone
 
 Configuring the APN for Queclink GPS trackers can be done:
 
-1. Via the SMS console through the [**Connected Devices** page of the emnify Portal](https://portal.emnify.com/connected-devices)
+1. Via the SMS console through the [**Connected Devices**](https://portal.emnify.com/connected-devices) page of the emnify Portal
 1. Via the [emnify SMS API](https://cdn.emnify.net/api/doc/swagger.html#/Endpoint) or Zapier Integration (when automating the configuration)
 
 When the GPS tracker is turned on for the first time after the SIM is installed, it shows the status **Attached** in the emnify Portal.
@@ -249,10 +256,11 @@ At this point, the device can receive SMS but not establish a data session unles
 The SMS command to set the APN for Queclink GPS trackers is:
 
 ```
-AT+GTBSI=[password],em,,,,,,,0002$
+AT+GTBSI=PASSWORD,em,,,,,,,0002$
 ```
 
 :::note
+*`PASSWORD`* represents your password. 
 The default password is the device model (for example, `gl200`).
 :::
 
@@ -260,7 +268,7 @@ The default password is the device model (for example, `gl200`).
 
 Configuring the APN for Bitrek GPS trackers can be done:
 
-1. Via the SMS console through the [**Connected Devices** page of the emnify Portal](https://portal.emnify.com/connected-devices)
+1. Via the SMS console through the [**Connected Devices**](https://portal.emnify.com/connected-devices) page of the emnify Portal
 1. Via the [emnify SMS API](https://cdn.emnify.net/api/doc/swagger.html#/Endpoint) or [Zapier Integration](https://zapier.com/apps/emnify/integrations/sms) (when automating the configuration)
 
 When the GPS tracker is turned on for the first time after the SIM is installed, it shows the status **Attached** in the emnify Portal.
@@ -277,14 +285,18 @@ The following SMS commands need to be send:
 
 ```
 setparam 0917 1 // enables roaming in all networks as defined in the following SMS
-setparam 0020 <MNC> // Mobile network code (MNC) that the device will roam on
-setparam 0021 <MNC>
+setparam 0020 MNC
+setparam 0021 MNC
 ....
-setparam 0099 <MNC>
+setparam 0099 MNC
 ```
+
+Replace *`MNC`* with the mobile network code (MNC) that the device will roam on.
 
 All commands can be concatenated into one SMS (max. 160 characters) by using the `;` as a delimiter:
 
 ```
-setparam 0242 em; setparam 0917 1; setparam 0020 <MNC>; .....
+setparam 0242 em; setparam 0917 1; setparam 0020 MNC; .....
 ```
+
+Replace *`MNC`* with the mobile network code (MNC) that the device will roam on.

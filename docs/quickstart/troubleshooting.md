@@ -12,7 +12,7 @@ The device show different icons that indicate the status
 (**Offline**, **Attached**, **Online**, **Blocked**).
 If no icon is visible, assign a SIM to the device.
 
-For most troubleshooting, a look at the **Events** tab of the **Device Details** page is necessary.
+For most troubleshooting, a look at the **Events** tab of the **Device Details** is necessary.
 A usual event flow should look like this:
 
 1. Update Location - the SIM card is (re)authenticating with a different network element.

@@ -125,11 +125,11 @@ By default, this section has the following placeholder:
 
 ```graphql
 {
-  "Authorization": "Bearer <APP_TOKEN>"
+  "Authorization": "Bearer APP_TOKEN"
 }
 ```
 
-3. Replace `<APP_TOKEN>` with your application token value
+3. Replace *`APP_TOKEN`* with your application token value
 
 To test that you're authorized, click the **Execute query** button (▶️) and check your result.
 
@@ -279,7 +279,7 @@ The following examples show code generated from the default query:
 
 ```shell
 curl -X POST \
-   -H "Authorization: Bearer <APP_TOKEN>" \
+   -H "Authorization: Bearer APP_TOKEN" \
    -H "Content-Type: application/json" \
     https://cdn.emnify.net/graphql \
     --data-raw '{"query":"{\n  myUser {\n    organisation {\n      name\n      id\n    }\n  }\n}"}'
@@ -306,7 +306,7 @@ var config = {
   method: 'post',
   url: 'https://cdn.emnify.net/graphql',
   headers: { 
-    'Authorization': 'Bearer <APP_TOKEN>', 
+    'Authorization': 'Bearer APP_TOKEN', 
     'Content-Type': 'application/json'
   },
   data : data
@@ -339,7 +339,7 @@ payload = {"query": """{
   }
 }"""}
 headers = {
-  'Authorization': 'Bearer <APP_TOKEN>',
+  'Authorization': 'Bearer APP_TOKEN',
   'Content-Type': 'application/json'
 }
 

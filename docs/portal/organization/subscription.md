@@ -18,7 +18,7 @@ If your plan is active, you see the following information:
 
 ## Choose a plan
 
-Visit your [**Subscription**](https://portal.emnify.com/organisation-settings/subscription) page to compare the differences in features, services, and pricing between the plans:
+Go to [**Subscription**](https://portal.emnify.com/organisation-settings/subscription) to compare the differences in features, services, and pricing between the plans:
 
 - Standard (Select **Upgrade**)
 - Plus (Select **Contact Us**)

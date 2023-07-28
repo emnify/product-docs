@@ -150,7 +150,7 @@ Pressing the clock icon shows an absolute date value in the `MMMM dd, yyyy hh:mm
 - **Event Type**: [Name of the triggered event](/system-events/event-types) (the `description` value in the [Event Type Object](https://cdn.emnify.net/api/doc/event.html#event-type-object)). 
 This field also indicates the network generation ([4G](https://www.emnify.com/iot-glossary/4g), [5G](https://www.emnify.com/iot-glossary/5g), etc.) for specific events, like [PDP context lifecycles](/system-events/  event-types#data-connection-lifecycle).
 - **Device**: Name of the device impacted by the event (the `name` value from the [Endpoint Object](https://cdn.emnify.net/api/doc/event.html#endpoint-object)). 
-This name often links to the device's entry on the [**Connected Devices** page of the emnify Portal](https://portal.emnify.com/connected-devices).
+This name often links to the device's entry on the [**Connected Devices**](https://portal.emnify.com/connected-devices) page of the emnify Portal.
 - **Operator**: Which [Mobile Network Operator (MNO)](https://www.emnify.com/iot-glossary/mno) the device is currently roaming on (for example, Vodafone, AT&T).
 Only listed for relevant network events.
 - **Country**: The country where the MNO listed in the `Operator` field is providing the cellular service.

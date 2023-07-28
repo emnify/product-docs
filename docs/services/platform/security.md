@@ -43,7 +43,7 @@ This is useful to be able to use your own or private DNS servers to secure and h
 
 Customers can also configure to use their own DNS, no matter if it's a public or a private one.
 The DNS settings can be changed in the [emnify Portal](https://portal.emnify.com/). 
-Go to the [**Device Policies**](https://portal.emnify.com/device-policies) page and click **New service policy**. 
+Go to [**Device Policies**](https://portal.emnify.com/device-policies) and click **New service policy**. 
 Then, select the **More options** tab to find the **Custom DNS** section.
 
 <img

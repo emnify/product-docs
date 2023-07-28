@@ -42,7 +42,7 @@ Once created, you'll apply it to initiate the SDK.
 ### Use the SDK
 
 ```python
-TOKEN = '<PASTE YOUR APPLICATION TOKEN HERE>'
+TOKEN = 'APP_TOKEN'
 
 # Import the package
 from emnify import EMnify
@@ -56,6 +56,8 @@ devices = emnify.devices.get_devices_list()
 # Show all the devices
 print([device for device in devices])
 ```
+
+Replace *`APP_TOKEN`* with your application token.
 
 ## Explore more 
 

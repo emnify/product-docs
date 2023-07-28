@@ -40,17 +40,21 @@ Use the following dependency in your project to grab via [Maven](https://maven.a
     <dependency>
         <groupId>com.emnify.sdk</groupId>
         <artifactId>emnify</artifactId>
-        <version>{version}</version>
+        <version>VERSION_NUMBER</version>
     </dependency>
 ```
+
+Replace *`VERSION_NUMBER`* with the version of Maven you're using.
 
 ### Gradle
 
 Use the following to add the emnify dependency to your project via [Gradle](https://gradle.org/install/):
 
 ```gradle
-    implementation group: "com.emnify.sdk", name: "emnify", version: "{version}"
+    implementation group: "com.emnify.sdk", name: "emnify", version: "VERSION_NUMBER"
 ```
+
+Replace *`VERSION_NUMBER`* with the version of Gradle you're using.
 
 ### Compile the SDK yourself
 

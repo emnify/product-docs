@@ -37,7 +37,7 @@ A part of [GSM](#gsm) infrastructure, validates any SIM card attempting network 
 ## BIC
 _Batch Identification Code_
 
-A unique code for ordered SIM cards used to register the SIM cards on the [**SIM Inventory**](https://portal.emnify.com/sim-inventory) page of the emnify Portal.
+A unique code for ordered SIM cards used to register the SIM cards in the [**SIM Inventory**](https://portal.emnify.com/sim-inventory).
 
 ## Callback URL  
 URL that will be called by a service to send and receive data related to an event that caused this action.
