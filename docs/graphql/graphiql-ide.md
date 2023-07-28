@@ -94,7 +94,7 @@ When you're ready, click **Close**.
 
 :::caution
 After closing, you won't be able to retrieve this token value again.
-Consider storing it in a safe place (for example, a password manager).
+Consider storing it in a safe place (e.g., a password manager).
 :::
 
 <img
