@@ -19,7 +19,7 @@ Using this technology, emnify provides a larger number of networks than traditio
 ### M2M eSIM
 
 Every new SIM you order from emnify is an [M2M eSIM](https://www.gsma.com/esim/remote-sim-provisioning-for-machine-to-machine/) (compliant with SGP.01, SGP.02, and SGP.016).
-The M2M eSIM is also referred to as an [eUICC](/glossary#euicc) (Embedded universal integrated circuit card).
+The M2M eSIM is also referred to as an [embedded universal integrated circuit card (eUICC)](/glossary#euicc).
 Unlike a regular SIM (UICC), an eUICC can be updated over the air.
 Because M2M eSIMs can be updated with new configurations or profiles, this eliminates the need for SIM swaps.
 
@@ -41,7 +41,7 @@ emnify [M2M eSIMs](#m2m-esim) are available in the following form factors:
 | **MFF2** (eSIM)     | 5 x 6 x 0.75 mm, 8 pin |
 
 MFF2 eSIMs can be soldered onto a device and aren't readily removable.
-Visit the [emnify SIM Shop](https://portal.emnify.com/sim-order) where you can choose between these packages:
+Visit the [**SIM Shop**](https://portal.emnify.com/sim-order) where you can choose between these packages:
 
 - Triple-cut commercial
   - Mini (2FF)

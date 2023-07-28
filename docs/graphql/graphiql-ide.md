@@ -8,7 +8,7 @@ import TabItem from '@theme/TabItem';
 
 # Use the GraphiQL IDE
 
-So you can experiment with the emnify GraphQL API, emnify has an [in-browser GraphiQL IDE](https://graphql-playground.emnify.net/). 
+There's an in-browser [emnify GraphiQL IDE](https://graphql-playground.emnify.net/) where you can experiment with the GraphQL API.
 
 Similar to OpenAPI in the REST world, [GraphiQL](https://github.com/graphql/graphiql) (pronounced "graphical") helps you accurately structure and validate queries, then run them directly against the server endpoint.
 It's equipped with tools to help you try out the GraphQL API.
@@ -64,7 +64,7 @@ To make calls from this IDE, you need to provide an [application token](#retriev
 You can generate an application token in the emnify Portal:
 
 1. [Log in to your emnify account](https://portal.emnify.com/sign).
-2. Navigate to the [**Application Tokens**](https://portal.emnify.com/integrations#application-tokens) section of the [**Integrations**](https://portal.emnify.com/integrations) page.
+2. Navigate to the [**Application Tokens**](https://portal.emnify.com/integrations#application-tokens) section of the **Integrations** page.
 
 <img
   src={require('./assets/portal-integrations-application-tokens.png').default}

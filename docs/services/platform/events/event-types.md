@@ -8,7 +8,7 @@ slug: /system-events/event-types
 The following is a list of available event types, including their corresponding IDs and descriptions.
 
 :::note API Reference
-[Event Type Object - emnify REST API](https://cdn.emnify.net/api/doc/event.html#event-type-object)
+[Event type object](https://cdn.emnify.net/api/doc/event.html#event-type-object)
 :::
 
 ## Generic events
@@ -1745,7 +1745,7 @@ The organization is blocked after exceeding the monthly cost limit (defined by e
 | 60  | [Data quota expired](#data-quota-expired)           |
 
 :::note API Reference
-Quota information is in the [detail object](https://cdn.emnify.net/api/doc/event.html#detail-object) of the event.
+Quota information is in the event's [detail object](https://cdn.emnify.net/api/doc/event.html#detail-object).
 :::
 
 ### Quota threshold reached

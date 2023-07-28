@@ -26,7 +26,7 @@ Each event is represented by an object based on the [generic Event Object](https
 Depending on the event type, some generic properties may not apply, and some events may have additional custom fields to provide information about what happened. 
 
 :::info
-You can find detailed information on the Event Object and its associated properties in the [Event API Reference](https://cdn.emnify.net/api/doc/event.html) in the *emnify System Documentation*.  
+You can find detailed information on the Event Object and its associated properties in the [Event API reference](https://cdn.emnify.net/api/doc/event.html) in the *emnify System Documentation*.  
 :::
 
 ### Event severity
@@ -38,7 +38,7 @@ Events are distinguished by three severity levels:
 * **Critical**: Serious issue that likely requires additional follow-up (for example, charging for an invoice failed).
 
 :::note API Reference 
-[Event Severity Object - emnify REST API](https://cdn.emnify.net/api/doc/event.html#event-severity-object)
+[Event severity object](https://cdn.emnify.net/api/doc/event.html#event-severity-object)
 :::
 
 ### Event source
@@ -57,7 +57,7 @@ That's because the Portal is an interface that uses the API under the hood.
 ::: 
 
 :::note API Reference
-[Event Source Object - emnify REST API](https://cdn.emnify.net/api/doc/event.html#event-source-object)
+[Event source object](https://cdn.emnify.net/api/doc/event.html#event-source-object)
 :::
 
 ### Event type

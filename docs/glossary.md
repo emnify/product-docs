@@ -20,7 +20,7 @@ _Application-to-Peer SMS_
 The SMS sent and received between an application and a device (or vice versa).
 
 :::info
-Learn more about the [SMS types supported by the emnify platform](/services/sms) and [A2P routing via the emnify REST API](https://cdn.emnify.net/api/doc/sms-callback.html).
+Learn more about the [SMS types supported by the emnify platform](/services/sms) and how to [Receive MO SMS via API callback](https://cdn.emnify.net/api/doc/sms-callback.html).
 :::
 
 ## Assigned SIM  
@@ -37,7 +37,7 @@ A part of [GSM](#gsm) infrastructure, validates any SIM card attempting network 
 ## BIC
 _Batch Identification Code_
 
-A unique code for ordered SIM cards used to register the SIM cards on the [**SIM Inventory** page of the emnify Portal](https://portal.emnify.com/sim-inventory).
+A unique code for ordered SIM cards used to register the SIM cards on the [**SIM Inventory**](https://portal.emnify.com/sim-inventory) page of the emnify Portal.
 
 ## Callback URL  
 URL that will be called by a service to send and receive data related to an event that caused this action.
@@ -133,7 +133,7 @@ Learn more about [configuring the device status in the emnify Portal](/portal/co
 :::
 
 :::note API Reference
-[Endpoint Status Object - emnify REST API](https://cdn.emnify.net/api/doc/endpoint.html#endpoint-status-object)
+[Endpoint status object](https://cdn.emnify.net/api/doc/endpoint.html#endpoint-status-object)
 :::
 
 ## eSIM
@@ -148,7 +148,7 @@ The [emnify eSIM](/services/global-iot-sim) has capabilities not available with 
 _Embedded Universal Integrated Circuit Card_ 
 
 The embedded universal integrated circuit card (eUICC) is a component of a [SIM](#sim) card.
-It allows consumers and IoT manufacturers to provision the SIM with a new [operator profile](https://www.emnify.com/iot-glossary/mno) [over-the-air](#ota).
+It allows consumers and IoT manufacturers to provision the SIM with a new [mobile network operator (MNO)](https://www.emnify.com/iot-glossary/mno) profile [over-the-air](#ota).
 
 :::tip Deep dive
 Learn more about the eUICC in the blog post: [What is an eUICC and why does it matter?](https://www.emnify.com/iot-glossary/what-is-an-euicc)
@@ -210,7 +210,7 @@ For example, the ICCID value can change when a different [SIM profile](#sim-prof
 The emnify REST API returns two ICCID values: `iccid` and `iccid_with_luhn`.
 The `iccid_with_luhn` value _includes_ the final [Luhn checksum digit](#luhn-checksum-digit), while the `iccid` value doesn't. 
 
-API references: [SIM Object](https://cdn.emnify.net/api/doc/sim.html#sim-object) and [Endpoint Object](https://cdn.emnify.net/api/doc/endpoint.html#sim-object)
+API references: [SIM object](https://cdn.emnify.net/api/doc/sim.html#sim-object) and [Endpoint object](https://cdn.emnify.net/api/doc/endpoint.html#sim-object)
 :::
 
 ## IMEI
@@ -311,7 +311,7 @@ The part of [GSM](#gsm) architecture that controls the network switching subsyst
 The [company](#company-account) (or subsidiary, branch, division, department, etc.) associated with a [workspace](#workspace).
 
 :::info
-Information on your organization, employees, subscriptions, and more are available in the [emnify Portal under **Organization Settings**](https://portal.emnify.com/organisation-settings/).
+Information on your organization, employees, subscriptions, and more are available in the emnify Portal under [**Organization Settings**](https://portal.emnify.com/organisation-settings/).
 :::
 
 ## OTA
@@ -394,7 +394,7 @@ All SIMs assigned to your organization.
 Reflects the current state of the [SIM](#sim) in the [SIM lifecycle](/services/sim-lifecycle-management).
 
 :::note API reference
-[SIM Status Object - emnify REST API](https://cdn.emnify.net/api/doc/sim.html#status-object)
+[SIM status object](https://cdn.emnify.net/api/doc/sim.html#status-object)
 :::
 
 ## SMPP
@@ -420,7 +420,7 @@ Learn more about the [SMS types supported by the emnify platform](/services/sms)
 :::tip
 Using the emnify REST API, you can dispatch MO SMS from devices as HTTP `POST` requests toward a user-configurable URL.
 
-Read more: [Receive MO SMS via API Callback](https://cdn.emnify.net/api/doc/sms-callback.html)
+For more information, see [Receive MO SMS via API callback](https://cdn.emnify.net/api/doc/sms-callback.html)
 :::
 
 ## SMS MT  
@@ -481,7 +481,7 @@ A service that protects your internet connection and privacy online.
 :::tip
 IPsec and [OpenVPN](#openvpn) are both protocols for securing data transmission through a VPN.
 
-Learn more: [IPsec vs OpenVPN: What's the Difference?](https://www.emnify.com/iot-glossary/ipsec-vs-openvpn)
+For more information, see [IPsec vs OpenVPN: What's the difference?](https://www.emnify.com/iot-glossary/ipsec-vs-openvpn)
 :::
 
 ## Workspace

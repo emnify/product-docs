@@ -119,17 +119,17 @@ There are several ways to view or trigger events within the [emnify Portal](http
 
 Here's where you can find event information in the Portal: 
 
-- **Dashboard**: Overview of all event activity within your organization. 
+- [**Dashboard**](https://portal.emnify.com/): Overview of all event activity within your organization. 
 <img
   src={require('./assets/portal-dashboard-events.png').default}
   alt=""
 />
-- [**Connected Devices**](https://portal.emnify.com/connected-devices) → **Details** → **Events**: List of triggered events for a particular device (also referred to as an "endpoint").
+- [**Connected Devices**](https://portal.emnify.com/connected-devices)&nbsp;<span aria-label="and then">></span> **Details**&nbsp;<span aria-label="and then">></span> **Events**: List of triggered events for a particular device (also referred to as an "endpoint").
 <img
   src={require('./assets/portal-connected-devices-details-events.png').default}
   alt=""
 />
-- [**SIM Inventory**](https://portal.emnify.com/sim-inventory) → **Details** → **Events**: List of triggered events for a particular SIM card.
+- [**SIM Inventory**](https://portal.emnify.com/sim-inventory)&nbsp;<span aria-label="and then">></span> **Details**&nbsp;<span aria-label="and then">></span> **Events**: List of triggered events for a particular SIM card.
 <img
   src={require('./assets/portal-sim-inventory-details-events.png').default}
   alt=""

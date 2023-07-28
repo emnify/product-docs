@@ -237,7 +237,7 @@ You can also create an event stream with [AWS Kinesis integration](/multicloud-d
 ```
 
 :::note API Reference
-[Create Data Stream - emnify REST API](https://cdn.emnify.net/api/doc/swagger.html#/Integrations/CreateDataStreamer).
+[Create data stream](https://cdn.emnify.net/api/doc/swagger.html#/Integrations/CreateDataStreamer).
 :::
 
 ### List data streams
@@ -253,7 +253,7 @@ curl -X GET "https://cdn.emnify.net/api/v2/data_stream" \
 ```
 
 :::note API Reference
-[List data stream configurations of your organization - emnify REST API](https://cdn.emnify.net/api/doc/swagger.html#/Integrations/ListDataStreamerV2s)
+[List data stream configurations of your organization](https://cdn.emnify.net/api/doc/swagger.html#/Integrations/ListDataStreamerV2s)
 :::
 
 ### Retrieve details
@@ -271,7 +271,7 @@ curl -X GET "https://cdn.emnify.net/api/v2/data_stream/123" \
 ```
 
 :::note API Reference
-[Get Details on Existing Data Stream - emnify REST API](https://cdn.emnify.net/api/doc/swagger.html#/Integrations/GetDataStreamerByIdV2)
+[Get details on existing data stream](https://cdn.emnify.net/api/doc/swagger.html#/Integrations/GetDataStreamerByIdV2)
 :::
 
 ### Update data streams
@@ -303,7 +303,7 @@ The following example shows how to pause a stream and erase any filters:
 ```
 
 :::note API Reference
-[Modify Existing Data Stream - emnify REST API](https://cdn.emnify.net/api/doc/swagger.html#/Integrations/PatchV2DataStream)
+[Modify existing data stream](https://cdn.emnify.net/api/doc/swagger.html#/Integrations/PatchV2DataStream)
 :::
 
 ### Delete data streams
@@ -321,5 +321,5 @@ curl -X DELETE "https://cdn.emnify.net/api/v2/data_stream/123" \
 ```
 
 :::note API Reference
-[Delete Existing Data Stream - emnify REST API](https://cdn.emnify.net/api/doc/swagger.html#/Integrations/DeleteDataStreamerV2)
+[Delete existing data stream](https://cdn.emnify.net/api/doc/swagger.html#/Integrations/DeleteDataStreamerV2)
 :::

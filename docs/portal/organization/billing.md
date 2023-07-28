@@ -39,9 +39,9 @@ The following is an example of the shown table and potential values:
 The preceding table also provides a **Subtotal** of all costs incurred, tax if applicable, and a **Total** cost in your currency for your billing period.
 
 :::note
-**Data consumption in** "*your Tariff*" is what you selected from the **Tariff** dropdown under [Coverage Policies](https://portal.emnify.com/device-policies).
+**Data consumption in** "*your Tariff*" is what you selected from the **Tariff** dropdown under [**Coverage Policies**](https://portal.emnify.com/device-policies).
 
-**Data costs for** "*your "Main zone*" is what you selected in the list of regions/zones under [Coverage Policies](https://portal.emnify.com/device-policies).
+**Data costs for** "*your "Main zone*" is what you selected in the list of regions/zones under **Coverage Policies**.
 :::
 
 ## Billing history

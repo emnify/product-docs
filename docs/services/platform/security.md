@@ -42,7 +42,9 @@ For example, Quectel uses the `AT+QIDNSCFG` command, SIMCom `AT+CDNSCFG` com
 This is useful to be able to use your own or private DNS servers to secure and have better control over the solution.
 
 Customers can also configure to use their own DNS, no matter if it's a public or a private one.
-The DNS settings can be changed in the [emnify Portal](https://portal.emnify.com/) → [**Device Policies**](https://portal.emnify.com/device-policies) → **New service policy** → **More options**
+The DNS settings can be changed in the [emnify Portal](https://portal.emnify.com/). 
+Go to the [**Device Policies**](https://portal.emnify.com/device-policies) page and click **New service policy**. 
+Then, select the **More options** tab to find the **Custom DNS** section.
 
 <img
   src={require('./assets/portal-configure-custom-dns.png').default}

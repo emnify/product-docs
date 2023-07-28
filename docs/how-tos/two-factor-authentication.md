@@ -7,7 +7,7 @@ slug: /how-tos/two-factor-authentication
 
 Setting up two-factor authentication (2FA) makes unauthorized access to your account more improbable because your password is secured via your personal device, which generates a temporary authentication key.
 
-You can [enable 2FA via the emnify Portal](https://portal.emnify.com/user-settings#two-factor-authentication).
+You can enable 2FA via the emnify Portal.
 
 ## Configuration steps
 

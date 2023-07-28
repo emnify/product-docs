@@ -13,7 +13,7 @@ Here's how you can order SIM cards any time on the emnify Portal.
 </details>
 
 1. [Log in to your emnify account](https://portal.emnify.com/sign).
-2. Navigate to the [**SIM Inventory**](https://portal.emnify.com/sim-inventory) page and click **Order SIMs**.
+2. Navigate to the [**SIM Inventory**](https://portal.emnify.com/sim-inventory) and click **Order SIMs**.
 
 <img
   src={require('./assets/portal-sim-inventory-order-sims.png').default}

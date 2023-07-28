@@ -86,4 +86,4 @@ If you're new to IoT connectivity and emnify, start by learning some [common ter
 
 Once you're comfortable with these [concepts](/sdks/concepts), you can explore some use cases that show what the SDK is capable of based on a few [Examples](/sdks/java/examples). 
 
-Also, see the [*emnify System Documentation*](https://cdn.emnify.net/api/doc/index.html) and our [OpenAPI Specification](https://cdn.emnify.net/api/doc/swagger.html).
+Also, see the [emnify System Documentation](https://cdn.emnify.net/api/doc/index.html) and our [OpenAPI specification](https://cdn.emnify.net/api/doc/swagger.html).

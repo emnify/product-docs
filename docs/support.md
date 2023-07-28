@@ -19,7 +19,7 @@ They're designed to reduce operational costs by detecting issues before they dis
 
 | Feature | Standard | Business | Enterprise |
 | ------- | -------- | -------- | ---------- |
-| **Operating hours** | Mon-Fri 09:00-18:00 [CET](https://www.timeanddate.com/time/zones/cet) | 24x7x365 | 24x7x365 | 
+| **Operating hours** | Mon-Fri 09:00-18:00 CET | 24x7x365 | 24x7x365 | 
 | **Method of contact** | Tickets must be opened via web form.<br />Replies via email are possible. | Tickets must be opened via web form.<br />Replies via email are possible. | Web form, email, and phone |
 | **Help Center & Knowledge Base** | Yes | Yes | Yes |
 | **Pre-scheduled event support** | Not included | Yes | Yes |

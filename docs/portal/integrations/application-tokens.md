@@ -5,7 +5,7 @@ slug: /portal/application-tokens
 
 # Application tokens
 
-To add or view existing [application tokens](/glossary#application-tokens), navigate to [**Integrations**](https://portal.emnify.com/integrations) and scroll down to [**Application Tokens**](https://portal.emnify.com/integrations#application-tokens).
+To add or view existing [application tokens](/glossary#application-tokens), navigate to [**Integrations**](https://portal.emnify.com/integrations) and then [**Application Tokens**](https://portal.emnify.com/integrations#application-tokens).
 
 ## Add a new token
 
@@ -24,7 +24,7 @@ If your token is compromised, the **IP restriction** helps limit the attacker's 
 <details className="custom-details-troubleshooting">
   <summary>Show how to add a new token in the Portal</summary>
 
-  Collapse the following sections or scroll down to **Application Tokens**.  
+  Collapse the following sections or go to **Application Tokens**.  
   <img
     src={require('./assets/integrations-application-tokens.png').default}
     alt=""

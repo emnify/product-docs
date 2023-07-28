@@ -13,7 +13,7 @@ For example, you can send a configuration SMS to set the proper APN when the dev
 Other use cases are scheduled or application-triggered SIM activations/deactivations so that the SIM contract starts and ends with the device subscription of your customers.
 
 :::tip
-To learn more about using Zapier and emnify for automating your workflows, see [How to Automate Workflows With Zapier and emnify in 5 Minutes](https://www.emnify.com/developer-blog/emnify-zapier-nocode).
+To learn more, see [How to automate workflows with Zapier and emnify in 5 minutes](https://www.emnify.com/developer-blog/emnify-zapier-nocode).
 :::
 
 The following events are available as triggers:
@@ -38,5 +38,5 @@ Using the Zapier webhook, you can also use triggers from:
 - [Mobile originated SMS (SMS MO)](/glossary#sms-mo)
 
 :::info
-Browse the available workflows in the emnify Portal by navigating to the [**No-Code Workflows**](https://portal.emnify.com/integrations#no-code-workflows) section of the [**Integrations**](https://portal.emnify.com/integrations) page.
+Browse the available workflows in the emnify Portal by navigating to the [**No-Code Workflows**](https://portal.emnify.com/integrations#no-code-workflows) section of the **Integrations** page.
 :::

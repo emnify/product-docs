@@ -98,7 +98,6 @@ Some main LTE-bands are
 
 :::tip
 Validate the frequency bands utilized by the operators in your deployment countries before deciding on a module.
-You can look up the utilized frequency bands [here](https://www.frequencycheck.com/interfaces/lte)
 :::
 
 ### LPWAN: LTE-M/NB-IoT
@@ -129,7 +128,7 @@ As of today, roaming for NB-IoT is very limited between operators because of new
 For LTE-M, roaming usually works over regular LTE roaming.
 Nevertheless, some operators have limited the access to their LTE-M networks and its available features (PSM, eDRX).
 
-Check the emnify [LTE-M coverage](https://www.emnify.com/lte-m-coverage) and [NB-IoT coverage](https://www.emnify.com/nb-iot-coverage), availability of PSM/eDRX and proposed frequency bands [on the emnify website](https://www.emnify.com/lte-m-coverage?hsLang=en).
+Check the emnify [LTE-M coverage](https://www.emnify.com/lte-m-coverage) and [NB-IoT coverage](https://www.emnify.com/nb-iot-coverage), availability of PSM/eDRX and proposed frequency bands on the emnify website.
 
 Power-Save-Mode (PSM)
 

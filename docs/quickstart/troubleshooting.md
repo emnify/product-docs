@@ -12,7 +12,7 @@ The device show different icons that indicate the status
 (**Offline**, **Attached**, **Online**, **Blocked**).
 If no icon is visible, assign a SIM to the device.
 
-For most of the troubleshooting, a look at **Details** → **Events** is necessary.
+For most troubleshooting, a look at the **Events** tab of the **Device Details** page is necessary.
 A usual event flow should look like this:
 
 1. Update Location - the SIM card is (re)authenticating with a different network element.
@@ -27,8 +27,8 @@ There can be many update locations before or in between the data session.
 
 ## The device is offline
 
-- Click on **Details** → ensure that the device is enabled
-- Click on **Details** → **Events**. 
+- Click **Details** and ensure that the device is enabled
+- Click **Details**, then navigate to the **Events** tab. 
 Validate if there is any location update event created and rejected. 
 The reasoning should indicate the resolution to the problem. 
 
@@ -42,7 +42,7 @@ If there is no location update event:
 You can find guides for various devices in [Getting the first device online](#getting-the-first-device-online).
 - Ensure that you activate data access and the radio types (that is, 2G, 3G, 4G) if you change policy settings.
 - Make sure mobile data is enabled and that international roaming is allowed.
-- Click **Details** → **Events**.
+- Click **Details**, then navigate to the **Events** tab.
 Validate if there is any PDP create event and rejected.
 The reason and resolution is given in the event description.
 
@@ -52,9 +52,9 @@ If the device first attaches to a network and then powers off - there is no info
 ## The device shows online but doesn't transmit data
 
 - Ensure mobile data is enabled, as well as international roaming is allowed.
-- Validate under **Details** → **Events** if any `Warn` or `Error` is detected.
+- Click **Details**, then navigate to the **Events** tab to validate if any `Warn` or `Error` is detected.
 - For NB-IoT and LTE-M this behavior can happen when the device automatically connects to a network - rather specify the network that shall be used with using the `AT+COPS`.
-Also, verify that the network is on emnify’s [NB-IoTcoverage](https://www.emnify.com/nb-iot-coverage) or [LTE-M network coverage](https://www.emnify.com/lte-m-coverage) list.
+Also, verify that the network is on emnify’s [NB-IoT coverage](https://www.emnify.com/nb-iot-coverage) or [LTE-M network coverage](https://www.emnify.com/lte-m-coverage) list.
 - Ensure that your data destination and DNS server (default emnify uses Google's `8.8.8.8` DNS server if your device doesn't specify a DNS server) isn't blocked for the device.
 
 ## Other general troubleshooting tips

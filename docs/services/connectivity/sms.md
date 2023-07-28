@@ -31,7 +31,7 @@ You can send and receive SMS of your devices through three different interfaces:
 
 ## emnify Portal
 
-In the [emnify Portal](https://portal.emnify.com/) → [**Connected Devices**](https://portal.emnify.com/connected-devices) you can access the SMS console and directly send SMS to the devices. 
+On the [**Connected Devices**](https://portal.emnify.com/connected-devices) page of the emnify Portal, you can access the SMS console and directly send SMS to the devices. 
 The sender can be configured as well as the console shows if the SMS is delivered or not.
 You'll see all SMS that the device receives sends out.
 
@@ -81,8 +81,10 @@ However, you receive a brief notification regarding the status of the SMS sent t
 
 For sending SMS through the REST API, check out the [Sending and receiving SMS](#_sending_and_receiving_sms) section.
 
-For receiving SMS and delivery notifications for SMS in your application, you can use the SMS webhook which can be configured under [**Device Policies**](https://portal.emnify.com/device-policies) → **Service Policies** → **SMS Interface**.
-
+For receiving SMS and delivery notifications for SMS in your application, you can use the SMS webhook.
+To configure the webhook, go to the [**Device Policies**](https://portal.emnify.com/device-policies) page. 
+Under **Service Policies**, choose the policy you want to update and click **Details**. 
+Then, find the **SMS Interface** section.
 
 <img
   src={require('./assets/portal-device-policies-sms-interface-webhook.png').default}
@@ -90,7 +92,7 @@ For receiving SMS and delivery notifications for SMS in your application, you ca
   style={{ width: 800 }}
 />
 
-Select **Webhook**, then select  **Configure Webhook**:
+Select **Webhook**, then select **Configure Webhook**:
 
 <img
   src={require('./assets/portal-device-policies-configure-webhook.png').default}
@@ -132,7 +134,7 @@ The SMS is then delivered over the webhook.
 Instead of implementing the APIs in your application, emnify and Zapier provide a no-code alternative to automate SMS workflows.
 Zapier has a concept of triggers and actions—when a trigger happens multiple actions can be based on it—taking content from previous steps.
 Sending SMS to your devices is available as an action in Zapier.
-In the [**No-Code-Workflows**](https://portal.emnify.com/integrations#no-code-workflows) list on the [**Integrations** page of the emnify Portal](https://portal.emnify.com/integrations), select the following:
+In the [**No-Code-Workflows**](https://portal.emnify.com/integrations#no-code-workflows) list on the emnify Portal **Integrations** page, select the following:
 
 ![Portal screenshot from the Integrations page. The featured integration reads, "Enable devices and send SMS via emnify from newly caught webhooks. emnify + Webhooks by Zapier". Next to the text, there's a "Use this Zap" button.](assets/portal-integrations-sms-webhooks-zapier.png)
 

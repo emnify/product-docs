@@ -90,7 +90,7 @@ The token can be revoked at any time.
 You can alternatively generate the `application_token` in the emnify Portal:
 
 1. [Log in to the emnify Portal](https://portal.emnify.com/sign)
-1. Navigate to [**Integrations**](https://portal.emnify.com/integrations) → [**Application Tokens**](https://portal.emnify.com/integrations#application-tokens) → **Add Token**.
+1. On the **Integrations** page, navigate to the [**Application Tokens**](https://portal.emnify.com/integrations#application-tokens) section, and select **Add Token**.
 
 <!-- TODO: Recreate generate_app_token.png (generate application token) -->
 

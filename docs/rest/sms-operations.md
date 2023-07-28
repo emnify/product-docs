@@ -15,7 +15,7 @@ You can perform the following SMS related operations using the `endpoint` API.
 **Example**: send SMS to an endpoint
 
 ```
-POST [https://cdn.emnify.net/api/v1/endpoint/{endpoint_id}/sms](https://cdn.emnify.net/api/v1/endpoint/%7Bendpoint_id%7D/sms?__hstc=115846617.4e595f58851491bb8576507ce2561f79.1670194662635.1670530991861.1670533602068.8&__hssc=115846617.3.1670533602068&__hsfp=3017379904)
+POST https://cdn.emnify.net/api/v1/endpoint/{endpoint_id}/sms
 ```
 
 **Request body**:
@@ -37,5 +37,5 @@ The source address is the sender number appearing on the receiving device.
 The payload is the actual text to be sent as SMS.
 
 :::info
-See [How to send and receive SMS via the API](https://www.emnify.com/developer-blog/how-to-send-and-receive-sms-via-the-api) for more information.
+For more information, see [How to send and receive SMS via the API](https://www.emnify.com/developer-blog/how-to-send-and-receive-sms-via-the-api).
 :::

@@ -46,7 +46,8 @@ With the Evaluation Plan, you have 60 days to use the issued prepaid credit for 
 Once this expires, you'll need to [choose a new plan](https://portal.emnify.com/organisation-settings/subscription#plans).
 
 :::tip
-Information on your current balance and other details about the Evaluation plan is available in the emnify Portal: **Organization Settings** → [**Subscription**](https://portal.emnify.com/organisation-settings/subscription).
+Information on your current balance and other details about the Evaluation plan is available in the emnify Portal.  
+In the **Organization Settings**, select [**Subscription**](https://portal.emnify.com/organisation-settings/subscription).
 
 <img
   src={require('./assets/portal-nav-organization-settings-subscription.png').default}
@@ -99,7 +100,7 @@ Currently, the three triple-cut SIM cards can be delivered to most destinations 
 
 To get your free Evaluation SIM package, [log in to your emnify account](https://portal.emnify.com/sign) and follow these steps:
 
-1. On the [**Dashboard**](https://portal.emnify.com/) page, click **Get SIMs** on the **Get your free SIMs** panel.
+1. On the [**Dashboard**](https://portal.emnify.com/), click **Get SIMs** on the **Get your free SIMs** panel.
 
 <img
   src={require('./assets/portal-dashboard-get-started-get-sims-button.png').default}

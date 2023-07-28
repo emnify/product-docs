@@ -38,7 +38,7 @@ Google
 Google Cloud Platform
 Gradle
 GraphiQL IDE
-Gurtam
+Gurtams
 IMEI[s]
 IMEISV[s]
 Integromat
