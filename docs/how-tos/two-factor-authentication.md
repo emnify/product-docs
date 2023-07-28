@@ -74,14 +74,14 @@ To bypass this process, select **Trust this device** before entering the 2FA cod
   style={{ width:550 }}
 />
 
-In **User Settings**, [**Trusted Devices**](https://portal.emnify.com/user-settings#trusted-devices) should be visible in the **Two-Factor Authentication** section.
+Then, [**Trusted Devices**](https://portal.emnify.com/user-settings#trusted-devices) should be visible in the **Two-Factor Authentication** section of **User Settings**.
 
 <img
   src={require('./assets/portal-user-settings-trusted-devices.png').default}
   alt=""
 />
 
-You can remove a device from your **Trusted Devices** by clicking the associated **Remove** button.
+Click **Remove** to remove a device from **Trusted Devices**.
 
 <img
   src={require('./assets/portal-user-settings-trusted-devices-remove-button.png').default}

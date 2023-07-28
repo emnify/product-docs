@@ -37,7 +37,7 @@ You should see your organization's name at the top of the primary sidebar.
   style={{ height:450 }}
 />
 
-4. Once the **Request for a new workspace** modal appears, fill in your **Contact email** and provide more details or any requirements for the new workspace.
+4. Once the **Request for a new workspace** modal appears, enter your **Contact email** and provide more details or any requirements for the new workspace.
 5. Click **Send Request**.
 
 :::caution

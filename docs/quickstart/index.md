@@ -107,7 +107,7 @@ To get your free Evaluation SIM package, [log in to your emnify account](https:/
   alt=""
 />
 
-2. Fill in your **Invoice data**, **Delivery details**, and **Choose shipping option**.
+2. Enter your **Invoice data**, **Delivery details**, and **Choose shipping option**.
 
 <img
   src={require('./assets/portal-order-evaluation-pack-invoice-shipping-details.png').default}

@@ -5,7 +5,7 @@ slug: /portal/user-settings
 
 # User settings
 
-The [**User Settings**](https://portal.emnify.com/user-settings) is where you can manage your profile and preferences.
+[**User Settings**](https://portal.emnify.com/user-settings) is where you can manage your profile and preferences.
 It's readily accessible from any page in the emnify Portal by selecting your initials to the right of the organization settings icon.
 
 ## User profile

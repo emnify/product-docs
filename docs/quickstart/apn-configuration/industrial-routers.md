@@ -19,7 +19,8 @@ Nevertheless, in case the APN isn't correctly detected, it can be configured wit
 
 1. Connect your PC through the routers Wi-Fi using the credentials   provided on the device.
 1. Open the Teltonika WebUI <http://192.168.1.1> and go to the Mobile configuration.
-1. Type in `em` in APN—there is no PIN configured on the SIM and no APN username or password required.
+1. Type in `em` in APN.
+There is no PIN configured on the SIM and no APN username or password required.
 
 
 **Teltonika Networks Router APN configuration via SMS console / API or Zapier **

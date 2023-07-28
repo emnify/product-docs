@@ -141,7 +141,7 @@ If you need SSO enabled for your account, contact support by selecting **Upgrade
 
 Otherwise, click **Add** under the Microsoft SSO provider.
 
-Fill in the **Client ID** and **Client Secret** with the values you copied earlier, then click **Create and Activate**.
+Enter the **Client ID** and **Client Secret** with the values you copied earlier, then click **Create and Activate**.
 
 The final step is to verify the provider. 
 Click **Verify Integration** and follow the prompts.

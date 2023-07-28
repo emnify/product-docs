@@ -490,7 +490,7 @@ Workspaces can be managed individually or, if [linked](#linked-workspaces), cent
 
 :::note
 Every [company account](#company-account) (on any plan) is a workspace by default.
-Accounts on the [**Pro** plan](https://portal.emnify.com/organisation-settings/subscription#plans) can have up to five workspaces.
+Accounts on the **Pro** plan can have up to five workspaces.
 :::
 
 :::tip Step-by-step guide

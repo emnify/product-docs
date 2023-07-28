@@ -34,7 +34,7 @@ You should see your organization's name at the top of the primary sidebar.
   style={{ height:450 }}
 />
 
-4. Once the **Request for linking a workspace** modal appears, fill in your **Contact email** and provide any details about the workspace you want to link.
+4. Once the **Request for linking a workspace** modal appears, enter your **Contact email** and provide any details about the workspace you want to link.
 5. Click **Send Request**.
 
 If you see the **Request Sent** modal, your request has been submitted successfully. 🎉

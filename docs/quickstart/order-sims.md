@@ -55,7 +55,7 @@ The benefit of batches is that they can be registered all at once, whereas singl
 Learn more in the [Registering SIMs](/quickstart/register-sims) guide.
 :::
 
-6. Fill in your **Invoice and shipping details**, and specify your **Shipping option**.
+6. Enter your **Invoice and shipping details**, and specify your **Shipping option**.
 7. Then, choose a way to pay in **Payment details**:
 
 - **Online payment** (that is, card or PayPal) is possible for any order size.

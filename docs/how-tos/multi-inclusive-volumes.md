@@ -22,7 +22,7 @@ Log in to your [emnify account](https://portal.emnify.com/sign) and navigate to 
   alt=""
 />
 
-Then, go to your **Coverage Policies**.
+Then, go to **Coverage Policies**.
 
 <img
   src={require('./assets/portal-device-policies-coverage-policies.png').default}
@@ -137,7 +137,7 @@ To change a coverage policy's tariff in the Portal, follow these steps:
   alt=""
 />
 
-2. Go to your **Coverage Policies**.
+2. Go to **Coverage Policies**.
 3. Find the coverage policy you want to update and click **Details**.
 
 <img
