@@ -1,0 +1,85 @@
+alex
+APN[s]
+AuC
+AWS
+Bitrek
+CDR[s]
+[Cc]hipset
+Cinterion
+Coban
+Code of Conduct
+Concox
+CSM[s]
+Data Streamer
+Datadog
+DDoS
+Docusaurus
+[Dd]ownlink
+[Dd]ual-band
+eDRX
+Elinz
+emnify
+emnify Documentation
+emnify GraphQL API
+emnify IoT SuperNetwork
+emnify Portal
+emnify REST API
+emnify SDKs
+emnify SIMs
+eSIM
+ESLint
+eUICC
+Fibocom
+flespi
+Gartner
+Gemalto
+GitHub Pages
+Google
+Google Cloud Platform
+Gradle
+GraphiQL IDE
+Gurtams
+IMEI[s]
+IMEISV[s]
+Integromat
+IoT
+IPsec
+Java
+Jira
+Kinesis
+LTE
+Luhn
+Meitrack
+Microsoft
+Microsoft Active Directory
+MNO[s]
+[Mm]ulticloud
+MVNO[s]
+Nano
+OAuth
+OpenVPN
+Quad-band
+Queclink
+Quectel
+[Rr]atezone
+ReachFar
+RESTful API
+Ruptela
+Sequans
+SIMCom
+Sixfab
+SLA[s]
+SuperNetwork
+Telecom
+Telia
+Telit
+Teltonika
+Twilio
+u-blox
+[Uu]plink
+Vale
+Vodafone
+WeTrack
+Wialon
+Zapier
+Zendesk

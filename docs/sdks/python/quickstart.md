@@ -8,7 +8,7 @@ slug: /sdks/python/quickstart
 
 ## Installation
 
-The emnify Python SDK is open-source and the [source code is available on GitHub](https://github.com/emnify/emnify-sdk-python).
+The emnify Python SDK is open source and the [source code is available on GitHub](https://github.com/emnify/emnify-sdk-python).
 
 ### Prerequisites
 
@@ -35,14 +35,14 @@ pip install emnify-sdk
 ### Create an application token
 
 To use the Python SDK, you need to create an application token. 
-You can do this via the [**Integrations** page of the emnify Portal](https://portal.emnify.com/integrations#application-tokens) or the [emnify REST API](/rest/authentication#authenticate-with-an-application-token).
+You can do this on the **Integrations** page of the emnify Portal under [**Application Tokens**](https://portal.emnify.com/integrations#application-tokens) or the [emnify REST API](/rest/authentication#authenticate-with-an-application-token).
 
 Once created, you'll apply it to initiate the SDK.
 
 ### Use the SDK
 
 ```python
-TOKEN = '<PASTE YOUR APPLICATION TOKEN HERE>'
+TOKEN = 'APP_TOKEN'
 
 # Import the package
 from emnify import EMnify
@@ -57,6 +57,8 @@ devices = emnify.devices.get_devices_list()
 print([device for device in devices])
 ```
 
+Replace *`APP_TOKEN`* with your application token.
+
 ## Explore more 
 
 Now that you have the SDK configured, it's time to learn what you can do with it.
@@ -65,4 +67,4 @@ If you're new to IoT connectivity and emnify, start by learning the [common term
 
 Once you're comfortable with these [concepts](/sdks/concepts), you can explore some use cases that show what the SDK is capable of based on a few [Examples](/sdks/python/examples). 
 
-Also, see the [*emnify System Documentation*](https://cdn.emnify.net/api/doc/index.html) and our [OpenAPI Specification](https://cdn.emnify.net/api/doc/swagger.html).
+Also, see the [emnify System Documentation](https://cdn.emnify.net/api/doc/index.html) and our [OpenAPI specification](https://cdn.emnify.net/api/doc/swagger.html).

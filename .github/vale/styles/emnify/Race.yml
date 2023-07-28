@@ -1,0 +1,30 @@
+# emnify.Race
+# Subset of the Race.yml from the alex package: https://alexjs.com/
+extends: substitution
+message: Consider using '%s' instead of '%s'.
+ignorecase: true
+level: warning
+action:
+  name: replace
+swap:
+  black list: blocklist|banlist|deny list
+  blacklist: blocklist|banlist|deny list
+  blacklisted: blocklisted|banlisted|deny-listed
+  blacklisting: blocklisting|banlisting|deny-listing
+  grandfather clause: legacy policy|legacy clause|deprecation policy
+  grandfather policy: legacy policy|legacy clause|deprecation policy
+  grandfathered: deprecated
+  grandfathering: deprecate
+  master: primary|hub|reference
+  masters: primaries|hubs|references
+  on the warpath: defend
+  sophisticated technology: complex technology
+  tribe: society|community|people
+  white list: passlist|safelist|allow list
+  white space: space|blank
+  white spaces: space|blank
+  whitelist: passlist|safelist|allow list
+  whitelisted: passlisted|safelisted|allow-listed
+  whitelisting: passlisting|safelisting|allow-listing
+  whitespace: space|blank
+  whitespaces: space|blank

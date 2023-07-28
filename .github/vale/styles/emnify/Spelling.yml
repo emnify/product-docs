@@ -1,0 +1,9 @@
+# emnify.Spelling
+# Extends Vale.Spelling and applies any exceptions for the emnify Documentation
+#
+# For a list of all options, see https://errata-ai.gitbook.io/vale/getting-started/styles
+extends: spelling
+message: "Did you really mean '%s'? If yes, please add the term to spelling-exceptions.txt"
+level: error
+ignore:
+  - emnify/spelling-exceptions.txt

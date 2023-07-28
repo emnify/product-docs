@@ -1,16 +1,26 @@
 ---
-description: Analyze data usage, events, and device location over time
+description: Analyze data usage, events, and device location over time using the emnify Portal
 slug: /portal/reports
 ---
 
-# Business intelligence and analytics reports
+# Reports
 
-The [emnify Portal provides detailed reports](https://portal.emnify.com/reports/default) on all connectivity aspects of a device.
-You can analyze the data consumption, events, location of the devices, and compare them to previous time periods.
+The emnify Portal provides detailed reports on all connectivity aspects of a device.
+You can analyze the devices' data consumption, events, and location and compare them to previous time periods.
 
-- Data traffic per day, week, month
-- Global distribution of devices
-- Data and SMS usage per device
-- Live traffic reports
+This [**Reports**](https://portal.emnify.com/reports/default) page includes the following reports:
+
+- Call detail records (CDRs)
+- Data traffic per ratezone
+- Data usage per device policy
+- Device list
+- Global distribution
+- Live traffic
 - Network activity
-- Traffic per rate zone
+- Online devices KPI
+- Overview current month
+- SIM list
+- Traffic by mobile network
+- Traffic history
+- Traffic per Day
+- Usage per device

@@ -13,4 +13,4 @@ To create a device, give it a name and assign a service and coverage policy.
   alt=""
 />
 
-If you plan on using your device right away, activate it. If you do not plan on using the device right away, select **Leave Disabled**.
+If you plan on using your device right away, activate it. If you don't plan on using the device right away, select **Leave Disabled**.

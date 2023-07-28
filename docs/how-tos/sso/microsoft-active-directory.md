@@ -6,23 +6,24 @@ slug: /sso/microsoft-active-directory
 
 # Setup SSO with Microsoft Active Directory
 
-This guide walks through enabling single sign-on (SSO), so your organization can access the [emnify Portal](https://portal.emnify.com/) using your Microsoft Business credentials.
+This guide walks through enabling single sign-on (SSO), so your organization can access the emnify Portal using your Microsoft Business credentials.
 
 **Prerequisites:**
 
 - An Azure Subscription with an Active Directory license
-- An [emnify Portal account](https://portal.emnify.com/sign/up/) using the same email address as the one used to sign in to Microsoft Azure
+- An [emnify account](/quickstart) using the same email address as the one used to sign in to Microsoft Azure
 
 :::caution
 If your email address used in the emnify Portal differs from the one used to log in to Azure, this setup won't work.
-You can verify your email on the [**User Settings** page](https://portal.emnify.com/user-settings).
+You can verify your email in [**User Settings**](https://portal.emnify.com/user-settings).
 
-Instead, [add an additional user](https://portal.emnify.com/organisation-settings/users) to the emnify Portal with the **Administrator** role.
+Instead, add an additional user with the **Administrator** role.
+To do this, go to **Organization Settings**&nbsp;<span aria-label="and then">></span> [**Employees**](https://portal.emnify.com/organisation-settings/users).
 :::
 
 ## SSO with Microsoft
 
-Log in to Azure and navigate to **Azure Active Directoring** in the left sidebar.
+Log in to Azure and navigate to **Azure Active Directory** in the left sidebar.
 
 <img
   src={require('./assets/sso-azure-active-directory.png').default}
@@ -39,7 +40,7 @@ From there:
   className="no-border"
 />
 
-- Give your app a **Name** (e.g., "emnify").
+- Give your app a **Name** (for example, "emnify").
 - The **Supported Account Types** should be `Multitenant`.
 This requests a consent screen on IDP verification in the Portal later. 
 - Set the Redirect URI to type `Web` with the value: `https://prod-e5.okta.com/oauth2/v1/authorize/callback`
@@ -67,7 +68,7 @@ Leave the option `Turn on the Microsoft Graph profile` permission unchecked.
   className="no-border"
 />
 
-Head to **API permissions** in the left sidebar, click the existing permission entry **Microsoft Graph (1)** and check the `email` and `profile` OpenID permissions.
+Head to **API permissions** in the left sidebar, click the existing permission entry **Microsoft Graph (1)** and confirm the `email` and `profile` OpenID permissions.
 
 <img
   src={require('./assets/sso-azure-api-permissions-1.png').default}
@@ -83,7 +84,7 @@ Your configuration should look like this:
   className="no-border"
 />
 
-In the left sidebar, go to **Expose an API**, click **Set**, and then click on **Save**.
+In the left sidebar, go to **Expose an API**, click **Set**, and then click **Save**.
 
 <img
   src={require('./assets/sso-azure-expose-api.png').default}
@@ -127,25 +128,28 @@ Navigate to **Overview** in the sidebar and copy the **Application (client) I
 
 <img
   src={require('./assets/portal-organization-settings-sso.png').default}
-  alt="Portal screenshot showing the Organization settings dropdown menu. Menu items from top to bottom: Organization Data, Employees, Subscription, Billing, Single Sign-On."
+  alt="Portal screenshot showing the Organization settings dropdown menu. Menu items from top to bottom, Organization Data, Employees, Subscription, Billing, Single Sign-On."
   style={{ width: 358 }}
 />
 
 If you need SSO enabled for your account, contact support by selecting **Upgrade**.
 
+<!-- vale emnify.Condescending = NO -->
+<!-- 'easily' is quoted from the Portal text -->
 ![Portal screenshot from the Single Sign-On page under Organization. There's a notice under Provider that reads, "Your plan does not include SSO. Single Sign-On (SSO) allows you to configure your own Identity Provider (IdP) to authenticate your workforce on the emnify portal and easily control access via your central user management." Next to this text is an Upgrade button.](assets/portal-organization-no-sso-annotated.png)
+<!-- vale emnify.Condescending = YES -->
 
 Otherwise, click **Add** under the Microsoft SSO provider.
 
-Fill in the **Client ID** and **Client Secret** with the values you copied earlier, then click **Create and Activate**.
+Enter the **Client ID** and **Client Secret** with the values you copied earlier, then click **Create and Activate**.
 
 The final step is to verify the provider. 
-Click on **Verify Integration** and follow the prompts.
+Click **Verify Integration** and follow the prompts.
 
 :::caution
 You must complete the final step and verify the provider to configure SSO.
 :::
 
 :::tip
-We have a [Troubleshooting page](/sso/troubleshooting#microsoft-active-directory) if you encounter issues while setting up SSO.
+Refer to the [Troubleshooting page](/sso/troubleshooting#microsoft-active-directory) if you encounter issues while setting up SSO.
 :::
