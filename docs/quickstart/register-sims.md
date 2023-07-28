@@ -6,10 +6,13 @@ slug: /quickstart/register-sims
 # Register emnify SIMs
 
 Once you [get your emnify SIMs](/quickstart/order-sims), you need to register them before you can start using them.
-If you [order the free Evaluation SIM package](/quickstart), you will have to register each of the 3 SIMs separately.
+If you [order the free Evaluation SIM package](/quickstart), you'll have to register each of the three SIMs separately.
 
-1. Log in to your [emnify account](https://portal.emnify.com/sign).  
+1. [Log in to your emnify account](https://portal.emnify.com/sign).  
+<!-- vale Google.OptionalPlurals = NO -->
+<!-- UI elements are written the same as they're shown in the Portal -->
 1. From the **Get Started** menu, select [**Register SIM(s)**](https://portal.emnify.com/sim-registration)  
+<!-- vale Google.OptionalPlurals = YES -->
 <img
   src={require('./assets/portal-get-started-collapsible-register-sims-menu-item.png').default}
   alt=""
@@ -22,7 +25,7 @@ If you [order the free Evaluation SIM package](/quickstart), you will have to re
   style={{width:350}} alt=""
 />
 
-1. If you ordered more than 5 SIM cards, select **SIM Batch**.  
+1. If you ordered more than five SIM cards, select **SIM Batch**.  
 <img
   src={require('./assets/portal-sim-registration-sim-batch.png').default}
   style={{width:171}} alt=""
@@ -39,7 +42,7 @@ If you [order the free Evaluation SIM package](/quickstart), you will have to re
 As part of the SIM registration, you can create a new device for the newly registered SIM while you are still in the SIM registration dialog.
 
 <details className="custom-details-example">
-  <summary>Show me an example</summary>
+  <summary>Show an example</summary>
 
   1. After confirming your BIC1 is correct, select **Register SIM Card**.
 

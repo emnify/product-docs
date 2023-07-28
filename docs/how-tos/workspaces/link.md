@@ -10,11 +10,11 @@ slug: /workspaces/link
 If you already have two or more [workspaces](/glossary#workspace) created, you can link these to a shared [main organization](/glossary#main-organization).
 These [linked workspaces](/glossary#linked-workspaces) can be centrally or individually managed.
 
-This guide shows you how to submit a request to link existing workspaces via the [emnify Portal](https://portal.emnify.com/).
+This guide shows you how to submit a request to link existing workspaces via the emnify Portal.
 Alternatively, you can also [create a new workspace](/workspaces/create).
 
 :::info
-Only **Administrator** [user accounts](/glossary#user-account) of customers on the [**Pro** plan](https://portal.emnify.com/organisation-settings/subscription#plans) can link existing workspaces.
+Only **Administrator** [user accounts](/glossary#user-account) of customers on the **Pro** plan can link existing workspaces.
 :::
 
 1. [Log in to your emnify account](https://portal.emnify.com/sign).
@@ -34,7 +34,7 @@ You should see your organization's name at the top of the primary sidebar.
   style={{ height:450 }}
 />
 
-4. Once the **Request for linking a workspace** modal appears, fill in your **Contact email** and provide any details about the workspace you want to link.
+4. Once the **Request for linking a workspace** modal appears, enter your **Contact email** and provide any details about the workspace you want to link.
 5. Click **Send Request**.
 
 If you see the **Request Sent** modal, your request has been submitted successfully. 🎉

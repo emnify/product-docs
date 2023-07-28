@@ -7,12 +7,12 @@ slug: /how-tos/two-factor-authentication
 
 Setting up two-factor authentication (2FA) makes unauthorized access to your account more improbable because your password is secured via your personal device, which generates a temporary authentication key.
 
-You can [enable 2FA via the emnify Portal](https://portal.emnify.com/user-settings#two-factor-authentication).
+You can enable 2FA via the emnify Portal.
 
 ## Configuration steps
 
 1. Log in to your [emnify account](https://portal.emnify.com/sign).
-2. Navigate to your [**User Settings**](https://portal.emnify.com/user-settings) page by clicking on your avatar and selecting **User Settings** from the dropdown menu.
+2. Navigate to [**User Settings**](https://portal.emnify.com/user-settings) by clicking on your avatar and selecting **User Settings** from the dropdown menu.
 
 <img
   src={require('./assets/portal-dashboard-avatar-user-settings.png').default}
@@ -74,14 +74,14 @@ To bypass this process, select **Trust this device** before entering the 2FA cod
   style={{ width:550 }}
 />
 
-A [**Trusted Devices**](https://portal.emnify.com/user-settings#trusted-devices) section should be visible on your [**User Settings**](https://portal.emnify.com/user-settings) page under [**Two-Factor Authentication**](https://portal.emnify.com/user-settings#two-factor-authentication).
+Then, [**Trusted Devices**](https://portal.emnify.com/user-settings#trusted-devices) should be visible in the **Two-Factor Authentication** section of **User Settings**.
 
 <img
   src={require('./assets/portal-user-settings-trusted-devices.png').default}
   alt=""
 />
 
-You can remove a device from your **Trusted Devices** by clicking the associated **Remove** button.
+Click **Remove** to remove a device from **Trusted Devices**.
 
 <img
   src={require('./assets/portal-user-settings-trusted-devices-remove-button.png').default}
@@ -94,17 +94,13 @@ Your changes are saved automatically.
 
 ## Disable two-factor authentication
 
-If you want to turn off 2FA, go to your [**User Settings**](https://portal.emnify.com/user-settings) page, find the [**Two-Factor Authentication**](https://portal.emnify.com/user-settings#two-factor-authentication) section, and click **Disable**.
+If you want to turn off 2FA, go to **User Settings**, find the [**Two-Factor Authentication**](https://portal.emnify.com/user-settings#two-factor-authentication) section, and click **Disable**.
 
-<!-- vale Google.WordList = NO -->
-<!-- 'disable' refers to the button text -->
 <img
   src={require('./assets/portal-user-settings-2fa-disable-button.png').default}
   alt=""
 />
 
-<!-- vale Google.WordList = YES -->
-
 :::info
-You can re-enable 2FA at any time.
+You can turn on 2FA again at any time.
 :::

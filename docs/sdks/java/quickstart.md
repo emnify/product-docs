@@ -22,7 +22,7 @@ Refer to the [SSL Report table](https://www.ssllabs.com/ssltest/analyze.html?d=c
 
 ## Installation
 
-The emnify Java SDK is open-source and the [source code is available on GitHub](https://github.com/EMnify/emnify-sdk-java).
+The emnify Java SDK is open source and the [source code is available on GitHub](https://github.com/EMnify/emnify-sdk-java).
 
 The recommended method for installing the SDK is with a build automation tool, like Maven or Gradle. 
 You can add the emnify dependency to your existing project, specifying the latest version.
@@ -40,17 +40,21 @@ Use the following dependency in your project to grab via [Maven](https://maven.a
     <dependency>
         <groupId>com.emnify.sdk</groupId>
         <artifactId>emnify</artifactId>
-        <version>{version}</version>
+        <version>VERSION_NUMBER</version>
     </dependency>
 ```
+
+Replace *`VERSION_NUMBER`* with the version of Maven you're using.
 
 ### Gradle
 
 Use the following to add the emnify dependency to your project via [Gradle](https://gradle.org/install/):
 
 ```gradle
-    implementation group: "com.emnify.sdk", name: "emnify", version: "{version}"
+    implementation group: "com.emnify.sdk", name: "emnify", version: "VERSION_NUMBER"
 ```
+
+Replace *`VERSION_NUMBER`* with the version of Gradle you're using.
 
 ### Compile the SDK yourself
 
@@ -86,4 +90,4 @@ If you're new to IoT connectivity and emnify, start by learning some [common ter
 
 Once you're comfortable with these [concepts](/sdks/concepts), you can explore some use cases that show what the SDK is capable of based on a few [Examples](/sdks/java/examples). 
 
-Also, see the [*emnify System Documentation*](https://cdn.emnify.net/api/doc/index.html) and our [OpenAPI Specification](https://cdn.emnify.net/api/doc/swagger.html).
+Also, see the [emnify System Documentation](https://cdn.emnify.net/api/doc/index.html) and our [OpenAPI specification](https://cdn.emnify.net/api/doc/swagger.html).

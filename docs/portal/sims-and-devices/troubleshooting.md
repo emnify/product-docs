@@ -137,10 +137,7 @@ If you reset connectivity for a device, the expected series of events would be:
 
 1. Info: SIM suspension
 1. Info: Delete PDP Context
-<!-- vale Google.WordList = NO -->
-<!-- 'Endpoint disabled' is the event description -->
 1. Info: Endpoint disabled
-<!-- vale Google.WordList = YES -->
 1. Info: Endpoint enabled
 1. Info: SIM activation
 1. Info: Update location
@@ -155,4 +152,4 @@ If so, these additional events should be logged, with **Create PDP Context** bei
 ##  More troubleshooting tips
 
 Several factors can cause data connectivity problems.
-The [Troubleshooting](/quickstart/troubleshooting) page of the [Getting started](/quickstart) section provides detailed troubleshooting steps for specific issues that can prevent a device from functioning as expected.
+For more detailed troubleshooting tips, see [Troubleshooting](/quickstart/troubleshooting).

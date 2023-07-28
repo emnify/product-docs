@@ -18,7 +18,7 @@ Learn more about each SIM state and what they mean in the [SIM lifecycle managem
 
 ## SIM management
 
-The [**SIM Inventory**](https://portal.emnify.com/sim-inventory) page provides a complete list of your registered SIMs.
+The [**SIM Inventory**](https://portal.emnify.com/sim-inventory) provides a complete list of your registered SIMs.
 You can search by various identifiers, including [ICCID](/glossary#iccid), [EID](/glossary#eid), and phone number, to name a few.
 
 The **Details** view of a SIM shows all identifiers as well as:

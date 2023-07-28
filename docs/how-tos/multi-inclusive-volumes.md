@@ -8,8 +8,8 @@ slug: /how-tos/multi-inclusive-volumes
 emnify introduced a multi-inclusive volumes feature, allowing you to manage different tariffs and data plans from a single account. 
 These volumes are managed within [coverage policies](/portal/device-policies#coverage-policies).
 
-With the [**Pro** plan](https://portal.emnify.com/organisation-settings/subscription#plans), you can manage as many tariff profiles and data plans as you need.
-Those on a [**Plus** plan](https://portal.emnify.com/organisation-settings/subscription#plans) can manage up to 4. 
+With the **Pro** plan, you can manage as many tariff profiles and data plans as you need.
+Those on a **Plus** plan can manage up to 4. 
 
 Once multi-inclusive volumes have been enabled on your emnify account, please ensure that your coverage policies have been adjusted correctly to take advantage of this setup.
 
@@ -22,7 +22,7 @@ Log in to your [emnify account](https://portal.emnify.com/sign) and navigate to 
   alt=""
 />
 
-Then, scroll down to your **Coverage Policies**.
+Then, go to **Coverage Policies**.
 
 <img
   src={require('./assets/portal-device-policies-coverage-policies.png').default}
@@ -67,7 +67,7 @@ Any changes are reflected on your invoice within a few hours.
   alt=""
 />
 
-3. Find your device's coverage policy information under **General** → **Device** → **Policies** → **Coverage Policy**.
+3. Find your device's **Coverage Policy** information under the **Devices** section of the **General** tab.
 4. Click **Edit** and select the coverage policy with the corresponding inclusive volume you want the device to use.
 
 <img
@@ -103,7 +103,7 @@ In the following example, the device switches from **Europe 1 MB** included to *
   alt=""
 />
 
-3. Locate the **More** dropdown menu on the banner at the top of the page and select **Change Coverage Policy**.
+3. Locate the **More** dropdown menu on the banner and select **Change Coverage Policy**.
 
 <img
   src={require('./assets/portal-connected-devices-bulk-actions-more-change-coverage-policy.png').default}
@@ -128,7 +128,7 @@ When creating the invoice, emnify confirms which tariff the device is assigned t
 Any changes are reflected on your invoice within a few hours.
 :::
 
-To change a coverage policy's tariff, follow these steps:
+To change a coverage policy's tariff in the Portal, follow these steps:
 
 1. Navigate to the [**Device Policies**](https://portal.emnify.com/device-policies) page.
 
@@ -137,7 +137,7 @@ To change a coverage policy's tariff, follow these steps:
   alt=""
 />
 
-2. Scroll down to your **Coverage Policies**.
+2. Go to **Coverage Policies**.
 3. Find the coverage policy you want to update and click **Details**.
 
 <img

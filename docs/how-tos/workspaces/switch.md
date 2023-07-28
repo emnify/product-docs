@@ -9,7 +9,7 @@ slug: /workspaces/switch
 
 One benefit of having [linked workspaces](/glossary#linked-workspaces) is that you can manage multiple [organizations](/glossary#organization) using one emnify account.
 
-This guide shows you how to switch between your organizations via the [workspace switcher](/glossary#workspace-switcher) in the [emnify Portal](https://portal.emnify.com/).
+This guide shows you how to switch between your organizations via the [workspace switcher](/glossary#workspace-switcher) in the emnify Portal.
 
 :::info
 Only **Administrator** [user accounts](/glossary#user-account) of the [main organization](/glossary#main-organization) can switch between workspaces.

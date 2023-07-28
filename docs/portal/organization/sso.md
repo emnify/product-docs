@@ -9,7 +9,7 @@ The emnify Portal offers single sign-on (SSO) with select providers.
 SSO improves account security and simplifies user administration.
 
 :::info
-SSO comes with the [**Pro** plan](https://portal.emnify.com/organisation-settings/subscription).
+SSO comes with the **Pro** plan.
 :::
 
 ## Providers

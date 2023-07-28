@@ -6,7 +6,7 @@ slug: /services/global-iot-network
 
 # Global IoT Network
 
-Even when IoT devices are more often only deployed at a single location and are not moving, for a vendor selling to multiple countries it is important to have a global connectivity solution, so that there is no need to have different SIM cards in stock or have multiple contracts and tariffs.
+Even when IoT devices are more often only deployed at a single location and aren't moving, for a vendor selling to multiple countries it's important to have a global connectivity solution, so that there is no need to have different SIM cards in stock or have multiple contracts and tariffs.
 
 <!-- TODO: Find place for service_stack.png -->
 
@@ -14,7 +14,7 @@ Even when IoT devices are more often only deployed at a single location and are 
 
 emnify uses an approach to aggregate the roaming footprint of multiple operators with the goal of offering access to every network in the world.
 Mobile operators utilize roaming in foreign countries so their subscribers can stay connected when traveling.
-Often operators do not have roaming agreements with all countries or only have a roaming agreement for one network – which is sufficient for roaming travelers but not ideal for devices that could be anywhere in the country.
+Often operators don't have roaming agreements with all countries or only have a roaming agreement for one network—which is sufficient for roaming travelers but not ideal for devices that could be anywhere in the country.
 emnify works with multiple partner operators across the globe to be able to offer more networks at a commercially viable rate.
 The emnify [multi-IMSI applet](#multi-imsi-application) makes it completely transparent for the device to identify which roaming agreement of which operator is being utilized.
 
@@ -33,9 +33,9 @@ When a device wants to connect with any of these radio technologies, the network
 
 ### 2G (GSM/GPRS/EDGE)
 
-GSM/GPRS is still one of the most dominant IoT technologies. Although the throughput is limited (GPRS max. 120kbps, EDGE max. 1Mbps) it is more than sufficient for many IoT use cases. The modules are cheap (<10$) and the coverage is widely available throughout the world in more than 200 countries.
+GSM/GPRS is still one of the most dominant IoT technologies. Although the throughput is limited (GPRS max. 120kbps, EDGE max. 1Mbps) it's more than sufficient for many IoT use cases. The modules are cheap (<10$) and the coverage is widely available throughout the world in more than 200 countries.
 
-GSM/GPRS is easy to deploy for IoT use cases because there are only 4 frequency bands utilized by operators for GSM/GPRS worldwide.
+GSM/GPRS isn't complicated to deploy for IoT use cases because there are only four frequency bands utilized by operators for GSM/GPRS worldwide.
 
 In the Americas
 
@@ -47,7 +47,7 @@ In the rest of world
 - B3 (1800MHz)
 - B8 (900MHz)
 
-Therefore, module manufacturers offer dual-band modules that can be used either in Americas or Rest of World - or Quadband modules that can be deployed globally.
+Therefore, module manufacturers offer dual-band modules that can be used either in Americas or Rest of World—or Quad-band modules that can be deployed globally.
 
 Nevertheless, GSM/GPRS is being phased out in several countries to free up frequency band for newer technologies.
 [More than 60 networks have discontinued or announced to discontinue GSM technology](https://www.emnify.com/en/resources/global-2g-phase-out).
@@ -57,7 +57,7 @@ Nevertheless, GSM/GPRS is being phased out in several countries to free up frequ
 3G technologies like UMTS, WCDMA, HSDPA, HSUPA have been driven by the surge for more data speed.
 As an evolution of GSM, many parts of the GSM/GPRS core network and signaling are reused, where the most difference is in the radio part.
 
-Like 2G, 3G modules are easy to deploy, since there are only 5 different frequency bands utilized by operators worldwide (with exception of Japan and China).
+Like 2G, 3G modules aren't complicated to deploy, since there are only five different frequency bands utilized by operators worldwide (with exception of Japan and China).
 Most UMTS modules therefore can be deployed worldwide.
 
 - B1 (2100MHz) - main UMTS band in the world
@@ -98,7 +98,6 @@ Some main LTE-bands are
 
 :::tip
 Validate the frequency bands utilized by the operators in your deployment countries before deciding on a module.
-You can look up the utilized frequency bands [here](https://www.frequencycheck.com/interfaces/lte)
 :::
 
 ### LPWAN: LTE-M/NB-IoT
@@ -115,7 +114,7 @@ Both technologies have been specified to meet the demand for IoT use cases in te
   - Utilizing extended coverage feature with more retransmissions to ensure data gets delivered 
 - Smaller module size - to enable smaller device use cases
 
-Because LTE-M and NB-IoT rely on LTE infrastructure they are also deployed in a multitude of different frequency bands.
+Because LTE-M and NB-IoT rely on LTE infrastructure they're also deployed in a multitude of different frequency bands.
 A total of 26 bands have been specified for their use.
 To deploy NB-IoT and LTE-M in multiple countries and regions, the modules need to support the operator frequency bands.
 
@@ -129,12 +128,12 @@ As of today, roaming for NB-IoT is very limited between operators because of new
 For LTE-M, roaming usually works over regular LTE roaming.
 Nevertheless, some operators have limited the access to their LTE-M networks and its available features (PSM, eDRX).
 
-Check the emnify [LTE-M coverage](https://www.emnify.com/lte-m-coverage) and [NB-IoT coverage](https://www.emnify.com/nb-iot-coverage), availability of PSM/eDRX and proposed frequency bands [on our Website](https://www.emnify.com/lte-m-coverage?hsLang=en).
+Check the emnify [LTE-M coverage](https://www.emnify.com/lte-m-coverage) and [NB-IoT coverage](https://www.emnify.com/nb-iot-coverage), availability of PSM/eDRX and proposed frequency bands on the emnify website.
 
 Power-Save-Mode (PSM)
 
 - Why is cellular communication not ideal for IoT?  
-Cellular communication for smartphones usually requires low latency on downlink, e.g., in case you are being called, your phone should ring right away.
+Cellular communication for smartphones usually requires low latency on downlink, for example, in case you are being called, your phone should ring right away.
 Because of this, there are two things the device does which require power:  
   1. Continuously listening to the radio if there is an incoming call
   1. Transmitting location information to the network where it should be called - whenever it moves out of a tracking area and periodically every 54 minutes  
@@ -142,32 +141,32 @@ Because of this, there are two things the device does which require power:
 &nbsp;  
 - How does **Power Save Mode** work?  
 &nbsp;  
-For most IoT use cases a downlink-initiated channel is not required.
-It is usually the device that initiates the communication to send e.g., sensor data.
+For most IoT use cases a downlink-initiated channel isn't required.
+It's usually the device that initiates the communication to send (for example, sensor data).
 Therefore, a **Power Save Mode** is introduced that allows the device to go to sleep in case it has nothing to send.  
 &nbsp;  
 The **Power Save Mode** has the following characteristics:  
   - The Power Save Mode is like a power off period during which the module only consumes a couple of μA.
-  - The device tells the network how long it is going periodically into PSM (timer T3412 extended).
-  - The device/module will not be reachable during PSM from the outside in downlink.
-  - The device can wake up the module and send data (e.g., powerkey, interrupt or pin triggered).
-  - When the device wakes up, it does not need to reattach and re-establish a PDN connection (unless it has moved to a different tracking area).
-  - After the device wakes up, it stays in idle mode for a configurable time (timer T3324) to listen for downlink messages (e.g., firmware updates).
+  - The device tells the network how long it's going periodically into PSM (timer T3412 extended).
+  - The device/module isn't reachable during PSM from the outside in downlink.
+  - The device can wake up the module and send data (for example, power key, interrupt or pin triggered).
+  - When the device wakes up, it doesn't need to reattach and re-establish a PDN connection (unless it has moved to a different tracking area).
+  - After the device wakes up, it stays in idle mode for a configurable time (timer T3324) to listen for downlink messages (for example, firmware updates).
   - The actual time the device is then in Power Save Mode is T3412 extended - T3324
 
 <!-- This is the "alt" text for a missing image: "PSM and the 3412 and T3324 timers" -->
    
 :::note
-Some modules which have a SIM enabled PIN, (e.g., u-blox SARA-R4/SARA-N4) do not go into sleep mode.
+Some modules which have a SIM enabled PIN, (for example, u-blox SARA-R4/SARA-N4) don't go into sleep mode.
 The PIN is disabled on emnify SIMs.
 :::
 
 - Roaming for Power Save Mode 
 &nbsp;  
 &nbsp;   
-Be aware that not all NB-IoT and LTE-M networks have implemented PSM and even when PSM is available with the local operator this does not mean that a roaming SIM can use it.
-This makes it difficult for devices that are moving - in case they use PSM, and the new network does not support PSM - or only other timer configurations.
-We therefore regularly test the availability of PSM in our [LTE-M](https://www.emnify.com/lte-m-coverage?hsLang=en) and [NB-IoT](https://www.emnify.com/nb-iot-coverage) roaming footprint.
+Be aware that not all NB-IoT and LTE-M networks have implemented PSM and even when PSM is available with the local operator this doesn't mean that a roaming SIM can use it.
+This makes it difficult for devices that are moving - in case they use PSM, and the new network doesn't support PSM - or only other timer configurations.
+emnify therefore regularly test the availability of PSM in the [LTE-M](https://www.emnify.com/lte-m-coverage?hsLang=en) and [NB-IoT](https://www.emnify.com/nb-iot-coverage) roaming footprint.
 - AT Command calculation and examples for PSM settings 
 &nbsp;  
 &nbsp;   
@@ -179,8 +178,8 @@ An example command is
 `AT+CPSMS=1,,,01001110,00000101`
 &nbsp;  
 &nbsp;  
-PSM will be enabled (`1`) and the desired value for T3412 extended is 140 hours (`01001110`) and the desired value for the T3324 timer is 10s (`01001110`).
-The network does not necessarily use the desired values but utilizes supported values that are close to the desired values.
+PSM is enabled (`1`) and the desired value for T3412 extended is 140 hours (`01001110`) and the desired value for the T3324 timer is 10 seconds (`01001110`).
+The network doesn't necessarily use the desired values but utilizes supported values that are close to the desired values.
 To read the effective PSM configuration use the command  
 &nbsp;   
 `AT+CPSMS?`
@@ -189,31 +188,31 @@ To read the effective PSM configuration use the command
 There is a good calculator that translates the intended time settings for 3412 and T3324 available from [Thales](https://www.thalesgroup.com/en/markets/digital-identity-and-security/iot/resources/developers/psm-calculation-tool). 
 &nbsp;  
 &nbsp;  
-Module vendors have also implemented module specific commands, e.g. Quectel
+Module vendors have also implemented module specific commands, for example Quectel
   - `AT+QPSMS` extends PSM settings
   - `AT+QCFG=”psm/enter”,1` used to put the module immediately into PSM when the RRC connection is released (not waiting for T3324 to expire)
-  - `AT+QPSMEXTCFG` modem optimization command with different attributes such as making sure that PSM is randomized between different devices so they do not send data at the same time
+  - `AT+QPSMEXTCFG` modem optimization command with different attributes such as making sure that PSM is randomized between different devices so they don't send data at the same time
 
 Extended Discontinuous Reception (eDRX)
 
 - How does eDRX work?  
 &nbsp;  
   While PSM is focused on uplink-centric use cases, eDRX tries to reduce the power consumption for IoT use cases that get downlink information.
-  Regular smartphones do not continuously listen on the radio for an incoming message.
-  They do this only every 1.28s or 2.56s which is called DRX (discontinuous Reception).
-  eDRX allows configuration of custom intervals of up to 40-175 mins - depending on the configuration the visited network allows.
+  Regular smartphones don't continuously listen on the radio for an incoming message.
+  They do this only every 1.28 seconds or 2.56 seconds which is called DRX (discontinuous Reception).
+  eDRX allows configuration of custom intervals of up to 40-175 minutes - depending on the configuration the visited network allows.
     ![eDRX and the 3412 and T3324 timers](./assets/edrx.png)  
 &nbsp;  
 &nbsp;  
 - Roaming with eDRX  
 &nbsp;  
-As with PSM - not all NB-IoT and LTE-M networks support eDRX or the same timer configuration - and even if they do this does not guarantee that a roaming SIM card can utilize eDRX.
-We therefore also test and publish the eDRX availability on our [LTE-M](https://www.emnify.com/lte-m-coverage?hsLang=en) and [NB-IoT](https://www.emnify.com/nb-iot-coverage) roaming footprint.
+As with PSM - not all NB-IoT and LTE-M networks support eDRX or the same timer configuration - and even if they do this doesn't guarantee that a roaming SIM card can utilize eDRX.
+emnify therefore also tests and publishes the eDRX availability on our [LTE-M](https://www.emnify.com/lte-m-coverage?hsLang=en) and [NB-IoT](https://www.emnify.com/nb-iot-coverage) roaming footprint.
 - [AT Command examples for eDRX settings](#eDRX_AT_COMMANDS)  
 &nbsp;  
 The standard 3GPP defined AT-command to configure eDRX is `AT+CEDRXS`.  
 &nbsp;   
-As an example the below command enables (`1`) eDRX for LTE-M (`4`) and an eDRX cycle of 143.36s (`1000`).
+As an example the below command enables (`1`) eDRX for LTE-M (`4`) and an eDRX cycle of 143.36 seconds (`1000`).
 &nbsp;  
 &nbsp;  
 `AT+CEDRXS=1,4,"1000"`
@@ -239,18 +238,18 @@ The setting for NB-IoT would be `5` and the timer values are shown in below ta
 | 1 1 1 1 | 10485.76 seconds |
 
     
-The network will respond with the actual effective interval.
+The network responds with the actual effective interval.
     
 `+CEDRXS: [4,"1000","1000","0111"]`
     
 
 ### 5G (New Radio)
 
-5G is the next major technology standard after LTE - which targets 3 different applications areas:
+5G is the next major technology standard after LTE—which targets three different applications areas:
 
 1. Enhanced Mobile Broadband (eMBB)  
-    - With faster throughput upto 1Gps+ and more capacity in a local area
-    - Utilizing mmWave bands (5Ghz+) for increased throughput
+    - With faster throughput up to 1Gps+ and more capacity in a local area
+    - Utilizing millimeter wave (MM wave) bands (5Ghz+) for increased throughput
 1. Massive Machine Type communication (mMTC)  
     - Targeted at IoT application where a multitude of devices are in the same location and need to communicate with low power
     - LTE-M and NB-IoT often seen as decoupled from 5G to get earlier results will fusion with 5G mMTC  

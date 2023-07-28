@@ -4,7 +4,7 @@
 # Full list and explanation of terms: https://developers.google.com/style/word-list
 extends: substitution
 message: "Use '%s' instead of '%s'."
-level: error
+level: warning
 ignorecase: false
 action:
   name: replace
@@ -15,10 +15,13 @@ swap:
   "(?:dev|developer|APIs) console": API console
   "(?:e-mail|E-mail)": email
   "(?:file ?path|path ?name)": path
+  "(?:graphql|Graphql|graphQL)": GraphQL
+  "(?:ios|IOS)": iOS
   "(?:kill|terminate|abort)": stop|exit|cancel|end
   "(?:OAuth ?2|Oauth)": OAuth 2.0
   "(?:ok|Okay)": OK|okay
-  "(?:WiFi|wifi)": Wi-Fi
+  "(?:REST-API|Rest-API|Rest API)": REST API
+  "(?:WiFi|wifi|Wifi)": Wi-Fi
   '[\.]+apk': APK
   '3\-D': 3D
   'Google (?:I\-O|IO)': Google I/O
@@ -56,6 +59,7 @@ swap:
   functionality: capability|feature
   Googling: search with Google
   grayed-out: unavailable
+  hard-coded?: hardcode|hardcoded
   HTTPs: HTTPS
   in order to: to
   ingest: import|load
