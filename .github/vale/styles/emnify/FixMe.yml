@@ -1,0 +1,11 @@
+# emnify.FixMe
+# Extends the existence check to ensure TODOs and other annotations are removed
+extends: existence
+message: "'%s' left in text."
+ignorecase: false
+scope: raw
+level: warning
+tokens:
+  - FIXME
+  - TODO
+  - NOTE

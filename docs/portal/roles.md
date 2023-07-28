@@ -3,40 +3,27 @@ description: Review the emnify account permissions for various roles
 slug: /portal/roles
 ---
 
-# Roles and permissions
-
-<!-- vale Google.WordList = NO -->
-<!-- 
-    Temporarily disabling so we don't need to refactor every instance of 'check' on this page
-    Also needed to move the imports under the h1 to avoid impacting how the page renders
--->
 import Check from './assets/check-mark-3-24.png';
 import Uncheck from './assets/x-mark-24.png';
 
-<!-- vale Google.WordList = YES -->
+# Roles and permissions
 
 The [emnify Portal](https://portal.emnify.com/) is a powerful application to control the connectivity of devices of a production system.
 
 Employees across your organization may use the Portal, from operations and finance to development and product.
 That's why emnify offers three levels of access (referred to as **Roles**) to use and manage Portal features:
 
-1. Admin (has access to all services and user management)
-1. Observer (has access to limited services)
-1. User (has access to all services)
+- **Administrator** (has access to all services and user management)
+- **Observer** (has access to limited services)
+- **User** (has access to all services)
 
-You can view and edit these roles on the [**Employees** page](https://portal.emnify.com/organisation-settings/users) under your **Organization settings**. 
+To view and edit these roles, go to **Organization settings**&nbsp;<span aria-label="and then">></span> [**Employees**](https://portal.emnify.com/organisation-settings/users).
 
 The following tables describe the permissions for different roles.
 
-<!-- vale Google.FirstPerson = NO -->
-<!-- Terms like 'my' are used in the tables to refer to user actions -->
-
 ## Endpoint management
 
-<!-- vale alex.Race = NO -->
-<!-- 'blacklist' needs to be renamed but unfortunately that's what it's called in the interface -->
-
-| Action | Admin | Observer | User |
+| Action | Administrator | Observer | User |
 | ------ | :---: | :------: | :--: |
 | Retrieve an endpoint by ID | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> |
 | Update, Delete an endpoint by ID | <img src={Check} alt="✓" /> | <img src={Uncheck} alt="×" /> | <img src={Check} alt="✓" /> |
@@ -46,11 +33,9 @@ The following tables describe the permissions for different roles.
 | Create new endpoint | <img src={Check} alt="✓" /> | <img src={Uncheck} alt="×" /> | <img src={Check} alt="✓" /> |
 | Retrieve connectivity information of an Endpoint | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> |
 
-<!-- vale alex.Race = YES -->
-
 ## SIM management
 
-| Action | Admin | Observer | User |
+| Action | Administrator | Observer | User |
 | ------ | :---: | :------: | :--: |
 | Retrieve SIMs by ID | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> |
 | Update, Delete SIMs by ID | <img src={Check} alt="✓" /> | <img src={Uncheck} alt="×" /> | <img src={Check} alt="✓" /> |
@@ -59,7 +44,7 @@ The following tables describe the permissions for different roles.
 
 ## Service profile
 
-| Action | Admin | Observer | User |
+| Action | Administrator | Observer | User |
 | ------ | :---: | :------: | :--: |
 | Retrieve list of available Countries | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> |
 | Retrieve list of available Currencies | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> |
@@ -76,7 +61,7 @@ The following tables describe the permissions for different roles.
 
 ## Tariff profile
 
-| Action | Admin | Observer | User |
+| Action | Administrator | Observer | User |
 | ------ | :---: | :------: | :--: |
 | List of available Ratezone Statuses | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> |
 | List of available Tariff Statuses | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> |
@@ -92,7 +77,7 @@ The following tables describe the permissions for different roles.
 
 ## User management
 
-| Action | Admin | Observer | User |
+| Action | Administrator | Observer | User |
 | ------ | :---: | :------: | :--: |
 | Create Support Token to assume permissions of a User by ID | <img src={Uncheck} alt="×" /> | <img src={Uncheck} alt="×" /> | <img src={Uncheck} alt="×" /> |
 | Update, Delete Users | <img src={Check} alt="✓" /> | <img src={Uncheck} alt="×" /> | <img src={Uncheck} alt="×" /> |
@@ -106,7 +91,7 @@ The following tables describe the permissions for different roles.
 
 ## Alerts
 
-| Action | Admin | Observer | User |
+| Action | Administrator | Observer | User |
 | ------ | :---: | :------: | :--: |
 | Retrieve Organization/Endpoint Alerts | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> |
 | Retrieve events of a User by ID | <img src={Check} alt="✓" /> | <img src={Uncheck} alt="×" /> | <img src={Uncheck} alt="×" /> |
@@ -114,7 +99,7 @@ The following tables describe the permissions for different roles.
 
 ## MFA keys
 
-| Action | Admin | Observer | User |
+| Action | Administrator | Observer | User |
 | ------ | :---: | :------: | :--: |
 | Generate user shared secret key for MFA | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> |
 | Activate user shared secret key for MFA | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> |

@@ -8,7 +8,7 @@ slug: /system-events/event-types
 The following is a list of available event types, including their corresponding IDs and descriptions.
 
 :::note API Reference
-[Event Type Object - emnify REST API](https://cdn.emnify.net/api/doc/event.html#event-type-object)
+[Event type object](https://cdn.emnify.net/api/doc/event.html#event-type-object)
 :::
 
 ## Generic events
@@ -29,7 +29,7 @@ We'll update this list as new event types are created.
 :::
 
 <details className="custom-details-example">
-  <summary>Example JSON response: Disconnecting data access for a device to apply throttling action</summary>
+  <summary>Example JSON response: disconnecting data access for a device to apply throttling action</summary>
 
 ```json
 {
@@ -76,7 +76,7 @@ We'll update this list as new event types are created.
 </details>
 
 <details className="custom-details-example">
-  <summary>Example JSON response: Disconnecting data access for a device after updating the quota</summary>
+  <summary>Example JSON response: disconnecting data access for a device after updating the quota</summary>
 
 ```json
 {
@@ -133,18 +133,18 @@ We'll update this list as new event types are created.
 
 ### Update location
 
-When a device attaches for the first time, it will send an authentication request.
+When a device attaches for the first time, it sends an authentication request.
 This request is immediately followed by an `Update location` event.
 
-After the first authentication, the device will send additional `Update location` events to inform the network about the current location.
+After the first authentication, the device sends additional `Update location` events to inform the network about the current location.
 This happens periodically or when entering a new location area.
 
 The `Update location` event registers the device in the circuit-switched domain (2G/3G) and packet-switched domain (4G/LTE).
-It enables the network to know the location/region of the device in order to send/retrieve the subscription information.
+It enables the network to know the location/region of the device to send/retrieve the subscription information.
 In 2G/3G it allows the device to send and receive SMS. 
 
-**Example**: A SIM card has (re)authenticated with a different network element.
-If successful, the device will appear as **Attached** in the [emnify Portal](/system-events/usage#emnify-portal) and will be ready to receive SMS.
+**Example**: a SIM card has (re)authenticated with a different network element.
+If successful, the device appears as **Attached** in the [emnify Portal](/system-events/usage#emnify-portal) and is ready to receive SMS.
 
 <details className="custom-details-example">
   <summary>Example JSON response</summary>
@@ -222,7 +222,7 @@ attached to VLR='491720000095'.",
 Similar to the [`Update location`](#update-location) event, the `Update GPRS location` event shows the registration on the packet-switched (PS) domain.
 This event is also sent periodically or when changing the location area.
 
-**Example**: A SIM card has successfully registered for data sessions with a different network element.
+**Example**: a SIM card has successfully registered for data sessions with a different network element.
 
 :::note
 A device can only establish a data session after registering on the PS domain.
@@ -306,9 +306,9 @@ The visited network may send this event if the device is unreachable or switched
 
 The home network (emnify) may send this event to delete all information on the visited network, so the device needs a new authentication.
 
-Once executed, the [connectivity status](/glossary#connectivity-status) will appear as **Offline** in the [emnify Portal](/system-events/usage#emnify-portal).
+Once executed, the [connectivity status](/glossary#connectivity-status) appears as **Offline** in the [emnify Portal](/system-events/usage#emnify-portal).
 
-**Example**: The network deletes the routing information for a mobile-terminated call or mobile-terminated short message and marks the device not reachable.
+**Example**: the network deletes the routing information for a mobile-terminated call or mobile-terminated short message and marks the device not reachable.
 
 <details className="custom-details-example">
   <summary>Example JSON response</summary>
@@ -421,11 +421,11 @@ A [Packet Data Protocol (PDP) context](/glossary/#pdp-context) allows UE to exch
 
 A `Create PDP Context` event indicates the activation of data connectivity.
 
-**Example**: A device has established a data session and started transferring data.
-This device will appear as **Online** in the [emnify Portal](/system-events/usage#emnify-portal) as long as there hasn't been a subsequent [Delete PDP Context](#delete-pdp-context) event.
+**Example**: a device has established a data session and started transferring data.
+This device appears as **Online** in the [emnify Portal](/system-events/usage#emnify-portal) as long as there hasn't been a subsequent [Delete PDP Context](#delete-pdp-context) event.
 
 <details className="custom-details-example">
-  <summary>Example JSON response: Create PDP context accepted</summary>
+  <summary>Example JSON response: create PDP context accepted</summary>
 
 ```json
 {
@@ -513,7 +513,7 @@ This device will appear as **Online** in the [emnify Portal](/system-events/usag
 </details>
 
 <details className="custom-details-example">
-  <summary>Example JSON response: Create PDP context rejected because data service is disabled in the service profile</summary>
+  <summary>Example JSON response: create PDP context rejected because data service is disabled in the service profile</summary>
 
 ```json
 {
@@ -560,7 +560,7 @@ This device will appear as **Online** in the [emnify Portal](/system-events/usag
 </details>
 
 <details className="custom-details-example">
-  <summary>Example JSON response: Create PDP context rejected because the device doesn't have a quota</summary>
+  <summary>Example JSON response: create PDP context rejected because the device doesn't have a quota</summary>
 
 ```json
 {
@@ -607,7 +607,7 @@ This device will appear as **Online** in the [emnify Portal](/system-events/usag
 </details>
 
 <details className="custom-details-example">
-  <summary>Example JSON response: Create PDP Context Request rejected because the device's quota volume is exhausted, and the defined action is to block data traffic</summary>
+  <summary>Example JSON response: create PDP Context Request rejected because the device's quota volume is exhausted, and the defined action is to block data traffic</summary>
 
 ```json
 {
@@ -654,7 +654,7 @@ This device will appear as **Online** in the [emnify Portal](/system-events/usag
 </details>
 
 <details className="custom-details-example">
-  <summary>Example JSON response: Create PDP context request rejected because the SIM isn't activated</summary>
+  <summary>Example JSON response: create PDP context request rejected because the SIM isn't activated</summary>
 
 ```json
 {
@@ -704,8 +704,8 @@ This device will appear as **Online** in the [emnify Portal](/system-events/usag
 
 Data session between the device and the network is deleted.
 
-**Example**: A device disconnected and ended a data transfer.
-The event details will also show the data transmitted, and the device will appear as **Attached** in the [emnify Portal](/system-events/usage#emnify-portal).
+**Example**: a device disconnected and ended a data transfer.
+The event details also show the data transmitted, and the device appears as **Attached** in the [emnify Portal](/system-events/usage#emnify-portal).
 
 <details className="custom-details-example">
   <summary>Example JSON response</summary>
@@ -810,7 +810,7 @@ The event details will also show the data transmitted, and the device will appea
 Someone tried (and failed) to authenticate using an email from your organization.
 
 <details className="custom-details-example">
-  <summary>Example JSON response: Authentication failed due to a wrong password</summary>
+  <summary>Example JSON response: authentication failed due to a wrong password</summary>
 
 ```json
 {
@@ -845,7 +845,7 @@ Someone tried (and failed) to authenticate using an email from your organization
 </details>
 
 <details className="custom-details-example">
-  <summary>Example JSON response: Authentication failed after too many attempts</summary>
+  <summary>Example JSON response: authentication failed after too many attempts</summary>
 
 ```json
 {
@@ -1089,7 +1089,7 @@ The SIM is patched to the **Activated** [status](/glossary#sim-status) after pre
 **Issued**, **Suspended**, or **Factory Test**.
 
 You can manually trigger this event by using the [emnify Portal or REST API](/system-events/usage).
-Or, it will be automatically triggered when the factory test mode threshold (data or SMS) is reached.
+Or, it's automatically triggered when the factory test mode threshold (data or SMS) is reached.
 
 :::note
 Activated SIMs can use network services.
@@ -1209,7 +1209,7 @@ Activated SIMs can use network services.
 ### SIM suspension
 
 The SIM is patched to the **Suspended** [status](/glossary#sim-status), temporarily suspending and blocking it from network access.
-Starting from the first day of the next month, the suspended SIM will not accrue any charges.
+Starting from the first day of the next month, the suspended SIM doesn't accrue any charges.
 
 :::tip
 Activating a SIM with the **Suspended** status again is possible at any time.
@@ -1429,7 +1429,7 @@ SIM or SIM batch is registered to an organization via a [Batch Identification Co
 
 :::note
 This event doesn't trigger when the emnify team assigns SIMs to an organization.
-It also doesn't trigger for every SIM of a SIM batch, so the event log will only be visible on the individual SIM when registering single SIM batches.
+It also doesn't trigger for every SIM of a SIM batch, so the event log is only be visible on the individual SIM when registering single SIM batches.
 :::
 
 <details className="custom-details-example">
@@ -1605,10 +1605,10 @@ Triggered through the [emnify User Interface (EUI)](https://support.emnify.com/h
 
 ### Endpoint blocked
 
-Device is blocked from all services after exceeding [device policies](/portal/device-policies) (e.g., reaching its traffic limit).
+Device is blocked from all services after exceeding [device policies](/portal/device-policies) (for example, reaching its traffic limit).
 
 :::tip
-Changing the policies will unblock the device.
+Changing the policies unblocks the device.
 :::
 
 <details className="custom-details-example">
@@ -1663,7 +1663,7 @@ Changing the policies will unblock the device.
 The organization is blocked after exceeding the monthly cost limit (defined by emnify) or exceeding their prepaid balance (if not set up to be postpaid).
 
 <details className="custom-details-example">
-  <summary>Example JSON response: Prepaid balance exceeded</summary>
+  <summary>Example JSON response: prepaid balance exceeded</summary>
 
 ```json
 {
@@ -1698,7 +1698,7 @@ The organization is blocked after exceeding the monthly cost limit (defined by e
 </details>
 
 <details className="custom-details-example">
-  <summary>Example JSON response: Monthly cost limit exceeded</summary>
+  <summary>Example JSON response: monthly cost limit exceeded</summary>
 
 ```json
 {
@@ -1745,7 +1745,7 @@ The organization is blocked after exceeding the monthly cost limit (defined by e
 | 60  | [Data quota expired](#data-quota-expired)           |
 
 :::note API Reference
-Quota information is in the [detail object](https://cdn.emnify.net/api/doc/event.html#detail-object) of the event.
+Quota information is in the event's [detail object](https://cdn.emnify.net/api/doc/event.html#detail-object).
 :::
 
 ### Quota threshold reached
@@ -1757,7 +1757,7 @@ Exclusively for devices with enabled data quota management and a configured quot
 The threshold percentage can be submitted when the data quota is assigned to the device.
 :::
 
-**Example**: If the device's data quota volume is set to 100 MB and the threshold percentage to 15%, the system will generate an event when the remaining volume falls below 15 MB.
+**Example**: if the device's data quota volume is set to 100 MB and the threshold percentage to 15%, the system generates an event when the remaining volume falls below 15 MB.
 
 <details className="custom-details-example">
   <summary>Example JSON response</summary>
@@ -1820,9 +1820,9 @@ Exclusively for devices with data quota management enabled.
 
 :::caution
 Once this happens, the data quota status updates from **Active** to **Exhausted**, and the device won't be able to consume from the data service.
-Established connections for that device will disconnect within seconds, and new connection requests will be denied until a new data quota is assigned or data quota management is disabled in the service profile.
+Established connections for that device disconnects within seconds, and new connection requests are denied until a new data quota is assigned or data quota management is disabled in the service profile.
 
-It is also possible to define an action on **Throttle**.
+It's also possible to define an action on **Throttle**.
 This means the device can still use data services with less throughput.
 :::
 
@@ -1886,8 +1886,8 @@ Data quota management is enabled in a service profile.
 
 :::caution
 All devices using this service profile need to have an active data quota assigned to use the data service.
-Devices without active data quotas will disconnect within seconds.
-New connection requests will be denied until a new data quota is assigned or data quota management is disabled in the service profile.
+Devices without active data quotas disconnect within seconds.
+New connection requests are denied until a new data quota is assigned or data quota management is disabled in the service profile.
 :::
 
 <details className="custom-details-example">
@@ -1925,7 +1925,7 @@ New connection requests will be denied until a new data quota is assigned or dat
 Data quota management is disabled in a service profile.
 
 :::caution
-There will no longer be data service restrictions for devices using this service profile.
+There's no longer data service restrictions for devices using this service profile.
 :::
 
 <details className="custom-details-example">
@@ -1967,13 +1967,13 @@ Assigning a new data quota to a device is possible at any time.
 [Data quota management must be enabled](#data-quota-enabled) in the service profile.
 :::
 
-**Example**: A device has a quota volume of 50 MB with daily auto-refill enabled, valid until May 27, 2025, and action on exhaustion set to block.
-The event description will read:
+**Example**: a device has a quota volume of 50 MB with daily auto-refill enabled, valid until May 27, 2025, and action on exhaustion set to block.
+The event description reads:
 "Data quota got assigned with a volume of 50.000000 MB with daily refill till 2025-05-27T22:56:17Z.
 On exhaustion, the data service will be blocked.”
 
 <details className="custom-details-example">
-  <summary>Example JSON response: Action on exhaustion set to block</summary>
+  <summary>Example JSON response: action on exhaustion set to block</summary>
 
 ```json
 {
@@ -2040,7 +2040,7 @@ On exhaustion, the data service will be blocked.”
 </details>
 
 <details className="custom-details-example">
-  <summary>Example JSON response: Action on exhaustion set to throttle</summary>
+  <summary>Example JSON response: action on exhaustion set to throttle</summary>
 
 ```json
 {
@@ -2112,8 +2112,8 @@ Data quota is deleted from a device.
 
 :::caution
 Once deleted, devices on this service profile with data quota management enabled won't be able to use the data service.
-Potential data connections of this device will disconnect within seconds.
-New connection requests will be denied until an active data quota is assigned or data quota management is disabled in the service profile.
+Potential data connections of this device disconnect within seconds.
+New connection requests are denied until an active data quota is assigned or data quota management is disabled in the service profile.
 :::
 
 <details className="custom-details-example">
@@ -2239,7 +2239,7 @@ Exclusively for devices with enabled SMS quota management and a configured quota
 The threshold percentage can be submitted when the SMS quota is assigned to the device.
 :::
 
-**Example**: If the device's SMS quota volume is set to 10 SMS and the threshold percentage to 50%, the system will generate an event when the remaining volume falls below 5 MB.
+**Example**: if the device's SMS quota volume is set to 10 SMS and the threshold percentage to 50%, the system generates an event when the remaining volume falls below 5 MB.
 
 <details className="custom-details-example">
   <summary>Example JSON response</summary>
@@ -2306,7 +2306,7 @@ Exclusively for devices with enabled SMS quota management.
 
 :::caution
 Once this happens, the SMS quota status updates from **Active** to **Exhausted**, and the device won't be able to consume from the SMS service.
-Established connections for that device will disconnect within seconds, and new connection requests will be denied until a new SMS quota is assigned or SMS quota management is disabled in the service profile.
+Established connections for that device disconnect within seconds, and new connection requests are denied until a new SMS quota is assigned or SMS quota management is disabled in the service profile.
 :::
 
 <details className="custom-details-example">
@@ -2373,8 +2373,8 @@ SMS quota management is enabled in a service profile.
 
 :::caution
 All devices using this service profile need to have an active SMS quota assigned to use the SMS service.
-Devices without active SMS quotas will disconnect within seconds.
-New connection requests will be denied until a new SMS quota is assigned or SMS quota management is disabled in the service profile.
+Devices without active SMS quotas disconnect within seconds.
+New connection requests are denied until a new SMS quota is assigned or SMS quota management is disabled in the service profile.
 :::
 
 <details className="custom-details-example">
@@ -2412,7 +2412,7 @@ New connection requests will be denied until a new SMS quota is assigned or SMS 
 SMS quota management is disabled in a service profile.
 
 :::caution
-There will no longer be SMS service restrictions for devices using this service profile.
+There's no longer SMS service restrictions for devices using this service profile.
 :::
 
 <details className="custom-details-example">

@@ -4,9 +4,6 @@ description: Ensuring your success with emnify products and services
 
 # Support
 
-<!-- vale Google.We = NO -->
-<!-- Allow first-person plural pronouns when discussing support -->
-
 emnify is dedicated to your success with our service.
 We provide you with a choice of different plans, a globally based customer success team, and support with global roaming to ensure that you have connectivity wherever you need it.
 
@@ -22,7 +19,7 @@ They're designed to reduce operational costs by detecting issues before they dis
 
 | Feature | Standard | Business | Enterprise |
 | ------- | -------- | -------- | ---------- |
-| **Operating hours** | Mon-Fri 09:00-18:00 [CET](https://www.timeanddate.com/time/zones/cet) | 24x7x365 | 24x7x365 | 
+| **Operating hours** | Mon-Fri 09:00-18:00 CET | 24x7x365 | 24x7x365 | 
 | **Method of contact** | Tickets must be opened via web form.<br />Replies via email are possible. | Tickets must be opened via web form.<br />Replies via email are possible. | Web form, email, and phone |
 | **Help Center & Knowledge Base** | Yes | Yes | Yes |
 | **Pre-scheduled event support** | Not included | Yes | Yes |
@@ -62,10 +59,7 @@ For example:
 
 ### Operational incidents
 
-<!-- vale Google.WordList = NO -->
-<!-- Allow use of 'functionality' -->
 An *operational* incident is characterized by emnify's service having partial functionality.
-<!-- vale Google.WordList = YES -->
 Performance is degraded or limited, but regular services are still available.
 Immediate attention might be required if quality levels can't be fully achieved.
 For example:
@@ -75,17 +69,13 @@ For example:
 - VPN service degradation affecting a minimum of 25 devices
 - Requesting BIC2 codes or invalid BIC code related issues 
 - Unavailability of Regional Internet Breakouts
-- Data Streamer interruption or delay of 5 minutes
+- Data Streamer interruption or delay of five minutes
 
 ## Customer success managers
  
 In addition to emnify’s 24x7 support and network operation center (NOC), each customer has access to a Customer Success Manager (CSM).
 CSMs comprise a globally distributed team with local working hours.
-<!-- vale Google.Colons = NO -->
-<!-- 'English' is a proper noun -->
-<!-- https://developers.google.com/style/capitalization#capitalization-and-colons -->
 They're fluent in emnify's main supported languages: English, Spanish, Italian, French, and German.
-<!-- vale Google.Colons = YES -->
 The CSM team proactively engages with their customers to help them obtain value from the product and guide them through their journey.
 They also conduct onboarding sessions to get their customers acquainted with the platform and help with setting up integrations.
 

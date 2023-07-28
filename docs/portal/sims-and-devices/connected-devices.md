@@ -41,13 +41,10 @@ Each listed term includes a link to its associated [Glossary](/glossary) entry:
 
 ## Device status
 
-<!-- vale Google.WordList = NO -->
-<!-- State names are written the same as they're shown in the Portal -->
 A device has only two states, **Enabled** or **Disabled**.
 
 You can toggle one or more devices between these states to control their data usage.
 A disabled device doesn't incur any charges.
-<!-- vale Google.WordList = YES -->
 
 When you want a device to connect to a network, change its status to **Enabled**.
 To do this, use the **Status** toggle from the **Connected Devices** list or the device's **Details** page.

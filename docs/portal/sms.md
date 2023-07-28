@@ -98,8 +98,8 @@ Learn more about [no-code workflows in the emnify Portal](/portal/no-code).
 [Short Message Peer-to-Peer (SMPP)](/glossary#smpp) is a protocol that the telecommunication industry uses for exchanging SMS messages between short message service centers (SMSC) and/or external short messaging entities (ESME).
 Telematics platforms, SMS services, and operators often use SMPP to enable sending SMS to and from devices.
 
-You can [select and configure SMPP](/portal/device-policies#smpp-sms-interface) as your **SMS Interface** via a new or existing Service Policy under [**Device Policies**](https://portal.emnify.com/device-policies).
+You can [select and configure SMPP](/portal/device-policies#smpp-sms-interface) as your **SMS Interface** via a new or existing **Service Policy** under [**Device Policies**](https://portal.emnify.com/device-policies).
 
 :::info
-For an example of integrating SMPP with a third-party application, see [emnify SMS via SMPP integration with Gurtam's flespi and Wialon](https://www.emnify.com/integration-guides/smpp-integration-flespi-wialon-gurtam).
+For an example of integrating SMPP with a third-party application, see [emnify SMS via SMPP integration with Gurtams' flespi and Wialon](https://www.emnify.com/integration-guides/smpp-integration-flespi-wialon-gurtam).
 :::

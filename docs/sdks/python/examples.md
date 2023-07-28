@@ -20,7 +20,7 @@ This example demonstrates complex operations across multiple SDK [Concepts](/sdk
 - Device activation or deactivation
 
 :::tip
-You can [learn more about APN configuration via SMS](https://support.emnify.com/hc/en-us/articles/4401906757906-How-to-configure-the-APN-on-different-devices) on our Support page.
+You can [learn more about APN configuration via SMS](https://support.emnify.com/hc/en-us/articles/4401906757906-How-to-configure-the-APN-on-different-devices) in the emnify Knowledge Base.
 :::
 
 ```python title="mass_sim_activation.py"

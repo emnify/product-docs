@@ -1,55 +1,85 @@
 alex
+APN[s]
 AuC
 AWS
-Code of Conduct
+Bitrek
 CDR[s]
+[Cc]hipset
+Cinterion
+Coban
+Code of Conduct
+Concox
 CSM[s]
+Data Streamer
+Datadog
 DDoS
 Docusaurus
+[Dd]ownlink
+[Dd]ual-band
 eDRX
+Elinz
 emnify
 emnify Documentation
-emnify Documentation Development Guide
+emnify GraphQL API
 emnify IoT SuperNetwork
 emnify Portal
+emnify REST API
+emnify SDKs
+emnify SIMs
 eSIM
 ESLint
 eUICC
+Fibocom
 flespi
 Gartner
+Gemalto
 GitHub Pages
 Google
 Google Cloud Platform
-Gurtam
+Gradle
+GraphiQL IDE
+Gurtams
 IMEI[s]
 IMEISV[s]
+Integromat
+IoT
 IPsec
+Java
 Jira
+Kinesis
 LTE
 Luhn
+Meitrack
 Microsoft
 Microsoft Active Directory
 MNO[s]
+[Mm]ulticloud
 MVNO[s]
 Nano
 OAuth
 OpenVPN
+Quad-band
+Queclink
+Quectel
 [Rr]atezone
+ReachFar
 RESTful API
-SIM
+Ruptela
+Sequans
+SIMCom
 Sixfab
 SLA[s]
 SuperNetwork
 Telecom
 Telia
+Telit
 Teltonika
 Twilio
+u-blox
+[Uu]plink
 Vale
 Vodafone
-<<<<<<< HEAD
-Zendesk
-||||||| parent of 9e49f9e2 (Run Portal user guide through Vale)
-=======
+WeTrack
 Wialon
 Zapier
->>>>>>> 9e49f9e2 (Run Portal user guide through Vale)
+Zendesk

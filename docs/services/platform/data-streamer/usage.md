@@ -13,7 +13,7 @@ You can manage data streams with the [emnify Portal](#data-streamer-in-the-porta
 Managing data streams with the Portal is convenient when taking the first steps or if you don't expect configuration changes to be needed often.
 
 **[Data Streamer API](#data-streamer-api)**  
-Integrating the Data Streamer API becomes a faster and more secure approach when multiple data streams need to be managed as part of the daily business or in the case of advanced operations (e.g., seamless migration from one data stream to another without lags or duplicates).
+Integrating the Data Streamer API becomes a faster and more secure approach when multiple data streams need to be managed as part of the daily business or in the case of advanced operations (for example, seamless migration from one data stream to another without lags or duplicates).
 
 ## Data Streamer in the Portal
 
@@ -79,10 +79,10 @@ Instructions for configuring each connection type are in the [Available integrat
 Click **Create** and verify the status of your new stream.
 
 If everything goes well, the data stream is successfully created.
-The configuration view will close, and you will see the integration status shown as **Running**.
+The configuration view closes, and you see the integration status shown as **Running**.
 
 :::caution
-If the configuration is invalid, a warning will display along with an error message indicating the cause of the problem.
+If the configuration is invalid, a warning displays along with an error message indicating the cause of the problem.
 If this happens, the stream isn't created and you must correct the configuration.
 :::
 
@@ -114,10 +114,10 @@ You can find detailed information on the Data Streamer data properties and compa
 
 ### Authentication
 
-To use the emnify API, you need to authenticate with an authentication token.
-We use JWTs as the authentication token.
+To use the emnify REST API, you need to authenticate with an authentication token.
+emnify uses JWTs as the authentication token.
 
-Each integration also requires credentials to verify that the data streamer has permission to write data to that service.
+Each integration also requires credentials to verify that the Data Streamer has permission to write data to that service.
 
 :::tip
 The [Getting Started guide in the _emnify REST API Documentation_](https://cdn.emnify.net/api/doc/getting-started.html) provides step-by-step instructions for retrieving this token.
@@ -126,11 +126,11 @@ The [Getting Started guide in the _emnify REST API Documentation_](https://cdn.e
 ### Specification and documentation
 
 The [emnify REST API](/rest) is based on the OpenAPI Specification OAS3.
-We also have [interactive API documentation](https://cdn.emnify.net/api/doc/swagger.html).
+There's also [interactive API documentation](https://cdn.emnify.net/api/doc/swagger.html).
 
 :::tip
 Prior OpenAPI knowledge isn't necessary for working with the emnify API.
-Nevertheless, [understanding how an OpenAPI Specification is structured](https://oai.github.io/Documentation/specification.html) could help you navigate our documentation.
+Nevertheless, [understanding how an OpenAPI Specification is structured](https://oai.github.io/Documentation/specification.html) could help you navigate the documentation.
 :::
 
 The [Data Streamer reference page](https://cdn.emnify.net/api/doc/data-streamer.html) in the _emnify REST API Documentation_ provides details about the data structure and common elements you'll encounter while working with the Data Streamer API.
@@ -237,7 +237,7 @@ You can also create an event stream with [AWS Kinesis integration](/multicloud-d
 ```
 
 :::note API Reference
-[Create Data Stream - emnify REST API](https://cdn.emnify.net/api/doc/swagger.html#/Integrations/CreateDataStreamer).
+[Create data stream](https://cdn.emnify.net/api/doc/swagger.html#/Integrations/CreateDataStreamer).
 :::
 
 ### List data streams
@@ -253,14 +253,14 @@ curl -X GET "https://cdn.emnify.net/api/v2/data_stream" \
 ```
 
 :::note API Reference
-[List data stream configurations of your organization - emnify REST API](https://cdn.emnify.net/api/doc/swagger.html#/Integrations/ListDataStreamerV2s)
+[List data stream configurations of your organization](https://cdn.emnify.net/api/doc/swagger.html#/Integrations/ListDataStreamerV2s)
 :::
 
 ### Retrieve details
 
 Retrieving details of an existing data stream is possible by making a `GET` request to `/api/v2/data_stream/{data_stream_id}`.
 
-The `data_stream_id` path parameter is the top-level `id` property in each object returned by the [listing data streams](#listing-data-streams) request and is an ID that is unique for each data stream.
+The `data_stream_id` path parameter is the top-level `id` property in each object returned by the [listing data streams](#listing-data-streams) request and is an ID that's unique for each data stream.
 
 An example cURL request to get detailed information for a data stream with an ID of `123` would look like the following:
 
@@ -271,14 +271,14 @@ curl -X GET "https://cdn.emnify.net/api/v2/data_stream/123" \
 ```
 
 :::note API Reference
-[Get Details on Existing Data Stream - emnify REST API](https://cdn.emnify.net/api/doc/swagger.html#/Integrations/GetDataStreamerByIdV2)
+[Get details on existing data stream](https://cdn.emnify.net/api/doc/swagger.html#/Integrations/GetDataStreamerByIdV2)
 :::
 
 ### Update data streams
 
 Authenticated users may update data streams belonging to their organization by making a `PATCH` request to `/api/v2/data_stream/{data_stream_id}`.
 
-The `data_stream_id` path parameter is the top-level `id` property in each object returned by the [listing data streams](#listing-data-streams) request and is an ID that is unique for each data stream.
+The `data_stream_id` path parameter is the top-level `id` property in each object returned by the [listing data streams](#listing-data-streams) request and is an ID that's unique for each data stream.
 
 An example cURL request to update a data stream with an ID of `123`:
 
@@ -303,14 +303,14 @@ The following example shows how to pause a stream and erase any filters:
 ```
 
 :::note API Reference
-[Modify Existing Data Stream - emnify REST API](https://cdn.emnify.net/api/doc/swagger.html#/Integrations/PatchV2DataStream)
+[Modify existing data stream](https://cdn.emnify.net/api/doc/swagger.html#/Integrations/PatchV2DataStream)
 :::
 
 ### Delete data streams
 
-Sending a `DELETE` request to `/api/v2/data_stream/{data_stream_id}` will delete the data stream with that ID.
+Sending a `DELETE` request to `/api/v2/data_stream/{data_stream_id}` deletes the data stream with that ID.
 
-The `data_stream_id` path parameter is the top-level `id` property in each object returned by the [listing data streams](#listing-data-streams) request and is an ID that is unique for each data stream.
+The `data_stream_id` path parameter is the top-level `id` property in each object returned by the [listing data streams](#listing-data-streams) request and is an ID that's unique for each data stream.
 
 The following cURL request would then delete a data stream with an ID of `123`:
 
@@ -321,5 +321,5 @@ curl -X DELETE "https://cdn.emnify.net/api/v2/data_stream/123" \
 ```
 
 :::note API Reference
-[Delete Existing Data Stream - emnify REST API](https://cdn.emnify.net/api/doc/swagger.html#/Integrations/DeleteDataStreamerV2)
+[Delete existing data stream](https://cdn.emnify.net/api/doc/swagger.html#/Integrations/DeleteDataStreamerV2)
 :::

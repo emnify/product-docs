@@ -20,7 +20,7 @@ _Application-to-Peer SMS_
 The SMS sent and received between an application and a device (or vice versa).
 
 :::info
-Learn more about the [SMS types supported by the emnify platform](/services/sms) and [A2P routing via the emnify REST API](https://cdn.emnify.net/api/doc/sms-callback.html).
+Learn more about the [SMS types supported by the emnify platform](/services/sms) and how to [Receive MO SMS via API callback](https://cdn.emnify.net/api/doc/sms-callback.html).
 :::
 
 ## Assigned SIM  
@@ -37,19 +37,14 @@ A part of [GSM](#gsm) infrastructure, validates any SIM card attempting network 
 ## BIC
 _Batch Identification Code_
 
-A unique code for ordered SIM cards used to register the SIM cards on the [**SIM Inventory** page of the emnify Portal](https://portal.emnify.com/sim-inventory).
+A unique code for ordered SIM cards used to register the SIM cards in the [**SIM Inventory**](https://portal.emnify.com/sim-inventory).
 
 ## Callback URL  
-<!-- vale Google.Will = NO -->
-<!-- Future tense when discussing callbacks is ok -->
 URL that will be called by a service to send and receive data related to an event that caused this action.
-<!-- vale Google.Will = YES -->
 
 ## Carrier-agnostic network  
 A network that doesn't limit or prefer any specific network in a country and establishes a connection over any network that's transparent to the device.
 
-<!-- vale Google.WordList = NO -->
-<!-- 'check' isn't referring to a selector -->
 ## Check digit
 A checksum appended to identification data (for example, [IMEI](#imei), [EID](#eid), or [ICCID](#iccid)) representing the preceding digits and calculated using an algorithm. 
 
@@ -59,13 +54,9 @@ Check digits are used to validate the identifier, verify data integrity, and hel
 Several identifiers have a check digits but can be calculated differently and have different names.
 For example, [ICCID](#iccid) numbers use a [_Luhn checksum digit_](#luhn-checksum-digit), while the last digits of the [EID](#eid) are called _check digits_.
 :::
-<!-- vale Google.WordList = YES -->
 
 ## Company account
-<!-- vale Google.Contractions = NO -->
-<!-- 'That is' is used as an alternative for 'i.e.' -->
 A company's emnify account (that is, an [**Organization**](#organization) in the [emnify Portal](https://portal.emnify.com/)).
-<!-- vale Google.Contractions = YES -->
 
 :::note
 Every company account (on any plan) is a [workspace](#workspace) by default.
@@ -120,10 +111,7 @@ It has a fixed length of 32 digits, as indicated in the following diagram:
 ![A 32-digit EID number: "89049011803455664400046832584675" The first 18 digits are the EUM Identification Number (EIN). Within those 18 digits, the first two digits are the Major Industry Identifier (Telecom in this example). The next three digits are the Country Code (GER in this example). The next three digits are the eUICC Manufacturer. The final 10 digits of the EIN contain information about the chip, OS, and its version. After the EIN, the following 11 digits are the EUM Specific Identification Number (ESIN). This value is also the eUICC Individual Identification Number. The final two digits of the EID are the Check Digits.](assets/infographic-eid-digits.png)
 
 :::note
-<!-- vale Google.WordList = NO -->
-<!-- 'check' isn't referring to a selector -->
 The EUM specific identification number (ESIN) and [check digits](#check-digit) are for example purposes only, and the values aren't real.
-<!-- vale Google.WordList = YES -->
 :::
 
 Unlike the [ICCID](#iccid), the EID remains the same throughout the life of the eSIM.
@@ -145,7 +133,7 @@ Learn more about [configuring the device status in the emnify Portal](/portal/co
 :::
 
 :::note API Reference
-[Endpoint Status Object - emnify REST API](https://cdn.emnify.net/api/doc/endpoint.html#endpoint-status-object)
+[Endpoint status object](https://cdn.emnify.net/api/doc/endpoint.html#endpoint-status-object)
 :::
 
 ## eSIM
@@ -160,15 +148,10 @@ The [emnify eSIM](/services/global-iot-sim) has capabilities not available with 
 _Embedded Universal Integrated Circuit Card_ 
 
 The embedded universal integrated circuit card (eUICC) is a component of a [SIM](#sim) card.
-It allows consumers and IoT manufacturers to provision the SIM with a new [operator profile](https://www.emnify.com/iot-glossary/mno) [over-the-air](#ota).
+It allows consumers and IoT manufacturers to provision the SIM with a new [mobile network operator (MNO)](https://www.emnify.com/iot-glossary/mno) profile [over-the-air](#ota).
 
 :::tip Deep dive
-<!-- vale Google.Contractions = NO -->
-<!-- vale Google.Colons = NO -->
-<!-- Follows the blog post title formatting -->
 Learn more about the eUICC in the blog post: [What is an eUICC and why does it matter?](https://www.emnify.com/iot-glossary/what-is-an-euicc)
-<!-- vale Google.Contractions = YES -->
-<!-- vale Google.Colons = YES -->
 :::
 
 ## Event log  
@@ -227,12 +210,8 @@ For example, the ICCID value can change when a different [SIM profile](#sim-prof
 The emnify REST API returns two ICCID values: `iccid` and `iccid_with_luhn`.
 The `iccid_with_luhn` value _includes_ the final [Luhn checksum digit](#luhn-checksum-digit), while the `iccid` value doesn't. 
 
-<!-- vale Google.Colons = NO -->
-<!-- 'SIM' is a proper noun -->
-<!-- https://developers.google.com/style/capitalization#capitalization-and-colons -->
-API references: [SIM Object](https://cdn.emnify.net/api/doc/sim.html#sim-object) and [Endpoint Object](https://cdn.emnify.net/api/doc/endpoint.html#sim-object)
+API references: [SIM object](https://cdn.emnify.net/api/doc/sim.html#sim-object) and [Endpoint object](https://cdn.emnify.net/api/doc/endpoint.html#sim-object)
 :::
-<!-- vale Google.Colons = YES -->
 
 ## IMEI
 _International Mobile Equipment Identity_
@@ -250,10 +229,7 @@ A unique number used to identify cellular modems.
 
 :::info
 There are also "software versions" of IMEIs, referred to as _IMEISVs_. 
-<!-- vale Google.WordList = NO -->
-<!-- 'check' isn't referring to a selector -->
 In an IMEISV, there is no [check digit](#check-digit), and the last two digits represent the Software Version Number (SVN).
-<!-- vale Google.WordList = YES -->
 :::
 
 ## IMEI lock  
@@ -263,7 +239,7 @@ The practice of strictly associating a SIM to the device with a certain [IMEI](#
 _International Mobile Subscriber Identity_
 
 A unique number used to identify a [GSM](#gsm) subscriber.
-Therefore it will change if a device connects to a different operator while roaming.
+Therefore it changes if a device connects to a different operator while roaming.
 
 <details className="custom-details-example">
   <summary>See how the IMSI is constructed</summary>
@@ -272,8 +248,8 @@ Therefore it will change if a device connects to a different operator while roam
   It comprises three components: MCC, MNC, and MSIN.
 
   MCC: 3-digit country identifier  
-  MNC: Operator identifier (2 or 3 digits)  
-  MSIN: Identifier for the connected device (9 or 10 digits)  
+  MNC: operator identifier (two or three digits)  
+  MSIN: identifier for the connected device (nine or 10 digits)  
 
   <img
     src={require('./assets/imsi-components-table.png').default}
@@ -300,10 +276,7 @@ _Location Area Code_
 A unique 16-digit fixed-length location area identity code that identifies a phone number’s location area.
 
 ## Luhn checksum digit
-<!-- vale Google.WordList = NO -->
-<!-- 'check' isn't referring to a selector -->
 A [check digit](#check-digit) calculated from the previous digits using the [Luhn algorithm](https://en.wikipedia.org/wiki/Luhn_algorithm).
-<!-- vale Google.WordList = YES -->
 
 :::tip
 Luhn checksum digits are most notably used to validate [ICCID](#iccid) and [IMEI](#imei) numbers.
@@ -327,7 +300,7 @@ A combination generated by an external device or a service that's used to authen
 _Mobile Station International Subscriber Directory Number_
 
 A unique number used to identify a mobile phone number internationally—essentially the telephone number assigned to each SIM.
-For an emnify IoT eSIM, this number is needed for its ability to receive SMS messages (i.e., [SMS MT](/glossary#sms-mt)).
+For an emnify IoT eSIM, this number is needed for its ability to receive SMS messages (that is, [SMS MT](/glossary#sms-mt)).
 
 ## MSC
 _Mobile Switching Center_
@@ -338,7 +311,7 @@ The part of [GSM](#gsm) architecture that controls the network switching subsyst
 The [company](#company-account) (or subsidiary, branch, division, department, etc.) associated with a [workspace](#workspace).
 
 :::info
-Information on your organization, employees, subscriptions, and more are available in the [emnify Portal under **Organization Settings**](https://portal.emnify.com/organisation-settings/).
+Information on your organization, employees, subscriptions, and more are available in the emnify Portal under [**Organization Settings**](https://portal.emnify.com/organisation-settings/).
 :::
 
 ## OTA
@@ -421,7 +394,7 @@ All SIMs assigned to your organization.
 Reflects the current state of the [SIM](#sim) in the [SIM lifecycle](/services/sim-lifecycle-management).
 
 :::note API reference
-[SIM Status Object - emnify REST API](https://cdn.emnify.net/api/doc/sim.html#status-object)
+[SIM status object](https://cdn.emnify.net/api/doc/sim.html#status-object)
 :::
 
 ## SMPP
@@ -447,10 +420,7 @@ Learn more about the [SMS types supported by the emnify platform](/services/sms)
 :::tip
 Using the emnify REST API, you can dispatch MO SMS from devices as HTTP `POST` requests toward a user-configurable URL.
 
-<!-- vale Google.Colons = NO -->
-<!-- Follows the API reference title formatting -->
-Read more: [Receive MO SMS via API Callback](https://cdn.emnify.net/api/doc/sms-callback.html)
-<!-- vale Google.Colons = YES -->
+For more information, see [Receive MO SMS via API callback](https://cdn.emnify.net/api/doc/sms-callback.html)
 :::
 
 ## SMS MT  
@@ -482,7 +452,7 @@ User-defined limit of consumption of a certain service (data, SMS) per endpoint.
 
 ## User account
 An account associated with a specific person and used to log in to one or more [workspaces](#workspace).
-User accounts can be assigned a role (for example, **Admin**).
+User accounts can be assigned a role (for example, **Administrator**).
 
 ## User-defined coverage  
 An ability to select which operator the customer’s SIM connects to.
@@ -511,10 +481,7 @@ A service that protects your internet connection and privacy online.
 :::tip
 IPsec and [OpenVPN](#openvpn) are both protocols for securing data transmission through a VPN.
 
-<!-- vale Google.Colons = NO -->
-<!-- Follows the IoT Glossary post title formatting -->
-Learn more: [IPsec vs OpenVPN: What's the Difference?](https://www.emnify.com/iot-glossary/ipsec-vs-openvpn)
-<!-- vale Google.Colons = YES -->
+For more information, see [IPsec vs OpenVPN: What's the difference?](https://www.emnify.com/iot-glossary/ipsec-vs-openvpn)
 :::
 
 ## Workspace
@@ -523,7 +490,7 @@ Workspaces can be managed individually or, if [linked](#linked-workspaces), cent
 
 :::note
 Every [company account](#company-account) (on any plan) is a workspace by default.
-Accounts on the [**Pro** plan](https://portal.emnify.com/organisation-settings/subscription#plans) can have up to 5 workspaces.
+Accounts on the **Pro** plan can have up to five workspaces.
 :::
 
 :::tip Step-by-step guide
@@ -531,7 +498,7 @@ Accounts on the [**Pro** plan](https://portal.emnify.com/organisation-settings/s
 :::
 
 ## Workspace switcher
-The feature in the [emnify Portal](https://portal.emnify.com/) allowing **Admin** [user accounts](#user-account) to switch between workspaces.
+The feature in the [emnify Portal](https://portal.emnify.com/) allowing **Administrator** [user accounts](#user-account) to switch between workspaces.
 
 :::tip Step-by-step guide
 [Switching between workspaces](/workspaces/switch)

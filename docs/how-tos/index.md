@@ -23,7 +23,7 @@ slug: /how-tos
 ## Organization and billing
 
 - [Set up multi-inclusive volumes](/how-tos/multi-inclusive-volumes)
-- [Enable workspaces on your Pro plan](/workspaces/create)
+- [Create a new workspace](/workspaces/create)
 
 ## SMS
 
