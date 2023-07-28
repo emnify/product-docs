@@ -1,0 +1,22 @@
+name: Validate content with Vale
+
+on:
+  pull_request:
+    push:
+      - main
+    branches:
+      - main
+    paths:
+      - '**.md'
+      - '**.mdx'
+
+jobs:
+  vale:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: errata-ai/vale-action@reviewdog
+        with:
+          files: docs/
+          fail_on_error: true
+          vale_flags: "--config=.vale.ini"
