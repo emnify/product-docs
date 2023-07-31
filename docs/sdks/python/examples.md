@@ -19,14 +19,14 @@ This guide shows a listing of the main examples to get devices online including 
 | Disable device |  With a specific ID. | [Source code](https://github.com/emnify/emnify-sdk-python/blob/main/docs/examples/device_lifecycle_management.py)  |
 | Delete device  |  With a specific ID.  |  [Source code](https://github.com/emnify/emnify-sdk-python/blob/main/docs/examples/device_lifecycle_management.py) |
 | Filtering and sorting | To perform certain tasks, as  <ul><li>finding all SIMs for a specific customer organization</li><li>sorts all devices by the last updated date</li></ul>    | [Source code](https://github.com/emnify/emnify-sdk-python/blob/main/docs/examples/filtering_and_sorting.py)  |
-| Manage device connectivity | To reset device's data connectivity or the network connectivity. <br> [Connectivity troubleshooting](https://www.emnify.com/developer-blog/5-ways-to-detect-and-solve-connectivity-issues#network-events) | [Source code](https://github.com/emnify/emnify-sdk-python/blob/main/docs/examples/device_lifecycle_management.py)  |
+| Manage device connectivity | To reset device's data connectivity or the network connectivity. <br /> [Connectivity troubleshooting](https://www.emnify.com/developer-blog/5-ways-to-detect-and-solve-connectivity-issues#network-events) | [Source code](https://github.com/emnify/emnify-sdk-python/blob/main/docs/examples/device_lifecycle_management.py)  |
 
 
 ## 2 Alternative Table
 
 <details>
 <summary>Alternative table</summary>
-<br>
+<br />
     
 | Task                             | Description   |
 |---|---|
@@ -51,7 +51,7 @@ This guide shows a listing of the main examples to get devices online including 
 
 <details>
 <summary>Get your first device online?</summary>
-<br>
+<br />
 
 Follow the steps in the next code block comments to get your devices online.
 
@@ -168,7 +168,7 @@ for sim in issued_sims:
 
 <details>
 <summary>Initialization of the SDK client</summary>
-<br>
+<br />
 
 ```python title="device_lifecycle_management.py"
 from emnify import EMnify
@@ -180,7 +180,7 @@ emnify = EMnify(app_token='your token')
 
 <details>
 <summary>Create and activate a device</summary>
-<br>
+<br />
 
 - Device creation
 - SIM registration
@@ -229,7 +229,7 @@ sim_status = device.sim.status.description  # SIM status will be 'Activated'
 
 <details>
 <summary> Configure a device </summary>
-<br>
+<br />
 
 ```python title="device_lifecycle_management.py"
 #  === Example: Configure a device ===
@@ -253,7 +253,7 @@ deivce_name = updated_device.name  # Updated name will be 'new name'
 
 <details>
 <summary> Configure operator blocklist for device </summary>
-<br>
+<br />
 
 You may want to refrain from using a specific operator to avoid incurring costs with the device.
 
@@ -288,7 +288,7 @@ emnify.devices.delete_device_blacklist_operator(device_id=device_id, operator_id
 
 <details>
 <summary> Disable device </summary>
-<br>
+<br />
 
 ```python title="device_lifecycle_management.py"
 #  === Example: Disable device ===
@@ -312,7 +312,7 @@ sim_status = disabled_device.sim.status.description # SIM status will be 'Suspen
 
 <details>
 <summary> Delete device </summary>
-<br>
+<br />
 
 ```python title="device_lifecycle_management.py"
 #  === Example: Delete device ===
@@ -346,7 +346,7 @@ sim_status = sim.status.description  # SIM status will be 'Suspended'
 
 <details>
 <summary> Filtering and sorting </summary>
-<br>
+<br />
 
 ```python title="filtering_and_sorting.py"
 # === Example: Using a Filtering for List calls  ===
@@ -406,7 +406,7 @@ for latest_device in sorted_devices:
 
 <details>
 <summary> Manage device connectivity </summary>
-<br>
+<br />
 
 [Connectivity troubleshooting](https://www.emnify.com/developer-blog/5-ways-to-detect-and-solve-connectivity-issues#network-events)
   
