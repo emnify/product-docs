@@ -9,6 +9,7 @@ slug: /sdks/java/quickstart
 
 The emnify Java SDK is open source and the source code is available on [GitHub](https://github.com/EMnify/emnify-sdk-java).
 
+&nbsp;
 ## Installation
 
 To install the SDK, add the emnify dependency to your existing project and use build automation tools like Maven or Gradle or install it yourself manually.
@@ -62,7 +63,6 @@ If you want to build your own `.jar`, execute the following from within the clon
 ```
 </details>
 
-
 <!-- ## Environment variables -->
 
 To store configuration settings like an application token or a base URL, use environment variables instead of hardcoding them in your application. Here are some examples:
@@ -74,6 +74,7 @@ To store configuration settings like an application token or a base URL, use env
 | `EMNIFY_USERNAME` and `EMNIFY_PASSWORD` | Variables for authenticating via [username and password](/rest/authentication#authenticate-with-user-credentials). |
 
 
+&nbsp;
 ## Supported versions
 
 #### Supported Java implementations:
@@ -89,6 +90,7 @@ To store configuration settings like an application token or a base URL, use env
 #### TLS requirements:
 Refer to the [SSL Report table](https://www.ssllabs.com/ssltest/analyze.html?d=cdn.emnify.net&latest) for the supported Transport Layer Security (TLS) versions.
 
+&nbsp;
 ## Explore more 
 
 If you're new to IoT connectivity and emnify, start by learning some [common terminology and concepts](/sdks/concepts) and explore some [use cases](/sdks/java/examples) that show what the SDK is capable of. 
