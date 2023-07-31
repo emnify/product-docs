@@ -16,13 +16,22 @@ This library supports the following Java implementations:
 - [OracleJDK 8](https://www.oracle.com/java/technologies/downloads/#java8)
 - [OracleJDK 11](https://www.oracle.com/java/technologies/downloads/#java11)
 
+<!-- Alternative
+| Java Version  | Description   |
+|    ---        |    ---        |
+| OpenJDK 8     | [Link](https://openjdk.org/projects/jdk8/)  |
+| OpenJDK 11    | [Link](https://openjdk.org/projects/jdk/11/)  |
+| OracleJDK 8   | [Link](https://www.oracle.com/java/technologies/downloads/#java8)  |
+| OracleJDK 11  | [Link](https://www.oracle.com/java/technologies/downloads/#java11)  |
+-->
+
 ## TLS requirements
 
 Refer to the [SSL Report table](https://www.ssllabs.com/ssltest/analyze.html?d=cdn.emnify.net&latest) for the supported Transport Layer Security (TLS) versions.
 
 ## Installation
 
-The emnify Java SDK is open source and the [source code is available on GitHub](https://github.com/EMnify/emnify-sdk-java).
+The emnify Java SDK is open source and the source code is available on [GitHub](https://github.com/EMnify/emnify-sdk-java).
 
 The recommended method for installing the SDK is with a build automation tool, like Maven or Gradle. 
 You can add the emnify dependency to your existing project, specifying the latest version.
@@ -84,10 +93,6 @@ You can use environment variables for storing configuration settings like an app
 
 ## Explore more 
 
-Now that you have the SDK configured, it's time to learn what you can do with it.
-
-If you're new to IoT connectivity and emnify, start by learning some [common terminology and concepts](/sdks/concepts). 
-
-Once you're comfortable with these [concepts](/sdks/concepts), you can explore some use cases that show what the SDK is capable of based on a few [Examples](/sdks/java/examples). 
+If you're new to IoT connectivity and emnify, start by learning some [common terminology and concepts](/sdks/concepts) and explore some [use cases](/sdks/java/examples) that show what the SDK is capable of. 
 
 Also, see the [emnify System Documentation](https://cdn.emnify.net/api/doc/index.html) and our [OpenAPI specification](https://cdn.emnify.net/api/doc/swagger.html).
