@@ -18,9 +18,9 @@ Regardless of the package manager you are using, you need to specify the latest 
 Please use `{version}` to do so, as demonstrated in the following example. :::
 
 
-### Supported versions
+### Prerequisites
 
-<b>Java:</b>
+<b>Supported Java versions:</b>
 [OpenJDK 8](https://openjdk.org/projects/jdk8/), [OpenJDK 11](https://openjdk.org/projects/jdk/11/), [OracleJDK 8](https://www.oracle.com/java/technologies/downloads/#java8) and [OracleJDK 11](https://www.oracle.com/java/technologies/downloads/#java11).
 
 <!-- Alternative
