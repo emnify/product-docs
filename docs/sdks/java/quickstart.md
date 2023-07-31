@@ -7,10 +7,9 @@ slug: /sdks/java/quickstart
 
 # Getting started with the emnify Java SDK
 
-The emnify Java SDK is open source and the source code is available on [GitHub](https://github.com/EMnify/emnify-sdk-java).
-
-&nbsp;
 ## Installation
+
+The emnify Java SDK is open source and the source code is available on [GitHub](https://github.com/EMnify/emnify-sdk-java).
 
 To install the SDK, add the emnify dependency to your existing project and use build automation tools like Maven or Gradle or install it yourself manually.
 
@@ -18,8 +17,24 @@ To install the SDK, add the emnify dependency to your existing project and use b
 Regardless of the package manager you are using, you need to specify the latest version of the emnify Java SDK.
 Please use `{version}` to do so, as demonstrated in the following example. :::
 
-<details>
-<summary><b>Maven guide</b></summary>
+
+### Supported versions
+
+<b>Java:</b>
+[OpenJDK 8](https://openjdk.org/projects/jdk8/), [OpenJDK 11](https://openjdk.org/projects/jdk/11/), [OracleJDK 8](https://www.oracle.com/java/technologies/downloads/#java8) and [OracleJDK 11](https://www.oracle.com/java/technologies/downloads/#java11).
+
+<!-- Alternative
+- [OpenJDK 8](https://openjdk.org/projects/jdk8/)
+- [OpenJDK 11](https://openjdk.org/projects/jdk/11/)
+- [OracleJDK 8](https://www.oracle.com/java/technologies/downloads/#java8)
+- [OracleJDK 11](https://www.oracle.com/java/technologies/downloads/#java11)
+-->
+
+<b>TLS requirements: </b>
+Refer to the [SSL Report table](https://www.ssllabs.com/ssltest/analyze.html?d=cdn.emnify.net&latest) for the supported Transport Layer Security (TLS) versions.
+
+
+### Install with Maven
 
 Use the following dependency in your project to grab via [Maven](https://maven.apache.org/download.cgi):
 ```xml
@@ -32,10 +47,7 @@ Use the following dependency in your project to grab via [Maven](https://maven.a
 
 Replace *`VERSION_NUMBER`* with the version of Maven you're using.
 
-</details>
-
-<details>
-<summary><b>Gradle guide</b></summary>
+### Install with Gradle
 
 Use the following to add the emnify dependency to your project via [Gradle](https://gradle.org/install/):
 ```gradle
@@ -43,10 +55,8 @@ Use the following to add the emnify dependency to your project via [Gradle](http
 ```
 
 Replace *`VERSION_NUMBER`* with the version of Gradle you're using.
-</details>
 
-<details>
-<summary><b>Install manually</b></summary>
+### Install manually
 
 If you want to compile it yourself, here's how:
 
@@ -61,9 +71,10 @@ If you want to build your own `.jar`, execute the following from within the clon
 ```shell
   mvn package
 ```
-</details>
 
-<!-- ## Environment variables -->
+## Configuration
+
+### Environment variables
 
 To store configuration settings like an application token or a base URL, use environment variables instead of hardcoding them in your application. Here are some examples:
 
@@ -74,23 +85,6 @@ To store configuration settings like an application token or a base URL, use env
 | `EMNIFY_USERNAME` and `EMNIFY_PASSWORD` | Variables for authenticating via [username and password](/rest/authentication#authenticate-with-user-credentials). |
 
 
-&nbsp;
-## Supported versions
-
-#### Supported Java implementations:
-[OpenJDK 8](https://openjdk.org/projects/jdk8/), [OpenJDK 11](https://openjdk.org/projects/jdk/11/), [OracleJDK 8](https://www.oracle.com/java/technologies/downloads/#java8) and [OracleJDK 11](https://www.oracle.com/java/technologies/downloads/#java11).
-
-<!-- Alternative
-- [OpenJDK 8](https://openjdk.org/projects/jdk8/)
-- [OpenJDK 11](https://openjdk.org/projects/jdk/11/)
-- [OracleJDK 8](https://www.oracle.com/java/technologies/downloads/#java8)
-- [OracleJDK 11](https://www.oracle.com/java/technologies/downloads/#java11)
--->
-
-#### TLS requirements:
-Refer to the [SSL Report table](https://www.ssllabs.com/ssltest/analyze.html?d=cdn.emnify.net&latest) for the supported Transport Layer Security (TLS) versions.
-
-&nbsp;
 ## Explore more 
 
 If you're new to IoT connectivity and emnify, start by learning some [common terminology and concepts](/sdks/concepts) and explore some [use cases](/sdks/java/examples) that show what the SDK is capable of. 
