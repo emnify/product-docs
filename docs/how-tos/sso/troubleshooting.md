@@ -3,7 +3,7 @@ description: Tips for combating common issues when setting up SSO for your emnif
 slug: /sso/troubleshooting
 ---
 
-# SSO Troubleshooting
+# SSO troubleshooting
 
 If you encounter any issues while setting up SSO, use the following suggestions to help troubleshoot.
 
@@ -19,4 +19,4 @@ If you encounter any issues while setting up SSO, use the following suggestions 
 
 If everything looks correct and you still have issues, try again using an incognito tab. 
 
-You can also [contact support](https://support.emnify.com/).
+You can also [contact emnify support](https://support.emnify.com/).

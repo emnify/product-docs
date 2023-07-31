@@ -1,0 +1,20 @@
+# emnify.Condescending
+# Extended version of the Condescending.yml from the alex package: https://alexjs.com/
+extends: existence
+message: Using '%s' may come across as condescending.
+link: https://css-tricks.com/words-avoid-educational-writing/
+level: error
+ignorecase: true
+tokens:
+  - obvious
+  - obviously
+  - simple
+  - simply
+  - simpler
+  - easy
+  - easily
+  - easier
+  - of course
+  - clearly
+  - everyone knows
+  - just
