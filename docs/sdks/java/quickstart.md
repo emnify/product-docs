@@ -7,44 +7,20 @@ slug: /sdks/java/quickstart
 
 # Getting started with the emnify Java SDK
 
-## Supported Java versions 
-
-This library supports the following Java implementations:
-
-- [OpenJDK 8](https://openjdk.org/projects/jdk8/)
-- [OpenJDK 11](https://openjdk.org/projects/jdk/11/)
-- [OracleJDK 8](https://www.oracle.com/java/technologies/downloads/#java8)
-- [OracleJDK 11](https://www.oracle.com/java/technologies/downloads/#java11)
-
-<!-- Alternative
-| Java Version  | Description   |
-|    ---        |    ---        |
-| OpenJDK 8     | [Link](https://openjdk.org/projects/jdk8/)  |
-| OpenJDK 11    | [Link](https://openjdk.org/projects/jdk/11/)  |
-| OracleJDK 8   | [Link](https://www.oracle.com/java/technologies/downloads/#java8)  |
-| OracleJDK 11  | [Link](https://www.oracle.com/java/technologies/downloads/#java11)  |
--->
-
-## TLS requirements
-
-Refer to the [SSL Report table](https://www.ssllabs.com/ssltest/analyze.html?d=cdn.emnify.net&latest) for the supported Transport Layer Security (TLS) versions.
+The emnify Java SDK is open source and the source code is available on [GitHub](https://github.com/EMnify/emnify-sdk-java).
 
 ## Installation
 
-The emnify Java SDK is open source and the source code is available on [GitHub](https://github.com/EMnify/emnify-sdk-java).
-
-The recommended method for installing the SDK is with a build automation tool, like Maven or Gradle. 
-You can add the emnify dependency to your existing project, specifying the latest version.
+To install the SDK, add the emnify dependency to your existing project and use build automation tools like Maven or Gradle or install it yourself manually.
 
 :::caution
 Regardless of the package manager you are using, you need to specify the latest version of the emnify Java SDK.
-The following examples use `{version}` where this should be specified.
-:::
+Please use `{version}` to do so, as demonstrated in the following example. :::
 
-### Maven
+<details>
+<summary><b>Maven guide</b></summary>
 
 Use the following dependency in your project to grab via [Maven](https://maven.apache.org/download.cgi):
-
 ```xml
     <dependency>
         <groupId>com.emnify.sdk</groupId>
@@ -55,17 +31,21 @@ Use the following dependency in your project to grab via [Maven](https://maven.a
 
 Replace *`VERSION_NUMBER`* with the version of Maven you're using.
 
-### Gradle
+</details>
+
+<details>
+<summary><b>Gradle guide</b></summary>
 
 Use the following to add the emnify dependency to your project via [Gradle](https://gradle.org/install/):
-
 ```gradle
     implementation group: "com.emnify.sdk", name: "emnify", version: "VERSION_NUMBER"
 ```
 
 Replace *`VERSION_NUMBER`* with the version of Gradle you're using.
+</details>
 
-### Compile the SDK yourself
+<details>
+<summary><b>Install manually</b></summary>
 
 If you want to compile it yourself, here's how:
 
@@ -80,16 +60,34 @@ If you want to build your own `.jar`, execute the following from within the clon
 ```shell
   mvn package
 ```
+</details>
 
-## Environment variables
 
-You can use environment variables for storing configuration settings like an application token or a base URL instead of hardcoding them in your application.
+<!-- ## Environment variables -->
+
+To store configuration settings like an application token or a base URL, use environment variables instead of hardcoding them in your application. Here are some examples:
 
 | Name               | Description                                                              |
 |--------------------|--------------------------------------------------------------------------|
 | `EMNIFY_BASE_PATH` | Base URL to form a request. Default value:  `https://cdn.emnify.net` |
 | `EMNIFY_APPLICATION_TOKEN`  | Variable for authenticating via an [application token](/rest/authentication#authenticate-with-an-application-token). |
 | `EMNIFY_USERNAME` and `EMNIFY_PASSWORD` | Variables for authenticating via [username and password](/rest/authentication#authenticate-with-user-credentials). |
+
+
+## Supported versions
+
+#### Supported Java implementations:
+[OpenJDK 8](https://openjdk.org/projects/jdk8/), [OpenJDK 11](https://openjdk.org/projects/jdk/11/), [OracleJDK 8](https://www.oracle.com/java/technologies/downloads/#java8) and [OracleJDK 11](https://www.oracle.com/java/technologies/downloads/#java11).
+
+<!-- Alternative
+- [OpenJDK 8](https://openjdk.org/projects/jdk8/)
+- [OpenJDK 11](https://openjdk.org/projects/jdk/11/)
+- [OracleJDK 8](https://www.oracle.com/java/technologies/downloads/#java8)
+- [OracleJDK 11](https://www.oracle.com/java/technologies/downloads/#java11)
+-->
+
+#### TLS requirements:
+Refer to the [SSL Report table](https://www.ssllabs.com/ssltest/analyze.html?d=cdn.emnify.net&latest) for the supported Transport Layer Security (TLS) versions.
 
 ## Explore more 
 
