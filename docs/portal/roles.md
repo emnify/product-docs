@@ -3,8 +3,8 @@ description: Review the emnify account permissions for various roles
 slug: /portal/roles
 ---
 
-import Check from './assets/check-mark-3-24.png';
-import Uncheck from './assets/x-mark-24.png';
+import Check from './assets/check-simple.svg';
+import Close from './assets/close.svg';
 
 # Roles and permissions
 
@@ -25,89 +25,89 @@ The following tables describe the permissions for different roles.
 
 | Action | Administrator | Observer | User |
 | ------ | :---: | :------: | :--: |
-| Retrieve an endpoint by ID | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> |
-| Update, Delete an endpoint by ID | <img src={Check} alt="✓" /> | <img src={Uncheck} alt="×" /> | <img src={Check} alt="✓" /> |
-| Retrieve the blacklisted Operators for an Endpoint | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> |
-| Add, Remove Operator from Blacklist of Endpoint by ID | <img src={Check} alt="✓" /> | <img src={Uncheck} alt="×" /> | <img src={Check} alt="✓" /> |
-| List all Endpoints | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> |
-| Create new endpoint | <img src={Check} alt="✓" /> | <img src={Uncheck} alt="×" /> | <img src={Check} alt="✓" /> |
-| Retrieve connectivity information of an Endpoint | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> |
+| Retrieve an endpoint by ID | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| Update, Delete an endpoint by ID | <Check alt="Yes" /> | <Close alt="No" /> | <Check alt="Yes" /> |
+| Retrieve the blacklisted Operators for an Endpoint | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| Add, Remove Operator from Blacklist of Endpoint by ID | <Check alt="Yes" /> | <Close alt="No" /> | <Check alt="Yes" /> |
+| List all Endpoints | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| Create new endpoint | <Check alt="Yes" /> | <Close alt="No" /> | <Check alt="Yes" /> |
+| Retrieve connectivity information of an Endpoint | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
 
 ## SIM management
 
 | Action | Administrator | Observer | User |
 | ------ | :---: | :------: | :--: |
-| Retrieve SIMs by ID | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> |
-| Update, Delete SIMs by ID | <img src={Check} alt="✓" /> | <img src={Uncheck} alt="×" /> | <img src={Check} alt="✓" /> |
-| List available SIM Statuses | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> |
-| List of available SIMs | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> |
+| Retrieve SIMs by ID | <Check alt="✓" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| Update, Delete SIMs by ID | <Check alt="Yes" /> | <Close alt="No" /> | <Check alt="Yes" /> |
+| List available SIM Statuses | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| List of available SIMs | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
 
 ## Service profile
 
 | Action | Administrator | Observer | User |
 | ------ | :---: | :------: | :--: |
-| Retrieve list of available Countries | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> |
-| Retrieve list of available Currencies | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> |
-| Retrieve single Currency details by ID | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> |
-| Retrieve List of available Services | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> |
-| List available Traffic Limits for a Service by ID | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> |
-| Retrieve Service Profiles | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> |
-| Create Service Profiles | <img src={Check} alt="✓" /> | <img src={Uncheck} alt="×" /> | <img src={Check} alt="✓" />
-| Retrieve Service Profiles by ID | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> |
-| Update, Delete Service Profiles by ID | <img src={Check} alt="✓" /> | <img src={Uncheck} alt="×" /> | <img src={Check} alt="✓" /> |
-| Add, Delete services from Service Profiles | <img src={Check} alt="✓" /> | <img src={Uncheck} alt="×" /> | <img src={Check} alt="✓" /> |
-| Add, Delete Traffic Limit from Service | <img src={Check} alt="✓" /> | <img src={Uncheck} alt="×" /> | <img src={Check} alt="✓" /> |
-| Retrieve the ESME interface types | <img src={Check} alt="✓" /> | <img src={Uncheck} alt="×" /> | <img src={Check} alt="✓" /> |
+| Retrieve list of available Countries | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| Retrieve list of available Currencies | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| Retrieve single Currency details by ID | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| Retrieve List of available Services | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| List available Traffic Limits for a Service by ID | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| Retrieve Service Profiles | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| Create Service Profiles | <Check alt="Yes" /> | <Close alt="No" /> | <Check alt="Yes" />
+| Retrieve Service Profiles by ID | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| Update, Delete Service Profiles by ID | <Check alt="Yes" /> | <Close alt="No" /> | <Check alt="Yes" /> |
+| Add, Delete services from Service Profiles | <Check alt="Yes" /> | <Close alt="No" /> | <Check alt="Yes" /> |
+| Add, Delete Traffic Limit from Service | <Check alt="Yes" /> | <Close alt="No" /> | <Check alt="Yes" /> |
+| Retrieve the ESME interface types | <Check alt="Yes" /> | <Close alt="No" /> | <Check alt="Yes" /> |
 
 ## Tariff profile
 
 | Action | Administrator | Observer | User |
 | ------ | :---: | :------: | :--: |
-| List of available Ratezone Statuses | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> |
-| List of available Tariff Statuses | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> |
-| Retrieve Tariff details by ID | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> |
-| Retrieve Tariffs | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> |
-| Retrieve list of tariff plan statuses | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> |
-| Create Tariff Profiles | <img src={Check} alt="✓" /> | <img src={Uncheck} alt="×" /> | <img src={Check} alt="✓" /> |
-| List Tariff Profiles | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> |
-| Retrieve Coverage of a Tariff Profile | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> |
-| Retrieve single Country details by ID | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> |
-| List Operators | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> |
-| Retrieve my currently active tariff plan | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> |
+| List of available Ratezone Statuses | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| List of available Tariff Statuses | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| Retrieve Tariff details by ID | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| Retrieve Tariffs | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| Retrieve list of tariff plan statuses | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| Create Tariff Profiles | <Check alt="Yes" /> | <Close alt="No" /> | <Check alt="Yes" /> |
+| List Tariff Profiles | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| Retrieve Coverage of a Tariff Profile | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| Retrieve single Country details by ID | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| List Operators | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| Retrieve my currently active tariff plan | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
 
 ## User management
 
 | Action | Administrator | Observer | User |
 | ------ | :---: | :------: | :--: |
-| Create Support Token to assume permissions of a User by ID | <img src={Uncheck} alt="×" /> | <img src={Uncheck} alt="×" /> | <img src={Uncheck} alt="×" /> |
-| Update, Delete Users | <img src={Check} alt="✓" /> | <img src={Uncheck} alt="×" /> | <img src={Uncheck} alt="×" /> |
-| Retrieve my user role permissions | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> |
-| Update User password | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> |
-| Create, List Users | <img src={Check} alt="✓" /> | <img src={Uncheck} alt="×" /> | <img src={Uncheck} alt="×" /> |
-| Add, Delete Role from a User | <img src={Check} alt="✓" /> | <img src={Uncheck} alt="×" /> | <img src={Uncheck} alt="×" /> |
-| Delete, List trusted devices for a given user | <img src={Check} alt="✓" /> | <img src={Uncheck} alt="×" /> | <img src={Uncheck} alt="×" /> |
-| Create, Retrieve Application Token | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> |
-| Edit an Application Token | <img src={Check} alt="✓" /> | <img src={Uncheck} alt="×" /> | <img src={Uncheck} alt="×" /> |
+| Create Support Token to assume permissions of a User by ID | <Close alt="No" /> | <Close alt="No" /> | <Close alt="No" /> |
+| Update, Delete Users | <Check alt="Yes" /> | <Close alt="No" /> | <Close alt="No" /> |
+| Retrieve my user role permissions | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| Update User password | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| Create, List Users | <Check alt="Yes" /> | <Close alt="No" /> | <Close alt="No" /> |
+| Add, Delete Role from a User | <Check alt="Yes" /> | <Close alt="No" /> | <Close alt="No" /> |
+| Delete, List trusted devices for a given user | <Check alt="Yes" /> | <Close alt="No" /> | <Close alt="No" /> |
+| Create, Retrieve Application Token | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| Edit an Application Token | <Check alt="Yes" /> | <Close alt="No" /> | <Close alt="No" /> |
 
 ## Alerts
 
 | Action | Administrator | Observer | User |
 | ------ | :---: | :------: | :--: |
-| Retrieve Organization/Endpoint Alerts | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> |
-| Retrieve events of a User by ID | <img src={Check} alt="✓" /> | <img src={Uncheck} alt="×" /> | <img src={Uncheck} alt="×" /> |
-| Retrieve events of an IMSI/SIM | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> |
+| Retrieve Organization/Endpoint Alerts | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| Retrieve events of a User by ID | <Check alt="Yes" /> | <Close alt="No" /> | <Close alt="No" /> |
+| Retrieve events of an IMSI/SIM | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
 
 ## MFA keys
 
 | Action | Administrator | Observer | User |
 | ------ | :---: | :------: | :--: |
-| Generate user shared secret key for MFA | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> |
-| Activate user shared secret key for MFA | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> |
-| List available MFA Key Statuses | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> |
-| Delete shared secret key for MFA of a user by ID | <img src={Check} alt="✓" /> | <img src={Uncheck} alt="×" /> | <img src={Uncheck} alt="×" /> |
-| List of trusted devices for own user | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> |
-| Delete a trusted device by ID for own user | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> |
-| List of available MFA Key Types | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> |
-| Delete my shared secret for MFA | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> |
-| List of trusted devices for own user | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> |
-| Delete a trusted device for own user | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> | <img src={Check} alt="✓" /> |
+| Generate user shared secret key for MFA | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| Activate user shared secret key for MFA | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| List available MFA Key Statuses | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| Delete shared secret key for MFA of a user by ID | <Check alt="Yes" /> | <Close alt="No" /> | <Close alt="No" /> |
+| List of trusted devices for own user | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| Delete a trusted device by ID for own user | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| List of available MFA Key Types | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| Delete my shared secret for MFA | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| List of trusted devices for own user | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| Delete a trusted device for own user | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |

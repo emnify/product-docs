@@ -3,8 +3,8 @@ description: Learn how to manage your devices via the Connected Devices page in 
 slug: /portal/connected-devices
 ---
 
-import Check from '../assets/check-mark-3-24.png';
-import Uncheck from '../assets/x-mark-24.png';
+import Check from '../assets/check-simple.svg';
+import Close from '../assets/close.svg';
 
 # Connected devices
 
@@ -44,17 +44,17 @@ However, the filters reset if you go to another page in the Portal.
 ### Available filters
 
 | Property        | Value      | [Wildcard support](#wildcard-support) | Description        |
-|:----------------|:-----------|:--------------------------------------|:-------------------|
-| Name            | String     | <img src={Check} alt="Yes" />         | Name of a device |
-| ICCID           | String     | <img src={Check} alt="Yes" />         | [Integrated circuit card identifier (ICCID)](/glossary#iccid) including the final [Luhn checksum digit](/glossary#luhn-checksum-digit) |
-| Tag             | String     | <img src={Check} alt="Yes" />         | Name of a tag you've assigned to a device  |
-| Device ID       | String     | <img src={Uncheck} alt="Yes" />       | Unique identifier for a device  |
-| Status          | Predefined | <img src={Uncheck} alt="No" />        | List of possible [device statuses](/glossary#endpoint-status), specifically: **Enabled** or **Disabled**  |
-| EID             | String     | <img src={Check} alt="Yes" />         | Unique global serial number for an eUICC ([learn more about the EID](/glossary#eid))  |
-| IMEI            | String     | <img src={Check} alt="Yes" />         | [International mobile equipment identity (IMEI)](/glossary#imei), used to identify cellular modems  |
-| IP address      | String     | <img src={Check} alt="Yes" />         | Unique address that identifies a device on the internet or a local network (for example, `10.1.1.9`)   |
-| Coverage policy | Predefined | <img src={Uncheck} alt="No" />        | List of your configured [coverage policies](/portal/device-policies#coverage-policies)  |
-| Service policy  | Predefined | <img src={Uncheck} alt="No" />        | List of your configured [service policies](/portal/device-policies#service-policies)   |
+|:----------------|:-----------|:--------------------------------------:|:-------------------|
+| Name            | String     | <Check alt="Yes" />         | Name of a device |
+| ICCID           | String     | <Check alt="Yes" />         | [Integrated circuit card identifier (ICCID)](/glossary#iccid) including the final [Luhn checksum digit](/glossary#luhn-checksum-digit) |
+| Tag             | String     | <Check alt="Yes" />         | Name of a tag you've assigned to a device  |
+| Device ID       | String     | <Close alt="No" />       | Unique identifier for a device  |
+| Status          | Predefined | <Close alt="No" />        | List of possible [device statuses](/glossary#endpoint-status), specifically: **Enabled** or **Disabled**  |
+| EID             | String     | <Check alt="Yes" />         | Unique global serial number for an eUICC ([learn more about the EID](/glossary#eid))  |
+| IMEI            | String     | <Check alt="Yes" />         | [International mobile equipment identity (IMEI)](/glossary#imei), used to identify cellular modems  |
+| IP address      | String     | <Check alt="Yes" />         | Unique address that identifies a device on the internet or a local network (for example, `10.1.1.9`)   |
+| Coverage policy | Predefined | <Close alt="No" />        | List of your configured [coverage policies](/portal/device-policies#coverage-policies)  |
+| Service policy  | Predefined | <Close alt="No" />        | List of your configured [service policies](/portal/device-policies#service-policies)   |
 
 ### Enter a list of values
 
@@ -90,7 +90,8 @@ It's visible on both the **Extensive** and **Plain** table view.
 <!-- Add screenshot -->
 
 To search your devices, type a value in the text field, then press the `Enter` key.
-The search is case insensitive, meaning `GPS Tracker` and `gps tracker` will have the same results, for example.
+The search is case insensitive.
+For example, `GPS Tracker` and `gps tracker` would produce the same results.
 
 You can also combine search values with [filters](#filter-devices). 
 Unlike filters, search results aren't saved in the URL. 
@@ -102,7 +103,7 @@ All the [Available filter properties](#available-filters) are searchable except 
 :::caution
 Wildcards using an asterisk `*` aren't supported in the search bar.
 
-For example, if your device's **Name** is `My iPhone`, searching `phone` shows results, but searching `*phone` doesn't.
+For example, if your device's **Name** is `My iPhone`, searching `phone` would show results, but searching `*phone` wouldn't.
 :::
 
 ## Get device information 
