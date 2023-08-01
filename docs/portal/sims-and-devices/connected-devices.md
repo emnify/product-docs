@@ -26,12 +26,16 @@ If this is your first time configuring a device for network connectivity, see th
 Filters are available for both the **Extensive** and **Plain** view of the **Connected Devices** table.
 These filters allow you to query devices based on one or more properties (for example, tags or the device ID).
 
-Select the filter you want to edit, enter a value, then press the `Enter` key.
+Select the filter you want to edit, enter a value, then press the `Tab` or `Enter` key.
 Once you've entered all the values you want to filter by, click **Apply**.
 
 To remove a filter or value, click the corresponding **X**.
 
-<!-- Screenshot -->
+<img
+  src={require('./assets/portal-connected-devices-filters.png').default}
+  alt=""
+  style={{ height:450 }}
+/>
 
 Filters can be combined or used together with the [search bar](#search-devices).
 Filtered values are saved in the URL as a query parameter (for example, after filtering for devices with the `Zapier` tag, the URL includes `&tags=Zapier` at the end).
@@ -64,13 +68,21 @@ This works for any property that accepts string values.
 Lists must be plain text with every value on its own line.
 Write the values exactly as they appear in the Portal.
 
-For example, if you enter the following into the **Tag** filter, each value is parsed, and the table shows any devices with the `test`, `v1`, and `beta` tags.
+For example, if you enter the following in the **Tag** filter:
 
 ```txt
 test
 v1
 beta
 ```
+
+Each value is parsed, and the table shows any devices with the `test`, `v1`, and `beta` tags.
+
+<img
+  src={require('./assets/portal-connected-devices-filters-tag.png').default}
+  alt=""
+  style={{ height:400 }}
+/>
 
 ### Wildcard support
 
@@ -87,9 +99,14 @@ Another example is filtering names using `organi*ation` shows all results regard
 The **Connected Devices** search bar is next to the **Add device** button.
 It's visible on both the **Extensive** and **Plain** table view.
 
-<!-- Add screenshot -->
+<img
+  src={require('./assets/portal-connected-devices-search.png').default}
+  alt=""
+/>
 
 To search your devices, type a value in the text field, then press the `Enter` key.
+To reset, click the corresponding **X**.
+
 The search is case insensitive.
 For example, `GPS Tracker` and `gps tracker` would produce the same results.
 
