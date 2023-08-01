@@ -3,6 +3,9 @@ description: Learn how to manage your devices via the Connected Devices page in 
 slug: /portal/connected-devices
 ---
 
+import Check from '../assets/check-mark-3-24.png';
+import Uncheck from '../assets/x-mark-24.png';
+
 # Connected devices
 
  [**Connected Devices**](https://portal.emnify.com/connected-devices) is where you manage your devices.
@@ -17,6 +20,90 @@ After providing a name for the new device and selecting device policies, you can
 ## Get your device online
 
 If this is your first time configuring a device for network connectivity, see the [instructions for how to get your first device online](/apn-configuration).
+
+## Filter devices
+
+Filters are available for both the **Extensive** and **Plain** view of the **Connected Devices** table.
+These filters allow you to query devices based on one or more properties (for example, tags or the device ID).
+
+Select the filter you want to edit, enter a value, then press the `Enter` key.
+Once you've entered all the values you want to filter by, click **Apply**.
+
+To remove a filter or value, click the corresponding **X**.
+
+<!-- Screenshot -->
+
+Filters can be combined or used together with the [search bar](#search-devices).
+Filtered values are saved in the URL as a query parameter (for example, after filtering for devices with the `Zapier` tag, the URL includes `&tags=Zapier` at the end).
+
+:::caution
+Your selected filters remain active when you visit a device's **Details** page.
+However, the filters reset if you go to another page in the Portal.
+:::
+
+### Available filters
+
+| Property        | Value      | [Wildcard support](#wildcard-support) | Description        |
+|:----------------|:-----------|:--------------------------------------|:-------------------|
+| Name            | String     | <img src={Check} alt="Yes" />         | Name of a device |
+| ICCID           | String     | <img src={Check} alt="Yes" />         | [Integrated circuit card identifier (ICCID)](/glossary#iccid) including the final [Luhn checksum digit](/glossary#luhn-checksum-digit) |
+| Tag             | String     | <img src={Check} alt="Yes" />         | Name of a tag you've assigned to a device  |
+| Device ID       | String     | <img src={Uncheck} alt="Yes" />       | Unique identifier for a device  |
+| Status          | Predefined | <img src={Uncheck} alt="No" />        | List of possible [device statuses](/glossary#endpoint-status), specifically: **Enabled** or **Disabled**  |
+| EID             | String     | <img src={Check} alt="Yes" />         | Unique global serial number for an eUICC ([learn more about the EID](/glossary#eid))  |
+| IMEI            | String     | <img src={Check} alt="Yes" />         | [International mobile equipment identity (IMEI)](/glossary#imei), used to identify cellular modems  |
+| IP address      | String     | <img src={Check} alt="Yes" />         | Unique address that identifies a device on the internet or a local network (for example, `10.1.1.9`)   |
+| Coverage policy | Predefined | <img src={Uncheck} alt="No" />        | List of your configured [coverage policies](/portal/device-policies#coverage-policies)  |
+| Service policy  | Predefined | <img src={Uncheck} alt="No" />        | List of your configured [service policies](/portal/device-policies#service-policies)   |
+
+### Enter a list of values
+
+You can also enter a list of values to search for multiple ones simultaneously.
+This works for any property that accepts string values.
+
+Lists must be plain text with every value on its own line.
+Write the values exactly as they appear in the Portal.
+
+For example, if you enter the following into the **Tag** filter, each value is parsed, and the table shows any devices with the `test`, `v1`, and `beta` tags.
+
+```txt
+test
+v1
+beta
+```
+
+### Wildcard support
+
+A wildcard filter lets you find various value forms based on a partial match.
+You can also use character matching with an asterisk `*`.
+
+This is especially useful if a term has multiple spellings or you're unsure of the exact value.
+
+For example, if you have two devices named `Phase modem` and `My iPhone`, filtering for `ph` or `ph*e` shows both devices in the results.
+Another example is filtering names using `organi*ation` shows all results regardless of whether the device name uses American (organization) or British (organisation) spelling.
+
+## Search devices
+
+The **Connected Devices** search bar is next to the **Add device** button.
+It's visible on both the **Extensive** and **Plain** table view.
+
+<!-- Add screenshot -->
+
+To search your devices, type a value in the text field, then press the `Enter` key.
+The search is case insensitive, meaning `GPS Tracker` and `gps tracker` will have the same results, for example.
+
+You can also combine search values with [filters](#filter-devices). 
+Unlike filters, search results aren't saved in the URL. 
+
+:::info
+All the [Available filter properties](#available-filters) are searchable except **Status**, **Coverage policy**, and **Service policy**. 
+:::
+
+:::caution
+Wildcards using an asterisk `*` aren't supported in the search bar.
+
+For example, if your device's **Name** is `My iPhone`, searching `phone` shows results, but searching `*phone` doesn't.
+:::
 
 ## Get device information 
 
