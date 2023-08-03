@@ -4,6 +4,7 @@ Configurator
 Deutsch
 hardcoding
 hostname
+ICCIDs
 infographic
 infographics
 interworkings
