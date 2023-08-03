@@ -24,7 +24,7 @@ If this is your first time configuring a device for network connectivity, see th
 ## Filter devices
 
 Filters are available for both the **Extensive** and **Plain** view of the **Connected Devices** table.
-These filters allow you to query devices based on one or more properties (for example, tags or the device ID).
+These filters allow you to query devices based on one or more properties (for example, assigned tags or the device ID).
 
 Select the filter you want to edit, enter a value, then press the `Tab` or `Enter` key.
 Once you've entered all the values you want to filter by, click **Apply**.
@@ -60,15 +60,30 @@ However, the filters reset if you go to another page in the Portal.
 | Coverage policy | Predefined | <Close alt="No" />        | List of your configured [coverage policies](/portal/device-policies#coverage-policies)  |
 | Service policy  | Predefined | <Close alt="No" />        | List of your configured [service policies](/portal/device-policies#service-policies)   |
 
+### Wildcard support
+
+A wildcard filter lets you find various value forms based on a partial match.
+You can also use character matching with an asterisk `*`.
+
+This is especially useful if a term has multiple spellings or you're unsure of the exact value.
+
+For example, if you have two devices named `Phase modem` and `My iPhone`, filtering for `ph` or `ph*e` shows both devices in the results.
+Another example is filtering names using `organi*ation` shows all results regardless of whether the device name uses American (organization) or British (organisation) spelling.
+
 ### Enter a list of values
 
-You can also enter a list of values to search for multiple ones simultaneously.
+You can also enter a list of values to filter for multiple ones simultaneously.
 This works for any property that accepts string values.
 
 Lists must be plain text with every value on its own line.
 Write the values exactly as they appear in the Portal.
 
-For example, if you enter the following in the **Tag** filter:
+:::tip
+This feature is especially useful if you have an Excel file with dozens of values (for example, 100 ICCIDs).
+If you copy and paste the entire list into the filter, you can skip the tedious task of entering each value individually.
+:::
+
+To demonstrate, if you enter the following in the **Tag** filter and press the `Enter` key:
 
 ```txt
 test
@@ -84,38 +99,28 @@ Each value is parsed, and the table shows any devices with the `test`, `v1`, and
   style={{ height:400 }}
 />
 
-### Wildcard support
-
-A wildcard filter lets you find various value forms based on a partial match.
-You can also use character matching with an asterisk `*`.
-
-This is especially useful if a term has multiple spellings or you're unsure of the exact value.
-
-For example, if you have two devices named `Phase modem` and `My iPhone`, filtering for `ph` or `ph*e` shows both devices in the results.
-Another example is filtering names using `organi*ation` shows all results regardless of whether the device name uses American (organization) or British (organisation) spelling.
-
 ## Search devices
 
 The **Connected Devices** search bar is next to the **Add device** button.
 It's visible on both the **Extensive** and **Plain** table view.
+
+To search your devices, type a value in the text field, then press the `Enter` key.
+To reset, click the corresponding **X**.
 
 <img
   src={require('./assets/portal-connected-devices-search.png').default}
   alt=""
 />
 
-To search your devices, type a value in the text field, then press the `Enter` key.
-To reset, click the corresponding **X**.
-
-The search is case insensitive.
-For example, `GPS Tracker` and `gps tracker` would produce the same results.
-
-You can also combine search values with [filters](#filter-devices). 
-Unlike filters, search results aren't saved in the URL. 
-
 :::info
 All the [Available filter properties](#available-filters) are searchable except **Status**, **Coverage policy**, and **Service policy**. 
 :::
+
+Unlike [filters](#filter-devices), where the results are focused on one property, the search simultaneously looks for matches across multiple properties.
+For example, if you enter the number `2`, the search results would show any device with `2` in its name (like `WalkieTalkie 2.0`), any assigned tags, or one or more of its numeric values (**ICCID**, **EID**, etc.).
+
+The search is case insensitive, meaning `GPS Tracker` and `gps tracker` would produce the same results.
+You can also combine the search with filters, but searched values aren't saved in the URL. 
 
 :::caution
 Wildcards using an asterisk `*` aren't supported in the search bar.
