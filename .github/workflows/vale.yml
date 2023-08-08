@@ -6,9 +6,6 @@ on:
       - main
     branches:
       - main
-    paths:
-      - '**.md'
-      - '**.mdx'
 
 jobs:
   lint-content:
