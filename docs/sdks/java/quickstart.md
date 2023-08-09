@@ -9,7 +9,7 @@ slug: /sdks/java/quickstart
 
 ## Installation
 
-The emnify Java SDK is open source and the source code is available on [GitHub](https://github.com/EMnify/emnify-sdk-java).
+The emnify Java SDK is open source and the [source code is available on GitHub](https://github.com/EMnify/emnify-sdk-java).
 
 To install the SDK, add the emnify dependency to your existing project and use build automation tools like Maven or Gradle or install it yourself manually.
 
