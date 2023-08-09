@@ -70,7 +70,8 @@ If you want to build your own `.jar`, execute the following from within the clon
 
 ### Environment variables
 
-To store configuration settings like an application token or a base URL, use environment variables instead of hardcoding them in your application. Here are some examples:
+To store configuration settings, like an application token or a base URL, use environment variables instead of hardcoding them in your application.
+Here are some examples:
 
 | Name               | Description                                                              |
 |--------------------|--------------------------------------------------------------------------|
