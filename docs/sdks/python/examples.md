@@ -5,7 +5,8 @@ slug: /sdks/python/examples
 
 # Examples
 
-This guide shows a listing of the main examples to get devices online including subtasks, such as registering a SIM, creating, configuring or deleting a device.
+The following examples show you how to use the emnify Python SDK. 
+The source code for each example is available in the [emnify-sdk-python GitHub repository](https://github.com/emnify/emnify-sdk-python/tree/main/docs/examples)
 
 ## 1 Example Table
 
