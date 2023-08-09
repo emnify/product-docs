@@ -35,20 +35,20 @@ Use the following dependency in your project to grab via [Maven](https://maven.a
     <dependency>
         <groupId>com.emnify.sdk</groupId>
         <artifactId>emnify</artifactId>
-        <version>VERSION_NUMBER</version>
+        <version>SDK_VERSION</version>
     </dependency>
 ```
 
-Replace *`VERSION_NUMBER`* with the version of Maven you're using.
+Replace *`SDK_VERSION`* with the version of the emnify Java SDK you're using.
 
 ### Install with Gradle
 
 Use the following to add the emnify dependency to your project via [Gradle](https://gradle.org/install/):
 ```gradle
-    implementation group: "com.emnify.sdk", name: "emnify", version: "VERSION_NUMBER"
+    implementation group: "com.emnify.sdk", name: "emnify", version: "SDK_VERSION"
 ```
 
-Replace *`VERSION_NUMBER`* with the version of Gradle you're using.
+Replace *`SDK_VERSION`* with the version of the emnify Java SDK you're using.
 
 ### Install manually
 
