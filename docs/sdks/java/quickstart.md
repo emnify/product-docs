@@ -15,7 +15,8 @@ To install the SDK, add the emnify dependency to your existing project and use b
 
 :::caution
 Regardless of the package manager you are using, you need to specify the latest version of the emnify Java SDK.
-Please use `{version}` to do so, as demonstrated in the following example. :::
+The following installation examples use *`SDK_VERSION`* where this should be specified.
+:::
 
 
 ### Prerequisites
