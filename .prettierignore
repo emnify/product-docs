@@ -9,6 +9,7 @@ docs
 # Vale config
 .vale.ini
 .github/vale
+.markdownlint.jsonc
 
 # Ignore files
 .env
