@@ -23,12 +23,6 @@ The M2M eSIM is also referred to as an [embedded universal integrated circuit ca
 Unlike a regular SIM (UICC), an eUICC can be updated over the air.
 Because M2M eSIMs can be updated with new configurations or profiles, this eliminates the need for SIM swaps.
 
-### Consumer eSIM
-
-emnify also offers consumer eSIMs for phones, tablets, and smart watches.
-The consumer eSIM can be downloaded to a device by scanning a QR code.
-If you are interested in consumer eSIM technology, please [contact the emnify sales team](https://www.emnify.com/talk-to-us).
-
 ## Form factors
 
 emnify [M2M eSIMs](#m2m-esim) are available in the following form factors:
