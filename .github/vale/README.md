@@ -51,20 +51,20 @@ The emnify Documentation only requires two of the 10 rules in the alex package f
 These two rules are also further customized (more terms added, altered severity levels, etc.), so it makes more sense to maintain an emnify-specific version of the rules.
 </details>
 
-> **Note** 
+> **Note**
 > emnify has made some modifications to these packages to remove duplicates or add emnify-specific terms.
 
 ## Vocabularies
 
 Vale uses [Vocabularies](https://vale.sh/docs/topics/vocab/) to define term lists to further customize styles.
-emnify uses this to define company or industry-specific terminology (see [`accept.txt`](./styles/Vocab/emnify/accept.txt) for the full list). 
+emnify uses this to define company or industry-specific terminology (see [`accept.txt`](./styles/Vocab/emnify/accept.txt) for the full list).
 
 ## Ignore Vale rules
 
 Vale can turn off [specific rules](#ignore-specific-rules) or [all rules](#ignore-all-rules) inside a document.
 All ignored rules should include a justification for why they’re ignored.
 
-> **Warning** 
+> **Warning**
 > Vale ignores rules not turned back on for the rest of the document.
 > After the ignored content, turn the rules back on.
 
@@ -81,7 +81,7 @@ Writing documentation is so fun!
 <!-- vale Google.Exclamation = YES -->
 ```
 
-> **Note** 
+> **Note**
 > Vale requires capitalization for `YES` and `NO` and a space around `=`.
 
 ### Ignore all rules
