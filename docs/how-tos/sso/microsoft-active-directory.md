@@ -31,7 +31,7 @@ Log in to Azure and navigate to **Azure Active Directory** in the left sidebar.
   className="no-border"
 />
 
-At the top of the page, click **+ Add** and then **App Registration**. 
+At the top of the page, click **+ Add** and then **App Registration**.
 From there:
 
 <img
@@ -143,7 +143,7 @@ Otherwise, click **Add** under the Microsoft SSO provider.
 
 Enter the **Client ID** and **Client Secret** with the values you copied earlier, then click **Create and Activate**.
 
-The final step is to verify the provider. 
+The final step is to verify the provider.
 Click **Verify Integration** and follow the prompts.
 
 :::caution

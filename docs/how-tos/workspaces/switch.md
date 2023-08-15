@@ -17,15 +17,14 @@ Only **Administrator** [user accounts](/glossary#user-account) of the [main orga
 
 1. [Log in to your emnify account](https://portal.emnify.com/sign).
 You should see your organization's name at the top of the primary sidebar.
-
 <img
   src={require('./assets/portal-sidebar-workspaces-first-org.png').default}
   alt=""
 />
 
-2. Click your organization's name (or the corresponding icons) to reveal the **Workspaces** modal.
+1. Click your organization's name (or the corresponding icons) to reveal the **Workspaces** modal.
 This displays a list of all the workspaces linked to your organization, as well as [**Link existing workspace**](/workspaces/link) and [**Create a new workspace**](/workspaces/create) options.
-3. Select another [organization](/glossary#organization) name to navigate to that workspace.
+1. Select another [organization](/glossary#organization) name to navigate to that workspace.
 
 The following example starts from the main **AG General inc.** workspace and selects the **AG EV-charging** workspace.
 
