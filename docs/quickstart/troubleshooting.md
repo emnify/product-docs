@@ -33,13 +33,14 @@ Validate if there is any location update event created and rejected.
 The reasoning should indicate the resolution to the problem. 
 
 If there is no location update event:
+
 - Ensure the device is powered on and searches for a network
 - Ensure that the device is in reception of any supported network
 
 ## The device shows attached but doesn't transmit data
 
-- Verify that the APN is correctly set to *em* or use *emnify* instead since some devices don't support two-digit APNs.
-You can find guides for various devices in [Getting the first device online](#getting-the-first-device-online).
+- Verify that the APN is correctly set to _em_ or use _emnify_ instead since some devices don't support two-digit APNs.
+You can find guides for various devices in [Get the device online](/apn-configuration).
 - Ensure that you activate data access and the radio types (that is, 2G, 3G, 4G) if you change policy settings.
 - Make sure mobile data is enabled and that international roaming is allowed.
 - Click **Details**, then navigate to the **Events** tab.

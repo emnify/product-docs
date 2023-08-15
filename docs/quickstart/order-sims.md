@@ -5,6 +5,8 @@ slug: /quickstart/order-sims
 
 # Order emnify SIMs from the SIM Shop
 
+<!-- markdownlint-disable MD029 -->
+
 Here's how you can order SIM cards any time on the emnify Portal.
 
 <details className="custom-details-troubleshooting">
@@ -14,7 +16,6 @@ Here's how you can order SIM cards any time on the emnify Portal.
 
 1. [Log in to your emnify account](https://portal.emnify.com/sign).
 2. Navigate to the [**SIM Inventory**](https://portal.emnify.com/sim-inventory) and click **Order SIMs**.
-
 <img
   src={require('./assets/portal-sim-inventory-order-sims.png').default}
   alt=""
@@ -41,7 +42,7 @@ Here, you can specify the amount of each SIM type you want to receive.
 />
 
 :::note
-You may see the **Order Split** option depending on how many SIMs you order. 
+You may see the **Order Split** option depending on how many SIMs you order.
 This allows you to split orders into [batches](/glossary#sim-batch) (for example, collections of 25, 100, or 500 SIMs).
 
 The benefit of batches is that they can be registered all at once, whereas single SIMs can only be registered individually.

@@ -71,7 +71,7 @@ In addition to the standard emnify services, the Evaluation Plan supports the fo
 
 <details className="custom-details-example">
   <summary>Multicloud Data Streamer</summary>
-    <p>Use the tools you're familiar with to stream connectivity metadata, triage issues, collect usage insights, and more. 
+    <p>Use the tools you're familiar with to stream connectivity metadata, triage issues, collect usage insights, and more.
     <a href="https://docs.emnify.com/multicloud-data-streamer">Learn more about the Data Streamer</a> or <a href="https://docs.emnify.com/multicloud-data-streamer/integrations">browse the available integrations</a>.</p>
 </details>
 
@@ -107,6 +107,7 @@ To get your free Evaluation SIM package, [log in to your emnify account](https:/
   alt=""
 />
 
+<!-- markdownlint-disable-next-line MD029 -->
 2. Enter your **Invoice data**, **Delivery details**, and **Choose shipping option**.
 
 <img
@@ -114,6 +115,7 @@ To get your free Evaluation SIM package, [log in to your emnify account](https:/
   alt=""
 />
 
+<!-- markdownlint-disable-next-line MD029 -->
 3. Finally, review and confirm your details. 
 
 :::info
