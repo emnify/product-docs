@@ -7,7 +7,7 @@ slug: /sdks/java/quickstart
 
 # Getting started with the emnify Java SDK
 
-## Supported Java versions 
+## Supported Java versions
 
 This library supports the following Java implementations:
 
@@ -24,7 +24,7 @@ Refer to the [SSL Report table](https://www.ssllabs.com/ssltest/analyze.html?d=c
 
 The emnify Java SDK is open source and the [source code is available on GitHub](https://github.com/EMnify/emnify-sdk-java).
 
-The recommended method for installing the SDK is with a build automation tool, like Maven or Gradle. 
+The recommended method for installing the SDK is with a build automation tool, like Maven or Gradle.
 You can add the emnify dependency to your existing project, specifying the latest version.
 
 :::caution
@@ -44,7 +44,7 @@ Use the following dependency in your project to grab via [Maven](https://maven.a
     </dependency>
 ```
 
-Replace *`VERSION_NUMBER`* with the version of Maven you're using.
+Replace _`VERSION_NUMBER`_ with the version of Maven you're using.
 
 ### Gradle
 
@@ -54,7 +54,7 @@ Use the following to add the emnify dependency to your project via [Gradle](http
     implementation group: "com.emnify.sdk", name: "emnify", version: "VERSION_NUMBER"
 ```
 
-Replace *`VERSION_NUMBER`* with the version of Gradle you're using.
+Replace _`VERSION_NUMBER`_ with the version of Gradle you're using.
 
 ### Compile the SDK yourself
 
@@ -82,12 +82,12 @@ You can use environment variables for storing configuration settings like an app
 | `EMNIFY_APPLICATION_TOKEN`  | Variable for authenticating via an [application token](/rest/authentication#authenticate-with-an-application-token). |
 | `EMNIFY_USERNAME` and `EMNIFY_PASSWORD` | Variables for authenticating via [username and password](/rest/authentication#authenticate-with-user-credentials). |
 
-## Explore more 
+## Explore more
 
 Now that you have the SDK configured, it's time to learn what you can do with it.
 
-If you're new to IoT connectivity and emnify, start by learning some [common terminology and concepts](/sdks/concepts). 
+If you're new to IoT connectivity and emnify, start by learning some [common terminology and concepts](/sdks/concepts).
 
-Once you're comfortable with these [concepts](/sdks/concepts), you can explore some use cases that show what the SDK is capable of based on a few [Examples](/sdks/java/examples). 
+Once you're comfortable with these [concepts](/sdks/concepts), you can explore some use cases that show what the SDK is capable of based on a few [Examples](/sdks/java/examples).
 
 Also, see the [emnify System Documentation](https://cdn.emnify.net/api/doc/index.html) and our [OpenAPI specification](https://cdn.emnify.net/api/doc/swagger.html).
