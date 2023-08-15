@@ -6,14 +6,16 @@ slug: /portal
 
 # Dashboard
 
+<!-- markdownlint-disable MD036 -->
+
 The first page you'll see in the emnify Portal is the [**Dashboard**](https://portal.emnify.com/).
-It summarizes your usage during the current billing cycle and provides a log of recent events. 
+It summarizes your usage during the current billing cycle and provides a log of recent events.
 
 :::info
 Any changes are reflected in these charts within a few hours.
 :::
 
-## Usage summary 
+## Usage summary
 
 <details className="custom-details-example">
   <summary>Show an example of the current usage summary</summary>
@@ -25,8 +27,9 @@ Any changes are reflected in these charts within a few hours.
 </details>
 
 **Current Month Data Volume**
-  - Uploaded volume
-  - Downloaded volume
+
+- Uploaded volume
+- Downloaded volume
 
 **Inclusive Volume (per active device)**  
 This is the data volume based on (the [Main zone](/portal/device-policies#zones)) you chose for your [Coverage Policy](/portal/device-policies#coverage-policies).
@@ -47,16 +50,18 @@ This section is only shown if you're on the [Evaluation Plan](/quickstart#emnify
 The running balance of total costs in your currency.
 
 **Active (charged) devices** (count)
-  - **SMS** (current usage costs in your currency)
-  - **SMS fee** (in your currency))
+
+- **SMS** (current usage costs in your currency)
+- **SMS fee** (in your currency)
 
 **Device Traffic**  
 A chart showing the last four hours of upload/download volumes.
 
 [**Devices Status**](/glossary#endpoint-status)
-  - **Online** (count)
-  - **Disabled** (count)
-  - **Offline** (count)
+
+- **Online** (count)
+- **Disabled** (count)
+- **Offline** (count)
 
 ## Events
 

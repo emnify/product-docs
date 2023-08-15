@@ -3,6 +3,7 @@ description: Review the emnify account permissions for various roles
 slug: /portal/roles
 ---
 
+<!-- markdownlint-disable MD041 -->
 import Check from './assets/check-simple.svg';
 import Close from './assets/close.svg';
 

@@ -38,7 +38,7 @@ The paged list of employees shows the following information for each employee:
 
 Select the **Invite** button.
 Provide the employees' name, email address, and [role](/portal/roles).
-Then, select the **Send Invite** button. 
+Then, select the **Send Invite** button.
 
 <details className="custom-details-example">
   <summary>Show an example</summary>

@@ -48,7 +48,7 @@ Select a value between 0.25 MB and 2 GB using the slider.
 
 #### Deployment option
 
-If the default selection **Global** isn't your preference, select *one* from more than a dozen other regions, for example, **Africa Extended**, **Americas**, **APAC**, **Europe Basic**, **Middle East**, **USA**, etc.
+If the default selection **Global** isn't your preference, select _one_ from more than a dozen other regions, for example, **Africa Extended**, **Americas**, **APAC**, **Europe Basic**, **Middle East**, **USA**, etc.
 
 ### Coverage
 
@@ -56,7 +56,7 @@ Choose between **Basic** and **Extended** coverage.
 
 ### Price model
 
-Choose between **Pay as you go** and **Inclusive volume** *(your estimated monthly MB/device)* **pooled**.
+Choose between **Pay as you go** and **Inclusive volume** _(your estimated monthly MB/device)_ **pooled**.
 
 ## Tariff coverage map
 

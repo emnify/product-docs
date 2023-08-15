@@ -8,7 +8,7 @@ slug: /portal/sms
 Short Message Service (SMS) uses the same basic technology on IoT devices as that employed with consumer mobile devices.
 However, in the context of IoT devices, there are more modes of SMS operation and use cases that provide additional capabilities.
 
-## SMS P2P 
+## SMS P2P
 
 Peer-to-peer (P2P) SMS describes the mode of sending SMS from one device to another.
 
@@ -22,7 +22,7 @@ P2P also isn't suitable for IoT device use cases in which a device needs to upda
 SMS application-to-peer (A2P) describes the mode of SMS data exchange between a device and an application.
 One example of this is [sending SMS using the emnify Portal](#send-sms-using-the-emnify-portal).
 
-Unlike P2P, A2P lets you interact with *multiple* devices using an application.
+Unlike P2P, A2P lets you interact with _multiple_ devices using an application.
 Because A2P SMS can be automated, you can interact with your devices at scale.
 It also tracks messages, which enables you to see when a message has been delivered.
 
@@ -70,7 +70,7 @@ To open a device's SMS console, select its message icon.
   />
 </details>
 
-### Send bulk SMS to multiple devices 
+### Send bulk SMS to multiple devices
 
 <img
   src={require('./assets/sms-bulk-send.png').default}

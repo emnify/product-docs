@@ -5,6 +5,8 @@ slug: /portal/application-tokens
 
 # Application tokens
 
+<!-- markdownlint-disable MD029 -->
+
 To add or view existing [application tokens](/glossary#application-tokens), navigate to [**Integrations**](https://portal.emnify.com/integrations) and then [**Application Tokens**](https://portal.emnify.com/integrations#application-tokens).
 
 ## Add a new token
@@ -28,21 +30,21 @@ If your token is compromised, the **IP restriction** helps limit the attacker's 
   <img
     src={require('./assets/integrations-application-tokens.png').default}
     alt=""
-  /> 
+  />
 
   Select **Add Token** or **Add First Token**.  
 
   <img
     src={require('./assets/application-tokens-add-first-token.png').default}
     alt=""
-  /> 
+  />
 
   After choosing a descriptive label and optionally adding an **Expiry date** or **IP restriction**, select **Create Application Token**.  
 
   <img
     src={require('./assets/application-tokens-add-token-dialog.png').default}
     alt=""
-  /> 
+  />
 
   This generates your token.
   Select **Copy Token** and paste it in a secure location for future use.
@@ -53,5 +55,5 @@ If your token is compromised, the **IP restriction** helps limit the attacker's 
   <img
     src={require('./assets/token-created.png').default}
     alt=""
-  /> 
+  />
 </details>
