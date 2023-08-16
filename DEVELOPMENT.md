@@ -62,7 +62,7 @@ Most changes are reflected live without having to restart the server.
 
 ### Code
 
-All JavaScript, JSON, and JSX files are linted using [ESLint](https://eslint.org/) and Prettier.
+All JavaScript, JSON, and JSX files are linted using [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/docs/en/).
 This is done automatically via a [pre-commit hook](./.husky/pre-commit), but you can also run the commands locally:
 
 ```shell
@@ -88,8 +88,18 @@ yarn prettier:fix
 
 ### Content
 
-All Markdown and MDX files are linted using [Vale](https://vale.sh/).
-There's also an [EditorConfig](.editorconfig) file at the root of this repository to enforce consistent spacing and formatting.
+All Markdown and MDX files are linted using [Vale](https://vale.sh/) and [markdownlint](https://github.com/DavidAnson/markdownlint).
+There's also an [EditorConfig](https://editorconfig.org/) file at the root of this repository to enforce consistent spacing and formatting.
+
+markdownlint is run automatically via a [pre-commit hook](./.husky/pre-commit), but you can also run the commands locally:
+
+```shell
+# Runs markdownlint without modifying
+yarn markdownlint
+
+# Runs markdownlint and modifies content where possible
+yarn markdownlint:fix 
+```
 
 Vale is run via a [CI pipeline](.github/workflows/vale.yml) that fails on errors.
 See the [Vale README](.github/vale/README.md) for more information.
