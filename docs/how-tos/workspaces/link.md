@@ -5,7 +5,7 @@ pagination_label: Link an existing workspace
 slug: /workspaces/link
 ---
 
-# Link an existing workspace <span className="theme-doc-version-badge badge badge--primary beta">beta</span>
+# Link an existing workspace
 
 If you already have two or more [workspaces](/glossary#workspace) created, you can link these to a shared [main organization](/glossary#main-organization).
 These [linked workspaces](/glossary#linked-workspaces) can be centrally or individually managed.
