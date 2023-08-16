@@ -1,16 +1,24 @@
-# emnify Documentation
+# emnify Product Documentation
 
-Welcome to the emnify product documentation repository 🎉
-Here you'll find the content source for generating the [emnify Documentation](https://docs.emnify.com/) site.
+Welcome to the emnify Product Documentation repository 🎉
+Here you'll find the source code and content for generating the [docs.emnify.com](https://docs.emnify.com/) site.
 
 ## Questions or feedback
 
 If you have any suggestions, questions, or feedback, don't hesitate to [contact the documentation team](mailto:docs@emnify.com).
-To request an update or additional content, please [open a GitHub issue](https://github.com/emnify/product-docs/issues/new).
+To request an update or additional content, please [open an issue](https://github.com/emnify/product-docs/issues/new).
 
 ## Contributing
 
-You might also consider contributing to the emnify documentation project.
-Take a look at the [contributing guide](CONTRIBUTING.md) to see how to get started.
+- To report a bug or request new content, [open an issue](https://github.com/emnify/product-docs/issues/new/choose)
+- If you notice a typo, [open a pull request](https://github.com/emnify/product-docs/pulls) (please)
+- For instructions on setting up a local development environment, see [DEVELOPMENT.md](DEVELOPMENT.md)
+- For content guidelines, see [CONTRIBUTING.md](CONTRIBUTING.md)
 
-Alternatively, refer to the [development guide](./DEVELOPERS.md) if you're already familiar with software development tools and the GitHub workflow.
+> **Note**
+> This project is governed by [emnify's Code of Conduct](https://github.com/emnify/.github/blob/add-code-of-conduct/CODE_OF_CONDUCT.md#code-of-conduct).
+> By participating, you agree to abide by its terms.
+
+## Get support
+
+If you need help using emnify services, please [open a support ticket](https://support.emnify.com/hc/en-us).

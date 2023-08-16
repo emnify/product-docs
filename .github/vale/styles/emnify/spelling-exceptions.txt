@@ -19,6 +19,7 @@ SDKs
 serverless
 subnet
 superset
+SVGs
 telematics
 triaging
 uncheck
