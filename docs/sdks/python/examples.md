@@ -21,4 +21,4 @@ The source code for each example is available in the [emnify-sdk-python GitHub r
 | [Delete a device](https://github.com/emnify/emnify-sdk-python/blob/main/docs/examples/device_lifecycle_management.py)  |   |
 | [Filter a list of SIM cards](https://github.com/emnify/emnify-sdk-python/blob/main/docs/examples/filtering_and_sorting.py) | Return all SIMs for a specific customer organization.  |
 | [Sort all devices](https://github.com/emnify/emnify-sdk-python/blob/main/docs/examples/filtering_and_sorting.py) | Return a list of devices sorted by last updated date. |
-| [Manage device connectivity](https://github.com/emnify/emnify-sdk-python/blob/main/docs/examples/device_lifecycle_management.py#L143)  | Reset the device's or the network connectivity or check the connectivity status. <br /> [Connectivity troubleshooting](https://www.emnify.com/developer-blog/5-ways-to-detect-and-solve-connectivity-issues#network-events) |
+| [Manage device connectivity](https://github.com/emnify/emnify-sdk-python/blob/main/docs/examples/device_lifecycle_management.py)  | Reset the device or network connectivity and check the connectivity status. |
