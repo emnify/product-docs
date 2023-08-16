@@ -1,11 +1,11 @@
-# Development guide for the emnify Product Documentation 
+# Development guide for the emnify Product Documentation
 
 Your interest in contributing to the emnify Product Documentation is greatly appreciated, and hopefully, this development guide will help you get started 🚀
 
 If you think something is missing, [open an issue](https://github.com/emnify/product-docs/issues/new/choose).
 
 > **Note**
-> This guide focuses on setting up a local development environment and code standards for this repository. 
+> This guide focuses on setting up a local development environment and code standards for this repository.
 > Refer to the [contributing guide](CONTRIBUTING.md) if you're looking for guidelines for contributing content.
 
 Please note that this project is governed by [emnify's Code of Conduct](https://github.com/emnify/.github/blob/add-code-of-conduct/CODE_OF_CONDUCT.md#code-of-conduct) to ensure a professional, respectful, and inclusive environment for all contributors.
@@ -13,7 +13,7 @@ By participating, you agree to abide by its terms.
 
 ## Prerequisites
 
-The emnify Product Documentation website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator. 
+The emnify Product Documentation website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 To run it locally, you'll need the following:
 
 - [Node.js](https://nodejs.org/en/download/) ([version 16.14](https://docusaurus.io/docs/installation#requirements) or higher)
@@ -52,11 +52,11 @@ Then, start a local developer server:
 yarn start
 ```
 
-Running the preceding command opens up a browser window. 
+Running the preceding command opens up a browser window.
 Most changes are reflected live without having to restart the server.
 
 > **Note**
-> Runs on http://localhost:3000 by default.
+> Runs on <http://localhost:3000> by default.
 
 ## Linting
 
@@ -73,7 +73,7 @@ yarn lint
 yarn lint:fix 
 ```
 
-For troubleshooting purposes, you can run each linter individually. 
+For troubleshooting purposes, you can run each linter individually.
 These follow a similar protocol to the general `lint` command:
 
 ```shell
@@ -114,6 +114,7 @@ Example of how to display images using Markdown syntax:
 ```
 
 ### CommonJS require
+
 - Additional attributes are needed (for example, custom width)
 - Appears only once on a page
 - Empty `alt` value for decorative images
@@ -129,6 +130,7 @@ Example of how to display images using inline CommonJS `require` in JSX image ta
 ```
 
 ### ES import statement
+
 - Image is used multiple times on a page (for example, a checkmark icon used within a table column)
 
 Example of how to display images using ES `import` syntax and [inline SVGs](https://docusaurus.io/docs/markdown-features/assets#inline-svgs):
@@ -167,7 +169,7 @@ yarn serve
 
 ## Branch names
 
-Where possible, prefix the branch name with the ID of the Zendesk ticket, Jira ticket, or GitHub issue and include a short description of the intended changes. 
+Where possible, prefix the branch name with the ID of the Zendesk ticket, Jira ticket, or GitHub issue and include a short description of the intended changes.
 
 For example:
 

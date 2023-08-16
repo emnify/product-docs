@@ -2,7 +2,7 @@
 
 <!-- markdownlint-disable MD036 -->
 
-## Active SIM  
+## Active SIM
 
 When a SIM is in the active state, the charges for the SIM are applied.
 The device can send and receive data and SMS.

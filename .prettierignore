@@ -5,6 +5,7 @@ static/.nojekyll
 # Markdown (handled by another linter)
 docs
 *.md
+*.mdx
 
 # Vale config
 .vale.ini
@@ -29,6 +30,7 @@ build
 .cache-loader
 
 # Misc
+.editorconfig
 .DS_Store
 .env
 .env.example
