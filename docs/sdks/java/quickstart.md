@@ -22,7 +22,11 @@ The following installation examples use *`SDK_VERSION`* where this should be spe
 ### Prerequisites
 
 #### Supported Java versions
-[OpenJDK 8](https://openjdk.org/projects/jdk8/), [OpenJDK 11](https://openjdk.org/projects/jdk/11/), [OracleJDK 8](https://www.oracle.com/java/technologies/downloads/#java8) and [OracleJDK 11](https://www.oracle.com/java/technologies/downloads/#java11).
+
+- [OpenJDK 8](https://openjdk.org/projects/jdk8/)
+- [OpenJDK 11](https://openjdk.org/projects/jdk/11/)
+- [OracleJDK 8](https://www.oracle.com/java/technologies/downloads/#java8)
+- [OracleJDK 11](https://www.oracle.com/java/technologies/downloads/#java11)
 
 #### TLS requirements:
 Refer to the [SSL Report table](https://www.ssllabs.com/ssltest/analyze.html?d=cdn.emnify.net&latest) for the supported Transport Layer Security (TLS) versions.
