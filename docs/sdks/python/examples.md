@@ -16,7 +16,7 @@ The source code for each example is available in the [emnify-sdk-python GitHub r
 | [Initialize the SDK client](https://github.com/emnify/emnify-sdk-python/blob/main/docs/examples/device_lifecycle_management.py) |  Import dependencies and initialize the SDK using an application token. |
 | [Create and activate a device](https://github.com/emnify/emnify-sdk-python/blob/main/docs/examples/device_lifecycle_management.py#L12)    |  Assign an unassigned SIM, create a new device with defined parameters and activate it. |
 | [Configure a device](https://github.com/emnify/emnify-sdk-python/blob/main/docs/examples/device_lifecycle_management.py)               |        Retrieve a device's details and adjust its attributes, like the name and tags.       |
-| [Configure operator blocklist for device](https://github.com/emnify/emnify-sdk-python/blob/main/docs/examples/device_lifecycle_management.py#L69) |  Add or remove operators to the blacklist.  |
+| [Configure the operator blacklist](https://github.com/emnify/emnify-sdk-python/blob/main/docs/examples/device_lifecycle_management.py) |  Add or remove operators from the blacklist.  |
 | [Disable device](https://github.com/emnify/emnify-sdk-python/blob/main/docs/examples/device_lifecycle_management.py#L95) |  |
 | [Delete device](https://github.com/emnify/emnify-sdk-python/blob/main/docs/examples/device_lifecycle_management.py#L114)  |   |
 | [Filtering and sorting](https://github.com/emnify/emnify-sdk-python/blob/main/docs/examples/filtering_and_sorting.py) | Filter or sort lists of devices or SIM cards by passing several parameters.  |
