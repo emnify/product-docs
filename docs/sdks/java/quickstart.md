@@ -28,7 +28,8 @@ The following installation examples use *`SDK_VERSION`* where this should be spe
 - [OracleJDK 8](https://www.oracle.com/java/technologies/downloads/#java8)
 - [OracleJDK 11](https://www.oracle.com/java/technologies/downloads/#java11)
 
-#### TLS requirements:
+#### TLS requirements
+
 Refer to the [SSL Report table](https://www.ssllabs.com/ssltest/analyze.html?d=cdn.emnify.net&latest) for the supported Transport Layer Security (TLS) versions.
 
 
