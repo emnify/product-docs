@@ -13,7 +13,7 @@ The source code for each example is available in the [emnify-sdk-python GitHub r
 | Example                             | Description  |
 |---|---|
 | [Get your first device online](https://github.com/emnify/emnify-sdk-python/blob/main/docs/examples/mass_sim_activation.py)     |  Connect an emnify SIM to your device and configure the APN to access the internet. |
-| [Initialization of the SDK client](https://github.com/emnify/emnify-sdk-python/blob/main/docs/examples/device_lifecycle_management.py#L6) |  Initialize the SDK using a specific app token. |
+| [Initialize the SDK client](https://github.com/emnify/emnify-sdk-python/blob/main/docs/examples/device_lifecycle_management.py) |  Import dependencies and initialize the SDK using an application token. |
 | [Create and activate a device](https://github.com/emnify/emnify-sdk-python/blob/main/docs/examples/device_lifecycle_management.py#L12)    |  Assign an unassigned SIM, create a new device with defined parameters and activate it. |
 | [Configure a device](https://github.com/emnify/emnify-sdk-python/blob/main/docs/examples/device_lifecycle_management.py#L51)               |        Configure attributes, such as the tag and the name of the device.       |
 | [Configure operator blocklist for device](https://github.com/emnify/emnify-sdk-python/blob/main/docs/examples/device_lifecycle_management.py#L69) |  Add or remove operators to the blacklist.  |
