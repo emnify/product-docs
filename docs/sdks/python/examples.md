@@ -19,5 +19,6 @@ The source code for each example is available in the [emnify-sdk-python GitHub r
 | [Configure the operator blacklist](https://github.com/emnify/emnify-sdk-python/blob/main/docs/examples/device_lifecycle_management.py) |  Add or remove operators from the blacklist.  |
 | [Disable a device](https://github.com/emnify/emnify-sdk-python/blob/main/docs/examples/device_lifecycle_management.py) |  |
 | [Delete a device](https://github.com/emnify/emnify-sdk-python/blob/main/docs/examples/device_lifecycle_management.py)  |   |
-| [Filtering and sorting](https://github.com/emnify/emnify-sdk-python/blob/main/docs/examples/filtering_and_sorting.py) | Filter or sort lists of devices or SIM cards by passing several parameters.  |
+| [Filter a list of SIM cards](https://github.com/emnify/emnify-sdk-python/blob/main/docs/examples/filtering_and_sorting.py) | Return all SIMs for a specific customer organization.  |
+| [Sort all devices](https://github.com/emnify/emnify-sdk-python/blob/main/docs/examples/filtering_and_sorting.py) | Return a list of devices sorted by last updated date. |
 | [Manage device connectivity](https://github.com/emnify/emnify-sdk-python/blob/main/docs/examples/device_lifecycle_management.py#L143)  | Reset the device's or the network connectivity or check the connectivity status. <br /> [Connectivity troubleshooting](https://www.emnify.com/developer-blog/5-ways-to-detect-and-solve-connectivity-issues#network-events) |
