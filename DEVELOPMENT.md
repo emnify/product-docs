@@ -88,8 +88,11 @@ yarn prettier:fix
 
 ### Content
 
-All Markdown and MDX files are linted using [Vale](.github/vale/README.md).
+All Markdown and MDX files are linted using [Vale](https://vale.sh/).
 There's also an [EditorConfig](.editorconfig) file at the root of this repository to enforce consistent spacing and formatting.
+
+Vale is run via a [CI pipeline](.github/workflows/vale.yml) that fails on errors.
+See the [Vale README](.github/vale/README.md) for more information.
 
 ## Display images
 
