@@ -3,6 +3,9 @@ description: Learn how to manage your devices via the Connected Devices page in 
 slug: /portal/connected-devices
 ---
 
+import Check from '../assets/check-simple.svg';
+import Close from '../assets/close.svg';
+
 # Connected devices
 
  [**Connected Devices**](https://portal.emnify.com/connected-devices) is where you manage your devices.
@@ -17,6 +20,113 @@ After providing a name for the new device and selecting device policies, you can
 ## Get your device online
 
 If this is your first time configuring a device for network connectivity, see the [instructions for how to get your first device online](/apn-configuration).
+
+## Filter devices
+
+Filters are available for both the **Extensive** and **Plain** view of the **Connected Devices** table.
+These filters allow you to query devices based on one or more properties (for example, assigned tags or the device ID).
+
+Select the filter you want to edit, enter a value, then press the `Tab` or `Enter` key.
+Once you've entered all the values you want to filter by, click **Apply**.
+
+To remove a filter or value, click the corresponding **X**.
+
+<img
+  src={require('./assets/portal-connected-devices-filters.png').default}
+  alt=""
+  style={{ height:450 }}
+/>
+
+Filters can be combined or used together with the [search bar](#search-devices).
+Filtered values are saved in the URL as a query parameter (for example, after filtering for devices with the `Zapier` tag, the URL includes `&tags=Zapier` at the end).
+
+:::caution
+Your selected filters remain active when you visit a device's **Details** page.
+However, the filters reset if you go to another page in the Portal.
+:::
+
+### Available filters
+
+| Property        | Value      | [Wildcard support](#wildcard-support) | Description        |
+|:----------------|:-----------|:--------------------------------------:|:-------------------|
+| Name            | String     | <Check alt="Yes" />         | Name of a device |
+| ICCID           | String     | <Check alt="Yes" />         | [Integrated circuit card identifier (ICCID)](/glossary#iccid) including the final [Luhn checksum digit](/glossary#luhn-checksum-digit) |
+| Tag             | String     | <Check alt="Yes" />         | Name of a tag you've assigned to a device  |
+| Device ID       | String     | <Close alt="No" />       | Unique identifier for a device  |
+| Status          | Predefined | <Close alt="No" />        | List of possible [device statuses](/glossary#endpoint-status), specifically: **Enabled** or **Disabled**  |
+| EID             | String     | <Check alt="Yes" />         | Unique global serial number for an eUICC ([learn more about the EID](/glossary#eid))  |
+| IMEI            | String     | <Check alt="Yes" />         | [International mobile equipment identity (IMEI)](/glossary#imei), used to identify cellular modems  |
+| IP address      | String     | <Check alt="Yes" />         | Unique address that identifies a device on the internet or a local network (for example, `10.1.1.9`)   |
+| Coverage policy | Predefined | <Close alt="No" />        | List of your configured [coverage policies](/portal/device-policies#coverage-policies)  |
+| Service policy  | Predefined | <Close alt="No" />        | List of your configured [service policies](/portal/device-policies#service-policies)   |
+
+### Wildcard support
+
+A wildcard filter lets you find various value forms based on a partial match.
+You can also use character matching with an asterisk `*`.
+
+This is especially useful if a term has multiple spellings or you're unsure of the exact value.
+
+For example, if you have two devices named `Phase modem` and `My iPhone`, filtering for `ph` or `ph*e` shows both devices in the results.
+Another example is filtering names using `organi*ation` shows all results regardless of whether the device name uses American (organization) or British (organisation) spelling.
+
+### Enter a list of values
+
+You can also enter a list of values to filter for multiple ones simultaneously.
+This works for any property that accepts string values.
+
+Lists must be plain text with every value on its own line.
+Write the values exactly as they appear in the Portal.
+
+:::tip
+This feature is especially useful if you have an Excel file with dozens of values (for example, 100 ICCIDs).
+If you copy and paste the entire list into the filter, you can skip the tedious task of entering each value individually.
+:::
+
+To demonstrate, if you enter the following in the **Tag** filter and press the `Enter` key:
+
+```txt
+test
+v1
+beta
+```
+
+Each value is parsed, and the table shows any devices with the `test`, `v1`, and `beta` tags.
+
+<img
+  src={require('./assets/portal-connected-devices-filters-tag.png').default}
+  alt=""
+  style={{ height:400 }}
+/>
+
+## Search devices
+
+The **Connected Devices** search bar is next to the **Add device** button.
+It's visible on both the **Extensive** and **Plain** table view.
+
+To search your devices, type a value in the text field, then press the `Enter` key.
+To reset, click the corresponding **X**.
+
+<img
+  src={require('./assets/portal-connected-devices-search.png').default}
+  alt=""
+/>
+
+:::info
+All the [Available filter properties](#available-filters) are searchable except **Status**, **Coverage policy**, and **Service policy**. 
+:::
+
+Unlike [filters](#filter-devices), where the results are focused on one property, the search simultaneously looks for matches across multiple properties.
+For example, if you enter the number `2`, the search results would show any device with `2` in its name (like `WalkieTalkie 2.0`), any assigned tags, or one or more of its numeric values (**ICCID**, **EID**, etc.).
+
+The search is case insensitive, meaning `GPS Tracker` and `gps tracker` would produce the same results.
+You can also combine the search with filters, but searched values aren't saved in the URL. 
+
+:::caution
+Wildcards using an asterisk `*` aren't supported in the search bar.
+
+For example, if your device's **Name** is `My iPhone`, searching `phone` would show results, but searching `*phone` wouldn't.
+:::
 
 ## Get device information 
 

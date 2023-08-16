@@ -6,7 +6,7 @@ pagination_next: how-tos/workspaces/link
 slug: /workspaces/create
 ---
 
-# Create a new workspace <span className="theme-doc-version-badge badge badge--primary beta">beta</span>
+# Create a new workspace
 
 [Company accounts](/glossary#company-account) on the **Pro** plan can have up to five [workspaces](/glossary#workspace).
 

@@ -24,12 +24,13 @@ vale .github/vale/README.md
 ### Alerts
 
 Vale has three alert options: `suggestion`, `warning`, and `error`.
-By default, the minimum alert level is set to `warning`.
+By default, the minimum alert level in the project configuration is set to `warning`.
 
-<!-- All Vale tests must pass for approval. -->
+Vale is run via a [CI pipeline](.github/workflows/vale.yml).
+This pipeline fails on `error` and doesn't report warnings or suggestions.
 
-> **Note** 
-> This repository is being migrated to Vale, so it's currently not integrated into the commit hooks or CI pipelines.
+> **Warning**
+> The 'Validate content with Vale' pipeline must pass for approval.
 
 ## Styles
 
@@ -97,3 +98,13 @@ We're also missing an Oxford comma in that sentence!
 Do not do this!
 <!-- vale on -->
 ```
+
+## Add a new Vale rule
+
+Every new Vale rule takes effort to create and enforce, so we want to be mindful of what we implement.
+
+In general, follow these guidelines:
+
+- If you add an error-level Vale rule, **you must fix the existing occurrences of the issue** in the documentation before you can add the rule.
+- If the number of additional alerts in the Vale output is significant after adding your rule, the rule might be too broad.
+- If the rule is too subjective and an author frequently ignores it, it can't be adequately enforced and creates unnecessary additional warnings.

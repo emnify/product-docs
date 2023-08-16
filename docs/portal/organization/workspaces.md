@@ -4,7 +4,7 @@ description: Organizations with complex business structures or diverse product l
 slug: /workspaces
 ---
 
-# Workspaces <span className="theme-doc-version-badge badge badge--primary beta">beta</span>
+# Workspaces
 
 This feature comes with the **Pro** plan subscribers.
 It's designed to address the needs of organizations with complex business structures and those with diverse product lines.

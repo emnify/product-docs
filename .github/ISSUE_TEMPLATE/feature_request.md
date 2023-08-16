@@ -1,5 +1,5 @@
 ---
-name: Feature request
+name: Feature or content request
 about: Suggest an idea to improve our docs
 title: ''
 labels: ":bulb: Idea"
