@@ -26,9 +26,23 @@ If this is your first time configuring a device for network connectivity, see th
 Filters are available for both the **Extensive** and **Plain** view of the **Connected Devices** table.
 These filters allow you to query devices based on one or more properties (for example, assigned tags or the device ID).
 
+There are also **wildcard filters**, that let you find various value forms based on a partial match.
+You can also use character matching with an asterisk `*`.
+This is especially useful if a term has multiple spellings or you're unsure of the exact value.
+
+You can find some [examples on how to implement such filters](*insert link here*) here.
+
+<details>
+  <summary>NEEDS TO BE MOVED AWAY into e.g. "How to filter" </summary>
+
+  (rendered wrong locally, but just because of "details" element)
+## How to filter
+  
+#### Add/edit filter
 Select the filter you want to edit, enter a value, then press the `Tab` or `Enter` key.
 Once you've entered all the values you want to filter by, click **Apply**.
 
+#### Remove filter
 To remove a filter or value, click the corresponding **X**.
 
 <img
@@ -37,6 +51,7 @@ To remove a filter or value, click the corresponding **X**.
   style={{ height:450 }}
 />
 
+#### Combine filters
 Filters can be combined or used together with the [search bar](#search-devices).
 Filtered values are saved in the URL as a query parameter (for example, after filtering for devices with the `Zapier` tag, the URL includes `&tags=Zapier` at the end).
 
@@ -45,7 +60,7 @@ Your selected filters remain active when you visit a device's **Details** page.
 However, the filters reset if you go to another page in the Portal.
 :::
 
-### Available filters
+#### Available filters
 
 | Property        | Value      | [Wildcard support](#wildcard-support) | Description        |
 |:----------------|:-----------|:--------------------------------------:|:-------------------|
@@ -60,12 +75,7 @@ However, the filters reset if you go to another page in the Portal.
 | Coverage policy | Predefined | <Close alt="No" />        | List of your configured [coverage policies](/portal/device-policies#coverage-policies)  |
 | Service policy  | Predefined | <Close alt="No" />        | List of your configured [service policies](/portal/device-policies#service-policies)   |
 
-### Wildcard support
-
-A wildcard filter lets you find various value forms based on a partial match.
-You can also use character matching with an asterisk `*`.
-
-This is especially useful if a term has multiple spellings or you're unsure of the exact value.
+#### Wildcard support
 
 For example, if you have two devices named `Phase modem` and `My iPhone`, filtering for `ph` or `ph*e` shows both devices in the results.
 Another example is filtering names using `organi*ation` shows all results regardless of whether the device name uses American (organization) or British (organisation) spelling.
@@ -98,6 +108,8 @@ Each value is parsed, and the table shows any devices with the `test`, `v1`, and
   alt=""
   style={{ height:400 }}
 />
+
+</details>
 
 ## Search devices
 
