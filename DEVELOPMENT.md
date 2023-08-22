@@ -52,11 +52,36 @@ Then, start a local developer server:
 yarn start
 ```
 
+> **Warning**
+> You need to [set the environment variables](#set-the-environment-variables) or else this fails.
+
 Running the preceding command opens up a browser window.
 Most changes are reflected live without having to restart the server.
 
 > **Note**
 > Runs on <http://localhost:3000> by default.
+
+### Set the environment variables
+
+First, create an `.env` file at the root of the project:
+
+```shell
+touch .env
+```
+
+Then, paste the following into your `.env` file:
+
+```yml
+ALGOLIA_APP_ID=<APP_ID>
+ALGOLIA_SEARCH_API_KEY=<SEARCH_API_KEY>
+```
+
+This should be enough for you to [run a local server](#local-development).
+
+> **Note**
+> The actual values are necessary for working on the Algolia DocSearch implementation.
+> If you're an emnify employee and need these keys, contact the docs team.
+> Otherwise, please [open an issue](https://github.com/emnify/product-docs/issues/new/choose).
 
 ## Linting
 
