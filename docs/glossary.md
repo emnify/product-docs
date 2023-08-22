@@ -108,6 +108,19 @@ _Distributed Denial of Service Attack_
 
 An attack where the attacker sends multiple requests to a web resource with the aim of exceeding the website’s capacity to handle multiple requests and prevent the website from functioning correctly.
 
+## Device status
+_Also sometimes referred to as **[Endpoint](#endpoint) status**_
+
+Reflects the current state of the device and determines whether a device can connect to a network or incur charges.
+
+:::info
+Learn more about [the different device statuses](/portal/connected-devices#device-status) and [how to configure them in the emnify Portal](/portal/connected-devices#configure-the-device-status).
+:::
+
+:::note API Reference
+[Endpoint status object](https://cdn.emnify.net/api/doc/endpoint.html#endpoint-status-object)
+:::
+
 ## DNS
 
 _Domain Name System_
@@ -144,24 +157,6 @@ Therefore, you can use it as a permanent identifier to keep track of your SIM ca
 ## Endpoint  
 
 A representation of the device which has a SIM installed.
-
-## Endpoint status
-
-_Also referred to as **Device status**_
-
-Reflects the current state of the [endpoint](#endpoint) or device:
-
-- **Enabled**: SIM is [assigned](#assigned-sim) to the device and activated.
-- **Disabled**: No SIM assigned, or the assigned SIM is deactivated.
-- **Deleted**: Permanently removed from your [Connected Devices](https://portal.emnify.com/connected-devices).
-
-:::info
-Learn more about [configuring the device status in the emnify Portal](/portal/connected-devices#device-status).
-:::
-
-:::note API Reference
-[Endpoint status object](https://cdn.emnify.net/api/doc/endpoint.html#endpoint-status-object)
-:::
 
 ## eSIM
 
@@ -454,6 +449,14 @@ Monthly fee for an active SIM.
 ## SIM profile  
 
 The [mobile network operator (MNO)](https://www.emnify.com/iot-glossary/mno) ID information stored in the SIM’s memory.
+
+## SIM registration
+
+A process to allow your SIM cards to be registered within your organization and visible in the [**SIM Inventory**](https://portal.emnify.com/sim-inventory).
+
+:::tip Step-by-step guide
+[Register emnify SIMs](/quickstart/register-sims)
+:::
 
 ## SIM repository  
 

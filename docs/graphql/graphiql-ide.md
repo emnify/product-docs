@@ -176,7 +176,7 @@ Take a closer look:
 
 What's happening in this example:
 
-- `myUser` is a [query](https://graphql.org/learn/queries/) that can return your user and organization details, including [endpoint status](/glossary#endpoint-status) and active tariff plan.
+- `myUser` is a [query](https://graphql.org/learn/queries/) that can return your user and organization details, including [endpoint status](/glossary#device-status) and active tariff plan.
 
 <img
   src={require('./assets/graphiql-docs-query-myuser.png').default}

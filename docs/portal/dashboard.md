@@ -57,7 +57,7 @@ The running balance of total costs in your currency.
 **Device Traffic**  
 A chart showing the last four hours of upload/download volumes.
 
-[**Devices Status**](/glossary#endpoint-status)
+[**Devices Status**](/glossary#device-status)
 
 - **Online** (count)
 - **Disabled** (count)
