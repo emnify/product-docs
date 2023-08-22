@@ -168,10 +168,13 @@ Example of how to display images using inline CommonJS `require` in JSX image ta
 
 - Image is used multiple times on a page (for example, a checkmark icon used within a table column)
 
+> **Warning**
+> Because of the [markdownlint configuration](#content), any import statements must be _after_ the top-level header.
+
 Example of how to display images using ES `import` syntax and [inline SVGs](https://docusaurus.io/docs/markdown-features/assets#inline-svgs):
 
 ```jsx
-import Check from '../assets/check-simple.svg';
+import Check from '../assets/check.svg';
 
 <Check alt="Yes" />
 ```
