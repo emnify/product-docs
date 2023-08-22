@@ -1,4 +1,5 @@
 alex
+Algolia
 APN[s]
 AuC
 AWS
@@ -49,6 +50,7 @@ Jira
 Kinesis
 LTE
 Luhn
+Markdown
 markdownlint
 Meitrack
 Microsoft

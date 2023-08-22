@@ -53,7 +53,7 @@ yarn start
 ```
 
 > **Warning**
-> You need to [set the environment variables](#set-the-environment-variables) or else this will fail.
+> You need to [set the environment variables](#set-the-environment-variables) or else this fails.
 
 Running the preceding command opens up a browser window.
 Most changes are reflected live without having to restart the server.
@@ -79,7 +79,7 @@ ALGOLIA_SEARCH_API_KEY=<SEARCH_API_KEY>
 This should be enough for you to [run a local server](#local-development).
 
 > **Note**
-> The actual values are necessary for working on the search functionality.
+> The actual values are necessary for working on the Algolia DocSearch implementation.
 > If you're an emnify employee and need these keys, contact the docs team.
 > Otherwise, please [open an issue](https://github.com/emnify/product-docs/issues/new/choose).
 
