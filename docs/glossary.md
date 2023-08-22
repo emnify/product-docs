@@ -109,6 +109,7 @@ _Distributed Denial of Service Attack_
 An attack where the attacker sends multiple requests to a web resource with the aim of exceeding the website’s capacity to handle multiple requests and prevent the website from functioning correctly.
 
 ## Device status
+
 _Also sometimes referred to as **[Endpoint](#endpoint) status**_
 
 Reflects the current state of the device and determines whether a device can connect to a network or incur charges.
