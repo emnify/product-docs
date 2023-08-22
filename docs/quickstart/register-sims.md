@@ -41,11 +41,11 @@ If you [order the free Evaluation SIM package](/quickstart), you'll have to regi
 
 As part of the SIM registration, you can create a new device for the newly registered SIM while you are still in the SIM registration dialog.
 
+<!-- markdownlint-disable MD029 -->
 <details className="custom-details-example">
   <summary>Show an example</summary>
 
   1. After confirming your BIC1 is correct, select **Register SIM Card**.
-
 
   <img
     src={require('./assets/sim-enter-bic1-register-sim-card.png').default}
@@ -80,7 +80,7 @@ As part of the SIM registration, you can create a new device for the newly regis
     style={{width:475}} alt=""
   />
 
-  6.  Once created, your device should be ready to go online if it has been configured with the correct APN and data roaming is enabled.
+  6. Once created, your device should be ready to go online if it has been configured with the correct APN and data roaming is enabled.
 
   <img
     src={require('./assets/sim-apn-setup.png').default}

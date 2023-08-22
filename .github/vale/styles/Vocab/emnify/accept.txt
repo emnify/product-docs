@@ -49,6 +49,7 @@ Jira
 Kinesis
 LTE
 Luhn
+markdownlint
 Meitrack
 Microsoft
 Microsoft Active Directory

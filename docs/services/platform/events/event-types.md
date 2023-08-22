@@ -141,7 +141,7 @@ This happens periodically or when entering a new location area.
 
 The `Update location` event registers the device in the circuit-switched domain (2G/3G) and packet-switched domain (4G/LTE).
 It enables the network to know the location/region of the device to send/retrieve the subscription information.
-In 2G/3G it allows the device to send and receive SMS. 
+In 2G/3G it allows the device to send and receive SMS.
 
 **Example**: a SIM card has (re)authenticated with a different network element.
 If successful, the device appears as **Attached** in the [emnify Portal](/system-events/usage#emnify-portal) and is ready to receive SMS.
@@ -886,7 +886,7 @@ Application token failed to authenticate.
 <details className="custom-details-example">
   <summary>Example response message</summary>
 
-```
+```text
 Failed authentication request from 'Application Token Name', Reason: TokenStatus Revoked from IP 54.64.35.156
 ```
 
@@ -1425,7 +1425,7 @@ SIM is patched from **Issued** to **Factory Test** [status](/glossary#sim-status
 
 ### SIM registration
 
-SIM or SIM batch is registered to an organization via a [Batch Identification Code (BIC)](/glossary#bic). 
+SIM or SIM batch is registered to an organization via a [Batch Identification Code (BIC)](/glossary#bic).
 
 :::note
 This event doesn't trigger when the emnify team assigns SIMs to an organization.

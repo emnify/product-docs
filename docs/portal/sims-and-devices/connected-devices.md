@@ -3,6 +3,7 @@ description: Learn how to manage your devices via the Connected Devices page in 
 slug: /portal/connected-devices
 ---
 
+<!-- markdownlint-disable MD041 -->
 import Check from '../assets/check-simple.svg';
 import Close from '../assets/close.svg';
 
@@ -10,7 +11,7 @@ import Close from '../assets/close.svg';
 
  [**Connected Devices**](https://portal.emnify.com/connected-devices) is where you manage your devices.
 
-## Create a new device 
+## Create a new device
 
 As part of the SIM registration process, you can [create a new device](/quickstart/register-sims#create-a-new-device) for the newly registered SIM while still in the SIM registration dialog.
 
@@ -113,14 +114,14 @@ To reset, click the corresponding **X**.
 />
 
 :::info
-All the [Available filter properties](#available-filters) are searchable except **Status**, **Coverage policy**, and **Service policy**. 
+All the [Available filter properties](#available-filters) are searchable except **Status**, **Coverage policy**, and **Service policy**.
 :::
 
 Unlike [filters](#filter-devices), where the results are focused on one property, the search simultaneously looks for matches across multiple properties.
 For example, if you enter the number `2`, the search results would show any device with `2` in its name (like `WalkieTalkie 2.0`), any assigned tags, or one or more of its numeric values (**ICCID**, **EID**, etc.).
 
 The search is case insensitive, meaning `GPS Tracker` and `gps tracker` would produce the same results.
-You can also combine the search with filters, but searched values aren't saved in the URL. 
+You can also combine the search with filters, but searched values aren't saved in the URL.
 
 :::caution
 Wildcards using an asterisk `*` aren't supported in the search bar.
@@ -128,7 +129,7 @@ Wildcards using an asterisk `*` aren't supported in the search bar.
 For example, if your device's **Name** is `My iPhone`, searching `phone` would show results, but searching `*phone` wouldn't.
 :::
 
-## Get device information 
+## Get device information
 
 To view all information about a device, navigate to [**Connected Devices**](https://portal.emnify.com/connected-devices), find it in the list, and select **Details**.
 

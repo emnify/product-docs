@@ -5,14 +5,14 @@ slug: /multicloud-data-streamer/stream-types
 
 # Stream types
 
-Through stream types, you can configure the type of content delivered by the data stream. 
-You may choose between receiving _event data_ or _usage data_. 
+Through stream types, you can configure the type of content delivered by the data stream.
+You may choose between receiving _event data_ or _usage data_.
 
 Streaming event and usage data within one stream is possible but not advised, as these data records don't share a common schema definition.
 
 ## Event data
 
-The emnify system generates several types of events. 
+The emnify system generates several types of events.
 These events allow you to track notable system occurrences based on behavior.
 
 Some common use cases for events on emnify include:
@@ -27,8 +27,8 @@ Learn more about the available event types and how to use them in the [Event doc
 
 ## Usage data
 
-Usage data records get generated when devices consume data or SMS services. 
-These records provide information about the SIM, used service, visited network, volumes, and cost. 
+Usage data records get generated when devices consume data or SMS services.
+These records provide information about the SIM, used service, visited network, volumes, and cost.
 
 Usage data streams are often used for monitoring and analyzing data consumption and as input for custom billing systems.
 
@@ -130,6 +130,7 @@ Data usage records are created:
     }
 ]
 ```
+
 </details>
 
 :::note API Reference
@@ -217,6 +218,7 @@ Usage records for SMS are created when an SMS is successfully delivered either:
     }
 ]
 ```
+
 </details>
 
 :::note API Reference

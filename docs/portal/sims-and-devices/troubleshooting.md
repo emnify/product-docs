@@ -13,10 +13,10 @@ First, determine the device's state either by looking at the device's **Details*
 
 | State        | Description |
 | ------------ | ----------- |
-| **Attached** | If the device has successfully attached to the emnify Core Network in the past, its state is displayed as **Attached** until the visited network has signaled that the device is inactive/offline. Usually, the visited network informs the emnify Core Network within 1-2 days after a device has gone offline. | 
+| **Attached** | If the device has successfully attached to the emnify Core Network in the past, its state is displayed as **Attached** until the visited network has signaled that the device is inactive/offline. Usually, the visited network informs the emnify Core Network within 1-2 days after a device has gone offline. |
 | **Blocked**  | Service is suspended either due to exceeded traffic limits or [IMEI lock](/glossary#imei-lock). |
 | **Offline**  | A network connection isn't possible. There are many reasons for this state. |
-| **Online**   | A network connection is active, and the device can use data and SMS per the device policies. | 
+| **Online**   | A network connection is active, and the device can use data and SMS per the device policies. |
 
 :::tip
 The most efficient way to see if your device has connectivity is to look for the **PDP Context active 00:00:00** display that refreshes every 20 seconds in the **Connection** section of **Device Details**.
@@ -47,7 +47,7 @@ The absence of data usage or spikes in data usage could indicate abnormal behavi
     src={require('./assets/usage-data-last-hour.png').default}
     style={{width:335}}
     alt=""
-  /> 
+  />
 
   After selecting the **Current Month** view, you can see that this device hasn't sent or received data for several days.
 
@@ -55,10 +55,9 @@ The absence of data usage or spikes in data usage could indicate abnormal behavi
     src={require('./assets/usage-data-current-month.png').default}
     style={{width:335}}
     alt=""
-  /> 
+  />
 
 </details>
-
 
 ## Events
 
@@ -78,7 +77,7 @@ The event log often contains information that can be used to determine what went
 
 :::caution Warning
 Don't rely solely on the **Event Type** to determine what event was logged.
-For instance, **Create PDP Context** by itself *doesn't* mean that a PDP context was successfully created.
+For instance, **Create PDP Context** by itself _doesn't_ mean that a PDP context was successfully created.
 :::
 
 ### Event severity
@@ -95,7 +94,7 @@ In contrast, a successful **Create PDP Context** event has an **Event Source** o
     src={require('./assets/create-pdp-context-success-and-failure.png').default}
     style={{width:550}}
     alt=""
-  /> 
+  />
 </details>
 
 ### Filtering
@@ -107,7 +106,7 @@ The first column, **Severity**, provides the following filters:
 - **Warning**
 - **Critical**
 
-For instance, if you filter for the **Warning** severity and see any of the following events, it's a good indication of a failure that's preventing network connectivity. 
+For instance, if you filter for the **Warning** severity and see any of the following events, it's a good indication of a failure that's preventing network connectivity.
 
 - **Create PDP Context**
 - **Endpoint blocked**
@@ -144,12 +143,12 @@ If you reset connectivity for a device, the expected series of events would be:
 
 If the connection (PDP context) is never created and the connection remains **Attached**, try rebooting the device.
 In some cases, a reboot is needed to establish the data connection.
-If so, these additional events should be logged, with **Create PDP Context** being the crucial one. 
+If so, these additional events should be logged, with **Create PDP Context** being the crucial one.
 
 1. Info: Update GPRS location
 1. Info: Create PDP Context
 
-##  More troubleshooting tips
+## More troubleshooting tips
 
 Several factors can cause data connectivity problems.
 For more detailed troubleshooting tips, see [Troubleshooting](/quickstart/troubleshooting).

@@ -5,7 +5,7 @@ slug: /services/sim-lifecycle-management
 
 # SIM lifecycle management
 
-When selling connected devices, it's difficult to determine when devices are in use and when not. 
+When selling connected devices, it's difficult to determine when devices are in use and when not.
 Using SIM cards that can't align with the device lifecycle incur unnecessary costs.
 
 emnify SIM cards don't incur any costs unless activated.

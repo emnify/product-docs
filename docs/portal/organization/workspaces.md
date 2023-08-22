@@ -26,7 +26,7 @@ Administrators with privileges to manage linked workspaces only need one set of 
 
 There are other benefits and solutions that **Workspaces** can provide, but these vary depending on the organization, such as:
 
-### Partition of business units 
+### Partition of business units
 
 This helps facilitate requirements for supporting fundamental differences in the following:
 

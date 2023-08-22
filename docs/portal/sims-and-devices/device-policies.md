@@ -139,7 +139,7 @@ You'll be presented with a dropdown list to choose from.
 Select your policy from the list.
 You should see a real-time notification confirming the change.
 
-### Bulk assignments 
+### Bulk assignments
 
 Navigate to [**Connected Devices**](https://portal.emnify.com/connected-devices) and search for the devices you wish to assign to a policy.
 If you followed the previous tip, you might be able to use only one or two tags to filter only the devices to be assigned.
@@ -175,7 +175,7 @@ As soon as you change the service policy, it's pushed to all 100 devices.
 Another way to change a device's group policy is to switch from its current policy to another one.
 For a single device, you can select its new policy from a dropdown list when viewing the [**Device Details**](/portal/connected-devices#get-device-information) by selecting **Edit**  as described earlier in [Single device assignment](#single-device-assignment).
 
-For changing a group of devices to a new policy, follow the procedure described for [bulk assignments](#bulk-assignments). 
+For changing a group of devices to a new policy, follow the procedure described for [bulk assignments](#bulk-assignments).
 
 ### Make sure the changes take effect immediately
 
