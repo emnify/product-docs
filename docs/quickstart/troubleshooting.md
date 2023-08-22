@@ -64,3 +64,15 @@ Also, verify that the network is on emnify’s [NB-IoT coverage](https://www.emn
 - Clicking the reset connectivity icon on [**Connected Devices**](https://portal.emnify.com/connected-devices) can also reset the network state and allow your device to freshly reattach.
 - The issue may only be present with one network or in the specific location (for example, due to high interference for this network).
 You can use the Operator Blacklist to block the network and force the change to a different network.
+
+## Contact the support team
+
+If you've tried everything and still can't find a solution, you can contact the [emnify support team](/support).
+
+Be sure to include the following information in your request:
+
+- Your company name
+- The ICCIDs of your SIMs in question
+- The type of device you're using
+- A short description of the issue
+- A phone number where we can reach you if required
