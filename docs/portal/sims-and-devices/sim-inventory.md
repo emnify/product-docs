@@ -6,33 +6,54 @@ slug: /portal/sim-inventory
 
 # SIM inventory
 
+The [**SIM Inventory**](https://portal.emnify.com/sim-inventory) provides a complete list of your registered SIMs.
+
 ## SIM states
 
-A SIM can transition through five states during its lifecycle, **Issued**, **Activated**, **Suspended**, **Factory Test**, and **Deleted**.
-
+A SIM can transition through five states during its lifecycle: **Issued**, **Activated**, **Suspended**, **Factory Test**, and **Deleted**.
 These states are sometimes referred to as the [SIM status](/glossary#sim-status).
 
 :::info
 Learn more about each SIM state and what they mean in the [SIM lifecycle management](/services/sim-lifecycle-management) overview.
 :::
 
-## SIM management
+## Manage SIMs
 
-The [**SIM Inventory**](https://portal.emnify.com/sim-inventory) provides a complete list of your registered SIMs.
-You can search by various identifiers, including [ICCID](/glossary#iccid), [EID](/glossary#eid), and phone number, to name a few.
+The **Details** view shows all identifiers and properties for an individual SIM, including:
 
-The **Details** view of a SIM shows all identifiers as well as:
+| Property            | Description                                      |
+|:--------------------|:-------------------------------------------------|
+| **Assigned device** | Name of the device that the SIM is attached to, linked to the respective [**Device Details**](/portal/connected-devices#get-device-information) page. |
+| **SIM ID**          | Unique identifier of the SIM (referred to as the `sim_id` when working with the [REST API](https://cdn.emnify.net/api/doc/sim.html)). |
+| **ICCID**           | [Integrated circuit card identifier](/glossary#iccid) _including_ the final [Luhn checksum digit](/glossary#luhn-checksum-digit). |
+| **MSISDN**          | [Mobile Station International Subscriber Directory Number](/glossary#msisdn) of the SIM. |
+| **IMSI**            | [International Mobile Subscriber Identity](/glossary#imsi) of the SIM. |
+| **Vendor**          | Name of the manufacturer. |
+| **Memory**          | Memory size in kilobytes (KB). |
+| **Produced**        | Date and time in Coordinated Universal Time (UTC) the SIM was produced, formatted based on your [**Language**](/portal/user-settings#user-profile) settings. |
+| **Model**           | Description of the SIM model (for example, **Classic**). |
+| **SIM Type**        | Diagram and description of the SIM type, including the [quality grade](/services/global-iot-sim#quality-grades) and [form factors](/services/global-iot-sim#form-factors). |
 
-- **Assigned device** (if the SIM is attached to a device)
-- **Vendor**
-- **Memory** 
-- **Produced** (date and time)
-- **Model**
-- **SIM Type** (for example, triple-cut commercial)
+### Additional views
 
 **Events** and **Statistics** are additional views that provide logs and aggregated usage, respectively, if the SIM has been assigned to a device and is **Active**.
 
+## Search SIMs
+
+You can search by various attributes, including [ICCID](/glossary#iccid), [EID](/glossary#eid), and device ID, to name a few.
+
+<img
+  src={require('./assets/portal-sim-inventory-search-bar-attributes.png').default}
+  alt=""
+/>
+
+## Order or register SIMs
+
 To expand your SIM inventory, follow the appropriate link at the top of the page:
 
-- To visit the [SIM Shop](https://portal.emnify.com/sim-order), select **Order SIMs**
+- To visit the [SIM Shop](https://portal.emnify.com/sim-order), select **Order SIMs**.
 - To [register SIMs](https://portal.emnify.com/sim-registration), either individually or in batches, select **Register SIMs**.
+
+:::tip
+Step-by-step guides are available for [ordering SIMs from the SIM Shop](/quickstart/order-sims) and [registering SIMs](/quickstart/register-sims).
+:::
