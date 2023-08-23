@@ -165,7 +165,7 @@ Example of how to display images using inline CommonJS `require` in JSX image ta
 ```
 
 You must also use this syntax to apply the [docusaurus-plugin-image-zoom](https://github.com/gabrielcsapo/docusaurus-plugin-image-zoom) feature to an SVG file.
-To do this, you need to add `!!url-loader!` at the beginning of the `src` path—otherwise, [Webpack's `svg-loader` kicks in](https://github.com/facebook/docusaurus/issues/8398#issuecomment-1331694452).
+To do this, you need to add `!!url-loader!` at the beginning of the `src` path—otherwise, the [webpack `svg-loader` kicks in](https://github.com/facebook/docusaurus/issues/8398#issuecomment-1331694452).
 
 ```jsx
 <img

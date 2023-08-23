@@ -33,7 +33,6 @@ The 16-digit BIC is located on the packaging label and marked as **BIC2**.
   className="no-border"
   src={require('!!url-loader!./assets/sim-registration-bic2.svg').default}
   alt=""
-  style={{ marginBottom: "1em" }}
 />
 
 :::tip
