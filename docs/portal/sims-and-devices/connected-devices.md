@@ -5,7 +5,6 @@ slug: /portal/connected-devices
 
 # Connected devices
 
-<!-- markdownlint-disable MD041 -->
 import Check from '../assets/check.svg';
 import Close from '../assets/close.svg';
 
