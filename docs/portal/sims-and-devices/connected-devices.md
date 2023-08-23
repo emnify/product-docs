@@ -75,12 +75,12 @@ However, the filters reset if you go to another page in the Portal.
 | Coverage policy | Predefined | <Close alt="No" />        | List of your configured [coverage policies](/portal/device-policies#coverage-policies)  |
 | Service policy  | Predefined | <Close alt="No" />        | List of your configured [service policies](/portal/device-policies#service-policies)   |
 
-#### Wildcard support
+#### Wildcard filters
 
 For example, if you have two devices named `Phase modem` and `My iPhone`, filtering for `ph` or `ph*e` shows both devices in the results.
 Another example is filtering names using `organi*ation` shows all results regardless of whether the device name uses American (organization) or British (organisation) spelling.
 
-### Enter a list of values
+#### Filter for multiple values
 
 You can also enter a list of values to filter for multiple ones simultaneously.
 This works for any property that accepts string values.
@@ -116,6 +116,14 @@ Each value is parsed, and the table shows any devices with the `test`, `v1`, and
 The **Connected Devices** search bar is next to the **Add device** button.
 It's visible on both the **Extensive** and **Plain** table view.
 
+
+<details>
+  <summary>NEEDS TO BE MOVED AWAY into e.g. "How to search" </summary>
+
+  (rendered wrong locally, but just because of "details" element)
+## How to search
+
+</details>
 To search your devices, type a value in the text field, then press the `Enter` key.
 To reset, click the corresponding **X**.
 
@@ -123,6 +131,14 @@ To reset, click the corresponding **X**.
   src={require('./assets/portal-connected-devices-search.png').default}
   alt=""
 />
+
+:::caution
+Wildcards using an asterisk `*` aren't supported in the search bar.
+
+For example, if your device's **Name** is `My iPhone`, searching `phone` would show results, but searching `*phone` wouldn't.
+:::
+</details>
+
 
 :::info
 All the [Available filter properties](#available-filters) are searchable except **Status**, **Coverage policy**, and **Service policy**. 
@@ -134,12 +150,6 @@ For example, if you enter the number `2`, the search results would show any devi
 The search is case insensitive, meaning `GPS Tracker` and `gps tracker` would produce the same results.
 You can also combine the search with filters, but searched values aren't saved in the URL. 
 
-:::caution
-Wildcards using an asterisk `*` aren't supported in the search bar.
-
-For example, if your device's **Name** is `My iPhone`, searching `phone` would show results, but searching `*phone` wouldn't.
-:::
-
 ## Get device information 
 
 To view all information about a device, navigate to [**Connected Devices**](https://portal.emnify.com/connected-devices), find it in the list, and select **Details**.
@@ -150,7 +160,6 @@ To view all information about a device, navigate to [**Connected Devices**](http
     src={require('./assets/device-details.png').default}
     alt=""
   />
-</details>
 
 ### Useful terms
 
