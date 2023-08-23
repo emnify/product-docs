@@ -3,11 +3,11 @@ description: Learn how to manage your devices via the Connected Devices page in 
 slug: /portal/connected-devices
 ---
 
-<!-- markdownlint-disable MD041 -->
-import Check from '../assets/check-simple.svg';
-import Close from '../assets/close.svg';
-
 # Connected devices
+
+<!-- markdownlint-disable MD041 -->
+import Check from '../assets/check.svg';
+import Close from '../assets/close.svg';
 
  [**Connected Devices**](https://portal.emnify.com/connected-devices) is where you manage your devices.
 

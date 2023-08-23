@@ -3,11 +3,11 @@ displayed_sidebar: devResourcesSidebar
 slug: /graphql/graphiql-ide
 ---
 
+# Use the GraphiQL IDE
+
 <!-- markdownlint-disable MD041 -->
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
-
-# Use the GraphiQL IDE
 
 There's an in-browser [emnify GraphiQL IDE](https://graphql-playground.emnify.net/) where you can experiment with the GraphQL API.
 
