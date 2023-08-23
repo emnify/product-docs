@@ -5,6 +5,9 @@ slug: /quickstart/register-sims
 
 # Register emnify SIMs
 
+import BIC1 from './assets/sim-registration-bic1.svg';
+import BIC2 from './assets/sim-registration-bic2.svg';
+
 Once you [get your emnify SIMs](/quickstart/order-sims), the next step is to register them.
 When you register a new SIM or [SIM batch](/glossary#sim-batch), you can automatically activate the SIM and create connected devices using the default configuration.
 
@@ -14,18 +17,22 @@ If you [ordered the free Evaluation SIM package](/quickstart), you must register
 
 ## Locate the BIC
 
+:::tip
+If you're having trouble locating your [batch identification code (BIC)](/glossary#bic), refer to this Knowledge Base article: [I cannot register my SIM cards. The BIC code is invalid or I do not have a BIC code.](https://support.emnify.com/hc/en-us/articles/360019254640-I-cannot-register-my-SIM-cards-The-BIC-code-is-invalid-or-I-do-not-have-a-BIC-code)
+:::
+
 ### Individual SIMs
 
-The 16-digit [batch identification code (BIC)](/glossary#bic) is on the card's upper right corner and marked as **BIC1**.
+The 16-digit BIC is on the card's upper right corner and marked as **BIC1**.
 It's used to register single SIMs.
 
-<!-- TODO in PGR-489: Add updated image -->
+<BIC1 alt="" />
 
 ### SIM batches
 
 The 16-digit BIC is located on the packaging label and marked as **BIC2**.
 
-<!-- TODO in PGR-489: Add updated image -->
+<BIC2 alt="" />
 
 ## Register SIMs in the emnify Portal
 
