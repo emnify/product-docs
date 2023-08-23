@@ -34,6 +34,7 @@ The 16-digit BIC is located on the packaging label and marked as **BIC2**.
 1. Select **Single-SIM** to register individual SIM cards or select 
 1. Enter the **BIC1** for individual SIMs or the **BIC2** for batches.
 1. After confirming your BIC is correct, select **Register SIM card**.
+
 <img
   src={require('./assets/sim-enter-bic1-register-sim-card.png').default}
   style={{width:370}} alt=""
