@@ -154,12 +154,20 @@ You can also combine the search with filters, but searched values aren't saved i
 
 To view all information about a device, navigate to [**Connected Devices**](https://portal.emnify.com/connected-devices), find it in the list, and select **Details**.
 
+<details>
+  <summary>NEEDS TO BE MOVED AWAY into e.g. "How to search" </summary>
+
+  (rendered wrong locally, but just because of "details" element)
+## How to get device information
+
 <details className="custom-details-example">
   <summary>Show an example of Device Details</summary>
   <img
     src={require('./assets/device-details.png').default}
     alt=""
   />
+
+  </details>
 
 ### Useful terms
 
@@ -169,6 +177,7 @@ Each listed term includes a link to its associated [Glossary](/glossary) entry:
 - [IMSI](/glossary#imsi)
 - [MSISDN](/glossary#msisdn)
 - [IMEI](/glossary#imei)
+
 
 ## Device status
 
