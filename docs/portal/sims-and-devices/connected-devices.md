@@ -155,7 +155,7 @@ You can also combine the search with filters, but searched values aren't saved i
 To view all information about a device, navigate to [**Connected Devices**](https://portal.emnify.com/connected-devices), find it in the list, and select **Details**.
 
 <details>
-  <summary>NEEDS TO BE MOVED AWAY into e.g. "How to search" </summary>
+  <summary>NEEDS TO BE MOVED AWAY into e.g. "How to get device information" </summary>
 
   (rendered wrong locally, but just because of "details" element)
 ## How to get device information
@@ -166,8 +166,9 @@ To view all information about a device, navigate to [**Connected Devices**](http
     src={require('./assets/device-details.png').default}
     alt=""
   />
+</details>
 
-  </details>
+</details>
 
 ### Useful terms
 
@@ -179,7 +180,7 @@ Each listed term includes a link to its associated [Glossary](/glossary) entry:
 - [IMEI](/glossary#imei)
 
 
-## Device status
+## Get device status
 
 A device has only two states, **Enabled** or **Disabled**.
 
@@ -189,12 +190,18 @@ A disabled device doesn't incur any charges.
 When you want a device to connect to a network, change its status to **Enabled**.
 To do this, use the **Status** toggle from the **Connected Devices** list or the device's **Details** page.
 
-### Bulk actions
+## Enable / Disable a device
 
 You can also perform a bulk Enable/Disable operation on a group of devices.
 
 Use a filter to display a list of the targeted devices.
 Once their checkboxes indicate that they have been selected, the bulk actions menu bar appears at the top of the screen.
+
+<details>
+  <summary>NEEDS TO BE MOVED AWAY into e.g. "How to evable/disable device" </summary>
+
+  (rendered wrong locally, but just because of "details" element)
+## How to evable/disable device
 Select **Device** and then one of the actions:
 
 <!-- vale Google.OptionalPlurals = NO -->
@@ -202,6 +209,8 @@ Select **Device** and then one of the actions:
 - Enable Device(s)
 - Disable Device(s)
 <!-- vale Google.OptionalPlurals = YES -->
+
+</details>
 
 <details className="custom-details-troubleshooting">
   <summary>Show where this happens in the Portal</summary>
