@@ -3,10 +3,11 @@ description: Review the emnify account permissions for various roles
 slug: /portal/roles
 ---
 
-import Check from './assets/check-simple.svg';
-import Close from './assets/close.svg';
-
 # Roles and permissions
+
+<!-- markdownlint-disable MD041 -->
+import Check from './assets/check.svg';
+import Close from './assets/close.svg';
 
 The [emnify Portal](https://portal.emnify.com/) is a powerful application to control the connectivity of devices of a production system.
 

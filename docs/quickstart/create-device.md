@@ -13,4 +13,13 @@ To create a device, give it a name and assign a service and coverage policy.
   alt=""
 />
 
-If you plan on using your device right away, activate it. If you don't plan on using the device right away, select **Leave Disabled**.
+If you plan on using your device right away, select **Activate**.
+Otherwise, select **Leave Disabled**.
+
+## Insert the assigned SIM
+
+:::note
+Skip this step if your device already has an embedded SIM.
+:::
+
+Before you can [get your device online](/apn-configuration), insert the SIM that's [registered and assigned](/quickstart/register-sims) to the device and turn it on.

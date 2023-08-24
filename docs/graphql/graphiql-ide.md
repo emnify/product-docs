@@ -3,10 +3,11 @@ displayed_sidebar: devResourcesSidebar
 slug: /graphql/graphiql-ide
 ---
 
+# Use the GraphiQL IDE
+
+<!-- markdownlint-disable MD041 -->
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
-
-# Use the GraphiQL IDE
 
 There's an in-browser [emnify GraphiQL IDE](https://graphql-playground.emnify.net/) where you can experiment with the GraphQL API.
 
@@ -32,7 +33,7 @@ The UI is divided into three parts:
   alt=""
 />
 
-At the top of the sidebar, there are buttons for the [documentation explorer](#documentation-explorer), history, and GraphiQL explorer. 
+At the top of the sidebar, there are buttons for the documentation explorer, history, and GraphiQL explorer.
 Underneath, the sidebar shows buttons that allow you to re-fetch the GraphQL schema, see the keyboard shortcuts, and change settings.
 
 The bottom of the left panel has two sections, **Variables** and **Headers**.
@@ -51,13 +52,13 @@ An example GraphQL query might look like this:
 ```
 
 :::tip
-GraphQL queries typically start with a `{` character. 
+GraphQL queries typically start with a `{` character.
 Lines that start with a `#` are ignored.
 :::
 
 ## Authentication
 
-To make calls from this IDE, you need to provide an [application token](#retrieving-your-application-token) in the [**Headers** section](#adding-your-application-token-to-graphiql).
+To make calls from this IDE, you need to provide an [application token](#retrieve-your-application-token) in the [**Headers** section](#add-your-application-token-to-graphiql).
 
 ### Retrieve your application token
 
@@ -71,6 +72,7 @@ You can generate an application token in the emnify Portal:
   alt=""
 />
 
+<!-- markdownlint-disable-next-line MD029 -->
 3. Select **Add Token**
 
 <img
@@ -78,6 +80,7 @@ You can generate an application token in the emnify Portal:
   alt=""
 />
 
+<!-- markdownlint-disable-next-line MD029 -->
 4. Fill out the token's **Description** and **Expiry date (UTC)**, and indicate whether you want to **Add IP restriction**. 
 Click **Create application token** to confirm your choices.
 
@@ -88,6 +91,7 @@ In the following example, a new application token is created with the descriptio
   alt=""
 />
 
+<!-- markdownlint-disable-next-line MD029 -->
 5. Once complete, you'll see the **Token created** view.
 Click **Copy token** to copy the value to your clipboard and store it somewhere secure.
 When you're ready, click **Close**.
@@ -110,7 +114,7 @@ Alternatively, you can retrieve your application token from the [emnify REST API
 
 ### Add your application token to GraphiQL
 
-Once you have an [application token created and safely stored](#retrieving-your-application-token), you need to pass that token to the GraphiQL IDE.
+Once you have an [application token created and safely stored](#retrieve-your-application-token), you need to pass that token to the GraphiQL IDE.
 
 1. Navigate to the [emnify GraphiQL IDE](https://graphql-playground.emnify.net/)
 2. Locate the **Headers** section 
@@ -129,7 +133,8 @@ By default, this section has the following placeholder:
 }
 ```
 
-3. Replace *`APP_TOKEN`* with your application token value
+<!-- markdownlint-disable-next-line MD029 -->
+3. Replace _`APP_TOKEN`_ with your application token value
 
 To test that you're authorized, click the **Execute query** button (▶️) and check your result.
 
@@ -144,7 +149,7 @@ When you first visit the GraphiQL IDE, you'll see a pre-populated example query 
 />
 
 :::note
-GraphiQL's interactive documentation is used throughout this example. 
+GraphiQL's interactive documentation is used throughout this example.
 To follow along, click the **Show Documentation Explorer** button in the sidebar.
 
 <img
@@ -170,6 +175,7 @@ Take a closer look:
 ```
 
 What's happening in this example:
+
 - `myUser` is a [query](https://graphql.org/learn/queries/) that can return your user and organization details, including [endpoint status](/glossary#endpoint-status) and active tariff plan.
 
 <img
@@ -256,7 +262,7 @@ To see the queries you've executed during a session, click the **Show history** 
 
 ## Generate code from your query
 
-On the left panel are buttons allowing you to generate a cURL query, Node.js code, or Python code from your GraphQL query. 
+On the left panel are buttons allowing you to generate a cURL query, Node.js code, or Python code from your GraphQL query.
 Clicking these buttons copies this code to your clipboard.
 
 <img

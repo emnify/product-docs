@@ -18,7 +18,6 @@ Regardless of the package manager you are using, you need to specify the latest 
 The following installation examples use *`SDK_VERSION`* where this should be specified.
 :::
 
-
 ### Prerequisites
 
 #### Supported Java versions

@@ -6,9 +6,9 @@ slug: /
 
 # emnify IoT SuperNetwork
 
-Cellular is the most used wireless network technology for connecting things. 
-It's superior to any other wireless technology in terms of network availability and security. 
-Using cellular connectivity improves end customer experience by instantly delivering data at the customer site without any integration. 
+Cellular is the most used wireless network technology for connecting things.
+It's superior to any other wireless technology in terms of network availability and security.
+Using cellular connectivity improves end customer experience by instantly delivering data at the customer site without any integration.
 This makes cellular connectivity not only ideal for mobile use cases but also for stationary devices.
 
 **emnify has developed an IoT SuperNetwork that reduces the complexity of connectivity through a [cloud-native architecture](/services/iot-cloud-communication-platform).**

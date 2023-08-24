@@ -14,7 +14,7 @@ You can perform the following SMS related operations using the `endpoint` API.
 
 **Example**: send SMS to an endpoint
 
-```
+```javascript
 POST https://cdn.emnify.net/api/v1/endpoint/{endpoint_id}/sms
 ```
 
@@ -29,7 +29,7 @@ POST https://cdn.emnify.net/api/v1/endpoint/{endpoint_id}/sms
 
 **Responses**:
 
-```
+```json
 201
 ```
 

@@ -19,12 +19,12 @@ They're designed to reduce operational costs by detecting issues before they dis
 
 | Feature | Standard | Business | Enterprise |
 | ------- | -------- | -------- | ---------- |
-| **Operating hours** | Mon-Fri 09:00-18:00 CET | 24x7x365 | 24x7x365 | 
+| **Operating hours** | Mon-Fri 09:00-18:00 CET | 24x7x365 | 24x7x365 |
 | **Method of contact** | Tickets must be opened via web form.<br />Replies via email are possible. | Tickets must be opened via web form.<br />Replies via email are possible. | Web form, email, and phone |
 | **Help Center & Knowledge Base** | Yes | Yes | Yes |
 | **Pre-scheduled event support** | Not included | Yes | Yes |
 | **Dedicated Support Agent** | Not included | Not included | Yes (EU-CET, US-EST or US-PST business hours) |
-| **Trace requests** | <div align="center">—</div> | 1 simultaneous trace<br />Max 1 request/day<br />Max duration 24 hours/trace | 3 simultaneous traces<br />Max 1 request/day<br />Max duration 24 hours/trace | 
+| **Trace requests** | <div align="center">—</div> | 1 simultaneous trace<br />Max 1 request/day<br />Max duration 24 hours/trace | 3 simultaneous traces<br />Max 1 request/day<br />Max duration 24 hours/trace |
 | **Guaranteed response times**:<br />• [Critical incident](#critical-incidents)<br />• [Operational incident](#operational-incidents)<br />• General issue / question | 7 business days | • 3 hours, 24x7x365<br />• 6 business hours<br />• 9 business hours | • 1 hour, 24x7x365<br />• 3 hours, 24x7x365<br />• 6 business hours  |
 | **Target time to restore service**: <br />• [Critical incident](#critical-incidents)<br />• [Operational incident](#operational-incidents) | <div align="center">—</div> | • 12 hours<br />• 10 business days | • 4 hours<br />• 4 business days |
 | **SLO** | Mobile Core: 98.5%<br />Internet Breakout/VPN: 98.5%<br />API/GUI: 98.5% | Mobile Core: 99.5%<br />Internet Breakout/VPN: 99.5%<br />API/GUI: 99.5% | Mobile Core: 99.95%<br />Internet Breakout/VPN: 99.9%<br />API/GUI: 99.5% |
@@ -40,7 +40,7 @@ In case of an incident, it starts the incident management process that alerts a 
 When an incident is triggered due to network-related events, the responding team diagnoses the fault and escalate the incident to emnify’s carrier and roaming partners if necessary.
 Optionally, any network causing a service disruption is blocked so that devices can connect to alternate networks.  
 
-During an incident, emnify updates the [Status](https://status.emnify.com/) page for all services in order keep customers informed in real time about the status of the incident and its impact. 
+During an incident, emnify updates the [Status](https://status.emnify.com/) page for all services in order keep customers informed in real time about the status of the incident and its impact.
 
 For critical and operational incidents, emnify conducts a root cause analysis (RCA) and issues a postmortem that provides details about the incident, which changes have been applied, and which measures are planned to guard against future incidents.  
 
@@ -48,7 +48,7 @@ The incident management process is reviewed annually and certified by a third pa
 
 ### Critical incidents
 
-A *critical* incident is defined as a complete breakdown, total outage/interruption, or critical degradation of emnify's service that renders it unavailable.
+A _critical_ incident is defined as a complete breakdown, total outage/interruption, or critical degradation of emnify's service that renders it unavailable.
 For example:
 
 - An outage/interruption or critical degradation of emnify's services
@@ -59,7 +59,7 @@ For example:
 
 ### Operational incidents
 
-An *operational* incident is characterized by emnify's service having partial functionality.
+An _operational_ incident is characterized by emnify's service having partial functionality.
 Performance is degraded or limited, but regular services are still available.
 Immediate attention might be required if quality levels can't be fully achieved.
 For example:
@@ -72,7 +72,7 @@ For example:
 - Data Streamer interruption or delay of five minutes
 
 ## Customer success managers
- 
+
 In addition to emnify’s 24x7 support and network operation center (NOC), each customer has access to a Customer Success Manager (CSM).
 CSMs comprise a globally distributed team with local working hours.
 They're fluent in emnify's main supported languages: English, Spanish, Italian, French, and German.
@@ -82,8 +82,8 @@ They also conduct onboarding sessions to get their customers acquainted with the
 ## Roaming
 
 Unlike typical mobile network operators ([MNO](https://www.emnify.com/iot-glossary/mno)s), emnify also provides 24/7 support when your device is in roaming scenarios.
-The emnify network operation center (NOC) has visibility of all networks in the world and can detect network service degradation. 
-emnify also investigates and follows up even when only your fleet of devices is affected.   
+The emnify network operation center (NOC) has visibility of all networks in the world and can detect network service degradation.
+emnify also investigates and follows up even when only your fleet of devices is affected.
 
 Based on the direct and IoT/M2M specific roaming relationships with network operators, emnify has service-level agreements (SLAs) to resolve critical and operational incidents within specific timelines.  
 So you'll never need to worry about roaming when your IoT devices are moved to another location, even if it's to another country or continent.
