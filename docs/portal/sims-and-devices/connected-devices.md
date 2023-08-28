@@ -133,6 +133,19 @@ For example, if your device's **Name** is `My iPhone`, searching `phone` would s
 
 To view all information about a device, navigate to [**Connected Devices**](https://portal.emnify.com/connected-devices), find it in the list, and select **Details**.
 
+The **General** view shows the following properties:
+
+| Property            | Description                                      |
+|:--------------------|:-------------------------------------------------|
+| Status       | Current state of the device (see [Device status](#device-status)). |
+| Services     | Indicates whether the following services are **Active** or **Disabled**: <ul><li>Data</li><li>[SMS MT](/glossary#sms-mt)</li><li>[SMS MO](/glossary#sms-mo)</li></ul> |
+| Connection   | [Connectivity status](/glossary#connectivity-status) and available [PDP context](/glossary#pdp-context), with an option to [reset connectivity](#reset-connectivity). <br /><br /> If the device is **Online**, select the `i` icon to show all connectivity information—breakout IP, [MSC](/glossary#msc), VLR, etc. |
+| Blocked Operators  | Names of any blocked operators (often used for [troubleshooting](/quickstart/troubleshooting#other-general-troubleshooting-tips)). |
+| Device       | Identifiers for the device, including: <ul><li>**Device ID** (referred to as `endpoint_id` when working with the [REST API](https://cdn.emnify.net/api/doc/endpoint.html))</li><li>Configured **IP Address**</li><li>[**IMEI**](/glossary#imei) and a toggle to indicate whether [IMEI lock](/services/security#imei-lock) is turned on</li></ul> |
+| Policies       | Names of the assigned [**Service policy**](/portal/device-policies#service-policies) and [**Coverage policy**](/portal/device-policies#coverage-policies). |
+| SIM       | Properties of the assigned SIM, including: <ul><li>[IMSI](/glossary#imsi)</li><li>[MSISDN](/glossary#msisdn)</li><li>[ICCID](/glossary#iccid)</li></ul> Also includes an option to **Release SIM**. If there's no assigned SIM, this section is empty and shows an option to **Assign SIM**. |
+| Usage       | Data and SMS traffic based on a selected time period: <ul><li>Last hour</li><li>Current month</li><li>Last month</li></ul> |
+
 <details className="custom-details-example">
   <summary>Show an example of Device Details</summary>
   <img
@@ -140,15 +153,6 @@ To view all information about a device, navigate to [**Connected Devices**](http
     alt=""
   />
 </details>
-
-### Useful terms
-
-The following terms are particularly useful to know when looking at the **Device Details**.
-Each listed term includes a link to its associated [Glossary](/glossary) entry:
-
-- [IMSI](/glossary#imsi)
-- [MSISDN](/glossary#msisdn)
-- [IMEI](/glossary#imei)
 
 ## Device status
 
