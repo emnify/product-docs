@@ -13,7 +13,7 @@ The emnify Java SDK is open source and the [source code is available on GitHub](
 
 To install the SDK, add the emnify dependency to your existing project and use build automation tools, like Maven or Gradle, or install it manually.
 
-:::caution
+:::info
 Regardless of the package manager you are using, you need to specify the latest version of the emnify Java SDK.
 The following installation examples use _`SDK_VERSION`_ where this should be specified.
 :::
