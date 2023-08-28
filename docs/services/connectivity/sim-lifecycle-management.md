@@ -18,3 +18,11 @@ The SIMs have five different states that can be configured via the [**SIM Invent
 | **Suspended**    | Temporarily blocks an _Activated_ SIM from network access. Starting from the first day of the next month, the suspended SIM doesn't accrue any charges. The SIM can be reactivated and suspended again at any time. |
 | **Factory Test** | The SIM is enabled and can generate traffic. It can be used up to defined data and SMS thresholds without incurring charges. Once either threshold is crossed or the test period has elapsed, the SIM automatically moves to the _Activated_ state. By default, the test period is 180 days with data and SMS thresholds of 100 kB and 5 SMS. These limits can be customized per organization. |
 | **Deleted**      | Permanently removes the SIM from the SIM Inventory. Once deleted, it can't be restored for network access. |
+
+:::caution Warning for API users
+If you're using the [emnify REST API](https://cdn.emnify.net/api/doc/index.html) to configure devices, it's possible to have an _Activated_ SIM assigned to a _Disabled_ endpoint.
+In this case, you'll continue to accrue costs as emnify charges for activated SIMs.
+Be sure to suspend the assigned SIM to avoid unexpected charges.
+
+Reference: [Endpoint Object](https://cdn.emnify.net/api/doc/endpoint.html) and [Endpoint API](https://cdn.emnify.net/api/doc/swagger.html#/Endpoint)
+:::

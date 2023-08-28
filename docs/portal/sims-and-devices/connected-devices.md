@@ -162,7 +162,15 @@ Each listed term includes a link to its associated [Glossary](/glossary) entry:
 A device has only two configurable states, **Enabled** or **Disabled**.
 
 You can toggle one or more devices between these states to control their data usage.
-A disabled device doesn't incur any charges.
+A device listed as **Disabled** in the Portal doesn't incur any charges.
+
+:::caution Warning for API users
+If you're using the [emnify REST API](https://cdn.emnify.net/api/doc/index.html) to configure devices, it's possible to have a _Disabled_ endpoint with an _Activated_ assigned SIM.
+In this case, you'll continue to accrue costs as emnify charges for activated SIMs.
+Be sure to suspend the assigned SIM to avoid unexpected charges.
+
+Reference: [Endpoint Object](https://cdn.emnify.net/api/doc/endpoint.html) and [Endpoint API](https://cdn.emnify.net/api/doc/swagger.html#/Endpoint)
+:::
 
 When you want a device to connect to a network, change its status to **Enabled**.
 To do this, use the **Status** toggle from the **Connected Devices** list or the device's **Details** page.
