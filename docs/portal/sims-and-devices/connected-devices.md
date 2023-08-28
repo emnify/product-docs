@@ -54,7 +54,7 @@ However, the filters reset if you go to another page in the Portal.
 | ICCID           | String     | <Check alt="Yes" />         | [Integrated circuit card identifier (ICCID)](/glossary#iccid) including the final [Luhn checksum digit](/glossary#luhn-checksum-digit) |
 | Tag             | String     | <Check alt="Yes" />         | Name of a tag you've assigned to a device  |
 | Device ID       | String     | <Close alt="No" />       | Unique identifier for a device  |
-| Status          | Predefined | <Close alt="No" />        | List of possible [device statuses](/glossary#endpoint-status), specifically: **Enabled** or **Disabled**  |
+| Status          | Predefined | <Close alt="No" />        | List of possible [device statuses](/glossary#device-status), specifically: **Enabled** or **Disabled**  |
 | EID             | String     | <Check alt="Yes" />         | Unique global serial number for an eUICC ([learn more about the EID](/glossary#eid))  |
 | IMEI            | String     | <Check alt="Yes" />         | [International mobile equipment identity (IMEI)](/glossary#imei), used to identify cellular modems  |
 | IP address      | String     | <Check alt="Yes" />         | Unique address that identifies a device on the internet or a local network (for example, `10.1.1.9`)   |
@@ -152,7 +152,15 @@ Each listed term includes a link to its associated [Glossary](/glossary) entry:
 
 ## Device status
 
-A device has only two states, **Enabled** or **Disabled**.
+| State            | Description                                      |
+|:-----------------|:-------------------------------------------------|
+| **Enabled**       | A SIM is [assigned](/glossary#assigned-sim) to the device and [activated](/services/sim-lifecycle-management). The device must be _Enabled_ to connect to a network. |
+| **Disabled**    | No SIM assigned, or the assigned SIM is [suspended](/services/sim-lifecycle-management). |
+| **Deleted**    | Permanently removed from your [Connected Devices](https://portal.emnify.com/connected-devices). |
+
+### Configure the device status
+
+A device has only two configurable states, **Enabled** or **Disabled**.
 
 You can toggle one or more devices between these states to control their data usage.
 A disabled device doesn't incur any charges.
