@@ -7,9 +7,9 @@ slug: /services/sim-lifecycle-management
 
 When selling connected devices, it's difficult to determine when devices are in use and when not.
 Using SIM cards that can't align with the device lifecycle incur unnecessary costs.
-
 emnify SIM cards don't incur any costs unless activated.
-The SIMs have five different states that can be configured via the [**SIM Inventory**](https://portal.emnify.com/sim-inventory) on the emnify Portal or the [emnify SIM REST API](https://cdn.emnify.net/api/doc/swagger.html#/SIM):
+
+The SIMs have five different states that can be configured via the [**SIM Inventory**](/portal/sim-inventory) in the emnify Portal or the [emnify SIM REST API](https://cdn.emnify.net/api/doc/swagger.html#/SIM):
 
 | State            | Description                                      |
 |:-----------------|:-------------------------------------------------|
