@@ -5,18 +5,18 @@ slug: /quickstart/register-sims
 
 # Register emnify SIMs
 
-Once you [get your emnify SIMs](/quickstart/order-sims), the next step is to register them.
+Once you get your emnify SIMs, the next step is to register them.
 When you register a new SIM or [SIM batch](/glossary#sim-batch), you can automatically activate the SIM and create connected devices using the default configuration.
 
 :::info
-If you [ordered the free Evaluation SIM package](/quickstart), you must register each of the three SIMs separately.
+If you ordered the [free Evaluation SIM package](/quickstart), you must register each of the three SIMs separately.
 :::
 
 ## Locate the BIC
 
 ### Individual SIMs
 
-The 16-digit [batch identification code (BIC)](/glossary#bic) is on the card's upper right corner and marked as **BIC1**.
+The 16-digit batch identification code (BIC) is on the card's upper right corner and marked as **BIC1**.
 It's used to register single SIMs.
 
 <img
@@ -36,13 +36,13 @@ The 16-digit BIC is located on the packaging label and marked as **BIC2**.
 />
 
 :::tip
-If you're having trouble locating your BIC, refer to the Knowledge Base: [I cannot register my SIM cards.](https://support.emnify.com/hc/en-us/articles/360019254640-I-cannot-register-my-SIM-cards-The-BIC-code-is-invalid-or-I-do-not-have-a-BIC-code)
+For more information about locating your BIC, see [I cannot register my SIM cards](https://support.emnify.com/hc/en-us/articles/360019254640-I-cannot-register-my-SIM-cards-The-BIC-code-is-invalid-or-I-do-not-have-a-BIC-code) on the Knowledge Base.
 :::
 
 ## Register SIMs in the emnify Portal
 
 1. [Log in to your emnify account](https://portal.emnify.com/sign).  
-1. Navigate to the **SIM Inventory** and click [**Register SIMs**](https://portal.emnify.com/sim-registration).
+1. Navigate to the **SIM Inventory** and click **Register SIMs**.
 1. Select **Single-SIM** to register individual SIM cards or select **SIM Batch** for batches.
 1. Enter the **BIC1** for individual SIMs or the **BIC2** for batches.
 1. After confirming your BIC is correct, select **Register SIM card**.
@@ -53,7 +53,7 @@ If you're having trouble locating your BIC, refer to the Knowledge Base: [I cann
   style={{ width: 370 }}
 />
 
-Once the SIM is registered, you can assign it to an existing device or [create a new device](#create-a-new-device).
+Once the SIM is registered, you can assign it to an existing device or create a new device.
 
 :::tip
 Assigning your SIM to a device is a necessary step for getting your device online.
