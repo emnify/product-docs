@@ -5,7 +5,6 @@ slug: /graphql/graphiql-ide
 
 # Use the GraphiQL IDE
 
-<!-- markdownlint-disable MD041 -->
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 

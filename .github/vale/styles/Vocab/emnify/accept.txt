@@ -14,7 +14,7 @@ CSM[s]
 Data Streamer
 Datadog
 DDoS
-Docusaurus
+[Dd]ocusaurus
 [Dd]ownlink
 [Dd]ual-band
 eDRX
@@ -82,6 +82,7 @@ u-blox
 [Uu]plink
 Vale
 Vodafone
+webpack
 WeTrack
 Wialon
 Zapier
