@@ -160,7 +160,17 @@ Example of how to display images using inline CommonJS `require` in JSX image ta
 <img
   src={require('./assets/graphiql-sidebar-show-documentation-explorer-button.png').default}
   alt=""
-  style={{ width:350 }}
+  style={{ width: 350 }}
+/>
+```
+
+You must also use this syntax to apply the [docusaurus-plugin-image-zoom](https://github.com/gabrielcsapo/docusaurus-plugin-image-zoom) feature to an SVG file.
+To do this, you need to add `!!url-loader!` at the beginning of the `src` path—otherwise, the [webpack `svg-loader` kicks in](https://github.com/facebook/docusaurus/issues/8398#issuecomment-1331694452).
+
+```jsx
+<img
+  src={require('!!url-loader!./assets/graphiql-logo.svg').default}
+  alt="GraphiQL"
 />
 ```
 

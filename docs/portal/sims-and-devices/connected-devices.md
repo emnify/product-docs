@@ -5,7 +5,6 @@ slug: /portal/connected-devices
 
 # Connected devices
 
-<!-- markdownlint-disable MD041 -->
 import Check from '../assets/check.svg';
 import Close from '../assets/close.svg';
 
@@ -165,9 +164,21 @@ For more information about the various SIM states, see [SIM lifecycle management
 ### Configure the device status
 
 A device has only two configurable states, **Enabled** or **Disabled**.
-
 You can toggle one or more devices between these states to control their data usage.
-A disabled device doesn't incur any charges.
+
+:::caution Warning for API users
+If you're using the [emnify REST API](https://cdn.emnify.net/api/doc/index.html) to configure devices, it's possible to have a **Disabled** endpoint with an **Activated** assigned SIM.
+In this case, you'll continue to accrue costs as emnify charges for activated SIMs.
+Be sure to suspend the assigned SIM to avoid unexpected charges.
+
+You can also check the **Dashboard** to see if you have unused but charged SIMs.
+<img
+  src={require('./assets/portal-dashboard-unused-sims-warning.png').default}
+  alt="Warning banner displayed for unused SIMs displayed on the emnify Portal Dashboard. It reads, '2 unused but charged SIM cards detected. We found active SIMs not connected to any device. In this case we may still charge for them, but they won't be of any use for you.' Next to this text, there's a link to the SIM Inventory and a button reading 'Deactivate SIMs now.'"
+/>
+
+Reference: [Endpoint Object](https://cdn.emnify.net/api/doc/endpoint.html) and [Endpoint API](https://cdn.emnify.net/api/doc/swagger.html#/Endpoint)
+:::
 
 When you want a device to connect to a network, change its status to **Enabled**.
 To do this, use the **Status** toggle from the **Connected Devices** list or the device's **Details** page.

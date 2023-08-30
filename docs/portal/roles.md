@@ -5,7 +5,6 @@ slug: /portal/roles
 
 # Roles and permissions
 
-<!-- markdownlint-disable MD041 -->
 import Check from './assets/check.svg';
 import Close from './assets/close.svg';
 

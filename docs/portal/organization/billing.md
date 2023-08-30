@@ -31,7 +31,7 @@ The following is an example of the shown table and potential values:
 | ---- | ----------- | ---------- | ---- | ------ | ----- |
 | **Transit Gateway Breakout** | Breakout ID: ••• (Transit Gateway) | Monthly Payment | | | _(currency amount)_ |
 | **Tariff Plan** | Pro EUR | Every 21 days |  | | _(currency amount)_ |
-| **Inclusive Data Volume** | 100 MB per device Included per active SIM | Monthly Payment | _(currency amount)_ | ••• SIMs | _(currency amount)_ |
+| **Inclusive Data Volume** | 100 MB per device Included per activated SIM | Monthly Payment | _(currency amount)_ | ••• SIMs | _(currency amount)_ |
 | **Data consumption in** "_your Tariff_" |  |  |  | ••• MB | _(currency amount)_ |
 | **Data costs for** "_your "Main zone_"  | ••• GB included | Per MB | _(currency amount)_ | ••• MB | _(currency amount)_ |
 | **SMS Traffic** | Mobile SMS Traffic | Per SMS | | •• SMS | _(currency amount)_ |

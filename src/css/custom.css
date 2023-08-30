@@ -48,7 +48,12 @@
   text-decoration: underline;
 }
 
-/* Caution adminition */
+/* All admonitions */
+.theme-admonition {
+  margin-top: 0.5rem;
+}
+
+/* Caution admonition */
 .theme-admonition-caution {
   background-color: #f2740014;
   border-color: #f27400;
@@ -78,7 +83,7 @@
   fill: #009e19;
 }
 
-/* Danger adminition */
+/* Danger admonition */
 .theme-admonition-danger {
   background-color: #da353514;
   border-color: #da3535;
@@ -93,7 +98,7 @@
   fill: #da3535;
 }
 
-/* Info adminition */
+/* Info admonition */
 .theme-admonition-info {
   background-color: #edf3f8;
   border-color: #659bdf;
