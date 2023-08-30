@@ -36,7 +36,7 @@ At the top of the sidebar, there are buttons for the documentation explorer, his
 Underneath, the sidebar shows buttons that allow you to re-fetch the GraphQL schema, see the keyboard shortcuts, and change settings.
 
 The bottom of the left panel has two sections, **Variables** and **Headers**.
-By default, you'll see a placeholder for the **Authorization** header.
+By default, there's a placeholder for the **Authorization** header.
 
 When you type queries into this side of the screen, the IDE provides autocomplete based on the current GraphQL type schema and live syntax and validation error highlighting.
 
@@ -85,17 +85,10 @@ To test that you're authorized, click the **Execute query** button (▶️) and 
 
 ## Execute your first query
 
-When you first visit the GraphiQL IDE, you'll see a pre-populated example query in the left panel.
-
-<img
-  src={require('./assets/graphiql-default-query.png').default}
-  alt=""
-  style={{ width:800 }}
-/>
-
 :::note
 GraphiQL's interactive documentation is used throughout this example.
 To follow along, click the **Show Documentation Explorer** button in the sidebar.
+Once the **Docs** are visible, choose `Query`, then select `myUser`.
 
 <img
   src={require('./assets/graphiql-sidebar-show-documentation-explorer-button.png').default}
@@ -103,10 +96,9 @@ To follow along, click the **Show Documentation Explorer** button in the sidebar
   style={{ width:350 }}
 />
 
-Once the **Docs** are visible, choose `Query`, then find and select `myUser`.
 :::
 
-Take a closer look:
+When you first visit the GraphiQL IDE, there's a pre-populated example query in the left panel:
 
 ```graphql
 {
@@ -119,9 +111,7 @@ Take a closer look:
 }
 ```
 
-What's happening in this example:
-
-- `myUser` is a [query](https://graphql.org/learn/queries/) that can return your user and organization details, including endpoint status and active tariff plan.
+In this example, `myUser` is a [query](https://graphql.org/learn/queries/) that can return your user and organization details, including endpoint status and active tariff plan.
 
 <img
   src={require('./assets/graphiql-docs-query-myuser.png').default}
@@ -133,7 +123,7 @@ What's happening in this example:
 In GraphQL, the `!` means that [variable definition](https://graphql.org/learn/queries/#variable-definitions) is required.
 :::
 
-- Within `myUser`, `User` is listed as a required [object type](https://graphql.org/learn/schema/#object-types-and-fields) and indicates which [fields](https://graphql.org/learn/queries/#fields) you can use in this query. 
+Within `myUser`, `User` is listed as a required [object type](https://graphql.org/learn/schema/#object-types-and-fields) and indicates which [fields](https://graphql.org/learn/queries/#fields) you can use in this query.
 Because `User` is the only type available, you don't need to type it out explicitly.
 
 <img
@@ -142,7 +132,7 @@ Because `User` is the only type available, you don't need to type it out explici
   style={{ width:700 }}
 />
 
-- This example uses the `organisation` field, which requires the `Organisation` object type. 
+This example uses the `organisation` field, which requires the `Organisation` object type.
 You want to receive the `name` and `id` fields from that object type.
 
 <img
@@ -170,7 +160,7 @@ Remove any content in the left panel and begin typing:
 
 Inside the curly braces, you can start typing or use the keyboard shortcuts to open the autocomplete window.
 
-In the following example, the IDE suggests `endpoint`, `endpoints`, and `endpointsQuery` once you've started typing "end."
+In the following example, the IDE suggests `endpoint`, `endpoints`, and `endpointsQuery` once you've started typing "end":
 
 <img
   src={require('./assets/graphiql-query-autocomplete.png').default}
@@ -208,7 +198,7 @@ To see the queries you've executed during a session, click the **Show history** 
 ## Generate code from your query
 
 On the left panel are buttons allowing you to generate a cURL query, Node.js code, or Python code from your GraphQL query.
-Clicking these buttons copies this code to your clipboard.
+Click these buttons to copy this code to your clipboard.
 
 <img
   src={require('./assets/graphiql-default-generate-code-buttons.png').default}
