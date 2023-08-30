@@ -18,3 +18,17 @@ The SIMs have five different states that can be configured via the [**SIM Invent
 | **Suspended**    | Temporarily blocks an _Activated_ SIM from network access. Starting from the first day of the next month, the suspended SIM doesn't accrue any charges. The SIM can be reactivated and suspended again at any time. |
 | **Factory Test** | The SIM is enabled and can generate traffic. It can be used up to defined data and SMS thresholds without incurring charges. Once either threshold is crossed or the test period has elapsed, the SIM automatically moves to the _Activated_ state. By default, the test period is 180 days with data and SMS thresholds of 100 kB and 5 SMS. These limits can be customized per organization. |
 | **Deleted**      | Permanently removes the SIM from the SIM Inventory. Once deleted, it can't be restored for network access. |
+
+:::caution Warning for API users
+If you're using the [emnify REST API](https://cdn.emnify.net/api/doc/index.html) to configure devices, it's possible to have an **Activated** SIM assigned to a **Disabled** endpoint.
+In this case, you'll continue to accrue costs as emnify charges for activated SIMs.
+Be sure to suspend the assigned SIM to avoid unexpected charges.
+
+You can also check the Portal **Dashboard** to see if you have unused but charged SIMs.
+<img
+  src={require('../../portal/sims-and-devices/assets/portal-dashboard-unused-sims-warning.png').default}
+  alt="Warning banner displayed for unused SIMs displayed on the emnify Portal Dashboard. It reads, '2 unused but charged SIM cards detected. We found active SIMs not connected to any device. In this case we may still charge for them, but they won't be of any use for you.' Next to this text, there's a link to the SIM Inventory and a button reading 'Deactivate SIMs now.'"
+/>
+
+Reference: [Endpoint Object](https://cdn.emnify.net/api/doc/endpoint.html) and [Endpoint API](https://cdn.emnify.net/api/doc/swagger.html#/Endpoint)
+:::

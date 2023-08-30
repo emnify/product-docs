@@ -2,11 +2,6 @@
 
 <!-- markdownlint-disable MD036 -->
 
-## Active SIM
-
-When a SIM is in the active state, the charges for the SIM are applied.
-The device can send and receive data and SMS.
-
 ## APN
 
 _Access Point Name_
@@ -110,7 +105,7 @@ An attack where the attacker sends multiple requests to a web resource with the 
 
 ## Device status
 
-_Also sometimes referred to as **[Endpoint](#endpoint) status**_
+_Sometimes referred to as **[Endpoint](#endpoint) status**_
 
 Reflects the current state of the device and determines whether a device can connect to a network or incur charges.
 
@@ -445,7 +440,7 @@ A collection of SIM cards that can be registered with a single [BIC](#bic) code.
 
 ## SIM hosting fee  
 
-Monthly fee for an active SIM.
+Monthly fee for an activated SIM.
 
 ## SIM profile  
 
