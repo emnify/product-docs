@@ -17,7 +17,7 @@ Once it has registered, your device's [**Connection**](/glossary#connectivity-st
 SMS and [USSD](/glossary#ussd) services are now available.
 
 When your device has established a data session, the **Connection** changes to **Online**.
-This means it's ready to send or receive data traffic.
+This means it's ready to send or receive data.
 
 :::tip
 Verify a device's connectivity status in the emnify Portal under [**Connected Devices**](https://portal.emnify.com/connected-devices).

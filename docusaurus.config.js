@@ -337,6 +337,11 @@ const config = {
             to: "/system-events/usage",
             from: "/services/events/usage",
           },
+          // Home - How-tos
+          {
+            to: "/how-tos/data-allowances",
+            from: "/how-tos/multi-inclusive-volumes",
+          },
           // Home - Support
           {
             to: "/support",

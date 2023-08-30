@@ -86,8 +86,8 @@ When selecting **SMPP** as your **SMS Interface**, you are provided a **System I
 ## Coverage policies
 
 A coverage policy lets you choose which pricing plan and regions to operate in.
-Policies comprise a **Tariff** (pricing plan) and one or more **Zones**.
-The default coverage policy depends on your current subscription plan.
+Policies comprise of the **Coverage** (data plan) and one or more **Coverage zones**.
+The default coverage policy depends on your current subscription package.
 
 ### Create a new coverage policy
 
@@ -97,11 +97,11 @@ To create a new coverage policy, follow these steps:
 1. Navigate to the [**Coverage Policies**](https://portal.emnify.com/device-policies#coverage-policies) section of **Device Policies**.
 1. Select **New coverage policy**.
 1. Replace **New coverage policy** with the name of your policy and add a **Description**.
-   Then, choose a **Tariff** and an **Inclusive Volume** from the available options.
+   Then, choose the **Coverage** and an **Data allowance** from the available options.
 1. Finally, click **Create**.
 
 By default, connectivity is disabled, and any devices assigned to this coverage policy are blocked from all networks.
-You need to enable at least one zone for your devices to connect.
+You need to enable at least one **Coverage zone** for your devices to connect.
 
 Changes save automatically.
 To remove a coverage policy, click the trash bin icon next to **Details**.
@@ -110,35 +110,18 @@ To remove a coverage policy, click the trash bin icon next to **Details**.
 Creating multiple coverage policies lets you differentiate between device types based on their coverage needs and the associated costs.
 :::
 
-### Tariff
+### Coverage
 
-The **Tariff** dropdown shows a list of plan names with a **Global** plan selected by default.
+The **Coverage** dropdown shows a list of data plan names with **Regional Pro** selected by default.
 
-### Zones
+### Coverage zones
 
-The list of zones varies depending on which **Tariff** (global, regional, etc.) you selected.
+The list of **Coverage zones** varies depending on which **Coverage** you selected.
 
-The **Tariff Coverage Map** is a global map that shows the coverage you have based on your selections.
-You can browse the entire list of countries in the **Coverage List** or search for a specific country where you plan to deploy your devices.
-
-<details className="custom-details-example">
-  <summary>Show the default coverage on the Tariff Coverage Map</summary>
-
-  <img
-    src={require('./assets/tariff-coverage-map.png').default}
-    style={{width:900}}
-    alt=""
-  />
-
-  The **Coverage List** provides the names and number of operators per country.
-  Each country's listing can be expanded to reveal the rate zone, plan coverage, data rates, and SMS sending and receiving rates.
-
-  <img
-    src={require('./assets/coverage-list-no-om-pk.png').default}
-    style={{width:900}}
-    alt=""
-  />
-</details>
+The **Coverage map** is a global map that shows the coverage you have based on your selections.
+You can browse the entire list of countries in the **Coverage list** or search for a specific country where you plan to deploy your devices.
+This list provides the names and number of networks per country.
+Each country's listing can be expanded to reveal the network, coverage area, data rates, and SMS sending and receiving rates.
 
 ## Assign devices to a policy
 

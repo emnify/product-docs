@@ -476,12 +476,12 @@ This device appears as **Online** in the [emnify Portal](/system-events/usage#em
     },
     "name": "Vodafone",
     "pdp_context": {
-      "tariff_profile_id": "395978",
+      "tariff_profile_id": "395978", // coverage profile
       "tx_teid_control_plane": 570842943,
       "breakout_ip": "97.106.216.29",
-      "tariff_id": "555",
+      "tariff_id": "555", // data plan
       "rac": null,
-      "ratezone_id": "8178",
+      "ratezone_id": "8178", // coverage area
       "ci": 5174,
       "imeisv": "6887426203768011",
       "lac": 921,
@@ -607,7 +607,7 @@ This device appears as **Online** in the [emnify Portal](/system-events/usage#em
 </details>
 
 <details className="custom-details-example">
-  <summary>Example JSON response: create PDP Context Request rejected because the device's quota volume is exhausted, and the defined action is to block data traffic</summary>
+  <summary>Example JSON response: create PDP Context Request rejected because the device's quota volume is exhausted, and the defined action is to block data usage</summary>
 
 ```json
 {
@@ -1605,7 +1605,7 @@ Triggered through the [emnify User Interface (EUI)](https://support.emnify.com/h
 
 ### Endpoint blocked
 
-Device is blocked from all services after exceeding [device policies](/portal/device-policies) (for example, reaching its traffic limit).
+Device is blocked from all services after exceeding [device policies](/portal/device-policies) (for example, reaching its usage limit).
 
 :::tip
 Changing the policies unblocks the device.
@@ -1819,7 +1819,7 @@ Data quota volume is completely depleted.
 Exclusively for devices with data quota management enabled.
 
 :::caution
-Once this happens, the data quota status updates from **Active** to **Exhausted**, and the device won't be able to consume from the data service.
+Once this happens, the data quota status updates from **Active** to **Exhausted**, and the device won't be able to use the data service.
 Established connections for that device disconnects within seconds, and new connection requests are denied until a new data quota is assigned or data quota management is disabled in the service profile.
 
 It's also possible to define an action on **Throttle**.
@@ -2305,7 +2305,7 @@ SMS quota volume is completely depleted.
 Exclusively for devices with enabled SMS quota management.
 
 :::caution
-Once this happens, the SMS quota status updates from **Active** to **Exhausted**, and the device won't be able to consume from the SMS service.
+Once this happens, the SMS quota status updates from **Active** to **Exhausted**, and the device won't be able to use the SMS service.
 Established connections for that device disconnect within seconds, and new connection requests are denied until a new SMS quota is assigned or SMS quota management is disabled in the service profile.
 :::
 

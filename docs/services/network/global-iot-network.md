@@ -8,7 +8,7 @@ slug: /services/global-iot-network
 
 <!-- markdownlint-disable MD040 -->
 
-Even when IoT devices are more often only deployed at a single location and aren't moving, for a vendor selling to multiple countries it's important to have a global connectivity solution, so that there is no need to have different SIM cards in stock or have multiple contracts and tariffs.
+Even when IoT devices are more often only deployed at a single location and aren't moving, for a vendor selling to multiple countries it's important to have a global connectivity solution, so that there is no need to have different SIM cards in stock or have multiple contracts and data plans.
 
 <!-- TODO: Find place for service_stack.png -->
 
@@ -108,6 +108,7 @@ While utilizing LTE infrastructure both NB-IoT and LTE-M are also part of the 5G
 Both technologies have been specified to meet the demand for IoT use cases in terms of:
 
 - Reduced cost - to enable mass production of cellular IoT devices
+  <!-- 'dual carrier' is an industry term -->
   - Removing unnecessary LTE features for IoT such as dual carrier, high modulations
 - Low power utilization - for battery powered use cases that require years of operation
   - Introducing power saving features such as [PSM](#power-save-mode-psm) and [eDRX](#extended-discontinuous-reception-edrx)
@@ -150,7 +151,7 @@ Therefore, a **Power Save Mode** is introduced that allows the device to go to s
 
 The **Power Save Mode** has the following characteristics:  
 
-- The Power Save Mode is like a power off period during which the module only consumes a couple of μA.
+- The Power Save Mode is like a power off period during which the module only uses a couple of μA.
 - The device tells the network how long it's going periodically into PSM (timer T3412 extended).
 - The device/module isn't reachable during PSM from the outside in downlink.
 - The device can wake up the module and send data (for example, power key, interrupt or pin triggered).

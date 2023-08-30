@@ -64,7 +64,6 @@ OpenVPN
 Quad-band
 Queclink
 Quectel
-[Rr]atezone
 ReachFar
 RESTful API
 Ruptela

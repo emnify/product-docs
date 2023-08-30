@@ -2,6 +2,8 @@
 
 <!-- markdownlint-disable MD036 -->
 
+<!-- TODO: Fix names of changed terms -->
+
 ## APN
 
 _Access Point Name_
@@ -26,7 +28,7 @@ Learn more about the [SMS types supported by the emnify platform](/services/sms)
 
 ## Assigned SIM  
 
-SIM that has been assigned to an [endpoint](#endpoint).
+SIM that has been assigned to a device.
 
 ## AT+CREG AT command
 
@@ -68,18 +70,22 @@ For example, [ICCID](#iccid) numbers use a [_Luhn checksum digit_](#luhn-checksu
 A company's emnify account (that is, an [**Organization**](#organization) in the [emnify Portal](https://portal.emnify.com/)).
 
 :::note
-Every company account (on any plan) is a [workspace](#workspace) by default.
+Every company account (on any package) is a [workspace](#workspace) by default.
 :::
 
 ## Connectivity status  
 
-This is the connectivity status of an [endpoint](#endpoint).
+This is the connectivity status of an device.
 It can be set to:
 
 - **Online**: Device is transmitting or can transmit data through a data tunnel.
 - **Attached**: Device is attached to a network but hasn't established a data tunnel.
 - **Offline**: Device isn’t attached to a network.
 - **Blocked**
+
+## Coverage profile  
+
+A profile that defines which networks or countries SIM should operate in.
 
 ## Data RX  
 
@@ -271,7 +277,7 @@ The practice of strictly associating a SIM to the device with a certain [IMEI](#
 _International Mobile Subscriber Identity_
 
 A unique number used to identify a [GSM](#gsm) subscriber.
-Therefore it changes if a device connects to a different operator while roaming.
+Therefore it changes if a device connects to a different network while roaming.
 
 <details className="custom-details-example">
   <summary>See how the IMSI is constructed</summary>
@@ -280,7 +286,7 @@ Therefore it changes if a device connects to a different operator while roaming.
   It comprises three components: MCC, MNC, and MSIN.
 
   MCC: 3-digit country identifier  
-  MNC: operator identifier (two or three digits)  
+  MNC: network identifier (two or three digits)  
   MSIN: identifier for the connected device (nine or 10 digits)  
 
   <img
@@ -514,21 +520,17 @@ The address of the SMS sender as displayed on the receiving device.
 
 An IP that doesn’t change over time.
 
-## Tariff profile  
-
-A profile that defines which networks or countries SIM should operate in.
-
-## Traffic pooling  
-
-A term used to describe the service model when various [endpoints](#endpoint) utilize the same data pool.
-
 ## Unassigned SIM  
 
-SIM that had been unassigned from an [endpoint](#endpoint).
+SIM that had been unassigned from a device.
 
 ## Usage limit  
 
-User-defined limit of consumption of a certain service (data, SMS) per endpoint.
+User-defined limit of consumption for a certain service (data, SMS) per device.
+
+## Usage pooling  
+
+A term used to describe the service model when various devices utilize the same data pool.
 
 ## User account
 
@@ -537,11 +539,11 @@ User accounts can be assigned a role (for example, **Administrator**).
 
 ## User-defined coverage  
 
-An ability to select which operator the customer’s SIM connects to.
+An ability to select which network the customer’s SIM connects to.
 
 ## User-defined networking  
 
-An approach that enables users to create their own virtual mobile network, define service and security policies and provision [tariff profiles](#tariff-profile) and data packages.
+An approach that enables users to create their own virtual mobile network, define service and security policies, and provision [coverage profiles](#coverage-profile) and data packages.
 
 ## USSD
 
@@ -577,8 +579,8 @@ An independent entity in the [emnify Portal](https://portal.emnify.com/) associa
 Workspaces can be managed individually or, if [linked](#linked-workspaces), centrally by the [main organization](#main-organization) while being billed and accessed separately.
 
 :::note
-Every [company account](#company-account) (on any plan) is a workspace by default.
-Accounts on the **Pro** plan can have up to five workspaces.
+Every [company account](#company-account) (on any package) is a workspace by default.
+Accounts on the **Pro Package** can have up to five workspaces.
 :::
 
 :::tip Step-by-step guide

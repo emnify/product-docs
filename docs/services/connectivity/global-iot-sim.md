@@ -6,13 +6,15 @@ slug: /services/global-iot-sim
 
 # Global IoT SIM
 
+<!-- TODO: Figure out if we're replacing 'operator' with 'networks' here -->
+
 emnify provides eSIMs that are built specifically for IoT solutions.
 Compared to regular operator SIMs, emnify eSIMs come in different quality grades that are more durable.
-They can be updated [over the air (OTA)](/glossary#ota) using different eSIM remote SIM provisioning technologies and come in different [form factors](#form-factors).
+They can be updated over the air (OTA) using different eSIM remote SIM provisioning technologies and come in different form factors.
 
-emnify eSIMs have a [multi-IMSI applet](#multi-imsi-applet) installed on the SIM.
+emnify eSIMs have a multi-IMSI applet installed on the SIM.
 The multi-IMSI applet makes sure that the best network and network partners are used based a device's location.
-Using this technology, emnify provides a larger number of networks than traditional operators. With access to the largest global [LPWAN](global-iot-network#lpwan-lte-mnb-iot) (LTE-M and NB-IoT) footprint, emnify SIMs ensure regulatory network access in over 100 countries.
+Using this technology, emnify provides a larger number of networks than traditional operators. With access to the largest global LPWAN (LTE-M and NB-IoT) footprint, emnify SIMs ensure regulatory network access in over 100 countries.
 
 ## eSIM technology
 
@@ -233,7 +235,7 @@ The following compliance standards and software features apply to all quality gr
 emnify eSIM cards are equipped with a multi-IMSI applet that runs in the background using minimal resources without any negative impact on the device's performance.
 This technology is similar to a mobile phone using dual-SIM technology.
 An emnify eSIM has cellular provider information from multiple SIM cards already included.
-While emnify has roaming agreements and local contracts with operators around the world, emnify also uses partner operators to increase the network coverage footprint to provide a fallback when preferred networks experience outages.
+While emnify has roaming agreements and local contracts with networks around the world, emnify also uses partner networks to increase the network coverage footprint to provide a fallback when preferred networks experience outages.
 
 The multi-IMSI applet works in the following manner.
 emnify has its own operator identity ([IMSI](/glossary#imsi)) as well as the partner operator's IMSI stored on the SIM card.

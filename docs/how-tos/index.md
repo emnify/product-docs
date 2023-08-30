@@ -1,6 +1,6 @@
 ---
 description: Step-by-step how to guides that teach you how to use the emnify platform
-pagination_next: how-tos/multi-inclusive-volumes
+pagination_next: how-tos/data-allowances
 slug: /how-tos
 ---
 
@@ -22,7 +22,7 @@ slug: /how-tos
 
 ## Organization and billing
 
-- [Set up multi-inclusive volumes](/how-tos/multi-inclusive-volumes)
+- [Set up data allowances](/how-tos/data-allowances)
 - [Create a new workspace](/workspaces/create)
 
 ## SMS

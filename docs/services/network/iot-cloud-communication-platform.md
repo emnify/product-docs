@@ -11,7 +11,7 @@ Being deployed in three AWS cloud regions within 2-3 availability zones / data c
 ## Distributed data plane
 
 Traditional connectivity providers have a centrally located network core.
-All data is backhauled to the home country of the operator which means that customer data travels across the globe and distributed latency optimized application infrastructure isn't possible.
+All data is backhauled to the home country of the network which means that customer data travels across the globe and distributed latency optimized application infrastructure isn't possible.
 
 ![Traditional operators](assets/traditional-operators.png)
 
@@ -19,7 +19,7 @@ All data is backhauled to the home country of the operator which means that cust
 
 ## Traditional operators vs emnify
 
-The data plane of emnify’s cloud communication platform is distributed across major cloud regions (Virginia/US, Ireland/Europe, Singapore/APAC) and directly connected to central peering points with the local operators.
+The data plane of emnify’s cloud communication platform is distributed across major cloud regions (Virginia/US, Ireland/Europe, Singapore/APAC) and directly connected to central peering points with the local networks.
 
 ## Regional breakout
 
@@ -28,5 +28,3 @@ Moreover, it also helps reduce network latency.
 You can either select a specific breakout region or the network automatically selects the breakout region closest to the device.
 This can be done on the [emnify Portal](https://portal.emnify.com/).
 On the [**Device Policies**](https://portal.emnify.com/device-policies) page, select **New service policy** which is applicable to a group of devices.
-
-![Breakout regions](assets/portal-device-policies-breakout-regions.png)

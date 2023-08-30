@@ -21,7 +21,7 @@ Typical uses are to send processed records to dashboards, generate alerts, dynam
 
 Amazon S3 is an object storage service that stores the raw event and usage data as it arrives from a data stream.
 Shortly after creating the stream, a CSV file containing your event or usage data records is uploaded to the S3 bucket.
-The CSV files can then be sent to other Amazon services (for example, Amazon QuickSight) or consumed by a third-party analytics or business intelligence tool for generating insights.
+The CSV files can then be sent to other Amazon services (for example, Amazon QuickSight) or used by a third-party analytics or business intelligence tool for generating insights.
 
 :::tip Step-by-step guide
 [emnify Data Streamer Integration into AWS S3](https://www.emnify.com/integration-guides/emnify-datastreamer-integration-into-aws-s3)
@@ -123,7 +123,7 @@ You can also create dashboards and trigger alerts on specific events or situatio
 ## Webhook
 
 The Data Streamer may also send usage and event data in JSON format to a configurable, user-specified webhook URL.
-In this case, users provide an application that consumes HTTP POST requests sent from the emnify system.
+In this case, you can provide an application that uses HTTP POST requests sent from the emnify system.
 
 This is the most flexible method of processing a data stream. It allows any custom implementation of analytics, reporting, or a pipeline of tools to process usage and event data.
 

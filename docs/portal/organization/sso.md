@@ -9,15 +9,15 @@ The emnify Portal offers single sign-on (SSO) with select providers.
 SSO improves account security and simplifies user administration.
 
 :::info
-SSO comes with the **Pro** plan.
+SSO comes with the **Pro Package**.
 :::
 
 ## Providers
 
-- [**Microsoft**](https://portal.emnify.com/organisation-settings/federation/new/microsoft): Out-of-the-box integration with Microsoft Azure Active Directory "Enterprise App"
-- [**OIDC**](https://portal.emnify.com/organisation-settings/federation/new/oidc): Open ID Connect is an open standard for Authentication and Authorization. 
+- **Microsoft**: Out-of-the-box integration with Microsoft Azure Active Directory "Enterprise App"
+- **OIDC**: Open ID Connect is an open standard for Authentication and Authorization. 
 Use this provider for OAuth 2.0 identity providers.
-- [**Google**](https://portal.emnify.com/organisation-settings/federation/new/google): Out-of-the-box integration with Google
+- **Google**: Out-of-the-box integration with Google
 
 ## Available guides
 

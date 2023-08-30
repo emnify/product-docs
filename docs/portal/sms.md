@@ -20,7 +20,7 @@ P2P also isn't suitable for IoT device use cases in which a device needs to upda
 ## SMS A2P
 
 SMS application-to-peer (A2P) describes the mode of SMS data exchange between a device and an application.
-One example of this is [sending SMS using the emnify Portal](#send-sms-using-the-emnify-portal).
+One example of this is sending SMS using the emnify Portal.
 
 Unlike P2P, A2P lets you interact with _multiple_ devices using an application.
 Because A2P SMS can be automated, you can interact with your devices at scale.
@@ -28,9 +28,9 @@ It also tracks messages, which enables you to see when a message has been delive
 
 ## SMS MO and MT
 
-Because the costs of sending SMS from an IoT device are higher than the cost of receiving SMS, all SMS usage is logged as either [SMS MO](/glossary#sms-mo) (sent) or [SMS MT](/glossary#sms-mt) (received).
+Because the costs of sending SMS from an IoT device are higher than the cost of receiving SMS, all SMS usage is logged as either SMS MO (sent) or SMS MT (received).
 
-Using the [emnify REST API](#send-sms-using-the-emnify-rest-api), you can dispatch SMS MO from devices as HTTP `POST` requests toward a user-configurable URL.
+Using the emnify REST API, you can dispatch SMS MO from devices as HTTP `POST` requests toward a user-configurable URL.
 
 To activate or deactivate SMS MO or MT for a group of devices, you can use the toggle switches in a new or existing **Service Policy** to which the devices are assigned.
 See [Service Policies](/portal/device-policies#service-policies) for more details.
@@ -38,7 +38,7 @@ See [Service Policies](/portal/device-policies#service-policies) for more detail
 ## Send SMS using the emnify Portal
 
 You can use the [emnify Portal](https://portal.emnify.com/) to send and receive SMS messages to and from your devices.
-Because SMS doesn't require a data connection, SMS is one of the ways you can configure the [APN](/glossary#apn) for [GPS trackers](/apn-configuration/gps-trackers) and [industrial routers](/apn-configuration/industrial-routers).
+Because SMS doesn't require a data connection, SMS is one of the ways you can [configure the APN](/apn-configuration) for GPS trackers and industrial routers.
 
 ### Open the SMS console
 
@@ -79,7 +79,7 @@ To open a device's SMS console, select its message icon.
 
 ## Send SMS using the emnify REST API
 
-See [Sending and receiving SMS](/rest/sms-operations) in the [emnify REST API](/rest) documentation.
+See [Sending and receiving SMS](/rest/sms-operations) in the REST API documentation.
 
 ## SMS via Zapier
 
@@ -95,10 +95,10 @@ Learn more about [no-code workflows in the emnify Portal](/portal/no-code).
 
 ## SMS via SMPP
 
-[Short Message Peer-to-Peer (SMPP)](/glossary#smpp) is a protocol that the telecommunication industry uses for exchanging SMS messages between short message service centers (SMSC) and/or external short messaging entities (ESME).
-Telematics platforms, SMS services, and operators often use SMPP to enable sending SMS to and from devices.
+Short Message Peer-to-Peer (SMPP) is a protocol that the telecommunication industry uses for exchanging SMS messages between short message service centers (SMSC) and/or external short messaging entities (ESME).
+Telematics platforms, SMS services, and networks often use SMPP to enable sending SMS to and from devices.
 
-You can [select and configure SMPP](/portal/device-policies#smpp-sms-interface) as your **SMS Interface** via a new or existing **Service Policy** under [**Device Policies**](https://portal.emnify.com/device-policies).
+You can select and configure SMPP as your **SMS Interface** via a new or existing **Service Policy** under [**Device Policies**](https://portal.emnify.com/device-policies).
 
 :::info
 For an example of integrating SMPP with a third-party application, see [emnify SMS via SMPP integration with Gurtams' flespi and Wialon](https://www.emnify.com/integration-guides/smpp-integration-flespi-wialon-gurtam).
