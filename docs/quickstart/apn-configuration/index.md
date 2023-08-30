@@ -4,7 +4,7 @@ pagination_next: quickstart/apn-configuration/android
 slug: /apn-configuration
 ---
 
-# Get the device online
+# Get a device online
 
 To establish network connectivity, turn on your device.
 Then, you need to make two important configuration changes:
