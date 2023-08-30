@@ -31,7 +31,22 @@ However, by creating a service policy, you can control the following:
   - [Webhook](#webhook-sms-interface)
   - [SMPP](/portal/sms#sms-via-smpp)
 
-To create a new **Service Policy**, navigate to [**Device Policies**](https://portal.emnify.com/device-policies) and select **New Service Policy**.
+### Create a new service policy
+
+To create a new service policy, follow these steps:
+
+1. [Log in to your emnify account](https://portal.emnify.com/sign).
+1. Navigate to **Device Policies**.
+   **Service policies** is the top section on the page.
+1. Select **New service policy**.
+1. Replace **New service policy** with the name of your policy, then add a **Description** and edit the **Configuration**.
+
+Changes save automatically.
+To remove a service policy, click the trash bin icon next to **Details**.
+
+:::tip
+Creating one policy per use case or device type helps you adjust and save your device settings based on the demands of a particular use case.
+:::
 
 ### Webhook SMS interface
 
@@ -74,16 +89,26 @@ A coverage policy lets you choose which pricing plan and regions to operate in.
 Policies comprise a **Tariff** (pricing plan) and one or more **Zones**.
 The default coverage policy depends on your current subscription plan.
 
-To create a new **Coverage Policy**, collapse the **Service Policies** list and select **New Coverage Policy**.
+### Create a new coverage policy
 
-<details className="custom-details-troubleshooting">
-  <summary>Show where to create a new Coverage Policy</summary>
-  <img
-    src={require('./assets/coverage-policies.png').default}
-    style={{width:650}}
-    alt=""
-  />
-</details>
+To create a new coverage policy, follow these steps:
+
+1. [Log in to your emnify account](https://portal.emnify.com/sign).
+1. Navigate to the [**Coverage Policies**](https://portal.emnify.com/device-policies#coverage-policies) section of **Device Policies**.
+1. Select **New coverage policy**.
+1. Replace **New coverage policy** with the name of your policy and add a **Description**.
+   Then, choose a **Tariff** and an **Inclusive Volume** from the available options.
+1. Finally, click **Create**.
+
+By default, connectivity is disabled, and any devices assigned to this coverage policy are blocked from all networks.
+You need to enable at least one zone for your devices to connect.
+
+Changes save automatically.
+To remove a coverage policy, click the trash bin icon next to **Details**.
+
+:::tip
+Creating multiple coverage policies lets you differentiate between device types based on their coverage needs and the associated costs.
+:::
 
 ### Tariff
 
@@ -134,21 +159,23 @@ Be sure to [reset its connectivity](/portal/connected-devices#reset-connectivity
 
 ### Single device assignment
 
-When viewing [**Device Details**](/portal/connected-devices#get-device-information), you can select **Edit** for either **Service Policy** or **Coverage Policy**.
-You'll be presented with a dropdown list to choose from.
+When viewing **Device Details**, select **Edit** for either **Service Policy** or **Coverage Policy** to show a dropdown list of available policies.
 Select your policy from the list.
 You should see a real-time notification confirming the change.
 
 ### Bulk assignments
 
 Navigate to [**Connected Devices**](https://portal.emnify.com/connected-devices) and search for the devices you wish to assign to a policy.
-If you followed the previous tip, you might be able to use only one or two tags to filter only the devices to be assigned.
+Select the checkbox next to every relevant device.
 
+:::tip
+If you followed the previous tip, you can filter by tag to show only the devices to be assigned.
 If the filtered list looks good, select the top checkbox in the table heading to select them all.
+:::
+
 A new menu appears at the top of the page that provides bulk operations.
 Select **More** and then either **Change Service Policy** or **Change Coverage Policy**.
-You'll be presented a with dropdown list to choose from.
-Select your policy from the list and then select **Save**.
+Choose your policy from the presented dropdown list and then select **Save**.
 The devices you selected are assigned to their new policy, and you should see a real-time notification confirming the change.
 
 <details className="custom-details-example">
@@ -173,14 +200,14 @@ As soon as you change the service policy, it's pushed to all 100 devices.
 ### Change a device's policy assignments
 
 Another way to change a device's group policy is to switch from its current policy to another one.
-For a single device, you can select its new policy from a dropdown list when viewing the [**Device Details**](/portal/connected-devices#get-device-information) by selecting **Edit**  as described earlier in [Single device assignment](#single-device-assignment).
 
-For changing a group of devices to a new policy, follow the procedure described for [bulk assignments](#bulk-assignments).
+For a single device, you can select its new policy from a dropdown list when viewing the **Device Details** by selecting **Edit** as described in this document's [Single device assignment](#single-device-assignment) section.
+For changing a group of devices to a new policy, see [Bulk assignments](#bulk-assignments).
 
 ### Make sure the changes take effect immediately
 
 Resetting connectivity is also available as a bulk option.
-Once you have selected the devices using the [bulk assignments](#bulk-assignments) procedure, select **Reset**.
+Once you have chosen multiple devices, select **Reset**.
 
 <details className="custom-details-troubleshooting">
   <summary>Show where to confirm the changes</summary>
