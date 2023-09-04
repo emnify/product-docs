@@ -52,6 +52,7 @@ LTE
 Luhn
 Markdown
 markdownlint
+Maven
 Meitrack
 Microsoft
 Microsoft Active Directory
@@ -61,6 +62,8 @@ MVNO[s]
 Nano
 OAuth
 OpenVPN
+Plus Package
+Pro Package
 Quad-band
 Queclink
 Quectel
@@ -69,8 +72,10 @@ RESTful API
 Ruptela
 Sequans
 SIMCom
+SIMs
 Sixfab
 SLA[s]
+Starter Package
 SuperNetwork
 Telecom
 Telia

@@ -173,7 +173,7 @@ Be sure to suspend the assigned SIM to avoid unexpected charges.
 
 You can also check the **Dashboard** to see if you have unused but charged SIMs.
 <img
-  src={require('./assets/portal-dashboard-unused-sims-warning.png').default}
+  src={require('./assets/portal-dashboard-unused-sim-warning.png').default}
   alt="Warning banner displayed for unused SIMs displayed on the emnify Portal Dashboard. It reads, '2 unused but charged SIM cards detected. We found active SIMs not connected to any device. In this case we may still charge for them, but they won't be of any use for you.' Next to this text, there's a link to the SIM Inventory and a button reading 'Deactivate SIMs now.'"
 />
 

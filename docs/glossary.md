@@ -2,8 +2,6 @@
 
 <!-- markdownlint-disable MD036 -->
 
-<!-- TODO: Fix names of changed terms -->
-
 ## APN
 
 _Access Point Name_
@@ -75,7 +73,7 @@ Every company account (on any package) is a [workspace](#workspace) by default.
 
 ## Connectivity status  
 
-This is the connectivity status of an device.
+This is the connectivity status of a device.
 It can be set to:
 
 - **Online**: Device is transmitting or can transmit data through a data tunnel.
@@ -83,7 +81,9 @@ It can be set to:
 - **Offline**: Device isn’t attached to a network.
 - **Blocked**
 
-## Coverage profile  
+## Coverage profile
+
+_Referred to as [**Tariff Profile**](https://cdn.emnify.net/api/doc/tariff-profile.html) in the API_
 
 A profile that defines which networks or countries SIM should operate in.
 
@@ -99,9 +99,9 @@ A session between opening and closing a data connection to the network.
 
 Data transmitted by the device.
 
-## Data usage (volume)  
+## Data usage
 
-The data that has been used by an endpoint, both transmitted and received.
+The data that has been used by a device, both transmitted and received.
 
 ## DDoS
 
@@ -111,7 +111,7 @@ An attack where the attacker sends multiple requests to a web resource with the 
 
 ## Device status
 
-_Sometimes referred to as **[Endpoint](#endpoint) status**_
+_Referred to as [**Endpoint status**](https://cdn.emnify.net/api/doc/endpoint.html#endpoint-status-object) in the API_
 
 Reflects the current state of the device and determines whether a device can connect to a network or incur charges.
 
@@ -159,6 +159,7 @@ Therefore, you can use it as a permanent identifier to keep track of your SIM ca
 ## Endpoint  
 
 A representation of the device which has a SIM installed.
+Often used as a legacy term for a **device**, particularly in the [REST API](https://cdn.emnify.net/api/doc/endpoint.html).
 
 ## eSIM
 
@@ -182,7 +183,7 @@ Learn more about the eUICC in the blog post: [What is an eUICC and why does it m
 
 ## Event log  
 
-A log that stores all [endpoint](#endpoint) events.
+A log that stores all device events.
 
 ## Form factor  
 
@@ -277,7 +278,7 @@ The practice of strictly associating a SIM to the device with a certain [IMEI](#
 _International Mobile Subscriber Identity_
 
 A unique number used to identify a [GSM](#gsm) subscriber.
-Therefore it changes if a device connects to a different network while roaming.
+Therefore it changes if a device connects to a different operator while roaming.
 
 <details className="custom-details-example">
   <summary>See how the IMSI is constructed</summary>
@@ -286,7 +287,7 @@ Therefore it changes if a device connects to a different network while roaming.
   It comprises three components: MCC, MNC, and MSIN.
 
   MCC: 3-digit country identifier  
-  MNC: network identifier (two or three digits)  
+  MNC: operator identifier (two or three digits)  
   MSIN: identifier for the connected device (nine or 10 digits)  
 
   <img
@@ -520,6 +521,10 @@ The address of the SMS sender as displayed on the receiving device.
 
 An IP that doesn’t change over time.
 
+## Traffic pooling  
+
+A term used to describe the service model when various devices utilize the same data pool.
+
 ## Unassigned SIM  
 
 SIM that had been unassigned from a device.
@@ -527,10 +532,6 @@ SIM that had been unassigned from a device.
 ## Usage limit  
 
 User-defined limit of consumption for a certain service (data, SMS) per device.
-
-## Usage pooling  
-
-A term used to describe the service model when various devices utilize the same data pool.
 
 ## User account
 
