@@ -96,7 +96,7 @@ You can create a new device for the newly registered SIM while still in the SIM 
   Otherwise, select **Leave disabled**.
 
   :::caution
-  Each connected device is billed monthly.
+  A monthly cost is charged for each connected device.
   :::
 
   <img
