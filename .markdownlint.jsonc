@@ -1,0 +1,39 @@
+{
+  "default": true,
+  // MD004/ul-style - Unordered list style
+  "MD004": {
+    // List style
+    "style": "dash"
+  },
+  // MD009/no-trailing-spaces - Trailing spaces
+  "MD009": {
+    // Allow spaces for empty lines in list items
+    "list_item_empty_lines": true
+  },
+  // MD013/line-length - Line length
+  "MD013": false,
+  // MD025/single-title/single-h1 - Multiple top-level headings in the same document
+  "MD025": {
+    // RegExp for matching title in front matter
+    "front_matter_title": false // We need to specify the title when the h1 contains a badge
+  },
+  // MD033/no-inline-html - Inline HTML
+  "MD033": false,
+  // MD044/proper-names - Proper names should have the correct capitalization
+  "MD044": false, // Handled by Vale
+  // MD048/code-fence-style - Code fence style
+  "MD048": {
+    // Code fence style
+    "style": "backtick"
+  },
+  // MD049/emphasis-style - Emphasis style should be consistent
+  "MD049": {
+    // Emphasis style
+    "style": "underscore"
+  },
+  // MD050/strong-style - Strong style should be consistent
+  "MD050": {
+    // Strong style
+    "style": "asterisk"
+  }
+}

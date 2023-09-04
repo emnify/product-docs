@@ -1,4 +1,5 @@
 alex
+Algolia
 APN[s]
 AuC
 AWS
@@ -13,7 +14,7 @@ CSM[s]
 Data Streamer
 Datadog
 DDoS
-Docusaurus
+[Dd]ocusaurus
 [Dd]ownlink
 [Dd]ual-band
 eDRX
@@ -49,6 +50,8 @@ Jira
 Kinesis
 LTE
 Luhn
+Markdown
+markdownlint
 Meitrack
 Microsoft
 Microsoft Active Directory
@@ -79,6 +82,7 @@ u-blox
 [Uu]plink
 Vale
 Vodafone
+webpack
 WeTrack
 Wialon
 Zapier

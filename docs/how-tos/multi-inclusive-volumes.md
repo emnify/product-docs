@@ -5,11 +5,11 @@ slug: /how-tos/multi-inclusive-volumes
 
 # Set up multi-inclusive volumes
 
-emnify introduced a multi-inclusive volumes feature, allowing you to manage different tariffs and data plans from a single account. 
+emnify introduced a multi-inclusive volumes feature, allowing you to manage different tariffs and data plans from a single account.
 These volumes are managed within [coverage policies](/portal/device-policies#coverage-policies).
 
 With the **Pro** plan, you can manage as many tariff profiles and data plans as you need.
-Those on a **Plus** plan can manage up to 4. 
+Those on a **Plus** plan can manage up to 4.
 
 Once multi-inclusive volumes have been enabled on your emnify account, please ensure that your coverage policies have been adjusted correctly to take advantage of this setup.
 
@@ -29,9 +29,9 @@ Then, go to **Coverage Policies**.
   alt=""
 />
 
-You can either adjust your existing policies under **Details** or create new ones by clicking **New coverage policy**. 
+You can either adjust your existing policies under **Details** or create new ones by clicking **New coverage policy**.
 
-The following example shows the details of the coverage policy named **Europe 500 MB**. 
+The following example shows the details of the coverage policy named **Europe 500 MB**.
 This coverage policy has **500 MB** in **Europe Basic (Main zone)** included on the **Regional Pro EUR** tariff.
 
 <img
@@ -45,7 +45,7 @@ Once enabled, you need to configure an inclusive volume for your coverage polici
 
 ## Change the inclusive volume
 
-If you notice that one of your devices uses more (or less) data than expected, you can update its assigned inclusive volume any time during the month. 
+If you notice that one of your devices uses more (or less) data than expected, you can update its assigned inclusive volume any time during the month.
 
 :::info
 Any changes are reflected on your invoice within a few hours.
@@ -54,22 +54,19 @@ Any changes are reflected on your invoice within a few hours.
 ### Individual device
 
 1. Navigate to the **Connected Devices** page.
-
 <img
   src={require('./assets/portal-connected-devices.png').default}
   alt=""
 />
 
-2. Decide which device you want to adjust and click **Details**.
-
+1. Decide which device you want to adjust and click **Details**.
 <img
   src={require('./assets/portal-connected-devices-details-button.png').default}
   alt=""
 />
 
-3. Find your device's **Coverage Policy** information under the **Devices** section of the **General** tab.
-4. Click **Edit** and select the coverage policy with the corresponding inclusive volume you want the device to use.
-
+1. Find your device's **Coverage Policy** information under the **Devices** section of the **General** tab.
+1. Click **Edit** and select the coverage policy with the corresponding inclusive volume you want the device to use.
 <img
   src={require('./assets/portal-connected-devices-details-device-policies-coverage-policy-edit-button.png').default}
   alt=""
@@ -87,31 +84,27 @@ In the following example, the device switches from **Europe 1 MB** included to *
   style={{width: 450}}
 />
 
-### Multiple devices in bulk 
+### Multiple devices in bulk
 
 1. Navigate to the **Connected Devices** page.
-
 <img
   src={require('./assets/portal-connected-devices.png').default}
   alt=""
 />
 
-2. Select multiple devices by clicking the checkboxes to the left of the device **Name**.
-
+1. Select multiple devices by clicking the checkboxes to the left of the device **Name**.
 <img
   src={require('./assets/portal-connected-devices-select-multiple-devices.png').default}
   alt=""
 />
 
-3. Locate the **More** dropdown menu on the banner and select **Change Coverage Policy**.
-
+1. Locate the **More** dropdown menu on the banner and select **Change Coverage Policy**.
 <img
   src={require('./assets/portal-connected-devices-bulk-actions-more-change-coverage-policy.png').default}
   alt=""
 />
 
-4. Once the **Change Coverage Policy** modal appears, use the **Coverage Policy** dropdown to choose the policy you want to assign to the selected devices and click **Save**.
-
+1. Once the **Change Coverage Policy** modal appears, use the **Coverage Policy** dropdown to choose the policy you want to assign to the selected devices and click **Save**.
 <img
   src={require('./assets/portal-connected-devices-bulk-actions-change-coverage-policy-modal.png').default}
   alt=""
@@ -121,7 +114,7 @@ In the preceding example, the two selected devices (**Walking Mobile** and **Tra
 
 ## Change the tariff
 
-You can also change the tariff (for example, switching from **Global Basic Zone A** to **Regional Pro Americas**) anytime during the month. 
+You can also change the tariff (for example, switching from **Global Basic Zone A** to **Regional Pro Americas**) anytime during the month.
 
 :::info
 When creating the invoice, emnify confirms which tariff the device is assigned to and bill your account accordingly.
@@ -131,22 +124,19 @@ Any changes are reflected on your invoice within a few hours.
 To change a coverage policy's tariff in the Portal, follow these steps:
 
 1. Navigate to the [**Device Policies**](https://portal.emnify.com/device-policies) page.
-
 <img
   src={require('./assets/portal-device-policies.png').default}
   alt=""
 />
 
-2. Go to **Coverage Policies**.
-3. Find the coverage policy you want to update and click **Details**.
-
+1. Go to **Coverage Policies**.
+1. Find the coverage policy you want to update and click **Details**.
 <img
   src={require('./assets/portal-device-policies-coverage-policies-details-button.png').default}
   alt=""
 />
 
-4. Use the **Tariff** dropdown to select a new tariff or use the toggles to adjust the region.
-
+1. Use the **Tariff** dropdown to select a new tariff or use the toggles to adjust the region.
 <img
   src={require('./assets/portal-device-policies-coverage-policies-details-tariff.png').default}
   alt=""

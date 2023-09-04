@@ -5,7 +5,7 @@ slug: /portal/org/billing
 
 # Billing
 
-To view your billing details, navigate to the [**Organization settings**](https://portal.emnify.com/organisation-settings/), then click [**Billing**](https://portal.emnify.com/organisation-settings/billing). 
+To view your billing details, navigate to the [**Organization settings**](https://portal.emnify.com/organisation-settings/), then click [**Billing**](https://portal.emnify.com/organisation-settings/billing).
 There, you find the following:
 
 ## Payment information
@@ -29,19 +29,19 @@ The following is an example of the shown table and potential values:
 
 | Item | Description | Settlement | Cost | Volume | Total |
 | ---- | ----------- | ---------- | ---- | ------ | ----- |
-| **Transit Gateway Breakout** | Breakout ID: ••• (Transit Gateway) | Monthly Payment | | | *(currency amount)* |
-| **Tariff Plan** | Pro EUR | Every 21 days |  | | *(currency amount)* |
-| **Inclusive Data Volume** | 100 MB per device Included per active SIM | Monthly Payment | *(currency amount)* | ••• SIMs | *(currency amount)* |
-| **Data consumption in** "*your Tariff*" |  |  |  | ••• MB | *(currency amount)* |
-| **Data costs for** "*your "Main zone*"  | ••• GB included | Per MB | *(currency amount)* | ••• MB | *(currency amount)* |
-| **SMS Traffic** | Mobile SMS Traffic | Per SMS | | •• SMS | *(currency amount)* |
+| **Transit Gateway Breakout** | Breakout ID: ••• (Transit Gateway) | Monthly Payment | | | _(currency amount)_ |
+| **Tariff Plan** | Pro EUR | Every 21 days |  | | _(currency amount)_ |
+| **Inclusive Data Volume** | 100 MB per device Included per activated SIM | Monthly Payment | _(currency amount)_ | ••• SIMs | _(currency amount)_ |
+| **Data consumption in** "_your Tariff_" |  |  |  | ••• MB | _(currency amount)_ |
+| **Data costs for** "_your "Main zone_"  | ••• GB included | Per MB | _(currency amount)_ | ••• MB | _(currency amount)_ |
+| **SMS Traffic** | Mobile SMS Traffic | Per SMS | | •• SMS | _(currency amount)_ |
 
 The preceding table also provides a **Subtotal** of all costs incurred, tax if applicable, and a **Total** cost in your currency for your billing period.
 
 :::note
-**Data consumption in** "*your Tariff*" is what you selected from the **Tariff** dropdown under [**Coverage Policies**](https://portal.emnify.com/device-policies).
+**Data consumption in** "_your Tariff_" is what you selected from the **Tariff** dropdown under [**Coverage Policies**](https://portal.emnify.com/device-policies).
 
-**Data costs for** "*your "Main zone*" is what you selected in the list of regions/zones under **Coverage Policies**.
+**Data costs for** "_your "Main zone_" is what you selected in the list of regions/zones under **Coverage Policies**.
 :::
 
 ## Billing history

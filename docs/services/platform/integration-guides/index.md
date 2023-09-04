@@ -30,7 +30,6 @@ Here are some step-by-step integration guides to help you along the process.
 - [emnify Cloud Connect Integration to Google Cloud Platform](https://www.emnify.com/en/developer-hub/emnify-cloudconnect-integration-to-google-cloud-platform)
 - [emnify Data Streamer integration for Google Cloud Pub/Sub](https://www.emnify.com/en/developer-hub/datastreamer-integration-into-google-cloud-pubsub)
 
-
 ## Webhooks
 
 - [Automate Business Processes with Multi Cloud Data Streamer and Integromat](https://www.emnify.com/en/developer-hub/emnify-mcds-integromat-integration)

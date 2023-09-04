@@ -7,7 +7,7 @@ slug: /system-events
 
 # emnify system events
 
-The emnify system generates several types of events. 
+The emnify system generates several types of events.
 These events allow you to track notable system occurrences based on behavior.
 
 Some common use cases for events on emnify include:
@@ -16,28 +16,28 @@ Some common use cases for events on emnify include:
 - **Monitoring** (for example, SIM or data connection lifecycles)
 - **Input for custom billing systems** (that is, updating billing configuration, processing invoices, etc.)
 
-Events are often used as triggers for custom business processes, for monitoring, and as input for custom billing systems. 
-They provide information about lifecycle transitions and configuration changes. 
+Events are often used as triggers for custom business processes, for monitoring, and as input for custom billing systems.
+They provide information about lifecycle transitions and configuration changes.
 
-## Structure 
+## Structure
 
-Each event is represented by an object based on the [generic Event Object](https://cdn.emnify.net/api/doc/event.html). 
+Each event is represented by an object based on the [generic Event Object](https://cdn.emnify.net/api/doc/event.html).
 
-Depending on the event type, some generic properties may not apply, and some events may have additional custom fields to provide information about what happened. 
+Depending on the event type, some generic properties may not apply, and some events may have additional custom fields to provide information about what happened.
 
 :::info
-You can find detailed information on the Event Object and its associated properties in the [Event API reference](https://cdn.emnify.net/api/doc/event.html) in the *emnify System Documentation*.  
+You can find detailed information on the Event Object and its associated properties in the [Event API reference](https://cdn.emnify.net/api/doc/event.html) in the _emnify System Documentation_.  
 :::
 
 ### Event severity
 
 Events are distinguished by three severity levels:
 
-* **Info**: Expected behavior of the executed event (for example, a device successfully attaches to a network).
-* **Warn**: Problem or unusual behavior, but doesn't necessarily require immediate action (for example, a credit card expires in 60 days).
-* **Critical**: Serious issue that likely requires additional follow-up (for example, charging for an invoice failed).
+- **Info**: Expected behavior of the executed event (for example, a device successfully attaches to a network).
+- **Warn**: Problem or unusual behavior, but doesn't necessarily require immediate action (for example, a credit card expires in 60 days).
+- **Critical**: Serious issue that likely requires additional follow-up (for example, charging for an invoice failed).
 
-:::note API Reference 
+:::note API Reference
 [Event severity object](https://cdn.emnify.net/api/doc/event.html#event-severity-object)
 :::
 
@@ -52,9 +52,9 @@ Every event is triggered by one of three available event sources:
 - **API**: The [emnify REST API](https://cdn.emnify.net/api/doc/index.html).
 
 :::info
-Any events triggered in the [emnify Portal](/system-events/usage#emnify-portal) will show **API** as the event source. 
-That's because the Portal is an interface that uses the API under the hood. 
-::: 
+Any events triggered in the [emnify Portal](/system-events/usage#emnify-portal) will show **API** as the event source.
+That's because the Portal is an interface that uses the API under the hood.
+:::
 
 :::note API Reference
 [Event source object](https://cdn.emnify.net/api/doc/event.html#event-source-object)
@@ -66,7 +66,7 @@ That's because the Portal is an interface that uses the API under the hood.
 
 ## Working with events
 
-There are three main ways you can access and trigger events: 
+There are three main ways you can access and trigger events:
 
 - [Data Streamer](/system-events/usage#data-streamer)
 - [Event API](/system-events/usage#event-api) 

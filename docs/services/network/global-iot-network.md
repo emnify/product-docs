@@ -6,6 +6,8 @@ slug: /services/global-iot-network
 
 # Global IoT Network
 
+<!-- markdownlint-disable MD040 -->
+
 Even when IoT devices are more often only deployed at a single location and aren't moving, for a vendor selling to multiple countries it's important to have a global connectivity solution, so that there is no need to have different SIM cards in stock or have multiple contracts and tariffs.
 
 <!-- TODO: Find place for service_stack.png -->
@@ -16,7 +18,7 @@ emnify uses an approach to aggregate the roaming footprint of multiple operators
 Mobile operators utilize roaming in foreign countries so their subscribers can stay connected when traveling.
 Often operators don't have roaming agreements with all countries or only have a roaming agreement for one network—which is sufficient for roaming travelers but not ideal for devices that could be anywhere in the country.
 emnify works with multiple partner operators across the globe to be able to offer more networks at a commercially viable rate.
-The emnify [multi-IMSI applet](#multi-imsi-application) makes it completely transparent for the device to identify which roaming agreement of which operator is being utilized.
+The emnify [multi-IMSI applet](/services/global-iot-sim#multi-imsi-applet) makes it completely transparent for the device to identify which roaming agreement of which operator is being utilized.
 
 ## Radio access types
 
@@ -108,8 +110,8 @@ Both technologies have been specified to meet the demand for IoT use cases in te
 - Reduced cost - to enable mass production of cellular IoT devices
   - Removing unnecessary LTE features for IoT such as dual carrier, high modulations
 - Low power utilization - for battery powered use cases that require years of operation
-  -  Introducing power saving features such as [PSM](#psm) and [eDRX](#edrx)
-  -  Reducing the max. transmission power to less than 200mA to cater for battery max. current (GSM for example has 2A max power) 
+  - Introducing power saving features such as [PSM](#power-save-mode-psm) and [eDRX](#extended-discontinuous-reception-edrx)
+  - Reducing the max. transmission power to less than 200mA to cater for battery max. current (GSM for example has 2A max power) 
 - Wider coverage - (+14 dB for LTE-M and +20 dB for NB-IoT sensitivity) for rural/indoor/underground use cases
   - Utilizing extended coverage feature with more retransmissions to ensure data gets delivered 
 - Smaller module size - to enable smaller device use cases
@@ -130,93 +132,99 @@ Nevertheless, some operators have limited the access to their LTE-M networks and
 
 Check the emnify [LTE-M coverage](https://www.emnify.com/lte-m-coverage) and [NB-IoT coverage](https://www.emnify.com/nb-iot-coverage), availability of PSM/eDRX and proposed frequency bands on the emnify website.
 
-Power-Save-Mode (PSM)
+#### Power-Save-Mode (PSM)
 
-- Why is cellular communication not ideal for IoT?  
+Why is cellular communication not ideal for IoT?
+
 Cellular communication for smartphones usually requires low latency on downlink, for example, in case you are being called, your phone should ring right away.
 Because of this, there are two things the device does which require power:  
+
   1. Continuously listening to the radio if there is an incoming call
   1. Transmitting location information to the network where it should be called - whenever it moves out of a tracking area and periodically every 54 minutes  
-&nbsp;  
-&nbsp;  
-- How does **Power Save Mode** work?  
-&nbsp;  
+
+How does **Power Save Mode** work?  
+
 For most IoT use cases a downlink-initiated channel isn't required.
 It's usually the device that initiates the communication to send (for example, sensor data).
 Therefore, a **Power Save Mode** is introduced that allows the device to go to sleep in case it has nothing to send.  
-&nbsp;  
+
 The **Power Save Mode** has the following characteristics:  
-  - The Power Save Mode is like a power off period during which the module only consumes a couple of μA.
-  - The device tells the network how long it's going periodically into PSM (timer T3412 extended).
-  - The device/module isn't reachable during PSM from the outside in downlink.
-  - The device can wake up the module and send data (for example, power key, interrupt or pin triggered).
-  - When the device wakes up, it doesn't need to reattach and re-establish a PDN connection (unless it has moved to a different tracking area).
-  - After the device wakes up, it stays in idle mode for a configurable time (timer T3324) to listen for downlink messages (for example, firmware updates).
-  - The actual time the device is then in Power Save Mode is T3412 extended - T3324
+
+- The Power Save Mode is like a power off period during which the module only consumes a couple of μA.
+- The device tells the network how long it's going periodically into PSM (timer T3412 extended).
+- The device/module isn't reachable during PSM from the outside in downlink.
+- The device can wake up the module and send data (for example, power key, interrupt or pin triggered).
+- When the device wakes up, it doesn't need to reattach and re-establish a PDN connection (unless it has moved to a different tracking area).
+- After the device wakes up, it stays in idle mode for a configurable time (timer T3324) to listen for downlink messages (for example, firmware updates).
+- The actual time the device is then in Power Save Mode is T3412 extended - T3324
 
 <!-- This is the "alt" text for a missing image: "PSM and the 3412 and T3324 timers" -->
-   
+
 :::note
 Some modules which have a SIM enabled PIN, (for example, u-blox SARA-R4/SARA-N4) don't go into sleep mode.
 The PIN is disabled on emnify SIMs.
 :::
 
-- Roaming for Power Save Mode 
-&nbsp;  
-&nbsp;   
+Roaming for Power Save Mode
+
 Be aware that not all NB-IoT and LTE-M networks have implemented PSM and even when PSM is available with the local operator this doesn't mean that a roaming SIM can use it.
 This makes it difficult for devices that are moving - in case they use PSM, and the new network doesn't support PSM - or only other timer configurations.
 emnify therefore regularly test the availability of PSM in the [LTE-M](https://www.emnify.com/lte-m-coverage?hsLang=en) and [NB-IoT](https://www.emnify.com/nb-iot-coverage) roaming footprint.
-- AT Command calculation and examples for PSM settings 
-&nbsp;  
-&nbsp;   
-The 3GPP defined AT command to configure PSM is `AT+CPSMS` which sets the T3412 extended and T3324 timers. 
-&nbsp;  
-&nbsp;   
-An example command is  
-&nbsp;  
-`AT+CPSMS=1,,,01001110,00000101`
-&nbsp;  
-&nbsp;  
+
+AT Command calculation and examples for PSM settings
+  
+The 3GPP defined AT command to configure PSM is `AT+CPSMS` which sets the T3412 extended and T3324 timers.
+  
+An example command is:
+
+```
+AT+CPSMS=1,,,01001110,00000101
+```
+
 PSM is enabled (`1`) and the desired value for T3412 extended is 140 hours (`01001110`) and the desired value for the T3324 timer is 10 seconds (`01001110`).
 The network doesn't necessarily use the desired values but utilizes supported values that are close to the desired values.
-To read the effective PSM configuration use the command  
-&nbsp;   
-`AT+CPSMS?`
-&nbsp;  
-&nbsp;     
-There is a good calculator that translates the intended time settings for 3412 and T3324 available from [Thales](https://www.thalesgroup.com/en/markets/digital-identity-and-security/iot/resources/developers/psm-calculation-tool). 
-&nbsp;  
-&nbsp;  
+
+To read the effective PSM configuration, use the command:
+
+```
+AT+CPSMS?
+```
+
+There is a good calculator that translates the intended time settings for 3412 and T3324 available from [Thales](https://www.thalesgroup.com/en/markets/digital-identity-and-security/iot/resources/developers/psm-calculation-tool).
+
 Module vendors have also implemented module specific commands, for example Quectel
-  - `AT+QPSMS` extends PSM settings
-  - `AT+QCFG=”psm/enter”,1` used to put the module immediately into PSM when the RRC connection is released (not waiting for T3324 to expire)
-  - `AT+QPSMEXTCFG` modem optimization command with different attributes such as making sure that PSM is randomized between different devices so they don't send data at the same time
 
-Extended Discontinuous Reception (eDRX)
+- `AT+QPSMS` extends PSM settings
+- `AT+QCFG=”psm/enter”,1` used to put the module immediately into PSM when the RRC connection is released (not waiting for T3324 to expire)
+- `AT+QPSMEXTCFG` modem optimization command with different attributes such as making sure that PSM is randomized between different devices so they don't send data at the same time
 
-- How does eDRX work?  
-&nbsp;  
-  While PSM is focused on uplink-centric use cases, eDRX tries to reduce the power consumption for IoT use cases that get downlink information.
-  Regular smartphones don't continuously listen on the radio for an incoming message.
-  They do this only every 1.28 seconds or 2.56 seconds which is called DRX (discontinuous Reception).
-  eDRX allows configuration of custom intervals of up to 40-175 minutes - depending on the configuration the visited network allows.
-    ![eDRX and the 3412 and T3324 timers](./assets/edrx.png)  
-&nbsp;  
-&nbsp;  
-- Roaming with eDRX  
-&nbsp;  
+#### Extended Discontinuous Reception (eDRX)
+
+How does eDRX work?  
+
+While PSM is focused on uplink-centric use cases, eDRX tries to reduce the power consumption for IoT use cases that get downlink information.
+Regular smartphones don't continuously listen on the radio for an incoming message.
+They do this only every 1.28 seconds or 2.56 seconds which is called DRX (discontinuous Reception).
+eDRX allows configuration of custom intervals of up to 40-175 minutes - depending on the configuration the visited network allows.
+
+![eDRX and the 3412 and T3324 timers](./assets/edrx.png)  
+
+Roaming with eDRX  
+
 As with PSM - not all NB-IoT and LTE-M networks support eDRX or the same timer configuration - and even if they do this doesn't guarantee that a roaming SIM card can utilize eDRX.
 emnify therefore also tests and publishes the eDRX availability on our [LTE-M](https://www.emnify.com/lte-m-coverage?hsLang=en) and [NB-IoT](https://www.emnify.com/nb-iot-coverage) roaming footprint.
-- [AT Command examples for eDRX settings](#eDRX_AT_COMMANDS)  
-&nbsp;  
+
+AT Command examples for eDRX settings
+
 The standard 3GPP defined AT-command to configure eDRX is `AT+CEDRXS`.  
-&nbsp;   
-As an example the below command enables (`1`) eDRX for LTE-M (`4`) and an eDRX cycle of 143.36 seconds (`1000`).
-&nbsp;  
-&nbsp;  
-`AT+CEDRXS=1,4,"1000"`
-The setting for NB-IoT would be `5` and the timer values are shown in below table  
+  
+As an example the following command enables (`1`) eDRX for LTE-M (`4`) and an eDRX cycle of 143.36 seconds (`1000`):
+
+```
+AT+CEDRXS=1,4,"1000"
+```
+
+The setting for NB-IoT would be `5` and the timer values are shown in following table:
 
 | Binary  | Timer Value      |
 | ------- | ---------------: |
@@ -237,11 +245,11 @@ The setting for NB-IoT would be `5` and the timer values are shown in below ta
 | 1 1 1 0 |  5242.88 seconds |
 | 1 1 1 1 | 10485.76 seconds |
 
-    
 The network responds with the actual effective interval.
-    
-`+CEDRXS: [4,"1000","1000","0111"]`
-    
+
+```
++CEDRXS: [4,"1000","1000","0111"]
+```
 
 ### 5G (New Radio)
 
