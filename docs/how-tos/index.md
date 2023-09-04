@@ -22,7 +22,7 @@ slug: /how-tos
 
 ## Organization and billing
 
-- [Set up data allowances](/how-tos/data-allowances)
+- [Assign data allowances](/how-tos/data-allowances)
 - [Create a new workspace](/workspaces/create)
 
 ## SMS

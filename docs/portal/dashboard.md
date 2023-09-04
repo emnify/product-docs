@@ -26,7 +26,7 @@ Any changes are reflected in these charts within a few hours.
 This is the data allowance based on the coverage area you chose for your [coverage policy](/portal/device-policies#coverage-policies).
 
 :::note
-These statistics are only shown if you've [set up data allowances](/how-tos/data-allowances).
+These statistics are only shown if you've [assigned data allowances](/how-tos/data-allowances).
 If you're in a Pay-per-Use model, this section of the Dashboard is empty.
 :::
 

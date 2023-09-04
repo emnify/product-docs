@@ -3,7 +3,7 @@ description: How to set up data allowances via the emnify Portal
 slug: /how-tos/data-allowances
 ---
 
-# Assign a data allowance
+# Assign data allowances
 
 emnify has data allowances, which lets you to manage different data plans from a single account.
 These data allowances and plans are managed within [coverage policies](/portal/device-policies#coverage-policies).

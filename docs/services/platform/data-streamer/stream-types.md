@@ -27,22 +27,22 @@ Learn more about the available event types and how to use them in the [Event doc
 
 ## Usage data
 
-Usage data records get generated when devices use data or SMS services.
+Usage data records get generated when devices consume data or SMS services.
 These records provide information about the SIM, used service, visited network, volumes, and cost.
 
-Usage data streams are often used for monitoring and analyzing data usage and as input for custom billing systems.
+Usage data streams are often used for monitoring and analyzing data consumption and as input for custom billing systems.
 
 Each usage data record contains information about the:
 
 - **Device** (organization, SIM, IMSI)
 - **Time** (start and end time)
 - **Price applied for rating** (data plan, coverage profile, coverage area)
-- **Network used for the service** (network, country)
+- **Mobile network operator used for the service** (operator, country)
 - **Type of service** (SMS or data)
-- **Used service volumes** (down- and upstream, total volume)
+- **Consumed service volumes** (down- and upstream, total volume)
 - **Costs** (amount, currency)
 
-### Usage types
+### Traffic types
 
 | ID  | Description   |
 | --- | ------------- |
@@ -53,7 +53,7 @@ Each usage data record contains information about the:
 
 Data usage records are created:
 
-- Every 45 seconds for open PDP contexts (when at least 100 KB of data is used)
+- Every 45 seconds for open PDP contexts (when at least 100 KB of data is consumed)
 - After the PDP context is closed
 
 <details className="custom-details-example">

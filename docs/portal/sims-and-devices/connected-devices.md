@@ -139,11 +139,11 @@ The **General** view shows the following properties:
 | Status            | Current state of the device (in this document, see [Device status](#device-status)). |
 | Services          | Indicates whether the following services are active or disabled: <ul><li>Data</li><li>SMS MT</li><li>SMS MO</li></ul> |
 | Connection        | [Connectivity status](/glossary#connectivity-status) and available PDP context, with an option to reset the connectivity. <br /><br /> If the device is **Online**, click the `i` icon to show all connectivity information—breakout IP, MSC, VLR, etc. |
-| Blocked networks | Names of any networks on the device's networks blocklist (often used for [troubleshooting](/quickstart/troubleshooting#other-general-troubleshooting-tips)). |
+| Blocked networks | Names of any operators on the device's networks blocklist (often used for [troubleshooting](/quickstart/troubleshooting#other-general-troubleshooting-tips)). |
 | Device            | Identifiers for the device, including: <ul><li>Device ID (referred to as `endpoint_id` when working with the [REST API](https://cdn.emnify.net/api/doc/endpoint.html))</li><li>Configured IP address</li><li>IMEI and a toggle to indicate whether [IMEI lock](/services/security#imei-lock) is turned on</li></ul> |
 | Policies          | Names of the assigned [service policy](/portal/device-policies#service-policies) and [coverage policy](/portal/device-policies#coverage-policies). |
 | SIM               | Properties of the assigned SIM, including: <ul><li>IMSI</li><li>MSISDN</li><li>ICCID</li></ul> Also includes an option to release the SIM. If there's no assigned SIM, this section is empty and shows an option to assign a SIM. |
-| Usage             | Data and SMS usage based on a selected time period: <ul><li>Last hour</li><li>Current month</li><li>Last month</li></ul> |
+| Usage             | Data and SMS traffic based on a selected time period: <ul><li>Last hour</li><li>Current month</li><li>Last month</li></ul> |
 
 :::tip
 For definitions of any unfamiliar terms or acronyms, see the [Glossary](/glossary).
@@ -171,7 +171,7 @@ If you're using the [emnify REST API](https://cdn.emnify.net/api/doc/index.html)
 In this case, you'll continue to accrue costs as emnify charges for activated SIMs.
 Be sure to suspend the assigned SIM to avoid unexpected charges.
 
-You can also check the **Dashboard** to see if you have unused but billed SIMs.
+You can also check the **Dashboard** to see if you have unused but charged SIMs.
 <img
   src={require('./assets/portal-dashboard-unused-sims-warning.png').default}
   alt="Warning banner displayed for unused SIMs displayed on the emnify Portal Dashboard. It reads, '2 unused but charged SIM cards detected. We found active SIMs not connected to any device. In this case we may still charge for them, but they won't be of any use for you.' Next to this text, there's a link to the SIM Inventory and a button reading 'Deactivate SIMs now.'"
