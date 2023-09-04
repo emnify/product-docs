@@ -41,7 +41,7 @@ The preceding table also provides a **Subtotal** of all costs incurred, tax if a
 :::note
 **Data usage in** "_your coverage area_" is what you selected from the **Coverage** dropdown under [**Coverage Policies**](https://portal.emnify.com/device-policies#coverage-policies).
 
-**Data costs for** "_your coverage area_" is what you selected in the list of regions/zones under **Coverage Policies**.
+**Data costs for** "_your coverage area_" is what you selected in the list of regions under **Coverage Policies**.
 :::
 
 ## Billing history

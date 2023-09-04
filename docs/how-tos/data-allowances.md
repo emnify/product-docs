@@ -3,7 +3,7 @@ description: How to set up data allowances via the emnify Portal
 slug: /how-tos/data-allowances
 ---
 
-# Set up data allowances
+# Assign a data allowance
 
 emnify has data allowances, which lets you to manage different data plans from a single account.
 These data allowances and plans are managed within [coverage policies](/portal/device-policies#coverage-policies).
@@ -96,4 +96,4 @@ To change a coverage policy's data plan in the Portal, follow these steps:
 1. Navigate to the **Device Policies**.
 1. Go to [**Coverage Policies**](https://portal.emnify.com/device-policies).
 1. Find the coverage policy you want to update and click **Details**.
-1. Use the **Coverage** dropdown to select a new data plan or use the toggles to adjust the **Coverage zones**.
+1. Use the **Coverage** dropdown to select a new data plan or use the toggles to adjust the **Coverage areas**.

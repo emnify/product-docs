@@ -171,7 +171,7 @@ Usage records for SMS are created when an SMS is successfully delivered either:
             "name": "Internal Test Data Plan",
             "ratezone": { // coverage area
                 "id": 1,
-                "name": "Zone 1"
+                "name": "Area 1"
             }
         },
         "traffic_type": { // usage type

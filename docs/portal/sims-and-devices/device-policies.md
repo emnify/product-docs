@@ -86,7 +86,7 @@ When selecting **SMPP** as your **SMS Interface**, you are provided a **System I
 ## Coverage policies
 
 A coverage policy lets you choose which pricing plan and regions to operate in.
-Policies comprise of the **Coverage** (data plan) and one or more **Coverage zones**.
+Policies comprise of the **Coverage** (data plan) and one or more **Coverage areas**.
 The default coverage policy depends on your current subscription package.
 
 ### Create a new coverage policy
@@ -101,7 +101,7 @@ To create a new coverage policy, follow these steps:
 1. Finally, click **Create**.
 
 By default, connectivity is disabled, and any devices assigned to this coverage policy are blocked from all networks.
-You need to enable at least one **Coverage zone** for your devices to connect.
+You need to enable at least one **Coverage area** for your devices to connect.
 
 Changes save automatically.
 To remove a coverage policy, click the trash bin icon next to **Details**.
@@ -114,9 +114,9 @@ Creating multiple coverage policies lets you differentiate between device types 
 
 The **Coverage** dropdown shows a list of data plan names with **Regional Pro** selected by default.
 
-### Coverage zones
+### Coverage areas
 
-The list of **Coverage zones** varies depending on which **Coverage** you selected.
+The list of **Coverage areas** varies depending on which **Coverage** you selected.
 
 The **Coverage map** is a global map that shows the coverage you have based on your selections.
 You can browse the entire list of countries in the **Coverage list** or search for a specific country where you plan to deploy your devices.
