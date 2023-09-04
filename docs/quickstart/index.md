@@ -87,9 +87,6 @@ In addition to the standard emnify services, the Trial plan supports the followi
 
 ## Order free Trial SIMs
 
-<!-- TODO: Fix screenshot -->
-![Claim your free evaluation package with 3 triple-cut SIMs to kickstart your well-managed IoT journey. Includes: Free 3 triple-cut SIMs, form factor (Nano, Micro, Mini), our full coverage, and global fast shipping.](assets/portal-order-evaluation-pack.png)
-
 You can order your free Trial SIMs on the emnify Portal.
 This package includes an issued prepaid credit for testing emnify's services.
 
@@ -102,22 +99,8 @@ Currently, the three triple-cut SIM cards can be delivered to most destinations 
 To get your free Trial SIMs, [log in to your emnify account](https://portal.emnify.com/sign) and follow these steps:
 
 1. On the [**Dashboard**](https://portal.emnify.com/), click **Get SIMs** on the **Get your free SIMs** panel.
-
-<img
-  src={require('./assets/portal-dashboard-get-started-get-sims-button.png').default}
-  alt=""
-/>
-
-<!-- markdownlint-disable-next-line MD029 -->
-2. Enter your **Invoice data**, **Delivery details**, and **Choose shipping option**.
-
-<img
-  src={require('./assets/portal-order-evaluation-pack-invoice-shipping-details.png').default}
-  alt=""
-/>
-
-<!-- markdownlint-disable-next-line MD029 -->
-3. Finally, review and confirm your details. 
+1. Enter your **Invoice data**, **Delivery details**, and **Choose shipping option**.
+1. Finally, review and confirm your details. 
 
 :::info
 You'll be notified when the SIM cards will be shipped.

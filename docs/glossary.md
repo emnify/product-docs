@@ -592,5 +592,5 @@ Accounts on the **Pro Package** can have up to five workspaces.
 The feature in the [emnify Portal](https://portal.emnify.com/) allowing **Administrator** [user accounts](#user-account) to switch between workspaces.
 
 :::tip Step-by-step guide
-[Switching between workspaces](/workspaces/switch)
+[Switch between workspaces](/workspaces/switch)
 :::

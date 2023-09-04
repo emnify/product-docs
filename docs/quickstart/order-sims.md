@@ -42,18 +42,16 @@ Here, you can specify the amount of each SIM type you want to receive.
 />
 
 :::note
-You may see the **Order Split** option depending on how many SIMs you order.
-This allows you to split orders into batches (for example, collections of 25, 100, or 500 SIMs).
+For larger orders, you can split your order into **Batches** (for example, collections of 25, 100, or 500 SIMs).
 
 The benefit of batches is that they can be registered all at once, whereas single SIMs can only be registered individually.
+To learn more, see [Register emnify SIMs](/quickstart/register-sims).
 
 <img
   src={require('./assets/portal-sim-shop-sim-order-choose-amount-batches.png').default}
   alt=""
     style={{ width: 700 }}
 />
-
-Learn more in the [Registering SIMs](/quickstart/register-sims).
 :::
 
 6. Enter your **Invoice and shipping details**, and specify your **Shipping option**.

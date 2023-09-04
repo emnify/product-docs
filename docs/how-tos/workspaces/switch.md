@@ -1,7 +1,7 @@
 ---
 title: Switch between workspaces
 description: Move between and manage multiple workspaces
-pagination_label: Switching between workspaces
+pagination_label: Switch between workspaces
 slug: /workspaces/switch
 ---
 

@@ -14,10 +14,6 @@ You can enable 2FA via the emnify Portal.
 1. Log in to your [emnify account](https://portal.emnify.com/sign).
 1. Navigate to [**User Settings**](https://portal.emnify.com/user-settings) by clicking on your avatar and selecting **User Settings** from the dropdown menu.
 <img
-  src={require('./assets/portal-dashboard-avatar-user-settings.png').default}
-  alt=""
-/>
-<img
   src={require('./assets/portal-user-settings.png').default}
   alt=""
 />
