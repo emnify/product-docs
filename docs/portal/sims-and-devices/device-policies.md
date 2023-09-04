@@ -85,7 +85,7 @@ When selecting **SMPP** as your **SMS Interface**, you are provided a **System I
 
 ## Coverage policies
 
-A coverage policy lets you choose which pricing plan and regions to operate in.
+A coverage policy lets you choose which data plan and regions to operate in.
 Policies comprise of the **Coverage** (data plan) and one or more **Coverage areas**.
 The default coverage policy depends on your current subscription package.
 

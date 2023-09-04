@@ -5,16 +5,16 @@ description: Ensuring your success with emnify products and services
 # Support
 
 emnify is dedicated to your success with our service.
-We provide you with a choice of different plans, a globally based customer success team, and support with global roaming to ensure that you have connectivity wherever you need it.
+We provide you with a choice of different levels, a globally based customer success team, and support with global roaming to ensure that you have connectivity wherever you need it.
 
-## Support plans
+## Support levels
 
-emnify offers a variety of support plans designed to ensure that your devices operate reliably in our network.
-The **Starter** support plan is included for all customers at no additional cost.
-It's the default service plan when registering through our website using the [emnify Portal](https://portal.emnify.com/).
+emnify offers a variety of support levels designed to ensure that your devices operate reliably in our network.
+**Starter Support** is included for all customers at no additional cost.
+It's the default service level when registering through our website using the [emnify Portal](https://portal.emnify.com/).
 For a detailed description of the standard services, please refer to our [Terms of Service](https://www.emnify.com/hubfs/20211001_terms_of_service_and_standard_service_level_obligations.pdf).
 
-The **Business** and **Enterprise** plans offer premium customer service and can be bundled with your emnify subscription.
+The **Business** and **Enterprise** levels offer premium customer service and can be bundled with your emnify subscription.
 They're designed to reduce operational costs by detecting issues before they disrupt your business operations and by resolving [incidents](#incident-management) faster.
 
 | Feature | Starter  | Business | Enterprise |
