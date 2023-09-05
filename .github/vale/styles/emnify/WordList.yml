@@ -23,7 +23,7 @@ swap:
   "(?:ok|Okay)": OK|okay
   "(?:rate zone|ratezone)": coverage area
   "(?:REST-API|Rest-API|Rest API)": REST API
-  "(?:tariff|tariff plan)": data plan
+  "(?:tariff|tariff plan|usage tariff)": data plan
   "(?:WiFi|wifi|Wifi)": Wi-Fi
   '[\.]+apk': APK
   '3\-D': 3D
@@ -89,6 +89,5 @@ swap:
   tariff profile: coverage profile
   touch: tap
   url: URL
-  usage tariff: coverage
   vs\.: versus
   World Wide Web: web
