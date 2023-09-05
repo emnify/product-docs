@@ -476,7 +476,7 @@ This device appears as **Online** in the [emnify Portal](/system-events/usage#em
     },
     "name": "Vodafone",
     "pdp_context": {
-      "tariff_profile_id": "395978", // coverage profile
+      "tariff_profile_id": "395978", // coverage policy
       "tx_teid_control_plane": 570842943,
       "breakout_ip": "97.106.216.29",
       "tariff_id": "555", // data plan

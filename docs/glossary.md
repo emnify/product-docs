@@ -81,7 +81,7 @@ It can be set to:
 - **Offline**: Device isn’t attached to a network.
 - **Blocked**
 
-## Coverage profile
+## Coverage policy
 
 _Referred to as [**Tariff Profile**](https://cdn.emnify.net/api/doc/tariff-profile.html) in the API_
 
@@ -544,7 +544,7 @@ An ability to select which network the customer’s SIM connects to.
 
 ## User-defined networking  
 
-An approach that enables users to create their own virtual mobile network, define service and security policies, and provision [coverage profiles](#coverage-profile) and data packages.
+An approach that enables users to create their own virtual mobile network, define service and security policies, and provision [coverage policies](#coverage-policy) and data packages.
 
 ## USSD
 

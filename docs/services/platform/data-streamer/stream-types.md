@@ -36,7 +36,7 @@ Each usage data record contains information about the:
 
 - **Device** (organization, SIM, IMSI)
 - **Time** (start and end time)
-- **Price applied for rating** (data plan, coverage profile, coverage area)
+- **Price applied for rating** (data plan, coverage policy, coverage area)
 - **Mobile network operator used for the service** (operator, country)
 - **Type of service** (SMS or data)
 - **Consumed service volumes** (down- and upstream, total volume)

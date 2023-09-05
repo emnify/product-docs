@@ -8,7 +8,7 @@ slug: /how-tos/data-allowances
 emnify has data allowances, which lets you to manage different data plans from a single account.
 These data allowances and plans are managed within [coverage policies](/portal/device-policies#coverage-policies).
 
-With the **Pro Package**, you can manage as many coverage profiles and data plans as you need.
+With the **Pro Package**, you can manage as many coverage policies and data plans as you need.
 Those on a **Plus Package** can manage up to 4 data plans.
 
 Once data plans have been enabled on your emnify account, make sure your coverage policies have been adjusted correctly to take advantage of these allowances.

@@ -59,7 +59,7 @@ The following tables describe the permissions for different roles.
 | Add or delete traffic limit from a service | <Check alt="Yes" /> | <Close alt="No" /> | <Check alt="Yes" /> |
 | Retrieve the ESME interface types | <Check alt="Yes" /> | <Close alt="No" /> | <Check alt="Yes" /> |
 
-## Coverage profile
+## Coverage policy
 
 | Action | Administrator | Observer | User |
 | ------ | :---: | :------: | :--: |
@@ -68,9 +68,9 @@ The following tables describe the permissions for different roles.
 | Retrieve data plan details by ID | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
 | Retrieve data plans | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
 | Retrieve list of data plan statuses | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
-| Create coverage profiles | <Check alt="Yes" /> | <Close alt="No" /> | <Check alt="Yes" /> |
-| List coverage profiles | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
-| Retrieve coverage area of a coverage profile | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| Create coverage policies | <Check alt="Yes" /> | <Close alt="No" /> | <Check alt="Yes" /> |
+| List coverage policies | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| Retrieve coverage area of a coverage policy | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
 | Retrieve country details by ID | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
 | List networks | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
 | Retrieve my currently active data plan | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
