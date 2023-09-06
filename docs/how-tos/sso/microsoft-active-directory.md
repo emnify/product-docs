@@ -133,12 +133,6 @@ Navigate to **Overview** in the sidebar and copy the **Application (client) I
 />
 
 If you need SSO enabled for your account, contact support by selecting **Upgrade**.
-
-<!-- vale emnify.Condescending = NO -->
-<!-- 'easily' is quoted from the Portal text -->
-![Portal screenshot from the Single Sign-On page under Organization. There's a notice under Provider that reads, "Your plan does not include SSO. Single Sign-On (SSO) allows you to configure your own Identity Provider (IdP) to authenticate your workforce on the emnify portal and easily control access via your central user management." Next to this text is an Upgrade button.](assets/portal-organization-no-sso-annotated.png)
-<!-- vale emnify.Condescending = YES -->
-
 Otherwise, click **Add** under the Microsoft SSO provider.
 
 Enter the **Client ID** and **Client Secret** with the values you copied earlier, then click **Create and Activate**.

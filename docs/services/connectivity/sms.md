@@ -84,12 +84,6 @@ To configure the webhook, go to the [**Device Policies**](https://portal.emnify.
 Under **Service Policies**, choose the policy you want to update and click **Details**.
 Then, find the **SMS Interface** section.
 
-<img
-  src={require('./assets/portal-device-policies-sms-interface-webhook.png').default}
-  alt=""
-  style={{ width: 800 }}
-/>
-
 Select **Webhook**, then select **Configure Webhook**:
 
 <img

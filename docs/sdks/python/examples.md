@@ -5,10 +5,9 @@ slug: /sdks/python/examples
 
 # Examples
 
-The following examples show you how to use the emnify Python SDK. 
+The following examples show you how to use the emnify Python SDK.
 
 The source code for each example is available in the [emnify-sdk-python GitHub repository](https://github.com/emnify/emnify-sdk-python/tree/main/docs/examples).
-
 
 | Example                             | Description  |
 |---|---|

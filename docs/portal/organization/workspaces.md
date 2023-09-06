@@ -6,13 +6,13 @@ slug: /workspaces
 
 # Workspaces
 
-This feature comes with the **Pro** plan subscribers.
+This feature comes with the **Pro Package**.
 It's designed to address the needs of organizations with complex business structures and those with diverse product lines.
 
 ## Useful terms
 
 The following terms are commonly used when discussing the Workspaces feature.
-Each listed term includes a link to its associated [Glossary](/glossary) entry:
+Each listed term includes a link to its associated glossary entry:
 
 - [Workspaces](/glossary#workspace)
 - [Linked workspaces](/glossary#linked-workspaces)
@@ -47,7 +47,7 @@ This helps facilitate requirements for supporting fundamental differences in the
 
 <img
   src={require('./assets/workspaces-create.png').default}
-  style={{width:300}}
+  style={{ width: 300 }}
   alt=""
 />
 
@@ -55,7 +55,7 @@ This helps facilitate requirements for supporting fundamental differences in the
 
 <img
   src={require('./assets/workspaces-created.png').default}
-  style={{width:300}}
+  style={{ width: 300 }}
   alt=""
 />
 

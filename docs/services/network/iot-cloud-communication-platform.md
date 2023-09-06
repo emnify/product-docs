@@ -28,5 +28,3 @@ Moreover, it also helps reduce network latency.
 You can either select a specific breakout region or the network automatically selects the breakout region closest to the device.
 This can be done on the [emnify Portal](https://portal.emnify.com/).
 On the [**Device Policies**](https://portal.emnify.com/device-policies) page, select **New service policy** which is applicable to a group of devices.
-
-![Breakout regions](assets/portal-device-policies-breakout-regions.png)

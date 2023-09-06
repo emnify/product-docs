@@ -63,7 +63,7 @@ Also, verify that the network is on emnify’s [NB-IoT coverage](https://www.emn
 - After configuration changes, make sure they're correctly applied on the device (for example, with a reboot).
 - Clicking the reset connectivity icon on [**Connected Devices**](https://portal.emnify.com/connected-devices) can also reset the network state and allow your device to freshly reattach.
 - The issue may only be present with one network or in the specific location (for example, due to high interference for this network).
-You can use the Operator Blacklist to block the network and force the change to a different network.
+You can use the network blocklist to block the network and force the change to a different network.
 
 ## Contact the support team
 

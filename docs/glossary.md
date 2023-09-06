@@ -26,7 +26,7 @@ Learn more about the [SMS types supported by the emnify platform](/services/sms)
 
 ## Assigned SIM  
 
-SIM that has been assigned to an [endpoint](#endpoint).
+SIM that has been assigned to a device.
 
 ## AT+CREG AT command
 
@@ -68,18 +68,24 @@ For example, [ICCID](#iccid) numbers use a [_Luhn checksum digit_](#luhn-checksu
 A company's emnify account (that is, an [**Organization**](#organization) in the [emnify Portal](https://portal.emnify.com/)).
 
 :::note
-Every company account (on any plan) is a [workspace](#workspace) by default.
+Every company account (on any package) is a [workspace](#workspace) by default.
 :::
 
 ## Connectivity status  
 
-This is the connectivity status of an [endpoint](#endpoint).
+This is the connectivity status of a device.
 It can be set to:
 
 - **Online**: Device is transmitting or can transmit data through a data tunnel.
 - **Attached**: Device is attached to a network but hasn't established a data tunnel.
 - **Offline**: Device isn’t attached to a network.
 - **Blocked**
+
+## Coverage policy
+
+_Referred to as [**Tariff Profile**](https://cdn.emnify.net/api/doc/tariff-profile.html) in the API_
+
+A policy that defines which networks or countries SIM should operate in.
 
 ## Data RX  
 
@@ -93,9 +99,9 @@ A session between opening and closing a data connection to the network.
 
 Data transmitted by the device.
 
-## Data usage (volume)  
+## Data usage
 
-The data that has been used by an endpoint, both transmitted and received.
+The data that has been used by a device, both transmitted and received.
 
 ## DDoS
 
@@ -105,7 +111,7 @@ An attack where the attacker sends multiple requests to a web resource with the 
 
 ## Device status
 
-_Sometimes referred to as **[Endpoint](#endpoint) status**_
+_Referred to as [**Endpoint status**](https://cdn.emnify.net/api/doc/endpoint.html#endpoint-status-object) in the API_
 
 Reflects the current state of the device and determines whether a device can connect to a network or incur charges.
 
@@ -153,6 +159,7 @@ Therefore, you can use it as a permanent identifier to keep track of your SIM ca
 ## Endpoint  
 
 A representation of the device which has a SIM installed.
+Often used as a legacy term for a **device**, particularly in the [REST API](https://cdn.emnify.net/api/doc/endpoint.html).
 
 ## eSIM
 
@@ -176,7 +183,7 @@ Learn more about the eUICC in the blog post: [What is an eUICC and why does it m
 
 ## Event log  
 
-A log that stores all [endpoint](#endpoint) events.
+A log that stores all device events.
 
 ## Form factor  
 
@@ -514,21 +521,17 @@ The address of the SMS sender as displayed on the receiving device.
 
 An IP that doesn’t change over time.
 
-## Tariff profile  
-
-A profile that defines which networks or countries SIM should operate in.
-
 ## Traffic pooling  
 
-A term used to describe the service model when various [endpoints](#endpoint) utilize the same data pool.
+A term used to describe the service model when various devices utilize the same data pool.
 
 ## Unassigned SIM  
 
-SIM that had been unassigned from an [endpoint](#endpoint).
+SIM that has been unassigned from a device.
 
 ## Usage limit  
 
-User-defined limit of consumption of a certain service (data, SMS) per endpoint.
+User-defined limit of consumption for a certain service (data, SMS) per device.
 
 ## User account
 
@@ -537,11 +540,11 @@ User accounts can be assigned a role (for example, **Administrator**).
 
 ## User-defined coverage  
 
-An ability to select which operator the customer’s SIM connects to.
+An ability to select which network the customer’s SIM connects to.
 
 ## User-defined networking  
 
-An approach that enables users to create their own virtual mobile network, define service and security policies and provision [tariff profiles](#tariff-profile) and data packages.
+An approach that enables users to create their own virtual mobile network, define service and security policies, and provision [coverage policies](#coverage-policy) and data packages.
 
 ## USSD
 
@@ -577,8 +580,8 @@ An independent entity in the [emnify Portal](https://portal.emnify.com/) associa
 Workspaces can be managed individually or, if [linked](#linked-workspaces), centrally by the [main organization](#main-organization) while being billed and accessed separately.
 
 :::note
-Every [company account](#company-account) (on any plan) is a workspace by default.
-Accounts on the **Pro** plan can have up to five workspaces.
+Every [company account](#company-account) (with any package) is a workspace by default.
+Accounts with the **Pro Package** can have up to five workspaces.
 :::
 
 :::tip Step-by-step guide
@@ -590,5 +593,5 @@ Accounts on the **Pro** plan can have up to five workspaces.
 The feature in the [emnify Portal](https://portal.emnify.com/) allowing **Administrator** [user accounts](#user-account) to switch between workspaces.
 
 :::tip Step-by-step guide
-[Switching between workspaces](/workspaces/switch)
+[Switch between workspaces](/workspaces/switch)
 :::

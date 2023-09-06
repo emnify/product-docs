@@ -156,8 +156,3 @@ Only listed for relevant network events.
 - **Country**: The country where the MNO listed in the `Operator` field is providing the cellular service.
 - **ID**: A generated unique identifier for the event.
 - **Description**: What happened, why (in some cases), and any additional details associated with the event type.
-
-<img
-  src={require('./assets/portal-dashboard-event-details.png').default}
-  alt=""
-/>

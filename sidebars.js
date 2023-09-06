@@ -214,7 +214,11 @@ const sidebars = {
           label: "Overview",
           id: "how-tos/index",
         },
-        "how-tos/multi-inclusive-volumes",
+        {
+          type: "doc",
+          label: "Change data allowances",
+          id: "how-tos/data-allowances",
+        },
         "how-tos/two-factor-authentication",
         {
           type: "category",

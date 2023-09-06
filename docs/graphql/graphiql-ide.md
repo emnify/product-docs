@@ -93,7 +93,7 @@ Once the **Docs** are visible, choose `Query`, then select `myUser`.
 <img
   src={require('./assets/graphiql-sidebar-show-documentation-explorer-button.png').default}
   alt=""
-  style={{ width:350 }}
+  style={{ width: 350 }}
 />
 
 :::
@@ -111,12 +111,12 @@ When you first visit the GraphiQL IDE, there's a pre-populated example query in 
 }
 ```
 
-In this example, `myUser` is a [query](https://graphql.org/learn/queries/) that can return your user and organization details, including endpoint status and active tariff plan.
+In this example, `myUser` is a [query](https://graphql.org/learn/queries/) that can return your user and organization details, including endpoint (device) status and active tariff plan (data plan).
 
 <img
   src={require('./assets/graphiql-docs-query-myuser.png').default}
   alt=""
-  style={{ width:700 }}
+  style={{ width: 700 }}
 />
 
 :::info
@@ -129,7 +129,7 @@ Because `User` is the only type available, you don't need to type it out explici
 <img
   src={require('./assets/graphiql-docs-query-myuser-user.png').default}
   alt=""
-  style={{ width:700 }}
+  style={{ width: 700 }}
 />
 
 This example uses the `organisation` field, which requires the `Organisation` object type.
@@ -138,7 +138,7 @@ You want to receive the `name` and `id` fields from that object type.
 <img
   src={require('./assets/graphiql-docs-query-myuser-user-organisation.png').default}
   alt=""
-  style={{ width:700 }}
+  style={{ width: 700 }}
 />
 
 Finally, when you execute the query, it returns a `data` object with your requested information.
@@ -165,7 +165,7 @@ In the following example, the IDE suggests `endpoint`, `endpoints`, and `endpoin
 <img
   src={require('./assets/graphiql-query-autocomplete.png').default}
   alt=""
-  style={{ width:450 }}
+  style={{ width: 450 }}
 />
 
 If you need help with what to write, click the **Show GraphiQL Explorer** button on the sidebar.
@@ -173,7 +173,7 @@ If you need help with what to write, click the **Show GraphiQL Explorer** button
 <img
   src={require('./assets/graphiql-sidebar-show-graphiql-explorer-button.png').default}
   alt=""
-  style={{ width:450 }}
+  style={{ width: 450 }}
 />
 
 This displays an interactive overview of the current GraphQL schema.
@@ -182,7 +182,7 @@ Open and select your desired fields, and the query builds and formats itself aut
 <img
   src={require('./assets/graphiql-graphiql-explorer-endpoints.png').default}
   alt=""
-  style={{ width:800 }}
+  style={{ width: 800 }}
 />
 
 :::tip
@@ -191,7 +191,7 @@ To see the queries you've executed during a session, click the **Show history** 
 <img
   src={require('./assets/graphiql-sidebar-show-history-button.png').default}
   alt=""
-  style={{ width:350 }}
+  style={{ width: 350 }}
 />
 :::
 

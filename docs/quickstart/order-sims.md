@@ -11,21 +11,21 @@ Here's how you can order SIM cards any time on the emnify Portal.
 
 <details className="custom-details-troubleshooting">
   <summary>First time ordering SIM cards on emnify?</summary>
-    <p>If you're new to emnify and interested in testing our services free of charge, please refer to the <a href="https://docs.emnify.com/quickstart#order-a-free-evaluation-sim-package">Order a free Evaluation SIM package</a> guide.</p>
+    <p>If you're new to emnify and interested in testing our services free of charge, see <a href="https://docs.emnify.com/quickstart#order-free-trial-sims">Order free trial SIMs</a>.</p>
 </details>
 
 1. [Log in to your emnify account](https://portal.emnify.com/sign).
 2. Navigate to the [**SIM Inventory**](https://portal.emnify.com/sim-inventory) and click **Order SIMs**.
 <img
-  src={require('./assets/portal-sim-inventory-order-sims.png').default}
+  src={require('./assets/portal-sim-inventory-order-sim.png').default}
   alt=""
 />
 
-3. Once you're in the [**SIM Shop**](https://portal.emnify.com/sim-order), select your preferred SIM type.
+3. Once you're in the **SIM Shop**, select your preferred SIM type.
 4. Click **Step 2 - Choose Amount** to confirm your choice.
 
 :::tip
-Learn more about the various [form factors](/services/global-iot-sim#form-factors) and [quality grades](/services/global-iot-sim#quality-grades) on the [Global IoT SIM](/services/global-iot-sim) page.
+For more information about the various form factors and quality grades, see [Global IoT SIM](/services/global-iot-sim).
 :::
 
 <img
@@ -42,18 +42,16 @@ Here, you can specify the amount of each SIM type you want to receive.
 />
 
 :::note
-You may see the **Order Split** option depending on how many SIMs you order.
-This allows you to split orders into [batches](/glossary#sim-batch) (for example, collections of 25, 100, or 500 SIMs).
+For larger orders, you can split your order into **Batches** (for example, collections of 25, 100, or 500 SIMs).
 
 The benefit of batches is that they can be registered all at once, whereas single SIMs can only be registered individually.
+To learn more, see [Register emnify SIMs](/quickstart/register-sims).
 
 <img
   src={require('./assets/portal-sim-shop-sim-order-choose-amount-batches.png').default}
   alt=""
     style={{ width: 700 }}
 />
-
-Learn more in the [Registering SIMs](/quickstart/register-sims) guide.
 :::
 
 6. Enter your **Invoice and shipping details**, and specify your **Shipping option**.

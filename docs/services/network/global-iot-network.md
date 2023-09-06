@@ -8,7 +8,7 @@ slug: /services/global-iot-network
 
 <!-- markdownlint-disable MD040 -->
 
-Even when IoT devices are more often only deployed at a single location and aren't moving, for a vendor selling to multiple countries it's important to have a global connectivity solution, so that there is no need to have different SIM cards in stock or have multiple contracts and tariffs.
+Even when IoT devices are more often only deployed at a single location and aren't moving, for a vendor selling to multiple countries it's important to have a global connectivity solution, so that there is no need to have different SIM cards in stock or have multiple contracts and data plans.
 
 <!-- TODO: Find place for service_stack.png -->
 
