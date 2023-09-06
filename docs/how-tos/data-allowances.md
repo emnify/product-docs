@@ -1,17 +1,16 @@
 ---
-description: How to set up data allowances via the emnify Portal
+description: How to change the assigned data allowance via the emnify Portal
 slug: /how-tos/data-allowances
 ---
 
-# Assign data allowances
+# Change the assigned data allowance
 
-emnify has data allowances, which lets you to manage different data plans from a single account.
-These data allowances and plans are managed within [coverage policies](/portal/device-policies#coverage-policies).
+Data allowances are managed within [coverage policies](/portal/device-policies#coverage-policies).
 
-With the **Pro Package**, you can manage as many coverage policies and data plans as you need.
-Those on a **Plus Package** can manage up to 4 data plans.
+With the **Pro Package**, you can manage as many data plans as you need.
+Those with a **Plus Package** can manage up to 4 data plans.
 
-Once data plans have been enabled on your emnify account, make sure your coverage policies have been adjusted correctly to take advantage of these allowances.
+Once a data plan has been configured on your emnify account, make sure your coverage policies have been adjusted correctly to take advantage of data allowances.
 
 ## View your coverage policies
 
@@ -20,7 +19,7 @@ Once data plans have been enabled on your emnify account, make sure your coverag
 1. Adjust your existing policies under **Details** or select **New coverage policy** to create a new one.
 
 :::info
-Once enabled, you need to configure a data allowance for your coverage policies to use them with devices.
+Once configured, you need to add a data allowance for your coverage policies to use them with devices.
 :::
 
 ## Change the data allowance
@@ -96,4 +95,4 @@ To change a coverage policy's data plan in the Portal, follow these steps:
 1. Navigate to the **Device Policies**.
 1. Go to [**Coverage Policies**](https://portal.emnify.com/device-policies).
 1. Find the coverage policy you want to update and click **Details**.
-1. Use the **Coverage** dropdown to select a new data plan or use the toggles to adjust the **Coverage areas**.
+1. Use the **Data Plan** dropdown to select a new data plan or use the toggles to adjust the **Coverage areas**.

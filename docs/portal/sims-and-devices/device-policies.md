@@ -86,7 +86,7 @@ When selecting **SMPP** as your **SMS Interface**, you are provided a **System I
 ## Coverage policies
 
 A coverage policy lets you choose which data plan and regions to operate in.
-Policies comprise of the **Coverage** (data plan) and one or more **Coverage areas**.
+Policies comprise of the **Data Plan** and one or more **Coverage areas**.
 The default coverage policy depends on your current subscription package.
 
 ### Create a new coverage policy
@@ -97,7 +97,7 @@ To create a new coverage policy, follow these steps:
 1. Navigate to the [**Coverage Policies**](https://portal.emnify.com/device-policies#coverage-policies) section of **Device Policies**.
 1. Select **New coverage policy**.
 1. Replace **New coverage policy** with the name of your policy and add a **Description**.
-   Then, choose the **Coverage** and an **Data allowance** from the available options.
+   Then, choose a **Data Plan** and **Data allowance** from the available options.
 1. Finally, click **Create**.
 
 By default, connectivity is disabled, and any devices assigned to this coverage policy are blocked from all networks.
@@ -110,13 +110,13 @@ To remove a coverage policy, click the trash bin icon next to **Details**.
 Creating multiple coverage policies lets you differentiate between device types based on their coverage needs and the associated costs.
 :::
 
-### Coverage
+### Data plan
 
-The **Coverage** dropdown shows a list of data plan names with **Regional Pro** selected by default.
+The **Data Plan** dropdown shows a list of data plan names with **Regional Pro** selected by default.
 
 ### Coverage areas
 
-The list of **Coverage areas** varies depending on which **Coverage** you selected.
+The list of **Coverage areas** varies depending on which **Data Plan** you selected.
 
 The **Coverage map** is a global map that shows the coverage you have based on your selections.
 You can browse the entire list of countries in the **Coverage list** or search for a specific country where you plan to deploy your devices.

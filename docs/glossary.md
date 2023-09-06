@@ -85,7 +85,7 @@ It can be set to:
 
 _Referred to as [**Tariff Profile**](https://cdn.emnify.net/api/doc/tariff-profile.html) in the API_
 
-A profile that defines which networks or countries SIM should operate in.
+A policy that defines which networks or countries SIM should operate in.
 
 ## Data RX  
 
@@ -527,7 +527,7 @@ A term used to describe the service model when various devices utilize the same 
 
 ## Unassigned SIM  
 
-SIM that had been unassigned from a device.
+SIM that has been unassigned from a device.
 
 ## Usage limit  
 
@@ -580,8 +580,8 @@ An independent entity in the [emnify Portal](https://portal.emnify.com/) associa
 Workspaces can be managed individually or, if [linked](#linked-workspaces), centrally by the [main organization](#main-organization) while being billed and accessed separately.
 
 :::note
-Every [company account](#company-account) (on any package) is a workspace by default.
-Accounts on the **Pro Package** can have up to five workspaces.
+Every [company account](#company-account) (with any package) is a workspace by default.
+Accounts with the **Pro Package** can have up to five workspaces.
 :::
 
 :::tip Step-by-step guide

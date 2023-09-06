@@ -10,15 +10,15 @@ We provide you with a choice of different levels, a globally based customer succ
 ## Support levels
 
 emnify offers a variety of support levels designed to ensure that your devices operate reliably in our network.
-**Starter Support** is included for all customers at no additional cost.
+**Standard Support** is included for all customers at no additional cost.
 It's the default service level when registering through our website using the [emnify Portal](https://portal.emnify.com/).
 For a detailed description of the standard services, please refer to our [Terms of Service](https://www.emnify.com/hubfs/20211001_terms_of_service_and_standard_service_level_obligations.pdf).
 
 The **Business** and **Enterprise** levels offer premium customer service and can be bundled with your emnify subscription.
 They're designed to reduce operational costs by detecting issues before they disrupt your business operations and by resolving [incidents](#incident-management) faster.
 
-| Feature | Starter  | Business | Enterprise |
-| ------- | -------- | -------- | ---------- |
+| Feature | Standard  | Business | Enterprise |
+| ------- | --------- | -------- | ---------- |
 | **Operating hours** | Mon-Fri 09:00-18:00 CET | 24x7x365 | 24x7x365 |
 | **Method of contact** | Tickets must be opened via web form.<br />Replies via email are possible. | Tickets must be opened via web form.<br />Replies via email are possible. | Web form, email, and phone |
 | **Help Center & Knowledge Base** | Yes | Yes | Yes |

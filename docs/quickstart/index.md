@@ -8,7 +8,7 @@ slug: /quickstart
 # Sign up for an emnify account
 
 To begin developing your IoT solutions with emnify, you'll need an emnify account.
-[Sign up](https://portal.emnify.com/sign/up) for free to a 2-month trial to use all functionalities.
+[Sign up](https://portal.emnify.com/sign/up) for a free 2-month trial.
 
 <details className="custom-details-troubleshooting">
   <summary>Need help verifying your phone number?</summary>
@@ -38,15 +38,15 @@ To begin developing your IoT solutions with emnify, you'll need an emnify accoun
     </ul>
 </details>
 
-## emnify's Trial plan
+## emnify's trial
 
 After signing up, your account is automatically assigned to the **Trial plan**.
-With the Trial plan, you have 60 days to use the issued prepaid credit for testing emnify's services.
+During this trial, you have 60 days to use the issued prepaid credit for testing emnify's services.
 
 Once this expires, you'll need to [choose a new package](https://portal.emnify.com/organisation-settings/subscription#plans).
 
 :::tip
-Information on your current balance and other details about the Trial plan is available in the emnify Portal.  
+Your current balance and other trial details are available in the emnify Portal.
 In the **Organization Settings**, select [**Subscription**](https://portal.emnify.com/organisation-settings/subscription).
 
 <img
@@ -57,7 +57,7 @@ In the **Organization Settings**, select [**Subscription**](https://portal.emnif
 
 ### Supported features
 
-In addition to the standard emnify services, the Trial plan supports the following features:
+In addition to the standard emnify services, you can use the following features during your trial:
 
 <details className="custom-details-example">
   <summary>Global virtual private network</summary>
@@ -85,9 +85,9 @@ In addition to the standard emnify services, the Trial plan supports the followi
     </ul>
 </details>
 
-## Order free Trial SIMs
+## Order free trial SIMs
 
-You can order your free Trial SIMs on the emnify Portal.
+You can order your free trial SIMs on the emnify Portal.
 This package includes an issued prepaid credit for testing emnify's services.
 
 :::note
@@ -96,7 +96,7 @@ You have 60 days to use this prepaid credit.
 
 Currently, the three triple-cut SIM cards can be delivered to most destinations worldwide with express shipment.
 
-To get your free Trial SIMs, [log in to your emnify account](https://portal.emnify.com/sign) and follow these steps:
+To get your free trial SIMs, [log in to your emnify account](https://portal.emnify.com/sign) and follow these steps:
 
 1. On the [**Dashboard**](https://portal.emnify.com/), click **Get SIMs** on the **Get your free SIMs** panel.
 1. Enter your **Invoice data**, **Delivery details**, and **Choose shipping option**.

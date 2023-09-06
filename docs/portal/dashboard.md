@@ -34,7 +34,7 @@ If you're in a Pay-per-Use model, this section of the Dashboard is empty.
 The remaining balance of your prepaid credit.
 
 :::note
-This section is only shown if you're on the [Trial plan](/quickstart#emnifys-trial-plan).
+This section is only shown if you're on [emnify's trial](/quickstart#emnifys-trial).
 :::
 
 **Current Data/SMS Cost**  

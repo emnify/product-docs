@@ -11,7 +11,7 @@ Here's how you can order SIM cards any time on the emnify Portal.
 
 <details className="custom-details-troubleshooting">
   <summary>First time ordering SIM cards on emnify?</summary>
-    <p>If you're new to emnify and interested in testing our services free of charge, see <a href="https://docs.emnify.com/quickstart#order-free-trial-sims">Order free Trial SIMs</a>.</p>
+    <p>If you're new to emnify and interested in testing our services free of charge, see <a href="https://docs.emnify.com/quickstart#order-free-trial-sims">Order free trial SIMs</a>.</p>
 </details>
 
 1. [Log in to your emnify account](https://portal.emnify.com/sign).

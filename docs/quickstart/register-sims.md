@@ -9,7 +9,7 @@ Once you get your emnify SIMs, the next step is to register them.
 When you register a new SIM or [SIM batch](/glossary#sim-batch), you can automatically activate the SIM and create connected devices using the default configuration.
 
 :::info
-If you ordered the [free Trial SIMs](/quickstart), you must register each SIM separately.
+If you [ordered free trial SIMs](/quickstart#order-free-trial-sims), you must register each SIM separately.
 :::
 
 ## Locate the BIC

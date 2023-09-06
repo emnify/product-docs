@@ -8,7 +8,7 @@ slug: /workspaces/create
 
 # Create a new workspace
 
-Company accounts on the **Pro Package** can have up to five workspaces.
+Company accounts with the **Pro Package** can have up to five workspaces.
 
 There are many reasons to opt for multiple workspaces.
 For example, organizations with foreign regional subsidiaries or companies producing products in multiple industries.
@@ -17,7 +17,7 @@ This guide shows you how to submit a request for a new workspace via the emnify 
 Alternatively, you can also link existing workspaces if you already have two or more created.
 
 :::info
-Only **Administrator** user accounts of customers on the **Pro Package** can create new workspaces.
+Only **Administrator** user accounts of customers with the **Pro Package** can create new workspaces.
 :::
 
 1. [Log in to your emnify account](https://portal.emnify.com/sign).

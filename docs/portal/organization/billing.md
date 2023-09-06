@@ -39,7 +39,7 @@ The following is an example of the shown table and potential values:
 The preceding table also provides a **Subtotal** of all costs incurred, tax if applicable, and a **Total** cost in your currency for your billing period.
 
 :::note
-**Data usage in** "_your coverage area_" is what you selected from the **Coverage** dropdown under [**Coverage Policies**](https://portal.emnify.com/device-policies#coverage-policies).
+**Data usage in** "_your coverage area_" is what you selected from the **Data Plan** dropdown under [**Coverage Policies**](https://portal.emnify.com/device-policies#coverage-policies).
 
 **Data costs for** "_your coverage area_" is what you selected in the list of regions under **Coverage Policies**.
 :::

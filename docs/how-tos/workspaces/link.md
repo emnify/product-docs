@@ -14,7 +14,7 @@ This guide shows you how to submit a request to link existing workspaces via the
 Alternatively, you can also [create a new workspace](/workspaces/create).
 
 :::info
-Only **Administrator** user accounts of customers on the **Pro Package** can link existing workspaces.
+Only **Administrator** user accounts of customers with the **Pro Package** can link existing workspaces.
 :::
 
 1. [Log in to your emnify account](https://portal.emnify.com/sign).
