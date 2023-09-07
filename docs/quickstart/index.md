@@ -1,5 +1,7 @@
 ---
 description: Start developing your IoT solutions with emnify
+last_update: 
+  date: 09-07-2023
 pagination_label: Getting started with emnify
 pagination_next: quickstart/order-sims
 slug: /quickstart

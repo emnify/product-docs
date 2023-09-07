@@ -1,5 +1,7 @@
 ---
 description: Keep your organization's information up to date in the emnify Portal
+last_update: 
+  date: 07-20-2023
 slug: /portal/org/data
 ---
 

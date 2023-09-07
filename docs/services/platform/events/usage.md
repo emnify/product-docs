@@ -1,5 +1,7 @@
 ---
 description: Manage events with emnify's Data Streamer, REST API, or Portal
+last_update: 
+  date: 01-11-2023
 slug: /system-events/usage
 ---
 

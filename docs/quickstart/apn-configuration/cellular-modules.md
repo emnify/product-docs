@@ -1,5 +1,7 @@
 ---
 description: Configure Quectel, u-blox, and several other vendors
+last_update: 
+  date: 01-07-2023
 slug: /apn-configuration/cellular-modules
 ---
 

@@ -1,5 +1,7 @@
 ---
 description: Setup SSO for your emnify account with Google Cloud Platform
+last_update: 
+  date: 12-16-2022
 slug: /sso/google-cloud-platform
 ---
 

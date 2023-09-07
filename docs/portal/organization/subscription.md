@@ -1,5 +1,7 @@
 ---
 description: View your current package or learn about others on the Subscription page in the emnify Portal
+last_update: 
+  date: 09-07-2023
 slug: /portal/org/subscription
 ---
 

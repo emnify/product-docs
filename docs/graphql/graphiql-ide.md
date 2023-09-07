@@ -1,5 +1,7 @@
 ---
 displayed_sidebar: devResourcesSidebar
+last_update: 
+  date: 08-30-2023
 slug: /graphql/graphiql-ide
 ---
 

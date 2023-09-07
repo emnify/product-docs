@@ -1,5 +1,7 @@
 ---
 description: Send/receive SMS via the emnify Portal, SMS APIs, or Zapier
+last_update: 
+  date: 01-06-2023
 slug: /services/sms
 ---
 

@@ -1,5 +1,7 @@
 ---
 description: Configure the APN for the most common GPS vendors
+last_update: 
+  date: 01-25-2023
 slug: /apn-configuration/gps-trackers
 ---
 

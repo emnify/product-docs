@@ -1,5 +1,7 @@
 ---
 description: Code samples showing how to use the emnify Java SDK
+last_update: 
+  date: 08-20-2021
 slug: /sdks/java/examples
 ---
 

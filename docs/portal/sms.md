@@ -1,5 +1,7 @@
 ---
 description: Learn about the modes of SMS operation and use cases available on your emnify account for IoT devices
+last_update: 
+  date: 07-20-2023
 slug: /portal/sms
 ---
 

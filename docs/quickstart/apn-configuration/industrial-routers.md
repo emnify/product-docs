@@ -1,5 +1,7 @@
 ---
 description: Connect to routers to configure the APN
+last_update: 
+  date: 02-21-2023
 slug: /apn-configuration/industrial-routers
 ---
 

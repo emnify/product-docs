@@ -1,5 +1,7 @@
 ---
 description: Tips and solutions for resolving why a device isn't performing as expected
+last_update: 
+  date: 07-20-2023
 slug: /portal/troubleshooting
 ---
 

@@ -1,5 +1,7 @@
 ---
 description: Configure SIM state to minimize costs
+last_update: 
+  date: 08-31-2023
 slug: /services/sim-lifecycle-management
 ---
 

@@ -1,10 +1,12 @@
 ---
 title: Preview the GraphQL API
-slug: /graphql
+displayed_sidebar: devResourcesSidebar
+last_update: 
+  date: 03-17-2023
 pagination_label: Preview the GraphQL API
 pagination_prev: rest/index
 pagination_next: graphql/graphiql-ide
-displayed_sidebar: devResourcesSidebar
+slug: /graphql
 ---
 
 # emnify GraphQL API <span className="theme-doc-version-badge badge badge--primary">preview</span>

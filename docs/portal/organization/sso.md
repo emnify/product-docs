@@ -1,5 +1,7 @@
 ---
 description: Improve network security and simplify user administration
+last_update: 
+  date: 07-20-2023
 slug: /sso
 ---
 

@@ -1,5 +1,7 @@
 ---
 pagination_next: services/platform/data-streamer/index
+last_update: 
+  date: 02-15-2023
 slug: /integration-guides
 ---
 

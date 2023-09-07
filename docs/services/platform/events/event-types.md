@@ -1,5 +1,7 @@
 ---
 description: List of all available event types
+last_update: 
+  date: 01-10-2023
 slug: /system-events/event-types
 ---
 

@@ -1,5 +1,7 @@
 ---
 description: Learn how to manage your devices via the Connected Devices page in the emnify Portal
+last_update: 
+  date: 08-31-2023
 slug: /portal/connected-devices
 ---
 

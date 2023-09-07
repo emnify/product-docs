@@ -1,5 +1,7 @@
 ---
 description: Configure the type of content delivered by the data stream
+last_update: 
+  date: 12-31-2022
 slug: /multicloud-data-streamer/stream-types
 ---
 

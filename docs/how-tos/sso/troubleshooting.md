@@ -1,5 +1,7 @@
 ---
 description: Tips for combating common issues when setting up SSO for your emnify account
+last_update: 
+  date: 12-16-2022
 slug: /sso/troubleshooting
 ---
 

@@ -1,5 +1,7 @@
 ---
 description: Step-by-step how to guides that teach you how to use the emnify platform
+last_update: 
+  date: 06-17-2023
 pagination_next: how-tos/data-allowances
 slug: /how-tos
 ---
