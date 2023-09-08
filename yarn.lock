@@ -5259,6 +5259,10 @@ etag@~1.8.1:
   resolved "https://registry.yarnpkg.com/etag/-/etag-1.8.1.tgz#41ae2eeb65efa62268aebfea83ac7d79299b0887"
   integrity sha512-aIL5Fx7mawVa300al2BnEE4iNvo1qETxLrPI/o05L7z6go7fCw1J6EQmbK4FmJ2AS7kgVF/KEZWufBfdClMcPg==
 
+"eui-design-tokens@git+ssh://git@github.com/emnify/design-tokens.git":
+  version "1.0.18"
+  resolved "git+ssh://git@github.com/emnify/design-tokens.git#4541d7b7ed01cff2cd357d4c8fc3fe37bbd7ec71"
+
 eval@^0.1.8:
   version "0.1.8"
   resolved "https://registry.yarnpkg.com/eval/-/eval-0.1.8.tgz#2b903473b8cc1d1989b83a1e7923f883eb357f85"

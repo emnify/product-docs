@@ -1,6 +1,7 @@
 # Asset directories
 static/img
 static/.nojekyll
+static/fonts
 
 # Markdown (handled by another linter)
 docs

@@ -1,0 +1,59 @@
+/**
+ * Do not edit directly
+ * Generated on Fri, 08 Sep 2023 14:43:41 GMT
+ */
+
+/* Edited directly to account for Docusaurus themes */
+html[data-theme="light"] {
+  --eui-sys-brand-primary-01: #3708b2;
+  --eui-sys-brand-on-primary-01: #ffffff;
+  --eui-sys-brand-primary-02: #dacef9;
+  --eui-sys-brand-on-primary-02: #000000;
+  --eui-sys-brand-secondary-01: #290686;
+  --eui-sys-brand-on-secondary-01: #ffffff;
+  --eui-sys-brand-tertiary-01: #00c4aa;
+  --eui-sys-brand-on-tertiary-01: #000000;
+  --eui-sys-brand-state-primary-01-hover: #5f39c1;
+  --eui-sys-brand-state-primary-01-active: #876bd1;
+  --eui-sys-brand-state-primary-02-hover: #e3dafa;
+  --eui-sys-brand-state-primary-02-active: #ece6fc;
+  --eui-sys-brand-state-secondary-01-hover: #7e6ab6;
+  --eui-sys-brand-state-secondary-01-active: #a99bcf;
+  --eui-sys-support-primary-success: #33b147;
+  --eui-sys-support-primary-information: #4377cd;
+  --eui-sys-support-primary-warning: #f59033;
+  --eui-sys-support-primary-critical: #ff5757;
+  --eui-sys-support-primary-on-support-all: #ffffff;
+  --eui-sys-support-containers-info-container: #d0ddf2;
+  --eui-sys-support-containers-success-container: #ccecd1;
+  --eui-sys-support-containers-warning-container: #fce3cc;
+  --eui-sys-support-containers-critical-container: #ffdddd;
+  --eui-sys-support-containers-on-info-container: #10449a;
+  --eui-sys-support-containers-on-success-container: #007e14;
+  --eui-sys-support-containers-on-warning-container: #c25d00;
+  --eui-sys-support-containers-on-critical-container: #cc4646;
+  --eui-sys-layout-surface-01: #ffffff;
+  --eui-sys-layout-surface-02: #f5f5f5;
+  --eui-sys-layout-on-surface: #000000;
+  --eui-sys-layout-on-surface-subdued: #444444;
+  --eui-sys-layout-surface-variant: #000000;
+  --eui-sys-layout-on-surface-variant: #ffffff;
+  --eui-sys-layout-on-surface-variant-subdued: #cdcdcd;
+  --eui-sys-layout-container-01: #e3e3e3;
+  --eui-sys-layout-container-02: #727272;
+  --eui-sys-layout-on-container: #000000;
+  --eui-sys-layout-border: #cdcdcd;
+  --eui-sys-layout-border-dark: #727272;
+  --eui-sys-layout-disabled: #cdcdcd;
+  --eui-sys-layout-on-disabled: #727272;
+  --eui-sys-layout-state-surface-01-hover: #f5f5f5;
+  --eui-sys-layout-state-surface-01-active: #e3e3e3;
+  --eui-sys-layout-state-surface-02-hover: #e3e3e3;
+  --eui-sys-layout-state-surface-02-active: #cdcdcd;
+  --eui-sys-layout-state-surface-variant-hover: #2e2e2e;
+  --eui-sys-layout-state-surface-variant-active: #444444;
+  --eui-sys-layout-state-container-01-hover: #cdcdcd;
+  --eui-sys-layout-state-container-01-active: #aaaaaa;
+  --eui-sys-layout-state-container-02-hover: #aaaaaa;
+  --eui-sys-layout-state-container-02-active: #cdcdcd;
+}
