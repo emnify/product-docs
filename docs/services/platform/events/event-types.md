@@ -1,7 +1,7 @@
 ---
 description: List of all available event types
 last_update: 
-  date: 01-10-2023
+  date: 09-08-2023
 slug: /system-events/event-types
 ---
 
@@ -2804,6 +2804,7 @@ Client is successfully authenticated on [OpenVPN](https://www.emnify.com/iot-glo
 | :-- | :-------------------------------------------------------------- |
 | 31  | [Organisation updated](#organisation-updated)                   |
 | 32  | [Billing configuration updated](#billing-configuration-updated) |
+| 67  | [User switched workspaces](#user-switched-workspaces)           |
 
 ### Organisation updated
 
@@ -2905,6 +2906,46 @@ Organization's billing configuration changed.
       },
       "vatin": "DE123456789"
     }
+  }
+}
+```
+
+</details>
+
+### User switched workspaces
+
+A user switched to a different workspace.
+The description indicates the user ID and the ID of the workspace they're currently in.
+
+<details className="custom-details-example">
+  <summary>Example JSON response</summary>
+
+```json
+{
+  "timestamp": "2023-09-06T11:14:44.000Z",
+  "alert": false,
+  "description": "User with id: '330885', switched to workspace: 44",
+  "id": 1088341100077457,
+  "event_type": {
+      "id": 67,
+      "description": "User switched workspaces"
+  },
+  "event_source": {
+      "id": 2,
+      "description": "API"
+  },
+  "event_severity": {
+      "id": 0,
+      "description": "Info"
+  },
+  "organisation": {
+      "id": 44,
+      "name": "Example Organization"
+  },
+  "user": {
+      "id": 330885,
+      "name": "cruz@example.com",
+      "username": "cruz@example.com"
   }
 }
 ```
