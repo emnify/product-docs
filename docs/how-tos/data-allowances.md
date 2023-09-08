@@ -1,5 +1,7 @@
 ---
 description: How to change the assigned data allowance via the emnify Portal
+last_update: 
+  date: 09-07-2023
 slug: /how-tos/data-allowances
 ---
 

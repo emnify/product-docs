@@ -1,5 +1,7 @@
 ---
 description: AWS Intra-Cloud Connect, IPsec
+last_update: 
+  date: 11-04-2021
 slug: /services/cloud-connect
 ---
 

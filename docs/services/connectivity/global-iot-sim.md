@@ -1,5 +1,7 @@
 ---
 description: Overview of the available emnify SIMs, including form factors, quality grades, multi-IMSI, eSIM, and eUICC
+last_update: 
+  date: 08-10-2023
 pagination_next: services/connectivity/sim-lifecycle-management
 slug: /services/global-iot-sim
 ---

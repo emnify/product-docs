@@ -1,5 +1,7 @@
 ---
 description: Must-knows for working with the emnify SDKs
+last_update: 
+  date: 09-07-2023
 slug: /sdks/concepts
 ---
 

@@ -1,5 +1,7 @@
 ---
 description: Add or view existing application tokens on the Integrations page of the emnify Portal
+last_update: 
+  date: 01-31-2023
 slug: /portal/application-tokens
 ---
 

@@ -1,5 +1,7 @@
 ---
 description: Review the emnify account permissions for various roles
+last_update: 
+  date: 09-07-2023
 slug: /portal/roles
 ---
 

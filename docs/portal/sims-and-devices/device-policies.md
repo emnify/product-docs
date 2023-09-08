@@ -1,5 +1,7 @@
 ---
 description: Configure service and coverage policies for your devices on the emnify Portal
+last_update: 
+  date: 09-07-2023
 slug: /portal/device-policies
 ---
 

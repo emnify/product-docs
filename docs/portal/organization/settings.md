@@ -1,5 +1,7 @@
 ---
 description: The starting point for managing your organization in the emnify Portal
+last_update: 
+  date: 07-20-2023
 pagination_next: portal/organization/data
 slug: /portal/org
 ---

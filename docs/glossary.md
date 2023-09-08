@@ -1,3 +1,8 @@
+---
+last_update: 
+  date: 09-07-2023
+---
+
 # Glossary
 
 <!-- markdownlint-disable MD036 -->

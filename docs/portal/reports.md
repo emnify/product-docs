@@ -1,5 +1,7 @@
 ---
 description: Analyze data usage, events, and device location over time using the emnify Portal
+last_update: 
+  date: 09-07-2023
 slug: /portal/reports
 ---
 

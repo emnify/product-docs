@@ -1,5 +1,7 @@
 ---
 description: How to enable two-factor authentication on your emnify account
+last_update: 
+  date: 03-30-2023
 slug: /how-tos/two-factor-authentication
 ---
 

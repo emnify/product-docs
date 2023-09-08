@@ -1,5 +1,7 @@
 ---
 description: Distributed data plane, traditional operators vs emnify, regional breakout
+last_update: 
+  date: 11-09-2021
 slug: /services/iot-cloud-communication-platform
 ---
 

@@ -1,5 +1,7 @@
 ---
 description: Use your emnify account to register your SIMs
+last_update: 
+  date: 08-30-2023
 slug: /quickstart/register-sims
 ---
 

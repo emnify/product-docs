@@ -1,5 +1,7 @@
 ---
 description: List of available third-party integrations for the emnify multicloud Data streamer and links to step-by-step implementation guides
+last_update: 
+  date: 12-31-2022
 slug: /multicloud-data-streamer/integrations
 ---
 

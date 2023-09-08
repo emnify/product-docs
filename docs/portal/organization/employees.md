@@ -1,5 +1,7 @@
 ---
 description: Invite, assign a role, suspend, and delete employees within your organization on the emnify Portal
+last_update: 
+  date: 07-20-2023
 slug: /portal/org/employees
 ---
 

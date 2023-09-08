@@ -1,5 +1,7 @@
 ---
 description: Define the device to be used with the SIM
+last_update: 
+  date: 08-24-2023
 slug: /quickstart/create-device
 ---
 

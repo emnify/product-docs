@@ -1,5 +1,7 @@
 ---
 description: Manage data streams with the emnify Portal or REST API
+last_update: 
+  date: 12-31-2022
 slug: /multicloud-data-streamer/usage
 ---
 

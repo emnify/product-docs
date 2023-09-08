@@ -1,5 +1,7 @@
 ---
 description: Integrate real-time data streams of your devices and SIMs with the emnify multicloud Data Streamer
+last_update: 
+  date: 12-31-2022
 slug: /multicloud-data-streamer/connection-types
 ---
 

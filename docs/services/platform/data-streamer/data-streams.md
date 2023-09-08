@@ -1,5 +1,7 @@
 ---
 description: Set up, filter, pause, or delete data streams with the emnify multicloud Data Streamer
+last_update: 
+  date: 12-31-2022
 slug: /multicloud-data-streamer/manage-data-streams
 ---
 
