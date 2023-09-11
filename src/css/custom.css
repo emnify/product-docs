@@ -265,6 +265,11 @@ div[title="Expand sidebar"]:hover {
   background-color: var(--eui-sys-brand-state-primary-02-active);
 }
 
+/* Footer */
+.footer {
+  border-top: 1px solid var(--eui-sys-layout-container-01);
+}
+
 /* Footer links on smaller screens */
 @media only screen and (max-width: 996px) {
   .footer__link-item {
@@ -376,6 +381,11 @@ a:has(> code) {
 /* Links within main page content */
 .pageLink {
   --ifm-link-decoration: var(--eui-sys-typescale-link-medium-text-decoration);
+}
+
+aside nav,
+button[title="Collapse sidebar"] {
+  border-right: 1px solid var(--eui-sys-layout-container-01);
 }
 
 aside nav,

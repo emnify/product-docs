@@ -16,7 +16,7 @@
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
-    "import-design-tokens": "cp -R node_modules/eui-design-tokens/prepared-tokens/emnify/css/ src/css/design-tokens/ && echo \"Design tokens copied to src/css/design-tokens/ - Don't forget to update the selector in colors-light.css\"",
+    "import-design-tokens": "yarn upgrade eui-design-tokens && ./config/importDesignTokens.js",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
     "lint": "yarn eslint && yarn prettier",
