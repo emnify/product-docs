@@ -43,10 +43,7 @@ Events are distinguished by three severity levels:
 | :warning: Warn |  Problem or unusual behavior, but doesn't necessarily require immediate action (for example, a credit card expires in 60 days). |
 | :triangular_flag_on_post: Critical | Serious issue that likely requires additional follow-up (for example, charging for an invoice failed). |
 
-
-:::note API Reference
-[Event severity object](https://cdn.emnify.net/api/doc/event.html#event-severity-object)
-:::
+Find more information in the [API reference](https://cdn.emnify.net/api/doc/event.html#event-severity-object).
 
 ### Event source
 
@@ -64,9 +61,7 @@ Any events triggered in the [emnify Portal](/system-events/usage#emnify-portal) 
 That's because the Portal is an interface that uses the API under the hood.
 :::
 
-:::note API Reference
-[Event source object](https://cdn.emnify.net/api/doc/event.html#event-source-object)
-:::
+Find more information in the [API reference](https://cdn.emnify.net/api/doc/event.html#event-source-object).
 
 ### Event type
 
