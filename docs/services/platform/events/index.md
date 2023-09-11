@@ -10,7 +10,7 @@ slug: /system-events
 # emnify system events
 
 The emnify system generates several types of events.
-These events allow you to track notable system occurrences based on behavior.
+These events allow you to track notable system occurrences based on behavior and provide information about lifecycle transitions and configuration changes.
 
 ## Use cases
 
@@ -20,8 +20,6 @@ Some common use cases for events on emnify include:
 - **Monitoring** (e.g. SIM or data connection lifecycles)
 - **Input for custom billing systems** (e.g. updating billing configuration or processing invoices)
 
-Events are often used as triggers for custom business processes, for monitoring, and as input for custom billing systems.
-They provide information about lifecycle transitions and configuration changes.
 
 ## Structure
 
