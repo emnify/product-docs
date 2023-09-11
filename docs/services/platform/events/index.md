@@ -16,9 +16,9 @@ These events allow you to track notable system occurrences based on behavior and
 
 Some common use cases for events on emnify include:
 
-- **Triggers for custom business processes** (e.g. authentication or custom usage limitations configured on the [emnify Portal](/system-events/usage#emnify-portal))
-- **Monitoring** (e.g. SIM or data connection lifecycles)
-- **Input for custom billing systems** (e.g. updating billing configuration or processing invoices)
+- **Triggers for custom business processes** (for example, authentication or custom usage limitations configured on the [emnify Portal](/system-events/usage#emnify-portal))
+- **Monitoring** (for example, SIM or data connection lifecycles)
+- **Input for custom billing systems** (for example, updating billing configuration or processing invoices)
 
 ## Structure
 
@@ -52,7 +52,7 @@ Every event is triggered by one of three available event sources:
 
 | Event source| Description |
 |-----|-----|
-| Network | The cellular network your device is connected to (e.g. a location is updated or purged). |
+| Network | The cellular network your device is connected to (for example, a location is updated or purged). |
 | Policy control | Both the emnify system and your organization can define and enforce policies, quotas, or other limitations <ul> <li>The emnify system can block devices that exceed predefined traffic limits. </li><li> Your organization could configure the maximum SMS usage for devices to limit SMS traffic.</li> |
 | API | The [emnify REST API](https://cdn.emnify.net/api/doc/index.html). |
 
