@@ -37,9 +37,12 @@ You can find detailed information on the Event Object and its associated propert
 
 Events are distinguished by three severity levels:
 
-- **Info**: Expected behavior of the executed event (for example, a device successfully attaches to a network).
-- **Warn**: Problem or unusual behavior, but doesn't necessarily require immediate action (for example, a credit card expires in 60 days).
-- **Critical**: Serious issue that likely requires additional follow-up (for example, charging for an invoice failed).
+| Severity Level | Description |
+|-----|-----|
+| :information_source: Info | Expected behavior of the executed event (for example, a device successfully attaches to a network). |
+| :warning: Warn |  Problem or unusual behavior, but doesn't necessarily require immediate action (for example, a credit card expires in 60 days). |
+| :triangular_flag_on_post: Critical | Serious issue that likely requires additional follow-up (for example, charging for an invoice failed). |
+
 
 :::note API Reference
 [Event severity object](https://cdn.emnify.net/api/doc/event.html#event-severity-object)
@@ -49,7 +52,7 @@ Events are distinguished by three severity levels:
 
 Every event is triggered by one of three available event sources:
 
-| Event source| |
+| Event source| Description |
 |-----|-----|
 | Network | The cellular network your device is connected to (e.g. a location is updated or purged). |
 | Policy control | Both the emnify system and your organization can define and enforce policies, quotas, or other limitations <ul> <li>The emnify system can block devices that exceed predefined traffic limits. </li><li> Your organization could configure the maximum SMS usage for devices to limit SMS traffic.</li> |
