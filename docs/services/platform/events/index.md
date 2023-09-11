@@ -53,7 +53,7 @@ Every event is triggered by one of three available event sources:
 | Event source| Description |
 |-----|-----|
 | Network | The cellular network your device is connected to (for example, a location is updated or purged). |
-| Policy control | Both the emnify system and your organization can define and enforce policies, quotas, or other limitations <ul> <li>The emnify system can block devices that exceed predefined traffic limits. </li><li> Your organization could configure the maximum SMS usage for devices to limit SMS traffic.</li> |
+| Policy control | Both the emnify system and your organization can define and enforce policies, quotas, or other limitations <ul> <li>The emnify system can block devices that exceed predefined traffic limits. </li><li> Your organization could configure the maximum SMS usage for devices to limit SMS traffic.</li></ul> |
 | API | The [emnify REST API](https://cdn.emnify.net/api/doc/index.html). |
 
 :::info
