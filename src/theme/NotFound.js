@@ -41,16 +41,11 @@ export default function NotFound() {
                 description="The 2nd paragraph of the 404 page"
               >
                 Please{" "}
-                <a
-                  className="pageLink"
-                  href="https://github.com/emnify/product-docs/issues/new"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="https://github.com/emnify/product-docs/issues/new">
                   open an issue on GitHub
                 </a>{" "}
                 or{" "}
-                <a className="pageLink" href="mailto:docs@emnify.com">
+                <a href="mailto:docs@emnify.com">
                   contact our documentation team
                 </a>{" "}
                 if you are struggling to find what you need.

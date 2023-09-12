@@ -1,3 +1,11 @@
+/*
+*****************
+-----------------
+     CONFIG
+_________________
+*****************
+*/
+
 /* Tokens */
 @import url("./design-tokens/colors-light.css");
 @import url("./design-tokens/typescale.css");
@@ -41,9 +49,11 @@
   /* Sidebar */
   --ifm-menu-color: var(--eui-sys-brand-on-primary-02);
   --ifm-menu-color-active: var(--eui-sys-brand-on-primary-02);
-  --ifm-menu-color-background-active: var(--eui-sys-brand-primary-02);
-  --ifm-menu-color-background-hover: var(
+  --ifm-menu-color-background-active: var(
     --eui-sys-brand-state-primary-02-active
+  );
+  --ifm-menu-color-background-hover: var(
+    --eui-sys-brand-state-primary-02-hover
   );
   /* Breadcrumb */
   --ifm-breadcrumb-item-background-active: var(
@@ -61,7 +71,63 @@
   --ifm-code-background: var(--eui-sys-layout-surface-02);
 }
 
-/* ToC */
+/*
+*****************
+-----------------
+   NAVIGATION
+_________________
+*****************
+*/
+
+/* Top-level navigation */
+.navbar__link--active {
+  font-weight: var(--eui-sys-typescale-label-medium-font-weight);
+}
+
+.navbar__logo img {
+  height: 75%;
+  vertical-align: middle !important;
+}
+
+/* Sidebar */
+aside nav,
+button[title="Collapse sidebar"] {
+  border-right: 1px solid var(--eui-sys-layout-container-01);
+}
+
+aside nav,
+nav.navbar--fixed-top {
+  background-color: var(--eui-sys-layout-surface-02);
+}
+
+/* Collapse sidebar button */
+button[title="Collapse sidebar"] {
+  background-color: var(--eui-sys-layout-surface-02);
+  border: none;
+}
+
+button[title="Collapse sidebar"]:hover {
+  background-color: var(--eui-sys-brand-state-primary-02-hover);
+}
+
+button[title="Collapse sidebar"] svg path {
+  fill: var(--eui-sys-brand-secondary-01);
+}
+
+/* Expand sidebar "button" */
+div[title="Expand sidebar"] svg path {
+  fill: var(--eui-sys-brand-secondary-01);
+}
+
+div[title="Expand sidebar"] {
+  background-color: var(--eui-sys-layout-surface-02);
+}
+
+div[title="Expand sidebar"]:hover {
+  background-color: var(--eui-sys-brand-state-primary-02-hover);
+}
+
+/* Table of Contents */
 .theme-doc-toc-mobile {
   background-color: var(--eui-sys-brand-state-primary-02-active) !important;
 }
@@ -69,6 +135,14 @@
 .theme-doc-toc-mobile ul.table-of-contents > li > a:first-child {
   font-weight: var(--eui-sys-typescale-label-medium-font-weight);
 }
+
+/*
+*****************
+-----------------
+  DOCS CONTENT
+_________________
+*****************
+*/
 
 /* h4 text within the main content */
 .theme-doc-markdown {
@@ -94,7 +168,27 @@
   text-decoration: var(--eui-sys-typescale-link-medium-text-decoration);
 }
 
-/* All admonitions */
+/* Main content container padding */
+.container {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+@media only screen and (max-width: 996px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/*
+*****************
+-----------------
+   ADMONITIONS
+_________________
+*****************
+*/
+
 .theme-admonition {
   margin-top: 0.5rem;
 }
@@ -176,26 +270,53 @@
   fill: var(--eui-sys-layout-container-02);
 }
 
-/* Details and summary elements - Example JSON responses */
+/*
+*****************
+-----------------
+     ALERTS
+_________________
+*****************
+*/
+
+.alert a:hover {
+  text-decoration-thickness: inherit;
+}
+
+details {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Details and summary elements - Examples */
 .custom-details-example {
-  background-color: var(--eui-sys-brand-state-primary-02-active);
-  border-color: var(--eui-sys-brand-state-primary-01-active) !important;
-  color: var(--eui-sys-layout-on-surface);
+  background-color: var(--eui-sys-layout-container-01);
+  color: var(--eui-sys-layout-on-container);
 }
 
 .custom-details-example summary::before {
   border-color: transparent transparent transparent
-    var(--eui-sys-brand-state-primary-01-active) !important;
+    var(--eui-sys-layout-on-container) !important;
 }
 
 .custom-details-example .collapsibleContent_i85q {
-  border-top: 1px solid var(--eui-sys-brand-state-primary-01-active) !important;
+  border-top: 1px solid var(--eui-sys-layout-on-container) !important;
+}
+
+.custom-details-example .collapsibleContent_i85q a {
+  color: inherit;
+  text-decoration-color: var(--eui-sys-layout-on-container) !important;
+}
+
+.custom-details-example .collapsibleContent_i85q a:hover {
+  text-decoration-color: var(
+    --eui-sys-brand-state-secondary-01-hover
+  ) !important;
+  color: var(--eui-sys-brand-state-secondary-01-hover) !important;
 }
 
 /* Details and summary elements - Troubleshooting */
 .custom-details-troubleshooting {
   background-color: var(--eui-sys-support-containers-info-container);
-  border-color: var(--eui-sys-support-containers-on-info-container) !important;
   color: var(--eui-sys-layout-on-surface);
 }
 
@@ -209,65 +330,40 @@
 }
 
 .custom-details-troubleshooting .collapsibleContent_i85q a {
+  color: inherit;
   text-decoration-color: var(
     --eui-sys-support-containers-on-info-container
   ) !important;
 }
 
-/* Details and summary elements - Tip */
-.custom-details-tip {
-  background-color: var(--eui-sys-support-containers-success-container);
-  border-color: var(
-    --eui-sys-support-containers-on-success-container
-  ) !important;
-  color: var(--eui-sys-layout-on-surface);
-}
-
-.custom-details-tip summary::before {
-  border-color: transparent transparent transparent
-    var(--eui-sys-support-containers-on-success-container) !important;
-}
-
-.custom-details-tip .collapsibleContent_i85q {
-  border-top: 1px solid var(--eui-sys-support-containers-on-success-container) !important;
-}
-
-.custom-details-tip .collapsibleContent_i85q a {
+.custom-details-troubleshooting .collapsibleContent_i85q a:hover {
   text-decoration-color: var(
-    --eui-sys-support-containers-on-success-container
+    --eui-sys-brand-state-secondary-01-hover
   ) !important;
+  color: var(--eui-sys-brand-state-secondary-01-hover) !important;
 }
 
-/* Collapse sidebar button */
-button[title="Collapse sidebar"] {
-  background-color: var(--eui-sys-layout-surface-02);
-  border: none;
-}
+/*
+*****************
+-----------------
+    FOOTER
+_________________
+*****************
+*/
 
-button[title="Collapse sidebar"]:hover {
-  background-color: var(--eui-sys-brand-state-primary-02-active);
-}
-
-button[title="Collapse sidebar"] svg path {
-  fill: var(--eui-sys-brand-secondary-01);
-}
-
-/* Expand sidebar "button" */
-div[title="Expand sidebar"] svg path {
-  fill: var(--eui-sys-brand-secondary-01);
-}
-
-div[title="Expand sidebar"] {
-  background-color: var(--eui-sys-layout-surface-02);
-}
-
-div[title="Expand sidebar"]:hover {
-  background-color: var(--eui-sys-brand-state-primary-02-active);
-}
-
-/* Footer */
 .footer {
   border-top: 1px solid var(--eui-sys-layout-container-01);
+}
+
+.footer__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__logo {
+  height: 14px;
+  margin-top: inherit;
 }
 
 /* Footer links on smaller screens */
@@ -277,23 +373,13 @@ div[title="Expand sidebar"]:hover {
   }
 }
 
-/* Main content container padding */
-.container {
-  padding-left: 24px;
-  padding-right: 24px;
-}
-
-@media only screen and (max-width: 996px) {
-  .container {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-
-/* Active navigation bar links */
-.navbar__link--active {
-  font-weight: var(--eui-sys-typescale-label-medium-font-weight);
-}
+/*
+*****************
+-----------------
+     ASSETS
+_________________
+*****************
+*/
 
 /* Center img elements within the main content */
 .theme-doc-markdown img {
@@ -318,7 +404,14 @@ a:has(> code) {
   text-decoration: none;
 }
 
-/* Preview badge */
+/*
+*****************
+-----------------
+    BADGES
+_________________
+*****************
+*/
+
 .badge--primary {
   border: none;
   background-color: var(--eui-sys-brand-secondary-01);
@@ -329,21 +422,19 @@ a:has(> code) {
   vertical-align: middle !important;
 }
 
-/* Beta badge */
-.beta {
-  margin-bottom: 0;
-  text-transform: capitalize;
-}
+/*
+*****************
+-----------------
+    BUTTONS
+_________________
+*****************
+*/
 
-/* 404 page */
-
-/* Go to homepage button */
 .primary-button-large-text-only {
   border: none;
   background-color: var(--eui-comp-primary-button-container-color-default);
   border-radius: var(--eui-comp-primary-button-container-border-border-radius);
   color: var(--eui-comp-primary-button-text-color-default);
-  font-family: "Avenir LT Pro", Helvetica, Arial, sans-serif;
   font-size: var(--eui-comp-primary-button-text-font-font-size);
   font-weight: var(--eui-comp-primary-button-text-font-font-weight);
   line-height: var(--eui-comp-primary-button-text-font-line-height);
@@ -378,17 +469,14 @@ a:has(> code) {
   outline-offset: var(--eui-comp-primary-button-container-outline-offset);
 }
 
-/* Links within main page content */
-.pageLink {
+/*
+*****************
+-----------------
+   OTHER PAGES
+_________________
+*****************
+*/
+
+.page-not-found-content a {
   --ifm-link-decoration: var(--eui-sys-typescale-link-medium-text-decoration);
-}
-
-aside nav,
-button[title="Collapse sidebar"] {
-  border-right: 1px solid var(--eui-sys-layout-container-01);
-}
-
-aside nav,
-nav.navbar--fixed-top {
-  background-color: var(--eui-sys-layout-surface-02);
 }

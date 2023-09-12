@@ -18,8 +18,6 @@ It aggregates and enriches traditional cellular connectivity so businesses can c
 Unlike traditional [mobile network operators (MNOs)](https://www.emnify.com/iot-glossary/mno), the SuperNetwork isn't limited by geography or legacy apps and infrastructure.
 Unlike mobile virtual network operators (MVNOs), it isn't constrained by dependencies on individual carrier capabilities.
 
-![Infographic split into four sections that all include text and associated symbols. The first section reads, "Connectivity: One SIM for global deployments. Multi-network access with intelligent operator selection. 2G-5G, LTE-M, NB-IoT." The second reads, "Security: Multi-layered security for your IoT stack (for example, data encryption, secure remote access, SIM theft protection)." The third reads, "Operations: Complete network visibility and control to improve your operations and troubleshooting." The fourth and final section reads, "Integration & Automation: API and no-code solution to help you automate SIM and connectivity management, saving time and costs." with logos from Azure, AWS, and Google Cloud shown underneath the text. Directly below all of these sections is a banner that reads "emnify Cellular IoT Platform," followed by "540+ Mobile Networks," with logos from AT&T, T-Mobile, Vodafone, Telia, and more.](assets/infographic-emnify-cellular-iot-platform.png)
-
 ## Where to start
 
 - **New to emnify?**

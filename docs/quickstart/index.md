@@ -69,8 +69,7 @@ In addition to the standard emnify services, you can use the following features 
 
 <details className="custom-details-example">
   <summary>Multicloud Data Streamer</summary>
-    <p>Use the tools you're familiar with to stream connectivity metadata, triage issues, collect usage insights, and more.
-    <a href="https://docs.emnify.com/multicloud-data-streamer">Learn more about the Data Streamer</a> or <a href="https://docs.emnify.com/multicloud-data-streamer/integrations">browse the available integrations</a>.</p>
+    <p>Use the tools you're familiar with to stream connectivity metadata, triage issues, collect usage insights, and more. <a href="https://docs.emnify.com/multicloud-data-streamer">Learn more about the Data Streamer</a> or <a href="https://docs.emnify.com/multicloud-data-streamer/integrations">browse the available integrations</a>.</p>
 </details>
 
 <details className="custom-details-example">
