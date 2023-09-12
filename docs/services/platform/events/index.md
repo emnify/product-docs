@@ -22,13 +22,10 @@ Some common use cases for events on emnify include:
 
 ## Structure
 
-Each event is represented by an object based on the [generic Event Object](https://cdn.emnify.net/api/doc/event.html).
+Each event is represented by an object based on the [generic Event Object and its associated properties](https://cdn.emnify.net/api/doc/event.html).
 
 Depending on the event type, some generic properties may not apply, and some events may have additional custom fields to provide information about what happened.
 
-:::info
-You can find detailed information on the Event Object and its associated properties in the [Event API reference](https://cdn.emnify.net/api/doc/event.html) in the _emnify System Documentation_.  
-:::
 
 ### Event type
 
