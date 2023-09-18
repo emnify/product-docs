@@ -39,29 +39,6 @@ The **Connected Devices** search bar is next to the **Add device** button.
 It's visible on both the **Extensive** and **Plain** table view.
 
 
-<details>
-  <summary>NEEDS TO BE MOVED AWAY into e.g. "How to search" </summary>
-
-  (rendered wrong locally, but just because of "details" element)
-## How to search
-
-</details>
-To search your devices, type a value in the text field, then press the `Enter` key.
-To reset, click the corresponding **X**.
-
-<img
-  src={require('./assets/portal-connected-devices-search.png').default}
-  alt=""
-/>
-
-:::caution
-Wildcards using an asterisk `*` aren't supported in the search bar.
-
-For example, if your device's **Name** is `My iPhone`, searching `phone` would show results, but searching `*phone` wouldn't.
-:::
-</details>
-
-
 :::info
 All the [Available filter properties](#available-filters) are searchable except **Status**, **Coverage policy**, and **Service policy**. 
 :::
