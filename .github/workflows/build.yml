@@ -23,5 +23,7 @@ jobs:
           cat .env
       - name: Install dependencies
         run: yarn install --frozen-lockfile
+      - name: Lint code and Markdown format
+        run: yarn lint:fix
       - name: Test build website
         run: yarn build
