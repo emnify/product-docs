@@ -62,7 +62,6 @@ Find more information in the [API reference](https://cdn.emnify.net/api/doc/even
 ## Working with events
 
 There are three main ways you can access and trigger events:
-
 - [Data Streamer](/system-events/usage#data-streamer)
 - [Event API](/system-events/usage#event-api) 
 - [emnify Portal](/system-events/usage#emnify-portal)
