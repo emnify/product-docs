@@ -80,29 +80,6 @@ You can also perform a bulk Enable/Disable operation on a group of devices.
 Use a filter to display a list of the targeted devices.
 Once their checkboxes indicate that they have been selected, the bulk actions menu bar appears at the top of the screen.
 
-<details>
-  <summary>NEEDS TO BE MOVED AWAY into e.g. "How to evable/disable device" </summary>
-
-  (rendered wrong locally, but just because of "details" element)
-## How to evable/disable device
-Select **Device** and then one of the actions:
-
-<!-- vale Google.OptionalPlurals = NO -->
-<!-- Action names are written the same as they're shown in the Portal -->
-- Enable Device(s)
-- Disable Device(s)
-<!-- vale Google.OptionalPlurals = YES -->
-
-</details>
-
-<details className="custom-details-troubleshooting">
-  <summary>Show where this happens in the Portal</summary>
-  <img
-    src={require('./assets/bulk-enable-disable.png').default}
-    alt=""
-  />
-</details>
-
 :::caution
 Devices can't be deleted.
 You can rename/repurpose unwanted devices for use with unassigned SIMs.
