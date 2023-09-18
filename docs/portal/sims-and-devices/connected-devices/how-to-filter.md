@@ -76,7 +76,7 @@ beta
 Each value is parsed, and the table shows any devices with the `test`, `v1`, and `beta` tags.
 
 <img
-  src={require('./assets/portal-connected-devices-filters-tag.png').default}
+  src={require('../assets/portal-connected-devices-filters-tag.png').default}
   alt=""
   style={{ height:400 }}
 />
