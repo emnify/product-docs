@@ -16,10 +16,12 @@ Once you've entered all the values you want to filter by, click **Apply**.
 To remove a filter or value, click the corresponding **X**.
 
 <img
-  src={require('././assets/portal-connected-devices-filters.png').default}
+  src={require('../assets/portal-connected-devices-filters.png').default}
   alt=""
   style={{ height:450 }}
 />
+
+https://github.com/emnify/product-docs/blob/redo-portal-connected-devices/docs/portal/sims-and-devices/assets/portal-connected-devices-filters.png
 
 ## Combine filters
 Filters can be combined or used together with the [search bar](#search-devices).
