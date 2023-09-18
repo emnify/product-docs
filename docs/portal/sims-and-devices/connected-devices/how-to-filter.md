@@ -1,6 +1,6 @@
 ---
 description: Learn how to filter your devices
-slug: /portal/connected-devices/how-tos
+slug: /portal/connected-devices/how-to-filter
 ---
 
 import Check from '../assets/check-simple.svg';
