@@ -38,7 +38,6 @@ You can find some [examples on how to implement such filters](*insert link here*
 The **Connected Devices** search bar is next to the **Add device** button.
 It's visible on both the **Extensive** and **Plain** table view.
 
-
 :::info
 All the [Available filter properties](#available-filters) are searchable except **Status**, **Coverage policy**, and **Service policy**. 
 :::
@@ -52,22 +51,6 @@ You can also combine the search with filters, but searched values aren't saved i
 ## Get device information 
 
 To view all information about a device, navigate to [**Connected Devices**](https://portal.emnify.com/connected-devices), find it in the list, and select **Details**.
-
-<details>
-  <summary>NEEDS TO BE MOVED AWAY into e.g. "How to get device information" </summary>
-
-  (rendered wrong locally, but just because of "details" element)
-## How to get device information
-
-<details className="custom-details-example">
-  <summary>Show an example of Device Details</summary>
-  <img
-    src={require('./assets/device-details.png').default}
-    alt=""
-  />
-</details>
-
-</details>
 
 ### Useful terms
 
