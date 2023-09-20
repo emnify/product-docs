@@ -68,8 +68,8 @@ The event log often contains information that can be used to determine what went
 <details className="custom-details-troubleshooting">
   <summary>Where to find a device's events</summary>
   <img
-    src={require('./assets/device-details-events.png').default}
-    style={{width:655}}
+    src={require('./assets/portal-device-details-events.png').default}
+    style={{ width: 655 }}
     alt=""
   />  
 
@@ -93,8 +93,8 @@ In contrast, a successful **Create PDP Context** event has an **Event Source** o
 <details className="custom-details-example">
   <summary>Compare a successful Create PDP Context event with one that failed</summary>
   <img
-    src={require('./assets/create-pdp-context-success-and-failure.png').default}
-    style={{width:550}}
+    src={require('./assets/portal-events-create-pdp-context-success-and-failure.png').default}
+    style={{ width: 550 }}
     alt=""
   />
 </details>
