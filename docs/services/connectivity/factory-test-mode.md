@@ -27,7 +27,7 @@ SIMs in FTM are allowed to consume 100 KB of data and 10 SMS (either in its tota
 SIMs in FTM change to the **Activated** state in any of the following scenarios:
 
 - After the consumption of the allowed data/SMS limit in FTM.  
-_Note: the 10th SMS executes the SIM activation._
+_Note: the tenth SMS executes the SIM activation._
 - SIM cards that never reached any threshold (either 10 SMS or 100 KB of data), but are in FTM longer than 180 days.
 - If the status of the device with the **Factory test** status is altered.
 - Running a reset connectivity.
