@@ -34,8 +34,6 @@ See the [guide  for how to filter for devices](/portal/connected-devices/how-to-
 The **Connected Devices** search bar is next to the **Add device** button.
 It's visible on both the **Extensive** and **Plain** table view.
 
-See the [guide for how to search for devices](/portal/connected-devices/how-to-search).
-
 :::info
 All the [Available filter properties](#available-filters) are searchable except **Status**, **Coverage policy**, and **Service policy**.
 :::
@@ -45,6 +43,8 @@ For example, if you enter the number `2`, the search results would show any devi
 
 The search is case insensitive, meaning `GPS Tracker` and `gps tracker` would produce the same results.
 You can also combine the search with filters, but searched values aren't saved in the URL.
+
+See the [guide for how to search for devices](/portal/connected-devices/how-to-search).
 
 ## Get device information 
 
