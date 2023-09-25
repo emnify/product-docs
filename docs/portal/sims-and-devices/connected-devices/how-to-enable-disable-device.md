@@ -25,3 +25,12 @@ The following image shows, where this is done in the Portal.
   src={require('../assets/bulk-enable-disable.png').default}
   alt=""
 />
+
+
+<details className="custom-details-troubleshooting">
+  <summary>Show where this happens in the Portal</summary>
+  <img
+    src={require('./assets/portal-connected-devices-bulk-enable-disable.png').default}
+    alt=""
+  />
+</details>
