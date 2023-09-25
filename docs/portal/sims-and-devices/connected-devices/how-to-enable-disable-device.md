@@ -3,8 +3,8 @@ description: Learn how to filter your devices
 slug: /portal/connected-devices/how-to-enable-disable-device
 ---
 
-import Check from '../assets/check-simple.svg';
-import Close from '../assets/close.svg';
+import Check from './../assets/check-simple.svg';
+import Close from './../assets/close.svg';
 
 # How to enable/disable device
 
