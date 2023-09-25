@@ -28,3 +28,16 @@ Each category within the [`docs` directory](./docs/) has an `assets` directory c
 - Filenames should be written in [kebab case](https://www.freecodecamp.org/news/snake-case-vs-camel-case-vs-pascal-case-vs-kebab-case-whats-the-difference/#kebab-case) format with all lowercase characters.
   - Infographics should begin with `infographic-`
   - Screenshots should describe the part of the system represented from least to most specific (for example, a screenshot of the Data Streams section of the Integrations page in the emnify Portal should be named `portal-integrations-data-streams`)
+
+### Annotate screenshots
+
+Use a square or rectangle to indicate a specific area of interest within a screenshot.
+For consistency, follow these guidelines:
+
+- **Color**: 
+  - Design token: `--eui-sys-support-primary-information` 
+  - Current hex value: `#4377cd`
+- **Corners**: Sharp, not rounded (`border-radius: 0;`)
+- **Line thickness**: Roughly `8px`
+
+![Example screenshot showing one row from the Connected Devices table in the emnify Portal. The "Details" button is outlined in a thick, sharp, information blue colored rectangle.](https://github.com/emnify/product-docs/assets/26869552/acc6cec1-9639-4345-a934-41f55e8d75a2)
