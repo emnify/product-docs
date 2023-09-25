@@ -3,7 +3,7 @@ description: Learn how to filter your devices
 slug: /portal/connected-devices/how-to-filter
 ---
 
-import Check from '../../assets/check-simple.svg';
+import Check from '../../assets/check.svg';
 import Close from '../../assets/close.svg';
 
 # How to filter
