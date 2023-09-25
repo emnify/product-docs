@@ -3,9 +3,6 @@ description: Learn how to filter your devices
 slug: /portal/connected-devices/how-to-search
 ---
 
-import Check from '../assets/check-simple.svg';
-import Close from '../assets/close.svg';
-
 # How to search
 
 To search your devices, type a value in the text field, then press the `Enter` key.
