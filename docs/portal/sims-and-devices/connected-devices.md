@@ -7,9 +7,6 @@ slug: /portal/connected-devices
 
 # Connected devices
 
-import Check from '../assets/check.svg';
-import Close from '../assets/close.svg';
-
  [**Connected Devices**](https://portal.emnify.com/connected-devices) is where you manage your devices.
 
 ## Create a new device
