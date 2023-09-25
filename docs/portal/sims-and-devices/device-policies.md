@@ -1,5 +1,7 @@
 ---
 description: Configure service and coverage policies for your devices on the emnify Portal
+last_update: 
+  date: 09-07-2023
 slug: /portal/device-policies
 ---
 
@@ -31,7 +33,22 @@ However, by creating a service policy, you can control the following:
   - [Webhook](#webhook-sms-interface)
   - [SMPP](/portal/sms#sms-via-smpp)
 
-To create a new **Service Policy**, navigate to [**Device Policies**](https://portal.emnify.com/device-policies) and select **New Service Policy**.
+### Create a new service policy
+
+To create a new service policy, follow these steps:
+
+1. [Log in to your emnify account](https://portal.emnify.com/sign).
+1. Navigate to **Device Policies**.
+   **Service policies** is the top section on the page.
+1. Select **New service policy**.
+1. Replace **New service policy** with the name of your policy, then add a **Description** and edit the **Configuration**.
+
+Changes save automatically.
+To remove a service policy, click the trash bin icon next to **Details**.
+
+:::tip
+Creating one policy per use case or device type helps you adjust and save your device settings based on the demands of a particular use case.
+:::
 
 ### Webhook SMS interface
 
@@ -44,14 +61,14 @@ Optionally, you can provide a secret key to prevent unauthorized access.
   Select **Configure Webhook**.  
 
   <img
-    src={require('./assets/sms-interface-configure-webhook.png').default}
+    src={require('./assets/portal-service-policies-sms-interface-configure-webhook.png').default}
     alt=""
   />
 
   Provide the URL, optional secret key, and select **Add Webhook**.  
 
   <img
-    src={require('./assets/sms-interface-add-webhook.png').default}
+    src={require('./assets/portal-service-policies-sms-interface-add-webhook.png').default}
     alt=""
   />
 </details>
@@ -63,57 +80,50 @@ When selecting **SMPP** as your **SMS Interface**, you are provided a **System I
 <details className="custom-details-troubleshooting">
   <summary>Show where this happens in the Portal</summary>
   <img
-    src={require('./assets/device-policies-sms-interface-smpp.png').default}
+    src={require('./assets/portal-service-policies-sms-interface-smpp.png').default}
     alt=""
   />
 </details>
 
 ## Coverage policies
 
-A coverage policy lets you choose which pricing plan and regions to operate in.
-Policies comprise a **Tariff** (pricing plan) and one or more **Zones**.
-The default coverage policy depends on your current subscription plan.
+A coverage policy lets you choose which data plan and regions to operate in.
+Policies comprise of the **Data Plan** and one or more **Coverage areas**.
+The default coverage policy depends on your current subscription package.
 
-To create a new **Coverage Policy**, collapse the **Service Policies** list and select **New Coverage Policy**.
+### Create a new coverage policy
 
-<details className="custom-details-troubleshooting">
-  <summary>Show where to create a new Coverage Policy</summary>
-  <img
-    src={require('./assets/coverage-policies.png').default}
-    style={{width:650}}
-    alt=""
-  />
-</details>
+To create a new coverage policy, follow these steps:
 
-### Tariff
+1. [Log in to your emnify account](https://portal.emnify.com/sign).
+1. Navigate to the [**Coverage Policies**](https://portal.emnify.com/device-policies#coverage-policies) section of **Device Policies**.
+1. Select **New coverage policy**.
+1. Replace **New coverage policy** with the name of your policy and add a **Description**.
+   Then, choose a **Data Plan** and **Data allowance** from the available options.
+1. Finally, click **Create**.
 
-The **Tariff** dropdown shows a list of plan names with a **Global** plan selected by default.
+By default, connectivity is disabled, and any devices assigned to this coverage policy are blocked from all networks.
+You need to enable at least one **Coverage area** for your devices to connect.
 
-### Zones
+Changes save automatically.
+To remove a coverage policy, click the trash bin icon next to **Details**.
 
-The list of zones varies depending on which **Tariff** (global, regional, etc.) you selected.
+:::tip
+Creating multiple coverage policies lets you differentiate between device types based on their coverage needs and the associated costs.
+:::
 
-The **Tariff Coverage Map** is a global map that shows the coverage you have based on your selections.
-You can browse the entire list of countries in the **Coverage List** or search for a specific country where you plan to deploy your devices.
+### Data plan
 
-<details className="custom-details-example">
-  <summary>Show the default coverage on the Tariff Coverage Map</summary>
+The **Data Plan** dropdown shows a list of data plan names with **Regional Pro** selected by default.
 
-  <img
-    src={require('./assets/tariff-coverage-map.png').default}
-    style={{width:900}}
-    alt=""
-  />
+### Coverage areas
 
-  The **Coverage List** provides the names and number of operators per country.
-  Each country's listing can be expanded to reveal the rate zone, plan coverage, data rates, and SMS sending and receiving rates.
+The list of **Coverage areas** varies depending on which **Data Plan** you selected.
 
-  <img
-    src={require('./assets/coverage-list-no-om-pk.png').default}
-    style={{width:900}}
-    alt=""
-  />
-</details>
+The **Coverage map** is a global map that shows the coverage you have based on your selections.
+You can browse the entire list of countries in the **Coverage list** or search for a specific country where you plan to deploy your devices.
+This list provides the names and number of networks per country.
+Each country's listing can be expanded to reveal the network, coverage area, data rates, and SMS sending and receiving rates.
 
 ## Assign devices to a policy
 
@@ -134,28 +144,30 @@ Be sure to [reset its connectivity](/portal/connected-devices#reset-connectivity
 
 ### Single device assignment
 
-When viewing [**Device Details**](/portal/connected-devices#get-device-information), you can select **Edit** for either **Service Policy** or **Coverage Policy**.
-You'll be presented with a dropdown list to choose from.
+When viewing **Device Details**, select **Edit** for either **Service Policy** or **Coverage Policy** to show a dropdown list of available policies.
 Select your policy from the list.
 You should see a real-time notification confirming the change.
 
-### Bulk assignments 
+### Bulk assignments
 
 Navigate to [**Connected Devices**](https://portal.emnify.com/connected-devices) and search for the devices you wish to assign to a policy.
-If you followed the previous tip, you might be able to use only one or two tags to filter only the devices to be assigned.
+Select the checkbox next to every relevant device.
 
+:::tip
+If you followed the previous tip, you can filter by tag to show only the devices to be assigned.
 If the filtered list looks good, select the top checkbox in the table heading to select them all.
+:::
+
 A new menu appears at the top of the page that provides bulk operations.
 Select **More** and then either **Change Service Policy** or **Change Coverage Policy**.
-You'll be presented a with dropdown list to choose from.
-Select your policy from the list and then select **Save**.
+Choose your policy from the presented dropdown list and then select **Save**.
 The devices you selected are assigned to their new policy, and you should see a real-time notification confirming the change.
 
 <details className="custom-details-example">
   <summary>Show an example</summary>
   <img
-    src={require('./assets/bulk-policy-change.png').default}
-    style={{width:900}}
+    src={require('./assets/portal-connected-devies-bulk-policy-change.png').default}
+    style={{ width: 900 }}
     alt=""
   />
 </details>
@@ -173,20 +185,20 @@ As soon as you change the service policy, it's pushed to all 100 devices.
 ### Change a device's policy assignments
 
 Another way to change a device's group policy is to switch from its current policy to another one.
-For a single device, you can select its new policy from a dropdown list when viewing the [**Device Details**](/portal/connected-devices#get-device-information) by selecting **Edit**  as described earlier in [Single device assignment](#single-device-assignment).
 
-For changing a group of devices to a new policy, follow the procedure described for [bulk assignments](#bulk-assignments). 
+For a single device, you can select its new policy from a dropdown list when viewing the **Device Details** by selecting **Edit** as described in this document's [Single device assignment](#single-device-assignment) section.
+For changing a group of devices to a new policy, see [Bulk assignments](#bulk-assignments).
 
 ### Make sure the changes take effect immediately
 
 Resetting connectivity is also available as a bulk option.
-Once you have selected the devices using the [bulk assignments](#bulk-assignments) procedure, select **Reset**.
+Once you have chosen multiple devices, select **Reset**.
 
 <details className="custom-details-troubleshooting">
   <summary>Show where to confirm the changes</summary>
   <img
-    src={require('./assets/connected-devices-bulk-reset.png').default}
-    style={{width:900}}
+    src={require('./assets/portal-connected-devices-bulk-reset.png').default}
+    style={{ width: 900 }}
     alt=""
   />
 </details>

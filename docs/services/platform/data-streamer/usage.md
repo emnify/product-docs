@@ -1,5 +1,7 @@
 ---
 description: Manage data streams with the emnify Portal or REST API
+last_update: 
+  date: 12-31-2022
 slug: /multicloud-data-streamer/usage
 ---
 
@@ -24,11 +26,6 @@ Then, navigate to the [**Data Streams**](https://portal.emnify.com/integrations#
 
 If there are no data streams configured, the [**Data Streams**](https://portal.emnify.com/integrations#data-streams) panel displays all available [connection types](/multicloud-data-streamer/connection-types) as tiles.
 
-<img
-  src={require('./assets/portal-integrations-data-streams-panel.png').default}
-  alt=""
-/>
-
 If you already have a data stream configured, the panel displays all existing streams, ordered by creation date (newest on the top).
 This list view can be used to gain an overview of the current states of different data streams.
 
@@ -52,12 +49,6 @@ The **Destination** configuration varies depending on the connection type.
 ### Create data streams
 
 When no configured data streams are available, click **Add** on the preferred connection type tile.
-
-<img
-  src={require('./assets/portal-integrations-data-streams-add-buttons.png').default}
-  alt=""
-/>
-
 Otherwise, click **Add New Stream** at the top of the existing [**Data Streams**](https://portal.emnify.com/integrations#data-streams) list.
 This shows the connection type tiles. You can choose your preferred connection type and click **Add**.
 
@@ -109,7 +100,7 @@ You can manage your data streams using the emnify Data Streamer API.
 Available entry points are listed under the [Integrations section of the emnify REST API reference](https://cdn.emnify.net/api/doc/swagger.html#/Integrations).
 
 :::info
-You can find detailed information on the Data Streamer data properties and compatibility notes in the [Data Streamer API Reference](https://cdn.emnify.net/api/doc/event.html) in the *emnify System Documentation*.  
+You can find detailed information on the Data Streamer data properties and compatibility notes in the [Data Streamer API Reference](https://cdn.emnify.net/api/doc/event.html) in the _emnify System Documentation_.  
 :::
 
 ### Authentication
@@ -163,6 +154,7 @@ The following lookup entry points are available for retrieving possible configur
 | `GET`  | `/api/v2/data_stream/type`              | List possible data stream types.            |
 | `GET`  | `/api/v2/data_stream/filter_field_type` | List possible data stream filter fields.    |
 
+<!-- markdownlint-disable-next-line MD024 -->
 ### Create data streams
 
 Once authenticated, users can create data streams by sending `POST` requests to `/api/v2/data_stream`.
@@ -260,7 +252,7 @@ curl -X GET "https://cdn.emnify.net/api/v2/data_stream" \
 
 Retrieving details of an existing data stream is possible by making a `GET` request to `/api/v2/data_stream/{data_stream_id}`.
 
-The `data_stream_id` path parameter is the top-level `id` property in each object returned by the [listing data streams](#listing-data-streams) request and is an ID that's unique for each data stream.
+The `data_stream_id` path parameter is the top-level `id` property in each object returned by the [list data streams](#list-data-streams) request and is an ID that's unique for each data stream.
 
 An example cURL request to get detailed information for a data stream with an ID of `123` would look like the following:
 
@@ -278,7 +270,7 @@ curl -X GET "https://cdn.emnify.net/api/v2/data_stream/123" \
 
 Authenticated users may update data streams belonging to their organization by making a `PATCH` request to `/api/v2/data_stream/{data_stream_id}`.
 
-The `data_stream_id` path parameter is the top-level `id` property in each object returned by the [listing data streams](#listing-data-streams) request and is an ID that's unique for each data stream.
+The `data_stream_id` path parameter is the top-level `id` property in each object returned by the [list data streams](#list-data-streams) request and is an ID that's unique for each data stream.
 
 An example cURL request to update a data stream with an ID of `123`:
 
@@ -306,11 +298,12 @@ The following example shows how to pause a stream and erase any filters:
 [Modify existing data stream](https://cdn.emnify.net/api/doc/swagger.html#/Integrations/PatchV2DataStream)
 :::
 
+<!-- markdownlint-disable-next-line MD024 -->
 ### Delete data streams
 
 Sending a `DELETE` request to `/api/v2/data_stream/{data_stream_id}` deletes the data stream with that ID.
 
-The `data_stream_id` path parameter is the top-level `id` property in each object returned by the [listing data streams](#listing-data-streams) request and is an ID that's unique for each data stream.
+The `data_stream_id` path parameter is the top-level `id` property in each object returned by the [list data streams](#list-data-streams) request and is an ID that's unique for each data stream.
 
 The following cURL request would then delete a data stream with an ID of `123`:
 

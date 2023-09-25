@@ -1,5 +1,7 @@
 ---
 description: How to enable two-factor authentication on your emnify account
+last_update: 
+  date: 03-30-2023
 slug: /how-tos/two-factor-authentication
 ---
 
@@ -12,37 +14,18 @@ You can enable 2FA via the emnify Portal.
 ## Configuration steps
 
 1. Log in to your [emnify account](https://portal.emnify.com/sign).
-2. Navigate to [**User Settings**](https://portal.emnify.com/user-settings) by clicking on your avatar and selecting **User Settings** from the dropdown menu.
-
-<img
-  src={require('./assets/portal-dashboard-avatar-user-settings.png').default}
-  alt=""
-/>
-
-<img
-  src={require('./assets/portal-user-settings.png').default}
-  alt=""
-/>
-
-3. Find the [**Two-Factor Authentication**](https://portal.emnify.com/user-settings#two-factor-authentication) section and click **Enable**.
-
+1. Navigate to [**User Settings**](https://portal.emnify.com/user-settings) by clicking on your avatar and selecting **User Settings** from the dropdown menu.
+1. Find the [**Two-Factor Authentication**](https://portal.emnify.com/user-settings#two-factor-authentication) section and click **Enable**.
 <img
   src={require('./assets/portal-user-settings-2fa-enable-button.png').default}
   alt=""
 />
 
-4. Enter your password to verify your identity then click **Submit**.
-
-<img
-  src={require('./assets/portal-user-settings-2fa-password.png').default}
-  alt=""
-/>
-
-5. Activate your personal device's temporary authentication key by scanning the QR code with a 2FA app.
+1. Enter your password to verify your identity then click **Submit**.
+1. Activate your personal device's temporary authentication key by scanning the QR code with a 2FA app.
 Alternatively, you can copy the secret key to add it manually.
 After you've scanned the QR code or entered the key, a 6-digit token appears in the app. 
 Finally, enter the token.
-
 <img
   src={require('./assets/portal-user-settings-2fa-activate-key.png').default}
   alt=""
@@ -55,18 +38,13 @@ Finally, enter the token.
 
 Assuming there are no errors, 2FA should be enabled for your account. 🎉
 
-<img
-  src={require('./assets/portal-user-settings-2fa-enabled.png').default}
-  alt=""
-/>
-
 Now, if you log in to the Portal on a device you haven't set as trusted before or use a different browser, you'll be asked to enter a one-time password to verify your identity.
 
 ## Manage trusted devices
 
 Reaching for your personal device and entering a one-time password every time you need to log in to your account can be a pain, especially if you usually sign in from the same device.
 
-To bypass this process, select **Trust this device** before entering the 2FA code from your authentication app. 
+To bypass this process, select **Trust this device** before entering the 2FA code from your authentication app.
 
 <img
   src={require('./assets/portal-login-2fa-confirmation-trust-this-device-checkbox.png').default}
@@ -75,12 +53,6 @@ To bypass this process, select **Trust this device** before entering the 2FA cod
 />
 
 Then, [**Trusted Devices**](https://portal.emnify.com/user-settings#trusted-devices) should be visible in the **Two-Factor Authentication** section of **User Settings**.
-
-<img
-  src={require('./assets/portal-user-settings-trusted-devices.png').default}
-  alt=""
-/>
-
 Click **Remove** to remove a device from **Trusted Devices**.
 
 <img
@@ -89,7 +61,7 @@ Click **Remove** to remove a device from **Trusted Devices**.
 />
 
 :::info
-Your changes are saved automatically. 
+Your changes are saved automatically.
 :::
 
 ## Disable two-factor authentication

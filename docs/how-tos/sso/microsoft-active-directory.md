@@ -1,5 +1,7 @@
 ---
 description: Setup SSO for your emnify account with Microsoft Active Directory
+last_update: 
+  date: 12-20-2022
 pagination_next: how-tos/sso/google-cloud-platform
 slug: /sso/microsoft-active-directory
 ---
@@ -31,7 +33,7 @@ Log in to Azure and navigate to **Azure Active Directory** in the left sidebar.
   className="no-border"
 />
 
-At the top of the page, click **+ Add** and then **App Registration**. 
+At the top of the page, click **+ Add** and then **App Registration**.
 From there:
 
 <img
@@ -126,24 +128,12 @@ Navigate to **Overview** in the sidebar and copy the **Application (client) I
 
 [Log in to your emnify account](https://portal.emnify.com/sign/), go to Organization Settings (building icon) in the top-level navigation, and click [**Single Sign-On**](https://portal.emnify.com/organisation-settings/federation).
 
-<img
-  src={require('./assets/portal-organization-settings-sso.png').default}
-  alt="Portal screenshot showing the Organization settings dropdown menu. Menu items from top to bottom, Organization Data, Employees, Subscription, Billing, Single Sign-On."
-  style={{ width: 358 }}
-/>
-
 If you need SSO enabled for your account, contact support by selecting **Upgrade**.
-
-<!-- vale emnify.Condescending = NO -->
-<!-- 'easily' is quoted from the Portal text -->
-![Portal screenshot from the Single Sign-On page under Organization. There's a notice under Provider that reads, "Your plan does not include SSO. Single Sign-On (SSO) allows you to configure your own Identity Provider (IdP) to authenticate your workforce on the emnify portal and easily control access via your central user management." Next to this text is an Upgrade button.](assets/portal-organization-no-sso-annotated.png)
-<!-- vale emnify.Condescending = YES -->
-
 Otherwise, click **Add** under the Microsoft SSO provider.
 
 Enter the **Client ID** and **Client Secret** with the values you copied earlier, then click **Create and Activate**.
 
-The final step is to verify the provider. 
+The final step is to verify the provider.
 Click **Verify Integration** and follow the prompts.
 
 :::caution

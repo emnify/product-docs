@@ -1,4 +1,5 @@
 alex
+Algolia
 APN[s]
 AuC
 AWS
@@ -13,7 +14,7 @@ CSM[s]
 Data Streamer
 Datadog
 DDoS
-Docusaurus
+[Dd]ocusaurus
 [Dd]ownlink
 [Dd]ual-band
 eDRX
@@ -49,6 +50,9 @@ Jira
 Kinesis
 LTE
 Luhn
+Markdown
+markdownlint
+Maven
 Meitrack
 Microsoft
 Microsoft Active Directory
@@ -58,17 +62,20 @@ MVNO[s]
 Nano
 OAuth
 OpenVPN
+Plus Package
+Pro Package
 Quad-band
 Queclink
 Quectel
-[Rr]atezone
 ReachFar
 RESTful API
 Ruptela
 Sequans
 SIMCom
+SIMs
 Sixfab
 SLA[s]
+Starter Package
 SuperNetwork
 Telecom
 Telia
@@ -79,6 +86,7 @@ u-blox
 [Uu]plink
 Vale
 Vodafone
+webpack
 WeTrack
 Wialon
 Zapier

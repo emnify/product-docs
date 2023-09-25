@@ -1,6 +1,7 @@
 ---
 description: Perform SMS related operations with the API 
-displayed_sidebar: devResourcesSidebar
+last_update: 
+  date: 11-04-2021
 ---
 
 # Send and receive SMS
@@ -14,7 +15,7 @@ You can perform the following SMS related operations using the `endpoint` API.
 
 **Example**: send SMS to an endpoint
 
-```
+```javascript
 POST https://cdn.emnify.net/api/v1/endpoint/{endpoint_id}/sms
 ```
 
@@ -29,7 +30,7 @@ POST https://cdn.emnify.net/api/v1/endpoint/{endpoint_id}/sms
 
 **Responses**:
 
-```
+```json
 201
 ```
 

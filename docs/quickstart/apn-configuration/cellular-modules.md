@@ -1,15 +1,19 @@
 ---
 description: Configure Quectel, u-blox, and several other vendors
+last_update: 
+  date: 01-07-2023
 slug: /apn-configuration/cellular-modules
 ---
 
 # Cellular modules
 
+<!-- markdownlint-disable MD040 -->
+
 For Telit, Sierra Wireless, Cinterion/Gemalto/Thales, SIMCom, or Sequans, see [General cellular IoT modules](#general-cellular-iot-modules).
 
 ## Quectel cellular IoT modules
 
-*Applies to all Quectel modules: BG95, BG96, EG25, EG91, EG95, EC21, EC25, M65, M66, M95, MC60, BG77, BG600L*
+> Applies to all Quectel modules: BG95, BG96, EG25, EG91, EG95, EC21, EC25, M65, M66, M95, MC60, BG77, BG600L
 
 With Quectel modules the APN can be set with the 3GPP standard command `AT+CGDCONT`:
 
@@ -60,7 +64,7 @@ Check your u-blox module AT command guide for more information.
 
 ## General cellular IoT modules
 
-*Applies to a cellular module vendors: Fibocom, Telit, Sierra Wireless, SIMCom, Cinterion, Gemalto, Thales, Sequans*
+> Applies to a cellular module vendors: Fibocom, Telit, Sierra Wireless, SIMCom, Cinterion, Gemalto, Thales, Sequans
 
 The commands for configuring the APN settings are 3GPP standardized and all major cellular module manufacturer support the commands.
 

@@ -1,5 +1,7 @@
 ---
 description: Invite, assign a role, suspend, and delete employees within your organization on the emnify Portal
+last_update: 
+  date: 07-20-2023
 slug: /portal/org/employees
 ---
 
@@ -26,24 +28,16 @@ The paged list of employees shows the following information for each employee:
 | **Activate** or **Suspend** button     | For activating/suspending the employee's account.  |
 | **Trash bin** icon  | For deleting the employee's account.  |
 
-<details className="custom-details-example">
-  <summary>Show an example</summary>
-    <img
-        src={require('./assets/org-user-list.png').default}
-        alt=""
-    />
-</details>
-
 ## Add a new employee
 
 Select the **Invite** button.
 Provide the employees' name, email address, and [role](/portal/roles).
-Then, select the **Send Invite** button. 
+Then, select the **Send Invite** button.
 
 <details className="custom-details-example">
   <summary>Show an example</summary>
     <img
-        src={require('./assets/org-invite-a-colleague.png').default}
+        src={require('./assets/portal-organization-employees-invite.png').default}
         alt=""
     />
 </details>

@@ -1,6 +1,7 @@
 ---
 description: Retrieve your authentication token 
-displayed_sidebar: devResourcesSidebar
+last_update: 
+  date: 11-04-2021
 ---
 
 # Authentication
@@ -16,11 +17,11 @@ There are two ways to retrieve this token:
 ## Authenticate with user credentials
 
 The `/api/v1/authenticate` API is used to generate a JWT `auth_token`, which authenticates subsequent API calls.
-The request body must provide a `username` (typically the email address used when signing up) and the `user password`. 
+The request body must provide a `username` (typically the email address used when signing up) and the `user password`.
 
 Once authenticated, you'll receive an `auth_token` and `refresh_token`.
 
-```
+```javascript
 POST https://cdn.emnify.net/api/v1/authenticate
 ```
 
@@ -56,14 +57,14 @@ Once the `auth_token` expires, you can use the `refresh_token` to retrieve t
 Since you shouldn't store your emnify user credentials on your application server, you can generate an `application_token` via the [emnify Portal](https://portal.emnify.com/integrations#application-tokens) or the API: `/api/v1/application_token`.
 The request body should have a description of the token normally used to indicate who is using the token and can have an `expiry_date` for the token.
 
-```
+```javascript
 POST https://cdn.emnify.net/api/v1/application_token
 ```
 
 **Request header**:
 
-```
-Authorization: Bearer {auth_token}
+```javascript
+Authorization: Bearer AUTH_TOKEN
 ```
 
 **Request body**:
@@ -83,8 +84,8 @@ Authorization: Bearer {auth_token}
 }
 ```
 
-This call returns an `application_token`. 
-You can use this token instead of the username and password combination. 
+This call returns an `application_token`.
+You can use this token instead of the username and password combination.
 The token can be revoked at any time.
 
 You can alternatively generate the `application_token` in the emnify Portal:
@@ -94,10 +95,10 @@ You can alternatively generate the `application_token` in the emnify Portal:
 
 <!-- TODO: Recreate generate_app_token.png (generate application token) -->
 
-To get the `auth_token` using the `application_token`, use the `/api/v1/authenticate` API. 
+To get the `auth_token` using the `application_token`, use the `/api/v1/authenticate` API.
 The `auth_token` can then be used to authenticate all subsequent API calls.
 
-```
+```javascript
 POST https://cdn.emnify.net/api/v1/authenticate
 ```
 
@@ -117,12 +118,12 @@ POST https://cdn.emnify.net/api/v1/authenticate
 }
 ```
 
-Unlike username and password authentication,  the server returns only `auth_token`s. 
+Unlike username and password authentication,  the server returns only `auth_token`s.
 No `refresh_token` is included in the response.
 This `auth_token` is valid for 240 minutes.
 
 :::caution
-It's *not* advisable to generate an `auth_token` before making each API call.
-You should reuse the generated `auth_token` for 240 minutes after it's generated. 
+It's _not_ advisable to generate an `auth_token` before making each API call.
+You should reuse the generated `auth_token` for 240 minutes after it's generated.
 Then, update it after its expiration.
 :::

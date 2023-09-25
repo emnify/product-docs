@@ -1,5 +1,7 @@
 ---
 pagination_next: services/platform/data-streamer/index
+last_update: 
+  date: 02-15-2023
 slug: /integration-guides
 ---
 
@@ -29,7 +31,6 @@ Here are some step-by-step integration guides to help you along the process.
 - [emnify and Google Cloud IoT Core integration](https://www.emnify.com/en/developer-hub/emnify-and-google-cloud-iot-core-integration)
 - [emnify Cloud Connect Integration to Google Cloud Platform](https://www.emnify.com/en/developer-hub/emnify-cloudconnect-integration-to-google-cloud-platform)
 - [emnify Data Streamer integration for Google Cloud Pub/Sub](https://www.emnify.com/en/developer-hub/datastreamer-integration-into-google-cloud-pubsub)
-
 
 ## Webhooks
 

@@ -1,5 +1,7 @@
 ---
 description: Start developing your IoT solutions with emnify
+last_update: 
+  date: 09-07-2023
 pagination_label: Getting started with emnify
 pagination_next: quickstart/order-sims
 slug: /quickstart
@@ -8,56 +10,51 @@ slug: /quickstart
 # Sign up for an emnify account
 
 To begin developing your IoT solutions with emnify, you'll need an emnify account.
-[Sign up](https://portal.emnify.com/sign/up) for free to a 2-month trial to use all functionalities.
+[Sign up](https://portal.emnify.com/sign/up) for a free 2-month trial.
 
 <details className="custom-details-troubleshooting">
   <summary>Need help verifying your phone number?</summary>
-    <p>When filling out the <a href="https://portal.emnify.com/sign/up" target="_blank" rel="noopener noreferrer">sign-up form</a>, you may have issues verifying your phone number.</p>
+    <p>When filling out the <a href="https://portal.emnify.com/sign/up">sign-up form</a>, you may have issues verifying your phone number.</p>
     <p>Here are a few common error messages and what to do if you see them:</p>
     <b>SMS verification not possible</b>
     <ul>
       <li>Try registering with another phone number.</li>
-      <li><a href="https://www.emnify.com/talk-to-us" target="_blank" rel="noopener noreferrer">Contact the emnify sales team</a> to set up your account.</li>
+      <li><a href="https://www.emnify.com/talk-to-us">Contact the emnify sales team</a> to set up your account.</li>
     </ul>
     <b>You've reached the maximum login attempts</b>
     <ul>
       <li>Wait at least 10 minutes, and then try to log in again.</li>
-      <li>If you've waited and your next attempt is blocked, <a href="https://www.emnify.com/talk-to-us" target="_blank" rel="noopener noreferrer">contact the emnify sales team</a>.</li>
+      <li>If you've waited and your next attempt is blocked, <a href="https://www.emnify.com/talk-to-us">contact the emnify sales team</a>.</li>
     </ul>
     <b>The verification code you entered is incorrect</b>
     <ul>
       <li>Re-enter your code and click <b>Verify</b> again.</li>
       <li>Click <b>Resend Code</b> and enter the new verification code once you've received it.</li>
-      <li>Still having trouble? <a href="https://www.emnify.com/talk-to-us" target="_blank">Contact the emnify sales team</a>.</li>
+      <li>Still having trouble? <a href="https://www.emnify.com/talk-to-us">Contact the emnify sales team</a>.</li>
     </ul>
     <b>The CAPTCHA you entered is incorrect</b>
     <ul>
       <li>Re-enter the displayed CAPTCHA characters.</li>
       <li>Keep in mind that CAPTCHA shows both upper and lowercase letters, so it's important to capitalize them exactly as they're shown.</li>
-      <li>Still having trouble? <a href="https://www.emnify.com/talk-to-us" target="_blank">Contact the emnify sales team</a>.</li>
+      <li>Still having trouble? <a href="https://www.emnify.com/talk-to-us">Contact the emnify sales team</a>.</li>
     </ul>
 </details>
 
-## emnify's Evaluation Plan
+## emnify's trial
 
-After signing up, your account is automatically assigned to the **Evaluation Plan**.
-With the Evaluation Plan, you have 60 days to use the issued prepaid credit for testing emnify's services.
+After signing up, your account is automatically assigned to the **Trial plan**.
+During this trial, you have 60 days to use the issued prepaid credit for testing emnify's services.
 
-Once this expires, you'll need to [choose a new plan](https://portal.emnify.com/organisation-settings/subscription#plans).
+Once this expires, you'll need to [choose a new package](https://portal.emnify.com/organisation-settings/subscription#plans).
 
 :::tip
-Information on your current balance and other details about the Evaluation plan is available in the emnify Portal.  
+Your current balance and other trial details are available in the emnify Portal.
 In the **Organization Settings**, select [**Subscription**](https://portal.emnify.com/organisation-settings/subscription).
-
-<img
-  src={require('./assets/portal-nav-organization-settings-subscription.png').default}
-  alt=""
-/>
 :::
 
 ### Supported features
 
-In addition to the standard emnify services, the Evaluation Plan supports the following features:
+In addition to the standard emnify services, you can use the following features during your trial:
 
 <details className="custom-details-example">
   <summary>Global virtual private network</summary>
@@ -71,7 +68,7 @@ In addition to the standard emnify services, the Evaluation Plan supports the fo
 
 <details className="custom-details-example">
   <summary>Multicloud Data Streamer</summary>
-    <p>Use the tools you're familiar with to stream connectivity metadata, triage issues, collect usage insights, and more. 
+    <p>Use the tools you're familiar with to stream connectivity metadata, triage issues, collect usage insights, and more.
     <a href="https://docs.emnify.com/multicloud-data-streamer">Learn more about the Data Streamer</a> or <a href="https://docs.emnify.com/multicloud-data-streamer/integrations">browse the available integrations</a>.</p>
 </details>
 
@@ -85,11 +82,9 @@ In addition to the standard emnify services, the Evaluation Plan supports the fo
     </ul>
 </details>
 
-## Order a free Evaluation SIM package
+## Order free trial SIMs
 
-![Claim your free evaluation package with 3 triple-cut SIMs to kickstart your well-managed IoT journey. Includes: Free 3 triple-cut SIMs, form factor (Nano, Micro, Mini), our full coverage, and global fast shipping.](assets/portal-order-evaluation-pack.png)
-
-You can order your free Evaluation SIM package on the emnify Portal.
+You can order your free trial SIMs on the emnify Portal.
 This package includes an issued prepaid credit for testing emnify's services.
 
 :::note
@@ -98,23 +93,11 @@ You have 60 days to use this prepaid credit.
 
 Currently, the three triple-cut SIM cards can be delivered to most destinations worldwide with express shipment.
 
-To get your free Evaluation SIM package, [log in to your emnify account](https://portal.emnify.com/sign) and follow these steps:
+To get your free trial SIMs, [log in to your emnify account](https://portal.emnify.com/sign) and follow these steps:
 
 1. On the [**Dashboard**](https://portal.emnify.com/), click **Get SIMs** on the **Get your free SIMs** panel.
-
-<img
-  src={require('./assets/portal-dashboard-get-started-get-sims-button.png').default}
-  alt=""
-/>
-
-2. Enter your **Invoice data**, **Delivery details**, and **Choose shipping option**.
-
-<img
-  src={require('./assets/portal-order-evaluation-pack-invoice-shipping-details.png').default}
-  alt=""
-/>
-
-3. Finally, review and confirm your details. 
+1. Enter your **Invoice data**, **Delivery details**, and **Choose shipping option**.
+1. Finally, review and confirm your details. 
 
 :::info
 You'll be notified when the SIM cards will be shipped.

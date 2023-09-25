@@ -1,5 +1,7 @@
 ---
 description: List of all available event types
+last_update: 
+  date: 09-08-2023
 slug: /system-events/event-types
 ---
 
@@ -141,7 +143,7 @@ This happens periodically or when entering a new location area.
 
 The `Update location` event registers the device in the circuit-switched domain (2G/3G) and packet-switched domain (4G/LTE).
 It enables the network to know the location/region of the device to send/retrieve the subscription information.
-In 2G/3G it allows the device to send and receive SMS. 
+In 2G/3G it allows the device to send and receive SMS.
 
 **Example**: a SIM card has (re)authenticated with a different network element.
 If successful, the device appears as **Attached** in the [emnify Portal](/system-events/usage#emnify-portal) and is ready to receive SMS.
@@ -476,12 +478,12 @@ This device appears as **Online** in the [emnify Portal](/system-events/usage#em
     },
     "name": "Vodafone",
     "pdp_context": {
-      "tariff_profile_id": "395978",
+      "tariff_profile_id": "395978", // coverage policy
       "tx_teid_control_plane": 570842943,
       "breakout_ip": "97.106.216.29",
-      "tariff_id": "555",
+      "tariff_id": "555", // data plan
       "rac": null,
-      "ratezone_id": "8178",
+      "ratezone_id": "8178", // coverage area
       "ci": 5174,
       "imeisv": "6887426203768011",
       "lac": 921,
@@ -886,7 +888,7 @@ Application token failed to authenticate.
 <details className="custom-details-example">
   <summary>Example response message</summary>
 
-```
+```text
 Failed authentication request from 'Application Token Name', Reason: TokenStatus Revoked from IP 54.64.35.156
 ```
 
@@ -1425,7 +1427,7 @@ SIM is patched from **Issued** to **Factory Test** [status](/glossary#sim-status
 
 ### SIM registration
 
-SIM or SIM batch is registered to an organization via a [Batch Identification Code (BIC)](/glossary#bic). 
+SIM or SIM batch is registered to an organization via a [Batch Identification Code (BIC)](/glossary#bic).
 
 :::note
 This event doesn't trigger when the emnify team assigns SIMs to an organization.
@@ -2802,6 +2804,7 @@ Client is successfully authenticated on [OpenVPN](https://www.emnify.com/iot-glo
 | :-- | :-------------------------------------------------------------- |
 | 31  | [Organisation updated](#organisation-updated)                   |
 | 32  | [Billing configuration updated](#billing-configuration-updated) |
+| 67  | [User switched workspaces](#user-switched-workspaces)           |
 
 ### Organisation updated
 
@@ -2903,6 +2906,46 @@ Organization's billing configuration changed.
       },
       "vatin": "DE123456789"
     }
+  }
+}
+```
+
+</details>
+
+### User switched workspaces
+
+A user switched to a different workspace.
+The description indicates the user ID and the ID of the workspace they're currently in.
+
+<details className="custom-details-example">
+  <summary>Example JSON response</summary>
+
+```json
+{
+  "timestamp": "2023-09-06T11:14:44.000Z",
+  "alert": false,
+  "description": "User with id: '330885', switched to workspace: 44",
+  "id": 1088341100077457,
+  "event_type": {
+      "id": 67,
+      "description": "User switched workspaces"
+  },
+  "event_source": {
+      "id": 2,
+      "description": "API"
+  },
+  "event_severity": {
+      "id": 0,
+      "description": "Info"
+  },
+  "organisation": {
+      "id": 44,
+      "name": "Example Organization"
+  },
+  "user": {
+      "id": 330885,
+      "name": "cruz@example.com",
+      "username": "cruz@example.com"
   }
 }
 ```

@@ -1,5 +1,7 @@
 ---
 description: SASE approach, DNS, IMEI lock
+last_update: 
+  date: 01-17-2023
 pagination_prev: services/platform/events/index
 slug: /services/security
 ---
@@ -42,23 +44,9 @@ For example, Quectel uses the `AT+QIDNSCFG` command, SIMCom `AT+CDNSCFG` com
 This is useful to be able to use your own or private DNS servers to secure and have better control over the solution.
 
 Customers can also configure to use their own DNS, no matter if it's a public or a private one.
-The DNS settings can be changed in the [emnify Portal](https://portal.emnify.com/). 
-Go to [**Device Policies**](https://portal.emnify.com/device-policies) and click **New service policy**. 
+The DNS settings can be changed in the [emnify Portal](https://portal.emnify.com/).
+Go to [**Device Policies**](https://portal.emnify.com/device-policies) and click **New service policy**.
 Then, select the **More options** tab to find the **Custom DNS** section.
-
-<img
-  src={require('./assets/portal-configure-custom-dns.png').default}
-  alt=""
-  style={{ width: 679 }} 
-/>
-
----
-
-<img
-  src={require('./assets/portal-add-custom-dns.png').default}
-  alt=""
-  style={{ width: 679 }} 
-/>
 
 <!-- TODO: Recreate dns_setting.png (Custom DNS setting configuration) -->
 
@@ -76,7 +64,7 @@ All future device connections are only allowed from this device.
 
 ## Two-factor authentication
 
-All emnify accounts can enable two-factor authentication (2FA) via the [Portal](https://portal.emnify.com/) for an additional layer of security. 
+All emnify accounts can enable two-factor authentication (2FA) via the [Portal](https://portal.emnify.com/) for an additional layer of security.
 
 Setting up 2FA makes unauthorized access to your account more improbable because your password is secured via your personal device, which generates a temporary authentication key.
 

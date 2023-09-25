@@ -1,5 +1,7 @@
 ---
 description: Send/receive SMS via the emnify Portal, SMS APIs, or Zapier
+last_update: 
+  date: 01-06-2023
 slug: /services/sms
 ---
 
@@ -31,14 +33,13 @@ You can send and receive SMS of your devices through three different interfaces:
 
 ## emnify Portal
 
-On the [**Connected Devices**](https://portal.emnify.com/connected-devices) page of the emnify Portal, you can access the SMS console and directly send SMS to the devices. 
+On the [**Connected Devices**](https://portal.emnify.com/connected-devices) page of the emnify Portal, you can access the SMS console and directly send SMS to the devices.
 The sender can be configured as well as the console shows if the SMS is delivered or not.
 You'll see all SMS that the device receives sends out.
 
 For sending SMS messages to a single device, select **Details**:
 
 ![Portal screenshot of the Connected Devices page showing the extensive device list. There is a Details button available for each device listed.](assets/portal-connected-devices-details-button.png)
-
 
 An SMS/Message icon appears to the right of the device name.
 
@@ -76,31 +77,17 @@ However, you receive a brief notification regarding the status of the SMS sent t
   style={{ width: 762 }}
 />
 
-
 ## emnify SMS REST API and webhook
 
-For sending SMS through the REST API, check out the [Sending and receiving SMS](#_sending_and_receiving_sms) section.
+For sending SMS through the REST API, check out the [Send and receive SMS](/rest/sms-operations) guide.
 
 For receiving SMS and delivery notifications for SMS in your application, you can use the SMS webhook.
-To configure the webhook, go to the [**Device Policies**](https://portal.emnify.com/device-policies) page. 
-Under **Service Policies**, choose the policy you want to update and click **Details**. 
+To configure the webhook, go to the [**Device Policies**](https://portal.emnify.com/device-policies) page.
+Under **Service Policies**, choose the policy you want to update and click **Details**.
 Then, find the **SMS Interface** section.
 
-<img
-  src={require('./assets/portal-device-policies-sms-interface-webhook.png').default}
-  alt=""
-  style={{ width: 800 }}
-/>
-
-Select **Webhook**, then select **Configure Webhook**:
-
-<img
-  src={require('./assets/portal-device-policies-configure-webhook.png').default}
-  alt=""
-  style={{ width: 399 }}
-/>
-
-In the **Add Webhook** dialog, provide the webhook URL and an optional secret key: 
+Select **Webhook**, then select **Configure Webhook**.
+In the **Add Webhook** dialog, provide the webhook URL and an optional secret key:
 
 <img
   src={require('./assets/portal-device-policies-add-webhook.png').default}
@@ -108,26 +95,37 @@ In the **Add Webhook** dialog, provide the webhook URL and an optional secret ke
   style={{ width: 856 }}
 />
 
-When you want to send an SMS from the device to your application, your device should send the SMS to an invalid [MSISDN](#msisdn) with eight digits or less.
+When you want to send an SMS from the device to your application, your device should send the SMS to an invalid [MSISDN](/glossary#msisdn) with eight digits or less.
 The SMS is then delivered over the webhook.
 
 <!-- TODO: Write proper alt text -->
-<img
-  src={require('./assets/delivery-notification.png').default}
-  alt=""
-  style={{ width: 400 }}
-/>
 
-*Delivery notification as received in Make (Integromat) webhook for SMS with ID: 46638644*
+<figure>
+  <img
+    src={require('./assets/delivery-notification.png').default}
+    alt=""
+    style={{ width: 400 }}
+  />
+  <figcaption>
+    <em>
+      Delivery notification as received in Make (Integromat) webhook for SMS with ID: 46638644
+    </em>
+  </figcaption>
+</figure>
 
 <!-- TODO: Write proper alt text -->
-<img
-  src={require('./assets/mosms.png').default}
-  alt=""
-  style={{ width: 400 }}
-/>
-
-*Mobile originated SMS from the device as received in Integromat webhook*
+<figure>
+  <img
+    src={require('./assets/mosms.png').default}
+    alt=""
+    style={{ width: 400 }}
+  />
+  <figcaption>
+    <em>
+      Mobile originated SMS from the device as received in Integromat webhook
+    </em>
+  </figcaption>
+</figure>
 
 ## Zapier SMS integration
 

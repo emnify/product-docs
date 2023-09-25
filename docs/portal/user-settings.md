@@ -1,5 +1,7 @@
 ---
 description: Managing your profile and preferences in the emnify Portal
+last_update: 
+  date: 07-20-2023
 slug: /portal/user-settings
 ---
 

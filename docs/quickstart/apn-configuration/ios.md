@@ -1,5 +1,7 @@
 ---
 description: Manually configure the APN for an iOS device
+last_update: 
+  date: 01-07-2023
 slug: /apn-configuration/ios
 ---
 

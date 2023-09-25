@@ -1,5 +1,7 @@
 ---
 description: Tips and solutions for resolving common issues when setting up your emnify account
+last_update: 
+  date: 08-24-2023
 slug: /quickstart/troubleshooting
 ---
 
@@ -33,13 +35,14 @@ Validate if there is any location update event created and rejected.
 The reasoning should indicate the resolution to the problem. 
 
 If there is no location update event:
+
 - Ensure the device is powered on and searches for a network
 - Ensure that the device is in reception of any supported network
 
 ## The device shows attached but doesn't transmit data
 
-- Verify that the APN is correctly set to *em* or use *emnify* instead since some devices don't support two-digit APNs.
-You can find guides for various devices in [Getting the first device online](#getting-the-first-device-online).
+- Verify that the APN is correctly set to _em_ or use _emnify_ instead since some devices don't support two-digit APNs.
+You can find guides for various devices in [Get a device online](/apn-configuration).
 - Ensure that you activate data access and the radio types (that is, 2G, 3G, 4G) if you change policy settings.
 - Make sure mobile data is enabled and that international roaming is allowed.
 - Click **Details**, then navigate to the **Events** tab.
@@ -62,4 +65,16 @@ Also, verify that the network is on emnify’s [NB-IoT coverage](https://www.emn
 - After configuration changes, make sure they're correctly applied on the device (for example, with a reboot).
 - Clicking the reset connectivity icon on [**Connected Devices**](https://portal.emnify.com/connected-devices) can also reset the network state and allow your device to freshly reattach.
 - The issue may only be present with one network or in the specific location (for example, due to high interference for this network).
-You can use the Operator Blacklist to block the network and force the change to a different network.
+You can use the network blocklist to block the network and force the change to a different network.
+
+## Contact the support team
+
+If you've tried everything and still can't find a solution, you can contact the [emnify support team](/support).
+
+Be sure to include the following information in your request:
+
+- Your company name
+- The ICCIDs of your SIMs in question
+- The type of device you're using
+- A short description of the issue
+- A phone number where we can reach you if required

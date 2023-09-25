@@ -1,11 +1,13 @@
 ---
 description: Overview and setup
+last_update: 
+  date: 11-04-2021
 slug: /services/openvpn
 ---
 
 # OpenVPN
 
-emnify's communication platform hosts an OpenVPN service that allows you to establish a private network between a device and any remote client location. 
+emnify's communication platform hosts an OpenVPN service that allows you to establish a private network between a device and any remote client location.
 The remote client can be on the application server or any machine that wants to access the device remotely (such as operational staff).
 
 ## IoT device requirements

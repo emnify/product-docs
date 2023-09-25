@@ -119,20 +119,6 @@ const config = {
           href: "/",
           src: "img/logo-word-blue-295x80.png",
         },
-        items: [
-          {
-            type: "docSidebar",
-            position: "left",
-            sidebarId: "mainDocsSidebar",
-            label: "Home",
-          },
-          {
-            type: "docSidebar",
-            position: "left",
-            sidebarId: "devResourcesSidebar",
-            label: "Developer Resources",
-          },
-        ],
       },
       docs: {
         sidebar: {
@@ -336,6 +322,11 @@ const config = {
           {
             to: "/system-events/usage",
             from: "/services/events/usage",
+          },
+          // Home - How-tos
+          {
+            to: "/how-tos/data-allowances",
+            from: "/how-tos/multi-inclusive-volumes",
           },
           // Home - Support
           {

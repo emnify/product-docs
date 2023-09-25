@@ -1,18 +1,20 @@
 ---
 description: Configure the type of content delivered by the data stream
+last_update: 
+  date: 12-31-2022
 slug: /multicloud-data-streamer/stream-types
 ---
 
 # Stream types
 
-Through stream types, you can configure the type of content delivered by the data stream. 
-You may choose between receiving _event data_ or _usage data_. 
+Through stream types, you can configure the type of content delivered by the data stream.
+You may choose between receiving _event data_ or _usage data_.
 
 Streaming event and usage data within one stream is possible but not advised, as these data records don't share a common schema definition.
 
 ## Event data
 
-The emnify system generates several types of events. 
+The emnify system generates several types of events.
 These events allow you to track notable system occurrences based on behavior.
 
 Some common use cases for events on emnify include:
@@ -27,16 +29,16 @@ Learn more about the available event types and how to use them in the [Event doc
 
 ## Usage data
 
-Usage data records get generated when devices consume data or SMS services. 
-These records provide information about the SIM, used service, visited network, volumes, and cost. 
+Usage data records get generated when devices consume data or SMS services.
+These records provide information about the SIM, used service, visited network, volumes, and cost.
 
 Usage data streams are often used for monitoring and analyzing data consumption and as input for custom billing systems.
 
 Each usage data record contains information about the:
 
-- **Device** (organization, endpoint, SIM, IMSI)
+- **Device** (organization, SIM, IMSI)
 - **Time** (start and end time)
-- **Price applied for rating** (tariff, tariff profile, ratezone)
+- **Price applied for rating** (data plan, coverage policy, coverage area)
 - **Mobile network operator used for the service** (operator, country)
 - **Type of service** (SMS or data)
 - **Consumed service volumes** (down- and upstream, total volume)
@@ -64,7 +66,7 @@ Data usage records are created:
     {
         "cost": 0.00439866,
         "id": 393533342974012,
-        "operator": {
+        "operator": { // network
             "id": 5,
             "name": "Telefonica O2",
             "mnc": "07",
@@ -78,19 +80,19 @@ Data usage records are created:
             "id": 11060,
             "name": "emnify LTEM Demo"
         },
-        "tariff": {
+        "tariff": { // data plan
             "id": 557,
             "name": "Regional Pro EUR",
-            "ratezone": {
+            "ratezone": { // coverage area
                 "id": 3398,
                 "name": "Europe Basic"
             }
         },
-        "traffic_type": {
+        "traffic_type": { // usage type
             "id": 5,
             "description": "Data"
         },
-        "endpoint": {
+        "endpoint": { // device
             "id": 10830095,
             "name": "Wallbox 232",
             "ip_address": "10.196.67.7",
@@ -130,6 +132,7 @@ Data usage records are created:
     }
 ]
 ```
+
 </details>
 
 :::note API Reference
@@ -151,7 +154,7 @@ Usage records for SMS are created when an SMS is successfully delivered either:
     {
         "cost": 0.07,
         "id": 393603365044284,
-        "operator": {
+        "operator": { // network
             "id": 5,
             "name": "Telefonica O2",
             "mnc": "07",
@@ -165,19 +168,19 @@ Usage records for SMS are created when an SMS is successfully delivered either:
             "id": 11060,
             "name": "emnify LTEM Demo"
         },
-        "tariff": {
+        "tariff": { // data plan
             "id": 1,
-            "name": "Internal Test Tariff",
-            "ratezone": {
+            "name": "Internal Test Data Plan",
+            "ratezone": { // coverage area
                 "id": 1,
-                "name": "Zone 1"
+                "name": "Area 1"
             }
         },
-        "traffic_type": {
+        "traffic_type": { // usage type
             "id": 6,
             "description": "SMS"
         },
-        "endpoint": {
+        "endpoint": { // device
             "id": 10830095,
             "name": "Wallbox 232",
             "ip_address": "10.196.67.7",
@@ -217,6 +220,7 @@ Usage records for SMS are created when an SMS is successfully delivered either:
     }
 ]
 ```
+
 </details>
 
 :::note API Reference

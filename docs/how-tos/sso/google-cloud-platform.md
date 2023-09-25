@@ -1,5 +1,7 @@
 ---
 description: Setup SSO for your emnify account with Google Cloud Platform
+last_update: 
+  date: 12-16-2022
 slug: /sso/google-cloud-platform
 ---
 
@@ -13,7 +15,7 @@ This guide walks through enabling single sign-on (SSO), so your organization can
 - An [emnify account](/quickstart) using the same email address as the one used to sign in to Google 
 
 :::caution
-If your email address in the emnify Portal differs from the one used to log in to Google, this setup won't work. 
+If your email address in the emnify Portal differs from the one used to log in to Google, this setup won't work.
 You can verify your email in [**User Settings**](https://portal.emnify.com/user-settings).
 
 Instead, add an additional user with the **Administrator** role.
@@ -22,13 +24,13 @@ To do this, go to **Organization Settings**&nbsp;<span aria-label="and then">></
 
 ## Register emnify in Google
 
-First, you need to register emnify in the [Google Cloud Platform console](https://console.developers.google.com/) and retrieve an OAuth 2.0 client ID and client secret. 
+First, you need to register emnify in the [Google Cloud Platform console](https://console.developers.google.com/) and retrieve an OAuth 2.0 client ID and client secret.
 
 ### Select or create an emnify project
 
-Log in with your Google account and navigate to the [APIs & Services dashboard](https://console.developers.google.com/apis/dashboard). 
+Log in with your Google account and navigate to the [APIs & Services dashboard](https://console.developers.google.com/apis/dashboard).
 
-Select your organization's project for managing OAuth credentials for emnify. 
+Select your organization's project for managing OAuth credentials for emnify.
 
 If you don't already have a designated project, create one with the following steps:
 

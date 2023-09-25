@@ -1,26 +1,28 @@
 ---
-description: View your current plan or learn about others on the Subscription page in the emnify Portal
+description: View your current package or learn about others on the Subscription page in the emnify Portal
+last_update: 
+  date: 09-07-2023
 slug: /portal/org/subscription
 ---
 
 # Subscription
 
-The **Subscription** page lets you view your current plan's details or learn about the other plans.
+The **Subscription** page lets you view your current package's details or learn about the other packages.
 
-## Current plan details
+## Current package details
 
-If your plan is active, you see the following information:
+If your package is active, you see the following information:
 
-- **Plan** (Standard, Plus, or Pro)
+- **Package** (Starter, Plus, or Pro)
 - **Price**
 - **Billing type** (for example, Monthly billing)
 - **Additional features**
 
-## Choose a plan
+## Choose a package
 
-Go to [**Subscription**](https://portal.emnify.com/organisation-settings/subscription) to compare the differences in features, services, and pricing between the plans:
+Go to [**Subscription**](https://portal.emnify.com/organisation-settings/subscription) to compare the differences in features, services, and pricing between the packages:
 
-- Standard (Select **Upgrade**)
+- Starter (Select **Upgrade**)
 - Plus (Select **Contact Us**)
 - Pro (Select **Contact Us**)
 
@@ -31,7 +33,7 @@ To finalize your payment plan, you need to provide some estimates regarding your
 
 ### Deployment
 
-In this section, your estimates of how many devices you plan to deploy and their average monthly data consumption are used to assess the resource requirements of your deployment.
+In this section, your estimates of how many devices you plan to deploy and their average monthly data usage are used to assess the resource requirements of your deployment.
 
 #### Active device
 
@@ -42,13 +44,13 @@ The slider provides a range from 1 to 1,000,000 devices.
 If you want to specify an exact number of devices that the slider isn't providing, you can select the current number in the input field next to **Active device** and type in the desired value.
 :::
 
-#### Average device consumption per month
+#### Average data usage per month
 
 Select a value between 0.25 MB and 2 GB using the slider.
 
 #### Deployment option
 
-If the default selection **Global** isn't your preference, select *one* from more than a dozen other regions, for example, **Africa Extended**, **Americas**, **APAC**, **Europe Basic**, **Middle East**, **USA**, etc.
+If the default selection **Global** isn't your preference, select _one_ from more than a dozen other regions, for example, **Africa Extended**, **Americas**, **APAC**, **Europe Basic**, **Middle East**, **USA**, etc.
 
 ### Coverage
 
@@ -56,49 +58,26 @@ Choose between **Basic** and **Extended** coverage.
 
 ### Price model
 
-Choose between **Pay as you go** and **Inclusive volume** *(your estimated monthly MB/device)* **pooled**.
+Choose between **Pay-per-Use** and **Pooled allowance (with shared data)**.
 
-## Tariff coverage map
+## Coverage map
 
-The **Tariff Coverage Map** is a global map that shows the coverage you have based on your selections.
-
-<details className="custom-details-example">
-  <summary>Show the Tariff Coverage Map with Basic coverage</summary>
-  <img
-    src={require('./assets/tariff-coverage-map-basic.png').default}
-    alt=""
-  />
-  <img
-    src={require('./assets/tariff-coverage-map-legend.png').default}
-    style={{width:615}}
-    alt=""
-  />
-
-  **Note**: the Basic coverage shown here includes **Zone D** and **Zone E**.
-</details>
+The **Coverage map** is a global map that shows the coverage you have based on your selections.
 
 ## Coverage list
 
-The **Coverage List** provides the names and number of operators per country.
-Each country's listing can be expanded to reveal the rate zone, plan coverage, data rates, and SMS sending and receiving rates.
-You can search the list by country name or select **By Rate Zones** to see which countries and their respective operators belong to each rate zone.
+The **Coverage list** provides the names and number of networks per country.
+Each country's listing can be expanded to reveal the network, coverage area, data rates, and SMS sending and receiving rates.
+You can search the list by country name or select **By Coverage Area** to see which countries and their respective networks belong to each coverage area.
 
-<details className="custom-details-example">
-  <summary>Show some of the countries in rate Zone C</summary>
-  <img
-    src={require('./assets/coverage-list-rate-zone-c.png').default}
-    alt=""
-  />
-</details>
+## Finalize your package selection
 
-## Finalize your plan selection
+After you have reviewed your package selections, select **Get started**.
+You'll then be directed to the **Data plan upgrade** page.
 
-After you have reviewed your plan selections, select **Get Started**.
-You'll then be directed to the **Tariff upgrade** page.
+## Data plan upgrade
 
-## Tariff upgrade
-
-On the **Tariff upgrade** page, you'll have an opportunity to confirm the following:
+On the **Data plan upgrade** page, you'll have an opportunity to confirm the following:
 
 1. [**Organization details**](https://portal.emnify.com/organisation-settings/details)
 1. [**Contact information**](/portal/org/data#contact-information)
