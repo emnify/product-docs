@@ -30,7 +30,7 @@ There are also **wildcard filters**, that let you find various value forms based
 You can also use character matching with an asterisk `*`.
 This is especially useful if a term has multiple spellings or you're unsure of the exact value.
 
-See the [guide](/portal/connected-devices/how-to-filter) which explains how to filter for devices.
+See the [guide  for how to filter for devices](/portal/connected-devices/how-to-filter).
 
 
 ## Search devices
@@ -38,7 +38,7 @@ See the [guide](/portal/connected-devices/how-to-filter) which explains how to f
 The **Connected Devices** search bar is next to the **Add device** button.
 It's visible on both the **Extensive** and **Plain** table view.
 
-See the [guide](/portal/connected-devices/how-to-search) which explains how to search for devices.
+See the [guide for how to search for devices](/portal/connected-devices/how-to-search).
 
 :::info
 All the [Available filter properties](#available-filters) are searchable except **Status**, **Coverage policy**, and **Service policy**. 
@@ -54,7 +54,7 @@ You can also combine the search with filters, but searched values aren't saved i
 
 To view all information about a device, navigate to [**Connected Devices**](https://portal.emnify.com/connected-devices), find it in the list, and select **Details**.
 
-See the [guide](/portal/connected-devices/how-to-get-device-information) which explains how to get device information.
+See the [guide how to get device information](/portal/connected-devices/how-to-get-device-information).
 
 ### Useful terms
 
@@ -83,7 +83,7 @@ You can also perform a bulk Enable/Disable operation on a group of devices.
 Use a filter to display a list of the targeted devices.
 Once their checkboxes indicate that they have been selected, the bulk actions menu bar appears at the top of the screen.
 
-See the [guide](/portal/connected-devices/how-to-enable-disable-device) which explains how enable or disable a device.
+See the [guide for how enable or disable a device](/portal/connected-devices/how-to-enable-disable-device).
 
 :::caution
 Devices can't be deleted.
