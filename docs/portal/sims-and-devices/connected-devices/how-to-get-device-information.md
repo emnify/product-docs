@@ -7,6 +7,6 @@ slug: /portal/connected-devices/how-to-get-device-information
 Here is an example of Device Details.
 
 <img
-  src={require('../assets/device-details.png').default}
+  src={require('../assets/portal-device-details-reset-connectivity.png').default}
   alt=""
 />
