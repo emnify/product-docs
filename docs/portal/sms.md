@@ -50,7 +50,7 @@ To open a device's SMS console, select its message icon.
 <details className="custom-details-example">
   <summary>From Connected Devices</summary>
   <img
-    src={require('./assets/connected-devices-sms-selection.png').default}
+    src={require('./assets/portal-connected-devices-open-sms-console.png').default}
     alt=""
   />
 </details>
@@ -58,7 +58,7 @@ To open a device's SMS console, select its message icon.
 <details className="custom-details-example">
   <summary>From Device Details</summary>
   <img
-    src={require('./assets/device-details-sms-console.png').default}
+    src={require('./assets/portal-device-details-open-sms-console.png').default}
     alt=""
   />
 </details>
@@ -66,7 +66,7 @@ To open a device's SMS console, select its message icon.
 <details className="custom-details-troubleshooting">
   <summary>Show the Device SMS console</summary>
   <img
-    src={require('./assets/device-sms-console.png').default}
+    src={require('./assets/portal-device-sms-console.png').default}
     style={{width:565}}
     alt=""
   />
@@ -75,7 +75,7 @@ To open a device's SMS console, select its message icon.
 ### Send bulk SMS to multiple devices
 
 <img
-  src={require('./assets/sms-bulk-send.png').default}
+  src={require('./assets/portal-connected-devices-sms-bulk-send.png').default}
   alt=""
 />
 

@@ -61,14 +61,14 @@ Optionally, you can provide a secret key to prevent unauthorized access.
   Select **Configure Webhook**.  
 
   <img
-    src={require('./assets/sms-interface-configure-webhook.png').default}
+    src={require('./assets/portal-service-policies-sms-interface-configure-webhook.png').default}
     alt=""
   />
 
   Provide the URL, optional secret key, and select **Add Webhook**.  
 
   <img
-    src={require('./assets/sms-interface-add-webhook.png').default}
+    src={require('./assets/portal-service-policies-sms-interface-add-webhook.png').default}
     alt=""
   />
 </details>
@@ -80,7 +80,7 @@ When selecting **SMPP** as your **SMS Interface**, you are provided a **System I
 <details className="custom-details-troubleshooting">
   <summary>Show where this happens in the Portal</summary>
   <img
-    src={require('./assets/device-policies-sms-interface-smpp.png').default}
+    src={require('./assets/portal-service-policies-sms-interface-smpp.png').default}
     alt=""
   />
 </details>
@@ -166,8 +166,8 @@ The devices you selected are assigned to their new policy, and you should see a 
 <details className="custom-details-example">
   <summary>Show an example</summary>
   <img
-    src={require('./assets/bulk-policy-change.png').default}
-    style={{width:900}}
+    src={require('./assets/portal-connected-devies-bulk-policy-change.png').default}
+    style={{ width: 900 }}
     alt=""
   />
 </details>
@@ -197,8 +197,8 @@ Once you have chosen multiple devices, select **Reset**.
 <details className="custom-details-troubleshooting">
   <summary>Show where to confirm the changes</summary>
   <img
-    src={require('./assets/connected-devices-bulk-reset.png').default}
-    style={{width:900}}
+    src={require('./assets/portal-connected-devices-bulk-reset.png').default}
+    style={{ width: 900 }}
     alt=""
   />
 </details>

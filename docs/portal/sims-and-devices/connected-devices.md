@@ -202,7 +202,7 @@ Select **Device** and then one of the actions:
 <details className="custom-details-troubleshooting">
   <summary>Show where this happens in the Portal</summary>
   <img
-    src={require('./assets/bulk-enable-disable.png').default}
+    src={require('./assets/portal-connected-devices-bulk-enable-disable.png').default}
     alt=""
   />
 </details>
@@ -219,12 +219,12 @@ You can reset a device's connectivity by selecting its **Reset connectivity** ic
 <details className="custom-details-troubleshooting">
   <summary>Show where this happens in the Portal</summary>
   <img
-    src={require('./assets/connected-devices-reset-connectivity.png').default}
+    src={require('./assets/portal-connected-devices-reset-connectivity.png').default}
     style={{ width: 900 }}
     alt=""
   />
   <img
-    src={require('./assets/device-details-reset-connectivity.png').default}
+    src={require('./assets/portal-device-details-reset-connectivity.png').default}
     style={{ width: 325 }}
     alt=""
   />

@@ -37,7 +37,7 @@ Then, select the **Send Invite** button.
 <details className="custom-details-example">
   <summary>Show an example</summary>
     <img
-        src={require('./assets/org-invite-a-colleague.png').default}
+        src={require('./assets/portal-organization-employees-invite.png').default}
         alt=""
     />
 </details>
