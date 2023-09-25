@@ -203,6 +203,109 @@ const sidebars = {
     },
     {
       type: "category",
+      label: "Developer resources",
+      items: [
+        {
+          type: "category",
+          label: "REST API",
+          link: {
+            type: "doc",
+            id: "rest/index",
+          },
+          items: [
+            {
+              type: "doc",
+              label: "Overview",
+              id: "rest/index",
+            },
+            "rest/authentication",
+            "rest/sms-operations",
+            {
+              type: "link",
+              label: "API reference",
+              href: "https://cdn.emnify.net/api/doc/index.html",
+            },
+          ],
+        },
+        {
+          type: "category",
+          label: "GraphQL API",
+          link: {
+            type: "doc",
+            id: "graphql/preview",
+          },
+          items: [
+            {
+              type: "doc",
+              label: "Preview the GraphQL API",
+              id: "graphql/preview",
+            },
+            "graphql/graphiql-ide",
+          ],
+        },
+        {
+          type: "category",
+          label: "SDKs",
+          link: {
+            type: "doc",
+            id: "sdks/index",
+          },
+          items: [
+            {
+              type: "doc",
+              label: "Overview",
+              id: "sdks/index",
+            },
+            "sdks/concepts",
+            {
+              type: "category",
+              label: "Python",
+              link: {
+                type: "doc",
+                id: "sdks/python/quickstart",
+              },
+              items: [
+                {
+                  type: "doc",
+                  label: "Getting started",
+                  id: "sdks/python/quickstart",
+                },
+                "sdks/python/examples",
+                {
+                  type: "link",
+                  label: "API Reference",
+                  href: "https://emnify.github.io/emnify-sdk-python/autoapi/index.html",
+                },
+              ],
+            },
+            {
+              type: "category",
+              label: "Java",
+              link: {
+                type: "doc",
+                id: "sdks/java/quickstart",
+              },
+              items: [
+                {
+                  type: "doc",
+                  label: "Getting started",
+                  id: "sdks/java/quickstart",
+                },
+                "sdks/java/examples",
+                {
+                  type: "link",
+                  label: "API Reference",
+                  href: "https://emnify.github.io/emnify-sdk-java/",
+                },
+              ],
+            },
+            "sdks/support",
+          ],
+        },
+      ],
+    },
+    {
+      type: "category",
       label: "How-to guides",
       link: {
         type: "doc",
@@ -271,105 +374,6 @@ const sidebars = {
     },
     "glossary",
     "support",
-  ],
-  devResourcesSidebar: [
-    {
-      type: "category",
-      label: "REST API",
-      link: {
-        type: "doc",
-        id: "rest/index",
-      },
-      items: [
-        {
-          type: "doc",
-          label: "Overview",
-          id: "rest/index",
-        },
-        "rest/authentication",
-        "rest/sms-operations",
-        {
-          type: "link",
-          label: "API reference",
-          href: "https://cdn.emnify.net/api/doc/index.html",
-        },
-      ],
-    },
-    {
-      type: "category",
-      label: "GraphQL API",
-      link: {
-        type: "doc",
-        id: "graphql/preview",
-      },
-      items: [
-        {
-          type: "doc",
-          label: "Preview the GraphQL API",
-          id: "graphql/preview",
-        },
-        "graphql/graphiql-ide",
-      ],
-    },
-    {
-      type: "category",
-      label: "SDKs",
-      link: {
-        type: "doc",
-        id: "sdks/index",
-      },
-      items: [
-        {
-          type: "doc",
-          label: "Overview",
-          id: "sdks/index",
-        },
-        "sdks/concepts",
-        {
-          type: "category",
-          label: "Python",
-          link: {
-            type: "doc",
-            id: "sdks/python/quickstart",
-          },
-          items: [
-            {
-              type: "doc",
-              label: "Getting started",
-              id: "sdks/python/quickstart",
-            },
-            "sdks/python/examples",
-            {
-              type: "link",
-              label: "API Reference",
-              href: "https://emnify.github.io/emnify-sdk-python/autoapi/index.html",
-            },
-          ],
-        },
-        {
-          type: "category",
-          label: "Java",
-          link: {
-            type: "doc",
-            id: "sdks/java/quickstart",
-          },
-          items: [
-            {
-              type: "doc",
-              label: "Getting started",
-              id: "sdks/java/quickstart",
-            },
-            "sdks/java/examples",
-            {
-              type: "link",
-              label: "API Reference",
-              href: "https://emnify.github.io/emnify-sdk-java/",
-            },
-          ],
-        },
-        "sdks/support",
-      ],
-    },
   ],
 };
 

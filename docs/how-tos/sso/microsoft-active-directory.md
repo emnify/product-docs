@@ -128,12 +128,6 @@ Navigate to **Overview** in the sidebar and copy the **Application (client) I
 
 [Log in to your emnify account](https://portal.emnify.com/sign/), go to Organization Settings (building icon) in the top-level navigation, and click [**Single Sign-On**](https://portal.emnify.com/organisation-settings/federation).
 
-<img
-  src={require('./assets/portal-organization-settings-sso.png').default}
-  alt="Portal screenshot showing the Organization settings dropdown menu. Menu items from top to bottom, Organization Data, Employees, Subscription, Billing, Single Sign-On."
-  style={{ width: 358 }}
-/>
-
 If you need SSO enabled for your account, contact support by selecting **Upgrade**.
 Otherwise, click **Add** under the Microsoft SSO provider.
 

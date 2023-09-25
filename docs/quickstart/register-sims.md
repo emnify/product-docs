@@ -49,12 +49,6 @@ For more information about locating your BIC, see [I cannot register my SIM card
 1. Enter the **BIC1** for individual SIMs or the **BIC2** for batches.
 1. After confirming your BIC is correct, select **Register SIM card**.
 
-<img
-  src={require('./assets/sim-enter-bic1-register-sim-card.png').default}
-  alt=""
-  style={{ width: 370 }}
-/>
-
 Once the SIM is registered, you can assign it to an existing device or create a new device.
 
 :::tip
@@ -71,29 +65,8 @@ You can create a new device for the newly registered SIM while still in the SIM 
   <summary>Step-by-step instructions</summary>
 
   1. After your SIM is registered, select **Create device**.
-
-  <img
-    src={require('./assets/sim-registered-create-device.png').default}
-    alt=""
-    style={{ width: 575 }}
-  />
-
   2. In **Create a new device**, replace **Add Device name** with an appropriate name for the new device and assign a **Service policy** and **Coverage policy**.
-
-  <img
-    src={require('./assets/sim-create-new-device.png').default}
-    alt=""
-    style={{ width: 475 }}
-  />
-
   3. Inspect your choices for device name and tags, then select **Create device**.
-
-  <img
-    src={require('./assets/sim-create-new-device-with-name-tags.png').default}
-    alt=""
-    style={{ width: 475 }}
-  />
-
   4. If you plan on using your device right away, select **Activate**. 
   Otherwise, select **Leave disabled**.
 
@@ -101,18 +74,6 @@ You can create a new device for the newly registered SIM while still in the SIM 
   A monthly cost is charged for each connected device.
   :::
 
-  <img
-    src={require('./assets/sim-create-and-activate.png').default}
-    alt=""
-    style={{ width: 475 }}
-  />
-
   5. Once created, your device should be ready to go online if it's [configured with the correct APN](/apn-configuration) and data roaming is enabled.
-
-  <img
-    src={require('./assets/sim-apn-setup.png').default}
-    alt=""
-    style={{ width: 610 }}
-  />
 
 </details>

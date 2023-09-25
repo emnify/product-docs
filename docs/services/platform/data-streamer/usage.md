@@ -26,11 +26,6 @@ Then, navigate to the [**Data Streams**](https://portal.emnify.com/integrations#
 
 If there are no data streams configured, the [**Data Streams**](https://portal.emnify.com/integrations#data-streams) panel displays all available [connection types](/multicloud-data-streamer/connection-types) as tiles.
 
-<img
-  src={require('./assets/portal-integrations-data-streams-panel.png').default}
-  alt=""
-/>
-
 If you already have a data stream configured, the panel displays all existing streams, ordered by creation date (newest on the top).
 This list view can be used to gain an overview of the current states of different data streams.
 
@@ -54,12 +49,6 @@ The **Destination** configuration varies depending on the connection type.
 ### Create data streams
 
 When no configured data streams are available, click **Add** on the preferred connection type tile.
-
-<img
-  src={require('./assets/portal-integrations-data-streams-add-buttons.png').default}
-  alt=""
-/>
-
 Otherwise, click **Add New Stream** at the top of the existing [**Data Streams**](https://portal.emnify.com/integrations#data-streams) list.
 This shows the connection type tiles. You can choose your preferred connection type and click **Add**.
 

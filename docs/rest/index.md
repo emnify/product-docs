@@ -1,6 +1,5 @@
 ---
 description: Introduce the OpenAPI structure and code samples
-displayed_sidebar: devResourcesSidebar
 last_update: 
   date: 11-02-2021
 pagination_next: rest/authentication

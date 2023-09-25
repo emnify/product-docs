@@ -1,6 +1,5 @@
 ---
 description: Retrieve your authentication token 
-displayed_sidebar: devResourcesSidebar
 last_update: 
   date: 11-04-2021
 ---

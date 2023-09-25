@@ -43,24 +43,6 @@ This helps facilitate requirements for supporting fundamental differences in the
 - Workspace users see only the IoT assets they need to manage.
 - Administrators manage only the users in their business unit.
 
-## Workspaces UI
-
-### No workspaces present
-
-<img
-  src={require('./assets/workspaces-create.png').default}
-  style={{ width: 300 }}
-  alt=""
-/>
-
-### Multiple workspaces created
-
-<img
-  src={require('./assets/workspaces-created.png').default}
-  style={{ width: 300 }}
-  alt=""
-/>
-
 ## Available guides
 
 The following guides offer step-by-step guidance for configuring Workspaces for your organization:

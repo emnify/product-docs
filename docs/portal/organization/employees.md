@@ -28,14 +28,6 @@ The paged list of employees shows the following information for each employee:
 | **Activate** or **Suspend** button     | For activating/suspending the employee's account.  |
 | **Trash bin** icon  | For deleting the employee's account.  |
 
-<details className="custom-details-example">
-  <summary>Show an example</summary>
-    <img
-        src={require('./assets/org-user-list.png').default}
-        alt=""
-    />
-</details>
-
 ## Add a new employee
 
 Select the **Invite** button.
