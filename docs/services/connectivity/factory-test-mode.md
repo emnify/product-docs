@@ -6,7 +6,7 @@ slug: /services/factory-test-mode
 
 # Factory test mode
 
-The factory test mode (FTM) feature allows you to test SIM cards prior to their deployment in a production environment.
+The factory test mode (FTM) feature allows you to test SIM cards before deploying to a production environment.
 SIM cards in FTM provide 100 KB of data usage and 10 SMS MT/MO free of charge.
 
 In this state, you won't be charged the monthly SIM hosting fees and the data consumed won't affect the pooled allowance.
@@ -18,18 +18,18 @@ FTM is only available for customers with the **Plus Package** or **Pro Package**
 ## Available networks
 
 You can use FTM for networks in the assigned coverage policy.
-Please be sure that the networks where you are planning to use this feature is part of an activated coverage area.
+Please be sure that the networks where you are planning to use this feature are part of an activated coverage area.
 
 ## Limits
 
-SIMs in FTM are allowed to consume 100 KB of data and 10 SMS (either in its totality or a combination of SMS MT or MO) free of charge for testing purposes.
+SIMs in FTM can consume 100 KB of data and 10 SMS (either in its totality or a combination of SMS MT or MO) for testing purposes.
 
 SIMs in FTM change to the **Activated** state in any of the following scenarios:
 
 - After the consumption of the allowed data/SMS limit in FTM.  
 _Note: the tenth SMS executes the SIM activation._
-- SIM cards that never reached any threshold (either 10 SMS or 100 KB of data), but are in FTM longer than 180 days.
-- If the status of the device with the **Factory test** status is altered.
+- SIM cards that never reached any threshold (either 10 SMS or 100 KB of data) but are in FTM longer than 180 days.
+- If the status of the device in the **Factory test** state is altered.
 - Running a reset connectivity.
 
 ## Patch a SIM to FTM
