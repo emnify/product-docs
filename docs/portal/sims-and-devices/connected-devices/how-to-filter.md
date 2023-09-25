@@ -49,6 +49,9 @@ However, the filters reset if you go to another page in the Portal.
 
 ## Wildcard filters
 
+You can also use character matching with an asterisk `*`.
+This is especially useful if a term has multiple spellings or you're unsure of the exact value.
+
 For example, if you have two devices named `Phase modem` and `My iPhone`, filtering for `ph` or `ph*e` shows both devices in the results.
 Another example is filtering names using `organi*ation` shows all results regardless of whether the device name uses American (organization) or British (organisation) spelling.
 
