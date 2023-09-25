@@ -1,6 +1,5 @@
 ---
 description: Perform SMS related operations with the API 
-displayed_sidebar: devResourcesSidebar
 last_update: 
   date: 11-04-2021
 ---

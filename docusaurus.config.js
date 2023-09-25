@@ -119,20 +119,6 @@ const config = {
           href: "/",
           src: "img/logo-word-blue-295x80.png",
         },
-        items: [
-          {
-            type: "docSidebar",
-            position: "left",
-            sidebarId: "mainDocsSidebar",
-            label: "Home",
-          },
-          {
-            type: "docSidebar",
-            position: "left",
-            sidebarId: "devResourcesSidebar",
-            label: "Developer Resources",
-          },
-        ],
       },
       docs: {
         sidebar: {
