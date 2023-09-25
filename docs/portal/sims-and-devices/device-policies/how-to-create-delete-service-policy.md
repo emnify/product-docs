@@ -1,6 +1,6 @@
 ---
 description: Create a new service policy on the emnify Portal
-slug: /portal/device-policies/how-to-create-delete-policy
+slug: /portal/device-policies/how-to-create-delete--policy
 ---
 
 # How to create a new service policy
