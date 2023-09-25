@@ -50,11 +50,6 @@ Once this expires, you'll need to [choose a new package](https://portal.emnify.c
 :::tip
 Your current balance and other trial details are available in the emnify Portal.
 In the **Organization Settings**, select [**Subscription**](https://portal.emnify.com/organisation-settings/subscription).
-
-<img
-  src={require('./assets/portal-nav-organization-settings-subscription.png').default}
-  alt=""
-/>
 :::
 
 ### Supported features

@@ -48,20 +48,6 @@ The DNS settings can be changed in the [emnify Portal](https://portal.emnify.com
 Go to [**Device Policies**](https://portal.emnify.com/device-policies) and click **New service policy**.
 Then, select the **More options** tab to find the **Custom DNS** section.
 
-<img
-  src={require('./assets/portal-configure-custom-dns.png').default}
-  alt=""
-  style={{ width: 679 }}
-/>
-
----
-
-<img
-  src={require('./assets/portal-add-custom-dns.png').default}
-  alt=""
-  style={{ width: 679 }}
-/>
-
 <!-- TODO: Recreate dns_setting.png (Custom DNS setting configuration) -->
 
 Utilizing a private DNS server which isn't reachable via the public Internet requires to set up a private network with the machine or a network where the private DNS server is located.

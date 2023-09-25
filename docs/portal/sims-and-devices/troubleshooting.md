@@ -40,27 +40,6 @@ If it's present and the active time (shown in hh:mm:ss format) increases with ea
 The **Usage** column under **Device Details** displays a chart if any usage is present for the given time period, which defaults to the **Last Hour**.
 The absence of data usage or spikes in data usage could indicate abnormal behavior.
 
-<details className="custom-details-example">
-  <summary>Show an example</summary>
-
-  In this case, no data was sent or received during the last hour.
-
-  <img
-    src={require('./assets/usage-data-last-hour.png').default}
-    style={{width:335}}
-    alt=""
-  />
-
-  After selecting the **Current Month** view, you can see that this device hasn't sent or received data for several days.
-
-  <img
-    src={require('./assets/usage-data-current-month.png').default}
-    style={{width:335}}
-    alt=""
-  />
-
-</details>
-
 ## Events
 
 The event log often contains information that can be used to determine what went wrong.
