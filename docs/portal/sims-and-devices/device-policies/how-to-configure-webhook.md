@@ -7,14 +7,14 @@ slug: /portal/device-policies/how-to-configure-webhook
 
  Select **Configure Webhook**.  
 
-  <img
-    src={require('./../assets/sms-interface-configure-webhook.png').default}
+<img
+  src={require('./../assets/portal-service-policies-sms-interface-configure-webhook.png').default}
     alt=""
-  />
+/>
 
   Provide the URL, optional secret key, and select **Add Webhook**.  
 
-  <img
-    src={require('./../assets/sms-interface-add-webhook.png').default}
+<img
+    src={require('./../assets/portal-service-policies-sms-interface-add-webhook.png').default}
     alt=""
-  />
+/>
