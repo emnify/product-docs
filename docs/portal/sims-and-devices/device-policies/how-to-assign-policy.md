@@ -30,7 +30,7 @@ The devices you selected are assigned to their new policy, and you should see a 
 <details className="custom-details-example">
   <summary>Show an example</summary>
   <img
-    src={require('./../assets/bulk-policy-change.png').default}
+    src={require('./../assets/portal-connected-devies-bulk-policy-change.png').default}
     style={{width:900}}
     alt=""
   />
