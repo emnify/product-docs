@@ -27,9 +27,12 @@ This enhances latency and data stability, ensuring that data remains within the 
 - **Cloud Access Security Broker (CASB):**
   emnify offers centralized policy definition for devices, including networks that can be accessed and authorized IP addresses for remote device access. All configurations are managed through the central platform and applied wherever the device is.
 
+
+## Security features
+
 The following sections will delve into some of the security features offered by emnify.
 
-## DNS
+### DNS
 
 When a device establishes a connection, it uses a Domain Name Service (DNS) server to resolve a hostname to an IP address for data transmission.
 For example, a hostname like `iot.example.com` is mapped to an IP address like `192.0.2.1`.
@@ -51,7 +54,7 @@ Utilizing a private DNS server not accessible via the public internet requires e
 This can be accomplished using Cloud Connect through Amazon Transit Gateway or IPsec.
 A tutorial on how to set up a DNS firewall based on a private DNS using Amazon Route 53 is available [here](https://www.emnify.com/en/developer-hub/dns-filtering).
 
-## IMEI lock
+### IMEI lock
 
 Device manufacturers often face issues related to SIM card theft, as pluggable SIM cards can be removed from a device and then used to gain free internet access.
 The [IMEI lock](/glossary#imei-lock)  feature prevents the use of SIM card in any other device by binding the SIM to a specific [IMEI](/glossary#imei) (International Mobile Equipment Identity), which serves as a unique device identifier.
