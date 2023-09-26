@@ -16,50 +16,48 @@ emnify uses a SASE approach to simplify securing devices—using several service
 ![IoT security threats](assets/security-threats.png)
 
 Secure Access Service Edge ([SASE](/glossary#sase)) introduces a new architecture where networking and security functions are bundled in a cloud-delivered service.
-You can apply the same security standards across all your devices independent of the location.
-Moreover, you can integrate security features in your solutions right from the beginning.
+This approach allows you to apply consistent security standards to all your devices independent of the location.
+Additionally, it enables the integration of security features right from the start.
 
-Some of the features that [SASE](/glossary#sase) for IoT architecture includes are as follows:
+Key features of [SASE](/glossary#sase) for IoT architecture includes are:
 
-- Dynamic Data Routing with Software-Defined Wide Area Network (SD-WAN)  
-emnify utilizes a SD-WAN to route data to the closest cloud region using the [Regional Breakout](iot-cloud-communication-platform#regional-breakout) concept.
-In this way, latency and data stability is improved, and the end customer can be sure that data doesn't leave the continent and jurisdiction.
-- Cloud Access Security Broker (CASB)  
-emnify allows centrally defining policies for the devices such as: networks that can be accessed, allowed IP addresses through which authorized users can remotely access devices.
-All configuration is done in the central platform and applied wherever the device is.
+- **Dynamic Data Routing with Software-Defined Wide Area Network (SD-WAN):**  
+  emnify utilizes a SD-WAN to route data to the closest cloud region using the [Regional Breakout](iot-cloud-communication-platform#regional-breakout) concept.
+This enhances latency and data stability, ensuring that data remains within the designated continent and jurisdiction.
+- **Cloud Access Security Broker (CASB):**
+  emnify offers centralized policy definition for devices, including networks that can be accessed and authorized IP addresses for remote device access. All configurations are managed through the central platform and applied wherever the device is.
 
-The following sections discuss some of the security features offered by emnify.
+The following sections will delve into some of the security features offered by emnify.
 
 ## DNS
 
-When a device establishes a connection, it uses a Domain Name Service (DNS) server to resolve a hostname to an IP address to which it can send data.
-For example, a hostname such as `iot.example.com` is mapped to an IP address like `192.0.2.1`.
+When a device establishes a connection, it uses a Domain Name Service (DNS) server to resolve a hostname to an IP address for data transmission.
+For example, a hostname like `iot.example.com` is mapped to an IP address like `192.0.2.1`.
 
-Cellular providers typically provide a DNS service.
-By default, emnify routes all DNS queries over Google’s public DNS `8.8.8.8`.
+Cellular providers typically provide DNS services, and by default, emnify routes all DNS queries over Google’s public DNS `8.8.8.8`.
 
-For some devices and modules, it's possible to configure the DNS service.
-For example, Quectel uses the `AT+QIDNSCFG` command, SIMCom `AT+CDNSCFG` command.
-This is useful to be able to use your own or private DNS servers to secure and have better control over the solution.
+Some devices and modules allow you to configure the DNS service.
+For example, Quectel uses the `AT+QIDNSCFG` command, while SIMCom uses the `AT+CDNSCFG` command.
+Configuring thr DNS service in this way is beneficial for using your own or private DNS servers, enhancing security and control.
 
-Customers can also configure to use their own DNS, no matter if it's a public or a private one.
-The DNS settings can be changed in the [emnify Portal](https://portal.emnify.com/).
-Go to [**Device Policies**](https://portal.emnify.com/device-policies) and click **New service policy**.
-Then, select the **More options** tab to find the **Custom DNS** section.
+Customers also have the option to configure their own DNS settings, no matter if it's a public or a private DNS server.
+These changes can be applied in the [emnify Portal](https://portal.emnify.com/).
+Navigate to [**Device Policies**](https://portal.emnify.com/device-policies) and click **New service policy**.
+Then, select the **More options** tab to locate the **Custom DNS** section.
 
 <!-- TODO: Recreate dns_setting.png (Custom DNS setting configuration) -->
 
-Utilizing a private DNS server which isn't reachable via the public Internet requires to set up a private network with the machine or a network where the private DNS server is located.
-This can be done using Cloud Connect either with Amazon Transit Gateway or IPsec.
+Utilizing a private DNS server not accessible via the public internet requires establishing a private network with the device or a network where the private DNS server is situated.
+This can be accomplished using Cloud Connect through Amazon Transit Gateway or IPsec.
 A tutorial on how to set up a DNS firewall based on a private DNS using Amazon Route 53 is available [here](https://www.emnify.com/en/developer-hub/dns-filtering).
 
 ## IMEI lock
 
-For device manufacturers, SIM card theft is an issue because pluggable SIM cards can be removed from a device and then used to gain free internet access.
-The [IMEI lock](/glossary#imei-lock)  feature prevents the use of SIM card in any other device by bounding the SIM to an IMEI.
-The [IMEI](/glossary#imei) is a unique device identifier.
-When the automatic IMEI lock is configured, the emnify platform binds the SIM cards to the first device that establishes a data connection.
-All future device connections are only allowed from this device.
+Device manufacturers often face issues related to SIM card theft, as pluggable SIM cards can be removed from a device and then used to gain free internet access.
+The [IMEI lock](/glossary#imei-lock)  feature prevents the use of SIM card in any other device by binding the SIM to a specific [IMEI](/glossary#imei) (International Mobile Equipment Identity), which serves as a unique device identifier.
+
+When the automatic IMEI lock is configured, the emnify platform associates the SIM cards to the first device that establishes a data connection.
+All future device connections are restricted to this specific device.
 
 ## Multi-factor authentication
 
