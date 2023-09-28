@@ -42,16 +42,9 @@ Some devices and modules allow you to configure the DNS service.
 For example, Quectel uses the `AT+QIDNSCFG` command, while SIMCom uses the `AT+CDNSCFG` command.
 Configuring thr DNS service in this way is beneficial for using your own or private DNS servers, enhancing security and control.
 
-Customers also have the option to configure their own DNS settings, no matter if it's a public or a private DNS server.
-These changes can be applied in the [emnify Portal](https://portal.emnify.com/).
-Navigate to [**Device Policies**](https://portal.emnify.com/device-policies) and click **New service policy**.
-Then, select the **More options** tab to locate the **Custom DNS** section.
+See this [guide for how to configure the DNS settings of a public or private DNS server](/services/security/how-to-configure-dns-settings).
 
 <!-- TODO: Recreate dns_setting.png (Custom DNS setting configuration) -->
-
-Utilizing a private DNS server not accessible via the public internet requires establishing a private network with the device or a network where the private DNS server is situated.
-This can be accomplished using Cloud Connect through Amazon Transit Gateway or IPsec.
-A tutorial on how to set up a DNS firewall based on a private DNS using Amazon Route 53 is available [here](https://www.emnify.com/en/developer-hub/dns-filtering).
 
 ### IMEI lock
 
