@@ -40,7 +40,7 @@ Cellular providers typically provide DNS services, and by default, emnify routes
 
 Some devices and modules allow you to configure the DNS service.
 For example, Quectel uses the `AT+QIDNSCFG` command, while SIMCom uses the `AT+CDNSCFG` command.
-Configuring thr DNS service in this way is beneficial for using your own or private DNS servers, enhancing security and control.
+Configuring the DNS service in this way is beneficial for using your own or private DNS servers, enhancing security and control.
 
 See this [guide for how to configure the DNS settings of a public or private DNS server](/services/security/how-to-configure-dns-settings).
 
