@@ -13,8 +13,6 @@ emnify uses a SASE approach to simplify securing devices—using several service
 
 ## Why does IoT require SASE?
 
-![IoT security threats](assets/security-threats.png)
-
 Secure Access Service Edge ([SASE](/glossary#sase)) introduces a new architecture where networking and security functions are bundled in a cloud-delivered service.
 This approach allows you to apply consistent security standards to all your devices independent of the location.
 Additionally, it enables the integration of security features right from the start.
@@ -27,6 +25,7 @@ This enhances latency and data stability, ensuring that data remains within the 
 - **Cloud Access Security Broker (CASB):**
   emnify offers centralized policy definition for devices, including networks that can be accessed and authorized IP addresses for remote device access. All configurations are managed through the central platform and applied wherever the device is.
 
+![IoT security threats](assets/security-threats.png)
 
 ## Security features
 
