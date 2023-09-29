@@ -24,7 +24,7 @@ These integrations offer valuable insights for IoT remote monitoring, anomaly de
 See the [Data Streamer documentation](/multicloud-data-streamer) to learn more about its benefits and how to get started.
 :::
 
-You can manage, inspect, create, update, delete data streams and filter for event data streams using the Portal. 
+You can manage, inspect, create, update, delete data streams and filter for event data streams using the Portal.
 Learn more in the [Data Streamer usage documentation](/multicloud-data-streamer/usage#data-streamer-in-the-portal).
 
 ## Event API
@@ -90,28 +90,8 @@ Here's where you can find event information in the Portal:
 |  Destination  |   Event information  |
 | --- | --- |
 | [**Dashboard**](https://portal.emnify.com/) | Overview of all event activity within your organization. <br/> <img src={require('./assets/portal-dashboard-events.png').default} alt="" /> |
-| [**Connected Devices**](https://portal.emnify.com/connected-devices)&nbsp;<span aria-label="and then">></span> **Details**&nbsp;<span aria-label="and then">></span> **Events** | List of triggered events for a particular device (also referred to as an "endpoint"). <br/> <img src={require('./assets/portal-connected-devices-details-events.png').default} alt="" /> |
+|  [**Connected Devices**](https://portal.emnify.com/connected-devices)&nbsp;<span aria-label="and then">></span> **Details**&nbsp;<span aria-label="and then">></span> **Events** | List of triggered events for a particular device (also referred to as an "endpoint"). <br/> <img src={require('./assets/portal-connected-devices-details-events.png').default} alt="" /> |
 | [**SIM Inventory**](https://portal.emnify.com/sim-inventory)&nbsp;<span aria-label="and then">></span> **Details**&nbsp;<span aria-label="and then">></span> **Events** | List of triggered events for a particular SIM card. <br/> <img src={require('./assets/portal-sim-inventory-details-events.png').default} alt="" /> |
-
-- [**Dashboard**](https://portal.emnify.com/): Overview of all event activity within your organization.
-<img
-  src={require('./assets/portal-dashboard-events.png').default}
-  alt=""
-/>
-
-- [**Connected Devices**](https://portal.emnify.com/connected-devices)&nbsp;<span aria-label="and then">></span> **Details**&nbsp;<span aria-label="and then">></span> **Events**: List of triggered events for a particular device (also referred to as an "endpoint").
-
-<img
-  src={require('./assets/portal-connected-devices-details-events.png').default}
-  alt=""
-/>
-
-- [**SIM Inventory**](https://portal.emnify.com/sim-inventory)&nbsp;<span aria-label="and then">></span> **Details**&nbsp;<span aria-label="and then">></span> **Events**: List of triggered events for a particular SIM card.
-
-<img
-  src={require('./assets/portal-sim-inventory-details-events.png').default}
-  alt=""
-/>
 
 :::info
 Any events triggered in the [Portal](https://portal.emnify.com/) shows **API** as the [event source](/system-events#event-source).
@@ -121,16 +101,14 @@ Any events triggered in the [Portal](https://portal.emnify.com/) shows **API** a
 
 No matter where you view events in the Portal, you'll have access to the following information for each event:
 
-- **Severity**: The [event severity](/system-events#event-severity).
-- **Date**: When the event was triggered. By default, the Portal shows the relative date (for example, "a day ago," "15 days ago," "a month ago").
-Pressing the clock icon shows an absolute date value in the `MMMM dd, yyyy hh:mm a` format.
-- **Event Source**: Which [system triggered the event](/system-events#event-source).
-- **Event Type**: [Name of the triggered event](/system-events/event-types) (the `description` value in the [Event Type Object](https://cdn.emnify.net/api/doc/event.html#event-type-object)).
-This field also indicates the network generation ([4G](https://www.emnify.com/iot-glossary/4g), [5G](https://www.emnify.com/iot-glossary/5g), etc.) for specific events, like [PDP context lifecycles](/system-events/  event-types#data-connection-lifecycle).
-- **Device**: Name of the device impacted by the event (the `name` value from the [Endpoint Object](https://cdn.emnify.net/api/doc/event.html#endpoint-object)).
-This name often links to the device's entry on the [**Connected Devices**](https://portal.emnify.com/connected-devices) page of the emnify Portal.
-- **Operator**: Which [Mobile Network Operator (MNO)](https://www.emnify.com/iot-glossary/mno) the device is currently roaming on (for example, Vodafone, AT&T).
-Only listed for relevant network events.
-- **Country**: The country where the MNO listed in the `Operator` field is providing the cellular service.
-- **ID**: A generated unique identifier for the event.
-- **Description**: What happened, why (in some cases), and any additional details associated with the event type.
+| Event type | Information |
+| ----- | ----- |
+| **Severity** | The [event severity](/system-events#event-severity). |
+| **Date** | When the event was triggered. By default, the Portal shows the relative date (for example, "a day ago," "15 days ago," "a month ago"). <br/> Pressing the clock icon shows an absolute date value in the `MMMM dd, yyyy hh:mm a` format. |
+| **Event Source** | Which [system triggered the event](/system-events#event-source). |
+| **Event Type** | [Name of the triggered event](/system-events/event-types) (the `description` value in the [Event Type Object](https://cdn.emnify.net/api/doc/event.html#event-type-object)). <br/> This field also indicates the network generation ([4G](https://www.emnify.com/iot-glossary/4g), [5G](https://www.emnify.com/iot-glossary/5g), etc.) for specific events, like [PDP context lifecycles](/system-events/  event-types#data-connection-lifecycle). |
+| **Device** | Name of the device impacted by the event (the `name` value from the [Endpoint Object](https://cdn.emnify.net/api/doc/event.html#endpoint-object)). <br/> This name often links to the device's entry on the [**Connected Devices**](https://portal.emnify.com/connected-devices) page of the emnify Portal. |
+| **Operator** | Which [Mobile Network Operator (MNO)](https://www.emnify.com/iot-glossary/mno) the device is currently roaming on (for example, Vodafone, AT&T). <br/> Only listed for relevant network events. |
+| **Country** | The country where the MNO listed in the `Operator` field is providing the cellular service. |
+| **ID** | A generated unique identifier for the event. |
+| **Description** | What happened, why (in some cases), and any additional details associated with the event type. |
