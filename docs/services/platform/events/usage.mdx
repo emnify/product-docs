@@ -24,48 +24,8 @@ These integrations offer valuable insights for IoT remote monitoring, anomaly de
 See the [Data Streamer documentation](/multicloud-data-streamer) to learn more about its benefits and how to get started.
 :::
 
-### Manage event data streams in the Portal
-
-To manage your data streams, log in to your [emnify Portal](https://portal.emnify.com/) account.
-Then, navigate to the [**Data Streams**](https://portal.emnify.com/integrations#data-streams) section of the [**Integrations** page](https://portal.emnify.com/integrations).
-
-If there are no data streams configured, the **Data Streams** panel displays all available connection types as tiles.
-
-#### View and inspect configured data streams
-
-If you already have a data stream configured, the panel displays all existing streams, ordered by creation date (newest on the top).
-This list view can be used to gain an overview of the current states of different data streams.
-
-Data streams are marked as **Running** are properly operating.
-Failed streams exhibit an **Error** status.
-Paused streams are marked as **Paused**.
-
-<img
-  src={require('../assets/portal-integrations-data-streams-status.png').default}
-  alt=""
-/>
-
-The **Details** button allows you to inspect the configuration of the specific stream.
-
-:::info
-You can distinguish event data streams by checking if the **Stream Type** on a specific data stream is set to **Stream events**.
-:::
-
-#### Filter for event data streams
-
-The Data Streamer can apply filtering for event data streams based on event types.
-Under **Event Options**, you can choose to **Stream all events** or **Stream specific events only**.
-Selecting the latter displays a searchable dropdown listing all [event types](/system-events/event-types) available as filters.
-
-<img
-  src={require('../assets/portal-integrations-data-streams-details-events-filter.png').default}
-  alt=""
-/>
-
-:::tip
-You can also create, update, and delete data streams using the Portal.
+You can also manage, inspect, create, update, filter and delete data streams using the Portal.
 Learn more in the [Data Streamer usage documentation](/multicloud-data-streamer/usage#data-streamer-in-the-portal).
-:::
 
 ## Event API
 
