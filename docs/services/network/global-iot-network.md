@@ -30,12 +30,12 @@ The emnify IoT SIM and platform supports all devices and modules using the follo
   
 | Type  | Details                |
 | ----- | ---------------------- |
-| [2G](#2g-gsmgprsedge)  | GSM/GPRS/EDGE          |
-| [3G](#3g-umtswcdmahpsahsdpa)  | UMTS/WCDMA/HPSA/HSDPA  |
-| [4G](#4g-ltelte-alte-catxx)  | LTE/LTE-A/LTE-CATXX     |
-| [5G](#5g-new-radio)  | New Radio               |
-| [LTE-M](#lpwan-lte-mnb-iot)  | CAT-M1                 |
-| [NB-IoT](#lpwan-lte-mnb-iot)  | CAT-NB1, CAT-NB2       |
+| [2G](/services/global-iot-network/2g)  | GSM/GPRS/EDGE          |
+| [3G](/services/global-iot-network/3g)  | UMTS/WCDMA/HPSA/HSDPA  |
+| [4G](/services/global-iot-network/4g)  | LTE/LTE-A/LTE-CATXX     |
+| [5G](/services/global-iot-network/5g)  | New Radio               |
+| [LTE-M](/services/global-iot-network/lpwan)  | CAT-M1                 |
+| [NB-IoT](/services/global-iot-network/lpwan)  | CAT-NB1, CAT-NB2       |
 
 </div>
 
