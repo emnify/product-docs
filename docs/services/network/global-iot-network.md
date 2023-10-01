@@ -19,6 +19,7 @@ Even when IoT devices are primarily deployed at a single location and remain sta
 emnify uses an approach to aggregate the roaming footprint of multiple operators with the goal of providing access to every network worldwide.
 Mobile operators utilize roaming services in foreign countries to ensure their subscribers can stay connected when traveling.
 However, these operators often lack roaming agreements with all countries or may only have an agreement with only one network, which is suitable for roaming travelers but not ideal for devices that could be located anywhere within the country.
+
 emnify collaborates with multiple partner operators worldwide  to expand its network coverage at a commercially viable rate.
 The emnify [multi-IMSI applet](/services/global-iot-sim#multi-imsi-applet) enables devices to identify which roaming agreement with which operator is currently in use, ensuring transparent connectivity.
 
