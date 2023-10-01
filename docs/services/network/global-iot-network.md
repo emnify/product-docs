@@ -10,71 +10,85 @@ slug: /services/global-iot-network
 
 <!-- markdownlint-disable MD040 -->
 
-Even when IoT devices are more often only deployed at a single location and aren't moving, for a vendor selling to multiple countries it's important to have a global connectivity solution, so that there is no need to have different SIM cards in stock or have multiple contracts and data plans.
+Even when IoT devices are primarily deployed at a single location and remain stationary, it's essential for a vendor serving multiple countries to adopt a global connectivity solution. This approach eliminates the need to maintain different SIM cards in stock or manage multiple contracts and data plans.
 
 <!-- TODO: Find place for service_stack.png -->
 
 ## Mobile network aggregation
 
-emnify uses an approach to aggregate the roaming footprint of multiple operators with the goal of offering access to every network in the world.
-Mobile operators utilize roaming in foreign countries so their subscribers can stay connected when traveling.
-Often operators don't have roaming agreements with all countries or only have a roaming agreement for one network—which is sufficient for roaming travelers but not ideal for devices that could be anywhere in the country.
-emnify works with multiple partner operators across the globe to be able to offer more networks at a commercially viable rate.
-The emnify [multi-IMSI applet](/services/global-iot-sim#multi-imsi-applet) makes it completely transparent for the device to identify which roaming agreement of which operator is being utilized.
+emnify uses an approach to aggregate the roaming footprint of multiple operators with the goal of providing access to every network worldwide.
+Mobile operators utilize roaming services in foreign countries to ensure their subscribers can stay connected when traveling.
+However, these operators often lack roaming agreements with all countries or may only have an agreement with only one network, which is suitable for roaming travelers but not ideal for devices that could be located anywhere within the country.
+emnify collaborates with multiple partner operators worldwide  to expand its network coverage at a commercially viable rate.
+The emnify [multi-IMSI applet](/services/global-iot-sim#multi-imsi-applet) enables devices to identify which roaming agreement with which operator is currently in use, ensuring transparent connectivity.
 
 ## Radio access types
 
-The emnify IoT SIM and platform supports all devices and modules using the following radio access technologies
+The emnify IoT SIM and platform supports all devices and modules using the following radio access technologies:
 
-- [2G (GSM/GPRS/EDGE)](#2g-gsmgprsedge)
-- [3G (UMTS/WCDMA/HPSA/HSDPA)](#3g-umtswcdmahpsahsdpa)
-- [4G (LTE/LTE-A/LTE-CATXX)](#4g-ltelte-alte-catxx)
-- [5G (New Radio)](#5g-new-radio)
-- [LTE-M (CAT-M1)](#lpwan-lte-mnb-iot)
-- [NB-IoT (CAT-NB1, CAT-NB2)](#lpwan-lte-mnb-iot)
+<div align="center">
+  
+| Type  | Details                |
+| ----- | ---------------------- |
+| [2G](#2g-gsmgprsedge)  | GSM/GPRS/EDGE          |
+| [3G](#3g-umtswcdmahpsahsdpa)  | UMTS/WCDMA/HPSA/HSDPA  |
+| [4G](#4g-ltelte-alte-catxx)  | LTE/LTE-A/LTE-CATXX     |
+| [5G](#5g-new-radio)  | New Radio               |
+| [LTE-M](#lpwan-lte-mnb-iot)  | CAT-M1                 |
+| [NB-IoT](#lpwan-lte-mnb-iot)  | CAT-NB1, CAT-NB2       |
 
-When a device wants to connect with any of these radio technologies, the network needs to support this technology as well as the device needs to support the network-specifc frequency band for this technology.
+</div>
+
+For a device to establish a connection with any of these radio technologies, two essential conditions must be met:
+
+1.  The network must support the specific radio technology.
+2.  The device must be compatible with the network-specific frequency band associated with this technology.
+
+These conditions are crucial for enabling seamless communication between devices and networks across various radio technologies.
 
 ### 2G (GSM/GPRS/EDGE)
 
-GSM/GPRS is still one of the most dominant IoT technologies. Although the throughput is limited (GPRS max. 120kbps, EDGE max. 1Mbps) it's more than sufficient for many IoT use cases. The modules are cheap (<10$) and the coverage is widely available throughout the world in more than 200 countries.
+GSM/GPRS remains one of the most prevalent IoT technologies.Despite its throughput ( with GPRS max. at 120kbps and EDGE at max. 1Mbps), it proves more than adequate for many IoT use cases.
+The affordability of modules (costing less than $10) and the widespread coverage available in over 200 countries contribute to its enduring popularity.
 
-GSM/GPRS isn't complicated to deploy for IoT use cases because there are only four frequency bands utilized by operators for GSM/GPRS worldwide.
+Deploying GSM/GPRS for IoT use cases is relatively straightforward because operators worldwide utilize only four frequency bands:
 
-In the Americas
+<div align="center">
+  
+|     | frequency band |
+| --- | --- |
+| in the Americas | - B2 (1900MHz) <br/> - B5 (850MHz) |
+| in the rest of world | - B3 (1800MHz) <br/> - B8 (900MHz) |
 
-- B2 (1900MHz)
-- B5 (850MHz)
+</div>
 
-In the rest of world
+A a result, module manufacturers offer dual-band modules that can be used either in Americas or Rest of World. Alternatively, quad-band modules are available for global deployment.
 
-- B3 (1800MHz)
-- B8 (900MHz)
-
-Therefore, module manufacturers offer dual-band modules that can be used either in Americas or Rest of World—or Quad-band modules that can be deployed globally.
-
-Nevertheless, GSM/GPRS is being phased out in several countries to free up frequency band for newer technologies.
+However, it's important to note that GSM/GPRS is gradually being phased out in several countries to make room for newer technologies.
 [More than 60 networks have discontinued or announced to discontinue GSM technology](https://www.emnify.com/en/resources/global-2g-phase-out).
 
 ### 3G (UMTS/WCDMA/HPSA/HSDPA)
 
-3G technologies like UMTS, WCDMA, HSDPA, HSUPA have been driven by the surge for more data speed.
-As an evolution of GSM, many parts of the GSM/GPRS core network and signaling are reused, where the most difference is in the radio part.
+3G technologies such as UMTS, WCDMA, HSDPA, and HSUPA have emerged in response to the growing demand for higher data speeds.
+These technologies build upon the foundation of GSM, with many components of the GSM/GPRS core network and signaling being reused, with the most significant differences occurring in the radio component.
 
-Like 2G, 3G modules aren't complicated to deploy, since there are only five different frequency bands utilized by operators worldwide (with exception of Japan and China).
-Most UMTS modules therefore can be deployed worldwide.
+Similar to 2G, deploying 3G modules is a relatively straightforward process since operators worldwide utilize only five different frequency bands (with the exception of Japan and China).
+This means that most UMTS modules can be deployed globally.
 
-- B1 (2100MHz) - main UMTS band in the world
-- B2 (1900MHz) - used in the Americas
-- B4 (1700MHz) - used in the Americas
-- B5 (850MHz) - Australia / the Americas
-- B8 (900MHz) - Europe
+The frequency bands used include:
 
-For Europe, a 900/2100 MHz dual-band module is required.
-For the Americas a 850/1900 MHz dual-band module is required.
+|  frequency band   |  |
+| --- | --- |
+| B1 (2100MHz) | the primary UMTS band worldwide | 
+| B2 (1900MHz) | used in the Americas |
+| B4 (1700MHz) | used in the Americas |
+| B5 (850MHz)  | used in Australia and the Americas |
+| B8 (900MHz) | used in Europe |
 
-3G/UMTS is also being phased out by several network operators to make room for newer technologies.
-See also the article on [GMS and UMTS networks that are being discontinued](https://www.emnify.com/en/resources/global-2g-phase-out)
+For deployment in Europe, a dual-band module supporting 900/2100 MHz is required, while for the Americas, a dual-band module supporting 850/1900 MHz is necessary.
+
+It's important to note that 3G/UMTS is also undergoing phase-out by several network operators to accommodate newer technologies.
+For more information, see the article on [GMS and UMTS networks that are being discontinued](https://www.emnify.com/en/resources/global-2g-phase-out).
 
 ### 4G (LTE/LTE-A/LTE-CATXX)
 
@@ -92,13 +106,15 @@ Therefore, most modules only support specific regions where the device can be de
 
 Some main LTE-bands are
 
-- B3 (1800 MHz) - Europe, Africa, APAC
-- B7 (2600 MHz) - used in the Americas, Europe, APAC
-- B20 (800 MHz) - used in Europe, Asia
-- B1 (2100 MHz) - Europe, Asia
-- B2 (1900 MHz) - the Americas
-- B4 (1700 MHz) - the Americas
-- B5 (850 MHz) - North America, APAC
+|  frequency band   |  |
+| --- | --- |
+| B3 (1800 MHz) | used in Europe, Africa and APAC | 
+| B7 (2600 MHz) | used in the Americas, Europe and APAC |
+| B20 (800 MHz) | used in Europe and Asia |
+| B1 (2100 MHz)  | used in Europe and Asia |
+|  B2 (1900 MHz) | used in the Americas |
+|  B4 (1700 MHz) | used in the Americas |
+| B5 (850 MHz) | used in North America and APAC |
 
 :::tip
 Validate the frequency bands utilized by the operators in your deployment countries before deciding on a module.
