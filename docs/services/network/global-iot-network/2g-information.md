@@ -5,7 +5,8 @@ slug: /services/global-iot-network/2g
 
 # 2G (GSM/GPRS/EDGE)
 
-GSM/GPRS remains one of the most prevalent IoT technologies.Despite its throughput ( with GPRS max. at 120kbps and EDGE at max. 1Mbps), it proves more than adequate for many IoT use cases.
+GSM/GPRS remains one of the most prevalent IoT technologies.
+Despite its throughput ( with GPRS max. at 120kbps and EDGE at max. 1Mbps), it proves more than adequate for many IoT use cases.
 The affordability of modules (costing less than $10) and the widespread coverage available in over 200 countries contribute to its enduring popularity.
 
 Deploying GSM/GPRS for IoT use cases is relatively straightforward because operators worldwide utilize only four frequency bands:
