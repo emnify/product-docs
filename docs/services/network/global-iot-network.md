@@ -17,6 +17,7 @@ Even when IoT devices are primarily deployed at a single location and remain sta
 ## Mobile network aggregation
 
 emnify uses an approach to aggregate the roaming footprint of multiple operators with the goal of providing access to every network worldwide.
+
 Mobile operators utilize roaming services in foreign countries to ensure their subscribers can stay connected when traveling.
 However, these operators often lack roaming agreements with all countries or may only have an agreement with only one network, which is suitable for roaming travelers but not ideal for devices that could be located anywhere within the country.
 
