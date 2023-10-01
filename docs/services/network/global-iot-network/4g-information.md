@@ -3,7 +3,7 @@ description: Network aggregation 4G
 slug: /services/global-iot-network/4g
 ---
 
-# 4G (LTE/LTE-A/LTE-CATXX)
+# 4G: LTE/LTE-A/LTE-CATXX
 
 LTE, short for Long-Term Evolution, is a 4G technology (another one would be WiMAX - which never succeeded).
 LTE has evolved over time, resulting in various LTE categories, including CAT-1, CAT-3, CAT-4, CAT-6, CAT-9, and CAT-12.
