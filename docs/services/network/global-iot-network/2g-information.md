@@ -3,7 +3,7 @@ description: Network aggregation 2G
 slug: /services/global-iot-network/2g
 ---
 
-# 2G (GSM/GPRS/EDGE)
+# 2G: GSM/GPRS/EDGE
 
 GSM/GPRS remains one of the most prevalent IoT technologies.
 Despite its throughput (with GPRS max. at 120kbps and EDGE at max. 1Mbps), it proves more than adequate for many IoT use cases.
