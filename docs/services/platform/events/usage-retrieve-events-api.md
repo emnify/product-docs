@@ -1,6 +1,6 @@
 ---
 description: xx
-slug: /system-events/usage-retrieve-events-api.md
+slug: /system-events/usage-retrieve-events-api
 ---
 
 # Retrieve events with the Event API
