@@ -4,7 +4,7 @@ slug: /services/global-iot-network/5g
 ---
 
 
-### 5G (New Radio)
+### 5G: New Radio
 
 5G is the next major technology standard following LTE, which targets three main applications areas:
 
