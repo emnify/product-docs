@@ -3,7 +3,7 @@ description: Network aggregation 3G
 slug: /services/global-iot-network/3g
 ---
 
-# 3G (UMTS/WCDMA/HPSA/HSDPA)
+# 3G: UMTS/WCDMA/HPSA/HSDPA
 
 3G technologies such as UMTS, WCDMA, HSDPA, and HSUPA have emerged in response to the growing demand for higher data speeds.
 These technologies build upon the foundation of GSM, with many components of the GSM/GPRS core network and signaling being reused, with the most significant differences occurring in the radio component.
