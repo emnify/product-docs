@@ -10,7 +10,7 @@ slug: /services/global-iot-network/5g
 
 1. Enhanced Mobile Broadband (eMBB)  
     - It offers faster throughput up to 1Gps+ and more capacity in a local areas.
-    - It utilizes millimeter-wave (MM wave) bands (5Ghz+) to archieve higher throughput.
+    - It utilizes millimeter-wave (MM wave) bands (5Ghz+) to achieve higher throughput.
 1. Massive Machine Type communication (mMTC)  
     - Designed for IoT applications with a multitude of devices in close proximity, requiring low-power communication. 
     - LTE-M and NB-IoT are often seen as decoupled from 5G but may eventually integrate with 5G mMTC.
