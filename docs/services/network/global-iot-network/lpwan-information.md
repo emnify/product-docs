@@ -6,7 +6,7 @@ slug: /services/global-iot-network/lpwan
 
 # LPWAN: LTE-M/NB-IoT
 
-Both NB-IoT (Narrowband IoT) and LTE-M (Long-Term Evolution for Machines) are integral components of 5G standardization, while leveraging LTE infrastructure.
+Both NB-IoT (NarrowBand IoT) and LTE-M (Long-Term Evolution for Machines) are integral components of 5G standardization, while leveraging LTE infrastructure.
 Both technologies have been specified to address the requirements for IoT use cases in terms of:
 
 | Requirements | Details |
@@ -54,7 +54,7 @@ The **Power Save Mode** has the following characteristics:
 - **Inaccessible in Downlink:** The device/module isn't reachable from the outside during PSM in the downlink.
 - **Wake-Up Capability:** The device can wake up the module and transmit data using methods such as pressing the power key, triggering an interrupt or pin).
 - **No Need For Reattachment:** After waking up, the device doesn't require reattachment or the reestablishment of a Packet Data Network (PDN) connection, unless it has moved to a different tracking area.
-- **Idle Mode Afer Wake-Up:** After the wake-up, the device remains in idle mode for a configurable time (timer T3324) to listen for downlink messages, such as firmware updates.
+- **Idle Mode After Wake-Up:** After the wake-up, the device remains in idle mode for a configurable time (timer T3324) to listen for downlink messages, such as firmware updates.
 - **Effective Time Calculation:** The actual duration the device spends in Power Save Mode is calculated as T3412 extended minus T3324.
 
 <!-- This is the "alt" text for a missing image: "PSM and the 3412 and T3324 timers" -->
@@ -102,7 +102,7 @@ Module vendors have also implemented module specific commands. For example, Quec
 
 How does eDRX work?  
 
-While PSM focses on uplink-centric use cases, eDRX aims to reduce the power consumption for IoT scenarios that involve receiving downlink information.
+While PSM focuses on uplink-centric use cases, eDRX aims to reduce the power consumption for IoT scenarios that involve receiving downlink information.
 Unlike regular smartphones, which don't continuously listen to the radio for incoming messages, IoT devices often use a technique called DRX (Discontinuous Reception).
 In DRX, they only wake up periodically, for instance, every 1.28 seconds or 2.56 seconds.
 
