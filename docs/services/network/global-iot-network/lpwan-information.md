@@ -108,7 +108,7 @@ In DRX, they only wake up periodically, for instance, every 1.28 seconds or 2.56
 
 eDRX extends this concept by allowing the configuration of custom intervals, ranging from 40 to 175 minutes, depending on what the visited network allows.
 
-![eDRX and the 3412 and T3324 timers](./assets/edrx.png)  
+![eDRX and the 3412 and T3324 timers](./../assets/edrx.png)  
 
 Roaming with eDRX  
 
