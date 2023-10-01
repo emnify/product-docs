@@ -1,8 +1,5 @@
 ---
-description: Network aggregation supporting all radio types
-last_update: 
-  date: 08-24-2021
-pagination_next: services/network/iot-cloud-communication-platform
+description: Network aggregation 2G
 slug: /services/global-iot-network/2g
 ---
 
