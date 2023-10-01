@@ -1,6 +1,6 @@
 ---
-description: Network aggregation 3G
-slug: /services/global-iot-network/3g
+description: Network aggregation 4G
+slug: /services/global-iot-network/4g
 ---
 
 # 4G (LTE/LTE-A/LTE-CATXX)
