@@ -15,6 +15,12 @@ In this state, you won't be charged the monthly SIM hosting fees and the data co
 FTM is only available for customers with the **Plus Package** or **Pro Package**.
 :::
 
+## Deploy devices from FTM
+
+A popular use case for FTM is automating deployments.
+You can store devices with the assigned SIMs in FTM free of charge.
+Then, the SIM is automatically activated once your customers use the quotas. There's no additional configuration required.
+
 ## Available networks
 
 You can use FTM for networks in the assigned coverage policy.
@@ -36,3 +42,7 @@ _Note: the tenth SMS executes the SIM activation._
 
 It isn't possible to enable FTM from the emnify Portal.
 For more information about patching SIM cards via the REST API, see [Factory Test Mode on the emnify System Documentation](https://cdn.emnify.net/api/doc/factory-test-mode.html).
+
+:::caution
+If you cancel or switch to a different package that doesn't support FTM when you have SIMs in the **Factory Test** status, those SIMs are activated to ensure reliability and coverage.
+:::
