@@ -86,3 +86,13 @@ On the **Data plan upgrade** page, you'll have an opportunity to confirm the fol
     - PayPal
 
 When finished, select **Save**.
+
+:::info
+Your new package is charged immediately in the next billing cycle.
+You'll be charged the total package price regardless of when you upgrade, as emnify doesn't offer partials.
+:::
+
+## Cancel your package
+
+You can cancel your package monthly, unless your contract specifies otherwise.
+To cancel your current package, contact the [emnify support team](/support).
