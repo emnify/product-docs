@@ -7,12 +7,13 @@ slug: /services/factory-test-mode
 # Factory test mode
 
 The factory test mode (FTM) feature allows you to test SIM cards before deploying to a production environment.
-SIM cards in FTM provide 100 KB of data usage and 10 SMS MT/MO free of charge.
+You can use SIMs in FTM up to defined data and SMS thresholds without incurring charges.
 
-In this state, you won't be charged the monthly SIM hosting fees and the data consumed won't affect the pooled allowance.
+In this state, you won't be charged the monthly SIM hosting fees, and the data consumed won't affect the pooled allowance.
 
 :::info
-FTM is only available for customers with the **Plus Package** or **Pro Package**.
+By default, FTM is only available for customers with the **Plus Package** or **Pro Package**.
+If you're on a different package but interested in FTM, contact [emnify support](/support).
 :::
 
 ## Deploy devices from FTM
@@ -28,13 +29,18 @@ Please be sure that the networks where you are planning to use this feature are 
 
 ## Limits
 
-SIMs in FTM can consume 100 KB of data and 10 SMS (either in its totality or a combination of SMS MT or MO) for testing purposes.
+The default thresholds for SIMs in FTM are 100 KB of data and 10 SMS (either in its totality or a combination of SMS MT or MO).
+These limits can be customized per organization.
+Once either threshold is crossed, the SIM automatically moves to the **Activated** state and accrues charges.
 
-SIMs in FTM change to the **Activated** state in any of the following scenarios:
+:::note
+The tenth SMS executes the SIM activation.
+:::
 
-- After the consumption of the allowed data/SMS limit in FTM.  
-_Note: the tenth SMS executes the SIM activation._
-- SIM cards that never reached any threshold (either 10 SMS or 100 KB of data) but are in FTM longer than 180 days.
+SIMs in FTM are also activated in any of the following scenarios:
+
+- SIM cards that never reached any threshold but are in FTM longer than the designated test period.
+By default, the test period is 180 days.
 - If the status of the device in the **Factory test** state is altered.
 - Running a reset connectivity.
 
@@ -44,5 +50,6 @@ It isn't possible to enable FTM from the emnify Portal.
 For more information about patching SIM cards via the REST API, see [Factory Test Mode on the emnify System Documentation](https://cdn.emnify.net/api/doc/factory-test-mode.html).
 
 :::caution
-If you cancel or switch to a different package that doesn't support FTM when you have SIMs in the **Factory Test** status, those SIMs are activated to ensure reliability and coverage.
+Suppose you cancel or switch to a different package that doesn't support FTM when SIMs are in the **Factory test** status.
+In that case, those SIMs are activated to ensure reliability and coverage.
 :::
