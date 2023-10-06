@@ -56,6 +56,11 @@ Assigning your SIM to a device is a necessary step for getting your device onlin
 We'd recommended activating the SIM and creating a connected device during registration.
 :::
 
+## Register SIMs with the emnify REST API
+
+The emnify REST API is an efficient approach, especially when dealing with a large number of devices and registering SIM cards in bulk.
+For step-by-step instructions, see [Register SIMs in the emnify System Documentation](https://cdn.emnify.net/api/doc/register-sims.html).
+
 ## Create a new device
 
 You can create a new device for the newly registered SIM while still in the SIM registration process.
