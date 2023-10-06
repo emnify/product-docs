@@ -89,7 +89,7 @@ When finished, select **Save**.
 
 :::info
 Your new package is charged immediately in the next billing cycle.
-You'll be charged the total package price regardless of when you upgrade, as emnify doesn't offer partials.
+You'll be charged the total package price regardless of when you upgrade, as emnify doesn't prorate.
 :::
 
 ## Cancel your package
