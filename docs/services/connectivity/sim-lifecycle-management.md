@@ -11,6 +11,16 @@ When selling connected devices, it's difficult to determine when devices are in 
 Using SIM cards that can't align with the device lifecycle incur unnecessary costs.
 emnify SIM cards don't incur any costs unless activated.
 
+After the registration, the SIMs move between the different states depending on your needs and requirements.
+
+<img
+  src={require('./assets/infographic-sim-lifecycle-states.png').default}
+  alt="Flow chart describing the SIM lifecycle management for emnify SIM cards. All SIMs start with 'SIM registration' then move to 'Issued.' By default, the next step is 'Activated'—but SIMs can also be patched to 'Factory Test' instead. After 'Factory Test' SIMs move to 'Activated' and from 'Activated' they can be 'Suspended' at any time."
+  style={{ height: 500 }}
+/>
+
+## SIM states
+
 The SIMs have five different states that can be configured via the [**SIM Inventory**](/portal/sim-inventory) in the emnify Portal or the [emnify SIM REST API](https://cdn.emnify.net/api/doc/swagger.html#/SIM):
 
 | State            | Description                                      |
