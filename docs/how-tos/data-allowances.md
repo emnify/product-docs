@@ -7,7 +7,7 @@ slug: /how-tos/data-allowances
 
 # Change the assigned data allowance
 
-Data allowances are managed within [coverage policies](/portal/device-policies#coverage-policies).
+Data plans and the associated allowances are managed within [coverage policies](/portal/device-policies#coverage-policies).
 
 With the **Pro Package**, you can manage as many data plans as you need.
 Those with a **Plus Package** can manage up to 4 data plans.
@@ -98,3 +98,7 @@ To change a coverage policy's data plan in the Portal, follow these steps:
 1. Go to [**Coverage Policies**](https://portal.emnify.com/device-policies).
 1. Find the coverage policy you want to update and click **Details**.
 1. Use the **Data Plan** dropdown to select a new data plan or use the toggles to adjust the **Coverage areas**.
+
+:::caution
+When a data plan includes active SIMs, it's added to your bill at the end of the month.
+:::
