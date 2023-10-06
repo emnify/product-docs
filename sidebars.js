@@ -123,6 +123,7 @@ const sidebars = {
       items: [
         "services/connectivity/global-iot-sim",
         "services/connectivity/sim-lifecycle-management",
+        "services/connectivity/factory-test-mode",
         "services/connectivity/sms",
       ],
     },
