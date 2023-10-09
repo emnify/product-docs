@@ -116,6 +116,10 @@ Creating multiple coverage policies lets you differentiate between device types 
 
 The **Data Plan** dropdown shows a list of data plan names with **Regional Pro** selected by default.
 
+:::info
+When a data plan includes active SIMs, it's added to your bill at the end of the month.
+:::
+
 ### Coverage areas
 
 The list of **Coverage areas** varies depending on which **Data Plan** you selected.
