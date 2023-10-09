@@ -3,6 +3,7 @@ description: Overview of the available emnify SIMs, including form factors, qual
 last_update: 
   date: 08-10-2023
 pagination_next: services/connectivity/sim-lifecycle-management
+pagination_prev: null
 slug: /services/global-iot-sim
 ---
 

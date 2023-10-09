@@ -1,7 +1,10 @@
 ---
+title: Python SDK examples
 description: Code samples showing how to use the emnify python SDK
 last_update: 
   date: 09-06-2023
+pagination_label: Python SDK examples
+sidebar_label: Examples
 slug: /sdks/python/examples
 ---
 

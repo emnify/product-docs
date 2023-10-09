@@ -3,6 +3,7 @@ description: Network aggregation supporting all radio types
 last_update: 
   date: 08-24-2021
 pagination_next: services/network/iot-cloud-communication-platform
+pagination_prev: null
 slug: /services/global-iot-network
 ---
 
