@@ -1,14 +1,15 @@
 name: Validate content with Vale
 
 on:
-  pull_request:
-    push:
+  push:
+    branches:
       - main
+  pull_request:
     branches:
       - main
 
 jobs:
-  lint-content:
+  run-vale:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
