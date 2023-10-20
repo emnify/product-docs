@@ -30,7 +30,6 @@ jobs:
         with:
           config: .markdownlint.jsonc
           files: './**/*.md*'
-          ignore: node_modules LICENSE.md
 
       - name: 🖌️ Prettier
         run: yarn prettier
