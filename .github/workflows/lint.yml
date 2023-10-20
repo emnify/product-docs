@@ -26,7 +26,11 @@ jobs:
         run: yarn eslint
 
       - name: 📝 markdownlint
-        run: yarn markdownlint
+        uses: articulate/actions-markdownlint@v1.1.0
+        with:
+          config: .markdownlint.jsonc
+          files: './**/*.md*'
+          ignore: node_modules LICENSE.md
 
       - name: 🖌️ Prettier
         run: yarn prettier
