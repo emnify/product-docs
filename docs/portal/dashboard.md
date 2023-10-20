@@ -3,6 +3,7 @@ description: The dashboard on the emnify Portal shows a summary of your usage fo
 last_update: 
   date: 09-07-2023
 pagination_next: portal/sims-and-devices/sim-inventory
+pagination_prev: null
 slug: /portal
 ---
 

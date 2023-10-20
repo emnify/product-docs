@@ -2,6 +2,7 @@
 description: Benefits of emnify's multicloud Data Streamer and how to get started
 last_update: 
   date: 12-31-2022
+pagination_label: Data Streamer
 pagination_next: services/platform/data-streamer/connection-types
 slug: /multicloud-data-streamer
 ---

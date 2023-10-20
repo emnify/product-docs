@@ -1,7 +1,10 @@
 ---
+title: Java SDK examples
 description: Code samples showing how to use the emnify Java SDK
 last_update: 
   date: 08-20-2021
+pagination_label: Java SDK examples
+sidebar_label: Examples
 slug: /sdks/java/examples
 ---
 

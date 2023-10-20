@@ -1,10 +1,10 @@
 ---
-title: Create a new workspace
 description: How to submit a request for a new workspace
 last_update: 
   date: 06-17-2023
 pagination_label: Create a new workspace
 pagination_next: how-tos/workspaces/link
+pagination_prev: null
 slug: /workspaces/create
 ---
 

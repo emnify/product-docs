@@ -11,21 +11,9 @@ const sidebars = {
         id: "quickstart/index",
       },
       items: [
-        {
-          type: "doc",
-          label: "Create an account",
-          id: "quickstart/index",
-        },
-        {
-          type: "doc",
-          label: "Order SIMs",
-          id: "quickstart/order-sims",
-        },
-        {
-          type: "doc",
-          label: "Register SIMs",
-          id: "quickstart/register-sims",
-        },
+        "quickstart/index",
+        "quickstart/order-sims",
+        "quickstart/register-sims",
         "quickstart/create-device",
         {
           type: "category",
@@ -35,11 +23,6 @@ const sidebars = {
             id: "quickstart/apn-configuration/index",
           },
           items: [
-            {
-              type: "doc",
-              label: "Overview",
-              id: "quickstart/apn-configuration/index",
-            },
             "quickstart/apn-configuration/android",
             "quickstart/apn-configuration/ios",
             "quickstart/apn-configuration/cellular-modules",
@@ -62,10 +45,6 @@ const sidebars = {
         {
           type: "category",
           label: "Manage SIMs and devices",
-          link: {
-            type: "doc",
-            id: "portal/sims-and-devices/sim-inventory",
-          },
           items: [
             "portal/sims-and-devices/sim-inventory",
             "portal/sims-and-devices/connected-devices",
@@ -82,10 +61,6 @@ const sidebars = {
         {
           type: "category",
           label: "Integrations",
-          link: {
-            type: "doc",
-            id: "portal/integrations/no-code",
-          },
           items: [
             "portal/integrations/no-code",
             "portal/integrations/application-tokens",
@@ -95,10 +70,6 @@ const sidebars = {
         {
           type: "category",
           label: "Organization management",
-          link: {
-            type: "doc",
-            id: "portal/organization/settings",
-          },
           items: [
             "portal/organization/settings",
             "portal/organization/data",
@@ -144,19 +115,10 @@ const sidebars = {
             id: "services/platform/data-streamer/index",
           },
           items: [
-            {
-              type: "doc",
-              label: "Overview",
-              id: "services/platform/data-streamer/index",
-            },
             "services/platform/data-streamer/connection-types",
             "services/platform/data-streamer/stream-types",
             "services/platform/data-streamer/data-streams",
-            {
-              type: "doc",
-              label: "Usage",
-              id: "services/platform/data-streamer/usage",
-            },
+            "services/platform/data-streamer/usage",
             "services/platform/data-streamer/integrations",
           ],
         },
@@ -168,17 +130,8 @@ const sidebars = {
             id: "services/platform/events/index",
           },
           items: [
-            {
-              type: "doc",
-              label: "Overview",
-              id: "services/platform/events/index",
-            },
             "services/platform/events/event-types",
-            {
-              type: "doc",
-              label: "Usage",
-              id: "services/platform/events/usage",
-            },
+            "services/platform/events/usage",
           ],
         },
         "services/platform/security",
@@ -193,11 +146,7 @@ const sidebars = {
       },
       items: [
         "services/network/global-iot-network",
-        {
-          type: "doc",
-          label: "IoT communication platform",
-          id: "services/network/iot-cloud-communication-platform",
-        },
+        "services/network/iot-cloud-communication-platform",
         "services/network/cloud-connect",
         "services/network/openvpn",
       ],
@@ -214,11 +163,6 @@ const sidebars = {
             id: "rest/index",
           },
           items: [
-            {
-              type: "doc",
-              label: "Overview",
-              id: "rest/index",
-            },
             "rest/authentication",
             "rest/sms-operations",
             {
@@ -235,14 +179,7 @@ const sidebars = {
             type: "doc",
             id: "graphql/preview",
           },
-          items: [
-            {
-              type: "doc",
-              label: "Preview the GraphQL API",
-              id: "graphql/preview",
-            },
-            "graphql/graphiql-ide",
-          ],
+          items: ["graphql/graphiql-ide"],
         },
         {
           type: "category",
@@ -252,25 +189,12 @@ const sidebars = {
             id: "sdks/index",
           },
           items: [
-            {
-              type: "doc",
-              label: "Overview",
-              id: "sdks/index",
-            },
             "sdks/concepts",
             {
               type: "category",
               label: "Python",
-              link: {
-                type: "doc",
-                id: "sdks/python/quickstart",
-              },
               items: [
-                {
-                  type: "doc",
-                  label: "Getting started",
-                  id: "sdks/python/quickstart",
-                },
+                "sdks/python/quickstart",
                 "sdks/python/examples",
                 {
                   type: "link",
@@ -282,16 +206,8 @@ const sidebars = {
             {
               type: "category",
               label: "Java",
-              link: {
-                type: "doc",
-                id: "sdks/java/quickstart",
-              },
               items: [
-                {
-                  type: "doc",
-                  label: "Getting started",
-                  id: "sdks/java/quickstart",
-                },
+                "sdks/java/quickstart",
                 "sdks/java/examples",
                 {
                   type: "link",
@@ -313,62 +229,24 @@ const sidebars = {
         id: "how-tos/index",
       },
       items: [
-        {
-          type: "doc",
-          label: "Overview",
-          id: "how-tos/index",
-        },
-        {
-          type: "doc",
-          label: "Change data allowances",
-          id: "how-tos/data-allowances",
-        },
+        "how-tos/data-allowances",
         "how-tos/two-factor-authentication",
         {
           type: "category",
           label: "Single sign-on",
-          link: {
-            type: "doc",
-            id: "how-tos/sso/microsoft-active-directory",
-          },
           items: [
-            {
-              type: "doc",
-              label: "Microsoft Active Directory",
-              id: "how-tos/sso/microsoft-active-directory",
-            },
-            {
-              type: "doc",
-              label: "Google Cloud Platform",
-              id: "how-tos/sso/google-cloud-platform",
-            },
+            "how-tos/sso/microsoft-active-directory",
+            "how-tos/sso/google-cloud-platform",
             "how-tos/sso/troubleshooting",
           ],
         },
         {
           type: "category",
           label: "Workspaces",
-          link: {
-            type: "doc",
-            id: "how-tos/workspaces/create",
-          },
           items: [
-            // Labels need to be manually entered because of the beta badge
-            {
-              type: "doc",
-              label: "Create a new workspace",
-              id: "how-tos/workspaces/create",
-            },
-            {
-              type: "doc",
-              label: "Link an existing workspace",
-              id: "how-tos/workspaces/link",
-            },
-            {
-              type: "doc",
-              label: "Switch between workspaces",
-              id: "how-tos/workspaces/switch",
-            },
+            "how-tos/workspaces/create",
+            "how-tos/workspaces/link",
+            "how-tos/workspaces/switch",
           ],
         },
       ],

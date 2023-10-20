@@ -1,9 +1,7 @@
 ---
-title: Link an existing workspace
 description: If you already have two or more workspaces created
 last_update: 
   date: 06-17-2023
-pagination_label: Link an existing workspace
 slug: /workspaces/link
 ---
 

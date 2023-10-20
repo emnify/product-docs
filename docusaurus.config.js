@@ -83,32 +83,6 @@ const config = {
         indexName: "emnify",
         contextualSearch: true,
       },
-      metadata: [
-        {
-          name: "description",
-          content:
-            "Check our documentation for emnify API and Services including Data Streamer, Cloud Connect, Security, SIM management.",
-        },
-        {
-          property: "og:title",
-          content: "Documentation for Developers | emnify",
-        },
-        {
-          property: "og:description",
-          content:
-            "Check our documentation for emnify API and Services including Data Streamer, Cloud Connect, Security, SIM management.",
-        },
-        {
-          name: "twitter:title",
-          content: "Documentation for Developers | emnify",
-        },
-        {
-          name: "twitter:description",
-          content:
-            "Check our documentation for emnify API and Services including Data Streamer, Cloud Connect, Security, SIM management.",
-        },
-        {},
-      ],
       colorMode: {
         disableSwitch: true,
       },
