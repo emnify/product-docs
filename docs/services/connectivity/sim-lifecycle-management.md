@@ -13,12 +13,6 @@ emnify SIM cards don't incur any costs unless activated.
 
 After the registration, the SIMs move between the different states depending on your needs and requirements.
 
-<img
-  src={require('./assets/infographic-sim-lifecycle-states.png').default}
-  alt="Flow chart describing the SIM lifecycle management for emnify SIM cards. All SIMs start with 'SIM registration' then move to 'Issued.' By default, the next step is 'Activated'—but SIMs can also be patched to 'Factory Test' instead. After 'Factory Test' SIMs move to 'Activated' and from 'Activated' they can be 'Suspended' at any time."
-  style={{ height: 500 }}
-/>
-
 ## SIM states
 
 The SIMs have five different states that can be configured via the [**SIM Inventory**](/portal/sim-inventory) in the emnify Portal or the [emnify SIM REST API](https://cdn.emnify.net/api/doc/swagger.html#/SIM):
@@ -28,7 +22,7 @@ The SIMs have five different states that can be configured via the [**SIM Invent
 | **Issued**       | Initial state after the SIM has been registered to an account. The SIM isn't usable in this state, so it won't generate traffic or incur charges. Issued SIMs can be tested by patching them to the _Factory Test_ state. It's impossible to transition the SIM back to _Issued_ once it has been in another state. |
 | **Activated**    | The SIM is enabled and can use network services if connected to a device with configured policies. Regardless, the SIM is chargeable if activated anytime during the month. |
 | **Suspended**    | Temporarily blocks an _Activated_ SIM from network access. Starting from the first day of the next month, the suspended SIM doesn't accrue any charges. The SIM can be reactivated and suspended again at any time. |
-| **Factory Test** | The SIM is enabled and can generate traffic. It can be used up to defined data and SMS thresholds without incurring charges. Once either threshold is crossed or the test period has elapsed, the SIM automatically moves to the _Activated_ state. By default, the test period is 180 days with data and SMS thresholds of 100 kB and 5 SMS. These limits can be customized per organization. |
+| **Factory Test** | The SIM is enabled and can generate traffic. It can be used up to defined data and SMS thresholds without incurring charges. Once either threshold is crossed or the test period has elapsed, the SIM automatically moves to the _Activated_ state. For more information, see [Factory test mode](/services/factory-test-mode). |
 | **Deleted**      | Permanently removes the SIM from the SIM Inventory. Once deleted, it can't be restored for network access. |
 
 :::caution Warning for API users
