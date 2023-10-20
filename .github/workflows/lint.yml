@@ -9,7 +9,8 @@ on:
       - main
 
 jobs:
-  eslint:
+  eslint-prettier:
+    name: Run linters
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -21,8 +22,11 @@ jobs:
       - name: 🪚 Install dependencies
         run: yarn install --frozen-lockfile
 
-      - name: 👾 Run ESLint on .js* files
-        run: yarn eslint
+      - name: 🧼 Run linters
+        uses: wearerequired/lint-action@v2
+        with:
+          eslint: true
+          prettier: true
 
   markdownlint:
     runs-on: ubuntu-latest
@@ -33,18 +37,3 @@ jobs:
         with:
           config: .markdownlint.jsonc
           files: "./**/*.md*"
-
-  prettier:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 18
-          cache: yarn
-
-      - name: 🪚 Install dependencies
-        run: yarn install --frozen-lockfile
-
-      - name: 🖌️ Run Prettier on all files
-        run: yarn prettier
