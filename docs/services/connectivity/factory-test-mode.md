@@ -40,7 +40,7 @@ The tenth SMS executes the SIM activation.
 SIMs in FTM are also activated in any of the following scenarios:
 
 - SIM cards that never reached any threshold but are in FTM longer than the designated test period.
-By default, the test period is 180 days.
+For organizations created after July 23, 2023, the default test period is 180 days.
 - If the status of the device in the **Factory test** state is altered.
 - Running a reset connectivity.
 
