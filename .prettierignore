@@ -10,7 +10,10 @@ docs
 # Vale config
 .vale.ini
 .github/vale
+
+# markdownlint config
 .markdownlint.jsonc
+.markdownlintignore
 
 # Ignore files
 .env

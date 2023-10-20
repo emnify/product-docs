@@ -29,7 +29,7 @@ jobs:
         uses: articulate/actions-markdownlint@v1.1.0
         with:
           config: .markdownlint.jsonc
-          files: './**/*.md*'
+          files: "./**/*.md*"
 
       - name: 🖌️ Prettier
         run: yarn prettier
