@@ -9,22 +9,35 @@ slug: /services/global-iot-sim
 # emnify IoT eSIM
 
 emnify provides eSIMs that are built specifically for IoT solutions.
-The eSIMs come in different quality grades that are more durable than standard SIM.
-They can be updated [over the air (OTA)](/glossary#ota) using eSIM remote SIM provisioning technologies and come in different [form factors](#form-factors).
 
-emnify eSIMs have a [multi-IMSI applet](#multi-imsi-applet) installed on the SIM.
-The multi-IMSI applet ensures that the best network and network partners are used based on your device location.
+Compared to regular operator SIMs, emnify eSIMs come in different quality grades that are more durable.
+They can be updated over the air (OTA) using different eSIM remote SIM provisioning technologies and come in different form factors.
+
 
 ## M2M eSIM
 
-The emnify IoT eSIM is an [M2M eSIM][gsma-m2m] compliant with SGP.01, SGP.02, and SGP.016.
-The M2M eSIM is also called an [embedded universal integrated circuit card (eUICC)](/glossary#euicc).
-Unlike a regular SIM (UICC), an eUICC can be updated OTA.
-You can update M2M eSIMs with new configurations or profiles, eliminating the need for SIM swaps.
 
-### Form factors
 
-emnify IoT eSIMs are available in the following form factors.
+Every new SIM you order from **emnify** is an M2M eSIM (compliant with SGP.01, SGP.02, and SGP.16).
+The M2M eSIM is also referred to as an [embedded universal integrated circuit card (eUICC)](/glossary#euicc) and comes in different [form factors](#form-factors).
+Unlike a regular SIM (UICC), an eUICC can be updated [over the air (OTA)](/glossary#ota) using different eSIM remote SIM provisioning technologies.
+Because M2M eSIMs can be updated with new configurations or profiles, this eliminates the need for SIM swaps.
+
+### Main benefits
+
+As a key component of the emnify IoT SuperNetwork service, the new emnify IoT eSIM unlocks a number of benefits for our customers, including:  
+1. Optimized coverage and network selection: connect to the best range of networks for your specific needs, ensuring you take advantage of expanding coverage options without SIM swaps. 
+1. Future-proof connectivity: get access to the latest network technologies and have the best possible connection, including satellite NB-IoT and 5G. 
+1. Streamlined network access to new markets: network regulations are changing continuously. To expand into regulated countries, the emnify IoT eSIM will enable you to comply with local laws without changing your setup.
+
+:::note
+To do an over-the-Air update, your IoT device and the network needs to support SMS. Please note that devices that only support NB-IoT lack SMS support and therefore, the SIM cannot be updated.
+:::
+
+
+## Form factors
+
+emnify [M2M eSIMs](#m2m-esim) are available in the following form factors:
 
 | Form factor         | Dimensions             |
 |---------------------|------------------------|
@@ -133,7 +146,7 @@ emnify IoT eSIMs come in three different quality grades: **Commercial eUICC**, *
 
 ## Compliance and software features
 
-The following compliance standards and software features apply to all quality grades of emnify eSIMs.
+Here's a table showcasing the compliance standards and software features applicable to all quality grades of emnify eSIMs:
 
 <table>
   <tbody>
@@ -214,22 +227,33 @@ The following compliance standards and software features apply to all quality gr
   </tbody>
 </table>
 
+
+
 ## Multi-IMSI applet
 
-emnify IoT eSIM cards are equipped with a multi-IMSI applet.
-This technology is similar to a mobile phone using dual-SIM technology or eSIM profiles in consumer phones.
-The main difference is that the emnify eSIM already includes cellular provider identities ([IMSI](/glossary#imsi)) from multiple SIM cards and any network switching is done automatically.
+EMnify eSIM cards are equipped with a multi-IMSI applet installed on the SIM.  
+This applet runs in the background using minimal resources, ensuring there's no negative impact on the device's performance.  
 
-The multi-IMSI applet on the eSIM uses a preferred IMSI list per country.
-This list defines the available IMSIs for that country and the order in which to try when connecting.
-If your device moves to a new country with a different preferred IMSI, the applet dynamically overwrites the previously active IMSI with the preferred one for this country.
+This technology allows devices to dynamically select the best network based on their location.  
+As a result, EMnify can provide access to a larger number of networks compared to traditional operators.  
+Moreover, with access to the largest global [LPWAN](global-iot-network#lpwan-lte-mnb-iot) (LTE-M and NB-IoT) footprint, EMnify SIMs ensure regulatory network access in over 100 countries.  
 
-The automatic switching by the multi-IMSI applet solves several connectivity challenges.
-For example:
+An EMnify eSIM contains cellular provider information from multiple SIM cards.  
+While EMnify has established roaming agreements and local contracts with operators worldwide, it also collaborates with partner operators.  
+This collaboration increases the network coverage footprint and offers a fallback option when preferred networks face outages.  
 
-- In Brazil, a local Brazilian IMSI must be used to be legally compliant with regulations.
-- While emnify has over 400 direct roaming agreements, utilizing roaming agreements from partner operators (IMSI sponsors) provides you with even more coverage and better pricing.
-- The applet detects any issues with the preferred IMSI and automatically switches to a fallback IMSI to regain connection.
+Here's how the multi-IMSI applet functions:  
 
-<!-- External links -->
-[gsma-m2m]: https://www.gsma.com/esim/remote-sim-provisioning-for-machine-to-machine/
+- EMnify has both its own operator identity ([IMSI](/glossary#imsi)) and the IMSI of partner operators stored on the SIM card.  
+- Each IMSI or partner operator usually supports access to more than one network in a country.  
+- The applet contains a preferred IMSI list for each country.  
+  For instance, this list might specify that IMSI _X_ is prioritized for access in country _A_.  
+  If a device can't establish a connection using IMSI _X_, then IMSI _Y_ becomes the next viable option.  
+- When a device moves to country _A_, the applet dynamically switches the active IMSI to IMSI _X_ based on this preferred list.  
+  Should operator _X_ experience service disruptions, the SIM would automatically switch to IMSI _Y_, ensuring continuous connectivity for the device.  
+
+The selection of the preferred IMSI for each country considers several factors:  
+
+- Whether permanent roaming is allowed in that country.  
+- The IMSI with the most network partners within the country.  
+- The IMSI offering the best availability of radio access types (e.g., LTE, NB-IoT, LTE-M) or features like PSM/eDRX.  
