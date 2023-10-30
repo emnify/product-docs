@@ -231,29 +231,23 @@ Here's a table showcasing the compliance standards and software features applica
 
 ## Multi-IMSI applet
 
-EMnify eSIM cards are equipped with a multi-IMSI applet installed on the SIM.  
-This applet runs in the background using minimal resources, ensuring there's no negative impact on the device's performance.  
+EMnify eSIM cards come equipped with a multi-IMSI applet. 
+This technology not only ensures there's no negative impact on device performance but also enables devices to select the best network dynamically based on their location. 
+As a result, EMnify offers access to a more extensive range of networks, including the largest global [LPWAN](global-iot-network#lpwan-lte-mnb-iot) (LTE-M and NB-IoT) footprint, ensuring regulatory network access in over 100 countries.
 
-This technology allows devices to dynamically select the best network based on their location.  
-As a result, EMnify can provide access to a larger number of networks compared to traditional operators.  
-Moreover, with access to the largest global [LPWAN](global-iot-network#lpwan-lte-mnb-iot) (LTE-M and NB-IoT) footprint, EMnify SIMs ensure regulatory network access in over 100 countries.  
-
-An EMnify eSIM contains cellular provider information from multiple SIM cards.  
-While EMnify has established roaming agreements and local contracts with operators worldwide, it also collaborates with partner operators.  
-This collaboration increases the network coverage footprint and offers a fallback option when preferred networks face outages.  
+The eSIM stores cellular provider information from multiple operators. 
+EMnify has established roaming agreements and local contracts with operators globally and collaborates with partner operators to enhance network coverage and provide fallback options during network outages.
 
 Here's how the multi-IMSI applet functions:  
 
 - EMnify has both its own operator identity ([IMSI](/glossary#imsi)) and the IMSI of partner operators stored on the SIM card.  
-- Each IMSI or partner operator usually supports access to more than one network in a country.  
+- Each IMSI or partner operator usually supports access to more than one network in a country. 
 - The applet contains a preferred IMSI list for each country.  
-  For instance, this list might specify that IMSI _X_ is prioritized for access in country _A_.  
-  If a device can't establish a connection using IMSI _X_, then IMSI _Y_ becomes the next viable option.  
-- When a device moves to country _A_, the applet dynamically switches the active IMSI to IMSI _X_ based on this preferred list.  
-  Should operator _X_ experience service disruptions, the SIM would automatically switch to IMSI _Y_, ensuring continuous connectivity for the device.  
+ For example, if IMSI _X_ is prioritized for country _A_, but fails to establish a connection, IMSI _Y_ is used as a fallback.   
+- If a device travels to country _A_, the applet switches to the preferred IMSI for that location, ensuring continuous connectivity even during service disruptions.
 
 The selection of the preferred IMSI for each country considers several factors:  
 
-- Whether permanent roaming is allowed in that country.  
-- The IMSI with the most network partners within the country.  
-- The IMSI offering the best availability of radio access types (e.g., LTE, NB-IoT, LTE-M) or features like PSM/eDRX.  
+- Acceptance of permanent roaming in the country. 
+- The IMSI with the most network partnerships in the country. 
+- Availability of specific radio access types (e.g., LTE, NB-IoT, LTE-M) or features such as PSM/eDRX.
