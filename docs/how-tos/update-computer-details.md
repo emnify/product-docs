@@ -2,7 +2,7 @@
 
 In case you need to update or change the name or any detail of your company, please follow these steps.
 
-Login to https://portal.emnify.com/
+Login to https://portal.emnify.com/.
 On the upper right side of the portal, click the drop-down menu next you your username and select “Organization Settings”.
 TODO: INSERT IMAGE
 
