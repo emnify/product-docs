@@ -553,16 +553,6 @@ An ability to select which network the customer’s SIM connects to.
 
 An approach that enables users to create their own virtual mobile network, define service and security policies, and provision [coverage policies](#coverage-policy) and data packages.
 
-## USSD
-
-_Unstructured Supplementary Service Data_
-
-A protocol used to communicate with the service provider’s computers.
-
-## USSD gateway  
-
-The collection of hardware and software required to interconnect two or more disparate networks, including performing protocol conversion.
-
 ## VPC
 
 _Virtual Private Cloud_

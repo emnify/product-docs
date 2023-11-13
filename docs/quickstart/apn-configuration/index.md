@@ -16,7 +16,7 @@ Then, you need to make two important configuration changes:
 
 After that, the device registers to a network (no PIN code entry needed).
 Once it has registered, your device's [**Connection**](/glossary#connectivity-status) changes to **Attached**.
-SMS and [USSD](/glossary#ussd) services are now available.
+SMS services are now available.
 
 When your device has established a data session, the **Connection** changes to **Online**.
 This means it's ready to send or receive data traffic.
