@@ -5,7 +5,7 @@ last_update:
 slug: /apn-configuration/gps-trackers
 ---
 
-# GPS trackers
+# GPS trackers & Telematics solutions
 
 <!-- markdownlint-disable MD040 -->
 
@@ -79,6 +79,20 @@ If the `SMSpassword` isn't set, the command is:
 ```
 setconnection em
 ```
+
+### Ruptela GPS tracker APN configuration via SMS API 
+
+```
+POST /api/v1/endpoint/{device_id}/sms 
+{ 
+“source_address”:”[123456789]”,  
+“payload”:”setconnection em” 
+}
+```
+
+You can choose the source address.  
+
+See how to get started with the API [here](https://cdn.emnify.net/api/doc/getting-started.html).
 
 ## Concox GPS APN configuration
 
