@@ -158,6 +158,24 @@ The default password is `123456`.
 There are no spaces between `gprs`/`APN` and the password.
 :::
 
+### Coban GPS tracker configuration via SMS API 
+ 
+Automating the device provisioning can be automated using the EMnify SMS API.  
+
+```
+POST /api/v1/endpoint/{device_id}/sms 
+
+{ 
+“source_address”:”[123456789]”,  
+“payload”:”APN123456 em” 
+} 
+```
+
+You can choose the source address.  
+
+See how to get started with the API [here](https://cdn.emnify.net/api/doc/getting-started.html).
+
+
 ## Meitrack GPS APN configuration
 
 > Applies to P88L, P99, MT90, T663L, T333, T366, T399, TS299L, TC68L, TC68SG, T622, K211G, T355G
