@@ -38,3 +38,20 @@ cellular apn=em
 :::info
 See [Teltonika's SMS Commands](https://wiki.teltonika-networks.com/view/SMS_Commands) reference for a comprehensive list of SMS commands, syntax, and usage.
 :::
+
+
+For additional configuration via the EMnify API:
+
+```
+POST /api/v1/endpoint/{device_id}/sms
+
+{
+"source_address":"123456789",
+"payload":"cellular apn=em"
+}
+```
+
+You can choose the source address.
+See how to get started with the API [here](https://www.emnify.com/api-docs).
+
+TODO: INSERT IMAGE
