@@ -12,7 +12,7 @@ slug: /how-tos/data-allowances
 
 Data plans and the associated allowances are managed within [coverage policies](/portal/device-policies#coverage-policies).
 
-With the **Pro Package**, you can manage as many data plans as you need.
+With the **Pro Package**, you can manage up to 6 data plans.
 Those with a **Plus Package** can manage up to 4 data plans.
 
 Once a data plan has been configured on your emnify account, make sure your coverage policies have been adjusted correctly to take advantage of data allowances.
