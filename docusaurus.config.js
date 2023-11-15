@@ -188,7 +188,7 @@ const config = {
       "@docusaurus/plugin-client-redirects",
       {
         redirects: [
-          // Home - Getting started with emnify
+          // Getting started with emnify
           {
             to: "/quickstart",
             from: "/quickstart/getting-started",
@@ -232,7 +232,7 @@ const config = {
             to: "/apn-configuration/industrial-routers",
             from: "/quickstart/devices/industrial-routers",
           },
-          // Home - emnify Portal
+          // emnify Portal
           {
             to: "/portal/reports",
             from: "/services/business-intelligence-and-analytics-reports",
@@ -255,12 +255,12 @@ const config = {
             to: "/portal/roles",
             from: ["/services/user-management", "/portal/user-management"],
           },
-          // Home - Connectivity services
+          // Connectivity services
           {
             to: "/services/global-iot-sim",
             from: "/services",
           },
-          // Home - Platform services
+          // Platform services
           {
             to: "/multicloud-data-streamer",
             from: "/services/data-streamer",
@@ -297,17 +297,7 @@ const config = {
             to: "/system-events/usage",
             from: "/services/events/usage",
           },
-          // Home - How-tos
-          {
-            to: "/how-tos/data-allowances",
-            from: "/how-tos/multi-inclusive-volumes",
-          },
-          // Home - Support
-          {
-            to: "/support",
-            from: "/services/support",
-          },
-          // Developer Resources - REST API
+          // Developer Resources
           {
             to: "/rest",
             from: "/rest-api",
@@ -320,7 +310,6 @@ const config = {
             to: "/rest/sms-operations",
             from: "/rest-api/sms-operations",
           },
-          // Developer Resources - GraphQL API
           {
             to: "/graphql",
             from: "/graphql/preview",
@@ -329,7 +318,6 @@ const config = {
             to: "/graphql/graphiql-ide",
             from: "/graphql/using-graphiql",
           },
-          // Developer Resources - SDKs
           {
             to: "/sdks/python/quickstart",
             from: ["/sdks/python", "/sdks/python/getting-started"],
@@ -341,6 +329,20 @@ const config = {
           {
             to: "/sdks/support",
             from: ["/sdks/java/help", "/sdks/python/help"],
+          },
+          // How-tos
+          {
+            to: "/how-tos/data-allowances",
+            from: "/how-tos/multi-inclusive-volumes",
+          },
+          {
+            to: "/how-tos/multi-factor-authentication",
+            from: "/how-tos/two-factor-authentication",
+          },
+          // Support
+          {
+            to: "/support",
+            from: "/services/support",
           },
         ],
       },

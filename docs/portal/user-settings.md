@@ -30,11 +30,11 @@ However, you can't change the email address used to log in to the emnify Portal.
 
 ## Two-factor authentication
 
-You can select **Enable** in this section to enable [two-factor authentication (2FA)](/services/security#two-factor-authentication) for your account.
-If you have set up 2FA, it displays as **MFA - Activated** for your account under [**Employees**](https://portal.emnify.com/organisation-settings/users).
+You can select **Enable** in this section to enable [multi-factor authentication (MFA)](/services/security#multi-factor-authentication) for your account.
+If you have set up MFA, it displays as **MFA - Activated** for your account under [**Employees**](https://portal.emnify.com/organisation-settings/users).
 
 :::tip step-by-step guide
-[Enable two-factor authentication](/how-tos/two-factor-authentication) on your emnify account
+[Enable multi-factor authentication](/how-tos/multi-factor-authentication) on your emnify account
 :::
 
 There is also a **Download my GDPR data** link that allows you to save a `gdpr.txt` file containing the following information specific to your account:

@@ -1,17 +1,17 @@
 ---
-description: How to enable two-factor authentication on your emnify account
+description: How to enable multi-factor authentication on your emnify account
 last_update: 
   date: 03-30-2023
 pagination_next: null
 pagination_prev: null
-slug: /how-tos/two-factor-authentication
+slug: /how-tos/multi-factor-authentication
 ---
 
-# Enable two-factor authentication
+# Enable multi-factor authentication
 
-Setting up two-factor authentication (2FA) makes unauthorized access to your account more improbable because your password is secured via your personal device, which generates a temporary authentication key.
+Setting up multi-factor authentication (MFA) makes unauthorized access to your account more improbable because your password is secured via your personal device, which generates a temporary authentication key.
 
-You can enable 2FA via the emnify Portal.
+You can enable MFA via the emnify Portal.
 
 ## Configuration steps
 
@@ -24,7 +24,7 @@ You can enable 2FA via the emnify Portal.
 />
 
 1. Enter your password to verify your identity then click **Submit**.
-1. Activate your personal device's temporary authentication key by scanning the QR code with a 2FA app.
+1. Activate your personal device's temporary authentication key by scanning the QR code with an MFA app.
 Alternatively, you can copy the secret key to add it manually.
 After you've scanned the QR code or entered the key, a 6-digit token appears in the app. 
 Finally, enter the token.
@@ -34,11 +34,11 @@ Finally, enter the token.
 />
 
 <details className="custom-details-tip">
-  <summary>Need a 2FA app to scan the QR code?</summary>
+  <summary>Need an MFA app to scan the QR code?</summary>
     <p>Download the Google Authenticator app from the <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&pli=1" target="_blank" rel="noopener noreferrer">Google Play Store</a> or <a href="https://apps.apple.com/app/google-authenticator/id388497605" target="_blank" rel="noopener noreferrer">App Store</a>.</p>
 </details>
 
-Assuming there are no errors, 2FA should be enabled for your account. 🎉
+Assuming there are no errors, MFA should be enabled for your account. 🎉
 
 Now, if you log in to the Portal on a device you haven't set as trusted before or use a different browser, you'll be asked to enter a one-time password to verify your identity.
 
@@ -46,7 +46,7 @@ Now, if you log in to the Portal on a device you haven't set as trusted before o
 
 Reaching for your personal device and entering a one-time password every time you need to log in to your account can be a pain, especially if you usually sign in from the same device.
 
-To bypass this process, select **Trust this device** before entering the 2FA code from your authentication app.
+To bypass this process, select **Trust this device** before entering the MFA code from your authentication app.
 
 <img
   src={require('./assets/portal-login-2fa-confirmation-trust-this-device-checkbox.png').default}
@@ -66,9 +66,9 @@ Click **Remove** to remove a device from **Trusted Devices**.
 Your changes are saved automatically.
 :::
 
-## Disable two-factor authentication
+## Disable multi-factor authentication
 
-If you want to turn off 2FA, go to **User Settings**, find the [**Two-Factor Authentication**](https://portal.emnify.com/user-settings#two-factor-authentication) section, and click **Disable**.
+If you want to turn off MFA, go to **User Settings**, find the [**Two-Factor Authentication**](https://portal.emnify.com/user-settings#two-factor-authentication) section, and click **Disable**.
 
 <img
   src={require('./assets/portal-user-settings-2fa-disable-button.png').default}
@@ -76,5 +76,5 @@ If you want to turn off 2FA, go to **User Settings**, find the [**Two-Factor Aut
 />
 
 :::info
-You can turn on 2FA again at any time.
+You can turn on MFA again at any time.
 :::

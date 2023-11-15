@@ -35,4 +35,4 @@ slug: /how-tos
 
 ## User management
 
-- [Enable two-factor authentication on your emnify account](/how-tos/two-factor-authentication)
+- [Enable multi-factor authentication on your emnify account](/how-tos/multi-factor-authentication)
