@@ -24,12 +24,14 @@ swap:
   "(?:rate zone|ratezone)": coverage area
   "(?:REST-API|Rest-API|Rest API)": REST API
   "(?:tariff|tariff plan|usage tariff)": data plan
+  "(?:two-factor authentication|two factor authentication)": multi-factor authentication
   "(?:WiFi|wifi|Wifi)": Wi-Fi
   '[\.]+apk': APK
   '3\-D': 3D
   'Google (?:I\-O|IO)': Google I/O
   "tap (?:&|and) hold": touch & hold
   "un(?:check|select)": clear
+  2FA: MFA
   above: preceding
   account name: username
   action bar: app bar
