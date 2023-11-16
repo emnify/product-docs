@@ -578,7 +578,7 @@ Workspaces can be managed individually or, if [linked](#linked-workspaces), cent
 
 :::note
 Every [company account](#company-account) (with any package) is a workspace by default.
-Accounts with the **Pro Package** can have up to five workspaces.
+Accounts with the **Pro Package** can have up to three workspaces.
 :::
 
 :::tip Step-by-step guide
