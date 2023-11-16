@@ -86,7 +86,7 @@ Assuming no errors, you'll be redirected to the **Dashboard** with a message tha
 
 ### New accounts
 
-You don't need to set up MFA when creating a new account, as the signup process requires you to validate your phone number (via SMS) and email address.
+You don't need to set up MFA when creating a new account, as the sign up process requires you to validate your phone number (via SMS) and email address.
 After you access your account, you can either [configure MFA in the Portal](#configure-mfa-in-the-emnify-portal) or [set up email-based MFA](#existing-accounts) the next time you log in.
 
 :::note

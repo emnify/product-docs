@@ -65,7 +65,7 @@ All future device connections are only allowed from this device.
 
 ## Multi-factor authentication
 
-Starting January 2024, multi-factor authentication (MFA) will be manadatory for all emnify Portal accounts.
+Starting January 2024, multi-factor authentication (MFA) will be mandatory for all emnify Portal accounts.
 This enforcement allows us to proactively safeguard our IoT ecosystem, follow best practices, and meet regulatory security compliance.
 
 For more information, see [Set up multi-factor authentication](/how-tos/multi-factor-authentication).
