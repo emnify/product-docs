@@ -1,7 +1,7 @@
 ---
 description: Start developing your IoT solutions with emnify
 last_update: 
-  date: 09-07-2023
+  date: 11-16-2023
 pagination_label: Create an account
 pagination_next: quickstart/order-sims
 sidebar_label: Create an account
@@ -46,7 +46,7 @@ To begin developing your IoT solutions with emnify, you'll need an emnify accoun
 After signing up, your account is automatically assigned to the **Trial plan**.
 During this trial, you have 60 days to use the issued prepaid credit for testing emnify's services.
 
-Once this expires, you'll need to [choose a new package](https://portal.emnify.com/organisation-settings/subscription#plans).
+Once this expires, you'll need to [choose a new package](https://portal.emnify.com/organisation-settings/subscription#plans) and [set up multi-factor authentication (MFA)](/how-tos/multi-factor-authentication).
 
 :::tip
 Your current balance and other trial details are available in the emnify Portal.
