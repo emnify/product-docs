@@ -10,7 +10,7 @@ slug: /workspaces/create
 
 # Create a new workspace
 
-Company accounts with the **Pro Package** can have up to five workspaces.
+Company accounts with the **Pro Package** can have up to three workspaces.
 
 There are many reasons to opt for multiple workspaces.
 For example, organizations with foreign regional subsidiaries or companies producing products in multiple industries.
