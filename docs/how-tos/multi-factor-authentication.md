@@ -103,11 +103,6 @@ After you access your account, you can either [configure MFA in the Portal](#con
 1. Log in to your [emnify account](https://portal.emnify.com/sign).
 1. Navigate to [**User Settings**](https://portal.emnify.com/user-settings) by clicking on your avatar and selecting **User Settings** from the dropdown menu.
 1. Find the [**Two-Factor Authentication**](https://portal.emnify.com/user-settings#two-factor-authentication) section and click **Enable**.
-<img
-  src={require('./assets/portal-user-settings-2fa-enable-button.png').default}
-  alt=""
-/>
-
 1. Enter your password to verify your identity, then click **Submit**.
 1. Activate your device's temporary authentication key by scanning the QR code with a [third-party authenticator app](#third-party-authenticator-apps).
 Alternatively, click **here** in the Portal text to reveal a secret key and add it to your app.
@@ -130,25 +125,13 @@ Popular third-party authenticator apps that you can use with your emnify account
 ## Manage trusted devices
 
 Reaching for your device and entering a one-time password every time you need to log in to your account can be a pain, especially if you usually sign in from the same device.
-
 To bypass this process, select **Trust this device** before entering the MFA code from your authentication app.
-
-<img
-  src={require('./assets/portal-login-2fa-confirmation-trust-this-device-checkbox.png').default}
-  alt=""
-  style={{ width:550 }}
-/>
 
 Then, [**Trusted Devices**](https://portal.emnify.com/user-settings#trusted-devices) should be visible in the **Two-Factor Authentication** section of **User Settings**.
 These devices remain trusted for 30 days.
 After that, you'll need to verify your identity again.
 
 To remove a device from **Trusted Devices**, click **Remove**.
-
-<img
-  src={require('./assets/portal-user-settings-trusted-devices-remove-button.png').default}
-  alt=""
-/>
 
 :::info
 Your changes are saved automatically.
@@ -157,11 +140,6 @@ Your changes are saved automatically.
 ## Disable MFA
 
 To turn off your existing MFA setup, go to **User Settings**, find the [**Two-Factor Authentication**](https://portal.emnify.com/user-settings#two-factor-authentication) section, and click **Disable**.
-
-<img
-  src={require('./assets/portal-user-settings-2fa-disable-button.png').default}
-  alt=""
-/>
 
 :::note
 You won't be able to disable MFA once it's enforced for your organization.
