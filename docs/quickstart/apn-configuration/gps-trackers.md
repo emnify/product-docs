@@ -25,6 +25,13 @@ Configuring the APN for Teltonika GPS trackers can be done through:
 1. Via the SMS console through the [**Connected Devices**](https://portal.emnify.com/connected-devices) page of the emnify Portal
 1. Via the [emnify SMS API](https://cdn.emnify.net/api/doc/swagger.html#/Endpoint) or [Zapier Integration](https://zapier.com/apps/emnify/integrations/sms) (when automating the configuration)
 
+### APN configuration via the Teltonika configurator
+Teltonika offers a graphical user interface / configurator to set device specific parameters via USB or Bluetooth, e.g. the APN and telematics server. Refer to the guide
+
+TODO: INSERT IMAGE
+
+### Teltonika GPS Tracker APN configuration via SMS console
+
 Newer Teltonika GPS versions automatically detect the emnify APN setting.
 
 When the GPS tracker is turned on for the first time after the SIM is installed, it shows the status **Attached** in the emnify Portal.
@@ -52,6 +59,22 @@ The two leading spaces are required.
 Refer to the [Teltonika FMB Device Family Parameter list](https://wiki.teltonika-gps.com/view/Template:FMB_Device_Family_Parameter_list) for all available parameters.
 :::
 
+### Teltonika APN configuration via SMS API
+
+´´´
+POST /api/v1/endpoint/{device_id}/sms 
+
+{ 
+“source_address”:”[123456789]”,  
+“payload”:”  setparam 2001:em” 
+} 
+´´´
+
+You can choose the source address.  
+
+See how to get started with the API [here](https://cdn.emnify.net/api/doc/getting-started.html).
+
+
 ## Ruptela GPS APN configuration
 
 > Applies to HCV5, LCV5, Pro5, Trace5/NA, FM-Tco4 HCV/HCV 3G, FM-Tco4 LCV/LCV 3G, FM-Pro4/Pro4 3G, FM-Eco4/4+, FM-Eco4 light/light+/3G, FM-Eco4 S Series, FM-Eco4 T Series, FM-Plug4
@@ -63,6 +86,17 @@ Configuring the APN for Ruptela GPS trackers can be done through:
 1. Ruptela Device Center over a USB, Bluetooth connection
 1. Via the SMS console through the [**Connected Devices**](https://portal.emnify.com/connected-devices) page of the emnify Portal
 1. Via the [emnify SMS API](https://cdn.emnify.net/api/doc/swagger.html#/Endpoint) or [Zapier Integration](https://zapier.com/apps/emnify/integrations/sms) (when automating the configuration)
+
+### APN configuration via the Ruptela Device Center
+
+Ruptela’s device center allows to set device specific parameters via USB or Bluetooth.  
+
+TODO: INSERT IMAGE
+
+As APN name use “em” – and leave username and password blank. 
+
+
+
 
 When the GPS tracker is turned on for the first time after the SIM is installed, it shows the status **Attached** in the emnify Portal.
 At this point the device can receive SMS but not establish a data session unless the APN is setup or detected.
@@ -79,6 +113,8 @@ If the `SMSpassword` isn't set, the command is:
 ```
 setconnection em
 ```
+
+TODO: INSERT IMAGE
 
 ### Ruptela GPS tracker APN configuration via SMS API 
 
