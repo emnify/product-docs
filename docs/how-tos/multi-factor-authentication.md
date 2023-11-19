@@ -26,12 +26,12 @@ For more information, see the [MFA FAQ in the emnify Knowledge Base](https://sup
 
 emnify supports the following MFA methods:
 
-- **Email-based MFA** (default method)  
+- **Email-based MFA** (default method when [enforced](#mandatory-enforcement))  
 A one-time code or an authentication link is sent to the email address associated with the account.
-- **Time-based one-time password (TOTP) MFA**  
+- **Time-based one-time password (TOTP) MFA** (configured in the [Portal](#configure-totp-mfa-in-the-emnify-portal))  
 One-time codes are generated using a [third-party authenticator app](#third-party-authenticator-apps) (for example, Google Authenticator) and entered during the login process.
 
-Once you've configured either method, you'll need to enter a one-time code to verify your identity if you log in to the Portal on a device you haven't [set as trusted](#manage-trusted-devices), use a different browser, or change your password.
+As soon as one of these methods is enabled, you'll need to enter a one-time code to verify your identity if you log in to the Portal on a device you haven't [set as trusted](#manage-trusted-devices), use a different browser, or change your password.
 
 ## Mandatory enforcement
 
@@ -39,10 +39,10 @@ Once you've configured either method, you'll need to enter a one-time code to ve
 
 :::tip
 This process is only required if you haven't enabled MFA for your account.
-[Configure MFA in the Portal](#configure-mfa-in-the-emnify-portal) before it becomes mandatory to avoid any potential disruptions to your workflow.
+[Configure TOTP MFA in the Portal](#configure-totp-mfa-in-the-emnify-portal) before it becomes mandatory to avoid any potential disruptions to your workflow.
 :::
 
-As soon as MFA becomes mandatory for your organization, follow these steps to access your account:
+Once MFA becomes mandatory for your organization, follow these steps to access your account:
 
 1. [Log in to your emnify account](https://portal.emnify.com/sign) with your email and password as usual.
 1. Navigate to the email account you use to access the Portal. 
@@ -87,18 +87,18 @@ Assuming no errors, you'll be redirected to the **Dashboard** with a message tha
 ### New accounts
 
 You don't need to set up MFA when creating a new account, as the sign up process requires you to validate your phone number (via SMS) and email address.
-After you access your account, you can either [configure MFA in the Portal](#configure-mfa-in-the-emnify-portal) or [set up email-based MFA](#existing-accounts) the next time you log in.
+After you access your account, you can either [configure TOTP MFA in the Portal](#configure-totp-mfa-in-the-emnify-portal) or [set up email-based MFA](#existing-accounts) the next time you log in.
 
 :::note
-MFA isn't required if you're on the [Trial plan](/quickstart#emnifys-trial).
+MFA isn't required if you're on the [Trial plan](/quickstart#emnifys-trial), but you can still [configure TOTP MFA](#configure-totp-mfa-in-the-emnify-portal) to secure your account.
 :::
 
 ### Invited users
 
 You don't need to set up MFA initially when you're invited to join an organization, as you'll be invited via email.
-After you access your account, you can either [configure MFA in the Portal](#configure-mfa-in-the-emnify-portal) or [set up email-based MFA](#existing-accounts) the next time you log in.
+After you access your account, you can either [configure TOTP MFA in the Portal](#configure-totp-mfa-in-the-emnify-portal) or [set up email-based MFA](#existing-accounts) the next time you log in.
 
-## Configure MFA in the emnify Portal
+## Configure TOTP MFA in the emnify Portal
 
 1. Log in to your [emnify account](https://portal.emnify.com/sign).
 1. Navigate to [**User Settings**](https://portal.emnify.com/user-settings) by clicking on your avatar and selecting **User Settings** from the dropdown menu.
