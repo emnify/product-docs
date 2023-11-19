@@ -2,7 +2,7 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 if ! command -v vale &> /dev/null; then
-  echo "vale could not be found."
+  echo "Vale couldn't be found."
   echo "Please make sure it's installed on your system: https://vale.sh/docs/vale-cli/installation/"
   exit 1
 fi
