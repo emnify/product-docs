@@ -1,7 +1,7 @@
 ---
 description: Webinar about SIM location displaying
 last_update: 
-  date: 09-07-2023
+  date: 20-11-2023
 pagination_next: null
 pagination_prev: null
 slug: /how-tos/sim-location-interactive-map
