@@ -1,3 +1,12 @@
+---
+description: How to add more IP adresses
+last_update: 
+  date: 20-11-2023
+pagination_next: null
+pagination_prev: null
+slug: how-tos/add-ip-address-spaces
+---
+
 :::note
 Adding additional IP address spaces is an action reserved exclusively for users with Administrator privileges.
 If you do not hold an Administrator role, you will not have the capability to add IP address spaces.
