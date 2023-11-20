@@ -1,3 +1,12 @@
+---
+description: Webinar about SIM location displaying
+last_update: 
+  date: 09-07-2023
+pagination_next: null
+pagination_prev: null
+slug: /how-tos/sim-location-interactive-map
+---
+
 # Webinar
 ## How to display emnify SIM location on an interactive map by using the emnify data streamer
 
