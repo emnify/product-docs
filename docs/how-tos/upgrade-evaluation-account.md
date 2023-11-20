@@ -1,3 +1,11 @@
+---
+description: How to upgrade your evaluation account
+last_update: 
+  date: 20-11-2023
+pagination_next: null
+pagination_prev: null
+slug: /how-tos/upgrade-evaluation-account
+---
 
 # How to upgrade your evaluation account
 
