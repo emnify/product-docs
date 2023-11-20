@@ -1,3 +1,12 @@
+---
+description: How to configure Data and SMS Limits
+last_update: 
+  date: 20-11-2023
+pagination_next: null
+pagination_prev: null
+slug: /how-tos/configure-data-sms-limits
+---
+
 # How to configure Data and SMS Limits
 
 This article will quickly guide you to a very important function that can let you have control over your devices usage policies and avoid extra-consumption in the monthly bill.
