@@ -1,3 +1,12 @@
+---
+description: How to update your company name and details
+last_update: 
+  date: 20-11-2023
+pagination_next: null
+pagination_prev: null
+slug: /how-tos/update-company-details
+---
+
 # How to update your company name and details
 
 In case you need to update or change the name or any detail of your company, please follow these steps.
