@@ -1,7 +1,7 @@
 ---
 description: SASE approach, DNS, IMEI lock
 last_update: 
-  date: 01-17-2023
+  date: 11-16-2023
 pagination_next: null
 pagination_prev: services/platform/events/index
 slug: /services/security
@@ -63,12 +63,9 @@ The [IMEI](/glossary#imei) is a unique device identifier.
 When the automatic IMEI lock is configured, the emnify platform binds the SIM cards to the first device that establishes a data connection.
 All future device connections are only allowed from this device.
 
-## Two-factor authentication
+## Multi-factor authentication
 
-All emnify accounts can enable two-factor authentication (2FA) via the [Portal](https://portal.emnify.com/) for an additional layer of security.
+Starting January 2024, multi-factor authentication (MFA) will be mandatory for all emnify Portal accounts.
+This enforcement allows us to proactively safeguard our IoT ecosystem, follow best practices, and meet regulatory security compliance.
 
-Setting up 2FA makes unauthorized access to your account more improbable because your password is secured via your personal device, which generates a temporary authentication key.
-
-:::tip Step-by-step guide
-[Read the two-factor authentication guide](/how-tos/two-factor-authentication) to learn how to enable 2FA on your emnify account.
-:::
+For more information, see [Set up multi-factor authentication](/how-tos/multi-factor-authentication).

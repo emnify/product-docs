@@ -230,7 +230,7 @@ const sidebars = {
       },
       items: [
         "how-tos/data-allowances",
-        "how-tos/two-factor-authentication",
+        "how-tos/multi-factor-authentication",
         {
           type: "category",
           label: "Single sign-on",
