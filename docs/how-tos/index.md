@@ -1,7 +1,7 @@
 ---
 description: Step-by-step how to guides that teach you how to use the emnify platform
 last_update: 
-  date: 06-17-2023
+  date: 11-16-2023
 pagination_next: null
 pagination_prev: null
 slug: /how-tos
@@ -35,4 +35,4 @@ slug: /how-tos
 
 ## User management
 
-- [Enable two-factor authentication on your emnify account](/how-tos/two-factor-authentication)
+- [Set up multi-factor authentication](/how-tos/multi-factor-authentication)

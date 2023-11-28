@@ -1,7 +1,7 @@
 ---
 description: Managing your profile and preferences in the emnify Portal
 last_update: 
-  date: 07-20-2023
+  date: 11-16-2023
 slug: /portal/user-settings
 ---
 
@@ -30,14 +30,17 @@ However, you can't change the email address used to log in to the emnify Portal.
 
 ## Two-factor authentication
 
-You can select **Enable** in this section to enable [two-factor authentication (2FA)](/services/security#two-factor-authentication) for your account.
-If you have set up 2FA, it displays as **MFA - Activated** for your account under [**Employees**](https://portal.emnify.com/organisation-settings/users).
+You can select **Enable** in this section to set up your account's multi-factor authentication (MFA).
+Once you've enabled MFA, your **Account security** shows **Active** in the [**Users**](https://portal.emnify.com/organisation-settings/users) table, and you can [manage trusted devices](/how-tos/multi-factor-authentication#manage-trusted-devices).
 
-:::tip step-by-step guide
-[Enable two-factor authentication](/how-tos/two-factor-authentication) on your emnify account
+:::caution Important update
+MFA will be mandatory for all emnify Portal accounts as of January 2024 to proactively safeguard our IoT ecosystem and meet regulatory security compliance.
+For more information and configuration instructions, see [Set up multi-factor authentication](/how-tos/multi-factor-authentication).
 :::
 
-There is also a **Download my GDPR data** link that allows you to save a `gdpr.txt` file containing the following information specific to your account:
+## Download GDPR data
+
+At the end of the page, there's a **Download my GDPR data** link that allows you to save a `gdpr.txt` file containing the following information specific to your account:
 
 - **User ID**
 - **Username/Email**
