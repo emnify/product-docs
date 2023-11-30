@@ -71,7 +71,8 @@
       "yarn lint:fix"
     ],
     "./**/*.md*": [
-      "yarn markdownlint:fix"
+      "yarn markdownlint:fix",
+      "vale --config=./.vale.ini --minAlertLevel=error"
     ]
   }
 }
