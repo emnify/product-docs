@@ -29,7 +29,10 @@ Here's how you can order SIM cards any time on the emnify Portal.
 4. Click **Step 2 - Choose Amount** to confirm your choice.
 
 :::tip
-For more information about the various form factors and quality grades, see [Global IoT SIM](/services/global-iot-sim).
+In use cases where devices are mobile, we highly recommend choosing the form factor that fits the device exactly, not multi-cut ones that include a smaller size.
+The pluggable SIMs are more durable and provide firmer contact with the device than the multi-cut.
+
+For more information about the various form factors and quality grades, see [emnify IoT eSIM](/services/global-iot-sim).
 :::
 
 <img
