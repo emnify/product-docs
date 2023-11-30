@@ -6,6 +6,7 @@ Deutsch
 hardcoding
 hostname
 ICCIDs
+IMSIs
 infographic
 infographics
 interworkings
