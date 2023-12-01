@@ -253,6 +253,7 @@ const sidebars = {
     },
     "glossary",
     "support",
+    "custom-services",
   ],
 };
 
