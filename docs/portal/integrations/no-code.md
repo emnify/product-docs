@@ -1,6 +1,5 @@
 ---
 description: Setup no-code workflows via Zapier, SMS, as well as event or application triggers in the emnify Portal
-pagination_next: portal/integrations/application-tokens
 last_update: 
   date: 01-31-2023
 slug: /portal/no-code

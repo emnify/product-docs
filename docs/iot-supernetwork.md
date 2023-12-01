@@ -1,6 +1,5 @@
 ---
 description: What is the emnify IoT SuperNetwork and what sets it apart from traditional MNO and MVNOs
-pagination_next: null
 last_update: 
   date: 07-04-2023
 slug: /

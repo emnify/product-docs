@@ -2,8 +2,6 @@
 description: Setup SSO for your emnify account with Microsoft Active Directory
 last_update: 
   date: 12-20-2022
-pagination_next: how-tos/sso/google-cloud-platform
-pagination_prev: null
 sidebar_label: Microsoft Active Directory
 slug: /sso/microsoft-active-directory
 ---

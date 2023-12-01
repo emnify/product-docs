@@ -2,7 +2,6 @@
 description: Step-by-step guide to order emnify SIMs from the SIM Shop
 last_update: 
   date: 05-12-2023
-pagination_prev: quickstart/index
 sidebar_label: Order SIMs
 slug: /quickstart/order-sims
 ---
