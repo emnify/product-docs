@@ -2,7 +2,6 @@
 description: Configure SIM-equipped devices with an Access Point Name (APN) via the emnify Portal
 last_update: 
   date: 08-24-2023
-pagination_next: quickstart/apn-configuration/android
 slug: /apn-configuration
 ---
 

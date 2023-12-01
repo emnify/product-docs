@@ -2,7 +2,6 @@
 description: Move between and manage multiple workspaces
 last_update: 
   date: 06-17-2023
-pagination_next: null
 slug: /workspaces/switch
 ---
 

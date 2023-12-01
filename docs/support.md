@@ -2,7 +2,6 @@
 description: Ensuring your success with emnify products and services
 last_update: 
   date: 04-13-2023
-pagination_prev: null
 ---
 
 # Support

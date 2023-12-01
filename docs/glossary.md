@@ -1,8 +1,6 @@
 ---
 last_update: 
   date: 11-16-2023
-pagination_next: null
-pagination_prev: null
 ---
 
 # Glossary
