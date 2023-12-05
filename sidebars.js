@@ -163,7 +163,6 @@ const sidebars = {
             id: "rest/index",
           },
           items: [
-            "rest/authentication",
             "rest/sms-operations",
             {
               type: "link",
