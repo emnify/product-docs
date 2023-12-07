@@ -3,7 +3,7 @@
 Your interest in contributing to the emnify Product Documentation is greatly appreciated.
 By helping maintain and grow our documentation, your efforts won't only benefit your organization but the greater emnify community as well 💖
 
-> **Note**
+> [!NOTE]
 > This page includes guidelines for contributing content.
 > Refer to the [development guide](DEVELOPMENT.md) for setting up a local environment.
 
@@ -15,7 +15,7 @@ By participating, you agree to abide by its terms.
 All technical documentation at emnify follows the [Google developer documentation style guide](https://developers.google.com/style).
 When in doubt, refer to this style guide as a resource.
 
-> **Note**
+> [!IMPORTANT]
 > This repository uses [Vale](.github/vale/README.md) to lint and enforce this style guide.
 
 ## Images

@@ -15,7 +15,7 @@ To request an update or additional content, please [open an issue](https://githu
 - For instructions on setting up a local development environment, see [DEVELOPMENT.md](DEVELOPMENT.md)
 - For content guidelines, see [CONTRIBUTING.md](CONTRIBUTING.md)
 
-> **Note**
+> [!IMPORTANT]
 > This project is governed by [emnify's Code of Conduct](https://github.com/emnify/.github/blob/add-code-of-conduct/CODE_OF_CONDUCT.md#code-of-conduct).
 > By participating, you agree to abide by its terms.
 

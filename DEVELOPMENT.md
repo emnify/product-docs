@@ -4,7 +4,7 @@ Your interest in contributing to the emnify Product Documentation is greatly app
 
 If you think something is missing, [open an issue](https://github.com/emnify/product-docs/issues/new/choose).
 
-> **Note**
+> [!NOTE]
 > This guide focuses on setting up a local development environment and code standards for this repository.
 > Refer to the [contributing guide](CONTRIBUTING.md) if you're looking for guidelines for contributing content.
 
@@ -35,7 +35,7 @@ git clone https://github.com/emnify/product-docs.git
 cd product-docs
 ```
 
-> **Note**
+> [!NOTE]
 > If you're an internal emnify contributor, please contact the docs team to ensure you have the appropriate rights.
 
 ## Local development
@@ -52,13 +52,13 @@ Then, start a local developer server:
 yarn start
 ```
 
-> **Warning**
+> [!WARNING]
 > You need to [set the environment variables](#set-the-environment-variables) or else this fails.
 
 Running the preceding command opens up a browser window.
 Most changes are reflected live without having to restart the server.
 
-> **Note**
+> [!NOTE]
 > Runs on <http://localhost:3000> by default.
 
 ### Set the environment variables
@@ -78,7 +78,7 @@ ALGOLIA_SEARCH_API_KEY=<SEARCH_API_KEY>
 
 This should be enough for you to [run a local server](#local-development).
 
-> **Note**
+> [!IMPORTANT]
 > The actual values are necessary for working on the Algolia DocSearch implementation.
 > If you're an emnify employee and need these keys, contact the docs team.
 > Otherwise, please [open an issue](https://github.com/emnify/product-docs/issues/new/choose).
@@ -131,7 +131,7 @@ See the [Vale README](.github/vale/README.md) for more information.
 
 ## Display images
 
-> **Note**
+> [!TIP]
 > For image guidelines, including file naming and formatting, refer to the [contributing guide](CONTRIBUTING.md#images).
 
 With [Docusaurus](https://docusaurus.io/docs/markdown-features/assets#images), you can display images in three ways: [Markdown syntax](#markdown-syntax), [CommonJS require](#commonjs-require), or [ES import statement](#es-import-statement).
@@ -178,7 +178,7 @@ To do this, you need to add `!!url-loader!` at the beginning of the `src` pathâ€
 
 - Image is used multiple times on a page (for example, a checkmark icon used within a table column)
 
-> **Warning**
+> [!IMPORTANT]
 > Because of the [markdownlint configuration](#content), any import statements must be _after_ the top-level header.
 
 Example of how to display images using ES `import` syntax and [inline SVGs](https://docusaurus.io/docs/markdown-features/assets#inline-svgs):
@@ -189,7 +189,7 @@ import Check from '../assets/check.svg';
 <Check alt="Yes" />
 ```
 
-> **Note**
+> [!TIP]
 > Learn more about [assets in Docusaurus](https://docusaurus.io/docs/markdown-features/assets).
 
 ### Troubleshooting
@@ -230,7 +230,7 @@ For example:
 Opening a pull request is required for all proposed changes.
 Every pull request must be reviewed and approved by at least one [code owner](./.github/CODEOWNERS).
 
-> **Note**
+> [!NOTE]
 > Members of emnify's documentation team can bypass these restrictions.
 
 Please follow the [pull request template](https://github.com/emnify/product-docs/blob/main/.github/PULL_REQUEST_TEMPLATE.md) and be as descriptive as possible.
@@ -247,7 +247,7 @@ Every push to the `main` branch automatically triggers a [GitHub Action](https:/
 
 Because the site uses GitHub Pages for hosting, the following commands are another way to build the website and push to the [`gh-pages` branch](https://github.com/emnify/product-docs/tree/gh-pages).
 
-> **Warning**
+> [!WARNING]
 > You need administrator rights to deploy the emnify Documentation manually.
 
 Using SSH:
