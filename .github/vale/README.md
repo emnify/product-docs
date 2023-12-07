@@ -29,7 +29,7 @@ By default, the minimum alert level in the project configuration is set to `warn
 Vale is run via a [CI pipeline](.github/workflows/vale.yml).
 This pipeline fails on `error` and doesn't report warnings or suggestions.
 
-> **Warning**
+> [!WARNING]
 > The 'Validate content with Vale' pipeline must pass for approval.
 
 ## Styles
@@ -51,7 +51,7 @@ The emnify Documentation only requires two of the 10 rules in the alex package f
 These two rules are also further customized (more terms added, altered severity levels, etc.), so it makes more sense to maintain an emnify-specific version of the rules.
 </details>
 
-> **Note**
+> [!NOTE]
 > emnify has made some modifications to these packages to remove duplicates or add emnify-specific terms.
 
 ## Vocabularies
@@ -64,7 +64,7 @@ emnify uses this to define company or industry-specific terminology (see [`accep
 Vale can turn off [specific rules](#ignore-specific-rules) or [all rules](#ignore-all-rules) inside a document.
 All ignored rules should include a justification for why they’re ignored.
 
-> **Warning**
+> [!WARNING]
 > Vale ignores rules not turned back on for the rest of the document.
 > After the ignored content, turn the rules back on.
 
@@ -81,7 +81,7 @@ Writing documentation is so fun!
 <!-- vale Google.Exclamation = YES -->
 ```
 
-> **Note**
+> [!TIP]
 > Vale requires capitalization for `YES` and `NO` and a space around `=`.
 
 ### Ignore all rules
