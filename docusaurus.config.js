@@ -303,8 +303,12 @@ const config = {
             from: "/rest-api",
           },
           {
-            to: "/rest/authentication",
+            to: "/rest",
             from: "/rest-api/authentication",
+          },
+          {
+            to: "/rest",
+            from: "/rest/authentication",
           },
           {
             to: "/rest/sms-operations",

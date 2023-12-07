@@ -20,7 +20,7 @@ slug: /sdks/concepts
 | Blacklist operators  | Method that allows you to restrict device connectivity to a specific operator or group of operators. Referred to as **networks blocklist** in the Portal.  |
 | Operator  | Underlying mobile network operator (MNO) used to provide connectivity. Referred to as a **network** in the Portal. Explore network coverage by country and region on [emnify's pricing page](https://www.emnify.com/pricing).  |
 | SMS  | [Learn more about SMS](/services/sms).  |
-| Application token  | Authenticates your identity when using the emnify SDK and API. [Learn how to generate an application token](/rest/authentication#authenticate-with-an-application-token).  |
+| Application token  | Authenticates your identity when using the emnify SDK and API. [Learn how to generate an application token](/portal/application-tokens).  |
 
 :::tip
 More terminology and definitions are available in the [Glossary](/glossary).

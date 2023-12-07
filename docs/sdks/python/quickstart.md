@@ -38,7 +38,7 @@ pip install emnify-sdk
 ### Create an application token
 
 To use the Python SDK, you need to create an application token.
-You can do this on the **Integrations** page of the emnify Portal under [**Application Tokens**](https://portal.emnify.com/integrations#application-tokens) or the [emnify REST API](/rest/authentication#authenticate-with-an-application-token).
+You can do this on the **Integrations** page of the emnify Portal under [**Application Tokens**](https://portal.emnify.com/integrations#application-tokens) or the [emnify REST API](https://cdn.emnify.net/api/doc/application-token.html).
 
 Once created, you'll apply it to initiate the SDK.
 

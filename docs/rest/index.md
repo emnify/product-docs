@@ -2,6 +2,8 @@
 description: Introduce the OpenAPI structure and code samples
 last_update: 
   date: 11-02-2021
+pagination_next: rest/sms-operations
+pagination_prev: null
 slug: /rest
 ---
 
@@ -12,6 +14,14 @@ The emnify API provides a variety of HTTP requests to integrate several emnify s
 
 The emnify REST API is based on the OpenAPI Specification OAS3.
 You can try out the API using the [interactive API reference](https://cdn.emnify.net/api/doc/swagger.html).
+
+## Authentication
+
+To use the emnify REST API, you must authenticate with an authentication token.
+emnify uses JSON Web Tokens (JWTs) as the authentication token.
+
+You can retrieve this authentication token using an application token generated in your emnify account.
+For step-by-step instructions, see [Authenticate with application tokens](https://cdn.emnify.net/api/doc/application-token.html) in the emnify System Documentation.
 
 ## Code samples
 
