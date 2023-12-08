@@ -21,7 +21,7 @@ The emnify GraphQL API was initially developed internally to improve performance
 In early 2023, we decided to release a preview version to customers.
 We hope to collect feedback and continue adding features so that the capability more closely matches the [emnify REST API](https://cdn.emnify.net/api/doc/index.html).
 
-:::info
+:::note
 There are no plans to deprecate the REST API.
 Instead, we plan to support both APIs in parallel.
 :::

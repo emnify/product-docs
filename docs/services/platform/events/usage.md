@@ -88,7 +88,7 @@ The [Getting Started guide in the _emnify REST API Documentation_](https://cdn.e
 The emnify API is based on the OpenAPI Specification 3.0 (OAS3).
 We also have [interactive API documentation](https://cdn.emnify.net/api/doc/swagger.html).  
 
-:::note
+:::tip
 Prior OpenAPI knowledge isn't necessary for working with the emnify API.
 Nevertheless, understanding [how an OpenAPI Specification is structured](https://oai.github.io/Documentation/specification.html) could help you navigate the documentation.
 :::

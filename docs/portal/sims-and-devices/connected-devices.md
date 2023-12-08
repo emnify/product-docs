@@ -159,10 +159,6 @@ For definitions of any unfamiliar terms or acronyms, see the [Glossary](/glossar
 | **Disabled**    | No SIM assigned, or the assigned SIM is suspended. |
 | **Deleted**    | Permanently removed from your **Connected Devices**. |
 
-:::tip
-For more information about the various SIM states, see [SIM lifecycle management](/services/sim-lifecycle-management).
-:::
-
 ### Configure the device status
 
 A device has only two configurable states, **Enabled** or **Disabled**.

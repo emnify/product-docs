@@ -40,7 +40,7 @@ In this section, your estimates of how many devices you plan to deploy and their
 Select the **number of active devices** you plan to have.
 The slider provides a range from 1 to 1,000,000 devices.
 
-:::info
+:::note
 If you want to specify an exact number of devices that the slider isn't providing, you can select the current number in the input field next to **Active device** and type in the desired value.
 :::
 
@@ -87,7 +87,7 @@ On the **Data plan upgrade** page, you'll have an opportunity to confirm the fol
 
 When finished, select **Save**.
 
-:::info
+:::caution
 Your new package is charged immediately in the next billing cycle.
 You'll be charged the total package price regardless of when you upgrade, as emnify doesn't prorate.
 :::

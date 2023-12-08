@@ -120,7 +120,7 @@ In this example, `myUser` is a [query](https://graphql.org/learn/queries/) that 
   style={{ width: 700 }}
 />
 
-:::info
+:::tip
 In GraphQL, the `!` means that [variable definition](https://graphql.org/learn/queries/#variable-definitions) is required.
 :::
 

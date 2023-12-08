@@ -52,7 +52,7 @@ For more information about locating your BIC, see [I cannot register my SIM card
 
 Once the SIM is registered, you can assign it to an existing device or create a new device.
 
-:::tip
+:::note
 Assigning your SIM to a device is a necessary step for getting your device online.
 We'd recommended activating the SIM and creating a connected device during registration.
 :::
