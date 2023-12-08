@@ -18,6 +18,22 @@ When in doubt, refer to this style guide as a resource.
 > [!IMPORTANT]
 > This repository uses [Vale](.github/vale/README.md) to lint and enforce this style guide.
 
+## Admonitions
+
+Admonitions (often called alerts) are an extension of the Markdown syntax used to emphasize critical information.
+There are five types, each with a distinct purpose.
+
+Inspired by [GitHub alerts](https://github.com/orgs/community/discussions/16925), here's how emnify uses each admonition type:
+
+- **Note**: Highlights information that users should take into account, even when skimming.
+- **Tip**: Optional information to help a user be more successful.
+- **Info**: Crucial information necessary for users to succeed.
+- **Warning**: Critical content demanding immediate user attention due to potential risks.
+- **Danger**: Negative potential consequences of an action.
+
+> ![TIP]
+> See [Admonitions in the Docusaurus documentation](https://docusaurus.io/docs/markdown-features/admonitions) for more information about formatting and syntax.
+
 ## Images
 
 Each category within the [`docs` directory](./docs/) has an `assets` directory containing all the infographics, screenshots, or other images used on those pages.
