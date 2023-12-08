@@ -20,7 +20,7 @@ For step-by-step instructions, see [Create Endpoints](https://cdn.emnify.net/api
 
 ## Insert the assigned SIM
 
-:::note
+:::info
 Skip this step if your device already has an embedded SIM.
 :::
 

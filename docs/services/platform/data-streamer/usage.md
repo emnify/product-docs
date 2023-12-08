@@ -62,7 +62,7 @@ Optionally, you can add event options for [filtering on event types](/multicloud
 
 Provide the required settings to configure the destination.
 
-:::tip
+:::info
 API keys and configuration parameters differ by connection type.
 Instructions for configuring each connection type are in the [Available integrations](/multicloud-data-streamer/integrations) section.
 :::
@@ -90,7 +90,7 @@ With the **Details** button on the Data Stream tiles, you can inspect the config
 
 To permanently delete a data stream, click the trash bin icon near the **Details** button.
 
-:::caution
+:::note
 You’ll need to confirm this action.
 :::
 
@@ -128,7 +128,7 @@ The [Data Streamer reference page](https://cdn.emnify.net/api/doc/data-streamer.
 
 ### Work with the Data Streamer API
 
-:::caution
+:::info
 API keys and configuration parameters differ by [connection type](/multicloud-data-streamer/connection-types).
 Details on setting up, updating, or deleting integrations are in the [emnify API reference](https://cdn.emnify.net/api/doc/swagger.html#/Integrations).
 It lists all entry points for managing data streams programmatically and contains examples of the available connection types and filtering options.

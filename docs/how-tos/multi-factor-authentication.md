@@ -35,7 +35,7 @@ As soon as one of these methods is enabled, you'll need to enter a one-time code
 
 ### Existing accounts
 
-:::tip
+:::info
 This process is only required if you haven't enabled MFA for your account.
 [Configure TOTP MFA in the Portal](#configure-totp-mfa-in-the-emnify-portal) before it becomes mandatory to avoid any potential disruptions to your workflow.
 :::
@@ -46,7 +46,7 @@ Once MFA becomes mandatory for your organization, follow these steps to access y
 1. Navigate to the email account you use to access the Portal. 
 Open the message from emnify with your 6-digit verification code.
 The code is valid for 20 minutes and should contain letters and numbers.
-:::note
+:::tip
 Check your spam folder if you haven't received a code after a few minutes.
 :::
 
@@ -131,7 +131,7 @@ After that, you'll need to verify your identity again.
 
 To remove a device from **Trusted Devices**, click **Remove**.
 
-:::info
+:::note
 Your changes are saved automatically.
 :::
 
@@ -139,6 +139,6 @@ Your changes are saved automatically.
 
 To turn off your existing MFA setup, go to **User Settings**, find the [**Two-Factor Authentication**](https://portal.emnify.com/user-settings#two-factor-authentication) section, and click **Disable**.
 
-:::note
+:::caution
 You won't be able to disable MFA once it's enforced for your organization.
 :::

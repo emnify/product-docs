@@ -28,7 +28,7 @@ Inspired by [GitHub alerts](https://github.com/orgs/community/discussions/16925)
 - **Note**: Highlights information that users should take into account, even when skimming.
 - **Tip**: Optional information to help a user be more successful.
 - **Info**: Crucial information necessary for users to succeed.
-- **Warning**: Critical content demanding immediate user attention due to potential risks.
+- **Caution**: Critical content demanding immediate user attention due to potential risks.
 - **Danger**: Negative potential consequences of an action.
 
 > ![TIP]

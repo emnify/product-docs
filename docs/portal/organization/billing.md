@@ -23,7 +23,7 @@ There, you find the following:
 
 This section has a **Month** dropdown that defaults to **Current month (preview)**.
 
-:::info
+:::note
 Any changes are reflected in this table within a few hours.
 :::
 
@@ -40,7 +40,7 @@ The following is an example of the shown table and potential values:
 
 The preceding table also provides a **Subtotal** of all costs incurred, tax if applicable, and a **Total** cost in your currency for your billing period.
 
-:::note
+:::info
 **Data usage in** "_your coverage area_" is what you selected from the **Data Plan** dropdown under [**Coverage Policies**](https://portal.emnify.com/device-policies#coverage-policies).
 
 **Data costs for** "_your coverage area_" is what you selected in the list of regions under **Coverage Policies**.

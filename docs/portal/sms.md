@@ -102,6 +102,6 @@ Telematics platforms, SMS services, and operators often use SMPP to enable sendi
 
 You can [select and configure SMPP](/portal/device-policies#smpp-sms-interface) as your **SMS Interface** via a new or existing **Service Policy** under [**Device Policies**](https://portal.emnify.com/device-policies).
 
-:::info
+:::tip
 For an example of integrating SMPP with a third-party application, see [emnify SMS via SMPP integration with Gurtams' flespi and Wialon](https://www.emnify.com/integration-guides/smpp-integration-flespi-wialon-gurtam).
 :::

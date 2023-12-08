@@ -29,7 +29,7 @@ Once configured, you need to add a data allowance for your coverage policies to 
 
 If you notice that one of your devices uses more (or less) data than expected, you can update its assigned data allowance any time during the month.
 
-:::info
+:::note
 Any changes are reflected on your invoice within a few hours.
 :::
 
@@ -49,7 +49,7 @@ Any changes are reflected on your invoice within a few hours.
   alt=""
 />
 
-:::tip
+:::note
 Your changes are saved automatically.
 :::
 
@@ -88,7 +88,7 @@ In the preceding example, the two selected devices (**Walking Mobile** and **Tra
 
 You can also change the coverage (for example, switching from **Americas** to **APAC**) anytime during the month.
 
-:::info
+:::note
 When creating the invoice, emnify confirms which data plan the device is assigned to and bill your account accordingly.
 Any changes are reflected on your invoice within a few hours.
 :::

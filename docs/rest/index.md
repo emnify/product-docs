@@ -27,6 +27,6 @@ For step-by-step instructions, see [Authenticate with application tokens](https:
 
 See the [emnify examples in JavaScript](https://github.com/emnify/API_Examples_JS) GitHub repository for examples of how to authenticate and get the device status via the REST API.
 
-:::info
+:::tip
 The [How to use Rest-API via Postman](https://www.emnify.com/developer-blog/postman-emnify-api) guide provides information on how to more efficiently work with the emnify REST API.
 :::
