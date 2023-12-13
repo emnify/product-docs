@@ -75,7 +75,7 @@ SIMCom
 SIMs
 Sixfab
 SLA[s]
-Starter Package
+Standard Package
 SuperNetwork
 Telecom
 Telia
