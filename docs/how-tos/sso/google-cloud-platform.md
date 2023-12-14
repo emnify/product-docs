@@ -20,7 +20,7 @@ If your email address in the emnify Portal differs from the one used to log in t
 You can verify your email in [**User Settings**](https://portal.emnify.com/user-settings).
 
 Instead, add an additional user with the **Administrator** role.
-To do this, go to **Organization Settings**&nbsp;<span aria-label="and then">></span> [**Employees**](https://portal.emnify.com/organisation-settings/users).
+To do this, go to **Workspace settings**&nbsp;<span aria-label="and then">></span> [**Employees**](https://portal.emnify.com/organisation-settings/users).
 :::
 
 ## Register emnify in Google
@@ -65,7 +65,7 @@ You can access your client ID and secret at any time in your Google Cloud Platfo
 ## Configure the emnify Portal
 
 1. [Log in to the emnify Portal](https://portal.emnify.com/sign/).
-1. Go to **Organization Settings** (building icon) in the top-level navigation and click [**Single Sign-On**](https://portal.emnify.com/organisation-settings/federation).
+1. Go to **Workspace settings** (building icon) in the top-level navigation and click [**Single Sign-On**](https://portal.emnify.com/organisation-settings/federation).
 1. If you need SSO enabled for your account, [contact emnify support](https://support.emnify.com/). 
 Otherwise, click **Add** under the Google SSO provider.
 1. Enter the **Client ID** and **Client Secret** you copied earlier, then click **Create and Activate**.
