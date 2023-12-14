@@ -394,7 +394,7 @@ The emnify NOC is used primarily for [incident management](/support#incident-man
 The [company](#company-account) (or subsidiary, branch, division, department, etc.) associated with a [workspace](#workspace).
 
 :::info
-Information on your organization, employees, subscriptions, and more are available in the emnify Portal under [**Workspace settings**](https://portal.emnify.com/organisation-settings/).
+Information on your organization, users, subscriptions, and more are available in the emnify Portal under [**Workspace settings**](https://portal.emnify.com/organisation-settings/).
 :::
 
 ## OTA
