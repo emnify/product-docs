@@ -20,7 +20,7 @@ If your email address used in the emnify Portal differs from the one used to log
 You can verify your email in [**User Settings**](https://portal.emnify.com/user-settings).
 
 Instead, add an additional user with the **Administrator** role.
-To do this, go to **Organization Settings**&nbsp;<span aria-label="and then">></span> [**Employees**](https://portal.emnify.com/organisation-settings/users).
+To do this, go to **Workspace settings**&nbsp;<span aria-label="and then">></span> [**Employees**](https://portal.emnify.com/organisation-settings/users).
 :::
 
 ## SSO with Microsoft
@@ -126,7 +126,7 @@ Navigate to **Overview** in the sidebar and copy the **Application (client) I
 
 ## Configure the emnify Portal
 
-[Log in to your emnify account](https://portal.emnify.com/sign/), go to Organization Settings (building icon) in the top-level navigation, and click [**Single Sign-On**](https://portal.emnify.com/organisation-settings/federation).
+[Log in to your emnify account](https://portal.emnify.com/sign/), go to Workspace settings (building icon) in the top-level navigation, and click [**Single Sign-On**](https://portal.emnify.com/organisation-settings/federation).
 
 If you need SSO enabled for your account, contact support by selecting **Upgrade**.
 Otherwise, click **Add** under the Microsoft SSO provider.

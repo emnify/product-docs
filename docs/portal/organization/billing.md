@@ -7,7 +7,7 @@ slug: /portal/org/billing
 
 # Billing
 
-To view your billing details, navigate to the [**Organization settings**](https://portal.emnify.com/organisation-settings/), then click [**Billing**](https://portal.emnify.com/organisation-settings/billing).
+To view your billing details, navigate to the [**Workspace settings**](https://portal.emnify.com/organisation-settings/), then click [**Billing**](https://portal.emnify.com/organisation-settings/billing).
 There, you find the following:
 
 ## Payment information
