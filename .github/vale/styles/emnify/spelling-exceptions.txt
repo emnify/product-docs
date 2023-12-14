@@ -20,9 +20,11 @@ pluggable
 repurpose
 SDKs
 serverless
+SLOs
 subnet
 superset
 SVGs
 telematics
 triaging
 uncheck
+Wireshark

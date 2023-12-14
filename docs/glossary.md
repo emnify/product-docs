@@ -92,6 +92,13 @@ _Referred to as [**Tariff Profile**](https://cdn.emnify.net/api/doc/tariff-profi
 
 A policy that defines which networks or countries SIM should operate in.
 
+## CSM
+
+_Customer success manager_
+
+A member of emnify’s team dedicated to helping you grow and achieve your goals.
+For a full explanation of the role, see [Support](/support).
+
 ## Data RX  
 
 Data received by the device.
@@ -374,6 +381,13 @@ For an emnify IoT eSIM, this number is needed for its ability to receive SMS mes
 _Mobile Switching Center_
 
 The part of [GSM](#gsm) architecture that controls the network switching subsystem elements.
+
+## NOC
+
+_Network operations center_
+
+A centralized location where administrators supervise, monitor, and maintain a telecommunication or satellite network.
+The emnify NOC is used primarily for [incident management](/support#incident-management).
 
 ## Organization
 
