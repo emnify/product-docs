@@ -1,0 +1,36 @@
+aside nav,
+button[title="Collapse sidebar"] {
+  border-right: 1px solid var(--eui-sys-layout-container-01);
+}
+
+aside nav,
+nav.navbar--fixed-top {
+  background-color: var(--eui-sys-layout-surface-02);
+}
+
+/* Collapse sidebar button */
+button[title="Collapse sidebar"] {
+  background-color: var(--eui-sys-layout-surface-02);
+  border: none;
+}
+
+button[title="Collapse sidebar"]:hover {
+  background-color: var(--eui-sys-brand-state-primary-02-hover);
+}
+
+button[title="Collapse sidebar"] svg path {
+  fill: var(--eui-sys-brand-secondary-01);
+}
+
+/* Expand sidebar "button" */
+div[title="Expand sidebar"] svg path {
+  fill: var(--eui-sys-brand-secondary-01);
+}
+
+div[title="Expand sidebar"] {
+  background-color: var(--eui-sys-layout-surface-02);
+}
+
+div[title="Expand sidebar"]:hover {
+  background-color: var(--eui-sys-brand-state-primary-02-hover);
+}

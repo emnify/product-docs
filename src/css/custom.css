@@ -1,21 +1,16 @@
-/*
-*****************
------------------
-     CONFIG
-_________________
-*****************
-*/
+@import './admonition.css';
+@import './badge.css';
+@import './button.css';
+@import './footer.css';
+@import './navbar.css';
+@import './sidebar.css';
+@import './table-of-contents.css';
+@import './toggle.css';
 
 /* Tokens */
 @import url("./design-tokens/colors-light.css");
 @import url("./design-tokens/typescale.css");
 @import url("./design-tokens/button.css");
-
-/* Fonts */
-@font-face {
-  font-family: "Inter";
-  src: url("/static/fonts/Inter-VariableFont_slnt,wght.ttf") format("ttf");
-}
 
 /* Overrides the default Infima (https://infima.dev/) variables */
 :root {
@@ -59,7 +54,7 @@ _________________
   --ifm-breadcrumb-item-background-active: var(
     --eui-sys-brand-state-primary-02-active
   );
-  /* ToC */
+  /* Table of Contents */
   --ifm-toc-link-color: var(--eui-sys-brand-on-primary-02);
   /* Buttons */
   --ifm-button-background-color: var(
@@ -74,66 +69,14 @@ _________________
 /*
 *****************
 -----------------
-   NAVIGATION
+      FONTS
 _________________
 *****************
 */
 
-/* Top-level navigation */
-.navbar__link--active {
-  font-weight: var(--eui-sys-typescale-label-medium-font-weight);
-}
-
-.navbar__logo img {
-  height: 75%;
-  vertical-align: middle !important;
-}
-
-/* Sidebar */
-aside nav,
-button[title="Collapse sidebar"] {
-  border-right: 1px solid var(--eui-sys-layout-container-01);
-}
-
-aside nav,
-nav.navbar--fixed-top {
-  background-color: var(--eui-sys-layout-surface-02);
-}
-
-/* Collapse sidebar button */
-button[title="Collapse sidebar"] {
-  background-color: var(--eui-sys-layout-surface-02);
-  border: none;
-}
-
-button[title="Collapse sidebar"]:hover {
-  background-color: var(--eui-sys-brand-state-primary-02-hover);
-}
-
-button[title="Collapse sidebar"] svg path {
-  fill: var(--eui-sys-brand-secondary-01);
-}
-
-/* Expand sidebar "button" */
-div[title="Expand sidebar"] svg path {
-  fill: var(--eui-sys-brand-secondary-01);
-}
-
-div[title="Expand sidebar"] {
-  background-color: var(--eui-sys-layout-surface-02);
-}
-
-div[title="Expand sidebar"]:hover {
-  background-color: var(--eui-sys-brand-state-primary-02-hover);
-}
-
-/* Table of Contents */
-.theme-doc-toc-mobile {
-  background-color: var(--eui-sys-brand-state-primary-02-active) !important;
-}
-
-.theme-doc-toc-mobile ul.table-of-contents > li > a:first-child {
-  font-weight: var(--eui-sys-typescale-label-medium-font-weight);
+@font-face {
+  font-family: "Inter";
+  src: url("/static/fonts/Inter-VariableFont_slnt,wght.ttf") format("ttf");
 }
 
 /*
@@ -184,198 +127,6 @@ _________________
 /*
 *****************
 -----------------
-   ADMONITIONS
-_________________
-*****************
-*/
-
-.theme-admonition {
-  margin-top: 0.5rem;
-}
-
-/* Caution admonition */
-.theme-admonition-caution {
-  background-color: var(--eui-sys-support-containers-warning-container);
-  border-color: var(--eui-sys-support-containers-on-warning-container);
-  color: var(--eui-sys-layout-on-surface);
-}
-
-.theme-admonition-caution a {
-  text-decoration-color: var(--eui-sys-support-containers-on-warning-container);
-}
-
-.theme-admonition-caution svg path {
-  fill: var(--eui-sys-support-containers-on-warning-container);
-}
-
-/* Tip admonition */
-.theme-admonition-tip {
-  background-color: var(--eui-sys-support-containers-success-container);
-  border-color: var(--eui-sys-support-containers-on-success-container);
-  color: var(--eui-sys-layout-on-surface);
-}
-
-.theme-admonition-tip a {
-  text-decoration-color: var(--eui-sys-support-containers-on-success-container);
-}
-
-.theme-admonition-tip svg path {
-  fill: var(--eui-sys-support-containers-on-success-container);
-}
-
-/* Danger admonition */
-.theme-admonition-danger {
-  background-color: var(--eui-sys-support-containers-critical-container);
-  border-color: var(--eui-sys-support-containers-on-critical-container);
-  color: var(--eui-sys-layout-on-surface);
-}
-
-.theme-admonition-danger a {
-  text-decoration-color: var(
-    --eui-sys-support-containers-on-critical-container
-  );
-}
-
-.theme-admonition-danger svg path {
-  fill: var(--eui-sys-support-containers-on-critical-container);
-}
-
-/* Info admonition */
-.theme-admonition-info {
-  background-color: var(--eui-sys-support-containers-info-container);
-  border-color: var(--eui-sys-support-containers-on-info-container);
-  color: var(--eui-sys-layout-on-surface);
-}
-
-.theme-admonition-info a {
-  text-decoration-color: var(--eui-sys-support-containers-on-info-container);
-}
-
-.theme-admonition-info svg path {
-  fill: var(--eui-sys-support-containers-on-info-container);
-}
-
-/* Note admonition */
-.theme-admonition-note {
-  background-color: var(--eui-sys-layout-surface-02);
-  border-color: var(--eui-sys-layout-on-surface-variant-subdued);
-  color: var(--eui-sys-layout-on-surface);
-}
-
-.theme-admonition-note a {
-  text-decoration-color: var(--eui-sys-layout-on-surface-variant-subdued);
-}
-
-.theme-admonition-note svg path {
-  fill: var(--eui-sys-layout-container-02);
-}
-
-/*
-*****************
------------------
-     ALERTS
-_________________
-*****************
-*/
-
-.alert a:hover {
-  text-decoration-thickness: inherit;
-}
-
-details {
-  border: none !important;
-  box-shadow: none !important;
-}
-
-/* Details and summary elements - Examples */
-.custom-details-example {
-  background-color: var(--eui-sys-layout-container-01);
-  color: var(--eui-sys-layout-on-container);
-}
-
-.custom-details-example summary::before {
-  border-color: transparent transparent transparent
-    var(--eui-sys-layout-on-container) !important;
-}
-
-.custom-details-example .collapsibleContent_i85q {
-  border-top: 1px solid var(--eui-sys-layout-on-container) !important;
-}
-
-.custom-details-example .collapsibleContent_i85q a {
-  color: inherit;
-  text-decoration-color: var(--eui-sys-layout-on-container) !important;
-}
-
-.custom-details-example .collapsibleContent_i85q a:hover {
-  text-decoration-color: var(
-    --eui-sys-brand-state-secondary-01-hover
-  ) !important;
-  color: var(--eui-sys-brand-state-secondary-01-hover) !important;
-}
-
-/* Details and summary elements - Troubleshooting */
-.custom-details-troubleshooting {
-  background-color: var(--eui-sys-support-containers-info-container);
-  color: var(--eui-sys-layout-on-surface);
-}
-
-.custom-details-troubleshooting summary::before {
-  border-color: transparent transparent transparent
-    var(--eui-sys-support-containers-on-info-container) !important;
-}
-
-.custom-details-troubleshooting .collapsibleContent_i85q {
-  border-top: 1px solid var(--eui-sys-support-containers-on-info-container) !important;
-}
-
-.custom-details-troubleshooting .collapsibleContent_i85q a {
-  color: inherit;
-  text-decoration-color: var(
-    --eui-sys-support-containers-on-info-container
-  ) !important;
-}
-
-.custom-details-troubleshooting .collapsibleContent_i85q a:hover {
-  text-decoration-color: var(
-    --eui-sys-brand-state-secondary-01-hover
-  ) !important;
-  color: var(--eui-sys-brand-state-secondary-01-hover) !important;
-}
-
-/*
-*****************
------------------
-    FOOTER
-_________________
-*****************
-*/
-
-.footer {
-  border-top: 1px solid var(--eui-sys-layout-container-01);
-}
-
-.footer__bottom {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.footer__logo {
-  height: 14px;
-  margin-top: inherit;
-}
-
-/* Footer links on smaller screens */
-@media only screen and (max-width: 996px) {
-  .footer__link-item {
-    padding: 0.5rem 0;
-  }
-}
-
-/*
-*****************
------------------
      ASSETS
 _________________
 *****************
@@ -402,71 +153,6 @@ _________________
 /* Inline code elements wrapped in an anchor tag */
 a:has(> code) {
   text-decoration: none;
-}
-
-/*
-*****************
------------------
-    BADGES
-_________________
-*****************
-*/
-
-.badge--primary {
-  border: none;
-  background-color: var(--eui-sys-brand-secondary-01);
-  font-size: 50%;
-  font-weight: var(--eui-sys-typescale-label-small-font-weight);
-  margin-bottom: 10px;
-  text-transform: capitalize;
-  vertical-align: middle !important;
-}
-
-/*
-*****************
------------------
-    BUTTONS
-_________________
-*****************
-*/
-
-.primary-button-large-text-only {
-  border: none;
-  background-color: var(--eui-comp-primary-button-container-color-default);
-  border-radius: var(--eui-comp-primary-button-container-border-border-radius);
-  color: var(--eui-comp-primary-button-text-color-default);
-  font-size: var(--eui-comp-primary-button-text-font-font-size);
-  font-weight: var(--eui-comp-primary-button-text-font-font-weight);
-  line-height: var(--eui-comp-primary-button-text-font-line-height);
-  text-decoration: var(--eui-comp-primary-button-text-font-text-decoration);
-  letter-spacing: var(--eui-comp-primary-button-text-font-letter-spacing);
-  padding-left: var(
-    --eui-comp-primary-button-container-padding-large-text-only-left
-  );
-  padding-right: var(
-    --eui-comp-primary-button-container-padding-large-text-only-right
-  );
-  padding-top: var(
-    --eui-comp-primary-button-container-padding-large-text-only-vertical
-  );
-  padding-bottom: var(
-    --eui-comp-primary-button-container-padding-large-text-only-vertical
-  );
-}
-
-.primary-button-large-text-only:hover {
-  background-color: var(--eui-comp-primary-button-container-color-hovered);
-}
-
-.primary-button-large-text-only:active {
-  background-color: var(--eui-comp-primary-button-container-color-active);
-}
-
-.primary-button-large-text-only:focus {
-  background-color: var(--eui-comp-primary-button-container-color-focused);
-  outline-color: var(--eui-comp-primary-button-container-outline-color);
-  outline-width: var(--eui-comp-primary-button-container-outline-width);
-  outline-offset: var(--eui-comp-primary-button-container-outline-offset);
 }
 
 /*

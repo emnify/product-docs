@@ -1,0 +1,88 @@
+/*
+*****************
+-----------------
+   ADMONITIONS
+_________________
+*****************
+*/
+
+.theme-admonition {
+  margin-top: 0.5rem;
+}
+
+/* Caution admonition */
+.theme-admonition-caution {
+  background-color: var(--eui-sys-support-containers-warning-container);
+  border-color: var(--eui-sys-support-containers-on-warning-container);
+  color: var(--eui-sys-layout-on-surface);
+}
+
+.theme-admonition-caution a {
+  text-decoration-color: var(--eui-sys-support-containers-on-warning-container);
+}
+
+.theme-admonition-caution svg path {
+  fill: var(--eui-sys-support-containers-on-warning-container);
+}
+
+/* Tip admonition */
+.theme-admonition-tip {
+  background-color: var(--eui-sys-support-containers-success-container);
+  border-color: var(--eui-sys-support-containers-on-success-container);
+  color: var(--eui-sys-layout-on-surface);
+}
+
+.theme-admonition-tip a {
+  text-decoration-color: var(--eui-sys-support-containers-on-success-container);
+}
+
+.theme-admonition-tip svg path {
+  fill: var(--eui-sys-support-containers-on-success-container);
+}
+
+/* Danger admonition */
+.theme-admonition-danger {
+  background-color: var(--eui-sys-support-containers-critical-container);
+  border-color: var(--eui-sys-support-containers-on-critical-container);
+  color: var(--eui-sys-layout-on-surface);
+}
+
+.theme-admonition-danger a {
+  text-decoration-color: var(
+    --eui-sys-support-containers-on-critical-container
+  );
+}
+
+.theme-admonition-danger svg path {
+  fill: var(--eui-sys-support-containers-on-critical-container);
+}
+
+/* Info admonition */
+.theme-admonition-info {
+  background-color: var(--eui-sys-support-containers-info-container);
+  border-color: var(--eui-sys-support-containers-on-info-container);
+  color: var(--eui-sys-layout-on-surface);
+}
+
+.theme-admonition-info a {
+  text-decoration-color: var(--eui-sys-support-containers-on-info-container);
+}
+
+.theme-admonition-info svg path {
+  fill: var(--eui-sys-support-containers-on-info-container);
+}
+
+/* Note admonition */
+.theme-admonition-note {
+  background-color: var(--eui-sys-layout-surface-02);
+  border-color: var(--eui-sys-layout-on-surface-variant-subdued);
+  color: var(--eui-sys-layout-on-surface);
+}
+
+.theme-admonition-note a {
+  text-decoration-color: var(--eui-sys-layout-on-surface-variant-subdued);
+}
+
+.theme-admonition-note svg path {
+  fill: var(--eui-sys-layout-container-02);
+}

@@ -1,0 +1,21 @@
+.footer {
+  border-top: 1px solid var(--eui-sys-layout-container-01);
+}
+
+.footer__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__logo {
+  height: 14px;
+  margin-top: inherit;
+}
+
+/* Footer links on smaller screens */
+@media only screen and (max-width: 996px) {
+  .footer__link-item {
+    padding: 0.5rem 0;
+  }
+}

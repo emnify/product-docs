@@ -1,0 +1,8 @@
+.navbar__link--active {
+  font-weight: var(--eui-sys-typescale-label-medium-font-weight);
+}
+
+.navbar__logo img {
+  height: 75%;
+  vertical-align: middle !important;
+}
