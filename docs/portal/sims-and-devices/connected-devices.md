@@ -72,6 +72,39 @@ This is especially useful if a term has multiple spellings or you're unsure of t
 For example, if you have two devices named `Phase modem` and `My iPhone`, filtering for `ph` or `ph*e` shows both devices in the results.
 Another example is filtering names using `organi*ation` shows all results regardless of whether the device name uses American (organization) or British (organisation) spelling.
 
+### Upload a CSV file
+
+You can use a comma-separated values (CSV) file to apply multiple values to any filter that accepts string values.
+
+This feature is especially useful if you have dozens of values (for example, 100 ICCIDs).
+Importing values through a CSV file lets you skip the tedious task of entering each value individually.
+
+To upload a CSV file, follow these steps:
+
+1. On [**Connected Devices**](https://portal.emnify.com/connected-devices), choose the corresponding filter for the property in your CSV file (for example, **ICCID**).
+1. Click **Import a CSV file**.
+1. Drag and drop the file or select **Browse file** to find the file you want to import.
+1. Verify the file name and line count are correct, then click **Confirm**.
+
+Each value is parsed, and the table shows any devices with the corresponding values.
+
+:::note
+Uploading a CSV file won't overwrite any existing filters.
+To add or remove any values, select the filter again.
+:::
+
+Please note the following limits:
+
+- You can only upload one `.csv` or `.txt` file at a time
+- Maximum rows: 10,000
+- Maximum row length: 100 characters
+- The CSV file size can't exceed 400 KB in total
+
+:::tip
+You can download and view a sample CSV file to use as a template.
+Choose the filter, select **Import a CSV file**, then click **Download example of right format CSV**.
+:::
+
 ### Enter a list of values
 
 You can also enter a list of values to filter for multiple ones simultaneously.
@@ -79,11 +112,6 @@ This works for any property that accepts string values.
 
 Lists must be plain text with every value on its own line.
 Write the values exactly as they appear in the Portal.
-
-:::tip
-This feature is especially useful if you have an Excel file with dozens of values (for example, 100 ICCIDs).
-If you copy and paste the entire list into the filter, you can skip the tedious task of entering each value individually.
-:::
 
 To demonstrate, if you enter the following in the **Tag** filter and press the `Enter` key:
 
