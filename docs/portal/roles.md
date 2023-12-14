@@ -12,14 +12,14 @@ import Close from './assets/close.svg';
 
 The [emnify Portal](https://portal.emnify.com/) is a powerful application to control the connectivity of devices of a production system.
 
-Employees across your organization may use the Portal, from operations and finance to development and product.
+Users across your organization may use the Portal, from operations and finance to development and product.
 That's why emnify offers three levels of access (referred to as **Roles**) to use and manage Portal features:
 
 - **Administrator** (has access to all services and user management)
 - **Observer** (has access to limited services)
 - **User** (has access to all services)
 
-To view and edit these roles, go to **Workspace settings**&nbsp;<span aria-label="and then">></span> [**Employees**](https://portal.emnify.com/organisation-settings/users).
+To view and edit these roles, go to **Workspace settings**&nbsp;<span aria-label="and then">></span> [**Users**](https://portal.emnify.com/organisation-settings/users).
 
 The following tables describe the permissions for different roles.
 

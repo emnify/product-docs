@@ -73,7 +73,7 @@ const sidebars = {
           items: [
             "portal/organization/settings",
             "portal/organization/data",
-            "portal/organization/employees",
+            "portal/organization/users",
             "portal/organization/subscription",
             "portal/organization/billing",
             "portal/organization/sso",

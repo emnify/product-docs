@@ -20,7 +20,7 @@ If your email address used in the emnify Portal differs from the one used to log
 You can verify your email in [**User Settings**](https://portal.emnify.com/user-settings).
 
 Instead, add an additional user with the **Administrator** role.
-To do this, go to **Workspace settings**&nbsp;<span aria-label="and then">></span> [**Employees**](https://portal.emnify.com/organisation-settings/users).
+To do this, go to **Workspace settings**&nbsp;<span aria-label="and then">></span> [**Users**](https://portal.emnify.com/organisation-settings/users).
 :::
 
 ## SSO with Microsoft
