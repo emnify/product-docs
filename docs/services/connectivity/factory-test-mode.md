@@ -1,6 +1,6 @@
 ---
 last_update: 
-  date: 06-10-2023
+  date: 01-03-2024
 slug: /services/factory-test-mode
 ---
 
@@ -37,19 +37,31 @@ Once either threshold is crossed, the SIM automatically moves to the **Activated
 The tenth SMS executes the SIM activation.
 :::
 
-SIMs in FTM are also activated in any of the following scenarios:
+SIMs in FTM are also activated in any of the following scenarios to ensure reliability and coverage:
 
 - SIM cards that never reached any threshold but are in FTM longer than the designated test period.
-For organizations created after July 23, 2023, the default test period is 180 days.
-- If the status of the device in the **Factory test** state is altered.
+The default test period for organizations created after July 23, 2023, is 180 days.
+- If the device's status is altered while the SIM is in **Factory test**.
 - Running a reset connectivity.
+- Cancelling or switching to a different package that doesn't support FTM.
 
-## Patch a SIM to FTM
+## Activate FTM in the emnify Portal
 
-It isn't possible to enable FTM from the emnify Portal.
-For more information about patching SIM cards via the REST API, see [Factory Test Mode on the emnify System Documentation](https://cdn.emnify.net/api/doc/factory-test-mode.html).
+You can enable FTM while registering SIMs in the emnify Portal.
 
-:::caution
-Suppose you cancel or switch to a different package that doesn't support FTM when SIMs are in the **Factory test** status.
-In that case, those SIMs are activated to ensure reliability and coverage.
+1. Follow the steps to [register a new SIM or SIM batch](/quickstart/register-sims#register-sims-in-the-emnify-portal).
+1. After your SIM is registered, select **Create device**.
+1. In **Create a new device**, fill in your device details.
+Under **Select Device Mode**, choose **Factory Test**.
+1. Review, then click **Create device**.
+1. [Configure the APN](/apn-configuration), then click **APN is set up**.
+
+Once created, your device should be ready to go online if configured with the correct APN, and data roaming is enabled.
+
+:::note
+You can follow the same steps while registering a SIM batch.
 :::
+
+## Patch a SIM to Factory Test with the emnify REST API
+
+For more information about patching SIM cards via the REST API, see [Factory Test Mode on the emnify System Documentation](https://cdn.emnify.net/api/doc/factory-test-mode.html).
