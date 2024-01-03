@@ -18,6 +18,14 @@ When in doubt, refer to this style guide as a resource.
 > [!IMPORTANT]
 > This repository uses [Vale](.github/vale/README.md) to lint and enforce this style guide.
 
+## File structure
+
+- Names should be written in [kebab case](https://www.freecodecamp.org/news/snake-case-vs-camel-case-vs-pascal-case-vs-kebab-case-whats-the-difference/#kebab-case) format with all lowercase characters.
+- Use the `.mdx` extension whenever you use JSX or other MDX features (for example, `import` or `export`) inside a Markdown file.
+
+> ![IMPORTANT]
+> According to [Docusaurus](https://docusaurus.io/blog/preparing-your-site-for-docusaurus-v3), future versions will parse `.md` files as standard [CommonMark](https://commonmark.org/), which doesn't support these features.
+
 ## Admonitions
 
 Admonitions (often called alerts) are an extension of the Markdown syntax used to emphasize critical information.
