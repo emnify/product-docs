@@ -5260,8 +5260,8 @@ etag@~1.8.1:
   integrity sha512-aIL5Fx7mawVa300al2BnEE4iNvo1qETxLrPI/o05L7z6go7fCw1J6EQmbK4FmJ2AS7kgVF/KEZWufBfdClMcPg==
 
 "eui-design-tokens@git+ssh://git@github.com/emnify/design-tokens.git":
-  version "1.0.21"
-  resolved "git+ssh://git@github.com/emnify/design-tokens.git#fcb22ff688a37cc0b190d91137d258d68d1350d6"
+  version "1.0.50"
+  resolved "git+ssh://git@github.com/emnify/design-tokens.git#94fcc962cca9d2038516fe1fb62a6105c02872b9"
 
 eval@^0.1.8:
   version "0.1.8"

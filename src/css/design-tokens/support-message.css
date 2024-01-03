@@ -1,0 +1,15 @@
+/**
+ * Do not edit directly
+ * Generated on Fri, 03 Nov 2023 13:40:23 GMT
+ */
+
+.support-message {
+  --eui-comp-support-message-color-default: #5B5B5B;
+  --eui-comp-support-message-color-error: #ff5757;
+  --eui-comp-support-message-font-font-weight: 400;
+  --eui-comp-support-message-font-font-size: 0.70rem;
+  --eui-comp-support-message-font-line-height: 140%;
+  --eui-comp-support-message-font-letter-spacing: 0.02rem;
+  --eui-comp-support-message-font-text-decoration: none;
+  --eui-comp-support-message-padding-top: 8px;
+}

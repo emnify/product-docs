@@ -1,6 +1,7 @@
 @import './admonition.css';
 @import './badge.css';
 @import './button.css';
+@import './docsearch.css';
 @import './footer.css';
 @import './navbar.css';
 @import './sidebar.css';
@@ -11,6 +12,7 @@
 @import url("./design-tokens/colors-light.css");
 @import url("./design-tokens/typescale.css");
 @import url("./design-tokens/button.css");
+@import url("./design-tokens/search.css");
 
 /* Overrides the default Infima (https://infima.dev/) variables */
 :root {
@@ -24,16 +26,16 @@
   --ifm-h3-font-size: var(--eui-sys-typescale-headline-small-font-size);
   --ifm-font-weight-bold: var(--eui-sys-typescale-label-medium-font-weight);
   /* Content colors */
-  --ifm-color-content: var(--eui-sys-brand-on-primary-02);
-  --ifm-color-content-secondary: #404067;
+  --ifm-color-content: var(--eui-sys-layout-on-surface);
+  --ifm-color-content-secondary: var(--eui-sys-layout-on-surface-subdued);
   --ifm-color-primary: var(--eui-sys-layout-on-surface);
-  --ifm-color-primary-dark: #80809a;
-  --ifm-color-primary-darker: #404067;
-  --ifm-color-primary-darkest: #000035;
-  --ifm-color-primary-light: #60e524;
-  --ifm-color-primary-lighter: #4ee794;
-  --ifm-color-primary-lightest: #dff6d5;
-  --ifm-color-emphasis: #404067;
+  --ifm-color-primary-dark: var(--eui-sys-brand-state-primary-02-hover);
+  --ifm-color-primary-darker: var(--eui-sys-brand-state-primary-01-active);
+  --ifm-color-primary-darkest: var(--eui-sys-brand-state-primary-01-hover);
+  --ifm-color-primary-light: var(--eui-sys-brand-state-secondary-01-active);
+  --ifm-color-primary-lighter: var(--eui-sys-brand-state-primary-02-hover);
+  --ifm-color-primary-lightest: var(--eui-sys-brand-state-primary-02-active);
+  --ifm-color-emphasis: var(--eui-sys-brand-tertiary-01);
   /* Links */
   --ifm-link-color: var(--eui-sys-brand-secondary-01);
   --ifm-link-hover-color: var(--eui-sys-brand-state-secondary-01-hover);
@@ -66,16 +68,8 @@
   --ifm-code-background: var(--eui-sys-layout-surface-02);
 }
 
-/*
-*****************
------------------
-      FONTS
-_________________
-*****************
-*/
-
 @font-face {
-  font-family: "Inter";
+  font-family: var(--eui-sys-font-family-standard);
   src: url("/static/fonts/Inter-VariableFont_slnt,wght.ttf") format("ttf");
 }
 

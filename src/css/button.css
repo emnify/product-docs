@@ -1,11 +1,3 @@
-/*
-*****************
------------------
-    BUTTONS
-_________________
-*****************
-*/
-
 .primary-button-large-text-only {
   border: none;
   background-color: var(--eui-comp-primary-button-container-color-default);

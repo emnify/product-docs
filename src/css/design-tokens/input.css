@@ -1,13 +1,13 @@
 /**
  * Do not edit directly
- * Generated on Mon, 11 Sep 2023 08:06:21 GMT
+ * Generated on Fri, 03 Nov 2023 13:40:23 GMT
  */
 
 .input {
-  --eui-comp-input-container-border-default: #cdcdcd;
+  --eui-comp-input-container-border-default: #CDCDCD;
   --eui-comp-input-container-border-hovered: #727272;
   --eui-comp-input-container-border-focused: #727272;
-  --eui-comp-input-container-border-disabled: #cdcdcd;
+  --eui-comp-input-container-border-disabled: #CDCDCD;
   --eui-comp-input-container-border-error: #ff5757;
   --eui-comp-input-container-border-border-radius: 8px;
   --eui-comp-input-container-border-width: 1px;
@@ -15,16 +15,16 @@
   --eui-comp-input-container-padding-large-right: 16px;
   --eui-comp-input-container-padding-large-vertical: 12px;
   --eui-comp-input-container-padding-large-between: 8px;
-  --eui-comp-input-label-text-color-default: #444444;
-  --eui-comp-input-label-text-color-disabled: #cdcdcd;
+  --eui-comp-input-label-text-color-default: #5B5B5B;
+  --eui-comp-input-label-text-color-disabled: #CDCDCD;
   --eui-comp-input-label-text-color-error: #ff5757;
   --eui-comp-input-label-text-empty-font-font-weight: 400;
-  --eui-comp-input-label-text-empty-font-font-size: 1rem;
+  --eui-comp-input-label-text-empty-font-font-size: 1.00rem;
   --eui-comp-input-label-text-empty-font-line-height: 140%;
   --eui-comp-input-label-text-empty-font-letter-spacing: 0.02rem;
   --eui-comp-input-label-text-empty-font-text-decoration: none;
   --eui-comp-input-label-text-filled-font-font-weight: 400;
-  --eui-comp-input-label-text-filled-font-font-size: 0.7rem;
+  --eui-comp-input-label-text-filled-font-font-size: 0.70rem;
   --eui-comp-input-label-text-filled-font-line-height: 140%;
   --eui-comp-input-label-text-filled-font-letter-spacing: 0.02rem;
   --eui-comp-input-label-text-filled-font-text-decoration: none;
@@ -32,23 +32,16 @@
   --eui-comp-input-label-text-background-on-surface-02: #f5f5f5;
   --eui-comp-input-label-text-padding-large-left: 4px;
   --eui-comp-input-label-text-padding-large-right: 4px;
-  --eui-comp-input-icon-color-default: #444444;
+  --eui-comp-input-icon-color-default: #5B5B5B;
   --eui-comp-input-icon-size: 32px;
   --eui-comp-input-icon-padding-large-right: 8px;
   --eui-comp-input-icon-padding-large-vertical: 8px;
   --eui-comp-input-input-text-color-default: #000000;
-  --eui-comp-input-input-text-color-disabled: #cdcdcd;
+  --eui-comp-input-input-text-color-disabled: #CDCDCD;
   --eui-comp-input-input-text-font-font-weight: 400;
-  --eui-comp-input-input-text-font-font-size: 1rem;
+  --eui-comp-input-input-text-font-font-size: 1.00rem;
   --eui-comp-input-input-text-font-line-height: 140%;
   --eui-comp-input-input-text-font-letter-spacing: 0.02rem;
   --eui-comp-input-input-text-font-text-decoration: none;
-  --eui-comp-input-support-text-color-default: #444444;
-  --eui-comp-input-support-text-color-error: #ff5757;
-  --eui-comp-input-support-text-font-font-weight: 400;
-  --eui-comp-input-support-text-font-font-size: 0.7rem;
-  --eui-comp-input-support-text-font-line-height: 140%;
-  --eui-comp-input-support-text-font-letter-spacing: 0.02rem;
-  --eui-comp-input-support-text-font-text-decoration: none;
-  --eui-comp-input-support-text-padding-large-top: 8px;
+  --eui-comp-input-placeholder-text-color-default: #CDCDCD;
 }
