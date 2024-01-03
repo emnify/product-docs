@@ -9,7 +9,7 @@ slug: /system-events/event-types
 
 The following is a list of available event types, including their corresponding IDs and descriptions.
 
-:::note API Reference
+:::note[API reference]
 [Event type object](https://cdn.emnify.net/api/doc/event.html#event-type-object)
 :::
 
@@ -1746,7 +1746,7 @@ The organization is blocked after exceeding the monthly cost limit (defined by e
 | 57  | [Data quota deleted](#data-quota-deleted)           |
 | 60  | [Data quota expired](#data-quota-expired)           |
 
-:::note API Reference
+:::note[API reference]
 Quota information is in the event's [detail object](https://cdn.emnify.net/api/doc/event.html#detail-object).
 :::
 
@@ -2228,7 +2228,7 @@ Once expired, the device isn't able to establish a data session.
 | 58  | [SMS quota assigned](#sms-quota-assigned)                   |
 | 59  | [SMS quota deleted](#sms-quota-deleted)                     |
 
-:::note API Reference
+:::note[API reference]
 Quota information is in the event's [detail object](https://cdn.emnify.net/api/doc/event.html#detail-object).
 :::
 

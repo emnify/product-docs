@@ -8,7 +8,7 @@ slug: /graphql
 
 # emnify GraphQL API <span className="theme-doc-version-badge badge badge--primary">preview</span>
 
-:::warning Compatibility Notes
+:::warning[compatibility notes]
 **The emnify GraphQL API is under active development** and is subject to change.
 
 Feedback and suggestions are very welcome.

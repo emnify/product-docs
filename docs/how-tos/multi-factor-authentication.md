@@ -15,7 +15,7 @@ Even if someone knows your password (the first factor), they would still need ac
 
 MFA is sometimes called two-factor authentication (2FA) and has historically been at emnify.
 
-:::warning important update
+:::warning[important update]
 MFA will be mandatory for all emnify Portal accounts as of January 2024 to proactively safeguard our IoT ecosystem and meet regulatory security compliance.
 For more information, see the [MFA FAQ in the emnify Knowledge Base](https://support.emnify.com/hc/en-us/articles/11119662291740-MFA-FAQ).
 :::

@@ -33,7 +33,7 @@ However, you can't change the email address used to log in to the emnify Portal.
 You can select **Enable** in this section to set up your account's multi-factor authentication (MFA).
 Once you've enabled MFA, your **Account security** shows **Active** in the [**Users**](https://portal.emnify.com/organisation-settings/users) table, and you can [manage trusted devices](/how-tos/multi-factor-authentication#manage-trusted-devices).
 
-:::warning Important update
+:::warning[important update]
 MFA will be mandatory for all emnify Portal accounts as of January 2024 to proactively safeguard our IoT ecosystem and meet regulatory security compliance.
 For more information and configuration instructions, see [Set up multi-factor authentication](/how-tos/multi-factor-authentication).
 :::
