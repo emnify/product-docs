@@ -15,7 +15,7 @@ This guide walks through enabling single sign-on (SSO), so your organization can
 - A Google account that's a user within a [Google Cloud Platform organization](https://cloud.google.com/resource-manager/docs/creating-managing-organization)
 - An [emnify account](/quickstart) using the same email address as the one used to sign in to Google 
 
-:::caution
+:::warning
 If your email address in the emnify Portal differs from the one used to log in to Google, this setup won't work.
 You can verify your email in [**User Settings**](https://portal.emnify.com/user-settings).
 
@@ -72,7 +72,7 @@ Otherwise, click **Add** under the Google SSO provider.
 1. Once you're back on **Single Sign-On**, you should see Google listed as a **Provider**.
 1. Finally, click **Verify Integration** and follow the prompts.
 
-:::caution
+:::warning
 You must complete the final step and verify the provider to configure SSO.
 :::
 

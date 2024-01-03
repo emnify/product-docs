@@ -17,7 +17,7 @@ To add or view existing application tokens, navigate to **Integrations** and the
 2. Select **Add First Token** or **Add Token**.
 3. Add a **Description** and optionally add an **Expiry date** or **IP restriction**.
 
-:::caution
+:::warning
 While adding an expiration date and IP restriction are technically optional, it's highly recommended as an additional security measure.
 
 If your token is compromised, the **IP restriction** helps limit the attacker's access, while having an **Expiry date** set means the token is short-lived and the attacker has no way to generate a new one.

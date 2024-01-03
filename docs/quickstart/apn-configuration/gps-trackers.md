@@ -44,7 +44,7 @@ Otherwise, if there's no username or password configured, use the following:
   setparam 2001:em
 ```
 
-:::caution
+:::warning
 The two leading spaces are required.
 :::
 
@@ -140,7 +140,7 @@ Replace _`[PASSWORD]`_ with your password.
 The default password is `123456`.
 :::
 
-:::caution
+:::warning
 There are no spaces between `gprs`/`APN` and the password.
 :::
 
