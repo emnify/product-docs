@@ -1,7 +1,7 @@
 ---
 description: Use your emnify account to register your SIMs
 last_update: 
-  date: 08-30-2023
+  date: 01-03-2023
 sidebar_label: Register SIMs
 slug: /quickstart/register-sims
 ---
@@ -48,7 +48,7 @@ For more information about locating your BIC, see [I cannot register my SIM card
 1. Navigate to the **SIM Inventory** and click **Register SIMs**.
 1. Select **Single-SIM** to register individual SIM cards or select **SIM Batch** for batches.
 1. Enter the **BIC1** for individual SIMs or the **BIC2** for batches.
-1. After confirming your BIC is correct, select **Register SIM card**.
+1. After confirming your BIC is correct, select **Register SIM Card**.
 
 Once the SIM is registered, you can assign it to an existing device or create a new device.
 
@@ -66,20 +66,20 @@ For step-by-step instructions, see [Register SIMs in the emnify System Documenta
 
 You can create a new device for the newly registered SIM while still in the SIM registration process.
 
-<!-- markdownlint-disable MD029 -->
-<details className="custom-details-example">
-  <summary>Step-by-step instructions</summary>
+1. After your SIM is registered, select **Create device**.
+1. In **Create a new device**, name your device and assign a service policy and coverage policy.
+Optionally, add tags, indicate the IP address, or [lock the IMEI](/services/security#imei-lock).
+1. Choose the device mode.
+If you plan on using your device right away, select **Active**.
+Otherwise, select **Disabled**.
+:::info
+Customers with the Plus Package or Pro Package also have the option to select **Factory Test**.
+For more information, see [Factory test mode](/services/factory-test-mode).
+:::
 
-  1. After your SIM is registered, select **Create device**.
-  2. In **Create a new device**, replace **Add Device name** with an appropriate name for the new device and assign a **Service policy** and **Coverage policy**.
-  3. Inspect your choices for device name and tags, then select **Create device**.
-  4. If you plan on using your device right away, select **Activate**. 
-  Otherwise, select **Leave disabled**.
+1. Review your device details, then click **Create device**.
+:::caution
+A monthly cost is charged for each connected device.
+:::
 
-  :::caution
-  A monthly cost is charged for each connected device.
-  :::
-
-  5. Once created, your device should be ready to go online if it's [configured with the correct APN](/apn-configuration) and data roaming is enabled.
-
-</details>
+Once created, your device should be ready to go online if it's [configured with the correct APN](/apn-configuration), data roaming is enabled, and the device status is **Enabled** or **Factory test**.
