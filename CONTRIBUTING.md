@@ -65,3 +65,12 @@ For consistency, follow these guidelines:
 - **Line thickness**: Roughly `8px`
 
 ![Example screenshot showing one row from the Connected Devices table in the emnify Portal. The "Details" button is outlined in a thick, sharp, information blue colored rectangle.](https://github.com/emnify/product-docs/assets/26869552/acc6cec1-9639-4345-a934-41f55e8d75a2)
+
+## Validate MDX files
+
+Docusaurus provides a [docusaurus-mdx-checker](https://github.com/slorber/docusaurus-mdx-checker) CLI to help spot problematic content that'll result in compilation errors.
+To see what files fail to compile under MDX v3, run:
+
+```bash
+npx docusaurus-mdx-checker
+```

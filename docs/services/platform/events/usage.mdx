@@ -1,6 +1,6 @@
 ---
 description: Manage events with emnify's Data Streamer, REST API, or Portal
-last_update: 
+last_update:
   date: 01-11-2023
 slug: /system-events/usage
 ---
@@ -86,7 +86,7 @@ The [Getting Started guide in the _emnify REST API Documentation_](https://cdn.e
 ### Specification and documentation
 
 The emnify API is based on the OpenAPI Specification 3.0 (OAS3).
-We also have [interactive API documentation](https://cdn.emnify.net/api/doc/swagger.html).  
+We also have [interactive API documentation](https://cdn.emnify.net/api/doc/swagger.html).
 
 :::tip
 Prior OpenAPI knowledge isn't necessary for working with the emnify API.
@@ -109,9 +109,9 @@ These event lists can be filtered, sorted, and paged according to query paramete
 
 | Method   | Entry point     | Description   |
 | -------- | --------------- | ------------- |
-| `GET`    | [/api/v1/endpoint/{endpoint_id}/event](https://cdn.emnify.net/api/doc/swagger.html#/Endpoint/EndpointEventsByID)  | Returns the list of endpoint events. |
-| `GET`    | [/api/v1/sim/{sim_id}/event](https://cdn.emnify.net/api/doc/swagger.html#/SIM/SimEventPagePerPageSortBySimIdAndQGet)  | Returns the list of SIM events. |
-| `GET`    | [/api/v1/user/{user_id}/event](https://cdn.emnify.net/api/doc/swagger.html#/User%20Management/UserEventPagePerPageSortByUserIdAndQGet)  | Returns the list of user events. |
+| `GET`    | [/api/v1/endpoint/\{endpoint_id\}/event](https://cdn.emnify.net/api/doc/swagger.html#/Endpoint/EndpointEventsByID)  | Returns the list of endpoint events. |
+| `GET`    | [/api/v1/sim/\{sim_id\}/event](https://cdn.emnify.net/api/doc/swagger.html#/SIM/SimEventPagePerPageSortBySimIdAndQGet)  | Returns the list of SIM events. |
+| `GET`    | [/api/v1/user/\{user_id\}/event](https://cdn.emnify.net/api/doc/swagger.html#/User%20Management/UserEventPagePerPageSortByUserIdAndQGet)  | Returns the list of user events. |
 
 ## emnify Portal
 
@@ -121,17 +121,22 @@ There are several ways to view or trigger events within the [emnify Portal](http
 
 Here's where you can find event information in the Portal:
 
-- [**Dashboard**](https://portal.emnify.com/): Overview of all event activity within your organization. 
+- [**Dashboard**](https://portal.emnify.com/): Overview of all event activity within your organization.
+
 <img
   src={require('./assets/portal-dashboard-events.png').default}
   alt=""
 />
+
 - [**Connected Devices**](https://portal.emnify.com/connected-devices)&nbsp;<span aria-label="and then">></span> **Details**&nbsp;<span aria-label="and then">></span> **Events**: List of triggered events for a particular device (also referred to as an "endpoint").
+
 <img
   src={require('./assets/portal-connected-devices-details-events.png').default}
   alt=""
 />
+
 - [**SIM Inventory**](https://portal.emnify.com/sim-inventory)&nbsp;<span aria-label="and then">></span> **Details**&nbsp;<span aria-label="and then">></span> **Events**: List of triggered events for a particular SIM card.
+
 <img
   src={require('./assets/portal-sim-inventory-details-events.png').default}
   alt=""
@@ -146,12 +151,12 @@ Any events triggered in the [Portal](https://portal.emnify.com/) shows **API** a
 No matter where you view events in the Portal, you'll have access to the following information for each event:
 
 - **Severity**: The [event severity](/system-events#event-severity).
-- **Date**: When the event was triggered. By default, the Portal shows the relative date (for example, "a day ago," "15 days ago," "a month ago"). 
+- **Date**: When the event was triggered. By default, the Portal shows the relative date (for example, "a day ago," "15 days ago," "a month ago").
 Pressing the clock icon shows an absolute date value in the `MMMM dd, yyyy hh:mm a` format.
 - **Event Source**: Which [system triggered the event](/system-events#event-source).
-- **Event Type**: [Name of the triggered event](/system-events/event-types) (the `description` value in the [Event Type Object](https://cdn.emnify.net/api/doc/event.html#event-type-object)). 
+- **Event Type**: [Name of the triggered event](/system-events/event-types) (the `description` value in the [Event Type Object](https://cdn.emnify.net/api/doc/event.html#event-type-object)).
 This field also indicates the network generation ([4G](https://www.emnify.com/iot-glossary/4g), [5G](https://www.emnify.com/iot-glossary/5g), etc.) for specific events, like [PDP context lifecycles](/system-events/  event-types#data-connection-lifecycle).
-- **Device**: Name of the device impacted by the event (the `name` value from the [Endpoint Object](https://cdn.emnify.net/api/doc/event.html#endpoint-object)). 
+- **Device**: Name of the device impacted by the event (the `name` value from the [Endpoint Object](https://cdn.emnify.net/api/doc/event.html#endpoint-object)).
 This name often links to the device's entry on the [**Connected Devices**](https://portal.emnify.com/connected-devices) page of the emnify Portal.
 - **Operator**: Which [Mobile Network Operator (MNO)](https://www.emnify.com/iot-glossary/mno) the device is currently roaming on (for example, Vodafone, AT&T).
 Only listed for relevant network events.
