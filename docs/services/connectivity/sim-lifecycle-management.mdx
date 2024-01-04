@@ -1,11 +1,14 @@
 ---
 description: Configure SIM state to minimize costs
-last_update: 
+last_update:
   date: 08-31-2023
 slug: /services/sim-lifecycle-management
 ---
 
 # SIM lifecycle management
+
+import Table from '@site/src/components/Table';
+import simStates from './data/simStates';
 
 When selling connected devices, it's difficult to determine when devices are in use and when not.
 Using SIM cards that can't align with the device lifecycle incur unnecessary costs.
@@ -16,6 +19,9 @@ After the registration, the SIMs move between the different states depending on 
 ## SIM states
 
 The SIMs have five different states that can be configured via the [**SIM Inventory**](/portal/sim-inventory) in the emnify Portal or the [emnify SIM REST API](https://cdn.emnify.net/api/doc/swagger.html#/SIM):
+
+<!-- TODO: Fix bug with cookie banner -->
+<Table data={simStates} />
 
 | State            | Description                                      |
 |:-----------------|:-------------------------------------------------|
