@@ -1,5 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
+import Markdown from "react-markdown";
+import remarkMdx from "remark-mdx";
 
 const Table = ({ data }) => {
   const headers = Object.keys(data[0]);
@@ -21,7 +23,13 @@ const Table = ({ data }) => {
         {rows.map((row, index) => (
           <tr key={index}>
             {row.map((cell, index) => (
-              <td key={index}>{cell}</td>
+              <Markdown
+                key={index}
+                components={{ p: "td" }}
+                remarkPlugins={[remarkMdx]}
+              >
+                {cell}
+              </Markdown>
             ))}
           </tr>
         ))}

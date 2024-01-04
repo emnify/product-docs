@@ -1,6 +1,6 @@
 ---
 description: Invite, assign a role, suspend, and delete users within your organization on the emnify Portal
-last_update: 
+last_update:
   date: 12-14-2023
 slug: /portal/org/employees
 ---
@@ -9,6 +9,8 @@ slug: /portal/org/employees
 
 import Check from '../assets/check.svg';
 import Close from '../assets/close.svg';
+import Table from '@site/src/components/Table'
+import userProperties from './data/userProperties'
 
 You can view and administer your Workspace users by navigating to [**Users**](https://portal.emnify.com/organisation-settings/users).
 
@@ -20,16 +22,7 @@ Only users with the **Administrator** role have visibility to the list of Worksp
 
 The paged list shows the following information for each user:
 
-| Property         | Description                                      |
-|:-----------------|:-------------------------------------------------|
-| **User ID**      | A unique numeric value associated with a user.  |
-| **Name**      | Names can be first names only and aren't required to be unique.  |
-| **Email**      | The email address used for sending the invitation.  |
-| **Created**      | Date the users' emnify account was created.  |
-| **User role**      | Either **Administrator**, **Observer**, or **User**.  |
-| **Workspace access**      | Number of workspaces the user has access to. Workspace names are listed under the user details, along with the associated role and invitation status (either **Active**, **Invite pending**, or **Invite expired**). |
-| **Account security**      | Multi-factor authentication (MFA) status, either **Active** or **Disable**.  |
-| **Delete user**     | For deleting the user's account.  |
+<Table data={userProperties} />
 
 ## Add a new user
 

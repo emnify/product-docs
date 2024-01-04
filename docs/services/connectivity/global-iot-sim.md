@@ -8,6 +8,9 @@ slug: /services/global-iot-sim
 
 # emnify IoT eSIM
 
+import Table from '@site/src/components/Table'
+import formFactors from './data/formFactors'
+
 emnify provides eSIMs that are built specifically for IoT solutions.
 The eSIMs come in different quality grades that are more durable than standard SIM.
 They can be updated [over the air (OTA)](/glossary#ota) using eSIM remote SIM provisioning technologies and come in different [form factors](#form-factors).
@@ -26,12 +29,7 @@ You can update M2M eSIMs with new configurations or profiles, eliminating the ne
 
 emnify IoT eSIMs are available in the following form factors.
 
-| Form factor         | Dimensions             |
-|---------------------|------------------------|
-| **2FF** (Mini SIM)  | 15 x 25 x 0.75 mm      |
-| **3FF** (Micro SIM) | 12 x 15 x 0.75 mm      |
-| **4FF** (Nano SIM)  | 8.8 x 12.3 x 0.75 mm   |
-| **MFF2** (eSIM)     | 5 x 6 x 0.75 mm, 8 pin |
+<Table data={formFactors} />
 
 :::note
 MFF2 eSIMs can be soldered onto a device and aren't readily removable.

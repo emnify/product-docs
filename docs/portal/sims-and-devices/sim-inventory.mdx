@@ -7,8 +7,8 @@ slug: /portal/sim-inventory
 
 # SIM inventory
 
-import Table from '@site/src/components/Table';
-import simPropertiesData from './data/simProperties'
+import Table from '@site/src/components/Table'
+import simProperties from './data/simProperties'
 
 The [**SIM Inventory**](https://portal.emnify.com/sim-inventory) provides a complete list of your registered SIMs.
 
@@ -25,21 +25,7 @@ For more information about each SIM state, see [SIM lifecycle management](/servi
 
 The **Details** view shows all identifiers and properties for an individual SIM, including:
 
-console.log(simPropertiesData)
-<Table data={simPropertiesData} />
-
-| Property            | Description                                      |
-|:--------------------|:-------------------------------------------------|
-| **Assigned device** | Name of the device that the SIM is attached to, linked to the respective **Device Details** page. |
-| **SIM ID**          | Unique identifier of the SIM (referred to as the `sim_id` when working with the [REST API](https://cdn.emnify.net/api/doc/sim.html)). |
-| **ICCID**           | Integrated circuit card identifier including the final Luhn checksum digit. |
-| **MSISDN**          | Mobile Station International Subscriber Directory Number of the SIM. |
-| **IMSI**            | International Mobile Subscriber Identity of the SIM. |
-| **Vendor**          | Name of the manufacturer. |
-| **Memory**          | Memory size in kilobytes (KB). |
-| **Produced**        | Date and time in Coordinated Universal Time (UTC) the SIM was produced, formatted based on your language settings. |
-| **Model**           | Description of the SIM model (for example, **Classic**). |
-| **SIM Type**        | Diagram and description of the SIM type, including the [quality grade](/services/global-iot-sim#quality-grades) and [form factors](/services/global-iot-sim#form-factors). |
+<Table data={simProperties} />
 
 :::tip
 For definitions of any unfamiliar terms or acronyms, see the [Glossary](/glossary).
