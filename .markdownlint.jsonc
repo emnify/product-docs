@@ -17,6 +17,8 @@
     // RegExp for matching title in front matter
     "front_matter_title": false // We need to specify the title when the h1 contains a badge
   },
+  // MD029/ol-prefix - Ordered list item prefix
+  "MD029": false,
   // MD033/no-inline-html - Inline HTML
   "MD033": false,
   // MD044/proper-names - Proper names should have the correct capitalization

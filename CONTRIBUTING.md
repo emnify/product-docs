@@ -18,6 +18,14 @@ When in doubt, refer to this style guide as a resource.
 > [!IMPORTANT]
 > This repository uses [Vale](.github/vale/README.md) to lint and enforce this style guide.
 
+## File structure
+
+- Names should be written in [kebab case](https://www.freecodecamp.org/news/snake-case-vs-camel-case-vs-pascal-case-vs-kebab-case-whats-the-difference/#kebab-case) format with all lowercase characters.
+- Use the `.mdx` extension whenever you use JSX or other MDX features (for example, `import` or `export`) inside a Markdown file.
+
+> ![IMPORTANT]
+> According to [Docusaurus](https://docusaurus.io/blog/preparing-your-site-for-docusaurus-v3), future versions will parse `.md` files as standard [CommonMark](https://commonmark.org/), which doesn't support these features.
+
 ## Admonitions
 
 Admonitions (often called alerts) are an extension of the Markdown syntax used to emphasize critical information.
@@ -57,3 +65,12 @@ For consistency, follow these guidelines:
 - **Line thickness**: Roughly `8px`
 
 ![Example screenshot showing one row from the Connected Devices table in the emnify Portal. The "Details" button is outlined in a thick, sharp, information blue colored rectangle.](https://github.com/emnify/product-docs/assets/26869552/acc6cec1-9639-4345-a934-41f55e8d75a2)
+
+## Validate MDX files
+
+Docusaurus provides a [docusaurus-mdx-checker](https://github.com/slorber/docusaurus-mdx-checker) CLI to help spot problematic content that'll result in compilation errors.
+To see what files fail to compile under MDX v3, run:
+
+```bash
+npx docusaurus-mdx-checker
+```
