@@ -1,11 +1,14 @@
 ---
 description: Learn how to manage your SIMs via the SIM Inventory in the emnify Portal
-last_update: 
+last_update:
   date: 08-30-2023
 slug: /portal/sim-inventory
 ---
 
 # SIM inventory
+
+import Table from '@site/src/components/Table';
+import simPropertiesData from './data/simProperties'
 
 The [**SIM Inventory**](https://portal.emnify.com/sim-inventory) provides a complete list of your registered SIMs.
 
@@ -21,6 +24,9 @@ For more information about each SIM state, see [SIM lifecycle management](/servi
 ## Manage SIMs
 
 The **Details** view shows all identifiers and properties for an individual SIM, including:
+
+console.log(simPropertiesData)
+<Table data={simPropertiesData} />
 
 | Property            | Description                                      |
 |:--------------------|:-------------------------------------------------|
