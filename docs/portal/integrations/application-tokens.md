@@ -7,8 +7,6 @@ slug: /portal/application-tokens
 
 # Application tokens
 
-<!-- markdownlint-disable MD029 -->
-
 To add or view existing application tokens, navigate to **Integrations** and then [**Application Tokens**](https://portal.emnify.com/integrations#application-tokens).
 
 ## Add a new token
