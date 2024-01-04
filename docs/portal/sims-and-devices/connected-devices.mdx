@@ -1,6 +1,6 @@
 ---
 description: Learn how to manage your devices via the Connected Devices page in the emnify Portal
-last_update: 
+last_update:
   date: 12-14-2023
 slug: /portal/connected-devices
 ---
@@ -9,6 +9,8 @@ slug: /portal/connected-devices
 
 import Check from '../assets/check.svg';
 import Close from '../assets/close.svg';
+import Table from '@site/src/components/Table';
+import deviceStatus from './data/deviceStatus';
 
  [**Connected Devices**](https://portal.emnify.com/connected-devices) is where you manage your devices.
 
@@ -181,11 +183,7 @@ For definitions of any unfamiliar terms or acronyms, see the [Glossary](/glossar
 
 ## Device status
 
-| State            | Description                                      |
-|:-----------------|:-------------------------------------------------|
-| **Enabled**       | A SIM is assigned to the device and activated. The device must be enabled to connect to a network. |
-| **Disabled**    | No SIM assigned, or the assigned SIM is suspended. |
-| **Deleted**    | Permanently removed from your **Connected Devices**. |
+<Table data={deviceStatus} />
 
 ### Configure the device status
 
