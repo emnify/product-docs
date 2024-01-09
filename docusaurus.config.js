@@ -2,6 +2,7 @@
 require("dotenv").config();
 
 const lightCodeTheme = require("prism-react-renderer/themes/vsLight");
+
 let baseUrl = "/";
 if (process.env.PREVIEW_PATH) baseUrl += process.env.PREVIEW_PATH;
 

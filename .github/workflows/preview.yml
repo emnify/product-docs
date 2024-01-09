@@ -7,6 +7,8 @@ on:
       - reopened
       - synchronize
       - closed
+    branches:
+      - main
 
 concurrency: preview-${{ github.ref }}
 
@@ -20,7 +22,8 @@ jobs:
           node-version: 18
           cache: yarn
 
-      - run: echo "PREVIEW_PATH=pr-preview/pr-${{ github.event.number }}" >> "$GITHUB_ENV"
+      - name: 🦖 Docusaurus troubleshooting
+        run: echo "PREVIEW_PATH=pr-preview/pr-${{ github.event.number }}" >> "$GITHUB_ENV"
 
       - name: 🔒 Setup env file
         run: |
@@ -29,13 +32,13 @@ jobs:
           echo ALGOLIA_SEARCH_API_KEY='${{ secrets.ALGOLIA_SEARCH_API_KEY }}' >> .env
           cat .env
 
-      - name: Install dependencies and build
+      - name: 🏗️ Install dependencies and build
         if: github.event.action != 'closed'
         run: |
           yarn install --frozen-lockfile
           yarn build
 
-      - name: Deploy preview
+      - name: 🔮 Deploy preview
         uses: rossjrw/pr-preview-action@v1.4.6
         with:
           source-dir: ./build/
