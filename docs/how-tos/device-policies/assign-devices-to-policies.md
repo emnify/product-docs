@@ -16,7 +16,7 @@ Choose policy names and device tags related to these criteria.
 This helps with selections when performing bulk assignments.
 :::
 
-:::caution Warning
+:::warning
 Devices don't automatically reset if you change the service or coverage policy.
 Due to caching, it can also take up to 24 hours before changes are applied to a device.
 
@@ -35,15 +35,15 @@ You should see a real-time notification confirming the change.
 ## Bulk assignments
 
 1. Navigate to [**Connected Devices**](https://portal.emnify.com/connected-devices).
-1. Search for the devices you wish to assign to a policy and select the checkbox next to every relevant device.
+2. Search for the devices you wish to assign to a policy and select the checkbox next to every relevant device.
 :::tip
 You can filter by tag or any other property to show only the devices to be assigned.
 If the filtered list looks good, select the top checkbox in the table heading to select them all.
 :::
 
-1. A new menu at the top of the page provides bulk operations.
+3. A new menu at the top of the page provides bulk operations.
 Select **More** and then either **Change Service Policy** or **Change Coverage Policy**.
-1. Choose your policy from the presented dropdown list and then select **Save**.
+4. Choose your policy from the presented dropdown list and then select **Save**.
 
 The devices you selected are assigned to their new policy, and you should see a real-time notification confirming the change.
 
