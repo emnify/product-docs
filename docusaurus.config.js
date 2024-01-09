@@ -2,13 +2,15 @@
 require("dotenv").config();
 
 const lightCodeTheme = require("prism-react-renderer/themes/vsLight");
+let baseUrl = "/";
+if (process.env.PREVIEW_PATH) baseUrl += process.env.PREVIEW_PATH;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "emnify Documentation",
   tagline: "Developer resources and documentation for the emnify SuperNetwork.",
   url: "https://docs.emnify.com",
-  baseUrl: "/",
+  baseUrl: baseUrl,
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",

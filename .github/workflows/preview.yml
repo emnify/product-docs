@@ -7,20 +7,20 @@ on:
       - reopened
       - synchronize
       - closed
-    branches:
-      - main
 
 concurrency: preview-${{ github.ref }}
 
 jobs:
   deploy-preview:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
           node-version: 18
           cache: yarn
+
+      - run: echo "PREVIEW_PATH=pr-preview/pr-${{ github.event.number }}" >> "$GITHUB_ENV"
 
       - name: 🔒 Setup env file
         run: |
@@ -38,4 +38,4 @@ jobs:
       - name: Deploy preview
         uses: rossjrw/pr-preview-action@v1.4.6
         with:
-          source-dir: build
+          source-dir: ./build/
