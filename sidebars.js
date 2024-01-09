@@ -230,6 +230,16 @@ const sidebars = {
       items: [
         "how-tos/configure-dns-settings",
         "how-tos/data-allowances",
+        {
+          type: "category",
+          label: "Device policies",
+          items: [
+            "how-tos/device-policies/create-service-policies",
+            "how-tos/device-policies/create-coverage-policies",
+            "how-tos/device-policies/assign-devices-to-policies",
+            "how-tos/device-policies/update-existing-policies",
+          ],
+        },
         "how-tos/multi-factor-authentication",
         {
           type: "category",
