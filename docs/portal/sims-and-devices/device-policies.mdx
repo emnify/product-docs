@@ -7,8 +7,8 @@ slug: /portal/device-policies
 
 # Device policies
 
-You can use [**Device Policies (Portal)**](https://portal.emnify.com/device-policies) to create unique coverage and network configurations that can be assigned to devices.
-There are two types of policies, [**Service Policies**](#service-policies) and [**Coverage Policies**](#coverage-policies).
+You can use [**Device Policies**](https://portal.emnify.com/device-policies) to create unique coverage and network configurations that can be assigned to devices.
+There are two types of policies: **Service Policies** and **Coverage Policies**.
 
 ## Service policies
 
@@ -16,28 +16,39 @@ Service policies allow you to set usage limits on data or SMS and can also be us
 By default, a new policy has no restrictions.
 However, by creating a service policy, you can control the following attributes:
 
-|           | Description  |
-|---|---|
-| **Breakout Region**| (automatic or manual selection)  |
-| **Data** | - usage limit <br/> - service type (for example, 2G, 3G, 4G, NB-IoT) |
-| **SMS** | - SMS MO (devices may send SMS) & sending limit <br/> - SMS MT (devices may receive SMS) & receiving limit <br/> - allow/deny the exchange of SMS <ul><li>between devices</li><li>with external parties</li></ul> |
-| **SMS Interface** |  - [Web Portal](/portal/sms#send-sms-using-the-emnify-portal) (default) <br/> - [Webhook](#webhook-sms-interface) <br/>  - [SMPP](/portal/sms#sms-via-smpp) |
-
-
-### Create and delete a service policy
-
-See this [guide for how to create a new service policy or for how to delete one](/portal/device-policies/how-to-create-delete-service-policy).
+| Property        | Description |
+|-----------------|-------------|
+| Breakout Region | Automatic or manual selection  |
+| Data            | <ul><li>Usage limit</li><li>Service type (for example, 2G, 3G, 4G, NB-IoT)</li></ul> |
+| SMS             | <ul><li>SMS MO (devices may send SMS)</li><ul><li>Sending limit</li></ul><li>SMS MT (devices may receive SMS)</li><ul><li>Receiving limit</li></ul><li>Allow/deny the exchange of SMS</li><ul><li>Between devices</li><li>With external parties</li></ul></ul> |
+| SMS Interface   | <ul><li>[Web Portal](/portal/sms#send-sms-using-the-emnify-portal) (default)</li><li>[Webhook](#webhook-sms-interface)</li><li>[SMPP](/portal/sms#sms-via-smpp)</li></ul> |
 
 ### Webhook SMS interface
 
-When selecting **Webhook** as your **SMS Interface**, you need to provide the URL for your webhook.
+When selecting **Webhook** as your **SMS Interface**, you must provide the URL for your webhook.
 Optionally, you can provide a secret key to prevent unauthorized access.
 
-See this [guide for how to configure a webhook](/portal/device-policies/how-to-configure-webhook).
+<details className="custom-details-troubleshooting">
+  <summary>Show how to configure a webhook</summary>
+
+  Select **Configure Webhook**.
+
+  <img
+    src={require('./assets/portal-service-policies-sms-interface-configure-webhook.png').default}
+    alt=""
+  />
+
+  Provide the URL, optional secret key, and select **Add Webhook**.
+
+  <img
+    src={require('./assets/portal-service-policies-sms-interface-add-webhook.png').default}
+    alt=""
+  />
+</details>
 
 ### SMPP SMS interface
 
-When selecting **SMPP** as your **SMS Interface**, you are provided a **System ID** and **Password** for accessing the emnify **SMPP Server**.
+When selecting **SMPP** as your **SMS Interface**, you are given a **System ID** and **Password** for accessing the emnify **SMPP Server**.
 
 <details className="custom-details-troubleshooting">
   <summary>Show where this happens in the Portal</summary>
@@ -50,16 +61,8 @@ When selecting **SMPP** as your **SMS Interface**, you are provided a **System I
 ## Coverage policies
 
 A coverage policy lets you choose which data plan and regions to operate in.
-Policies comprise of the **Data Plan** and one or more **Coverage areas**.
+Policies include the **Data Plan** and one or more **Coverage areas**.
 The default coverage policy depends on your current subscription package.
-
-### Create a new coverage policy and delete a policy
-
-See this [guide for how to create a new coverage policy or for how to delete one](/portal/device-policies/how-to-create-delete-coverage-policy).
-
-:::tip
-Creating multiple coverage policies lets you differentiate between device types based on their coverage needs and the associated costs.
-:::
 
 ### Data plan
 
@@ -73,57 +76,14 @@ When a data plan includes active SIMs, it's added to your bill at the end of the
 
 The list of **Coverage areas** varies depending on which **Data Plan** you selected.
 
-The **Coverage map** is a global map that shows the coverage you have based on your selections.
+The **Coverage map** is a global map that shows your coverage based on your selections.
 You can browse the entire list of countries in the **Coverage list** or search for a specific country where you plan to deploy your devices.
 This list provides the names and number of networks per country.
 Each country's listing can be expanded to reveal the network, coverage area, data rates, and SMS sending and receiving rates.
 
-## Assign devices to a policy
+## Available guides
 
-Service policies only become useful after you start assigning devices to them.
-
-:::tip
-Develop a strategy for grouping your devices according to certain criteria related to your use cases, deployment regions, product lines, or services.
-Choose service policy names and device tags related to these criteria.
-This helps with selections when performing bulk assignments to service policies.
-:::
-
-:::caution Warning
-Devices don't automatically reset if you change the service or coverage policy.
-Due to caching, it can also take up to 24 hours before changes are applied to a device.
-
-Be sure to [reset its connectivity](/portal/connected-devices#reset-connectivity) for the change to take effect sooner.
-:::
-
-See the [guide for how-to assign single devices and how to perform bulk assignments](/portal/device-policies/how-to-assign-policy).
-
-## Device policy changes
-
-In addition to creating device group policies and assigning devices to them, you can also update existing policies using the same interface you used when creating them.
-
-### Update policies
-
-When several devices are deployed and assigned to the same policies, your changes to the policy are automatically pushed to devices in the group.
-For instance, you might want to increase the data usage limits for a service policy that has 100 devices assigned to it.
-As soon as you change the service policy, it's pushed to all 100 devices.
-
-### Change a device's policy assignments
-
-Another way to change a device's group policy is to switch from its current policy to another one.
-
-For a single device, you can select its new policy from a dropdown list when viewing the **Device Details** by selecting **Edit** as described in the [Single device assignment](/portal/device-policies/how-to-assign-policy) section.
-For changing a group of devices to a new policy, see [Bulk assignments](/portal/device-policies/how-to-assign-policy).
-
-### Make sure the changes take effect immediately
-
-Resetting connectivity is also available as a bulk option.
-Once you have chosen multiple devices, select **Reset**.
-
-<details className="custom-details-troubleshooting">
-  <summary>Show where to confirm the changes</summary>
-  <img
-    src={require('./assets/portal-connected-devices-bulk-reset.png').default}
-    style={{ width: 900 }}
-    alt=""
-  />
-</details>
+- [Create a new service policy](/how-tos/create-service-policies)
+- [Create a new coverage policy](/how-tos/create-coverage-policies)
+- [Assign devices to a policy](/how-tos/assign-devices-to-policies)
+- [Update existing device policies](/how-tos/update-existing-device-policies)

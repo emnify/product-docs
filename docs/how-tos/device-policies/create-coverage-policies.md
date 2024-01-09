@@ -1,9 +1,11 @@
 ---
-description: Create a new coverage policy and delete a policy on the emnify Portal
-slug: /portal/device-policies/how-to-create-delete-coverage-policy
+description: Create a new coverage policy or delete an old policy with the emnify Portal
+last_update:
+  date: 01-09-2024
+slug: /how-tos/create-coverage-policies
 ---
 
-# How to create a new coverage policy
+# Create a new coverage policy
 
 1. [Log in to your emnify account](https://portal.emnify.com/sign).
 1. Navigate to the [**Coverage Policies**](https://portal.emnify.com/device-policies#coverage-policies) section of **Device Policies**.
@@ -17,7 +19,15 @@ You need to enable at least one **Coverage area** for your devices to connect.
 
 Changes save automatically.
 
+:::tip
+Creating multiple coverage policies lets you differentiate between device types based on their coverage needs and the associated costs.
+:::
 
-# How to delete an old policy
+## Delete a coverage policy
 
-To remove a coverage policy, click the trash bin icon next to **Details**.
+Click the trash bin icon next to **Details** to remove a coverage policy.
+
+## Next steps
+
+Coverage policies only become useful after you start assigning devices to them.
+For instructions on how to do this in the emnify Portal, see [Assign devices to a policy](/how-tos/assign-devices-to-policies).
