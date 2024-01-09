@@ -1,6 +1,6 @@
 ---
 description: Manage data streams with the emnify Portal or REST API
-last_update: 
+last_update:
   date: 12-31-2022
 slug: /multicloud-data-streamer/usage
 ---
@@ -46,10 +46,6 @@ The **Destination** configuration varies depending on the connection type.
   alt=""
 />
 
-:::info
-You can distinguish event data streams by checking if the **Stream Type** on a specific data stream is set to **Stream events**.
-:::
-
 ### Create data streams
 
 When no configured data streams are available, click **Add** on the preferred connection type tile.
@@ -84,17 +80,6 @@ If this happens, the stream isn't created and you must correct the configuration
 ### Inspect and update data streams
 
 With the **Details** button on the Data Stream tiles, you can inspect the configuration and update the [filters for event data streams](/multicloud-data-streamer/manage-data-streams#filter-event-data-streams).
-
-<img
-  src={require('../assets/portal-integrations-data-streams-details-events-filter.png').default}
-  alt=""
-/>
-
-#### Filter for event data streams
-
-The Data Streamer can apply filtering for event data streams based on event types.
-Under **Event Options**, you can choose to **Stream all events** or **Stream specific events only**.
-Selecting the latter displays a searchable dropdown listing all [event types](/system-events/event-types) available as filters.
 
 <img
   src={require('../assets/portal-integrations-data-streams-details-events-filter.png').default}
