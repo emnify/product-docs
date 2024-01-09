@@ -32,24 +32,34 @@ for (const file of fs.readdirSync(sourceDir)) {
   fs.copyFileSync(sourceFile, targetFile);
 }
 
-const fileToUpdate = path.join(
-  __dirname,
-  "..",
-  "src",
-  "css",
-  "design-tokens",
-  "colors-light.css"
+const updateSelector = (fileName, defaultSelector, newSelector) => {
+  const fileToUpdate = path.join(
+    __dirname,
+    "..",
+    "src",
+    "css",
+    "design-tokens",
+    fileName
+  );
+
+  if (!fs.existsSync(fileToUpdate)) {
+    console.error(`${fail} ${fileName} does not exist at expected path`);
+    process.exit(1);
+  }
+
+  console.info(`${waiting} Updating selector in ${fileName}...`);
+
+  const data = fs.readFileSync(fileToUpdate, "utf8");
+  const updated = data.replace(defaultSelector, newSelector);
+  fs.writeFileSync(fileToUpdate, updated, "utf8");
+};
+
+updateSelector(
+  "colors-light.css",
+  /.eui-light-theme/g,
+  'html[data-theme="light"]'
 );
-if (!fs.existsSync(fileToUpdate)) {
-  console.error(`${fail} colors-light.css does not exist at expected path`);
-  process.exit(1);
-}
-
-console.info(`${waiting} Updating selector in colors-light.css...`);
-
-const data = fs.readFileSync(fileToUpdate, "utf8");
-const updated = data.replace(/.eui-light-theme/g, 'html[data-theme="light"]');
-fs.writeFileSync(fileToUpdate, updated, "utf8");
+updateSelector("search.css", /.search /g, ".DocSearch ");
 
 console.info(`${pass} Done!`);
 process.exit(0);

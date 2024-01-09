@@ -4,20 +4,20 @@
  */
 
 .switch {
-  --eui-comp-switch-container-color-on-default: #3708B2;
+  --eui-comp-switch-container-color-on-default: #3708b2;
   --eui-comp-switch-container-color-on-hovered: #5f39c1;
-  --eui-comp-switch-container-color-on-focused: #3708B2;
-  --eui-comp-switch-container-color-on-disabled: #CDCDCD;
+  --eui-comp-switch-container-color-on-focused: #3708b2;
+  --eui-comp-switch-container-color-on-disabled: #cdcdcd;
   --eui-comp-switch-container-color-off-default: transparent;
   --eui-comp-switch-container-border-border-radius: 50px;
-  --eui-comp-switch-container-border-on-default: #3708B2;
+  --eui-comp-switch-container-border-on-default: #3708b2;
   --eui-comp-switch-container-border-on-hovered: #5f39c1;
-  --eui-comp-switch-container-border-on-focused: #3708B2;
-  --eui-comp-switch-container-border-on-disabled: #CDCDCD;
-  --eui-comp-switch-container-border-off-default: #CDCDCD;
+  --eui-comp-switch-container-border-on-focused: #3708b2;
+  --eui-comp-switch-container-border-on-disabled: #cdcdcd;
+  --eui-comp-switch-container-border-off-default: #cdcdcd;
   --eui-comp-switch-container-border-off-hovered: #727272;
-  --eui-comp-switch-container-border-off-focused: #CDCDCD;
-  --eui-comp-switch-container-border-off-disabled: #CDCDCD;
+  --eui-comp-switch-container-border-off-focused: #cdcdcd;
+  --eui-comp-switch-container-border-off-disabled: #cdcdcd;
   --eui-comp-switch-container-outline-color: #4377cd;
   --eui-comp-switch-container-outline-width: 2px;
   --eui-comp-switch-container-outline-offset: 2px;
@@ -26,11 +26,11 @@
   --eui-comp-switch-container-padding-between: 12px;
   --eui-comp-switch-thumb-color-on-default: #ffffff;
   --eui-comp-switch-thumb-color-on-disabled: #727272;
-  --eui-comp-switch-thumb-color-off-default: #CDCDCD;
+  --eui-comp-switch-thumb-color-off-default: #cdcdcd;
   --eui-comp-switch-thumb-color-off-hovered: #727272;
-  --eui-comp-switch-thumb-color-off-focused: #CDCDCD;
-  --eui-comp-switch-thumb-color-off-disabled: #CDCDCD;
+  --eui-comp-switch-thumb-color-off-focused: #cdcdcd;
+  --eui-comp-switch-thumb-color-off-disabled: #cdcdcd;
   --eui-comp-switch-thumb-border-border-radius: 50px;
   --eui-comp-switch-label-text-color-default: #000000;
-  --eui-comp-switch-label-text-color-disabled: #CDCDCD;
+  --eui-comp-switch-label-text-color-disabled: #cdcdcd;
 }

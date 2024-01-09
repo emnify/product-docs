@@ -2,7 +2,8 @@
 
 button.DocSearch {
   background-color: var(--eui-comp-search-container-color-default);
-  border: var(--eui-comp-search-container-border-width) solid var(--eui-comp-search-container-border-default);
+  border: var(--eui-comp-search-container-border-width) solid
+    var(--eui-comp-search-container-border-default);
   border-radius: var(--eui-comp-search-container-border-border-radius);
   box-sizing: border-box;
 }
@@ -23,8 +24,11 @@ button.DocSearch:hover {
 }
 
 /* Key command buttons (cmd+k, esc, etc.) */
-kbd.DocSearch-Button-Key, kbd.DocSearch-Commands-Key {
-  --docsearch-key-shadow: inset 0 -2px 0 0 var(--eui-comp-search-placeholder-text-color-default),inset 0 0 1px 1px var(--eui-comp-search-container-color-default),0 1px 1px 1px rgba(91,91,91,0.4);
+kbd.DocSearch-Button-Key,
+kbd.DocSearch-Commands-Key {
+  --docsearch-key-shadow: inset 0 -2px 0 0 var(--eui-comp-search-placeholder-text-color-default),
+    inset 0 0 1px 1px var(--eui-comp-search-container-color-default),
+    0 1px 1px 1px rgba(91, 91, 91, 0.4);
   background: none;
   box-shadow: var(--docsearch-key-shadow);
   color: var(--eui-comp-search-placeholder-text-color-default);
@@ -44,12 +48,13 @@ kbd.DocSearch-Button-Key, kbd.DocSearch-Commands-Key {
   --docsearch-hit-color: var(--eui-comp-search-input-text-color-default);
 }
 
-span.DocSearch-Label, p.DocSearch-Help {
+span.DocSearch-Label,
+p.DocSearch-Help {
   color: var(--eui-comp-search-input-text-color-default);
 }
 
 .DocSearch-Container {
-  --docsearch-container-background: rgba(91,91,91,0.8);
+  --docsearch-container-background: rgba(91, 91, 91, 0.8);
   background-color: var(--docsearch-container-background);
 }
 
@@ -59,8 +64,11 @@ span.DocSearch-Label, p.DocSearch-Help {
 }
 
 form.DocSearch-Form {
-  --docsearch-searchbox-focus-background: var(--eui-comp-search-container-color-focused);
-  border: var(--eui-comp-search-container-border-width) solid var(--eui-comp-search-container-border-focused);
+  --docsearch-searchbox-focus-background: var(
+    --eui-comp-search-container-color-focused
+  );
+  border: var(--eui-comp-search-container-border-width) solid
+    var(--eui-comp-search-container-border-focused);
   border-radius: var(--eui-comp-search-container-border-border-radius);
   box-shadow: none;
 }

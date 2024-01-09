@@ -4,11 +4,11 @@
  */
 
 .text-field {
-  --eui-comp-text-field-container-border-default: #CDCDCD;
+  --eui-comp-text-field-container-border-default: #cdcdcd;
   --eui-comp-text-field-container-border-hovered: #727272;
   --eui-comp-text-field-container-border-focused: #4377cd;
   --eui-comp-text-field-container-border-active: #727272;
-  --eui-comp-text-field-container-border-disabled: #CDCDCD;
+  --eui-comp-text-field-container-border-disabled: #cdcdcd;
   --eui-comp-text-field-container-border-error: #ff5757;
   --eui-comp-text-field-container-border-border-radius: 8px;
   --eui-comp-text-field-container-border-width: 1px;
@@ -17,15 +17,15 @@
   --eui-comp-text-field-container-padding-large-vertical: 12px;
   --eui-comp-text-field-container-padding-large-between: 8px;
   --eui-comp-text-field-label-text-color-default: #444444;
-  --eui-comp-text-field-label-text-color-disabled: #CDCDCD;
+  --eui-comp-text-field-label-text-color-disabled: #cdcdcd;
   --eui-comp-text-field-label-text-color-error: #ff5757;
   --eui-comp-text-field-label-text-empty-font-font-weight: 400;
-  --eui-comp-text-field-label-text-empty-font-font-size: 1.00rem;
+  --eui-comp-text-field-label-text-empty-font-font-size: 1rem;
   --eui-comp-text-field-label-text-empty-font-line-height: 140%;
   --eui-comp-text-field-label-text-empty-font-letter-spacing: 0.02rem;
   --eui-comp-text-field-label-text-empty-font-text-decoration: none;
   --eui-comp-text-field-label-text-filled-font-font-weight: 400;
-  --eui-comp-text-field-label-text-filled-font-font-size: 0.70rem;
+  --eui-comp-text-field-label-text-filled-font-font-size: 0.7rem;
   --eui-comp-text-field-label-text-filled-font-line-height: 140%;
   --eui-comp-text-field-label-text-filled-font-letter-spacing: 0.02rem;
   --eui-comp-text-field-label-text-filled-font-text-decoration: none;
@@ -34,16 +34,16 @@
   --eui-comp-text-field-icon-color-default: #444444;
   --eui-comp-text-field-icon-size: 24px;
   --eui-comp-text-field-input-text-color-default: #000000;
-  --eui-comp-text-field-input-text-color-disabled: #CDCDCD;
+  --eui-comp-text-field-input-text-color-disabled: #cdcdcd;
   --eui-comp-text-field-input-text-font-font-weight: 400;
-  --eui-comp-text-field-input-text-font-font-size: 1.00rem;
+  --eui-comp-text-field-input-text-font-font-size: 1rem;
   --eui-comp-text-field-input-text-font-line-height: 140%;
   --eui-comp-text-field-input-text-font-letter-spacing: 0.02rem;
   --eui-comp-text-field-input-text-font-text-decoration: none;
   --eui-comp-text-field-support-text-color-default: #444444;
   --eui-comp-text-field-support-text-color-error: #ff5757;
   --eui-comp-text-field-support-text-font-font-weight: 400;
-  --eui-comp-text-field-support-text-font-font-size: 0.70rem;
+  --eui-comp-text-field-support-text-font-font-size: 0.7rem;
   --eui-comp-text-field-support-text-font-line-height: 140%;
   --eui-comp-text-field-support-text-font-letter-spacing: 0.02rem;
   --eui-comp-text-field-support-text-font-text-decoration: none;

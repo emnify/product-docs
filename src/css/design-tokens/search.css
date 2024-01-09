@@ -5,9 +5,9 @@
 
 .DocSearch {
   --eui-comp-search-container-border-default: #e3e3e3;
-  --eui-comp-search-container-border-hovered: #CDCDCD;
+  --eui-comp-search-container-border-hovered: #cdcdcd;
   --eui-comp-search-container-border-focused: #727272;
-  --eui-comp-search-container-border-disabled: #CDCDCD;
+  --eui-comp-search-container-border-disabled: #cdcdcd;
   --eui-comp-search-container-border-border-radius: 8px;
   --eui-comp-search-container-border-width: 1px;
   --eui-comp-search-container-padding-large-left: 16px;
@@ -16,10 +16,10 @@
   --eui-comp-search-container-padding-large-between-leading: 12px;
   --eui-comp-search-container-padding-large-between-trailing: 4px;
   --eui-comp-search-container-color-default: #e3e3e3;
-  --eui-comp-search-container-color-hovered: #CDCDCD;
+  --eui-comp-search-container-color-hovered: #cdcdcd;
   --eui-comp-search-container-color-focused: #f5f5f5;
-  --eui-comp-search-container-color-disabled: #CDCDCD;
-  --eui-comp-search-leading-icon-color-default: #5B5B5B;
+  --eui-comp-search-container-color-disabled: #cdcdcd;
+  --eui-comp-search-leading-icon-color-default: #5b5b5b;
   --eui-comp-search-leading-icon-color-disabled: #727272;
   --eui-comp-search-leading-icon-size: 24px;
   --eui-comp-search-trailing-icon-padding-large-right: 8px;
@@ -28,14 +28,14 @@
   --eui-comp-search-input-text-color-default: #000000;
   --eui-comp-search-input-text-color-disabled: #727272;
   --eui-comp-search-input-text-font-font-weight: 400;
-  --eui-comp-search-input-text-font-font-size: 1.00rem;
+  --eui-comp-search-input-text-font-font-size: 1rem;
   --eui-comp-search-input-text-font-line-height: 140%;
   --eui-comp-search-input-text-font-letter-spacing: 0.02rem;
   --eui-comp-search-input-text-font-text-decoration: none;
-  --eui-comp-search-placeholder-text-color-default: #5B5B5B;
+  --eui-comp-search-placeholder-text-color-default: #5b5b5b;
   --eui-comp-search-placeholder-text-color-disabled: #727272;
   --eui-comp-search-placeholder-text-font-font-weight: 400;
-  --eui-comp-search-placeholder-text-font-font-size: 1.00rem;
+  --eui-comp-search-placeholder-text-font-font-size: 1rem;
   --eui-comp-search-placeholder-text-font-line-height: 140%;
   --eui-comp-search-placeholder-text-font-letter-spacing: 0.02rem;
   --eui-comp-search-placeholder-text-font-text-decoration: none;
