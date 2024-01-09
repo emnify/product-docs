@@ -1,7 +1,7 @@
 ---
 description: Step-by-step how to guides that teach you how to use the emnify platform
 last_update: 
-  date: 11-16-2023
+  date: 01-09-2023
 slug: /how-tos
 ---
 
@@ -21,16 +21,28 @@ slug: /how-tos
 - [How to access any IoT device or web server behind a Teltonika Networks router](https://www.emnify.com/developer-blog/how-to-access-iot-device-or-web-server-behind-a-teltonika-router)
 - [How to fit a Raspberry Pi with mobile connectivity](https://www.emnify.com/developer-blog/how-to-fit-a-raspberry-pi-with-mobile-connectivity)
 
-## Organization and billing
+## Device policies
 
-- [Assign data allowances](/how-tos/data-allowances)
+- [Create a new service policy](/how-tos/create-service-policies)
+- [Create a new coverage policy](/how-tos/create-coverage-policies)
+- [Assign devices to a policy](/how-tos/assign-devices-to-policies)
+- [Update existing device policies](/how-tos/update-existing-device-policies)
+
+## Organization management
+
+- [Change the assigned data allowance](/how-tos/data-allowances)
+- [Setup SSO with Microsoft Active Directory](/sso/microsoft-active-directory)
+- [Setup SSO with Google Cloud Platform](/sso/google-cloud-platform)
 - [Create a new workspace](/workspaces/create)
+- [Link an existing workspace](/workspaces/link)
+- [Switch between workspaces](/workspaces/switch)
+
+## Security features
+
+- [Configure DNS settings](/how-tos/configure-dns-settings)
+- [Set up multi-factor authentication](/how-tos/multi-factor-authentication)
 
 ## SMS
 
 - [4 ways to send SMS to your devices manually and automatically](https://www.emnify.com/developer-blog/4-ways-to-send-sms)
 - [How to send and receive SMS via the API](https://www.emnify.com/developer-blog/how-to-send-and-receive-sms-via-the-api)
-
-## User management
-
-- [Set up multi-factor authentication](/how-tos/multi-factor-authentication)
