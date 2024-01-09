@@ -228,6 +228,7 @@ const sidebars = {
         id: "how-tos/index",
       },
       items: [
+        "how-tos/configure-dns-settings",
         "how-tos/data-allowances",
         "how-tos/multi-factor-authentication",
         {
