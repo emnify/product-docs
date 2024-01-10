@@ -1,6 +1,5 @@
 // @ts-check
 require("dotenv").config();
-const path = require("path");
 
 import { themes as prismThemes } from "prism-react-renderer";
 
@@ -85,10 +84,6 @@ const config = {
       },
       colorMode: {
         disableSwitch: true,
-      },
-      heapio: {
-        appId: process.env.HEAP_ANALYTICS_APP_ID,
-        devId: process.env.HEAP_ANALYTICS_DEV_ID,
       },
       navbar: {
         title: "Documentation",
@@ -188,7 +183,6 @@ const config = {
     }),
 
   plugins: [
-    path.resolve(__dirname, "src/plugins/heap-analytics"),
     require.resolve("docusaurus-plugin-image-zoom"),
     [
       "@docusaurus/plugin-client-redirects",

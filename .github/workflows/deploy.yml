@@ -21,8 +21,6 @@ jobs:
           touch .env
           echo ALGOLIA_APP_ID='${{ secrets.ALGOLIA_APP_ID }}' >> .env
           echo ALGOLIA_SEARCH_API_KEY='${{ secrets.ALGOLIA_SEARCH_API_KEY }}' >> .env
-          echo HEAP_ANALYTICS_APP_ID='${{ secrets.HEAP_ANALYTICS_APP_ID }}' >> .env
-          echo HEAP_ANALYTICS_DEV_ID='${{ secrets.HEAP_ANALYTICS_DEV_ID }}' >> .env
           cat .env
 
       - name: 🪚 Install dependencies
@@ -30,8 +28,6 @@ jobs:
 
       - name: 🏗️ Build website
         run: yarn build
-        env:
-          HEAP_ANALYTICS_APP_ID: ${{ secrets.HEAP_ANALYTICS_APP_ID }}
 
       - name: 🚀 Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
