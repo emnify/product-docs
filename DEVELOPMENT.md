@@ -74,12 +74,14 @@ Then, paste the following into your `.env` file:
 ```yml
 ALGOLIA_APP_ID=<APP_ID>
 ALGOLIA_SEARCH_API_KEY=<SEARCH_API_KEY>
+HEAP_ANALYTICS_APP_ID=<APP_ID>
+HEAP_ANALYTICS_DEV_ID=<DEV_ID>
 ```
 
 This should be enough for you to [run a local server](#local-development).
 
 > [!IMPORTANT]
-> The actual values are necessary for working on the Algolia DocSearch implementation.
+> The actual values are necessary for working on the Algolia DocSearch or Heap Analytics implementation.
 > If you're an emnify employee and need these keys, contact the docs team.
 > Otherwise, please [open an issue](https://github.com/emnify/product-docs/issues/new/choose).
 
