@@ -21,7 +21,7 @@ Another way to change a device's policy is to switch from its current policy to 
 For a single device, you can select its new policy from a dropdown list when viewing the **Device Details** as described in [Single device assignment](/how-tos/assign-devices-to-policies#single-device-assignment).
 See [Bulk assignments](/how-tos/assign-devices-to-policies#bulk-assignments) for changing a group of devices to a new policy.
 
-:::caution Warning
+:::warning
 Devices don't automatically reset if you change the service or coverage policy.
 Due to caching, it can also take up to 24 hours before changes are applied to a device.
 

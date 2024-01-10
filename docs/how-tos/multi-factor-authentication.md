@@ -15,7 +15,7 @@ Even if someone knows your password (the first factor), they would still need ac
 
 MFA is sometimes called two-factor authentication (2FA) and has historically been at emnify.
 
-:::caution important update
+:::warning[important update]
 MFA will be mandatory for all emnify Portal accounts as of January 2024 to proactively safeguard our IoT ecosystem and meet regulatory security compliance.
 For more information, see the [MFA FAQ in the emnify Knowledge Base](https://support.emnify.com/hc/en-us/articles/11119662291740-MFA-FAQ).
 :::
@@ -43,14 +43,14 @@ This process is only required if you haven't enabled MFA for your account.
 Once MFA becomes mandatory for your organization, follow these steps to access your account:
 
 1. [Log in to your emnify account](https://portal.emnify.com/sign) with your email and password as usual.
-1. Navigate to the email account you use to access the Portal. 
+2. Navigate to the email account you use to access the Portal. 
 Open the message from emnify with your 6-digit verification code.
 The code is valid for 20 minutes and should contain letters and numbers.
 :::tip
 Check your spam folder if you haven't received a code after a few minutes.
 :::
 
-1. Go back to the Portal. Enter the code and click **Verify code** to verify your identity.
+3. Go back to the Portal. Enter the code and click **Verify code** to verify your identity.
 
 <details className="custom-details-troubleshooting">
   <summary>Need help verifying your identity?</summary>
@@ -139,6 +139,6 @@ Your changes are saved automatically.
 
 To turn off your existing MFA setup, go to **User Settings**, find the [**Two-Factor Authentication**](https://portal.emnify.com/user-settings#two-factor-authentication) section, and click **Disable**.
 
-:::caution
+:::warning
 You won't be able to disable MFA once it's enforced for your organization.
 :::

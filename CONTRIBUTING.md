@@ -18,7 +18,9 @@ When in doubt, refer to this style guide as a resource.
 > [!IMPORTANT]
 > This repository uses [Vale](.github/vale/README.md) to lint and enforce this style guide.
 
-## File structure
+## Content
+
+### File structure
 
 - Names should be written in [kebab case](https://www.freecodecamp.org/news/snake-case-vs-camel-case-vs-pascal-case-vs-kebab-case-whats-the-difference/#kebab-case) format with all lowercase characters.
 - Use the `.mdx` extension whenever you use JSX or other MDX features (for example, `import` or `export`) inside a Markdown file.
@@ -26,7 +28,7 @@ When in doubt, refer to this style guide as a resource.
 > ![IMPORTANT]
 > According to [Docusaurus](https://docusaurus.io/blog/preparing-your-site-for-docusaurus-v3), future versions will parse `.md` files as standard [CommonMark](https://commonmark.org/), which doesn't support these features.
 
-## Admonitions
+### Admonitions
 
 Admonitions (often called alerts) are an extension of the Markdown syntax used to emphasize critical information.
 There are five types, each with a distinct purpose.
@@ -36,11 +38,17 @@ Inspired by [GitHub alerts](https://github.com/orgs/community/discussions/16925)
 - **Note**: Highlights information that users should take into account, even when skimming.
 - **Tip**: Optional information to help a user be more successful.
 - **Info**: Crucial information necessary for users to succeed.
-- **Caution**: Critical content demanding immediate user attention due to potential risks.
+- **Warning**: Critical content demanding immediate user attention due to potential risks.
 - **Danger**: Negative potential consequences of an action.
 
 > ![TIP]
 > See [Admonitions in the Docusaurus documentation](https://docusaurus.io/docs/markdown-features/admonitions) for more information about formatting and syntax.
+
+### Code blocks
+
+The `react-prism-render` library is used for code block syntax highlighting.
+From v2.0+, [less languages are included by default](https://github.com/FormidableLabs/prism-react-renderer/blob/prism-react-renderer%402.1.0/packages/generate-prism-languages/index.ts#L9).
+If the language you need isn't listed, check the [Docusaurus configuration](https://github.com/emnify/product-docs/blob/main/docusaurus.config.js#L171) and add it if necessary.
 
 ## Images
 

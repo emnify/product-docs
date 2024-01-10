@@ -72,7 +72,7 @@ Click **Create** and verify the status of your new stream.
 If everything goes well, the data stream is successfully created.
 The configuration view closes, and you see the integration status shown as **Running**.
 
-:::caution
+:::warning
 If the configuration is invalid, a warning displays along with an error message indicating the cause of the problem.
 If this happens, the stream isn't created and you must correct the configuration.
 :::
@@ -100,7 +100,7 @@ You can manage your data streams using the emnify Data Streamer API.
 Available entry points are listed under the [Integrations section of the emnify REST API reference](https://cdn.emnify.net/api/doc/swagger.html#/Integrations).
 
 :::info
-You can find detailed information on the Data Streamer data properties and compatibility notes in the [Data Streamer API Reference](https://cdn.emnify.net/api/doc/event.html) in the _emnify System Documentation_.  
+You can find detailed information on the Data Streamer data properties and compatibility notes in the [Data Streamer API Reference](https://cdn.emnify.net/api/doc/event.html) in the _emnify System Documentation_.
 :::
 
 ### Authentication
@@ -228,7 +228,7 @@ You can also create an event stream with [AWS Kinesis integration](/multicloud-d
 }
 ```
 
-:::note API Reference
+:::note[API reference]
 [Create data stream](https://cdn.emnify.net/api/doc/swagger.html#/Integrations/CreateDataStreamer).
 :::
 
@@ -244,7 +244,7 @@ curl -X GET "https://cdn.emnify.net/api/v2/data_stream" \
 -H "Authorization:Bearer AuthToken"
 ```
 
-:::note API Reference
+:::note[API reference]
 [List data stream configurations of your organization](https://cdn.emnify.net/api/doc/swagger.html#/Integrations/ListDataStreamerV2s)
 :::
 
@@ -262,7 +262,7 @@ curl -X GET "https://cdn.emnify.net/api/v2/data_stream/123" \
 -H "Authorization:Bearer AuthToken"
 ```
 
-:::note API Reference
+:::note[API reference]
 [Get details on existing data stream](https://cdn.emnify.net/api/doc/swagger.html#/Integrations/GetDataStreamerByIdV2)
 :::
 
@@ -294,7 +294,7 @@ The following example shows how to pause a stream and erase any filters:
 }
 ```
 
-:::note API Reference
+:::note[API reference]
 [Modify existing data stream](https://cdn.emnify.net/api/doc/swagger.html#/Integrations/PatchV2DataStream)
 :::
 
@@ -313,6 +313,6 @@ curl -X DELETE "https://cdn.emnify.net/api/v2/data_stream/123" \
 -H "Authorization: Bearer AuthToken"
 ```
 
-:::note API Reference
+:::note[API reference]
 [Delete existing data stream](https://cdn.emnify.net/api/doc/swagger.html#/Integrations/DeleteDataStreamerV2)
 :::

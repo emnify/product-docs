@@ -15,7 +15,7 @@ Amazon Kinesis Data Streams allows for collecting and processing large streams o
 Applications created on Amazon Kinesis Data Streams can run on Amazon EC2 instances.
 Typical uses are to send processed records to dashboards, generate alerts, dynamically change pricing or advertising strategies, or send data to other Amazon services.
 
-:::tip Step-by-step guide
+:::tip[step-by-step guide]
 [emnify Data Streamer integration into AWS Kinesis](https://www.emnify.com/integration-guides/emnify-datastreamer-integration-into-aws-kinesis)
 :::
 
@@ -25,7 +25,7 @@ Amazon S3 is an object storage service that stores the raw event and usage data 
 Shortly after creating the stream, a CSV file containing your event or usage data records is uploaded to the S3 bucket.
 The CSV files can then be sent to other Amazon services (for example, Amazon QuickSight) or consumed by a third-party analytics or business intelligence tool for generating insights.
 
-:::tip Step-by-step guide
+:::tip[step-by-step guide]
 [emnify Data Streamer Integration into AWS S3](https://www.emnify.com/integration-guides/emnify-datastreamer-integration-into-aws-s3)
 :::
 
@@ -50,7 +50,7 @@ The following steps are the minimum security requirements for storing this data 
 Amazon QuickSight allows you to create and publish interactive business intelligence dashboards that include machine learning-powered insights into your event and usage data.
 Once you have configured your data stream and are storing event and usage data in Amazon S3, you can use AWS QuickSight to view and analyze them.
 
-:::tip Step-by-step guide
+:::tip[step-by-step guide]
 [How to analyze emnify usage data and events in AWS QuickSight?](https://support.emnify.com/hc/en-us/articles/360010604820-How-to-analyze-emnify-usage-data-and-events-in-AWS-Quicksight-)
 
 **_Warning: this guide uses a legacy version of the [emnify Portal](https://portal.emnify.com/)._**
@@ -63,7 +63,7 @@ Once you have configured your data stream and are storing event and usage data i
 Azure Event Hubs is a fully managed, real-time data ingestion service that can receive and process millions of event or usage data records per second.
 Data sent to an event hub can be transformed and stored using any real-time analytics provider or batching/storage adapters, such as Microsoft Power BI or Azure Time Series Insights.
 
-:::tip Step-by-step guide
+:::tip[step-by-step guide]
 [emnify Data Streamer integration into Azure Event Hub](https://www.emnify.com/integration-guides/emnify-datastreamer-integration-into-azure-event-hub)
 :::
 
@@ -71,7 +71,7 @@ Data sent to an event hub can be transformed and stored using any real-time anal
 
 Microsoft Power BI is a unified, scalable platform for self-service and enterprise business intelligence (BI) that allows you to analyze, visualize, share, and promote your connectivity metadata insights across your organization.
 
-:::tip Step-by-step guide
+:::tip[step-by-step guide]
 [emnify Data Streamer integration for Power BI](https://www.emnify.com/integration-guides/emnify-datastreamer-integration-for-power-bi)
 :::
 
@@ -80,7 +80,7 @@ Microsoft Power BI is a unified, scalable platform for self-service and enterpri
 Azure Time Series Insights is an analytics platform to monitor, analyze, and visualize your data.
 It allows you to use time series data insights and interactive analytics to accelerate connectivity metadata use throughout your organization and turn your event and usage data into actionable insights.
 
-:::tip Step-by-step guide
+:::tip[step-by-step guide]
 [emnify Data Streamer integration for Azure Time Series Classic](https://www.emnify.com/integration-guides/emnify-datastreamer-integration-for-azure-time-series-classic)
 :::
 
@@ -91,7 +91,7 @@ It allows you to use time series data insights and interactive analytics to acce
 Pub/Sub is Google’s messaging middleware that allows you to collect and process your event and usage data in real time.
 It can also display and analyze data with other Google services, such as Google BigQuery.
 
-:::tip Step-by-step guide
+:::tip[step-by-step guide]
 [emnify Data Streamer integration for Google Cloud Pub/Sub](https://www.emnify.com/integration-guides/datastreamer-integration-into-google-cloud-pubsub)
 :::
 
@@ -99,7 +99,7 @@ It can also display and analyze data with other Google services, such as Google 
 
 Google Cloud BigQuery is a data warehouse that enables you to query your connectivity metadata in real time to gain insights and predict business outcomes.
 
-:::tip Step-by-step guide
+:::tip[step-by-step guide]
 [emnify Data Streamer integration for Google BigQuery](https://www.emnify.com/integration-guides/datastreamer-integration-google-bigquery)
 :::
 
@@ -108,7 +108,7 @@ Google Cloud BigQuery is a data warehouse that enables you to query your connect
 Keen is a managed event streaming platform that enables you to collect, store, query, and present real-time connectivity metadata without writing any code.
 With built-in data analytics, you can build queries and display the metrics via API to troubleshoot your IoT solution.
 
-:::tip Step-by-step guide
+:::tip[step-by-step guide]
 [emnify Data Streamer integration for Keen.io](https://www.emnify.com/integration-guides/emnify-datastreamer-integration-for-keen-io)
 :::
 
@@ -118,7 +118,7 @@ Datadog is a real-time monitoring and analytics service for cloud-scale applicat
 In conjunction with the emnify Data Streamer, it allows you to collect and analyze usage metrics for your endpoints and SIM cards.
 You can also create dashboards and trigger alerts on specific events or situations.
 
-:::tip Step-by-step guide
+:::tip[step-by-step guide]
 [emnify Data Streamer integration for Datadog](https://www.emnify.com/integration-guides/emnify-datastreamer-integration-for-datadog)
 :::
 
@@ -140,7 +140,7 @@ The HTTP POST requests are sent at intervals and should be used if the receiving
 
 [Make](https://www.make.com/en) (formerly Integromat) is a low-code integration platform that allows you to visualize, design, and automate your workflows based on your connectivity metadata.
 
-:::tip Step-by-step guide
+:::tip[step-by-step guide]
 [Automate Business Processes with Multi-Cloud Data Streamer and Make](https://www.emnify.com/integration-guides/emnify-mcds-integromat-integration)
 
 **_Warning: this guide still needs to be updated to reflect the new naming._**
@@ -150,6 +150,6 @@ The HTTP POST requests are sent at intervals and should be used if the receiving
 
 Automate.io is a no-code integration platform that allows you to visualize, design, and automate your workflows based on your connectivity metadata.
 
-:::tip Step-by-step guide
+:::tip[step-by-step guide]
 [How to receive email notifications using Automate.io](https://www.emnify.com/integration-guides/how-to-receice-email-notifications-using-automate.io)
 :::

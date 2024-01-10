@@ -1,5 +1,5 @@
 ---
-last_update: 
+last_update:
   date: 08-30-2023
 slug: /graphql/graphiql-ide
 ---
@@ -27,7 +27,6 @@ The UI is divided into three parts:
 - **Left panel** where you write your queries
 - **Right panel** where the results of your queries are displayed
 
-<!-- Same screenshot as the graphql-playground README -->
 <img
   src="https://user-images.githubusercontent.com/25433336/225385087-37c5fa5c-4b23-4fca-a1b5-675974392473.png"
   alt=""
@@ -79,7 +78,6 @@ By default, this section has the following placeholder:
 }
 ```
 
-<!-- markdownlint-disable-next-line MD029 -->
 3. Replace _`AUTH_TOKEN`_ with your authentication token value
 
 To test that you're authorized, click the **Execute query** button (▶️) and check your result.
@@ -247,8 +245,8 @@ var data = JSON.stringify({
 var config = {
   method: 'post',
   url: 'https://cdn.emnify.net/graphql',
-  headers: { 
-    'Authorization': 'Bearer AUTH_TOKEN', 
+  headers: {
+    'Authorization': 'Bearer AUTH_TOKEN',
     'Content-Type': 'application/json'
   },
   data : data

@@ -9,7 +9,7 @@ slug: /system-events/event-types
 
 The following is a list of available event types, including their corresponding IDs and descriptions.
 
-:::note API Reference
+:::note[API reference]
 [Event type object](https://cdn.emnify.net/api/doc/event.html#event-type-object)
 :::
 
@@ -1268,7 +1268,7 @@ Activating a SIM with the **Suspended** status again is possible at any time.
 
 The SIM is deleted and permanently removed from the SIM repository.
 
-:::caution
+:::warning
 Once deleted, the SIM cannot be restored for network access.
 :::
 
@@ -1746,7 +1746,7 @@ The organization is blocked after exceeding the monthly cost limit (defined by e
 | 57  | [Data quota deleted](#data-quota-deleted)           |
 | 60  | [Data quota expired](#data-quota-expired)           |
 
-:::note API Reference
+:::note[API reference]
 Quota information is in the event's [detail object](https://cdn.emnify.net/api/doc/event.html#detail-object).
 :::
 
@@ -1820,7 +1820,7 @@ The threshold percentage can be submitted when the data quota is assigned to the
 Data quota volume is completely depleted.
 Exclusively for devices with data quota management enabled.
 
-:::caution
+:::warning
 Once this happens, the data quota status updates from **Active** to **Exhausted**, and the device won't be able to consume from the data service.
 Established connections for that device disconnects within seconds, and new connection requests are denied until a new data quota is assigned or data quota management is disabled in the service profile.
 
@@ -1886,7 +1886,7 @@ This means the device can still use data services with less throughput.
 
 Data quota management is enabled in a service profile.
 
-:::caution
+:::warning
 All devices using this service profile need to have an active data quota assigned to use the data service.
 Devices without active data quotas disconnect within seconds.
 New connection requests are denied until a new data quota is assigned or data quota management is disabled in the service profile.
@@ -1926,7 +1926,7 @@ New connection requests are denied until a new data quota is assigned or data qu
 
 Data quota management is disabled in a service profile.
 
-:::caution
+:::warning
 There's no longer data service restrictions for devices using this service profile.
 :::
 
@@ -2112,7 +2112,7 @@ On exhaustion, the data service will be blocked.”
 
 Data quota is deleted from a device.
 
-:::caution
+:::warning
 Once deleted, devices on this service profile with data quota management enabled won't be able to use the data service.
 Potential data connections of this device disconnect within seconds.
 New connection requests are denied until an active data quota is assigned or data quota management is disabled in the service profile.
@@ -2228,7 +2228,7 @@ Once expired, the device isn't able to establish a data session.
 | 58  | [SMS quota assigned](#sms-quota-assigned)                   |
 | 59  | [SMS quota deleted](#sms-quota-deleted)                     |
 
-:::note API Reference
+:::note[API reference]
 Quota information is in the event's [detail object](https://cdn.emnify.net/api/doc/event.html#detail-object).
 :::
 
@@ -2306,7 +2306,7 @@ The threshold percentage can be submitted when the SMS quota is assigned to the 
 SMS quota volume is completely depleted.
 Exclusively for devices with enabled SMS quota management.
 
-:::caution
+:::warning
 Once this happens, the SMS quota status updates from **Active** to **Exhausted**, and the device won't be able to consume from the SMS service.
 Established connections for that device disconnect within seconds, and new connection requests are denied until a new SMS quota is assigned or SMS quota management is disabled in the service profile.
 :::
@@ -2373,7 +2373,7 @@ Established connections for that device disconnect within seconds, and new conne
 
 SMS quota management is enabled in a service profile.
 
-:::caution
+:::warning
 All devices using this service profile need to have an active SMS quota assigned to use the SMS service.
 Devices without active SMS quotas disconnect within seconds.
 New connection requests are denied until a new SMS quota is assigned or SMS quota management is disabled in the service profile.
@@ -2413,7 +2413,7 @@ New connection requests are denied until a new SMS quota is assigned or SMS quot
 
 SMS quota management is disabled in a service profile.
 
-:::caution
+:::warning
 There's no longer SMS service restrictions for devices using this service profile.
 :::
 
@@ -2527,7 +2527,7 @@ Assigning a new SMS quota to a device is possible at any time.
 
 SMS quota is deleted from a device.
 
-:::caution
+:::warning
 Once deleted, devices on this service profile (with SMS quota management enabled) won't be able to use the SMS service until an active SMS quota is assigned, or SMS quota management is disabled in the service profile.
 :::
 

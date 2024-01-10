@@ -1,7 +1,7 @@
 // @ts-check
 require("dotenv").config();
 
-const lightCodeTheme = require("prism-react-renderer/themes/vsLight");
+import { themes as prismThemes } from "prism-react-renderer";
 
 let baseUrl = "/";
 if (process.env.PREVIEW_PATH) baseUrl += process.env.PREVIEW_PATH;
@@ -172,7 +172,8 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} emnify GmbH. All rights reserved.`,
       },
       prism: {
-        theme: lightCodeTheme,
+        theme: prismThemes.vsLight,
+        additionalLanguages: ["bash", "javascript", "json", "python"],
       },
       zoom: {
         // selector: '.markdown :not(em) > img',

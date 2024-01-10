@@ -1,6 +1,6 @@
 ---
 description: Configure SIM state to minimize costs
-last_update: 
+last_update:
   date: 08-31-2023
 slug: /services/sim-lifecycle-management
 ---
@@ -25,7 +25,7 @@ The SIMs have five different states that can be configured via the [**SIM Invent
 | **Factory Test** | The SIM is enabled and can generate traffic. It can be used up to defined data and SMS thresholds without incurring charges. Once either threshold is crossed or the test period has elapsed, the SIM automatically moves to the _Activated_ state. For more information, see [Factory test mode](/services/factory-test-mode). |
 | **Deleted**      | Permanently removes the SIM from the SIM Inventory. Once deleted, it can't be restored for network access. |
 
-:::caution Warning for API users
+:::warning
 If you're using the [emnify REST API](https://cdn.emnify.net/api/doc/index.html) to configure devices, it's possible to have an **Activated** SIM assigned to a **Disabled** endpoint.
 In this case, you'll continue to accrue costs as emnify charges for activated SIMs.
 Be sure to suspend the assigned SIM to avoid unexpected charges.

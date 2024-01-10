@@ -1,6 +1,6 @@
 ---
 description: Tips and solutions for resolving why a device isn't performing as expected
-last_update: 
+last_update:
   date: 07-20-2023
 slug: /portal/troubleshooting
 ---
@@ -27,10 +27,10 @@ If it's present and the active time (shown in hh:mm:ss format) increases with ea
 
 <details className="custom-details-troubleshooting">
   <summary>What's a PDP context?</summary>
-  A Packet Data Protocol (PDP) context is a data structure that enables a device to transmit and receive data using Internet Protocol (IP).  
-  This data structure includes a device's IP address, IMSI, and additional parameters to properly route data to and from the network.  
+  A Packet Data Protocol (PDP) context is a data structure that enables a device to transmit and receive data using Internet Protocol (IP).
+  This data structure includes a device's IP address, IMSI, and additional parameters to properly route data to and from the network.
 
- If a device's most recent PDP context event is **Create PDP Context**, the device should be **online** with an active network connection.  
+ If a device's most recent PDP context event is **Create PDP Context**, the device should be **online** with an active network connection.
 
   The device is offline if a device's most recent PDP context event is **Delete PDP Context**.
 </details>
@@ -50,13 +50,13 @@ The event log often contains information that can be used to determine what went
     src={require('./assets/portal-device-details-events.png').default}
     style={{ width: 655 }}
     alt=""
-  />  
+  />
 
   **Note**: events are always shown in reverse chronological order, with the newest ones at the top.
 
 </details>
 
-:::caution Warning
+:::warning
 Don't rely solely on the **Event Type** to determine what event was logged.
 For instance, **Create PDP Context** by itself _doesn't_ mean that a PDP context was successfully created.
 :::

@@ -1,5 +1,5 @@
 ---
-last_update: 
+last_update:
   date: 11-16-2023
 ---
 
@@ -14,7 +14,7 @@ _Access Point Name_
 A gateway between a [GSM](#gsm), GPRS, 3G, or 4G mobile network and another computer network, usually the public Internet.
 The APN needs to be configured on the device. For emnify, it's `em` or `emnify`.
 
-## Application token  
+## Application token
 
 A unique identification key used to authenticate emnify's APIs.
 Also used when authenticating the [OpenVPN](#openvpn) service.
@@ -29,7 +29,7 @@ The SMS sent and received between an application and a device (or vice versa).
 Learn more about the [SMS types supported by the emnify platform](/services/sms) and how to [Receive MO SMS via API callback](https://cdn.emnify.net/api/doc/sms-callback.html).
 :::
 
-## Assigned SIM  
+## Assigned SIM
 
 SIM that has been assigned to a device.
 
@@ -49,11 +49,11 @@ _Batch Identification Code_
 
 A unique code for ordered SIM cards used to register the SIM cards in the [**SIM Inventory**](https://portal.emnify.com/sim-inventory).
 
-## Callback URL  
+## Callback URL
 
 URL that will be called by a service to send and receive data related to an event that caused this action.
 
-## Carrier-agnostic network  
+## Carrier-agnostic network
 
 A network that doesn't limit or prefer any specific network in a country and establishes a connection over any network that's transparent to the device.
 
@@ -76,7 +76,7 @@ A company's emnify account (that is, an [**Organization**](#organization) in the
 Every company account (on any package) is a [workspace](#workspace) by default.
 :::
 
-## Connectivity status  
+## Connectivity status
 
 This is the connectivity status of a device.
 It can be set to:
@@ -99,15 +99,15 @@ _Customer success manager_
 A member of emnify’s team dedicated to helping you grow and achieve your goals.
 For a full explanation of the role, see [Support](/support).
 
-## Data RX  
+## Data RX
 
 Data received by the device.
 
-## Data session  
+## Data session
 
 A session between opening and closing a data connection to the network.
 
-## Data TX  
+## Data TX
 
 Data transmitted by the device.
 
@@ -131,7 +131,7 @@ Reflects the current state of the device and determines whether a device can con
 Learn more about [the different device statuses](/portal/connected-devices#device-status) and [how to configure them in the emnify Portal](/portal/connected-devices#configure-the-device-status).
 :::
 
-:::note API Reference
+:::note[API reference]
 [Endpoint status object](https://cdn.emnify.net/api/doc/endpoint.html#endpoint-status-object)
 :::
 
@@ -141,7 +141,7 @@ _Domain Name System_
 
 A hierarchical decentralized naming system for computers, services, or any resource connected to the Internet or a private network to map a hostname to an IP address.
 
-## Dynamic IP  
+## Dynamic IP
 
 An IP that changes over time.
 
@@ -168,7 +168,7 @@ The EUM specific identification number (ESIN) and [check digits](#check-digit) a
 Unlike the [ICCID](#iccid), the EID remains the same throughout the life of the eSIM.
 Therefore, you can use it as a permanent identifier to keep track of your SIM cards.
 
-## Endpoint  
+## Endpoint
 
 A representation of the device which has a SIM installed.
 Often used as a legacy term for a **device**, particularly in the [REST API](https://cdn.emnify.net/api/doc/endpoint.html).
@@ -189,15 +189,15 @@ _Embedded Universal Integrated Circuit Card_
 The embedded universal integrated circuit card (eUICC) is a component of a [SIM](#sim) card.
 It allows consumers and IoT manufacturers to provision the SIM with a new [mobile network operator (MNO)](https://www.emnify.com/iot-glossary/mno) profile [over-the-air](#ota).
 
-:::tip Deep dive
+:::tip
 Learn more about the eUICC in the blog post: [What is an eUICC and why does it matter?](https://www.emnify.com/iot-glossary/what-is-an-euicc)
 :::
 
-## Event log  
+## Event log
 
 A log that stores all device events.
 
-## Form factor  
+## Form factor
 
 The form factor of a SIM card represents the SIM card format.
 SIM cards vary in size (Mini vs. Micro vs. Nano), function (embedded vs. standard), and quality (industrial grade vs. standard):
@@ -212,7 +212,7 @@ _Gateway GPRS Support Node_
 
 Part of the [GSM](#gsm) infrastructure, the [GGSN](#ggsn) is responsible for the interworkings between the GPRS network and external packet switched networks.
 
-## Globally-distributed infrastructure  
+## Globally-distributed infrastructure
 
 Cloud infrastructure that's distributed globally, with several local breakout points for better traffic handling.
 
@@ -229,7 +229,7 @@ _Home Location Register_
 A database from a mobile network in which information from all mobile subscribers is stored.
 Part of [GSM](#gsm) infrastructure.
 
-## HTTP POST request  
+## HTTP POST request
 
 A request method supported by the HTTP protocol, which typically includes data in the request body.
 
@@ -281,7 +281,7 @@ There are also "software versions" of IMEIs, referred to as _IMEISVs_.
 In an IMEISV, there is no [check digit](#check-digit), and the last two digits represent the Software Version Number (SVN).
 :::
 
-## IMEI lock  
+## IMEI lock
 
 The practice of strictly associating a SIM to the device with a certain [IMEI](#imei) number.
 
@@ -295,12 +295,12 @@ Therefore it changes if a device connects to a different operator while roaming.
 <details className="custom-details-example">
   <summary>See how the IMSI is constructed</summary>
   An IMSI is usually a 15-digit number but can be 14 digits in some cases.
-  
+
   It comprises three components: MCC, MNC, and MSIN.
 
-  MCC: 3-digit country identifier  
-  MNC: operator identifier (two or three digits)  
-  MSIN: identifier for the connected device (nine or 10 digits)  
+  MCC: 3-digit country identifier
+  MNC: operator identifier (two or three digits)
+  MSIN: identifier for the connected device (nine or 10 digits)
 
   <img
     src={require('./assets/imsi-components-table.png').default}
@@ -309,11 +309,11 @@ Therefore it changes if a device connects to a different operator while roaming.
   />
 </details>
 
-## IPsec  
+## IPsec
 
 A protocol suite for Secure Internet Protocol (IP) communications that works by authenticating and encrypting each IP packet of a communication session.
 
-## IP subnet  
+## IP subnet
 
 A logical subdivision of an IP network.
 
@@ -343,7 +343,7 @@ Luhn checksum digits are most notably used to validate [ICCID](#iccid) and [IMEI
 [Workspaces](#workspace) linked together by a [main organization](#main-organization).
 Linked workspaces can be centrally or individually managed.
 
-:::tip Step-by-step guide
+:::tip[step-by-step guide]
 [Link an existing workspace](/workspaces/link)
 :::
 
@@ -362,7 +362,7 @@ MFA is sometimes called two-factor authentication (2FA) and has historically bee
 To learn more about MFA and how it's enforced at emnify, see the [Set up multi-factor authentication](/how-tos/multi-factor-authentication) guide.
 :::
 
-## MFA key  
+## MFA key
 
 _Multi-Factor Authentication key_
 
@@ -403,11 +403,11 @@ _Over-the-Air_
 
 A method of wireless distribution of the software, configuration settings, or encryption keys.
 
-## OTA provisioning  
+## OTA provisioning
 
 A technology that allows changes to the SIM memory [over-the-air](#ota).
 
-## OpenVPN  
+## OpenVPN
 
 An open source software application that implements [virtual private network (VPN)](#vpn) techniques for creating secure point-to-point or site-to-site connections in routed or bridged configurations and remote access facilities.
 
@@ -425,11 +425,11 @@ SMS sent from a device with any SIM to a device with the emnify SIM.
 Learn more about the [SMS types supported by the emnify platform](/services/sms) and [P2P routing via the emnify REST API](https://cdn.emnify.net/api/doc/sms-callback.html).
 :::
 
-## PDP context  
+## PDP context
 
 Data structure present on both the serving GPRS support node (SGSN) and the [gateway GPRS support node (GGSN)](#ggsn), which contains the subscriber’s session information when the subscriber has an active session.
 
-## Private IP  
+## Private IP
 
 An IP address that's not reachable from the public Internet but only through a local or virtual network.
 [Dynamic private IPs](#dynamic-ip) keep changing, whereas static private IP addresses don't change.
@@ -441,7 +441,7 @@ _Power Saving Mode_
 While in power saving mode (PSM), the device tells the network that it's powering off for a specific time and sending periodic updates in longer-than-usual intervals.
 When the device comes back online, it doesn't need to reattach to a network but can use an already-created PDP context, thus saving power.
 
-## Public IP  
+## Public IP
 
 An IP address accessible from the public Internet.
 
@@ -461,7 +461,7 @@ _Software-Defined Networking_
 
 An approach that allows network administrators to programmatically initialize, control, change, and manage network behavior dynamically via open interfaces.
 
-## Service profile  
+## Service profile
 
 A profile that defines the services and capabilities of a device managed through the emnify platform.
 
@@ -474,15 +474,15 @@ Pluggable SIMs mounted on plastic cards are offered in various form factors.
 A SIM stores data used to identify a subscriber ([IMSI](#imsi)) along with other network information for connecting and authenticating with a [mobile network operator (MNO)](https://www.emnify.com/iot-glossary/mno).
 See also [eSIM - Embedded SIM](#esim).
 
-## SIM batch  
+## SIM batch
 
 A collection of SIM cards that can be registered with a single [BIC](#bic) code.
 
-## SIM hosting fee  
+## SIM hosting fee
 
 Monthly fee for an activated SIM.
 
-## SIM profile  
+## SIM profile
 
 The [mobile network operator (MNO)](https://www.emnify.com/iot-glossary/mno) ID information stored in the SIM’s memory.
 
@@ -490,11 +490,11 @@ The [mobile network operator (MNO)](https://www.emnify.com/iot-glossary/mno) ID 
 
 A process to allow your SIM cards to be registered within your organization and visible in the [**SIM Inventory**](https://portal.emnify.com/sim-inventory).
 
-:::tip Step-by-step guide
+:::tip[step-by-step guide]
 [Register emnify SIMs](/quickstart/register-sims)
 :::
 
-## SIM repository  
+## SIM repository
 
 All SIMs assigned to your organization.
 
@@ -502,7 +502,7 @@ All SIMs assigned to your organization.
 
 Reflects the current state of the [SIM](#sim) in the [SIM lifecycle](/services/sim-lifecycle-management).
 
-:::note API reference
+:::note[API reference]
 [SIM status object](https://cdn.emnify.net/api/doc/sim.html#status-object)
 :::
 
@@ -512,15 +512,15 @@ _Short Message Peer-to-Peer_
 
 A protocol used by the telecommunications industry for exchanging SMS messages between short message service centers (SMSC) and/or external short messaging entities (ESME).
 
-## SMS console  
+## SMS console
 
 An interface to send [A2P SMS](#a2p-sms) from the platform to the SIM card.
 
-## SMS firewall  
+## SMS firewall
 
 A firewall that controls the SMS flow.
 
-## SMS MO  
+## SMS MO
 
 _Mobile originated SMS_
 
@@ -536,7 +536,7 @@ Using the emnify REST API, you can dispatch MO SMS from devices as HTTP `POST` r
 For more information, see [Receive MO SMS via API callback](https://cdn.emnify.net/api/doc/sms-callback.html)
 :::
 
-## SMS MT  
+## SMS MT
 
 _Mobile terminated SMS_
 
@@ -546,23 +546,23 @@ SMS that are received by a device with an emnify SIM.
 Learn more about the [SMS types supported by the emnify platform](/services/sms).
 :::
 
-## Source address  
+## Source address
 
 The address of the SMS sender as displayed on the receiving device.
 
-## Static IP  
+## Static IP
 
 An IP that doesn’t change over time.
 
-## Traffic pooling  
+## Traffic pooling
 
 A term used to describe the service model when various devices utilize the same data pool.
 
-## Unassigned SIM  
+## Unassigned SIM
 
 SIM that has been unassigned from a device.
 
-## Usage limit  
+## Usage limit
 
 User-defined limit of consumption for a certain service (data, SMS) per device.
 
@@ -571,11 +571,11 @@ User-defined limit of consumption for a certain service (data, SMS) per device.
 An account associated with a specific person and used to log in to one or more [workspaces](#workspace).
 User accounts can be assigned a role (for example, **Administrator**).
 
-## User-defined coverage  
+## User-defined coverage
 
 An ability to select which network the customer’s SIM connects to.
 
-## User-defined networking  
+## User-defined networking
 
 An approach that enables users to create their own virtual mobile network, define service and security policies, and provision [coverage policies](#coverage-policy) and data packages.
 
@@ -607,7 +607,7 @@ Every [company account](#company-account) (with any package) is a workspace by d
 Accounts with the **Pro Package** can have up to three workspaces.
 :::
 
-:::tip Step-by-step guide
+:::tip[step-by-step guide]
 [Create a new workspace](/workspaces/create)
 :::
 
@@ -615,6 +615,6 @@ Accounts with the **Pro Package** can have up to three workspaces.
 
 The feature in the [emnify Portal](https://portal.emnify.com/) allowing **Administrator** [user accounts](#user-account) to switch between workspaces.
 
-:::tip Step-by-step guide
+:::tip[step-by-step guide]
 [Switch between workspaces](/workspaces/switch)
 :::

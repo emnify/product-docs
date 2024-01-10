@@ -1,6 +1,6 @@
 ---
 description: Learn how to manage your devices via the Connected Devices page in the emnify Portal
-last_update: 
+last_update:
   date: 12-14-2023
 slug: /portal/connected-devices
 ---
@@ -10,7 +10,7 @@ slug: /portal/connected-devices
 import Check from '../assets/check.svg';
 import Close from '../assets/close.svg';
 
- [**Connected Devices**](https://portal.emnify.com/connected-devices) is where you manage your devices.
+[**Connected Devices**](https://portal.emnify.com/connected-devices) is where you manage your devices.
 
 ## Create a new device
 
@@ -42,7 +42,7 @@ To remove a filter or value, click the corresponding **X**.
 Filters can be combined or used together with the [search bar](#search-devices).
 Filtered values are saved in the URL as a query parameter (for example, after filtering for devices with the `Zapier` tag, the URL includes `&tags=Zapier` at the end).
 
-:::caution
+:::warning
 Your selected filters remain active when you visit a device's **Details** page.
 However, the filters reset if you go to another page in the Portal.
 :::
@@ -152,7 +152,7 @@ For example, if you enter the number `2`, the search results would show any devi
 The search is case insensitive, meaning `GPS Tracker` and `gps tracker` would produce the same results.
 You can also combine the search with filters, but searched values aren't saved in the URL.
 
-:::caution
+:::warning
 Wildcards using an asterisk `*` aren't supported in the search bar.
 
 For example, if your device's **Name** is `My iPhone`, searching `phone` would show results, but searching `*phone` wouldn't.
@@ -192,7 +192,7 @@ For definitions of any unfamiliar terms or acronyms, see the [Glossary](/glossar
 A device has only two configurable states, **Enabled** or **Disabled**.
 You can toggle one or more devices between these states to control their data usage.
 
-:::caution Warning for API users
+:::warning
 If you're using the [emnify REST API](https://cdn.emnify.net/api/doc/index.html) to configure devices, it's possible to have a **Disabled** endpoint with an **Activated** assigned SIM.
 In this case, you'll continue to accrue costs as emnify charges for activated SIMs.
 Be sure to suspend the assigned SIM to avoid unexpected charges.
@@ -218,7 +218,6 @@ Once their checkboxes indicate that they have been selected, the bulk actions me
 Select **Device** and then one of the actions:
 
 <!-- vale Google.OptionalPlurals = NO -->
-<!-- Action names are written the same as they're shown in the Portal -->
 - Enable Device(s)
 - Disable Device(s)
 <!-- vale Google.OptionalPlurals = YES -->
@@ -231,7 +230,7 @@ Select **Device** and then one of the actions:
   />
 </details>
 
-:::caution
+:::warning
 Devices can't be deleted.
 You can rename or repurpose unwanted devices for use with unassigned SIMs.
 :::

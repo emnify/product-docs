@@ -33,7 +33,7 @@ On the **OpenVPN** panel, click **Show Instructions**.
 1. Create the `credentials.txt` file as instructed, using either your [user credentials](https://portal.emnify.com/user-settings) or your [organization ID](https://portal.emnify.com/organisation-settings/details) and [application token](https://portal.emnify.com/integrations#application-tokens) (recommended)
 1. Follow the remaining steps in the Portal to start the OpenVPN application or service on your operating system.
 
-:::caution
+:::warning
 You can't use accounts with multi-factor authentication (MFA) enabled to authenticate the OpenVPN tunnel.
 :::
 

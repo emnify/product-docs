@@ -129,7 +129,7 @@ On the **Data plan upgrade** page, you'll have an opportunity to confirm the fol
 When finished, verify that everything under **Plan configuration** is accurate.
 Then select **Upgrade data plan**.
 
-:::caution
+:::warning
 Your new package will be charged immediately in the next billing cycle.
 You'll be charged the total package price regardless of when you upgrade, as emnify doesn't prorate.
 :::

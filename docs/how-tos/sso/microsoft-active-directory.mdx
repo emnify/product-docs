@@ -1,6 +1,6 @@
 ---
 description: Setup SSO for your emnify account with Microsoft Active Directory
-last_update: 
+last_update:
   date: 12-20-2022
 sidebar_label: Microsoft Active Directory
 slug: /sso/microsoft-active-directory
@@ -15,7 +15,7 @@ This guide walks through enabling single sign-on (SSO), so your organization can
 - An Azure Subscription with an Active Directory license
 - An [emnify account](/quickstart) using the same email address as the one used to sign in to Microsoft Azure
 
-:::caution
+:::warning
 If your email address used in the emnify Portal differs from the one used to log in to Azure, this setup won't work.
 You can verify your email in [**User Settings**](https://portal.emnify.com/user-settings).
 
@@ -44,7 +44,7 @@ From there:
 
 - Give your app a **Name** (for example, "emnify").
 - The **Supported Account Types** should be `Multitenant`.
-This requests a consent screen on IDP verification in the Portal later. 
+This requests a consent screen on IDP verification in the Portal later.
 - Set the Redirect URI to type `Web` with the value: `https://prod-e5.okta.com/oauth2/v1/authorize/callback`
 
 <img
@@ -136,7 +136,7 @@ Enter the **Client ID** and **Client Secret** with the values you copied earli
 The final step is to verify the provider.
 Click **Verify Integration** and follow the prompts.
 
-:::caution
+:::warning
 You must complete the final step and verify the provider to configure SSO.
 :::
 

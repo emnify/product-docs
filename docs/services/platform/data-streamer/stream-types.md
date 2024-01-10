@@ -135,7 +135,7 @@ Data usage records are created:
 
 </details>
 
-:::note API Reference
+:::note[API reference]
 [Data Streamer usage object](https://cdn.emnify.net/api/doc/data-streamer.html#usage-object)
 :::
 
@@ -223,6 +223,6 @@ Usage records for SMS are created when an SMS is successfully delivered either:
 
 </details>
 
-:::note API Reference
+:::note[API reference]
 [Data Streamer usage object](https://cdn.emnify.net/api/doc/data-streamer.html#usage-object)
 :::
