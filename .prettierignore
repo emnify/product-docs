@@ -16,6 +16,9 @@ docs
 .markdownlint.jsonc
 .markdownlintignore
 
+# Generated design token file
+src/css/design-tokens
+
 # Ignore files
 .env
 .gitignore

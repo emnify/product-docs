@@ -10,7 +10,7 @@
   --eui-sys-typescale-body-text-x-small-letter-spacing: 0.02rem;
   --eui-sys-typescale-body-text-x-small-text-decoration: none;
   --eui-sys-typescale-body-text-small-font-weight: 400;
-  --eui-sys-typescale-body-text-small-font-size: 0.7rem;
+  --eui-sys-typescale-body-text-small-font-size: 0.70rem;
   --eui-sys-typescale-body-text-small-line-height: 140%;
   --eui-sys-typescale-body-text-small-letter-spacing: 0.02rem;
   --eui-sys-typescale-body-text-small-text-decoration: none;
@@ -20,7 +20,7 @@
   --eui-sys-typescale-body-text-medium-letter-spacing: 0.02rem;
   --eui-sys-typescale-body-text-medium-text-decoration: none;
   --eui-sys-typescale-body-text-large-font-weight: 400;
-  --eui-sys-typescale-body-text-large-font-size: 1rem;
+  --eui-sys-typescale-body-text-large-font-size: 1.00rem;
   --eui-sys-typescale-body-text-large-line-height: 140%;
   --eui-sys-typescale-body-text-large-letter-spacing: 0.02rem;
   --eui-sys-typescale-body-text-large-text-decoration: none;
@@ -55,7 +55,7 @@
   --eui-sys-typescale-headline-large-letter-spacing: 0.02rem;
   --eui-sys-typescale-headline-large-text-decoration: none;
   --eui-sys-typescale-label-small-font-weight: 700;
-  --eui-sys-typescale-label-small-font-size: 0.7rem;
+  --eui-sys-typescale-label-small-font-size: 0.70rem;
   --eui-sys-typescale-label-small-line-height: 140%;
   --eui-sys-typescale-label-small-letter-spacing: 0.02rem;
   --eui-sys-typescale-label-small-text-decoration: none;
@@ -65,7 +65,7 @@
   --eui-sys-typescale-label-medium-letter-spacing: 0.02rem;
   --eui-sys-typescale-label-medium-text-decoration: none;
   --eui-sys-typescale-label-large-font-weight: 700;
-  --eui-sys-typescale-label-large-font-size: 1rem;
+  --eui-sys-typescale-label-large-font-size: 1.00rem;
   --eui-sys-typescale-label-large-line-height: 140%;
   --eui-sys-typescale-label-large-letter-spacing: 0.02rem;
   --eui-sys-typescale-label-large-text-decoration: none;
@@ -75,7 +75,7 @@
   --eui-sys-typescale-link-x-small-letter-spacing: 0.02rem;
   --eui-sys-typescale-link-x-small-text-decoration: underline;
   --eui-sys-typescale-link-small-font-weight: 400;
-  --eui-sys-typescale-link-small-font-size: 0.7rem;
+  --eui-sys-typescale-link-small-font-size: 0.70rem;
   --eui-sys-typescale-link-small-line-height: 140%;
   --eui-sys-typescale-link-small-letter-spacing: 0.02rem;
   --eui-sys-typescale-link-small-text-decoration: underline;
@@ -85,7 +85,7 @@
   --eui-sys-typescale-link-medium-letter-spacing: 0.02rem;
   --eui-sys-typescale-link-medium-text-decoration: underline;
   --eui-sys-typescale-link-large-font-weight: 400;
-  --eui-sys-typescale-link-large-font-size: 1rem;
+  --eui-sys-typescale-link-large-font-size: 1.00rem;
   --eui-sys-typescale-link-large-line-height: 140%;
   --eui-sys-typescale-link-large-letter-spacing: 0.02rem;
   --eui-sys-typescale-link-large-text-decoration: underline;

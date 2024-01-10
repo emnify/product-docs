@@ -5,22 +5,22 @@
 
 .checkbox {
   --eui-comp-checkbox-container-border-border-radius: 4px;
-  --eui-comp-checkbox-container-border-unselected-default: #cdcdcd;
+  --eui-comp-checkbox-container-border-unselected-default: #CDCDCD;
   --eui-comp-checkbox-container-border-unselected-hovered: #727272;
-  --eui-comp-checkbox-container-border-unselected-focused: #cdcdcd;
-  --eui-comp-checkbox-container-border-unselected-disabled: #cdcdcd;
+  --eui-comp-checkbox-container-border-unselected-focused: #CDCDCD;
+  --eui-comp-checkbox-container-border-unselected-disabled: #CDCDCD;
   --eui-comp-checkbox-container-outline-color: #4377cd;
   --eui-comp-checkbox-container-outline-width: 2px;
   --eui-comp-checkbox-container-outline-offset: 2px;
   --eui-comp-checkbox-container-size: 18px;
   --eui-comp-checkbox-container-padding-between: 12px;
-  --eui-comp-checkbox-container-color-selected-default: #3708b2;
+  --eui-comp-checkbox-container-color-selected-default: #3708B2;
   --eui-comp-checkbox-container-color-selected-hovered: #5f39c1;
-  --eui-comp-checkbox-container-color-selected-focused: #3708b2;
-  --eui-comp-checkbox-container-color-selected-disabled: #cdcdcd;
+  --eui-comp-checkbox-container-color-selected-focused: #3708B2;
+  --eui-comp-checkbox-container-color-selected-disabled: #CDCDCD;
   --eui-comp-checkbox-leading-icon-color-selected-default: #ffffff;
   --eui-comp-checkbox-leading-icon-color-selected-disabled: #727272;
   --eui-comp-checkbox-leading-icon-size: 18px;
   --eui-comp-checkbox-label-text-color-default: #000000;
-  --eui-comp-checkbox-label-text-color-disabled: #cdcdcd;
+  --eui-comp-checkbox-label-text-color-disabled: #CDCDCD;
 }
