@@ -43,14 +43,14 @@ This process is only required if you haven't enabled MFA for your account.
 Once MFA becomes mandatory for your organization, follow these steps to access your account:
 
 1. [Log in to your emnify account](https://portal.emnify.com/sign) with your email and password as usual.
-1. Navigate to the email account you use to access the Portal. 
+2. Navigate to the email account you use to access the Portal. 
 Open the message from emnify with your 6-digit verification code.
 The code is valid for 20 minutes and should contain letters and numbers.
 :::tip
 Check your spam folder if you haven't received a code after a few minutes.
 :::
 
-1. Go back to the Portal. Enter the code and click **Verify code** to verify your identity.
+3. Go back to the Portal. Enter the code and click **Verify code** to verify your identity.
 
 <details className="custom-details-troubleshooting">
   <summary>Need help verifying your identity?</summary>
