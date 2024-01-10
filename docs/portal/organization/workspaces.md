@@ -2,7 +2,7 @@
 title: Workspaces
 description: Organizations with complex business structures or diverse product lines can benefit from Workspaces in the emnify Portal
 last_update: 
-  date: 07-20-2023
+  date: 01-10-2024
 slug: /workspaces
 ---
 
@@ -42,6 +42,18 @@ This helps facilitate requirements for supporting fundamental differences in the
 
 - Workspace users see only the IoT assets they need to manage.
 - Administrators manage only the users in their business unit.
+
+## Single sign-on
+
+Users with the **Administrator** role can set single sign-on (SSO) for their default workspace.
+Once SSO is enabled for the workspace, subsequent users with this workspace as their default use SSO to log in to all invited workspaces.
+If SSO is enabled in a workspace that isn't your default, you continue to use your email and password.
+
+:::note
+For most people, the default workspace is the first one you were invited to and is always shown at the top of the list.
+:::
+
+For the available SSO providers and implementation guides, see [Single sign-on](/sso).
 
 ## Available guides
 
