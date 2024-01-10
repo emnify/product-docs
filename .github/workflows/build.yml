@@ -21,7 +21,9 @@ jobs:
           echo ALGOLIA_APP_ID='${{ secrets.ALGOLIA_APP_ID }}' >> .env
           echo ALGOLIA_SEARCH_API_KEY='${{ secrets.ALGOLIA_SEARCH_API_KEY }}' >> .env
           cat .env
-      - name: Install dependencies
+
+      - name: 🪚 Install dependencies
         run: yarn install --frozen-lockfile
-      - name: Test build website
+
+      - name: 🏗️ Test build website
         run: yarn build

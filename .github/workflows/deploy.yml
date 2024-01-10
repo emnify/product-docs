@@ -23,15 +23,15 @@ jobs:
           echo ALGOLIA_SEARCH_API_KEY='${{ secrets.ALGOLIA_SEARCH_API_KEY }}' >> .env
           cat .env
 
-      - name: Install dependencies
+      - name: 🪚 Install dependencies
         run: yarn install --frozen-lockfile
 
-      - name: Build website
+      - name: 🏗️ Build website
         run: yarn build
         env:
           HEAP_ANALYTICS_APP_ID: ${{ secrets.HEAP_ANALYTICS_APP_ID }}
 
-      - name: Deploy to GitHub Pages
+      - name: 🚀 Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
