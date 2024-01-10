@@ -1,9 +1,6 @@
 name: Validate content with Vale
 
 on:
-  push:
-    branches:
-      - main
   pull_request:
     branches:
       - main
