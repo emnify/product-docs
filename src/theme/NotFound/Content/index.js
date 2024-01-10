@@ -3,14 +3,13 @@ import clsx from "clsx";
 import Translate from "@docusaurus/Translate";
 import Heading from "@theme/Heading";
 import Link from "@docusaurus/Link";
-import styles from "./index.module.css";
 
 // eslint-disable-next-line
 export default function NotFoundContent({ className }) {
   return (
     <main className={clsx("container margin-vert--xl", className)}>
       <div className="row">
-        <div className="col col--6 col--offset-3">
+        <div className="col col--6 col--offset-3 page-not-found-content">
           <Heading as="h1" className="hero__title">
             <Translate
               id="theme.NotFound.title"
@@ -36,7 +35,6 @@ export default function NotFoundContent({ className }) {
           >
             Please{" "}
             <a
-              className={styles.pageLink}
               href="https://github.com/emnify/product-docs/issues/new"
               target="_blank"
               rel="noopener noreferrer"
@@ -44,12 +42,10 @@ export default function NotFoundContent({ className }) {
               open an issue on GitHub
             </a>{" "}
             or{" "}
-            <a className={styles.pageLink} href="mailto:docs@emnify.com">
-              contact our documentation team
-            </a>{" "}
+            <a href="mailto:docs@emnify.com">contact our documentation team</a>{" "}
             if you are struggling to find what you need.
           </p>
-          <Link to="/" className={styles.homepageButton}>
+          <Link to="/" className="button primary-button-large-text-only">
             Go to homepage
           </Link>
         </div>

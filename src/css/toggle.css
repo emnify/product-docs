@@ -1,7 +1,3 @@
-.alert a:hover {
-  text-decoration-thickness: inherit;
-}
-
 details {
   border: none !important;
   box-shadow: none !important;

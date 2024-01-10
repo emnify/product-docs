@@ -1,19 +1,23 @@
+.alert a:hover {
+  text-decoration-thickness: inherit;
+}
+
 .theme-admonition {
   margin-top: 0.5rem;
 }
 
-/* Caution admonition */
-.theme-admonition-caution {
+/* Warning admonition */
+.theme-admonition-warning {
   background-color: var(--eui-sys-support-containers-warning-container);
   border-color: var(--eui-sys-support-containers-on-warning-container);
   color: var(--eui-sys-layout-on-surface);
 }
 
-.theme-admonition-caution a {
+.theme-admonition-warning a {
   text-decoration-color: var(--eui-sys-support-containers-on-warning-container);
 }
 
-.theme-admonition-caution svg path {
+.theme-admonition-warning svg path {
   fill: var(--eui-sys-support-containers-on-warning-container);
 }
 
