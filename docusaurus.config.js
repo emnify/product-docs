@@ -71,10 +71,6 @@ const config = {
     {
       src: "/scripts/jentisTagManager.js",
     },
-    {
-      type: "text/javascript",
-      src: "/scripts/heapAnalytics.js",
-    },
   ],
 
   themeConfig:

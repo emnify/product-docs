@@ -28,8 +28,6 @@ jobs:
 
       - name: 🏗️ Build website
         run: yarn build
-        env:
-          HEAP_ANALYTICS_APP_ID: ${{ secrets.HEAP_ANALYTICS_APP_ID }}
 
       - name: 🚀 Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
