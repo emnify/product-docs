@@ -15,6 +15,8 @@ The tunnel is established between the EMnify Core Network and the customers VPN 
 
 See this video [guide for how to secure your devices with Open VPN](https://www.youtube.com/watch?v=yt44fJpfkQ4).
 
+## Add mandatory layer of security and privacy
+
 Any traffic exchanged with the mobile devices is encrypted before transmitted over the public internet, therefore adding an additional layer of security and privacy.
 For that **no** VPN software needs to be installed on the device or any configuration changes to be done, the default EMnify APN does also support VPN flows.
 
