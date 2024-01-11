@@ -10,12 +10,11 @@ on:
     branches:
       - main
     paths:
-      - 'docs/**'
-      - 'src/**'
-      - 'static/**'
-      - '**.js'
-      - '**.json'
-      - 'yarn.lock'
+      - "docs/**"
+      - "src/**"
+      - "static/**"
+      - "**.js*"
+      - "yarn.lock"
 
 concurrency: preview-${{ github.ref }}
 

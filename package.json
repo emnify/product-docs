@@ -68,7 +68,10 @@
   },
   "lint-staged": {
     "./**/*.js*": [
-      "yarn lint:fix"
+      "yarn eslint:fix"
+    ],
+    "./**/*.*": [
+      "yarn prettier:fix"
     ],
     "./**/*.md*": [
       "yarn markdownlint:fix",
