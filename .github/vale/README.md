@@ -3,13 +3,18 @@
 emnify uses [Vale](https://vale.sh/) to enforce consistency in the documentation.
 
 Vale is an open source command-line tool to provide English language linting.
-Vale enables spell checking, writing improvements, and style guide enforcement in files across text and code.
+Vale enables spell-checking, writing improvements, and style guide enforcement in files across text and code.
 
-Vale uses packages, also known as [Styles](#styles), to define the set of rules for writing to follow.
+Vale uses packages, also known as [Styles](#styles), to define the rules for writing to follow.
 
 ## Install Vale
 
 Follow the instructions on the Vale website to [install the Vale command-line tool](https://vale.sh/docs/vale-cli/installation/).
+
+> [!IMPORTANT]
+> Make sure your local CLI version is **<=2.30.0** to match the existing directory structure and version running in the CI pipeline.
+
+If you have issues installing an older version of Vale, [run this workaround](https://gist.github.com/codebytere/54b5667e66ed18aeb1158495d95d5a66) for Homebrew.
 
 ## Run Vale
 
@@ -26,11 +31,11 @@ vale .github/vale/README.md
 Vale has three alert options: `suggestion`, `warning`, and `error`.
 By default, the minimum alert level in the project configuration is set to `warning`.
 
-Vale is run via a [CI pipeline](.github/workflows/vale.yml).
-This pipeline fails on `error` and doesn't report warnings or suggestions.
+Vale is run via a [CI pipeline](../workflows/vale.yml) and [pre-commit hook](../../.husky/pre-commit).
+These checks fail on `error` and don't report warnings or suggestions.
 
 > [!WARNING]
-> The 'Validate content with Vale' pipeline must pass for approval.
+> The 'Validate content with Vale' pipeline must pass for pull request approval.
 
 ## Styles
 
@@ -39,11 +44,19 @@ emnify uses the following [Vale Styles](https://vale.sh/docs/topics/styles/):
 - [Vale](https://vale.sh/docs/topics/styles/#extension-points) (default linting)
 - Google (for the [Google developer documentation style guide](https://developers.google.com/style))
 - emnify (customized styles)
-  - `Condescending.yml`, based on `alex.Condescending` from [alex](https://alexjs.com/) to catch condescending language
-  - `FixMe.yml`, custom rule to ensure annotations are removed
-  - `Race.yml`, based on `alex.Race` from [alex](https://alexjs.com/) to flag polarizing race-related phrasing
-  - `spelling-exceptions.txt`, used in `Spelling.yml`
-  - `Spelling.yml`, which extends `Vale.Spelling` to include emnify-specific spelling exceptions
+
+### Customized emnify Styles
+
+- `Condescending.yml`  
+Based on `alex.Condescending` from [alex](https://alexjs.com/) to catch condescending language.
+- `FixMe.yml`  
+Custom rule to ensure annotations are removed.
+- `Race.yml`  
+Based on `alex.Race` from [alex](https://alexjs.com/) to flag polarizing race-related phrasing.
+- `spelling-exceptions.txt`  
+Used in `Spelling.yml` to ignore non-dictionary words.
+- `Spelling.yml`  
+Extends `Vale.Spelling` to include emnify-specific spelling exceptions.
 
 <details>
 <summary>Why not use the alex package?</summary>
@@ -57,7 +70,10 @@ These two rules are also further customized (more terms added, altered severity 
 ## Vocabularies
 
 Vale uses [Vocabularies](https://vale.sh/docs/topics/vocab/) to define term lists to further customize styles.
-emnify uses this to define company or industry-specific terminology (see [`accept.txt`](./styles/Vocab/emnify/accept.txt) for the full list).
+emnify uses this to define company or industry-specific terminology that a traditional spell check misinterprets.
+
+- [`accept.txt`](./styles/Vocab/emnify/accept.txt) - acceptable formatting and spelling
+- [`reject.txt`](./styles/Vocab/emnify/reject.txt) - deprecated company terminology or common mistakes
 
 ## Ignore Vale rules
 
@@ -65,7 +81,7 @@ Vale can turn off [specific rules](#ignore-specific-rules) or [all rules](#ignor
 All ignored rules should include a justification for why they’re ignored.
 
 > [!WARNING]
-> Vale ignores rules not turned back on for the rest of the document.
+> Vale ignores rules that aren't turned back on for the rest of the document.
 > After the ignored content, turn the rules back on.
 
 ## Ignore specific rules
