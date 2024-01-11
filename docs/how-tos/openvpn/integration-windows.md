@@ -1,19 +1,26 @@
-# OpenVPN Integration Guide for Windows
+---
+description: Integration Guide for OpenVPN on Windows
+last_update: 
+  date: 01-11-2023
+pagination_next: /how-tos/openvpn-integration-linux
+slug: /how-tos/openvpn-integration-windows
+---
 
-**Author**: Jorge Merino  
-**Last Updated**: 2 months ago  
+# OpenVPN Integration Guide for Linux
 
-EMnify customers can create their own Virtual Private Network for their mobile IoT/M2M devices fitted with EMnify SIMs.  
-Data traffic will be exchanged between the devices and the application server through an OpenVPN tunnel, enabling direct communication with the IPs of the mobile devices (no NAT applied).  
+emnify customers can create their own Virtual Private Network for their mobile IoT/M2M devices fitted with emnify SIMs.
+Data traffic will be exchanged between the devices and the application server through an OpenVPN tunnel, enabling direct communication with the IPs of the mobile devices (no NAT applied).
 
-The tunnel is established between the EMnify Core Network and the customers VPN gateway or server.  
+The tunnel is established between the emnify Core Network and the customers VPN gateway or server.
 
-TODO - INSERT IMAGE
+See this video [guide for how to secure your devices with Open VPN](https://www.youtube.com/watch?v=yt44fJpfkQ4).
+
+## Add mandatory layer of security and privacy
 
 Any traffic exchanged with the mobile devices is encrypted before transmitted over the public internet, therefore adding an additional layer of security and privacy.  
-For that **no** VPN software needs to be installed on the device or any configuration changes to be done, the default EMnify APN does also support VPN flows.  
+For that **no** VPN software needs to be installed on the device or any configuration changes to be done, the default emnify APN does also support VPN flows.  
 
-First, download the VPN config file from the EMnify User Interface:
+First, download the VPN config file from the emnify User Interface:
 
 1. Click on the "Integrations" menu  
 2. Scroll down to "secure connection" and download the configuration file  
@@ -41,7 +48,7 @@ Please store that file in your server in the folder _\OpenVPN\config_.
 ### Create Credentials for Authentication
 
 Next, create a file titled e.g. **credentials.txt** in the folder _\OpenVPN\config_.  
-This will contain the information to authenticate your session, either via EMnify user credentials or with an application token (recommended).  
+This will contain the information to authenticate your session, either via emnify user credentials or with an application token (recommended).  
 
 #### Authentication with User Credentials
 
@@ -56,9 +63,9 @@ YourPassword
 #### Authentication with Application Token
 
 When you run the OpenVPN client on a VPN gateway or application server it is recommended to use a dedicated application token.  
-In that case, the first line in the *credentials.txt* file needs to be filled with your EMnify organisation identifier and the application token instead of the password.  
+In that case, the first line in the *credentials.txt* file needs to be filled with your emnify organisation identifier and the application token instead of the password.  
 
-You can create application tokens in the EMnify portal, same section you downloaded the configuration file from.  
+You can create application tokens in the emnify portal, same section you downloaded the configuration file from.  
 Select "Create New Application Token" and Copy/Paste the token into the `credentials.txt` file.  
 Your organisation ID is also available there.  
 
@@ -106,7 +113,7 @@ In this sample, the static private IP address of your VPN client is **10.64.24.1
 ### Testing the Successful Data Connectivity
 
 If the VPN tunnel is successfully established you will be able to connect directly to the private IP addresses of your mobile devices.  
-For testing, you can choose any for your endpoints that has currently an active data session (marked as **ONLINE** in the EMnify Portal) and retrieve the assigned IP address from the details section.  
+For testing, you can choose any for your endpoints that has currently an active data session (marked as **ONLINE** in the emnify Portal) and retrieve the assigned IP address from the details section.  
 
 Using the command Prompt (_cmd_ application on Windows), ping the chosen IP address from your device:
 
