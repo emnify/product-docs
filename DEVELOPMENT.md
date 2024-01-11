@@ -126,80 +126,8 @@ yarn markdownlint
 yarn markdownlint:fix 
 ```
 
-Vale is run via a [CI pipeline](.github/workflows/content.yml) that fails on errors.
+Vale is run via a [CI pipeline](.github/workflows/content.yml) and [pre-commit hook](./.husky/pre-commit) that fail on errors.
 See the [Vale README](.github/vale/README.md) for more information.
-
-## Display images
-
-> [!TIP]
-> For image guidelines, including file naming and formatting, refer to the [contributing guide](CONTRIBUTING.md#images).
-
-With [Docusaurus](https://docusaurus.io/docs/markdown-features/assets#images), you can display images in three ways: [Markdown syntax](#markdown-syntax), [CommonJS require](#commonjs-require), or [ES import statement](#es-import-statement).
-The following are suggestions of when to use each format.
-
-### Markdown syntax
-
-- Non-decorative images that require `alt` text
-- No additional attributes are needed.
-
-Example of how to display images using Markdown syntax:
-
-```markdown
-![Portal screenshot from the Integrations page. The featured integration reads, "Enable devices and send SMS via emnify from newly caught webhooks. emnify + Webhooks by Zapier". Next to the text, there's a "Use this Zap" button.](assets/portal-integrations-sms-webhooks-zapier.png)
-```
-
-### CommonJS require
-
-- Additional attributes are needed (for example, custom width)
-- Appears only once on a page
-- Empty `alt` value for decorative images
-
-Example of how to display images using inline CommonJS `require` in JSX image tag:
-
-```jsx
-<img
-  src={require('./assets/graphiql-sidebar-show-documentation-explorer-button.png').default}
-  alt=""
-  style={{ width: 350 }}
-/>
-```
-
-You must also use this syntax to apply the [docusaurus-plugin-image-zoom](https://github.com/gabrielcsapo/docusaurus-plugin-image-zoom) feature to an SVG file.
-To do this, you need to add `!!url-loader!` at the beginning of the `src` path—otherwise, the [webpack `svg-loader` kicks in](https://github.com/facebook/docusaurus/issues/8398#issuecomment-1331694452).
-
-```jsx
-<img
-  src={require('!!url-loader!./assets/graphiql-logo.svg').default}
-  alt="GraphiQL"
-/>
-```
-
-### ES import statement
-
-- Image is used multiple times on a page (for example, a checkmark icon used within a table column)
-
-> [!IMPORTANT]
-> Because of the [markdownlint configuration](#content), any import statements must be _after_ the top-level header.
-
-Example of how to display images using ES `import` syntax and [inline SVGs](https://docusaurus.io/docs/markdown-features/assets#inline-svgs):
-
-```jsx
-import Check from '../assets/check.svg';
-
-<Check alt="Yes" />
-```
-
-> [!TIP]
-> Learn more about [assets in Docusaurus](https://docusaurus.io/docs/markdown-features/assets).
-
-### Troubleshooting
-
-Depending on your operating system, you may run into an issue where your Git configuration doesn't catch subtle filename changes, resulting in a failing build.
-To avoid this problem, update this setting:
-
-```shell
-git config core.ignoreCase false
-```
 
 ## Build the documentation pages
 
@@ -235,6 +163,12 @@ Every pull request must be reviewed and approved by at least one [code owner](./
 
 Please follow the [pull request template](https://github.com/emnify/product-docs/blob/main/.github/PULL_REQUEST_TEMPLATE.md) and be as descriptive as possible.
 All [CI pipelines](https://github.com/emnify/product-docs/blob/main/.github/workflows) must also pass before merging.
+
+### Preview content
+
+Any changes to files that affect the site will trigger a [preview workflow](./.github/workflows/preview.yml).
+When this workflow runs successfully, you'll see a comment on your pull request with a link to the deployed preview.
+Previews are automatically removed when the pull request is closed.
 
 ## Deployment
 

@@ -18,15 +18,15 @@ When in doubt, refer to this style guide as a resource.
 > [!IMPORTANT]
 > This repository uses [Vale](.github/vale/README.md) to lint and enforce this style guide.
 
-## Content
-
-### File structure
+## File structure
 
 - Names should be written in [kebab case](https://www.freecodecamp.org/news/snake-case-vs-camel-case-vs-pascal-case-vs-kebab-case-whats-the-difference/#kebab-case) format with all lowercase characters.
 - Use the `.mdx` extension whenever you use JSX or other MDX features (for example, `import` or `export`) inside a Markdown file.
 
 > ![IMPORTANT]
 > According to [Docusaurus](https://docusaurus.io/blog/preparing-your-site-for-docusaurus-v3), future versions will parse `.md` files as standard [CommonMark](https://commonmark.org/), which doesn't support these features.
+
+## Components
 
 ### Admonitions
 
@@ -54,12 +54,82 @@ If the language you need isn't listed, check the [Docusaurus configuration](http
 
 Each category within the [`docs` directory](./docs/) has an `assets` directory containing all the infographics, screenshots, or other images used on those pages.
 
+### Display images
+
+> [!TIP]
+> For image guidelines, including file naming and formatting, refer to the [contributing guide](CONTRIBUTING.md#images).
+
+With [Docusaurus](https://docusaurus.io/docs/markdown-features/assets#images), you can display images in three ways: [Markdown syntax](#markdown-syntax), [CommonJS require](#commonjs-require), or [ES import statement](#es-import-statement).
+The following are suggestions of when to use each format.
+
+#### Markdown syntax
+
+- Non-decorative images that require `alt` text
+- No additional attributes are needed.
+
+Example of how to display images using Markdown syntax:
+
+```markdown
+![Portal screenshot from the Integrations page. The featured integration reads, "Enable devices and send SMS via emnify from newly caught webhooks. emnify + Webhooks by Zapier". Next to the text, there's a "Use this Zap" button.](assets/portal-integrations-sms-webhooks-zapier.png)
+```
+
+#### CommonJS require
+
+- Additional attributes are needed (for example, custom width)
+- Appears only once on a page
+- Empty `alt` value for decorative images
+
+Example of how to display images using inline CommonJS `require` in JSX image tag:
+
+```jsx
+<img
+  src={require('./assets/graphiql-sidebar-show-documentation-explorer-button.png').default}
+  alt=""
+  style={{ width: 350 }}
+/>
+```
+
+You must also use this syntax to apply the [docusaurus-plugin-image-zoom](https://github.com/gabrielcsapo/docusaurus-plugin-image-zoom) feature to an SVG file.
+To do this, you need to add `!!url-loader!` at the beginning of the `src` path—otherwise, the [webpack `svg-loader` kicks in](https://github.com/facebook/docusaurus/issues/8398#issuecomment-1331694452).
+
+```jsx
+<img
+  src={require('!!url-loader!./assets/graphiql-logo.svg').default}
+  alt="GraphiQL"
+/>
+```
+
+#### ES import statement
+
+- Image is used multiple times on a page (for example, a checkmark icon used within a table column)
+
+> [!IMPORTANT]
+> Because of the [markdownlint configuration](./.markdownlint.jsonc), any import statements must be _after_ the top-level header.
+
+Example of how to display images using ES `import` syntax and [inline SVGs](https://docusaurus.io/docs/markdown-features/assets#inline-svgs):
+
+```jsx
+import Check from '../assets/check.svg';
+
+<Check alt="Yes" />
+```
+
+> [!TIP]
+> Learn more about [assets in Docusaurus](https://docusaurus.io/docs/markdown-features/assets).
+
 ### File management tips
 
 - Images shouldn’t be larger than 100 KB.
 - Filenames should be written in [kebab case](https://www.freecodecamp.org/news/snake-case-vs-camel-case-vs-pascal-case-vs-kebab-case-whats-the-difference/#kebab-case) format with all lowercase characters.
   - Infographics should begin with `infographic-`
   - Screenshots should describe the part of the system represented from least to most specific (for example, a screenshot of the Data Streams section of the Integrations page in the emnify Portal should be named `portal-integrations-data-streams`)
+
+Depending on your operating system, you may run into an issue where your Git configuration doesn't catch subtle filename changes, resulting in a failing build.
+To avoid this problem, update this setting:
+
+```shell
+git config core.ignoreCase false
+```
 
 ### Annotate screenshots
 
