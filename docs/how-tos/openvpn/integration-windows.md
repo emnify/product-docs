@@ -72,7 +72,6 @@ orgId
 ApplicationToken
 ```
 
-TODO - INSERT IMAGE
 
 ### Correct Credentials File Path in Client Configuration File
 
