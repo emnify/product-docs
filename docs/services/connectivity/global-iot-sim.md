@@ -6,7 +6,7 @@ pagination_next: services/connectivity/sim-lifecycle-management
 slug: /services/global-iot-sim
 ---
 
-# emnify IoT eSIM
+# EMnify IoT eSIM
 
 emnify provides eSIMs that are built specifically for IoT solutions.
 The eSIMs come in different quality grades that are more durable than standard SIM.
