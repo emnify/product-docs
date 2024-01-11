@@ -1,5 +1,5 @@
 ---
-description: Integration Guide for OpenVPN on Linus
+description: Integration Guide for OpenVPN on Linux
 last_update: 
   date: 01-11-2023
 pagination_next: /how-tos/openvpn-integration-windows
@@ -8,20 +8,20 @@ slug: /how-tos/openvpn-integration-linux
 
 # OpenVPN Integration Guide for Linux
 
-EMnify customers can create their own Virtual Private Network for their mobile IoT/M2M devices fitted with EMnify SIMs.
+emnify customers can create their own Virtual Private Network for their mobile IoT/M2M devices fitted with emnify SIMs.
 Data traffic will be exchanged between the devices and the application server through an OpenVPN tunnel, enabling direct communication with the IPs of the mobile devices (no NAT applied).
 
-The tunnel is established between the EMnify Core Network and the customers VPN gateway or server.
+The tunnel is established between the emnify Core Network and the customers VPN gateway or server.
 
 See this video [guide for how to secure your devices with Open VPN](https://www.youtube.com/watch?v=yt44fJpfkQ4).
 
 ## Add mandatory layer of security and privacy
 
 Any traffic exchanged with the mobile devices is encrypted before transmitted over the public internet, therefore adding an additional layer of security and privacy.
-For that **no** VPN software needs to be installed on the device or any configuration changes to be done, the default EMnify APN does also support VPN flows.
+For that **no** VPN software needs to be installed on the device or any configuration changes to be done, the default emnify APN does also support VPN flows.
 
 
-First, download the VPN config file from the EMnify User Interface
+First, download the VPN config file from the emnify User Interface
 
 1. Click on the "Integrations" menu
 2. Scroll down to the "secure connection" section and download the configuration file
@@ -40,7 +40,7 @@ Install openvpn package
 
 `sudo apt-get install openvpn`
 
-Log in with your user account on the EMnify Portal and select the "Link" Icon on the top/right.
+Log in with your user account on the emnify Portal and select the "Link" Icon on the top/right.
 From there you can download a pre-configured configuration file, the filename is **client.conf**
 
 Download and Install VPN Configuration File
@@ -62,9 +62,9 @@ YourPassword
 If you do not want to store your credentials you can also choose to enter them each time the VPN tunnel is established, if you prefer that option please comment out the line "auth-user-pass /etc/openvpn/credentials.txt" in the client.conf file.
 
 When you run the OpenVPN client on a VPN gateway or application server it is recommended to use a dedicated application token.
-In this case the first line in the credentials.txt file needs to be filled with your EMnify organisation identifier and instead of the password you store the application token.
+In this case the first line in the credentials.txt file needs to be filled with your emnify organisation identifier and instead of the password you store the application token.
 
-You can create application tokens when you log in to the EMnify Portal, select the "Link" Icon on the top/right and then "Create New Application Token".
+You can create application tokens when you log in to the emnify Portal, select the "Link" Icon on the top/right and then "Create New Application Token".
 Please Copy+Paste the token into the credentials file.
 
 The content of the credentials file would then look like this
@@ -74,7 +74,7 @@ orgId
 ApplicationToken
 ```
 
-When you log in to the EMnify Portal it will shows this data under the VPN settings.
+When you log in to the emnify Portal it will shows this data under the VPN settings.
 
 ### Protecting the Credentials File
 You should keep the credentials.txt file only readable by root and not by other users of your server.
@@ -107,7 +107,7 @@ Jul 12 17:53:57 openvpn-client ovpn-client[3027]: /sbin/route add -net 10.x.y.z 
 ```
 
 ### Finding the static private IP of your VPN client
-The EMnify OpenVPN server will allocate a static IP address to the tun interface of your VPN client, this IP will also stay the same when your VPN client is reconnecting or if you move the tunnel to a different machine.
+The emnify OpenVPN server will allocate a static IP address to the tun interface of your VPN client, this IP will also stay the same when your VPN client is reconnecting or if you move the tunnel to a different machine.
 So you can use it on your mobile devices to address your application, nevertheless you should never configure the IP directly on your devices, but use a DNS to resolve it.
 
 Once the tunnel is establish you can see that IP address on your tun interface:
@@ -123,7 +123,7 @@ In this sample the IP address is 10.64.0.224
 ### Testing Successfull Data Connectivity
 If the VPN tunnel is established successfully you will be able to connect directly to the private IP addresses of your mobile devices.
 
-For testing you can choose any for your endpoints that as currently an active data session, for log in to the EMnify Portal and select on of your endpoints, in the details you will if it is currently online or not and you will see the IP address it has assigned.
+For testing you can choose any for your endpoints that as currently an active data session, for log in to the emnify Portal and select on of your endpoints, in the details you will if it is currently online or not and you will see the IP address it has assigned.
 
 Now will be able to ping that private IP address:
 
