@@ -32,7 +32,7 @@ If you want to remove a data stream permanently, you need to delete it.
 
 
 ## More information 
-[In this video](https://youtu.be/FE8MUwNLe9k) the EMnify Data Streamer is introduced and shows how this product gives full visibility on IoT Data.
+[In this video](https://youtu.be/FE8MUwNLe9k) the emnify Data Streamer is introduced and shows how this product gives full visibility on IoT Data.
 The EDS is used to stream all events and usage data generated and visible in the EUI to third party tools.
 
 To discover how to stream all events to AWS S3, please visit [How to store all events and data usage on AWS S3?](https://support.emnify.com/hc/en-us/articles/360010214460).
