@@ -6,7 +6,7 @@ pagination_next: /how-tos/openvpn-integration-linux
 slug: /how-tos/openvpn-integration-windows
 ---
 
-# OpenVPN Integration Guide for Linux
+# OpenVPN Integration Guide for Windows
 
 emnify customers can create their own Virtual Private Network for their mobile IoT/M2M devices fitted with emnify SIMs.
 Data traffic will be exchanged between the devices and the application server through an OpenVPN tunnel, enabling direct communication with the IPs of the mobile devices (no NAT applied).
@@ -17,23 +17,21 @@ See this video [guide for how to secure your devices with Open VPN](https://www.
 
 ## Add mandatory layer of security and privacy
 
-Any traffic exchanged with the mobile devices is encrypted before transmitted over the public internet, therefore adding an additional layer of security and privacy.  
-For that **no** VPN software needs to be installed on the device or any configuration changes to be done, the default emnify APN does also support VPN flows.  
+Any traffic exchanged with the mobile devices is encrypted before transmitted over the public internet, therefore adding an additional layer of security and privacy.
+For that **no** VPN software needs to be installed on the device or any configuration changes to be done, the default emnify APN does also support VPN flows.
 
-First, download the VPN config file from the emnify User Interface:
 
-1. Click on the "Integrations" menu  
-2. Scroll down to "secure connection" and download the configuration file  
+First, download the VPN config file from the emnify User Interface
 
-TODO - INSERT IMAGE
+1. Click on the "Integrations" menu
+2. Scroll down to the "secure connection" section and download the configuration file
 
 Additionally, you need to change the Internet Regional Breakout in the device policy:
 
-1. Click on "Device Policies" (1)  
-2. Scroll down to "Service Policies" (2), select the policy assigned to the devices you want to secure and click on "Open" (3).  
-3. On the "Internet Breakout Region" menu (4), Set the Service Policy to a VPN breakout region, e.g., `eu-west-1 (VPN)`.  
+1. Click on "Device Policies"
+2. Scroll down to "Service Policies", select the policy assigned to the devices you want to secure and click on "Details".
+3. On the "Internet Breakout Region" menu, set the Service Policy to a VPN breakout region, e.g., `eu-west-1 (VPN)`
 
-TODO - INSERT IMAGE
 
 ## Setting Up OpenVPN Client on Windows
 
