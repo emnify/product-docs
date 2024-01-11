@@ -126,7 +126,7 @@ yarn markdownlint
 yarn markdownlint:fix 
 ```
 
-Vale is run via a [CI pipeline](.github/workflows/vale.yml) that fails on errors.
+Vale is run via a [CI pipeline](.github/workflows/content.yml) that fails on errors.
 See the [Vale README](.github/vale/README.md) for more information.
 
 ## Display images

@@ -31,7 +31,7 @@ vale .github/vale/README.md
 Vale has three alert options: `suggestion`, `warning`, and `error`.
 By default, the minimum alert level in the project configuration is set to `warning`.
 
-Vale is run via a [CI pipeline](../workflows/vale.yml) and [pre-commit hook](../../.husky/pre-commit).
+Vale is run via a [CI pipeline](../workflows/content.yml) and [pre-commit hook](../../.husky/pre-commit).
 These checks fail on `error` and don't report warnings or suggestions.
 
 > [!WARNING]

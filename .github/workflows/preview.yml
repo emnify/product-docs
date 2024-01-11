@@ -9,6 +9,12 @@ on:
       - closed
     branches:
       - main
+    paths:
+      - "docs/**"
+      - "src/**"
+      - "static/**"
+      - "**.js*"
+      - "yarn.lock"
 
 concurrency: preview-${{ github.ref }}
 
@@ -38,7 +44,7 @@ jobs:
           yarn install --frozen-lockfile
           yarn build
 
-      - name: 🔮 Deploy preview
+      - name: 🪄 Deploy preview
         uses: rossjrw/pr-preview-action@v1.4.6
         with:
           source-dir: ./build/

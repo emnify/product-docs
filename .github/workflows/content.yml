@@ -1,9 +1,11 @@
-name: Validate content with Vale
+name: Validate Content
 
 on:
   pull_request:
     branches:
       - main
+    paths:
+      - "**.mdx?"
 
 jobs:
   vale:
@@ -19,3 +21,13 @@ jobs:
           vale_flags: "--minAlertLevel=error"
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+  markdownlint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: nosborn/github-action-markdown-cli@v3.3.0
+        with:
+          files: "./**/*.md*"
+          config_file: .markdownlint.jsonc
+          ignore_path: .markdownlintignore
