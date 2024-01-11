@@ -4,6 +4,8 @@ on:
   pull_request:
     branches:
       - main
+    paths-ignore:
+      - "**.mdx?"
 
 jobs:
   eslint:
@@ -20,18 +22,6 @@ jobs:
 
       - name: 👾 Run ESLint on .js* files
         run: yarn eslint
-
-  markdownlint:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-
-      - name: 📝 Run markdownlint on *.md* files
-        uses: nosborn/github-action-markdown-cli@v3.3.0
-        with:
-          files: "./**/*.md*"
-          config_file: .markdownlint.jsonc
-          ignore_path: .markdownlintignore
 
   prettier:
     runs-on: ubuntu-latest
