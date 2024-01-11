@@ -14,6 +14,8 @@ Follow the instructions on the Vale website to [install the Vale command-line to
 > [!IMPORTANT]
 > Make sure your local CLI version is **<=2.30.0** to match the existing directory structure and version running in the CI pipeline.
 
+If you have issues installing an older version of Vale, [run this workaround](https://gist.github.com/codebytere/54b5667e66ed18aeb1158495d95d5a66) for Homebrew.
+
 ## Run Vale
 
 Once you have Vale installed, you can run it locally using `vale <path to document>`.
