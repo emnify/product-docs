@@ -10,13 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      # - name: Setup tmate session
-      #   uses: mxschmitt/action-tmate@v3
-      #   with:
-      #     limit-access-to-actor: true
-      #     detached: true
       - uses: errata-ai/vale-action@reviewdog
         with:
+          # Pinned version until issue following v3 release is resolved:
+          # https://github.com/errata-ai/vale-action/issues/114
           version: 2.30.0
           fail_on_error: true
           vale_flags: "--minAlertLevel=error"
