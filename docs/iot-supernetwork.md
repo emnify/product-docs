@@ -6,7 +6,6 @@ slug: /
 ---
 
 # emnify IoT SuperNetwork
-
 Cellular is the most used wireless network technology for connecting things.
 It's superior to any other wireless technology in terms of network availability and security.
 Using cellular connectivity improves end customer experience by instantly delivering data at the customer site without any integration.
@@ -21,6 +20,9 @@ Unlike mobile virtual network operators (MVNOs), it isn't constrained by depende
 ![Infographic split into four sections that all include text and associated symbols. The first section reads, "Connectivity: One SIM for global deployments. Multi-network access with intelligent operator selection. 2G-5G, LTE-M, NB-IoT." The second reads, "Security: Multi-layered security for your IoT stack (for example, data encryption, secure remote access, SIM theft protection)." The third reads, "Operations: Complete network visibility and control to improve your operations and troubleshooting." The fourth and final section reads, "Integration & Automation: API and no-code solution to help you automate SIM and connectivity management, saving time and costs." with logos from Azure, AWS, and Google Cloud shown underneath the text. Directly below all of these sections is a banner that reads "emnify Cellular IoT Platform," followed by "540+ Mobile Networks," with logos from AT&T, T-Mobile, Vodafone, Telia, and more.](assets/infographic-emnify-cellular-iot-platform.png)
 
 ## Where to start
+
+
+
 
 - **New to emnify?**
 Follow the [getting started guide](/quickstart).
