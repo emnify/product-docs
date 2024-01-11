@@ -1,7 +1,7 @@
 ---
 description: Integration Guide for OpenVPN on MacOS
 last_update: 
-  date: 01-11-2023
+  date: 01-11-2024
 pagination_next: /how-tos/openvpn-integration-windows
 pagination_prev: /how-tos/openvpn-integration-linux
 slug: /how-tos/openvpn-integration-macos
