@@ -1,7 +1,7 @@
 ---
 description: Integration Guide for OpenVPN on Linux
 last_update: 
-  date: 01-11-2023
+  date: 01-11-2024
 pagination_next: /how-tos/openvpn-integration-windows
 slug: /how-tos/openvpn-integration-linux
 ---
