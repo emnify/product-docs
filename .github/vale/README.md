@@ -12,13 +12,11 @@ Vale uses packages, also known as [Styles](#styles), to define the rules for wri
 Follow the instructions on the Vale website to [install the Vale command-line tool](https://vale.sh/docs/vale-cli/installation/).
 
 > [!IMPORTANT]
-> Make sure your local CLI version is **<=2.30.0** to match the existing directory structure and version running in the CI pipeline.
-
-If you have issues installing an older version of Vale, [run this workaround](https://gist.github.com/codebytere/54b5667e66ed18aeb1158495d95d5a66) for Homebrew.
+> Make sure your local CLI version is **<=3.0.3** to match the existing directory structure and version running in the CI pipeline.
 
 ## Run Vale
 
-Once you have Vale installed, you can run it locally using `vale <path to document>`.
+Once you have Vale installed, you can run it locally using `vale path/to/document`.
 
 For example, if you run the following example at the project root, it lints this file:
 
@@ -86,7 +84,7 @@ All ignored rules should include a justification for why they’re ignored.
 
 ## Ignore specific rules
 
-Ignore a specific rule with `<!-- vale <rule name> = NO -->` and turn the rule back on with `<!-- vale <rule name> = YES -->`.
+Ignore a specific rule with `<!-- vale RuleName = NO -->` and turn the rule back on with `<!-- vale RuleName = YES -->`.
 
 For example:
 

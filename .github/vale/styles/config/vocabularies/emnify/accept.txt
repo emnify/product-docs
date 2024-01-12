@@ -20,13 +20,7 @@ DDoS
 eDRX
 Elinz
 emnify
-emnify Documentation
-emnify GraphQL API
-emnify IoT SuperNetwork
 emnify Portal
-emnify REST API
-emnify SDKs
-emnify SIMs
 eSIM
 ESLint
 eUICC
@@ -70,6 +64,7 @@ Quectel
 ReachFar
 RESTful API
 Ruptela
+SDKs
 Sequans
 SIMCom
 SIMs
