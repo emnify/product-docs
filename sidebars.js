@@ -117,7 +117,7 @@ const sidebars = {
             {
               type: "doc",
               label: "Overview",
-              id: "services/platform/integration-guides/index"
+              id: "services/platform/integration-guides/index",
             },
             {
               type: "category",
@@ -125,10 +125,10 @@ const sidebars = {
               items: [
                 "services/platform/integration-guides/openvpn/linux",
                 "services/platform/integration-guides/openvpn/macos",
-                "services/platform/integration-guides/openvpn/windows"
-              ]
+                "services/platform/integration-guides/openvpn/windows",
+              ],
             },
-          ]
+          ],
         },
         {
           type: "category",
@@ -254,7 +254,7 @@ const sidebars = {
         {
           type: "doc",
           label: "Overview",
-          id: "how-tos/index"
+          id: "how-tos/index",
         },
         "how-tos/configure-dns-settings",
         "how-tos/data-allowances",

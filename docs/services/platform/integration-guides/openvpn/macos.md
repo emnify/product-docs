@@ -1,81 +1,92 @@
 ---
-description: Integration Guide for OpenVPN on MacOS
+description: Step-by-step guide for integrating OpenVPN on macOS to use on devices with emnify eSIMs.
 last_update: 
-  date: 01-11-2024
+  date: 11-24-2022
+pagination_label: OpenVPN on macOS
 sidebar_label: macOS
 slug: /integration-guides/openvpn-macos
 ---
 
-# OpenVPN Integration Guide for MacOS
+# Integrate OpenVPN on macOS
 
-emnify customers can create their own Virtual Private Network for their mobile IoT/M2M devices fitted with emnify SIMs.
-Data traffic will be exchanged between the devices and the application server through an OpenVPN tunnel, enabling direct communication with the IPs of the mobile devices (no NAT applied).
+Using emnify, you can create a [virtual private network (VPN)](/glossary#vpn) for your mobile IoT/M2M devices fitted with emnify SIMs.
+Data traffic is exchanged between the devices and the application server through an OpenVPN tunnel, enabling direct communication with the IPs of the mobile devices (no NAT applied).
 
-The tunnel is established between the emnify Core Network and the customers VPN gateway or server.
+The tunnel is established between the emnify Core Network and the customer's VPN gateway or server.
 
-See this video [guide for how to secure your devices with Open VPN](https://www.youtube.com/watch?v=yt44fJpfkQ4).
+:::tip
+The [Cellular IoT University: Secure your devices with OpenVPN video](https://www.youtube.com/watch?v=yt44fJpfkQ4) provides a step-by-step walk-through.
+:::
 
-## Add mandatory layer of security and privacy
+## Required preparation in the emnify Portal
 
-Any traffic exchanged with the mobile devices is encrypted before transmitted over the public internet, therefore adding an additional layer of security and privacy.
-For that **no** VPN software needs to be installed on the device or any configuration changes to be done, the default emnify APN does also support VPN flows.
+Any traffic exchanged with mobile devices is encrypted before being transmitted over the public internet, which adds an additional layer of security and privacy.
+No VPN software needs to be installed on the device, or there aren't any required configuration changes necessary.
+The default emnify APN also supports VPN flows.
 
-First, download the VPN config file from the emnify User Interface
+### Download the VPN configuration file
 
-1. Click on the "Integrations" menu
-2. Scroll down to the "secure connection" section and download the configuration file
+1. [Log in to your emnify account](https://portal.emnify.com/sign).
+1. Navigate to **Integrations** and find the [**Secure Connection**](https://portal.emnify.com/integrations#secure-connection) section.
+1. Under **OpenVPN**, select **Show instructions**.
+1. Make sure you're on the **macOS** tab, then click **Download client.ovpn**.
+Select the desired region or choose **Download all regions**.
 
-Additionally, you need to change the Internet Regional Breakout in the device policy:
+Once downloaded, store that file on your server in the folder `/etc/openvpn`.
 
-1. Click on "Device Policies"
-2. Scroll down to "Service Policies", select the policy assigned to the devices you want to secure and click on "Details".
-3. On the "Internet Breakout Region" menu, set the Service Policy to a VPN breakout region, e.g., `eu-west-1 (VPN)`
+## Set up with OpenVPN
 
-## Setting Up OpenVPN Client with OpenVPN
+### Install the OpenVPN software
 
-Install OpenVPN, this can be done from [Homebrew](https://formulae.brew.sh/formula/openvpn) using
-`brew install openvpn`
+First, install OpenVPN via [Homebrew](https://formulae.brew.sh/formula/openvpn):
+
+```bash
+brew install openvpn
+```
 
 ### Create the credentials file
 
-```
+```bash
 sudo touch /etc/openvpn/credentials.txt
 sudo nano /etc/openvpn/credentials.txt
 ```
 
 The `credentials.txt` file should contain OrgID and Application Token (preferred):
 
-```
+```txt
 orgId
 Application Token
 ```
 
-or username and password:
+Alternatively, you can use your username and password:
 
-```
+```txt
 username@domain.com
 YourPassword
 ```
 
-Connect with the following command, passing the configuration file to openvpn using the `--config` option:
+Connect with the following command, passing the configuration file to OpenVPN using the `--config` option:
 
-`sudo openvpn --config path/to/emnify-eu-west-1.conf`
-
-## Setting Up OpenVPN Client with Tunnelblick
-
-## Setup
-
-Drop the configuration file onto the Tunnelblick icon in the topbar. Alternatively, via the settings panel in
-**VPN Details -> Configurations** and drop the configuration file onto the _Configurations_ list.
-Tunnelblick will ask for a user password.
-
-## Create credentials
-
-In /etc/openvpn directory, create the credentials file.
-
+```bash
+sudo openvpn --config path/to/emnify-eu-west-1.conf
 ```
+
+## Set up with Tunnelblick
+
+Drop the configuration file onto the Tunnelblick icon in the top bar.
+Alternatively, drop the configuration file onto the **Configurations** list via the settings panel in
+**VPN Details <span aria-label="and then">></span> Configurations**.
+Tunnelblick asks for a user password.
+
+### Create credentials
+
+In the `/etc/openvpn` directory, create the credentials file:
+
+```bash
 sudo touch /etc/openvpn/credentials.txt
 sudo nano /etc/openvpn/credentials.txt
 ```
 
-To connect to the regions VPN, you will need to enter the password of your mac.
+:::note
+To connect to the regions VPN, you need to enter your Mac's password.
+:::
