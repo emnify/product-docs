@@ -39,9 +39,9 @@ Here are some step-by-step integration guides to help you along the process.
 
 ## OpenVPN
 
-- [Integrate OpenVPN on Linux](/integration-guides/openvpn-linux-ubuntu)
-- [Integrate OpenVPN on macOS](/integration-guides/openvpn-macos)
-- [Integrate OpenVPN on Windows](/integration-guides/openvpn-windows)
+- [Linux](/integration-guides/openvpn-linux-ubuntu)
+- [macOS](/integration-guides/openvpn-macos)
+- [Windows](/integration-guides/openvpn-windows)
 
 ## Other integrations
 
