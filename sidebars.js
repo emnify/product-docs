@@ -106,7 +106,30 @@ const sidebars = {
         id: "services/platform/integration-guides/index",
       },
       items: [
-        "services/platform/integration-guides/index",
+        {
+          type: "category",
+          label: "Integration guides",
+          link: {
+            type: "doc",
+            id: "services/platform/integration-guides/index",
+          },
+          items: [
+            {
+              type: "doc",
+              label: "Overview",
+              id: "services/platform/integration-guides/index",
+            },
+            {
+              type: "category",
+              label: "OpenVPN",
+              items: [
+                "services/platform/integration-guides/openvpn/linux",
+                "services/platform/integration-guides/openvpn/macos",
+                "services/platform/integration-guides/openvpn/windows",
+              ],
+            },
+          ],
+        },
         {
           type: "category",
           label: "Data Streamer",
@@ -228,6 +251,11 @@ const sidebars = {
         id: "how-tos/index",
       },
       items: [
+        {
+          type: "doc",
+          label: "Overview",
+          id: "how-tos/index",
+        },
         "how-tos/configure-dns-settings",
         "how-tos/data-allowances",
         {
