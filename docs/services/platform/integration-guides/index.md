@@ -37,6 +37,12 @@ Here are some step-by-step integration guides to help you along the process.
 - [Automate Business Processes with Multi Cloud Data Streamer and Integromat](https://www.emnify.com/integration-guides/emnify-mcds-integromat-integration)
 - [How to receive email notifications using Automate.io](https://www.emnify.com/integration-guides/how-to-receice-email-notifications-using-automate.io)
 
+## OpenVPN
+
+- [Integrate OpenVPN on Linux](/integration-guides/openvpn-linux-ubuntu)
+- [Integrate OpenVPN on macOS](/integration-guides/openvpn-macos)
+- [Integrate OpenVPN on Windows](/integration-guides/openvpn-windows)
+
 ## Other integrations
 
 - [emnify Data Streamer integration for Datadog](https://www.emnify.com/integration-guides/emnify-datastreamer-integration-for-datadog)
