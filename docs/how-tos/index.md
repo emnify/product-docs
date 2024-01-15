@@ -33,6 +33,7 @@ slug: /how-tos
 - [Change the assigned data allowance](/how-tos/data-allowances)
 - [Setup SSO with Microsoft Active Directory](/sso/microsoft-active-directory)
 - [Setup SSO with Google Cloud Platform](/sso/google-cloud-platform)
+- [Upgrade your Trial plan](/how-tos/upgrade-trial-plan)
 - [Create a new workspace](/workspaces/create)
 - [Link an existing workspace](/workspaces/link)
 - [Switch between workspaces](/workspaces/switch)
