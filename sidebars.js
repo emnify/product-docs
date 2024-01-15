@@ -266,6 +266,7 @@ const sidebars = {
             "how-tos/device-policies/create-coverage-policies",
             "how-tos/device-policies/assign-devices-to-policies",
             "how-tos/device-policies/update-existing-policies",
+            "how-tos/device-policies/configure-data-sms-limits",
           ],
         },
         "how-tos/multi-factor-authentication",
