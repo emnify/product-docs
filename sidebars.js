@@ -278,6 +278,7 @@ const sidebars = {
             "how-tos/sso/troubleshooting",
           ],
         },
+        "how-tos/upgrade-trial-plan",
         {
           type: "category",
           label: "Workspaces",
