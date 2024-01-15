@@ -11,12 +11,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          fetch-depth: 0 # Shallow clones should be disabled for a better relevancy of analysis
           persist-credentials: false
-
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 18
-          cache: yarn
 
       - name: 🔒 Setup env file
         run: |
@@ -35,6 +31,10 @@ jobs:
       - name: 🔮 Reconfigure git to use HTTP authentication
         run: >
           git config --global url."https://x-access-token:${{ steps.get_token.outputs.app_token }}@github.com/".insteadOf "ssh://git@github.com/"
+
+      - name: Get yarn cache
+        id: yarn-cache
+        run: echo "::set-output name=dir::$(yarn cache dir)"
 
       - name: 🪚 Install dependencies
         run: yarn install --frozen-lockfile
