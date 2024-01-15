@@ -11,8 +11,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Shallow clones should be disabled for a better relevancy of analysis
-#          persist-credentials: false
+#          fetch-depth: 0 # Shallow clones should be disabled for a better relevancy of analysis
+          persist-credentials: false
 
       - name: 🔒 Setup env file
         run: |
@@ -32,9 +32,9 @@ jobs:
         run: >
           git config --global url."https://x-access-token:${{ steps.get_token.outputs.app_token }}@github.com/".insteadOf "ssh://git@github.com/"
 
-      - name: Get yarn cache
-        id: yarn-cache
-        run: echo "::set-output name=dir::$(yarn cache dir)"
+#      - name: Get yarn cache
+#        id: yarn-cache
+#        run: echo "::set-output name=dir::$(yarn cache dir)"
 
       - name: 🪚 Install dependencies
         run: yarn install --frozen-lockfile
