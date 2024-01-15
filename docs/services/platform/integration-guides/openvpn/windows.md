@@ -2,7 +2,8 @@
 description: Integration Guide for OpenVPN on Windows
 last_update: 
   date: 01-11-2024
-slug: /how-tos/openvpn-integration-windows
+sidebar_label: Windows
+slug: /integration-guides/openvpn-windows
 ---
 
 # OpenVPN Integration Guide for Windows
@@ -19,7 +20,6 @@ See this video [guide for how to secure your devices with Open VPN](https://www.
 Any traffic exchanged with the mobile devices is encrypted before transmitted over the public internet, therefore adding an additional layer of security and privacy.
 For that **no** VPN software needs to be installed on the device or any configuration changes to be done, the default emnify APN does also support VPN flows.
 
-
 First, download the VPN config file from the emnify User Interface
 
 1. Click on the "Integrations" menu
@@ -30,7 +30,6 @@ Additionally, you need to change the Internet Regional Breakout in the device po
 1. Click on "Device Policies"
 2. Scroll down to "Service Policies", select the policy assigned to the devices you want to secure and click on "Details".
 3. On the "Internet Breakout Region" menu, set the Service Policy to a VPN breakout region, e.g., `eu-west-1 (VPN)`
-
 
 ## Setting Up OpenVPN Client on Windows
 
@@ -56,11 +55,10 @@ username@domain.com
 YourPassword
 ```
 
-
 #### Authentication with Application Token
 
 When you run the OpenVPN client on a VPN gateway or application server it is recommended to use a dedicated application token.  
-In that case, the first line in the *credentials.txt* file needs to be filled with your emnify organisation identifier and the application token instead of the password.  
+In that case, the first line in the _credentials.txt_ file needs to be filled with your emnify organisation identifier and the application token instead of the password.  
 
 You can create application tokens in the emnify portal, same section you downloaded the configuration file from.  
 Select "Create New Application Token" and Copy/Paste the token into the `credentials.txt` file.  
@@ -71,10 +69,9 @@ orgId
 ApplicationToken
 ```
 
-
 ### Correct Credentials File Path in Client Configuration File
 
-Find the following line in *client.ovpn* and insert the complete file path from *credentials.txt*:  
+Find the following line in _client.ovpn_ and insert the complete file path from _credentials.txt_:  
 
 ```
 auth-user-pass "(...)\\OpenVPN\\config\\credentials.txt"
@@ -124,5 +121,3 @@ Reply from 10.193.104.2: bytes=32 time=1307ms TTL=62
 ```
 
 For this to work your device needs to run an IP stack that is responding to ICMP echo request, this might not be the case for embedded devices that do implement only partial IP stack functionality.  
-
-

@@ -2,7 +2,8 @@
 description: Integration Guide for OpenVPN on Linux
 last_update: 
   date: 01-11-2024
-slug: /how-tos/openvpn-integration-linux
+sidebar_label: Linux
+slug: /integration-guides/openvpn-linux
 ---
 
 # OpenVPN Integration Guide for Linux
@@ -19,7 +20,6 @@ See this video [guide for how to secure your devices with Open VPN](https://www.
 Any traffic exchanged with the mobile devices is encrypted before transmitted over the public internet, therefore adding an additional layer of security and privacy.
 For that **no** VPN software needs to be installed on the device or any configuration changes to be done, the default emnify APN does also support VPN flows.
 
-
 First, download the VPN config file from the emnify User Interface
 
 1. Click on the "Integrations" menu
@@ -31,10 +31,10 @@ Additionally, you need to change the Internet Regional Breakout in the device po
 2. Scroll down to "Service Policies", select the policy assigned to the devices you want to secure and click on "Details".
 3. On the "Internet Breakout Region" menu, set the Service Policy to a VPN breakout region, e.g., `eu-west-1 (VPN)`
 
-
 ## Setting Up OpenVPN Client on Linux/Ubuntu
 
 ### Install OpenVPN Software
+
 Install openvpn package
 
 `sudo apt-get install openvpn`
@@ -47,6 +47,7 @@ Download and Install VPN Configuration File
 Please store that file on your server in the folder /etc/openvpn.
 
 ### Create Credentials for Authentication
+
 In the next steps you need to create a file called **credentials.txt** in the folder /etc/openvpn. You can choose to use your user credentials to authenticate or to use an application token (recommended).
 
 - Authentication with User Credentials
@@ -76,6 +77,7 @@ ApplicationToken
 When you log in to the emnify Portal it will shows this data under the VPN settings.
 
 ### Protecting the Credentials File
+
 You should keep the credentials.txt file only readable by root and not by other users of your server.
 You can ensure this with the following commands:
 
@@ -85,6 +87,7 @@ sudo chmod 600 /etc/openvpn/credentials.txt
 ```
 
 ### Starting and Monitoring the OpenVPN connection
+
 Now you can start the VPN client by running
 
 ```
@@ -106,6 +109,7 @@ Jul 12 17:53:57 openvpn-client ovpn-client[3027]: /sbin/route add -net 10.x.y.z 
 ```
 
 ### Finding the static private IP of your VPN client
+
 The emnify OpenVPN server will allocate a static IP address to the tun interface of your VPN client, this IP will also stay the same when your VPN client is reconnecting or if you move the tunnel to a different machine.
 So you can use it on your mobile devices to address your application, nevertheless you should never configure the IP directly on your devices, but use a DNS to resolve it.
 
@@ -117,9 +121,11 @@ ubuntu@openvpn-client:~$ ip a s tun0
     link/none 
     inet 10.64.0.224 peer 10.64.0.225/32 scope global tun0
 ```
+
 In this sample the IP address is 10.64.0.224
 
 ### Testing Successfull Data Connectivity
+
 If the VPN tunnel is established successfully you will be able to connect directly to the private IP addresses of your mobile devices.
 
 For testing you can choose any for your endpoints that as currently an active data session, for log in to the emnify Portal and select on of your endpoints, in the details you will if it is currently online or not and you will see the IP address it has assigned.
@@ -139,6 +145,7 @@ For this to work your device needs to run an IP stack that is responding to ICMP
 You will be able to use any network protocolls, e.g. if your device is running a sshd daemon you would now be able to log into it via ssh.
 
 ### Enabling Access for Servers behind the VPN client
+
 If you have multiple servers behind your VPN gateway that need to communicate with your mobile device, you can apply masquerading using iptables to hide them behind the single IP address of your VPN client.
 
 First you need to enable IP forwarding on your VPN gateway (if not already active) by editing your /etc/sysctl.conf and set net.ipv4.ip_forward=1, after that load the config with sudo sysctl -p /etc/sysctl.conf

@@ -2,7 +2,8 @@
 description: Integration Guide for OpenVPN on MacOS
 last_update: 
   date: 01-11-2024
-slug: /how-tos/openvpn-integration-macos
+sidebar_label: macOS
+slug: /integration-guides/openvpn-macos
 ---
 
 # OpenVPN Integration Guide for MacOS
@@ -19,7 +20,6 @@ See this video [guide for how to secure your devices with Open VPN](https://www.
 Any traffic exchanged with the mobile devices is encrypted before transmitted over the public internet, therefore adding an additional layer of security and privacy.
 For that **no** VPN software needs to be installed on the device or any configuration changes to be done, the default emnify APN does also support VPN flows.
 
-
 First, download the VPN config file from the emnify User Interface
 
 1. Click on the "Integrations" menu
@@ -31,13 +31,13 @@ Additionally, you need to change the Internet Regional Breakout in the device po
 2. Scroll down to "Service Policies", select the policy assigned to the devices you want to secure and click on "Details".
 3. On the "Internet Breakout Region" menu, set the Service Policy to a VPN breakout region, e.g., `eu-west-1 (VPN)`
 
-
 ## Setting Up OpenVPN Client with OpenVPN
 
-Install OpenVPN, this can be done from Homebrew (https://formulae.brew.sh/formula/openvpn) using 
+Install OpenVPN, this can be done from [Homebrew](https://formulae.brew.sh/formula/openvpn) using
 `brew install openvpn`
 
-### Create the credentials file:
+### Create the credentials file
+
 ```
 sudo touch /etc/openvpn/credentials.txt
 sudo nano /etc/openvpn/credentials.txt
@@ -50,7 +50,7 @@ orgId
 Application Token
 ```
 
-or username and password: 
+or username and password:
 
 ```
 username@domain.com
@@ -64,12 +64,13 @@ Connect with the following command, passing the configuration file to openvpn us
 ## Setting Up OpenVPN Client with Tunnelblick
 
 ## Setup
+
 Drop the configuration file onto the Tunnelblick icon in the topbar. Alternatively, via the settings panel in
-**VPN Details -> Configurations** and drop the configuration file onto the *Configurations* list.
+**VPN Details -> Configurations** and drop the configuration file onto the _Configurations_ list.
 Tunnelblick will ask for a user password.
- 
 
 ## Create credentials
+
 In /etc/openvpn directory, create the credentials file.
 
 ```
@@ -78,4 +79,3 @@ sudo nano /etc/openvpn/credentials.txt
 ```
 
 To connect to the regions VPN, you will need to enter the password of your mac.
-
