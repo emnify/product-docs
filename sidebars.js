@@ -257,7 +257,6 @@ const sidebars = {
           id: "how-tos/index",
         },
         "how-tos/configure-dns-settings",
-        "how-tos/data-allowances",
         {
           type: "category",
           label: "Device policies",
@@ -266,6 +265,7 @@ const sidebars = {
             "how-tos/device-policies/create-coverage-policies",
             "how-tos/device-policies/assign-devices-to-policies",
             "how-tos/device-policies/update-existing-policies",
+            "how-tos/device-policies/data-allowances",
             "how-tos/device-policies/configure-data-sms-limits",
           ],
         },
