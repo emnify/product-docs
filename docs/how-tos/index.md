@@ -32,8 +32,7 @@ slug: /how-tos
 ## Organization management
 
 - [Change the assigned data allowance](/how-tos/data-allowances)
-- [Setup SSO with Microsoft Active Directory](/sso/microsoft-active-directory)
-- [Setup SSO with Google Cloud Platform](/sso/google-cloud-platform)
+- [Update your company details](/how-tos/update-company-details)
 - [Upgrade your Trial plan](/how-tos/upgrade-trial-plan)
 - [Create a new workspace](/workspaces/create)
 - [Link an existing workspace](/workspaces/link)
@@ -48,3 +47,8 @@ slug: /how-tos
 
 - [4 ways to send SMS to your devices manually and automatically](https://www.emnify.com/developer-blog/4-ways-to-send-sms)
 - [How to send and receive SMS via the API](https://www.emnify.com/developer-blog/how-to-send-and-receive-sms-via-the-api)
+
+## Single sign-on
+
+- [Setup SSO with Microsoft Active Directory](/sso/microsoft-active-directory)
+- [Setup SSO with Google Cloud Platform](/sso/google-cloud-platform)
