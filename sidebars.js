@@ -279,6 +279,7 @@ const sidebars = {
             "how-tos/sso/troubleshooting",
           ],
         },
+        "how-tos/update-company-details",
         "how-tos/upgrade-trial-plan",
         {
           type: "category",

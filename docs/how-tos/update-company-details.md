@@ -1,28 +1,28 @@
 ---
-description: How to update your company name and details
+description: How to update your company details and payment method in the emnify Portal
 last_update: 
-  date: 20-11-2023
-pagination_next: null
-pagination_prev: null
+  date: 01-16-2024
+sidebar_label: Update company details
 slug: /how-tos/update-company-details
 ---
 
-# How to update your company name and details
+# Update your company details
 
-In case you need to update or change the name or any detail of your company, please follow these steps.
+## Name and address
 
-Login to https://portal.emnify.com/.
-On the upper right side of the portal, click the drop-down menu next you your username and select “Organization Settings”.
-TODO: INSERT IMAGE
+If you need to update or change your company's name or any other details, follow these steps.
 
-Then go to organisaion details and select the edit option.
-TODO: INSERT IMAGE
+1. [Log in to the emnify Portal](https://portal.emnify.com/sign/).
+1. Go to **Workspace settings** (building icon) in the top-level navigation and select **Organization Data**.
+1. Under **Organization details**, click **Edit**.
+1. Enter the required details, then click **Save**.
 
-Enter the required details and click “Save”.
-TODO: INSERT IMAGE
+## Payment method
 
-## How to update your payment method
-You can update your payment method on the same menu.
-Please click on "Billing" and then on "Add Payment Method".
+You can also update your payment method in the Workspace settings.
 
-TODO: INSERT IMAGE
+1. Log in to the emnify Portal.
+1. Go to **Workspace settings** (building icon) in the top-level navigation and select [**Billing**](https://portal.emnify.com/organisation-settings/billing).
+1. Your payment method is listed in the **Payment information** section under **Pay with**.
+If you already have a payment method that you want to update, click **Change**.
+Otherwise, click **Add payment method**.
