@@ -13,7 +13,7 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: 🔒 Setup env file
+      - name: 🔒 Set up env file
         run: |
           touch .env
           echo ALGOLIA_APP_ID='${{ secrets.ALGOLIA_APP_ID }}' >> .env
@@ -31,7 +31,8 @@ jobs:
         run: >
           git config --global url."https://x-access-token:${{ steps.get_token.outputs.app_token }}@github.com/".insteadOf "ssh://git@github.com/"
 
-      - uses: actions/setup-node@v3
+      - name: 🧰 Set up Node.js
+        uses: actions/setup-node@v3
         with:
           node-version: 18
           cache: yarn
