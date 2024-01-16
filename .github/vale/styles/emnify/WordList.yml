@@ -23,6 +23,7 @@ swap:
   "(?:ok|Okay)": OK|okay
   "(?:rate zone|ratezone)": coverage area
   "(?:REST-API|Rest-API|Rest API)": REST API
+  "(?:SMSes|SMSs)": SMS
   "(?:tariff|tariff plan|usage tariff)": data plan
   "(?:two-factor authentication|two factor authentication|multi factor authentication)": multi-factor authentication
   "(?:WiFi|wifi|Wifi)": Wi-Fi

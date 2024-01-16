@@ -27,6 +27,7 @@ slug: /how-tos
 - [Create a new coverage policy](/how-tos/create-coverage-policies)
 - [Assign devices to a policy](/how-tos/assign-devices-to-policies)
 - [Update existing device policies](/how-tos/update-existing-device-policies)
+- [Configure data and SMS limits](/how-tos/configure-data-sms-limits)
 
 ## Organization management
 
