@@ -256,6 +256,7 @@ const sidebars = {
           label: "Overview",
           id: "how-tos/index",
         },
+        "how-tos/add-ip-address-spaces",
         "how-tos/configure-dns-settings",
         {
           type: "category",

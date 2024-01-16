@@ -20,6 +20,7 @@ slug: /how-tos
 - [Create an IoT gateway with emnify, Raspberry Pi, and Sixfab](https://www.emnify.com/developer-blog/getting-started-on-your-iot-journey-with-emnify-and-raspberry-pi)
 - [How to access any IoT device or web server behind a Teltonika Networks router](https://www.emnify.com/developer-blog/how-to-access-iot-device-or-web-server-behind-a-teltonika-router)
 - [How to fit a Raspberry Pi with mobile connectivity](https://www.emnify.com/developer-blog/how-to-fit-a-raspberry-pi-with-mobile-connectivity)
+- [Add IP address spaces](/how-tos/add-ip-address-spaces)
 
 ## Device policies
 
