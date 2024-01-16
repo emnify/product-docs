@@ -1,42 +1,41 @@
 ---
-description: How to add more IP adresses
+description: How administrators can add more IP adress spaces in the emnify Portal
 last_update: 
-  date: 20-11-2023
-pagination_next: null
-pagination_prev: null
-slug: how-tos/add-ip-address-spaces
+  date: 04-04-2022
+slug: /how-tos/add-ip-address-spaces
 ---
 
-:::note
-Adding additional IP address spaces is an action reserved exclusively for users with Administrator privileges.
-If you do not hold an Administrator role, you will not have the capability to add IP address spaces.
+# Add IP address spaces
+
+:::info
+Only **Administrators** are allowed to add more IP address spaces.
 :::
 
-At EMnify, every SIM is safeguarded with a unique Static and Private IP address, which is accessible through a VPN.
+At emnify, every SIM is safeguarded with a unique static and private IP address accessible through a VPN.
 
-To incorporate new IP address ranges, please adhere to the straightforward steps below:
+To add new IP address ranges, follow these steps:
 
-1. Navigate to the 'Integrations' section.
-   TODO: INSERT IMAGE
+1. [Log in to your emnify account](https://portal.emnify.com/sign).
+1. Navigate to **Integrations** and go to the [**IP Address Space Management**](https://portal.emnify.com/integrations#ip-address-space-management) section.
+1. Click **Add IP address space**.
+1. Use the dropdown menu to select an IP address space that fits your requirements.
 
-2. Scroll to the 'IP Address Space Management' area and select the 'Add IP Address Space' button in orange.
-   TODO: INSERT IMAGE
+A confirmation message appears once the process is complete.
 
-3. Use the dropdown menu to select an IP address space that fits your requirements.
-   TODO: INSERT IMAGE
+Once added, you can see the count of IP addresses allocated to your devices and the number of available IPs in the range.
 
-   A confirmation message will appear once the process is complete.
+:::note
+The status reads **Not in use** until an IP is assigned.
+Once assigned, the status changes to **Assigned to devices**.
+It's not possible to remove the range if your devices use it.
+:::
 
-4. After the addition, the summary will display the count of IP addresses allocated to your devices and the number of available IPs in the range.
-   Note that the status will read "not in use" until an IP is assigned.
-   Once assigned, the status changes to "assigned to devices" and the range cannot be removed as long as it's in use.
-   TODO: INSERT IMAGE
+## Remove an IP space range
 
-6. To remove an IP space range, ensure all IPs within it are no longer associated with any devices.
-   Then, simply click 'remove' to delete the range.
-   TODO: INSERT IMAGE
+To remove an IP space range, ensure all IPs are disassociated from your devices.
+Then, follow these instructions:
 
-   A confirmation message will pop up once the IP range is successfully removed.
-   TODO: INSERT IMAGE
+1. Find the range you no longer need in the [**IP Address Space Management**](https://portal.emnify.com/integrations#ip-address-space-management) section.
+1. Click **Remove**.
 
-
+A confirmation message appears once the process is complete.
