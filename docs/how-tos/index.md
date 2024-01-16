@@ -27,11 +27,11 @@ slug: /how-tos
 - [Create a new coverage policy](/how-tos/create-coverage-policies)
 - [Assign devices to a policy](/how-tos/assign-devices-to-policies)
 - [Update existing device policies](/how-tos/update-existing-device-policies)
+- [Change the assigned data allowance](/how-tos/data-allowances)
 - [Configure data and SMS limits](/how-tos/configure-data-sms-limits)
 
 ## Organization management
 
-- [Change the assigned data allowance](/how-tos/data-allowances)
 - [Update your company details](/how-tos/update-company-details)
 - [Upgrade your Trial plan](/how-tos/upgrade-trial-plan)
 - [Create a new workspace](/workspaces/create)
