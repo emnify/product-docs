@@ -11,8 +11,23 @@ jobs:
   eslint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: 👀 Retrieve application token to gain read access for emnify repositories
+        id: get_token
+        uses: machine-learning-apps/actions-app-token@master
+        with:
+          APP_PEM: ${{ secrets.EMNIFY_GITHUB_ACTIONS_APP_PEM }}
+          APP_ID: ${{ secrets.EMNIFY_GITHUB_ACTIONS_APP_ID }}
+
+      - name: 🔮 Reconfigure git to use HTTP authentication
+        run: >
+          git config --global url."https://x-access-token:${{ steps.get_token.outputs.app_token }}@github.com/".insteadOf "ssh://git@github.com/"
+
+      - name: 🧰 Set up Node.js
+        uses: actions/setup-node@v3
         with:
           node-version: 18
           cache: yarn
@@ -26,8 +41,23 @@ jobs:
   prettier:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: 👀 Retrieve application token to gain read access for emnify repositories
+        id: get_token
+        uses: machine-learning-apps/actions-app-token@master
+        with:
+          APP_PEM: ${{ secrets.EMNIFY_GITHUB_ACTIONS_APP_PEM }}
+          APP_ID: ${{ secrets.EMNIFY_GITHUB_ACTIONS_APP_ID }}
+
+      - name: 🔮 Reconfigure git to use HTTP authentication
+        run: >
+          git config --global url."https://x-access-token:${{ steps.get_token.outputs.app_token }}@github.com/".insteadOf "ssh://git@github.com/"
+
+      - name: 🧰 Set up Node.js
+        uses: actions/setup-node@v3
         with:
           node-version: 18
           cache: yarn

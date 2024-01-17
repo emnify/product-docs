@@ -2,6 +2,7 @@
 description: emnify offers several customized branding options for your APN, SIM artwork, and web portal
 last_update: 
   date: 12-01-2023
+unlisted: true
 ---
 
 # Custom services
