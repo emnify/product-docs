@@ -34,3 +34,7 @@ div[title="Expand sidebar"] {
 div[title="Expand sidebar"]:hover {
   background-color: var(--eui-sys-brand-state-primary-02-hover);
 }
+
+div.menu__list-item-collapsible--active:has(> a.menu__link--active) {
+  background: var(--eui-sys-layout-surface-02);
+}
