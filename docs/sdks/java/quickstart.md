@@ -2,8 +2,8 @@
 description: Step-by-step guide for installing and using the emnify Java SDK
 last_update: 
   date: 08-20-2021
-pagination_label: Java SDK Quickstart
-sidebar_label: Quickstart
+pagination_label: Getting started with the Java SDK
+sidebar_label: Getting started
 slug: /sdks/java/quickstart
 ---
 

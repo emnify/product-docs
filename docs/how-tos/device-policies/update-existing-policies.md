@@ -2,7 +2,6 @@
 description: Update or change the service policy or coverage policy assigned to your devices in the emnify Portal
 last_update:
   date: 01-09-2024
-sidebar_label: Update existing policies
 slug: /how-tos/update-existing-device-policies
 ---
 
