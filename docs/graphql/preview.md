@@ -3,6 +3,7 @@ title: Preview the GraphQL API
 last_update: 
   date: 03-17-2023
 pagination_label: Preview the GraphQL API
+pagination_next: graphql/graphiql-ide
 slug: /graphql
 ---
 

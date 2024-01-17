@@ -2,6 +2,7 @@
 description: The starting point for managing your organization and workspaces in the emnify Portal
 last_update: 
   date: 01-17-2024
+pagination_next: portal/organization/data
 slug: /portal/org
 ---
 

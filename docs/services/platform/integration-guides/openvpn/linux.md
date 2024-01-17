@@ -3,6 +3,7 @@ description: Step-by-step guide for integrating OpenVPN on Linux to use on devic
 last_update: 
   date: 11-24-2022
 pagination_label: OpenVPN on Linux
+pagination_next: services/platform/integration-guides/openvpn/macos
 sidebar_label: Linux
 slug: /integration-guides/openvpn-linux-ubuntu
 ---
