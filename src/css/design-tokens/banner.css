@@ -1,0 +1,25 @@
+/**
+ * Do not edit directly
+ * Generated on Fri, 03 Nov 2023 13:40:23 GMT
+ */
+
+.banner {
+  --banner-eui-comp-banner-container-color-info: #4377cd;
+  --banner-eui-comp-banner-container-color-error: #ff5757;
+  --banner-eui-comp-banner-container-color-warning: #f59033;
+  --banner-eui-comp-banner-container-color-success: #33b147;
+  --banner-eui-comp-banner-container-padding-default-vertical: 12px;
+  --banner-eui-comp-banner-container-padding-default-horizontal: 24px;
+  --banner-eui-comp-banner-container-padding-default-between-leading: 12px;
+  --banner-eui-comp-banner-container-padding-default-between-action: 24px;
+  --banner-eui-comp-banner-container-padding-mobile-vertical: 16px;
+  --banner-eui-comp-banner-container-padding-mobile-left: 12px;
+  --banner-eui-comp-banner-container-padding-mobile-right-closable: 12px;
+  --banner-eui-comp-banner-container-padding-mobile-right: 8px;
+  --banner-eui-comp-banner-container-padding-mobile-between-leading: 12px;
+  --banner-eui-comp-banner-container-padding-mobile-between-action: 12px;
+  --banner-eui-comp-banner-leading-icon-color: #ffffff;
+  --banner-eui-comp-banner-message-color: #ffffff;
+  --banner-eui-comp-banner-message-max-width-default: 600px;
+  --eui-comp-banner-close-button-size-default-width: 48px;
+}

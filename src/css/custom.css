@@ -1,43 +1,100 @@
+@import "./admonition.css";
+@import "./badge.css";
+@import "./button.css";
+@import "./docsearch.css";
+@import "./footer.css";
+@import "./navbar.css";
+@import "./sidebar.css";
+@import "./table-of-contents.css";
+@import "./toggle.css";
+
+/* Tokens */
+@import url("./design-tokens/colors-light.css");
+@import url("./design-tokens/typescale.css");
+@import url("./design-tokens/button.css");
+@import url("./design-tokens/search.css");
+
 /* Overrides the default Infima (https://infima.dev/) variables */
 :root {
-  /* Text and content */
-  --ifm-font-family-base: "Avenir LT Pro", Helvetica, Arial, sans-serif;
-  --ifm-color-content: #000035;
-  --ifm-color-content-secondary: #404067;
-  --ifm-color-primary: #000035;
-  --ifm-color-primary-dark: #80809a;
-  --ifm-color-primary-darker: #404067;
-  --ifm-color-primary-darkest: #000035;
-  --ifm-color-primary-light: #60e524;
-  --ifm-color-primary-lighter: #4ee794;
-  --ifm-color-primary-lightest: #dff6d5;
-  --ifm-color-emphasis: #404067;
+  /* Fonts and text size */
+  --ifm-font-family-base: var(--eui-sys-font-family-standard), Helvetica, Arial,
+    sans-serif;
+  --ifm-heading-font-family: var(--eui-sys-font-family-standard), Helvetica,
+    Arial, sans-serif;
+  --ifm-h1-font-size: var(--eui-sys-typescale-headline-large-font-size);
+  --ifm-h2-font-size: var(--eui-sys-typescale-headline-medium-font-size);
+  --ifm-h3-font-size: var(--eui-sys-typescale-headline-small-font-size);
+  --ifm-font-weight-bold: var(--eui-sys-typescale-label-medium-font-weight);
+  /* Content colors */
+  --ifm-color-content: var(--eui-sys-layout-on-surface);
+  --ifm-color-content-secondary: var(--eui-sys-layout-on-surface-subdued);
+  --ifm-color-primary: var(--eui-sys-layout-on-surface);
+  --ifm-color-primary-dark: var(--eui-sys-brand-state-primary-02-hover);
+  --ifm-color-primary-darker: var(--eui-sys-brand-state-primary-01-active);
+  --ifm-color-primary-darkest: var(--eui-sys-brand-state-primary-01-hover);
+  --ifm-color-primary-light: var(--eui-sys-brand-state-secondary-01-active);
+  --ifm-color-primary-lighter: var(--eui-sys-brand-state-primary-02-hover);
+  --ifm-color-primary-lightest: var(--eui-sys-brand-state-primary-02-active);
+  --ifm-color-emphasis: var(--eui-sys-brand-tertiary-01);
   /* Links */
-  --ifm-link-hover-color: #404067;
+  --ifm-link-color: var(--eui-sys-brand-secondary-01);
+  --ifm-link-hover-color: var(--eui-sys-brand-state-secondary-01-hover);
   /* Footer */
-  --ifm-footer-background-color: #f2f2f2;
-  --ifm-footer-link-color: #000035;
+  --ifm-footer-background-color: var(--eui-sys-layout-surface-02);
+  --ifm-footer-link-color: var(--eui-sys-brand-secondary-01);
+  --ifm-footer-link-hover-color: var(--eui-sys-brand-state-secondary-01-hover);
   /* Sidebar */
-  --ifm-menu-color: #404067;
-  --ifm-menu-color-background-active: #010d410f;
-  --ifm-menu-color-background-hover: #010d410f;
+  --ifm-menu-color: var(--eui-sys-brand-on-primary-02);
+  --ifm-menu-color-active: var(--eui-sys-brand-on-primary-02);
+  --ifm-menu-color-background-active: var(
+    --eui-sys-brand-state-primary-02-active
+  );
+  --ifm-menu-color-background-hover: var(
+    --eui-sys-brand-state-primary-02-hover
+  );
   /* Breadcrumb */
-  --ifm-breadcrumb-item-background-active: #010d410f;
+  --ifm-breadcrumb-item-background-active: var(
+    --eui-sys-brand-state-primary-02-active
+  );
+  /* Table of Contents */
+  --ifm-toc-link-color: var(--eui-sys-brand-on-primary-02);
   /* Buttons */
-  --ifm-button-background-color: #000035;
+  --ifm-button-background-color: var(
+    --eui-comp-primary-button-container-color-default
+  );
   /* Code blocks */
   --ifm-code-font-size: 95%;
+  /* Inline code */
+  --ifm-code-background: var(--eui-sys-layout-surface-02);
+}
+
+@font-face {
+  font-family: var(--eui-sys-font-family-standard);
+  src: url("/static/fonts/Inter-VariableFont_slnt,wght.ttf") format("ttf");
+}
+
+/*
+*****************
+-----------------
+  DOCS CONTENT
+_________________
+*****************
+*/
+
+/* h4 text within the main content */
+.theme-doc-markdown {
+  --ifm-h4-font-size: var(--eui-sys-typescale-title-medium-font-size);
 }
 
 /* Links within documentation content */
 .theme-doc-markdown a,
 .theme-edit-this-page {
-  --ifm-link-decoration: underline;
+  --ifm-link-decoration: var(--eui-sys-typescale-link-medium-text-decoration);
 }
 
 .theme-doc-markdown a:hover,
 .theme-edit-this-page:hover {
-  color: #404067;
+  color: var(--eui-sys-brand-state-secondary-01-hover);
 }
 
 .theme-doc-markdown .hash-link {
@@ -45,169 +102,7 @@
 }
 
 .theme-doc-markdown .hash-link:hover {
-  text-decoration: underline;
-}
-
-/* All admonitions */
-.theme-admonition {
-  margin-top: 0.5rem;
-}
-
-/* Caution admonition */
-.theme-admonition-caution {
-  background-color: #f2740014;
-  border-color: #f27400;
-  color: #263238;
-}
-
-.theme-admonition-caution a {
-  text-decoration-color: #f27400;
-}
-
-.theme-admonition-caution svg path {
-  fill: #f27400;
-}
-
-/* Tip admonition */
-.theme-admonition-tip {
-  background-color: #3d9a3214;
-  border-color: #009e19;
-  color: #263238;
-}
-
-.theme-admonition-tip a {
-  text-decoration-color: #009e19;
-}
-
-.theme-admonition-tip svg path {
-  fill: #009e19;
-}
-
-/* Danger admonition */
-.theme-admonition-danger {
-  background-color: #da353514;
-  border-color: #da3535;
-  color: #263238;
-}
-
-.theme-admonition-danger a {
-  text-decoration-color: #da3535;
-}
-
-.theme-admonition-danger svg path {
-  fill: #da3535;
-}
-
-/* Info admonition */
-.theme-admonition-info {
-  background-color: #edf3f8;
-  border-color: #659bdf;
-  color: #263238;
-}
-
-.theme-admonition-info a {
-  text-decoration-color: #659bdf;
-}
-
-.theme-admonition-info svg path {
-  fill: #659bdf;
-}
-
-/* Note admonition */
-.theme-admonition-note {
-  background-color: #f5f5f5;
-  border-color: #e4e4e4;
-  color: #263238;
-}
-
-.theme-admonition-note a {
-  text-decoration-color: #e4e4e4;
-}
-
-.theme-admonition-note svg path {
-  fill: #263238;
-}
-
-/* Details and summary elements - Example JSON responses */
-.custom-details-example {
-  background-color: #0000350f;
-  border-color: #000035 !important;
-  color: #000035;
-}
-
-.custom-details-example summary::before {
-  border-color: transparent transparent transparent #000035 !important;
-}
-
-.custom-details-example .collapsibleContent_i85q {
-  border-top: 1px solid #000035 !important;
-}
-
-/* Details and summary elements - Troubleshooting */
-.custom-details-troubleshooting {
-  background-color: #edf3f8;
-  border-color: #659bdf !important;
-  color: #263238;
-}
-
-.custom-details-troubleshooting summary::before {
-  border-color: transparent transparent transparent #659bdf !important;
-}
-
-.custom-details-troubleshooting .collapsibleContent_i85q {
-  border-top: 1px solid #659bdf !important;
-}
-
-.custom-details-troubleshooting .collapsibleContent_i85q a {
-  text-decoration-color: #659bdf !important;
-}
-
-/* Details and summary elements - Tip */
-.custom-details-tip {
-  background-color: #3d9a3214;
-  border-color: #009e19 !important;
-  color: #263238;
-}
-
-.custom-details-tip summary::before {
-  border-color: transparent transparent transparent #009e19 !important;
-}
-
-.custom-details-tip .collapsibleContent_i85q {
-  border-top: 1px solid #009e19 !important;
-}
-
-.custom-details-tip .collapsibleContent_i85q a {
-  text-decoration-color: #009e19 !important;
-}
-
-/* Collapse sidebar button */
-button[title="Collapse sidebar"] {
-  border-top: none;
-}
-
-button[title="Collapse sidebar"]:hover {
-  background-color: #010d410f;
-}
-
-button[title="Collapse sidebar"] svg path {
-  fill: #000035;
-}
-
-/* Expand sidebar "button" */
-div[title="Expand sidebar"] svg path {
-  fill: #000035;
-}
-
-div[title="Expand sidebar"]:hover {
-  background-color: #010d410f;
-}
-
-/* Footer links on smaller screens */
-@media only screen and (max-width: 996px) {
-  .footer__link-item {
-    padding: 0.5rem 0;
-  }
+  text-decoration: var(--eui-sys-typescale-link-medium-text-decoration);
 }
 
 /* Main content container padding */
@@ -223,10 +118,13 @@ div[title="Expand sidebar"]:hover {
   }
 }
 
-/* Active navigation bar links */
-.navbar__link--active {
-  font-weight: bold;
-}
+/*
+*****************
+-----------------
+     ASSETS
+_________________
+*****************
+*/
 
 /* Center img elements within the main content */
 .theme-doc-markdown img {
@@ -237,7 +135,7 @@ div[title="Expand sidebar"]:hover {
 
 /* Add border to screenshots */
 .theme-doc-markdown img:not(.no-border) {
-  border: 1px solid #e4e4e4; /* ui-grey-80 */
+  border: 1px solid var(--eui-sys-layout-container-01);
   border-radius: 5px;
 }
 
@@ -251,17 +149,14 @@ a:has(> code) {
   text-decoration: none;
 }
 
-/* Preview badge */
-.badge--primary {
-  font-size: 50%;
-  font-weight: 500;
-  margin-bottom: 10px;
-  text-transform: capitalize;
-  vertical-align: middle !important;
-}
+/*
+*****************
+-----------------
+   OTHER PAGES
+_________________
+*****************
+*/
 
-/* Beta badge */
-.beta {
-  margin-bottom: 0;
-  text-transform: capitalize;
+.page-not-found-content a {
+  --ifm-link-decoration: var(--eui-sys-typescale-link-medium-text-decoration);
 }

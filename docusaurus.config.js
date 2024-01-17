@@ -90,7 +90,7 @@ const config = {
         logo: {
           alt: "emnify Documentation – Home",
           href: "/",
-          src: "img/logo-word-blue-295x80.png",
+          src: "img/logo-dark.svg",
         },
       },
       docs: {
@@ -102,7 +102,6 @@ const config = {
         logo: {
           alt: "",
           src: "img/logo-icon-only-dark.svg",
-          style: { marginTop: "0.5rem" },
         },
         links: [
           {

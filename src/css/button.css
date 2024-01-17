@@ -1,0 +1,38 @@
+.primary-button-large-text-only {
+  border: none;
+  background-color: var(--eui-comp-primary-button-container-color-default);
+  border-radius: var(--eui-comp-primary-button-container-border-border-radius);
+  color: var(--eui-comp-primary-button-text-color-default);
+  font-size: var(--eui-comp-primary-button-text-font-font-size);
+  font-weight: var(--eui-comp-primary-button-text-font-font-weight);
+  line-height: var(--eui-comp-primary-button-text-font-line-height);
+  text-decoration: var(--eui-comp-primary-button-text-font-text-decoration);
+  letter-spacing: var(--eui-comp-primary-button-text-font-letter-spacing);
+  padding-left: var(
+    --eui-comp-primary-button-container-padding-large-text-only-left
+  );
+  padding-right: var(
+    --eui-comp-primary-button-container-padding-large-text-only-right
+  );
+  padding-top: var(
+    --eui-comp-primary-button-container-padding-large-text-only-vertical
+  );
+  padding-bottom: var(
+    --eui-comp-primary-button-container-padding-large-text-only-vertical
+  );
+}
+
+.primary-button-large-text-only:hover {
+  background-color: var(--eui-comp-primary-button-container-color-hovered);
+}
+
+.primary-button-large-text-only:active {
+  background-color: var(--eui-comp-primary-button-container-color-active);
+}
+
+.primary-button-large-text-only:focus {
+  background-color: var(--eui-comp-primary-button-container-color-focused);
+  outline-color: var(--eui-comp-primary-button-container-outline-color);
+  outline-width: var(--eui-comp-primary-button-container-outline-width);
+  outline-offset: var(--eui-comp-primary-button-container-outline-offset);
+}

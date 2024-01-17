@@ -49,11 +49,6 @@ const sidebars = {
             "portal/sims-and-devices/sim-inventory",
             "portal/sims-and-devices/connected-devices",
             "portal/sims-and-devices/device-policies",
-            {
-              type: "link",
-              label: "Orders",
-              href: "/quickstart/order-sims",
-            },
             "portal/sims-and-devices/troubleshooting",
           ],
         },

@@ -1,0 +1,7 @@
+.theme-doc-toc-mobile {
+  background-color: var(--eui-sys-brand-state-primary-02-active) !important;
+}
+
+.theme-doc-toc-mobile ul.table-of-contents > li > a:first-child {
+  font-weight: var(--eui-sys-typescale-label-medium-font-weight);
+}

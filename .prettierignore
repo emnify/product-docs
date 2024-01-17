@@ -1,6 +1,7 @@
 # Asset directories
 static/img
 static/.nojekyll
+static/fonts
 
 # Markdown (handled by another linter)
 docs
@@ -14,6 +15,9 @@ docs
 # markdownlint config
 .markdownlint.jsonc
 .markdownlintignore
+
+# Generated design token file
+src/css/design-tokens
 
 # Ignore files
 .env

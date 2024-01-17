@@ -9,21 +9,36 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
         with:
-          node-version: 18
-          cache: yarn
+          persist-credentials: false
 
-      - name: 🔒 Setup env file
+      - name: 🔒 Set up env file
         run: |
           touch .env
           echo ALGOLIA_APP_ID='${{ secrets.ALGOLIA_APP_ID }}' >> .env
           echo ALGOLIA_SEARCH_API_KEY='${{ secrets.ALGOLIA_SEARCH_API_KEY }}' >> .env
           cat .env
 
+      - name: 👀 Retrieve application token to gain read access for emnify repositories
+        id: get_token
+        uses: machine-learning-apps/actions-app-token@master
+        with:
+          APP_PEM: ${{ secrets.EMNIFY_GITHUB_ACTIONS_APP_PEM }}
+          APP_ID: ${{ secrets.EMNIFY_GITHUB_ACTIONS_APP_ID }}
+
+      - name: 🔮 Reconfigure git to use HTTP authentication
+        run: >
+          git config --global url."https://x-access-token:${{ steps.get_token.outputs.app_token }}@github.com/".insteadOf "ssh://git@github.com/"
+
+      - name: 🧰 Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: yarn
+
       - name: 🪚 Install dependencies
         run: yarn install --frozen-lockfile
 
-      - name: 🏗️ Test build website
+      - name: 💻 Test build website
         run: yarn build

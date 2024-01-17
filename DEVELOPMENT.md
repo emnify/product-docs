@@ -13,10 +13,10 @@ By participating, you agree to abide by its terms.
 
 ## Prerequisites
 
-The emnify Product Documentation website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+The emnify Product Documentation website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 To run it locally, you'll need the following:
 
-- [Node.js](https://nodejs.org/en/download/) ([version 16.14](https://docusaurus.io/docs/installation#requirements) or higher)
+- [Node.js](https://nodejs.org/en/download/) ([version 18.0](https://docusaurus.io/docs/installation#requirements) or above)
 - [Yarn](https://classic.yarnpkg.com/en/docs/install) 
 
 To lint the documentation, you'll need to install:
@@ -128,6 +128,21 @@ yarn markdownlint:fix
 
 Vale is run via a [CI pipeline](.github/workflows/content.yml) and [pre-commit hook](./.husky/pre-commit) that fail on errors.
 See the [Vale README](.github/vale/README.md) for more information.
+
+## Update design tokens
+
+To pull the latest version of the [emnify design tokens](https://github.com/emnify/design-tokens) and import them into this repository, run:
+
+```shell
+yarn import-design-tokens
+```
+
+This upgrades the `eui-design-tokens` package and runs the [`importDesignTokens.js`](./config/importDesignTokens.js) script.
+This script copies the prepared tokens for the emnify brand into the `src` directory and changes the CSS selectors to match the site structure (when applicable).
+
+> [!NOTE]
+> Not all token files are imported into the site CSS by default.
+> Check [`custom.css`](./src/css/custom.css) to make sure the tokens you want to use are imported.
 
 ## Build the documentation pages
 
