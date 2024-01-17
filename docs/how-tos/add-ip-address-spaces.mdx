@@ -1,7 +1,7 @@
 ---
 description: How administrators can add more IP adress spaces in the emnify Portal
 last_update: 
-  date: 04-04-2022
+  date: 01-17-2024
 slug: /how-tos/add-ip-address-spaces
 ---
 
@@ -16,13 +16,30 @@ At emnify, every SIM is safeguarded with a unique static and private IP address 
 To add new IP address ranges, follow these steps:
 
 1. [Log in to your emnify account](https://portal.emnify.com/sign).
-1. Navigate to **Integrations** and go to the [**IP Address Space Management**](https://portal.emnify.com/integrations#ip-address-space-management) section.
-1. Click **Add IP address space**.
-1. Use the dropdown menu to select an IP address space that fits your requirements.
+2. Navigate to **Integrations** and go to the [**IP Address Space Management**](https://portal.emnify.com/integrations#ip-address-space-management) section.
+3. Click **Add IP address space**.
+
+<img
+  src={require('./assets/portal-integrations-ip-address-space-management-add-ip-address-space.png').default}
+  alt=""
+/>
+
+4. Use the dropdown menu to select an IP address space that fits your requirements.
+
+<img
+  src={require('./assets/portal-integrations-ip-address-space-management-add-ip-address-space-dropdown.png').default}
+  style={{ width: 350 }}
+  alt=""
+/>
 
 A confirmation message appears once the process is complete.
 
 Once added, you can see the count of IP addresses allocated to your devices and the number of available IPs in the range.
+
+<img
+  src={require('./assets/portal-integrations-ip-address-space-management-ranges.png').default}
+  alt=""
+/>
 
 :::note
 The status reads **Not in use** until an IP is assigned.
@@ -36,6 +53,11 @@ To remove an IP space range, ensure all IPs are disassociated from your devices.
 Then, follow these instructions:
 
 1. Find the range you no longer need in the [**IP Address Space Management**](https://portal.emnify.com/integrations#ip-address-space-management) section.
-1. Click **Remove**.
+1. Click **Delete** (trash bin icon).
+
+<img
+  src={require('./assets/portal-integrations-ip-address-space-management-delete.png').default}
+  alt=""
+/>
 
 A confirmation message appears once the process is complete.

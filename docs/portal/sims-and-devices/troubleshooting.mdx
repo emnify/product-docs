@@ -1,7 +1,7 @@
 ---
 description: Tips and solutions for resolving why a device isn't performing as expected
 last_update:
-  date: 07-20-2023
+  date: 01-17-2024
 slug: /portal/troubleshooting
 ---
 
@@ -64,16 +64,16 @@ For instance, **Create PDP Context** by itself _doesn't_ mean that a PDP context
 ### Event severity
 
 When used for troubleshooting, an event's severity is more important than the event type.
+
 For instance, if a network connection can't be established because of an IMEI lock, the event type may show as **Create PDP Context** with a green play button icon in front of it.
 Also, since its **Event Source** is only shown if you expand its details, you won't see at first glance that this is a **Policy Control** issue.
 The only hint that something might have gone wrong is its severity, **Warning**.
 In contrast, a successful **Create PDP Context** event has an **Event Source** of **Network** and a completely different **Description**.
 
 <details className="custom-details-example">
-  <summary>Compare a successful Create PDP Context event with one that failed</summary>
+  <summary>Compare a failed Update Location event with a successful one</summary>
   <img
-    src={require('./assets/portal-events-create-pdp-context-success-and-failure.png').default}
-    style={{ width: 550 }}
+    src={require('./assets/portal-events-update-location-failure-and-success.png').default}
     alt=""
   />
 </details>
