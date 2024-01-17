@@ -35,7 +35,6 @@ const config = {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           routeBasePath: "/",
-          editUrl: "https://github.com/emnify/product-docs/blob/main/",
           showLastUpdateTime: true,
         },
         theme: {
@@ -108,12 +107,12 @@ const config = {
             title: "Resources",
             items: [
               {
-                label: "emnify website",
-                href: "https://www.emnify.com/",
+                label: "View source code on GitHub",
+                href: "https://github.com/emnify/product-docs",
               },
               {
-                label: "Developer blog",
-                href: "https://www.emnify.com/developer-blog",
+                label: "emnify website",
+                href: "https://www.emnify.com/",
               },
             ],
           },
@@ -138,8 +137,8 @@ const config = {
                 href: "https://github.com/emnify/",
               },
               {
-                label: "Twitter",
-                href: "https://twitter.com/emnify",
+                label: "Developer blog",
+                href: "https://www.emnify.com/developer-blog",
               },
             ],
           },
