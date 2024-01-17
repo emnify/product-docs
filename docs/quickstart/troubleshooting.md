@@ -2,7 +2,6 @@
 description: Tips and solutions for resolving common issues when setting up your emnify account
 last_update: 
   date: 08-24-2023
-pagination_label: Connectivity troubleshooting
 slug: /quickstart/troubleshooting
 ---
 
