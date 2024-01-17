@@ -40,7 +40,7 @@ You can't use accounts with multi-factor authentication (MFA) enabled to authent
 :::tip
 For more detailed instructions based on your operating system, please refer to the following knowledge base articles:
 
-- [MacOS](https://support.emnify.com/hc/en-us/articles/360019625379-OpenVPN-Integration-Guide-for-MacOS)
-- [Windows](https://support.emnify.com/hc/en-us/articles/115001723273-OpenVPN-Integration-Guide-for-Windows) 
-- [Linux](https://support.emnify.com/hc/en-us/articles/115001724434-OpenVPN-Integration-Guide-for-Linux)
+- [Linux](/integration-guides/openvpn-linux-ubuntu)
+- [macOS](/integration-guides/openvpn-macos)
+- [Windows](/integration-guides/openvpn-windows) 
 :::
