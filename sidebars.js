@@ -17,12 +17,13 @@ const sidebars = {
         "quickstart/create-device",
         {
           type: "category",
-          label: "Get the device online",
+          label: "APN configuration",
           link: {
             type: "doc",
             id: "quickstart/apn-configuration/index",
           },
           items: [
+            "quickstart/apn-configuration/index",
             "quickstart/apn-configuration/android",
             "quickstart/apn-configuration/ios",
             "quickstart/apn-configuration/cellular-modules",
@@ -45,6 +46,10 @@ const sidebars = {
         {
           type: "category",
           label: "Manage SIMs and devices",
+          link: {
+            type: "doc",
+            id: "portal/sims-and-devices/sim-inventory",
+          },
           items: [
             "portal/sims-and-devices/sim-inventory",
             "portal/sims-and-devices/connected-devices",
@@ -56,6 +61,10 @@ const sidebars = {
         {
           type: "category",
           label: "Integrations",
+          link: {
+            type: "doc",
+            id: "portal/integrations/no-code",
+          },
           items: [
             "portal/integrations/no-code",
             "portal/integrations/application-tokens",
@@ -65,6 +74,10 @@ const sidebars = {
         {
           type: "category",
           label: "Organization management",
+          link: {
+            type: "doc",
+            id: "portal/organization/settings",
+          },
           items: [
             "portal/organization/settings",
             "portal/organization/data",
@@ -117,6 +130,10 @@ const sidebars = {
             {
               type: "category",
               label: "OpenVPN",
+              link: {
+                type: "doc",
+                id: "services/platform/integration-guides/openvpn/linux",
+              },
               items: [
                 "services/platform/integration-guides/openvpn/linux",
                 "services/platform/integration-guides/openvpn/macos",
@@ -133,6 +150,11 @@ const sidebars = {
             id: "services/platform/data-streamer/index",
           },
           items: [
+            {
+              type: "doc",
+              label: "Getting started",
+              id: "services/platform/data-streamer/index",
+            },
             "services/platform/data-streamer/connection-types",
             "services/platform/data-streamer/stream-types",
             "services/platform/data-streamer/data-streams",
@@ -148,6 +170,11 @@ const sidebars = {
             id: "services/platform/events/index",
           },
           items: [
+            {
+              type: "doc",
+              label: "Getting started",
+              id: "services/platform/events/index",
+            },
             "services/platform/events/event-types",
             "services/platform/events/usage",
           ],
@@ -172,6 +199,10 @@ const sidebars = {
     {
       type: "category",
       label: "Developer resources",
+      link: {
+        type: "doc",
+        id: "rest/index",
+      },
       items: [
         {
           type: "category",
@@ -181,6 +212,11 @@ const sidebars = {
             id: "rest/index",
           },
           items: [
+            {
+              type: "doc",
+              label: "Getting started",
+              id: "rest/index",
+            },
             "rest/sms-operations",
             {
               type: "link",
@@ -196,7 +232,7 @@ const sidebars = {
             type: "doc",
             id: "graphql/preview",
           },
-          items: ["graphql/graphiql-ide"],
+          items: ["graphql/preview", "graphql/graphiql-ide"],
         },
         {
           type: "category",
@@ -206,10 +242,19 @@ const sidebars = {
             id: "sdks/index",
           },
           items: [
+            {
+              type: "doc",
+              label: "Overview",
+              id: "sdks/index",
+            },
             "sdks/concepts",
             {
               type: "category",
               label: "Python",
+              link: {
+                type: "doc",
+                id: "sdks/python/quickstart",
+              },
               items: [
                 "sdks/python/quickstart",
                 "sdks/python/examples",
@@ -223,6 +268,10 @@ const sidebars = {
             {
               type: "category",
               label: "Java",
+              link: {
+                type: "doc",
+                id: "sdks/java/quickstart",
+              },
               items: [
                 "sdks/java/quickstart",
                 "sdks/java/examples",
@@ -256,6 +305,10 @@ const sidebars = {
         {
           type: "category",
           label: "Device policies",
+          link: {
+            type: "doc",
+            id: "how-tos/device-policies/create-service-policies",
+          },
           items: [
             "how-tos/device-policies/create-service-policies",
             "how-tos/device-policies/create-coverage-policies",
@@ -269,6 +322,10 @@ const sidebars = {
         {
           type: "category",
           label: "Single sign-on",
+          link: {
+            type: "doc",
+            id: "how-tos/sso/microsoft-active-directory",
+          },
           items: [
             "how-tos/sso/microsoft-active-directory",
             "how-tos/sso/google-cloud-platform",
@@ -280,6 +337,10 @@ const sidebars = {
         {
           type: "category",
           label: "Workspaces",
+          link: {
+            type: "doc",
+            id: "how-tos/workspaces/create",
+          },
           items: [
             "how-tos/workspaces/create",
             "how-tos/workspaces/link",
