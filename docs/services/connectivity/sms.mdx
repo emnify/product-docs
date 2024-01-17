@@ -44,12 +44,19 @@ An SMS/Message icon appears to the right of the device name.
   style={{ width: 350 }}
 />
 
+You can also open the SMS console directly from the Connected Devices table.
+
+<img
+  src={require('./assets/portal-connected-devices-open-sms-console.png').default}
+  alt=""
+/>
+
 The SMS history and input field at the bottom of the SMS console is similar to the layout and features found in most mobile messaging apps.
 
 <img
   src={require('./assets/portal-connected-devices-details-sms-console.png').default}
   alt=""
-  style={{ width: 575 }}
+  style={{ width: 475 }}
 />
 
 When you select one or more devices in the list of [**Connected Devices**](https://portal.emnify.com/connected-devices), a group of menu items appear that includes **SMS**.
@@ -66,12 +73,6 @@ This SMS interface doesn't show a history of messages.
 
 However, you receive a brief notification regarding the status of the SMS sent to the selected devices.
 
-<img
-  src={require('./assets/portal-sms-sent.png').default}
-  alt=""
-  style={{ width: 762 }}
-/>
-
 ## emnify SMS REST API and webhook
 
 For sending SMS through the REST API, check out the [Send and receive SMS](/rest/sms-operations) guide.
@@ -82,12 +83,18 @@ Under **Service Policies**, choose the policy you want to update and click **Det
 Then, find the **SMS Interface** section.
 
 Select **Webhook**, then select **Configure Webhook**.
+
+<img
+  src={require('./assets/portal-service-policies-sms-interface-configure-webhook.png').default}
+  alt=""
+  style={{ width: 500 }}
+/>
+
 In the **Add Webhook** dialog, provide the webhook URL and an optional secret key:
 
 <img
-  src={require('./assets/portal-device-policies-add-webhook.png').default}
+  src={require('./assets/portal-service-policies-sms-interface-add-webhook.png').default}
   alt=""
-  style={{ width: 856 }}
 />
 
 When you want to send an SMS from the device to your application, your device should send the SMS to an invalid [MSISDN](/glossary#msisdn) with eight digits or less.
