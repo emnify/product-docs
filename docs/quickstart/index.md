@@ -2,9 +2,8 @@
 description: Start developing your IoT solutions with emnify
 last_update: 
   date: 11-16-2023
-pagination_label: Create an account
 pagination_next: quickstart/order-sims
-sidebar_label: Create an account
+sidebar_label: Sign up for an account
 slug: /quickstart
 ---
 

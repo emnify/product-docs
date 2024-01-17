@@ -2,8 +2,8 @@
 description: Step-by-step guide for installing and using the emnify Python SDK
 last_update: 
   date: 09-07-2022
-pagination_label: Python SDK quickstart
-sidebar_label: Quickstart
+pagination_label: Getting started with the Python SDK
+sidebar_label: Getting started
 slug: /sdks/python/quickstart
 ---
 
