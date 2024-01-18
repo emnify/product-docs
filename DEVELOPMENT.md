@@ -1,6 +1,6 @@
 # Development guide for the emnify Product Documentation
 
-Your interest in contributing to the emnify Product Documentation is greatly appreciated, and hopefully, this development guide will help you get started 🚀
+Your interest in contributing to the emnify Product Documentation is greatly appreciated, and hopefully, this development guide helps you get started 🚀
 
 If you think something is missing, [open an issue](https://github.com/emnify/product-docs/issues/new/choose).
 
@@ -16,7 +16,7 @@ By participating, you agree to abide by its terms.
 The emnify Product Documentation website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 To run it locally, you'll need the following:
 
-- [Node.js](https://nodejs.org/en/download/) ([version 18.0](https://docusaurus.io/docs/installation#requirements) or above)
+- [Node.js](https://nodejs.org/en/download/) ([version 18.0](https://docusaurus.io/docs/installation#requirements) or higher)
 - [Yarn](https://classic.yarnpkg.com/en/docs/install) 
 
 To lint the documentation, you'll need to install:
@@ -181,7 +181,7 @@ All [CI pipelines](https://github.com/emnify/product-docs/blob/main/.github/work
 
 ### Preview content
 
-Any changes to files that affect the site will trigger a [preview workflow](./.github/workflows/preview.yml).
+Any changes to files that affect the site trigger a [preview workflow](./.github/workflows/preview.yml).
 When this workflow runs successfully, you'll see a comment on your pull request with a link to the deployed preview.
 Previews are automatically removed when the pull request is closed.
 

@@ -47,8 +47,6 @@ Configuring the DNS service is beneficial for using your own or private DNS serv
 Customers can also configure to use their own DNS, no matter if it's a public or a private one.
 For more information, see [Configure DNS settings](/how-tos/configure-dns-settings).
 
-<!-- TODO: Recreate dns_setting.png (Custom DNS setting configuration) -->
-
 ### IMEI lock
 
 Device manufacturers often face issues related to SIM card theft, as pluggable SIM cards can be removed from a device and then used to gain free internet access.
@@ -59,6 +57,8 @@ All future device connections are restricted to this specific device.
 
 ### Multi-factor authentication
 
+<!-- vale Google.We = NO -->
+<!-- vale Google.Will = NO -->
 Starting January 2024, multi-factor authentication (MFA) will be mandatory for all emnify Portal accounts.
 This enforcement allows us to proactively safeguard our IoT ecosystem, follow best practices, and meet regulatory security compliance.
 

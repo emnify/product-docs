@@ -30,4 +30,5 @@ Check out the [developer resources](/rest).
 There are [how-to guides](/how-tos) for configuring your account, managing devices, and more.
 - **Too many acronyms?** 
 Find definitions and examples in the [glossary](/glossary).
-- **Need support?** [We've got you](/support).
+- **Need support?** 
+Learn more about emnify [support levels](/support).

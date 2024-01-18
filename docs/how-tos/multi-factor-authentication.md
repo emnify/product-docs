@@ -7,6 +7,8 @@ slug: /how-tos/multi-factor-authentication
 
 # Set up multi-factor authentication
 
+<!-- vale emnify.WordList = NO -->
+
 Multi-factor authentication (MFA) is a security process that requires you to provide two or more pieces of evidence to verify your identity before accessing your emnify account.
 These pieces of evidence (also known as factors) are typically numeric codes that are either sent to an email address or phone number by the emnify system or provided by a third-party authenticator app.
 
@@ -16,8 +18,12 @@ Even if someone knows your password (the first factor), they would still need ac
 MFA is sometimes called two-factor authentication (2FA) and has historically been at emnify.
 
 :::warning[important update]
+<!-- vale Google.We = NO -->
+<!-- vale Google.Will = NO -->
 MFA will be mandatory for all emnify Portal accounts as of January 2024 to proactively safeguard our IoT ecosystem and meet regulatory security compliance.
 For more information, see the [MFA FAQ in the emnify Knowledge Base](https://support.emnify.com/hc/en-us/articles/11119662291740-MFA-FAQ).
+<!-- vale Google.We = YES -->
+<!-- vale Google.Will = YES -->
 :::
 
 ## Supported methods
@@ -52,6 +58,7 @@ Check your spam folder if you haven't received a code after a few minutes.
 
 3. Go back to the Portal. Enter the code and click **Verify code** to verify your identity.
 
+<!-- vale Google.Will = NO -->
 <details className="custom-details-troubleshooting">
   <summary>Need help verifying your identity?</summary>
     <p>You may have issues verifying your identity once MFA becomes mandatory for your organization.</p>
@@ -62,7 +69,7 @@ Check your spam folder if you haven't received a code after a few minutes.
       <li>Wait at least 20 minutes, and then click <b>Resend</b>. Enter the new verification code once you've received it.</li>
       <li>Still having trouble? Contact the <a href="https://docs.emnify.com/support">emnify support team</a>.</li>
     </ul>
-    <b>This code is not valid anymore. Get a new one via email.</b>
+    <b>This code isn't valid anymore. Get a new one via email.</b>
     <ul>
       <li>Click <b>Resend</b> and enter the new verification code once you've received it.</li>
       <li>Still having trouble? Contact the <a href="https://docs.emnify.com/support">emnify support team</a>.</li>
@@ -79,6 +86,7 @@ Check your spam folder if you haven't received a code after a few minutes.
       <li>If you've waited and the next attempt is blocked, contact the <a href="https://docs.emnify.com/support">emnify support team</a>.</li>
     </ul>
 </details>
+<!-- vale Google.Will = YES -->
 
 Assuming no errors, you'll be redirected to the **Dashboard** with a message that your account's MFA is now successfully enabled. 🎉
 

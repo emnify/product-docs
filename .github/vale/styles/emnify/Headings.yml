@@ -1,0 +1,81 @@
+# emnify.Headings
+# Extends Google.Headings and adds more exceptions
+extends: capitalization
+message: "'%s' should use sentence-style capitalization."
+link: "https://developers.google.com/style/capitalization#capitalization-in-titles-and-headings"
+level: warning
+scope: heading
+match: $sentence
+indicators:
+  - ":"
+exceptions:
+  - 2G
+  - 3G
+  - 4G
+  - 5G
+  - A2P
+  - Amazon Web Services
+  - API
+  - APN
+  - AWS
+  - Azure
+  - BIC
+  - CLI
+  - Cloud Connect
+  - CommonJS
+  - Cosmos
+  - CSV
+  - Data Streamer
+  - DNS
+  - Docker
+  - Emmet
+  - emnify Portal
+  - emnify Product Documentation
+  - ES
+  - eSIM
+  - Factory Test
+  - Factory test mode
+  - FTM
+  - GDPR
+  - Google Cloud
+  - GPS
+  - GraphQL
+  - gRPC
+  - I
+  - IMEI
+  - IMSI
+  - Intra-Cloud Connect
+  - iOS
+  - IoT
+  - IP
+  - Kubernetes
+  - Linux
+  - LPWAN
+  - LTE
+  - M2M
+  - macOS
+  - Marketplace
+  - MDX
+  - MFA
+  - MO
+  - MongoDB
+  - MT
+  - OAuth
+  - P2P
+  - REPL
+  - REST
+  - S3
+  - SDK
+  - SIM
+  - SMPP
+  - SMS
+  - SSO
+  - Studio
+  - TLS
+  - TOTP
+  - Trial plan
+  - TypeScript
+  - URLs
+  - Visual
+  - VS
+  - Windows

@@ -42,7 +42,7 @@ SIMs in FTM are also activated in any of the following scenarios to ensure relia
 
 - If the device's status is altered while the SIM is in **Factory test**.
 - Running a reset connectivity.
-- Cancelling or switching to a different package that doesn't support FTM.
+- Canceling or switching to a different package that doesn't support FTM.
 
 ## Activate FTM in the emnify Portal
 

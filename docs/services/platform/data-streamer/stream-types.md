@@ -19,7 +19,7 @@ These events allow you to track notable system occurrences based on behavior.
 
 Some common use cases for events on emnify include:
 
-- **Triggers for custom business processes** (for example, authentication or custom usage limitations configured on the [emnify Portal](/multicloud-data-streamer/usage#data-streamer-in-the-portal))
+- **Triggers for custom business processes** (for example, authentication or custom usage limitations configured on the [emnify Portal](/multicloud-data-streamer/usage#data-streamer-in-the-emnify-portal))
 - **Monitoring** (for example, SIM or data connection lifecycles)
 - **Input for custom billing systems** (that is, updating billing configuration, processing invoices, etc.)
 

@@ -9,6 +9,8 @@ slug: /sdks/concepts
 
 ## SDK glossary
 
+<!-- vale emnify.Race = NO -->
+<!-- vale emnify.WordList = NO -->
 | Name      | Description |
 | :-------- | :---------- |
 | Device  | Any physical device supplied with a SIM that obtains connectivity. It's important not to mix up the terms 'Device' and 'Endpoint.' A device is a superset of the endpoint and SIM acting as a whole. [Learn more about devices](/quickstart/create-device).  |

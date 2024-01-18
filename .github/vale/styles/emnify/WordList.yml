@@ -45,8 +45,6 @@ swap:
   authN: authentication
   authZ: authorization
   autoupdate: automatically update
-  cellular data: mobile data
-  cellular network: mobile network
   chapter: documents|pages|sections
   check box: checkbox
   CLI: command-line tool
@@ -57,14 +55,12 @@ swap:
   custom rate zones: custom data plans
   data are: data is
   Developers Console: Google API Console|API Console
-  disabled?: turn off|off
   ephemeral IP address: ephemeral external IP address
   evaluation: trial
   evaluation package: trial SIMs
   fewer data: less data
   file name: filename
   firewalls: firewall rules
-  functionality: capability|feature
   Googling: search with Google
   grayed-out: unavailable
   hard-coded?: hardcode|hardcoded
@@ -85,7 +81,6 @@ swap:
   SHA1: SHA-1|HAS-SHA1
   sign into: sign in to
   SLAs: SLOs
-  static IP address: static external IP address
   stylesheet: style sheet
   synch: sync
   tablename: table name

@@ -6,6 +6,7 @@ last_update:
 # Glossary
 
 <!-- markdownlint-disable MD036 -->
+<!-- vale emnify.Headings = NO -->
 
 ## APN
 
@@ -51,7 +52,7 @@ A unique code for ordered SIM cards used to register the SIM cards in the [**SIM
 
 ## Callback URL
 
-URL that will be called by a service to send and receive data related to an event that caused this action.
+URL called by a service to send and receive data related to an event that caused this action.
 
 ## Carrier-agnostic network
 
@@ -189,9 +190,11 @@ _Embedded Universal Integrated Circuit Card_
 The embedded universal integrated circuit card (eUICC) is a component of a [SIM](#sim) card.
 It allows consumers and IoT manufacturers to provision the SIM with a new [mobile network operator (MNO)](https://www.emnify.com/iot-glossary/mno) profile [over-the-air](#ota).
 
+<!-- vale emnify.Contractions = NO -->
 :::tip
 Learn more about the eUICC in the blog post: [What is an eUICC and why does it matter?](https://www.emnify.com/iot-glossary/what-is-an-euicc)
 :::
+<!-- vale emnify.Contractions = YES -->
 
 ## Event log
 
@@ -267,6 +270,7 @@ _International Mobile Equipment Identity_
 
 A unique number used to identify cellular modems.
 
+<!-- vale emnify.Contractions = NO -->
 <details className="custom-details-example">
   <summary>Learn more about how IMEIs are constructed</summary>
   An IMEI has 15 digits (14 digits plus a check digit).
@@ -275,6 +279,7 @@ A unique number used to identify cellular modems.
 
   For more detailed information, see emnify's IoT Glossary article: [What is an IMEI number?](https://www.emnify.com/iot-glossary/imei-number)
 </details>
+<!-- vale emnify.Contractions = YES -->
 
 :::info
 There are also "software versions" of IMEIs, referred to as _IMEISVs_.
@@ -356,7 +361,9 @@ The [organization](#organization) that has permission to manage multiple [worksp
 _Multi-Factor Authentication_
 
 Multi-factor authentication (MFA) is a security process that requires you to provide two or more pieces of evidence (also known as factors) to verify your identity before accessing a website or application.
+<!-- vale emnify.WordList = NO -->
 MFA is sometimes called two-factor authentication (2FA) and has historically been at emnify.
+<!-- vale emnify.WordList = YES -->
 
 :::tip
 To learn more about MFA and how it's enforced at emnify, see the [Set up multi-factor authentication](/how-tos/multi-factor-authentication) guide.

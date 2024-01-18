@@ -9,6 +9,7 @@ slug: /apn-configuration/industrial-routers
 # Configure the APN on industrial routers
 
 <!-- markdownlint-disable MD040 -->
+<!-- vale emnify.Headings = NO -->
 
 ## Teltonika Networks
 
