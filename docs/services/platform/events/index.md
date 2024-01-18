@@ -2,6 +2,7 @@
 description: Learn the basics and structure of emnify system events
 last_update: 
   date: 01-03-2023
+pagination_next: services/platform/events/event-types
 slug: /system-events
 ---
 

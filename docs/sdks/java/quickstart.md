@@ -3,6 +3,7 @@ description: Step-by-step guide for installing and using the emnify Java SDK
 last_update: 
   date: 08-20-2021
 pagination_label: Getting started with the Java SDK
+pagination_next: sdks/java/examples
 sidebar_label: Getting started
 slug: /sdks/java/quickstart
 ---

@@ -1,7 +1,7 @@
 ---
 description: Manage data streams with the emnify Portal or REST API
 last_update:
-  date: 12-31-2022
+  date: 01-17-2024
 slug: /multicloud-data-streamer/usage
 ---
 
@@ -84,6 +84,7 @@ With the **Details** button on the Data Stream tiles, you can inspect the config
 <img
   src={require('../assets/portal-integrations-data-streams-details-events-filter.png').default}
   alt=""
+  style={{ width: 550 }}
 />
 
 ### Delete data streams

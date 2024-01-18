@@ -3,6 +3,7 @@ description: Step-by-step guide for installing and using the emnify Python SDK
 last_update: 
   date: 09-07-2022
 pagination_label: Getting started with the Python SDK
+pagination_next: sdks/python/examples
 sidebar_label: Getting started
 slug: /sdks/python/quickstart
 ---

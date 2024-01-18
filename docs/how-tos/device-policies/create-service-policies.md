@@ -2,6 +2,7 @@
 description: Create a new service policy on the emnify Portal
 last_update:
   date: 01-09-2024
+pagination_next: how-tos/device-policies/create-coverage-policies
 slug: /how-tos/create-service-policies
 ---
 
