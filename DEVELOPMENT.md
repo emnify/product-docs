@@ -181,7 +181,7 @@ All [CI pipelines](https://github.com/emnify/product-docs/blob/main/.github/work
 
 ### Preview content
 
-Any changes to files that affect the site trigger a [preview workflow](./.github/workflows/preview.yml).
+Any changes to files that affect the site triggers a [preview workflow](./.github/workflows/preview.yml).
 When this workflow runs successfully, you'll see a comment on your pull request with a link to the deployed preview.
 Previews are automatically removed when the pull request is closed.
 

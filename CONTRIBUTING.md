@@ -23,10 +23,8 @@ When in doubt, refer to this style guide as a resource.
 - Names should be written in [kebab case](https://www.freecodecamp.org/news/snake-case-vs-camel-case-vs-pascal-case-vs-kebab-case-whats-the-difference/#kebab-case) format with all lowercase characters.
 - Use the `.mdx` extension whenever you use JSX or other MDX features (for example, `import` or `export`) inside a Markdown file.
 
-<!-- vale Google.Will = NO -->
 > ![IMPORTANT]
-> According to [Docusaurus](https://docusaurus.io/blog/preparing-your-site-for-docusaurus-v3), future versions will parse `.md` files as standard [CommonMark](https://commonmark.org/), which doesn't support these features.
-<!-- vale Google.Will = YES -->
+> According to [Docusaurus](https://docusaurus.io/blog/preparing-your-site-for-docusaurus-v3), future versions parse `.md` files as standard [CommonMark](https://commonmark.org/), which doesn't support these features.
 
 ## Components
 
