@@ -7,22 +7,20 @@ slug: /how-tos/multi-factor-authentication
 
 # Set up multi-factor authentication
 
-<!-- vale emnify.WordList = NO -->
-
 Multi-factor authentication (MFA) is a security process that requires you to provide two or more pieces of evidence to verify your identity before accessing your emnify account.
 These pieces of evidence (also known as factors) are typically numeric codes that are either sent to an email address or phone number by the emnify system or provided by a third-party authenticator app.
 
 MFA enhances security by adding an extra layer of protection that makes it more difficult for unauthorized individuals to access your account.
 Even if someone knows your password (the first factor), they would still need access to your second factor (for example, your phone or email account) to successfully log in.
 
+<!-- vale emnify.WordList = NO -->
 MFA is sometimes called two-factor authentication (2FA) and has historically been at emnify.
+<!-- vale emnify.WordList = YES -->
 
 :::warning[important update]
-<!-- vale Google.We = NO -->
 <!-- vale Google.Will = NO -->
-MFA will be mandatory for all emnify Portal accounts as of January 2024 to proactively safeguard our IoT ecosystem and meet regulatory security compliance.
+MFA will be mandatory for all emnify Portal accounts as of January 2024 to proactively safeguard emnify's IoT ecosystem and meet regulatory security compliance.
 For more information, see the [MFA FAQ in the emnify Knowledge Base](https://support.emnify.com/hc/en-us/articles/11119662291740-MFA-FAQ).
-<!-- vale Google.We = YES -->
 <!-- vale Google.Will = YES -->
 :::
 
@@ -106,6 +104,7 @@ After you access your account, you can either [configure TOTP MFA in the Portal]
 
 ## Configure TOTP MFA in the emnify Portal
 
+<!-- vale emnify.WordList = NO -->
 1. Log in to your [emnify account](https://portal.emnify.com/sign).
 1. Navigate to [**User Settings**](https://portal.emnify.com/user-settings) by clicking on your avatar and selecting **User Settings** from the dropdown menu.
 1. Find the [**Two-Factor Authentication**](https://portal.emnify.com/user-settings#two-factor-authentication) section and click **Enable**.
@@ -114,6 +113,7 @@ After you access your account, you can either [configure TOTP MFA in the Portal]
 Alternatively, click **here** in the Portal text to reveal a secret key and add it to your app.
 After you've scanned the QR code or entered the key, a 6-digit token appears in the app. 
 1. Finally, return to the Portal and enter the token.
+<!-- vale emnify.WordList = YES -->
 
 Assuming no errors, MFA is now enabled for your account. 🎉
 
@@ -133,9 +133,11 @@ Popular third-party authenticator apps that you can use with your emnify account
 Reaching for your device and entering a one-time password every time you need to log in to your account can be a pain, especially if you usually sign in from the same device.
 To bypass this process, select **Trust this device** before entering the MFA code from your authentication app.
 
+<!-- vale emnify.WordList = NO -->
 Then, [**Trusted Devices**](https://portal.emnify.com/user-settings#trusted-devices) should be visible in the **Two-Factor Authentication** section of **User Settings**.
 These devices remain trusted for 30 days.
 After that, you'll need to verify your identity again.
+<!-- vale emnify.WordList = YES -->
 
 To remove a device from **Trusted Devices**, click **Remove**.
 
@@ -145,7 +147,9 @@ Your changes are saved automatically.
 
 ## Disable MFA
 
+<!-- vale emnify.WordList = NO -->
 To turn off your existing MFA setup, go to **User Settings**, find the [**Two-Factor Authentication**](https://portal.emnify.com/user-settings#two-factor-authentication) section, and click **Disable**.
+<!-- vale emnify.WordList = YES -->
 
 :::warning
 You won't be able to disable MFA once it's enforced for your organization.

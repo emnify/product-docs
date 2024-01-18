@@ -26,14 +26,12 @@ The following is a list of available event types, including their corresponding 
 
 Data session disconnected while applying the updated actions on the connectivity ([PDP sessions](#data-connection-lifecycle)) or while applying the [updated quota information](#data-quota-management).
 
-<!-- vale Google.We = NO -->
 :::info
 Other generic event triggers are possible.
 
-We're in the process of adding more specific event types that will replace these.
-We'll update this list as new event types are created.
+More specific event types that replace these are continually added.
+This list is updated as new event types are created.
 :::
-<!-- vale Google.We = YES -->
 
 <details className="custom-details-example">
   <summary>Example JSON response: disconnecting data access for a device to apply throttling action</summary>

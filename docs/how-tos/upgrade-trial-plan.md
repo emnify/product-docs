@@ -12,9 +12,9 @@ After this credit is exhausted or the 60-day trial expires, you can only use emn
 
 If you are on a Trial plan with emnify and want to upgrade your account, follow these steps:
 
+<!-- vale Google.We = NO -->
 1. [Log in to your emnify account](https://portal.emnify.com/sign).
 1. Click **Choose a plan** on the sidebar or navigate directly to your organization's [**Subscription**](https://portal.emnify.com/organisation-settings/subscription) page.
-<!-- vale Google.We = NO -->
 1. In the **Our packages** section, select the package that best fits your organization's needs, then click either **Upgrade** or **Contact Sales**.
 <!-- vale Google.We = YES -->
 

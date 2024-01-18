@@ -10,7 +10,7 @@
 
 <!-- Write a brief description of the changes introduced by this PR -->
 
-### Additional Context
+### Additional context
 
 <!--
     Anything else that will help us better understand, for example:
