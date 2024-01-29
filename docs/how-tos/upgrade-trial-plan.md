@@ -1,21 +1,68 @@
 ---
 description: Choose a package to upgrade your Trial plan and continue using emnify services.
 last_update: 
-  date: 01-15-2024
+  date: 01-29-2024
 slug: /how-tos/upgrade-trial-plan
 ---
 
 # Upgrade your Trial plan
 
 Once you've ordered your [free Trial SIMs](/quickstart#order-free-trial-sims), your account starts with an issued prepaid credit for testing emnify's services.
-After this credit is exhausted or the 60-day trial expires, you can only use emnify services if you upgrade your package.
+After this credit is exhausted or the 60-day trial expires, you can only use emnify services if you upgrade your data plan and package.
 
-If you are on a Trial plan with emnify and want to upgrade your account, follow these steps:
+## Upgrade data plan
+
+:::note
+The following steps assume that your Trial plan is expired.
+:::
+
+1. [Log in to your emnify account](https://portal.emnify.com/sign).
+2. Click **Choose a plan** on the sidebar or navigate directly to your organization's [**Subscription**](https://portal.emnify.com/organisation-settings/subscription) page.
+
+<img
+  src={require('./assets/portal-sidebar-trial-plan-choose-a-plan.png').default}
+  alt=""
+  style={{ height: 450 }}
+/>
+
+3. Click **Upgrade data plan** to begin the upgrade flow.
+
+<img
+  src={require('./assets/portal-workspace-settings-subscription-trial-expired-upgrade-data-plan.png').default}
+  alt=""
+/>
+
+4. In **Pricing**, select the configuration that suits your needs, then click **Get started**.
+
+<img
+  src={require('./assets/portal-workspace-settings-subscription-upgrade-data-plan-pricing-get-started.png').default}
+  alt=""
+/>
+
+5. In **Confirm coverage profile**, choose your desired coverage profiles, then click **Confirm & proceed**.
+
+<img
+  src={require('./assets/portal-workspace-settings-subscription-upgrade-data-plan-confirm-coverage-profile-confirm.png').default}
+  alt=""
+/>
+
+6. Enter your organization details, contact information, and payment method.
+7. Finally, verify your **Plan configuration** and click **Upgrade data plan**.
+
+<img
+  src={require('./assets/portal-workspace-settings-subscription-data-plan-upgrade-plan-configuration.png').default}
+  alt=""
+/>
+
+:::info
+Once your Trial plan is upgraded, your emnify subscription begins, and you'll be automatically billed for your active SIM cards every month.
+:::
+
+## Choose a different package
+
+You can choose a different package at any time.
+To do this, follow these steps:
 
 1. [Log in to your emnify account](https://portal.emnify.com/sign).
 1. Click **Choose a plan** on the sidebar or navigate directly to your organization's [**Subscription**](https://portal.emnify.com/organisation-settings/subscription) page.
 1. In the **Our packages** section, select the package that best fits your organization's needs, then click either **Upgrade** or **Contact Sales**.
-
-:::info
-Once your Trial plan is upgraded to a paid package, your emnify subscription begins, and you'll be automatically billed for your active SIM cards every month.
-:::
