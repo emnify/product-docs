@@ -1,7 +1,7 @@
 ---
 description: How to update your company details and payment method in the emnify Portal
 last_update: 
-  date: 01-16-2024
+  date: 01-29-2024
 slug: /how-tos/update-company-details
 ---
 
