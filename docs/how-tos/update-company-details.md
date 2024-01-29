@@ -40,7 +40,24 @@ In the following example, the company name `Example Organization` is changed to 
 You can also update your payment method in the Workspace settings.
 
 1. Log in to the emnify Portal.
-1. Go to **Workspace settings** (building icon) in the top-level navigation and select [**Billing**](https://portal.emnify.com/organisation-settings/billing).
-1. Your payment method is listed in the **Payment information** section under **Pay with**.
+2. Go to **Workspace settings** (building icon) in the top-level navigation and select [**Billing**](https://portal.emnify.com/organisation-settings/billing).
+
+<img
+  src={require('./assets/portal-dashboard-workspace-settings-billing.png').default}
+  alt=""
+/>
+
+3. Your payment method is listed in the **Payment information** section under **Pay with**.
 If you already have a payment method that you want to update, click **Change**.
+
+<img
+  src={require('./assets/portal-workspace-settings-billing-payment-information-pay-with-change.png').default}
+  alt=""
+/>
+
 Otherwise, click **Add payment method**.
+
+<img
+  src={require('./assets/portal-workspace-settings-billing-payment-information-pay-with-add-payment-method.png').default}
+  alt=""
+/>
