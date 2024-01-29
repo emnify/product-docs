@@ -46,13 +46,12 @@ Once created, you'll apply it to initiate the SDK.
 ### Use the SDK
 
 ```python
-TOKEN = 'APP_TOKEN'
-
+import os
 # Import the package
 from emnify import EMnify
 
 # Initiate the SDK instance using your application token
-emnify = EMnify(TOKEN)
+emnify = EMnify(os.environ["EMNIFY_TOKEN"])
 
 # Execute a command against the desired API
 devices = emnify.devices.get_devices_list()
@@ -61,7 +60,11 @@ devices = emnify.devices.get_devices_list()
 print([device for device in devices])
 ```
 
-Replace _`APP_TOKEN`_ with your application token.
+Before executing the code, define an environment variable containing your application token:
+
+```shell
+export EMNIFY_TOKEN=ey........
+```
 
 ## Explore more
 
