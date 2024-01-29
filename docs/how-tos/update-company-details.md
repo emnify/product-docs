@@ -12,9 +12,28 @@ slug: /how-tos/update-company-details
 If you need to update or change your company's name or any other details, follow these steps.
 
 1. [Log in to the emnify Portal](https://portal.emnify.com/sign/).
-1. Go to **Workspace settings** (building icon) in the top-level navigation and select **Organization Data**.
-1. Under **Organization details**, click **Edit**.
-1. Enter the required details, then click **Save**.
+2. Go to **Workspace settings** (building icon) in the top-level navigation and select **Organization Data**.
+
+<img
+  src={require('./assets/portal-dashboard-workspace-settings-organization-data.png').default}
+  alt=""
+/>
+
+3. Under **Organization details**, click **Edit**.
+
+<img
+  src={require('./assets/portal-workspace-settings-organization-data-organization-details-edit.png').default}
+  alt=""
+/>
+
+4. Enter the required details, then click **Save**.
+
+In the following example, the company name `Example Organization` is changed to `New Example Organization Name`.
+
+<img
+  src={require('./assets/portal-workspace-settings-organization-data-edit-organization-details-save.png').default}
+  alt=""
+/>
 
 ## Payment method
 
