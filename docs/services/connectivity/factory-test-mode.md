@@ -20,7 +20,8 @@ If you're on a different package but interested in FTM, contact [emnify support]
 
 A popular use case for FTM is automating deployments.
 You can store devices with the assigned SIMs in FTM free of charge.
-Then, the SIM is automatically activated once your customers use the quotas. There's no additional configuration required.
+Then, the SIM is automatically activated once your customers use the quotas.
+There's no additional configuration required.
 
 ## Available networks
 
@@ -39,8 +40,6 @@ The tenth SMS executes the SIM activation.
 
 SIMs in FTM are also activated in any of the following scenarios to ensure reliability and coverage:
 
-- SIM cards that never reached any threshold but are in FTM longer than the designated test period.
-The default test period for organizations created after July 23, 2023, is 180 days.
 - If the device's status is altered while the SIM is in **Factory test**.
 - Running a reset connectivity.
 - Cancelling or switching to a different package that doesn't support FTM.
