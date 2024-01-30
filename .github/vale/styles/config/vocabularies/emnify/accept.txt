@@ -55,7 +55,6 @@ MNO[s]
 MVNO[s]
 Nano
 OAuth
-OpenVPN
 Plus Package
 Pro Package
 Quad-band

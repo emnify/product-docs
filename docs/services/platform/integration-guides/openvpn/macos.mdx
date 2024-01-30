@@ -1,7 +1,7 @@
 ---
 description: Step-by-step guide for integrating OpenVPN on macOS to use on devices with emnify eSIMs.
 last_update: 
-  date: 11-24-2022
+  date: 01-29-2024
 pagination_label: OpenVPN on macOS
 sidebar_label: macOS
 slug: /integration-guides/openvpn-macos
@@ -27,10 +27,28 @@ The default emnify APN also supports VPN flows.
 ### Download the VPN configuration file
 
 1. [Log in to your emnify account](https://portal.emnify.com/sign).
-1. Navigate to **Integrations** and find the [**Secure Connection**](https://portal.emnify.com/integrations#secure-connection) section.
-1. Under **OpenVPN**, select **Show instructions**.
-1. Make sure you're on the **macOS** tab, then click **Download client.ovpn**.
+2. Navigate to **Integrations** and find the [**Secure Connection**](https://portal.emnify.com/integrations#secure-connection) section.
+3. Under **OpenVPN**, select **Show instructions**.
+
+<img
+  src={require('./assets/portal-integrations-secure-connection-openvpn-show-instructions.png').default}
+  alt=""
+/>
+
+4. Make sure you're on the **macOS** tab, then click **Download client.ovpn**.
+
+<img
+  src={require('./assets/portal-integrations-secure-connections-openvpn-macos-download.png').default}
+  alt=""
+/>
+
 Select the desired region or choose **Download all regions**.
+
+<img
+  src={require('./assets/portal-integrations-secure-connections-openvpn-macos-download-dropdown.png').default}
+  alt=""
+  style={{ height: 400 }}
+/>
 
 Once downloaded, store that file on your server in the folder `/etc/openvpn`.
 
