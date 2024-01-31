@@ -1,7 +1,7 @@
 ---
 description: Step-by-step how to guides that teach you how to use the emnify platform
 last_update: 
-  date: 01-09-2024
+  date: 01-31-2024
 pagination_next: how-tos/add-ip-address-spaces
 slug: /how-tos
 ---
@@ -22,6 +22,7 @@ slug: /how-tos
 - [How to access any IoT device or web server behind a Teltonika Networks router](https://www.emnify.com/developer-blog/how-to-access-iot-device-or-web-server-behind-a-teltonika-router)
 - [How to fit a Raspberry Pi with mobile connectivity](https://www.emnify.com/developer-blog/how-to-fit-a-raspberry-pi-with-mobile-connectivity)
 - [Add IP address spaces](/how-tos/add-ip-address-spaces)
+- [Block operators on specific devices](/how-tos/block-operators)
 
 ## Device policies
 

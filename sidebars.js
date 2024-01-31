@@ -301,6 +301,7 @@ const sidebars = {
           id: "how-tos/index",
         },
         "how-tos/add-ip-address-spaces",
+        "how-tos/block-operators",
         {
           type: "category",
           label: "Device policies",
