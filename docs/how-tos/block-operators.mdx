@@ -14,7 +14,7 @@ This view helps temporarily or permanently steer SIMs away from 'low signal qual
 The manual carrier switching can be done in two ways:
 
 - Select the preferred operator in the device's menu.
-- Block other operators using the emnify Portal.
+- Block other operators using the emnify Portal or emnify REST API.
 
 :::info
 Adding a network to the **Blocked Operators** list doesn't prevent your devices from trying to connect to those networks.
@@ -131,3 +131,11 @@ The following example searches for the term **France** and blocks the operator *
   alt=""
   style={{ width: 450 }}
 />
+
+## Block operators with the emnify REST API
+
+You can also configure blocked operators using the following emnify REST API calls:
+
+- [List Operator Blocklist for an Endpoint](https://cdn.emnify.net/api/doc/swagger.html#/Endpoint/EndpointOperatorBlacklistByEndpointIdGet)
+- [Add an Operator to the Blocklist](https://cdn.emnify.net/api/doc/swagger.html#/Endpoint/EndpointOperatorBlacklistByEpIdAndOperatorIdPut)
+- [Remove an Operator from the Blocklist](https://cdn.emnify.net/api/doc/swagger.html#/Endpoint/EndpointOperatorBlacklistByEpIdAndOperatorIdDelete)
