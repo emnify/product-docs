@@ -32,6 +32,7 @@ slug: /how-tos
 - [Update existing device policies](/how-tos/update-existing-device-policies)
 - [Change the assigned data allowance](/how-tos/data-allowances)
 - [Configure data and SMS limits](/how-tos/configure-data-sms-limits)
+- [Manage data or SMS quotas](/how-tos/manage-data-sms-quotas)
 
 ## Organization management
 
