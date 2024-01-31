@@ -27,28 +27,107 @@ You should only use this feature to solve technical issues associated with speci
 ### Block an operator
 
 1. [Log in to your emnify account](https://portal.emnify.com/sign).
-1. Navigate to the **Connected Devices** table.
-1. Find the device where you wish to block an operator and click **Details**.
-1. Locate the **Blocked Operators** section and click **Edit**.
-1. Select the operator you want to block.
+2. Navigate to your [**Connected Devices**](https://portal.emnify.com/connected-devices).
+3. Find the device where you wish to block an operator and click **Details**.
 
-Changes save automatically.
+<img
+  src={require('./assets/portal-connected-devices-details.png').default}
+  alt=""
+/>
+
+4. Locate the **Blocked Operators** section and click **Edit**.
+
+<img
+  src={require('./assets/portal-device-details-general-status-blocked-operators-empty-edit.png').default}
+  alt=""
+  style={{ height: 500 }}
+/>
+
+5. Select the operator you want to block.
+The following example blocks two operators, **France - Orange** and **France - SFR**.
+
+<img
+  src={require('./assets/portal-device-details-general-blocked-operators-networks-blocklist-dropdown.png').default}
+  alt=""
+  style={{ width: 350 }}
+/>
+
+Changes save automatically and the blocked operators are shown on the **Device Details**.
+
+<img
+  src={require('./assets/portal-device-details-general-status-blocked-operators-two.png').default}
+  alt=""
+  style={{ width: 350 }}
+/>
 
 ### Remove an operator from the blocklist
 
-1. [Log in to your emnify account](https://portal.emnify.com/sign).
-1. Navigate to the **Connected Devices** table.
-1. Find the device with the blocked operator and click **Details**.
-1. Locate the **Blocked Operators** section and click **Edit**.
-1. Click the **X** next to the blocked operator you wish to remove.
+1. Navigate to your [**Connected Devices**](https://portal.emnify.com/connected-devices).
+2. Find the device with the blocked operator and click **Details**.
+
+<img
+  src={require('./assets/portal-connected-devices-details.png').default}
+  alt=""
+/>
+
+3. Locate the **Blocked Operators** section and click **Edit**.
+
+<img
+  src={require('./assets/portal-device-details-general-status-blocked-operators-edit.png').default}
+  alt=""
+  style={{ height: 500 }}
+/>
+
+4. Click the **X** next to the blocked operator you wish to remove.
+The following example removes the **France - Orange** operator from the blocklist.
+
+<img
+  src={require('./assets/portal-device-details-general-status-blocked-operators-networks-blocklist-remove.png').default}
+  alt=""
+  style={{ width: 350 }}
+/>
+
+Changes save automatically and the updated blocked operators are shown on the **Device Details**.
+
+<img
+  src={require('./assets/portal-device-details-general-status-blocked-operators.png').default}
+  alt=""
+  style={{ width: 350 }}
+/>
 
 ## Multiple devices in bulk
 
 It's also possible to select several devices on the Portal and update the blocked operators list for all of them simultaneously.
 
-1. [Log in to your emnify account](https://portal.emnify.com/sign).
-1. Navigate to the **Connected Devices** table.
-1. Search for the devices where you wish to block an operator and select the checkbox next to every relevant device.
-1. A new menu at the top of the page provides bulk operations.
+1. Navigate to your [**Connected Devices**](https://portal.emnify.com/connected-devices).
+2. Search for the devices where you wish to block an operator and select the checkbox next to every relevant device.
+
+<img
+  src={require('./assets/portal-connected-devices-select-multiple-devices.png').default}
+  alt=""
+/>
+
+3. A new menu at the top of the page provides bulk operations.
 Select **More** and then **Block Operators**.
-1. Select the operator you want to block for these devices.
+
+<img
+  src={require('./assets/portal-connected-devices-bulk-actions-more-block-operators.png').default}
+  alt=""
+/>
+
+4. Select the operator you want to block for these devices from the **Networks blocklist** dropdown menu.
+The following example searches for the term **France** and blocks the operator **France - Orange**.
+
+<img
+  src={require('./assets/portal-connected-devices-bulk-actions-networks-blocklist-modal-dropdown.png').default}
+  alt=""
+  style={{ width: 450 }}
+/>
+
+5. Review and click **Save**.
+
+<img
+  src={require('./assets/portal-connected-devices-bulk-actions-networks-blocklist-modal-save.png').default}
+  alt=""
+  style={{ width: 450 }}
+/>
