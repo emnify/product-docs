@@ -1,7 +1,7 @@
 ---
 description: Step-by-step how to guides that teach you how to use the emnify platform
 last_update: 
-  date: 01-09-2023
+  date: 01-09-2024
 pagination_next: how-tos/add-ip-address-spaces
 slug: /how-tos
 ---
