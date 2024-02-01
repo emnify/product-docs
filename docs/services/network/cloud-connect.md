@@ -13,6 +13,10 @@ With emnify Cloud Connect your devices and application servers can communicate t
 
 By eliminating the use of the public internet, Cloud Connect helps you better protect your application infrastructure against attacks like DDoS, port scanning while giving you the possibility to remotely access the devices.
 
+:::info
+For more information and troubleshooting tips, see [Cloud Connect (IPsec and Transit Gateway) FAQ and Guides](https://support.emnify.com/hc/en-us/articles/360019302919-Cloud-Connect-IPSec-and-Transit-Gateway-FAQ-and-Guides) in the emnify Knowledge Base.
+:::
+
 ## AWS Intra-Cloud Connect
 
 emnify’s communication platform is deployed on AWS, which simplifies integrations for customers using AWS as an infrastructure.
@@ -28,6 +32,13 @@ For step-by-step instructions, see the [emnify Cloud Connect integration into A
 If your application isn't on AWS but on any other cloud services or on-premise, you can utilize Cloud Connect for establishing an IPsec VPN connection.
 
 With emnify you can set up an IPsec tunnel to securely transfer your data into your application server.
+With IPsec, all traffic to and from the devices to and from the application server goes through the tunnel, to be encrypted and secured without using the public Internet.
+It enables the devices to directly access the application within the same network.
+By default, emnify's Cloud Connect enables you to access all your devices, but you can create rules to limit access to specific IP addresses only.
 
 For step-by-step instructions, see [How to setup an IPsec using emnify Cloud Connect](https://www.emnify.com/en/developer-hub/how-to-setup-an-ipsec-using-emnify-cloudconnect).
 You can also find guides to set up IPsec for Azure and Google Cloud in the [Integration guides](/integration-guides).
+
+:::tip
+For a more thorough overview, see [How IPsec works](https://support.emnify.com/hc/en-us/articles/360019302919-Cloud-Connect-IPSec-and-Transit-Gateway-FAQ-and-Guides#h_01FY3WWCA1V9J4JBBMGZ9EJT70) in the emnify Knowledge Base.
+:::
