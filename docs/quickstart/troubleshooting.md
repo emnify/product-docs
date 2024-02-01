@@ -27,6 +27,11 @@ The event details also show the data transmitted and the [connectivity status](/
 
 There can be many update locations before or in between the data session.
 
+:::tip
+If you're deploying many devices (for example, 1,000 or more) on the emnify network, you must ensure that these devices follow best practices.
+For more information, see [Guidelines for devices deployed on the emnify network](https://support.emnify.com/hc/en-us/articles/4402697173010-Good-practices-and-guidelines-for-devices-deployed-on-the-EMnify-network) on the emnify Knowledge Base.
+:::
+
 ## The device is offline
 
 - Click **Details** and ensure that the device is enabled
