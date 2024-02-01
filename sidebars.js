@@ -301,7 +301,7 @@ const sidebars = {
           id: "how-tos/index",
         },
         "how-tos/add-ip-address-spaces",
-        "how-tos/configure-dns-settings",
+        "how-tos/block-operators",
         {
           type: "category",
           label: "Device policies",
@@ -316,6 +316,7 @@ const sidebars = {
             "how-tos/device-policies/update-existing-policies",
             "how-tos/device-policies/data-allowances",
             "how-tos/device-policies/configure-data-sms-limits",
+            "how-tos/device-policies/configure-dns-settings",
           ],
         },
         "how-tos/multi-factor-authentication",
