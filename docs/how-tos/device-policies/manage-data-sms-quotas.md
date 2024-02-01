@@ -15,7 +15,7 @@ Quota management is available through the [**Service Policies**](https://portal.
 1. [Assign your devices to the service policy](/how-tos/assign-devices-to-policies).
 
 :::tip
-To learn more about the core functionality and limitations of quotas, see [Quota management](/services/quota-management).
+See [Quota management](/services/quota-management) to learn more about quota limits and enforcement.
 :::
 
 ## Turn on data or SMS quotas
@@ -29,14 +29,14 @@ To learn more about the core functionality and limitations of quotas, see [Quota
 
 ## Set a quota for your devices
 
-After quota management is turned on in the service policy, you must assign a quota to each device that uses this service policy.
+After you turn on quota management in the service policy, you must assign a quota to each device that uses this service policy.
 Otherwise, these devices are blocked from creating PDP activation sessions because there's no defined quota.
 
 1. Navigate to your [**Connected Devices**](https://portal.emnify.com/connected-devices).
 1. Click **+ Add Filter**, then **Service Policy**.
 1. Select the service policy where you turned on quota management, then click **Apply**.
 1. Choose a device you want to set a quota on and click **Details**.
-1. The **Quota** section should be visible under **Usage** with a warning that a quota is enabled in the service policy, but not configured for this device.
+1. The **Quota** section should be visible under **Usage**, warning that a quota is enabled in the service policy but not configured for this device.
 Click **Configure quota**.
 1. Fill in your desired quota settings, then click **Add**.
 The following example shows the default configuration for an activated **Data Quota** and a disabled **SMS Quota**.

@@ -12,8 +12,8 @@ Data quotas offer the possibility to limit your devices individually and define 
 
 This function enables the configuration of the device behavior when the quota is reached (blocking or throttling to configurable speeds), the refill behavior, the automatic sequence, and the alerting options via emnify's event stream when the configured alarm threshold is reached.
 
-The quota limit can be applied to SMS and data services and is defined per a configurable time range (for example, 50 MB per month, or 10 SMS per day).
-The platform sends a warning threshold event when the quota limit is about to be reached for a specific device, as well as send an event when the quota limit is reached.
+The quota limit can be applied to SMS and data services and is defined per a configurable time range (for example, 50 MB per month or 10 SMS per day).
+The platform sends a warning threshold event when the quota limit is about to be reached for a specific device and sends an event when the quota limit is reached.
 
 ## Manage quotas in the emnify Portal
 
@@ -35,9 +35,9 @@ When quota limits are reached, the system can execute several actions.
 |--------------|--------------|
 | Block        | Blocks service availability until the next time range starts. |
 | Throttle     | Throttles service up to a defined peak. |
-| Auto-refill  | Refills the quota with the last added value on a daily basis. |
+| Auto-refill  | Refills the quota with the last added value daily. |
 | Expiry date  | Sets an expiration date for a quota. Service is denied once the date is reached. |
 
 :::tip
-You can integrate the emnify APIs with third party software, such as Zapier or Automate.io to receive real-time notifications from the Portal.
+You can integrate the emnify APIs with third-party software, such as Zapier or Automate.io, to receive real-time notifications from the Portal.
 :::
