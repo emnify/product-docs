@@ -21,11 +21,42 @@ See [Quota management](/services/quota-management) to learn more about quota lim
 ## Turn on data or SMS quotas
 
 1. [Log in to your emnify account](https://portal.emnify.com/sign).
-1. Navigate to the [**Service Policies**](https://portal.emnify.com/device-policies#service-policies) section of **Device Policies**.
-1. Find the service policy where you want to turn on quota management and click **Details**.
-1. Select the **More options** tab to find the **Quota management** section.
-1. Click the **Data Quota** or **SMS Quota** toggle to the on position.
-1. Read the prompt about setting up a specific contingent per device, then click **Confirm**.
+2. Navigate to the [**Service Policies**](https://portal.emnify.com/device-policies#service-policies) section of **Device Policies**.
+3. Find the service policy where you want to turn on quota management and click **Details**.
+
+<img
+  src={require('./assets/portal-device-policies-service-policies-details.png').default}
+  alt=""
+/>
+
+4. Select the **More options** tab to find the **Quota management** section.
+
+<img
+  src={require('./assets/portal-device-policies-service-policies-details-more-options-quota-management.png').default}
+  alt=""
+/>
+
+5. Click the **Data Quota** or **SMS Quota** toggle to the on position.
+
+<img
+  src={require('./assets/portal-device-policies-service-policies-details-more-options-quota-management-data-quota-toggle-off.png').default}
+  alt=""
+  style={{ width: 450 }}
+/>
+
+6. Read the prompt about setting up a specific contingent per device, then click **Confirm**.
+
+<img
+  src={require('./assets/portal-device-policies-service-policies-details-more-options-quota-management-enable-modal-confirm.png').default}
+  alt="Modal that appears after you click a quota toggle. It reads, 'Enabling quota management will block all devices of this service policy from SMS and data usage until you set up a specific contingent per device in the device details.'"
+  style={{ width: 450 }}
+/>
+
+<img
+  src={require('./assets/portal-device-policies-service-policies-details-more-options-quota-management-data-quota.png').default}
+  alt="Quota management section with the Data Quota toggle turned on. Under the toggle, the text reads, 'Make sure to set a quota for all devices of this service policy.'"
+  style={{ width: 450 }}
+/>
 
 ## Set a quota for your devices
 
@@ -33,23 +64,98 @@ After you turn on quota management in the service policy, you must assign a quot
 Otherwise, these devices are blocked from creating PDP activation sessions because there's no defined quota.
 
 1. Navigate to your [**Connected Devices**](https://portal.emnify.com/connected-devices).
-1. Click **+ Add Filter**, then **Service Policy**.
-1. Select the service policy where you turned on quota management, then click **Apply**.
-1. Choose a device you want to set a quota on and click **Details**.
-1. The **Quota** section should be visible under **Usage**, warning that a quota is enabled in the service policy but not configured for this device.
+2. Click **+ Add Filter**, then **Service Policy**.
+
+<img
+  src={require('./assets/portal-connected-devices-add-filter-service-policy.png').default}
+  alt=""
+  style={{ width: 600 }}
+/>
+
+3. Select the service policy where you turned on quota management, then click **Apply**.
+
+<img
+  src={require('./assets/portal-connected-devices-add-filter-service-policy-apply.png').default}
+  alt=""
+  style={{ width: 300 }}
+/>
+
+4. Choose a device you want to set a quota on and click **Details**.
+
+<img
+  src={require('./assets/portal-connected-devices-filtered-details.png').default}
+  alt=""
+/>
+
+5. The **Quota** section should be visible under **Usage**, warning that a quota is enabled in the service policy but not configured for this device.
 Click **Configure quota**.
-1. Fill in your desired quota settings, then click **Add**.
+
+<img
+  src={require('./assets/portal-device-details-general-usage-quota-configure-quota.png').default}
+  alt=""
+/>
+
+6. Fill in your desired quota settings, then click **Add**.
 The following example shows the default configuration for an activated **Data Quota** and a disabled **SMS Quota**.
+
+<img
+  src={require('./assets/portal-device-details-quota-quota-data-quota-add.png').default}
+  alt=""
+/>
 
 Now, you can view your quota information in two places on **Device Details**:
 
 - **General** tab&nbsp;<span aria-label="and then">></span> **Usage**&nbsp;<span aria-label="and then">></span> **Quota**
+
+<img
+  src={require('./assets/portal-device-details-general-usage-quota.png').default}
+  alt=""
+  style={{ width: 350 }}
+/>
+
 - **Quota** tab&nbsp;<span aria-label="and then">></span> **Quota**
+
+<img
+  src={require('./assets/portal-device-details-quota-quota-data-quota-activated.png').default}
+  alt=""
+  style={{ width: 350 }}
+/>
 
 ## Turn off data or SMS quotas
 
 1. Navigate to the [**Service Policies**](https://portal.emnify.com/device-policies#service-policies) section of **Device Policies**.
-1. Find the service policy where you want to turn on quota management and click **Details**.
-1. Select the **More options** tab to find the **Quota management** section.
-1. Click the **Data Quota** or **SMS Quota** toggle to the off position.
-1. Read the prompt about deleting the quota for your devices, then click **Confirm**.
+2. Find the service policy where you want to turn on quota management and click **Details**.
+
+<img
+  src={require('./assets/portal-device-policies-service-policies-details.png').default}
+  alt=""
+/>
+
+3. Select the **More options** tab to find the **Quota management** section.
+
+<img
+  src={require('./assets/portal-device-policies-service-policies-details-more-options-quota-management-data-quota-enabled.png').default}
+  alt=""
+/>
+
+4. Click the **Data Quota** or **SMS Quota** toggle to the off position.
+
+<img
+  src={require('./assets/portal-device-policies-service-policies-details-more-options-quota-management-data-quota-toggle-on.png').default}
+  alt=""
+  style={{ width: 450 }}
+/>
+
+5. Read the prompt about deleting the quota for your devices, then click **Confirm**.
+
+<img
+  src={require('./assets/portal-device-policies-service-policies-details-more-options-quota-management-disable-modal-confirm.png').default}
+  alt="Modal that appears after you click a quota toggle. It reads, 'Are you sure you want to delete all data quota from the connected devices?'"
+  style={{ width: 450 }}
+/>
+
+<img
+  src={require('./assets/portal-device-policies-service-policies-details-more-options-quota-management-toggles-off.png').default}
+  alt="Quota management section with both quota toggles turned off."
+  style={{ width: 450 }}
+/>
