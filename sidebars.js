@@ -104,6 +104,7 @@ const sidebars = {
         "services/connectivity/sim-lifecycle-management",
         "services/connectivity/factory-test-mode",
         "services/connectivity/sms",
+        "services/connectivity/quota-management",
       ],
     },
     {
@@ -317,6 +318,7 @@ const sidebars = {
             "how-tos/device-policies/data-allowances",
             "how-tos/device-policies/configure-data-sms-limits",
             "how-tos/device-policies/configure-dns-settings",
+            "how-tos/device-policies/manage-data-sms-quotas",
           ],
         },
         "how-tos/multi-factor-authentication",
