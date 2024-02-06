@@ -1,38 +1,55 @@
 ---
-description: Manually configure the APN for an Android device
+description: Manually configure the APN for an Android-powered device
 last_update: 
-  date: 01-07-2023
+  date: 08-09-2023
+sidebar_label: Android
 slug: /apn-configuration/android
 ---
 
-# Configuring the APN on Android Devices
+# Configure the APN on Android-powered devices
 
-EMnify's network is engineered to support IoT/M2M data traffic, but EMnify SIMs can also be utilized in standard Android devices, like smartphones or Android-operated IoT gadgets such as POS devices.  
-To ensure seamless connectivity, it's essential to configure the APN settings correctly.  
-Here's how you can set up your Android device with an EMnify SIM:
+While emnify's network is engineered to support IoT/M2M data traffic, it's possible to use emnify SIMs in a consumer device like an Android mobile phone to verify if connectivity is available.
+You can also use emnify SIMs in Android-powered IoT devices, such as point of sale (POS) hardware.
 
-1. **Insert the EMnify SIM**: Ensure your phone is unlocked and insert the EMnify SIM card into the SIM slot.
+:::warning
+Before configuring the APN on a mobile phone, make sure your device is unlocked (that is, not locked or limited to a specific operator).
+:::
 
-2. **Access Network Settings**:
-    - Navigate to your phone's main **Settings**.  
-    - Proceed to **Connections** > **Mobile Networks**. In some cases, you might need to select **More Networks** first.  
-    - Make sure both **Mobile Data** and **Data Roaming** are enabled.
+It's essential to configure the APN settings correctly to ensure seamless connectivity.
+Here's how you can set up your Android-powered device with an emnify SIM:
 
-3. **Set Up the APN**:
-    - Go to **Access Point Names** and tap on **Menu**.  
-    - Choose **New APN** or tap on the **+** sign.  
-    - Enter "EMnify" for the name and "em" for the APN field. Leave other fields blank or as **Not Set**.  
-    - Save these settings. If there are multiple APNs, select the one you've just created as the active APN.
+1. **Insert the emnify SIM**  
+Ensure your phone is unlocked and insert the emnify SIM card into the SIM slot.
 
-4. **Restart & Verify Connection**:
-    - Restart your Android device.  
-    - Once the device is back on, look for signal bars indicating a network connection.  
-    - To confirm the connection's success, open a web browser and visit `https://www.emnify.com`.  
-    - Additionally, the EMnify User Interface (EUI) should display the endpoint status as "Online".
+2. **Manage network settings**
+    1. Navigate to your device's main **Settings**.
+    1. Proceed to **Connections**&nbsp;<span aria-label="and then">></span> **Mobile Networks**.
+    In some cases, you might need to select **More Networks** first.
+    1. Select both the **Mobile Data** and **Data Roaming** checkboxes.
 
-**Troubleshooting**: If the APN settings vanish after being correctly set, remember that EMnify SIM cards can house up to 6 IMSIs, with each having a different APN associated based on the country of use.  
-Android devices often link an APN with a specific IMSI.  
-To maintain the correct APN settings, match the APN with the Mobile Country Code (MCC) and Mobile Network Code (MNC) corresponding to one of the available IMSIs on the EMnify SIM.
+3. **Set up the APN**
+    1. Go to **Access Point Names**. 
+    1. Tap **Menu**, then either **+** or **New APN**.
+    1. Enter `emnify` as the name and `em` as the APN.
+    Leave other fields blank or **Not set**.
+    1. Save these settings.
+    If there are multiple APNs, select the one you've created named `emnify` as the active APN.
+
+4. **Restart and verify your connection**
+    1. Restart your device.  
+    1. Once the device is back on, look for signal bars indicating a network connection.  
+    1. To confirm a successful connection, open a web browser and visit `https://www.emnify.com`.
+    1. Additionally, you can monitor the connectivity in the [emnify Portal](https://portal.emnify.com/).
+    If your APN settings configuration was successful, your device's status should show as **Online**.
+
+## Troubleshooting
+
+The configuration may disappear on your device, even if you set up the APN correctly.
+
+Android-powered devices match an APN to a specific [International Mobile Subscriber Identity (IMSI)](/glossary#imsi).
+emnify SIM cards can have up to six IMSIs, and different IMSIs can be selected depending on the country where you use the SIMs.
+
+To maintain the correct APN settings, match the APN to the Mobile Country Code (**MCC**) and Mobile Network Code (**MNC**) of the five available IMSIs an emnify SIM can select.
 
 | APN | MCC | MNC |
 | --- | --- | --- |
@@ -42,6 +59,3 @@ To maintain the correct APN settings, match the APN with the Mobile Country Code
 | em  | 206 | 01  |
 | em  | 234 | 50  |
 | em  | 724 | 51  |
-
-*For a visual guide on configuring the APN settings on an Android device, please refer to the provided screenshot.*
-TODO: INSERT IMAGE
