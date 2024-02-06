@@ -1,5 +1,5 @@
 ---
-description: Manually configure the APN for an Android-powered device
+description: Manually configure the emnify APN for an Android-powered device
 last_update: 
   date: 08-09-2023
 sidebar_label: Android

@@ -1,37 +1,50 @@
 ---
-description: Connect to routers to configure the APN
-last_update: 
-  date: 02-21-2023
+description: Manually configure the emnify APN on industrial cellular routers like Teltonika Networks
+last_update:
+  date: 08-09-2023
+sidebar_label: Industrial routers
 slug: /apn-configuration/industrial-routers
 ---
 
-# Industrial routers
+# Configure the APN on industrial routers
 
 <!-- markdownlint-disable MD040 -->
 
+## Teltonika Networks
+
 > Applies to RUT240, RUT950, RUT955, RUTX09, RUTX11, RUTX12, RUTX14, RUTXR1, RUT360
 
-Newer firmware version of the Teltonika Routers should automatically detect the emnify APN.
-Nevertheless, in case the APN isn't correctly detected, it can be configured with three methods:
+Newer firmware versions of the Teltonika Networks' industrial cellular routers should automatically detect the emnify APN.
+If the APN isn't correctly detected, you can configure it in three ways:
 
-1. With the Teltonika WebUI over Wi-Fi, Ethernet
-1. Via the SMS console through the [**Connected Devices**](https://portal.emnify.com/connected-devices) page of the emnify Portal
-1. via the emnify SMS API or Zapier Integration (when automating the configuration)
+- With the [Teltonika WebUI](#teltonika-webui) over Wi-Fi or Ethernet
+- Through the [emnify Portal SMS console](#sms-console-teltonika) (recommended)
+- Via SMS through the [emnify REST API](#rest-api-teltonika)
 
-## APN configuration through the Teltonika Router WebUI
+### Teltonika WebUI
 
-1. Connect your PC through the routers Wi-Fi using the credentials provided on the device.
-1. Open the Teltonika WebUI `http://192.168.1.1` and go to the Mobile configuration.
-1. Type in `em` in APN.
-There is no PIN configured on the SIM and no APN username or password required.
+1. Connect your PC through the router's Wi-Fi using the credentials provided on the device.
+1. Open the Teltonika WebUI `http://192.168.1.1` and go to the **Mobile Configuration**.
+1. Type in `em` in **APN**.
+Make sure to select the **Auto** checkbox.
 
-## Teltonika Networks Router APN configuration via SMS console / API or Zapier
+:::note
+There's no **PIN number** configured on the SIM.
+:::
 
-1. Make sure that the Router is powered on and the SIM card is inserted and activated.
-1. In the emnify Portal, ensure that the device is shown as **Attached**.
-1. Send the following SMS command to the device:
+### emnify Portal SMS console \{#sms-console-teltonika}
 
-```
+First, turn on your router and ensure the device and emnify SIM card are activated.
+If you still need to do this, follow the [Create device](/quickstart/create-device) guide.
+
+Then, follow these steps to set up the APN:
+
+1. Log in to your [emnify account](https://portal.emnify.com/sign).
+2. Navigate to **Connected Devices** and find your Teltonika Networks router.
+Turning on the router for the first time after installing the SIM shows the status as **Attached**.
+3. [Open the SMS console](/portal/sms#open-the-sms-console) and send the following command:
+
+```shell
 cellular apn=em
 ```
 
@@ -39,19 +52,21 @@ cellular apn=em
 See [Teltonika's SMS Commands](https://wiki.teltonika-networks.com/view/SMS_Commands) reference for a comprehensive list of SMS commands, syntax, and usage.
 :::
 
+### emnify REST API \{#rest-api-teltonika}
 
-For additional configuration via the EMnify API:
+You can also automate deployment using the [SMS calls in the emnify REST API](https://cdn.emnify.net/api/doc/swagger.html#/Endpoint).
 
-```
-POST /api/v1/endpoint/{device_id}/sms
+To send SMS to the router, use [**POST** `/api/v1/endpoint/{endpoint_id}/sms`](https://cdn.emnify.net/api/doc/swagger.html#/Endpoint/EndpointSmsByIdPost) with the following request body:
 
-{
-"source_address":"123456789",
-"payload":"cellular apn=em"
+```json
+{ 
+  "source_address": "123456789",
+  "payload": "cellular apn=em" 
 }
 ```
 
-You can choose the source address.
-See how to get started with the API [here](https://www.emnify.com/api-docs).
+Replace _`123456789`_ with your chosen source address.  
 
-TODO: INSERT IMAGE
+:::tip
+Follow the [Getting started](https://cdn.emnify.net/api/doc/getting-started.html) guide in the emnify System Documentation to learn how to authenticate and use the API.
+:::

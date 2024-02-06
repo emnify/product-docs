@@ -77,6 +77,8 @@ Telia
 Telit
 [Tt]eltonika
 Teltonika Configurator
+Teltonika Networks
+Teltonika WebUI
 Tunnelblick
 Twilio
 u-blox

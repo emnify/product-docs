@@ -1,5 +1,5 @@
 ---
-description: Configure the APN on Quectel, u-blox, and several other cellular module vendors
+description: Configure the emnify APN on Quectel, u-blox, and several other cellular module vendors
 last_update:
   date: 08-09-2023
 sidebar_label: Cellular modules

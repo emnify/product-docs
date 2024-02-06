@@ -1,5 +1,5 @@
 ---
-description: Configure the APN for the most common GPS vendors
+description: Configure the emnify APN for the most common GPS tracker vendors
 last_update:
   date: 08-09-2023
 sidebar_label: GPS trackers
