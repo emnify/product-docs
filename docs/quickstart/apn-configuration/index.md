@@ -1,7 +1,7 @@
 ---
 description: Configure SIM-equipped devices with an Access Point Name (APN) via the emnify Portal
 last_update: 
-  date: 08-24-2023
+  date: 02-06-2024
 pagination_next: quickstart/apn-configuration/android
 slug: /apn-configuration
 ---
@@ -28,11 +28,25 @@ Verify a device's connectivity status in the emnify Portal under [**Connected De
 ## Configure the APN
 
 Any device equipped with a SIM card requires an [Access Point Name (APN)](/glossary#apn) configuration to establish a data session.
-Some devices and networks auto-detect the APN but for most cases you need to configure it.
+Some devices and networks auto-detect the APN, but you need to configure it in most cases.
 
 APN: `em` (or alternatively use `emnify`)
 
-Further, some Android or iOS-based devices and cellular modules also need to be configured to allow for roaming.
+:::info
+If your devices have an emnify SIM card, the APN must be `em` or `emnify`.
+No username or password is required.
+:::
+
+Further, some Android or iOS-based devices and cellular modules must also be configured to allow roaming.
+
+Common configuration steps often involve:
+
+- **AT commands**  
+Cellular module settings are done in the device firmware (applies to cellular modules).
+- **SMS commands**  
+Settings are done via SMS (usually for GPS trackers and routers), so you don't need to connect with the device.
+- **Device configurator**  
+Devices must connect through a different interface (serial, USB, Wi-Fi, Bluetooth), and then a graphical configuration user interface guides you through the process. 
 
 Select your device type and model to see how to configure the APN:
 
