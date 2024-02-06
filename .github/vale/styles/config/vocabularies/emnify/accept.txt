@@ -3,13 +3,13 @@ Algolia
 APN[s]
 AuC
 AWS
-Bitrek
+[Bb]itrek
 CDR[s]
 [Cc]hipset
 Cinterion
-Coban
+[Cc]oban
 Code of Conduct
-Concox
+[Cc]oncox
 CSM[s]
 Data Streamer
 Datadog
@@ -18,7 +18,7 @@ DDoS
 [Dd]ownlink
 [Dd]ual-band
 eDRX
-Elinz
+[Ee]linz
 emnify
 emnify Portal
 eSIM
@@ -47,7 +47,8 @@ Luhn
 Markdown
 markdownlint
 Maven
-Meitrack
+[Mm]eitrack
+Meitrack Manager
 Microsoft
 Microsoft Active Directory
 MNO[s]
@@ -58,11 +59,11 @@ OAuth
 Plus Package
 Pro Package
 Quad-band
-Queclink
+[Qq]ueclink
 Quectel
-ReachFar
+[Rr]each[Ff]ar
 RESTful API
-Ruptela
+[Rr]uptela
 SDKs
 Sequans
 SIMCom
@@ -71,9 +72,10 @@ Sixfab
 Standard Package
 SuperNetwork
 Telecom
+Telematics Solutions
 Telia
 Telit
-Teltonika
+[Tt]eltonika
 Teltonika Configurator
 Tunnelblick
 Twilio
