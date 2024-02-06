@@ -1,40 +1,43 @@
 ---
-description: Configure Quectel, u-blox, and several other vendors
-last_update: 
-  date: 01-07-2023
+description: Configure the APN on Quectel, u-blox, and several other cellular module vendors
+last_update:
+  date: 08-09-2023
+sidebar_label: Cellular modules
 slug: /apn-configuration/cellular-modules
 ---
 
-# Cellular modules
+# Configure the APN on cellular modules
 
 <!-- markdownlint-disable MD040 -->
 
-For Telit, Sierra Wireless, Cinterion/Gemalto/Thales, SIMCom, or Sequans, see [General cellular IoT modules](#general-cellular-iot-modules).
+:::note
+See [General cellular IoT modules](#general-cellular-iot-modules) for Telit, Sierra Wireless, Cinterion, Gemalto, Thales, SIMCom, or Sequans.
+:::
 
 ## Quectel cellular IoT modules
 
 > Applies to all Quectel modules: BG95, BG96, EG25, EG91, EG95, EC21, EC25, M65, M66, M95, MC60, BG77, BG600L
 
-With Quectel modules the APN can be set with the 3GPP standard command `AT+CGDCONT`:
+With Quectel modules, you can set the APN with the 3GPP standard command `AT+CGDCONT`:
 
-```
+```shell
 AT+CGDCONT=1,"IP","em",,
 ```
 
-Quectel also utilizes a vendor specific command `AT+QICSGP`:
+Quectel also utilizes a vendor-specific command `AT+QICSGP`:
 
-```
+```shell
 AT+QICSGP=1,1,"em","","",1
 ```
 
-According to [Quectel](https://www.quectel.com/faqs/12-8-what-is-the-difference-between-cgdcont-and-qicsgp/) the command `AT+QICSGP` shall be used when the internal TCP/UDP stack should be used—and it also allows to configure which bearer (CSD or GPRS) is used.
-GPRS must be used.
+According to [Quectel](https://www.quectel.com/faqs/12-8-what-is-the-difference-between-cgdcont-and-qicsgp/), use the command `AT+QICSGP` when the internal TCP/UDP stack is needed.
+It also allows you to configure which bearer (CSD or GPRS) is used.
 
-For managing roaming Quectel also introduced the `AT+QCFG` command.
+To manage roaming, Quectel also introduced the `AT+QCFG` command.
 The suggested setting is:
 
-```
-AT+QCFG="roamservice",2,1
+```shell
+AT+QCFG="roamservice",2,1 # roaming enabled
 ```
 
 Check your Quectel module AT command guide for more information.
@@ -43,20 +46,20 @@ Check your Quectel module AT command guide for more information.
 
 u-blox supports the standard 3GPP command to set APNs via `AT+CGDCONT`:
 
-```
+```shell
 AT+CGDCONT=1,"IP","em",,
 ```
 
-u-blox also supports a vendor specific command to configure the APN for the initial EPS bearer:
+u-blox also supports a vendor-specific command to configure the APN for the initial EPS bearer:
 
-```
+```shell
 AT+UCGDFLT=1,"IP","em"
 ```
 
-For roaming configuration u-blox modules utilize a vendor specific `AT+UDCONF` command.
-This enables automatic search in case the device can't attach to a specific network.
+For roaming configuration, u-blox modules utilize a vendor-specific `AT+UDCONF` command.
+This command enables automatic search if the device can't attach to a specific network.
 
-```
+```shell
 AT+UDCONF=20,2
 ```
 
@@ -64,14 +67,14 @@ Check your u-blox module AT command guide for more information.
 
 ## General cellular IoT modules
 
-> Applies to a cellular module vendors: Fibocom, Telit, Sierra Wireless, SIMCom, Cinterion, Gemalto, Thales, Sequans
+> Applies to the following cellular module vendors: Fibocom, Telit, Sierra Wireless, SIMCom, Cinterion, Gemalto, Thales, Sequans
 
-The commands for configuring the APN settings are 3GPP standardized and all major cellular module manufacturer support the commands.
+The commands for configuring the APN settings are 3GPP standardized, and all major cellular module manufacturers support the commands.
 
-The AT+CGDCONT command needs to be utilized to set the APN.
+You must use the `AT+CGDCONT` command to set the APN:
 
-```
+```shell
 AT+CGDCONT=1,"IP","em",,
 ```
 
-Check your AT command guide for further information or read [3GPP Technical Specification 27.007](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=1515).
+Check your AT command guide for further information, or read [3GPP Technical Specification 27.007](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=1515).
