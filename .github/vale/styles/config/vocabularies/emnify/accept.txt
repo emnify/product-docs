@@ -74,6 +74,7 @@ Telecom
 Telia
 Telit
 Teltonika
+Teltonika Configurator
 Tunnelblick
 Twilio
 u-blox
