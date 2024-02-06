@@ -68,8 +68,6 @@ Otherwise, if there's no username or password configured, use the following:
 The two leading spaces are required.
 :::
 
-<!-- TODO(carolstran): Add SMS console screenshot with the command -->
-
 :::info
 Refer to the [Teltonika FMB Device Family Parameter list](https://wiki.teltonika-gps.com/view/Template:FMB_Device_Family_Parameter_list) for all available parameters.
 :::
@@ -114,8 +112,6 @@ The Ruptela Device Center allows you to set device-specific parameters via USB o
 Under **APN**, enter `em` as the **Name**.
 Leave the **Username** and **Password** blank.
 
-<!-- TODO(carolstran): Add device center screenshot -->
-
 ### emnify Portal SMS console \{#sms-console-ruptela}
 
 First, turn on your device and ensure the device and emnify SIM card are activated.
@@ -144,8 +140,6 @@ setconnection em
 ```
 
 :::
-
-<!-- TODO(carolstran): Add SMS console screenshot with the command -->
 
 ### emnify REST API \{#rest-api-ruptela}
 
