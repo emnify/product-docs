@@ -13,12 +13,16 @@ These pieces of evidence (also known as factors) are typically numeric codes tha
 MFA enhances security by adding an extra layer of protection that makes it more difficult for unauthorized individuals to access your account.
 Even if someone knows your password (the first factor), they would still need access to your second factor (for example, your phone or email account) to successfully log in.
 
+<!-- vale emnify.WordList = NO -->
 MFA is sometimes called two-factor authentication (2FA) and has historically been at emnify.
+<!-- vale emnify.WordList = YES -->
 
+<!-- vale Google.Will = NO -->
 :::warning[important update]
-MFA will be mandatory for all emnify Portal accounts as of January 2024 to proactively safeguard our IoT ecosystem and meet regulatory security compliance.
+MFA will be mandatory for all emnify Portal accounts as of January 2024 to proactively safeguard emnify's IoT ecosystem and meet regulatory security compliance.
 For more information, see the [MFA FAQ in the emnify Knowledge Base](https://support.emnify.com/hc/en-us/articles/11119662291740-MFA-FAQ).
 :::
+<!-- vale Google.Will = YES -->
 
 ## Supported methods
 
@@ -52,6 +56,7 @@ Check your spam folder if you haven't received a code after a few minutes.
 
 3. Go back to the Portal. Enter the code and click **Verify code** to verify your identity.
 
+<!-- vale Google.Will = NO -->
 <details className="custom-details-troubleshooting">
   <summary>Need help verifying your identity?</summary>
     <p>You may have issues verifying your identity once MFA becomes mandatory for your organization.</p>
@@ -62,7 +67,7 @@ Check your spam folder if you haven't received a code after a few minutes.
       <li>Wait at least 20 minutes, and then click <b>Resend</b>. Enter the new verification code once you've received it.</li>
       <li>Still having trouble? Contact the <a href="https://docs.emnify.com/support">emnify support team</a>.</li>
     </ul>
-    <b>This code is not valid anymore. Get a new one via email.</b>
+    <b>This code isn't valid anymore. Get a new one via email.</b>
     <ul>
       <li>Click <b>Resend</b> and enter the new verification code once you've received it.</li>
       <li>Still having trouble? Contact the <a href="https://docs.emnify.com/support">emnify support team</a>.</li>
@@ -79,6 +84,7 @@ Check your spam folder if you haven't received a code after a few minutes.
       <li>If you've waited and the next attempt is blocked, contact the <a href="https://docs.emnify.com/support">emnify support team</a>.</li>
     </ul>
 </details>
+<!-- vale Google.Will = YES -->
 
 Assuming no errors, you'll be redirected to the **Dashboard** with a message that your account's MFA is now successfully enabled. 🎉
 
@@ -98,6 +104,7 @@ After you access your account, you can either [configure TOTP MFA in the Portal]
 
 ## Configure TOTP MFA in the emnify Portal
 
+<!-- vale emnify.WordList = NO -->
 1. Log in to your [emnify account](https://portal.emnify.com/sign).
 1. Navigate to [**User Settings**](https://portal.emnify.com/user-settings) by clicking on your avatar and selecting **User Settings** from the dropdown menu.
 1. Find the [**Two-Factor Authentication**](https://portal.emnify.com/user-settings#two-factor-authentication) section and click **Enable**.
@@ -106,6 +113,7 @@ After you access your account, you can either [configure TOTP MFA in the Portal]
 Alternatively, click **here** in the Portal text to reveal a secret key and add it to your app.
 After you've scanned the QR code or entered the key, a 6-digit token appears in the app. 
 1. Finally, return to the Portal and enter the token.
+<!-- vale emnify.WordList = YES -->
 
 Assuming no errors, MFA is now enabled for your account. 🎉
 
@@ -125,9 +133,11 @@ Popular third-party authenticator apps that you can use with your emnify account
 Reaching for your device and entering a one-time password every time you need to log in to your account can be a pain, especially if you usually sign in from the same device.
 To bypass this process, select **Trust this device** before entering the MFA code from your authentication app.
 
+<!-- vale emnify.WordList = NO -->
 Then, [**Trusted Devices**](https://portal.emnify.com/user-settings#trusted-devices) should be visible in the **Two-Factor Authentication** section of **User Settings**.
 These devices remain trusted for 30 days.
 After that, you'll need to verify your identity again.
+<!-- vale emnify.WordList = YES -->
 
 To remove a device from **Trusted Devices**, click **Remove**.
 
@@ -137,7 +147,9 @@ Your changes are saved automatically.
 
 ## Disable MFA
 
+<!-- vale emnify.WordList = NO -->
 To turn off your existing MFA setup, go to **User Settings**, find the [**Two-Factor Authentication**](https://portal.emnify.com/user-settings#two-factor-authentication) section, and click **Disable**.
+<!-- vale emnify.WordList = YES -->
 
 :::warning
 You won't be able to disable MFA once it's enforced for your organization.

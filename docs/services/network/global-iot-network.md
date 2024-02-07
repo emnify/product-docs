@@ -6,13 +6,12 @@ pagination_next: services/network/iot-cloud-communication-platform
 slug: /services/global-iot-network
 ---
 
-# Global IoT Network
+# Global IoT network
 
 <!-- markdownlint-disable MD040 -->
+<!-- vale emnify.Headings = NO -->
 
 Even when IoT devices are more often only deployed at a single location and aren't moving, for a vendor selling to multiple countries it's important to have a global connectivity solution, so that there is no need to have different SIM cards in stock or have multiple contracts and data plans.
-
-<!-- TODO: Find place for service_stack.png -->
 
 ## Mobile network aggregation
 
@@ -214,7 +213,7 @@ eDRX allows configuration of custom intervals of up to 40-175 minutes - dependin
 Roaming with eDRX  
 
 As with PSM - not all NB-IoT and LTE-M networks support eDRX or the same timer configuration - and even if they do this doesn't guarantee that a roaming SIM card can utilize eDRX.
-emnify therefore also tests and publishes the eDRX availability on our [LTE-M](https://www.emnify.com/lte-m-coverage?hsLang=en) and [NB-IoT](https://www.emnify.com/nb-iot-coverage) roaming footprint.
+emnify therefore also tests and publishes the eDRX availability on the [LTE-M](https://www.emnify.com/lte-m-coverage?hsLang=en) and [NB-IoT](https://www.emnify.com/nb-iot-coverage) roaming footprint.
 
 AT Command examples for eDRX settings
 
@@ -262,7 +261,7 @@ The network responds with the actual effective interval.
     - Utilizing millimeter wave (MM wave) bands (5Ghz+) for increased throughput
 1. Massive Machine Type communication (mMTC)  
     - Targeted at IoT application where a multitude of devices are in the same location and need to communicate with low power
-    - LTE-M and NB-IoT often seen as decoupled from 5G to get earlier results will fusion with 5G mMTC  
+    - LTE-M and NB-IoT often seen as decoupled from 5G to get earlier results fuses with 5G mMTC  
 1. Ultra-Reliable Low Latency Communications (URLLC)
     - For missing critical applications that require low latency and reliable data transmission
 

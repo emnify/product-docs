@@ -7,17 +7,17 @@ slug: /multicloud-data-streamer/usage
 
 # Use the Data Streamer
 
-You can manage data streams with the [emnify Portal](#data-streamer-in-the-portal) or the [Data Streamer API](#data-streamer-api).
+You can manage data streams with the [emnify Portal](#data-streamer-in-the-emnify-portal) or the [Data Streamer API](#data-streamer-api).
 
 ## Choose which interface to use
 
-**[emnify Portal](#data-streamer-in-the-portal)**  
+**[emnify Portal](#data-streamer-in-the-emnify-portal)**  
 Managing data streams with the Portal is convenient when taking the first steps or if you don't expect configuration changes to be needed often.
 
 **[Data Streamer API](#data-streamer-api)**  
 Integrating the Data Streamer API becomes a faster and more secure approach when multiple data streams need to be managed as part of the daily business or in the case of advanced operations (for example, seamless migration from one data stream to another without lags or duplicates).
 
-## Data Streamer in the Portal
+## Data Streamer in the emnify Portal
 
 To [manage your data streams](/multicloud-data-streamer/manage-data-streams), [log in to your emnify Portal account](https://portal.emnify.com/sign/).
 Then, navigate to the [**Data Streams**](https://portal.emnify.com/integrations#data-streams) section of the [**Integrations** page](https://portal.emnify.com/integrations).

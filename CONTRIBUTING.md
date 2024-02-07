@@ -1,7 +1,7 @@
 # Contribute content to the emnify Product Documentation
 
 Your interest in contributing to the emnify Product Documentation is greatly appreciated.
-By helping maintain and grow our documentation, your efforts won't only benefit your organization but the greater emnify community as well 💖
+By helping maintain and grow the documentation, your efforts won't only benefit your organization but the greater emnify community as well 💖
 
 > [!NOTE]
 > This page includes guidelines for contributing content.
@@ -24,7 +24,7 @@ When in doubt, refer to this style guide as a resource.
 - Use the `.mdx` extension whenever you use JSX or other MDX features (for example, `import` or `export`) inside a Markdown file.
 
 > ![IMPORTANT]
-> According to [Docusaurus](https://docusaurus.io/blog/preparing-your-site-for-docusaurus-v3), future versions will parse `.md` files as standard [CommonMark](https://commonmark.org/), which doesn't support these features.
+> According to [Docusaurus](https://docusaurus.io/blog/preparing-your-site-for-docusaurus-v3), future versions parse `.md` files as standard [CommonMark](https://commonmark.org/), which doesn't support these features.
 
 ## Components
 
@@ -146,7 +146,7 @@ For consistency, follow these guidelines:
 
 ## Validate MDX files
 
-Docusaurus provides a [docusaurus-mdx-checker](https://github.com/slorber/docusaurus-mdx-checker) CLI to help spot problematic content that'll result in compilation errors.
+Docusaurus provides a [docusaurus-mdx-checker](https://github.com/slorber/docusaurus-mdx-checker) command-line tool to help spot problematic content that'll result in compilation errors.
 To see what files fail to compile under MDX v3, run:
 
 ```bash

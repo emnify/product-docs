@@ -6,6 +6,7 @@ last_update:
 
 # Support
 
+<!-- vale Google.We = NO -->
 emnify provides various support services to ensure that your devices operate reliably in our network.
 In addition to email and phone support, emnify’s operations team proactively monitors worldwide traffic on our cellular networks to identify risks before they become issues.
 

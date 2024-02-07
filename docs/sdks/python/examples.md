@@ -14,6 +14,7 @@ The following examples show you how to use the emnify Python SDK.
 
 The source code for each example is available in the [emnify-sdk-python GitHub repository](https://github.com/emnify/emnify-sdk-python/tree/main/docs/examples).
 
+<!-- vale emnify.Race = NO -->
 | Example                             | Description  |
 |---|---|
 | [Get your first device online](https://github.com/emnify/emnify-sdk-python/blob/main/docs/examples/mass_sim_activation.py)     |  Connect an emnify SIM to your device and configure the APN to access the internet. |

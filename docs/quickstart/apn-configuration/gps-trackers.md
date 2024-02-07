@@ -9,6 +9,7 @@ slug: /apn-configuration/gps-trackers
 # Configure the APN on GPS trackers
 
 <!-- markdownlint-disable MD040 -->
+<!-- vale emnify.Headings = NO -->
 
 :::info
 For GPS vendors that aren't listed, please consult their respective manuals and configure the APN to be `em` or `emnify`.
@@ -506,7 +507,7 @@ setparam 0021 MNC
 setparam 0099 MNC
 ```
 
-Replace _`MNC`_ with the mobile network code (MNC) the device will roam on.
+Replace _`MNC`_ with the mobile network code (MNC) the device should roam on.
 
 You can concatenate all commands into one SMS (maximum 160 characters) by using the `;` as a delimiter:
 
@@ -514,7 +515,7 @@ You can concatenate all commands into one SMS (maximum 160 characters) by using 
 setparam 0242 em; setparam 0917 1; setparam 0020 MNC; ...
 ```
 
-Replace _`MNC`_ with the MNC the device will roam on.
+Replace _`MNC`_ with the MNC the device should roam on.
 
 :::note
 In this example, `em` represents emnify's network.

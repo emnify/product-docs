@@ -99,5 +99,5 @@ To get your free trial SIMs, [log in to your emnify account](https://portal.emni
 1. Finally, review and confirm your details. 
 
 :::info
-You'll be notified when the SIM cards will be shipped.
+You'll be notified when the SIM cards are shipped.
 :::

@@ -7,6 +7,8 @@ slug: /multicloud-data-streamer/integrations
 
 # Available integrations
 
+<!-- vale emnify.Headings = NO -->
+
 ## Amazon
 
 ### Amazon Kinesis Data Streams
@@ -29,7 +31,7 @@ The CSV files can then be sent to other Amazon services (for example, Amazon Qui
 [emnify Data Streamer Integration into AWS S3](https://www.emnify.com/integration-guides/emnify-datastreamer-integration-into-aws-s3)
 :::
 
-#### S3 Security Guidelines
+#### S3 security guidelines
 
 Event data sent via data streams may include usernames, email addresses, and other data which can identify users or platform resources (depending on the event filtering applied).
 Therefore, you should treat the delivered files as containing sensitive information.

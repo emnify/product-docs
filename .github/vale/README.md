@@ -12,7 +12,7 @@ Vale uses packages, also known as [Styles](#styles), to define the rules for wri
 Follow the instructions on the Vale website to [install the Vale command-line tool](https://vale.sh/docs/vale-cli/installation/).
 
 > [!IMPORTANT]
-> Make sure your local CLI version is **<=3.0.3** to match the existing directory structure and version running in the CI pipeline.
+> Make sure your local Vale version is **<=3.0.3** to match the existing directory structure and version running in the CI pipeline.
 
 ## Run Vale
 
@@ -43,7 +43,7 @@ emnify uses the following [Vale Styles](https://vale.sh/docs/topics/styles/):
 - Google (for the [Google developer documentation style guide](https://developers.google.com/style))
 - emnify (customized styles)
 
-### Customized emnify Styles
+### Customized emnify styles
 
 - `Condescending.yml`  
 Based on `alex.Condescending` from [alex](https://alexjs.com/) to catch condescending language.
@@ -115,6 +115,7 @@ Do not do this!
 
 ## Add a new Vale rule
 
+<!-- vale Google.We = NO -->
 Every new Vale rule takes effort to create and enforce, so we want to be mindful of what we implement.
 
 In general, follow these guidelines:

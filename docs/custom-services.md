@@ -7,6 +7,8 @@ unlisted: true
 
 # Custom services
 
+<!-- vale Google.We = NO -->
+
 ## Branded APN
 
 Through emnify, you can purchase a branded [Access Point Name (APN)](/glossary#apn).

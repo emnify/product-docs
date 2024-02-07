@@ -7,6 +7,9 @@ slug: /system-events/event-types
 
 # Event types
 
+<!-- vale emnify.Headings = NO -->
+<!-- vale Google.Will = NO -->
+
 The following is a list of available event types, including their corresponding IDs and descriptions.
 
 :::note[API reference]
@@ -26,8 +29,8 @@ Data session disconnected while applying the updated actions on the connectivity
 :::info
 Other generic event triggers are possible.
 
-We're in the process of adding more specific event types that will replace these.
-We'll update this list as new event types are created.
+More specific event types that replace these are continually added.
+This list is updated as new event types are created.
 :::
 
 <details className="custom-details-example">
@@ -1269,7 +1272,7 @@ Activating a SIM with the **Suspended** status again is possible at any time.
 The SIM is deleted and permanently removed from the SIM repository.
 
 :::warning
-Once deleted, the SIM cannot be restored for network access.
+Once deleted, the SIM can't be restored for network access.
 :::
 
 ### Endpoint enabled
@@ -1599,6 +1602,8 @@ Triggered through the [emnify User Interface (EUI)](https://support.emnify.com/h
 </details>
 
 ## Limit enforcement
+
+<!-- vale emnify.AmericanEnglish = NO -->
 
 | ID  | Description                                   |
 | :-- | :-------------------------------------------- |

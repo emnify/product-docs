@@ -82,4 +82,4 @@ Be sure to include the following information in your request:
 - The ICCIDs of your SIMs in question
 - The type of device you're using
 - A short description of the issue
-- A phone number where we can reach you if required
+- A phone number where emnify's Support team can reach you if required

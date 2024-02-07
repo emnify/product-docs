@@ -19,9 +19,9 @@ All data is backhauled to the home country of the operator which means that cust
 
 ![emnify](assets/emnify-distributed-plane.png)
 
-## Traditional operators vs emnify
+## Traditional operators versus emnify
 
-The data plane of emnify’s cloud communication platform is distributed across major cloud regions (Virginia/US, Ireland/Europe, Singapore/APAC) and directly connected to central peering points with the local operators.
+The data plane of emnify’s cloud communication platform is distributed across major cloud regions (Virginia/U.S., Ireland/Europe, Singapore/APAC) and directly connected to central peering points with the local operators.
 
 ## Regional breakout
 

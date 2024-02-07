@@ -77,7 +77,9 @@ If you want to specify an exact number of devices that the slider isn't providin
 
 Select a value between 0.25 MB and 2 GB using the slider.
 
+<!-- vale Google.Will = NO -->
 #### Where will your devices operate?
+<!-- vale Google.Will = YES -->
 
 If the default selection **Global** isn't your preference, select one of the available coverage areas.
 For example: **Africa Extended**, **Americas**, **APAC**, **Europe Basic**, **Middle East**, **USA**, etc.
@@ -130,7 +132,7 @@ When finished, verify that everything under **Plan configuration** is accurate.
 Then select **Upgrade data plan**.
 
 :::warning
-Your new package will be charged immediately in the next billing cycle.
+Your new package is charged immediately in the next billing cycle.
 You'll be charged the total package price regardless of when you upgrade, as emnify doesn't prorate.
 :::
 
