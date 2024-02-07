@@ -190,11 +190,9 @@ _Embedded Universal Integrated Circuit Card_
 The embedded universal integrated circuit card (eUICC) is a component of a [SIM](#sim) card.
 It allows consumers and IoT manufacturers to provision the SIM with a new [mobile network operator (MNO)](https://www.emnify.com/iot-glossary/mno) profile [over-the-air](#ota).
 
-<!-- vale emnify.Contractions = NO -->
 :::tip
-Learn more about the eUICC in the blog post: [What is an eUICC and why does it matter?](https://www.emnify.com/iot-glossary/what-is-an-euicc)
+Learn more about the eUICC in the blog post: [What's an eUICC and why does it matter?](https://www.emnify.com/iot-glossary/what-is-an-euicc)
 :::
-<!-- vale emnify.Contractions = YES -->
 
 ## Event log
 
@@ -270,16 +268,14 @@ _International Mobile Equipment Identity_
 
 A unique number used to identify cellular modems.
 
-<!-- vale emnify.Contractions = NO -->
 <details className="custom-details-example">
   <summary>Learn more about how IMEIs are constructed</summary>
   An IMEI has 15 digits (14 digits plus a check digit).
 
   An IMEISV has 16 digits (14 digits plus two software version digits).
 
-  For more detailed information, see emnify's IoT Glossary article: [What is an IMEI number?](https://www.emnify.com/iot-glossary/imei-number)
+  For more detailed information, see emnify's IoT Glossary article: [What's an IMEI number?](https://www.emnify.com/iot-glossary/imei-number)
 </details>
-<!-- vale emnify.Contractions = YES -->
 
 :::info
 There are also "software versions" of IMEIs, referred to as _IMEISVs_.

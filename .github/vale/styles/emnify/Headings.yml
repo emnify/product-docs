@@ -61,6 +61,7 @@ exceptions:
   - MongoDB
   - MT
   - OAuth
+  - OpenVPN
   - P2P
   - REPL
   - REST

@@ -507,7 +507,7 @@ setparam 0021 MNC
 setparam 0099 MNC
 ```
 
-Replace _`MNC`_ with the mobile network code (MNC) the device roams on.
+Replace _`MNC`_ with the mobile network code (MNC) the device should roam on.
 
 You can concatenate all commands into one SMS (maximum 160 characters) by using the `;` as a delimiter:
 

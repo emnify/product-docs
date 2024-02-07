@@ -7,6 +7,8 @@ unlisted: true
 
 # Custom services
 
+<!-- vale Google.We = NO -->
+
 ## Branded APN
 
 Through emnify, you can purchase a branded [Access Point Name (APN)](/glossary#apn).
@@ -15,7 +17,7 @@ If purchased, you’ll work with a member of the emnify team to ensure your APN 
 
 ## Customized SIM artwork
 
-emnify offers several branding options with customized artwork with the cooperation of the eSIM suppliers.
+emnify offers several branding options with customized artwork with the cooperation of our eSIM suppliers.
 This is ideal for corporate SIM cards because you can include additional information on the back and display company branding (for example, a logo) on the front.
 
 :::info

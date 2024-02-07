@@ -31,4 +31,4 @@ There are [how-to guides](/how-tos) for configuring your account, managing devic
 - **Too many acronyms?** 
 Find definitions and examples in the [glossary](/glossary).
 - **Need support?** 
-Learn more about emnify [support levels](/support).
+Learn more about emnify's [support levels](/support).
