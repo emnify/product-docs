@@ -8,7 +8,8 @@ slug: /apn-configuration/industrial-routers
 
 # Configure the APN on industrial routers
 
-<!-- markdownlint-disable MD040 -->
+import PortalSmsConsolePartial from './partials/_portal-sms-console.mdx'
+import RestApiSmsPartial from './partials/_rest-api-sms.mdx'
 
 ## Teltonika Networks
 
@@ -34,15 +35,7 @@ There's no **PIN number** configured on the SIM.
 
 ### emnify Portal SMS console \{#sms-console-teltonika}
 
-First, turn on your router and ensure the device and emnify SIM card are activated.
-If you still need to do this, follow the [Create device](/quickstart/create-device) guide.
-
-Then, follow these steps to set up the APN:
-
-1. Log in to your [emnify account](https://portal.emnify.com/sign).
-2. Navigate to **Connected Devices** and find your Teltonika Networks router.
-Turning on the router for the first time after installing the SIM shows the status as **Attached**.
-3. [Open the SMS console](/portal/sms#open-the-sms-console) and send the following command:
+<PortalSmsConsolePartial name="Teltonika Networks" deviceType="router" />
 
 ```shell
 cellular apn=em
@@ -54,9 +47,7 @@ See [Teltonika's SMS Commands](https://wiki.teltonika-networks.com/view/SMS_Comm
 
 ### emnify REST API \{#rest-api-teltonika}
 
-You can also automate deployment using the [SMS calls in the emnify REST API](https://cdn.emnify.net/api/doc/swagger.html#/Endpoint).
-
-To send SMS to the router, use [**POST** `/api/v1/endpoint/{endpoint_id}/sms`](https://cdn.emnify.net/api/doc/swagger.html#/Endpoint/EndpointSmsByIdPost) with the following request body:
+<RestApiSmsPartial />
 
 ```json
 { 
@@ -66,7 +57,3 @@ To send SMS to the router, use [**POST** `/api/v1/endpoint/{endpoint_id}/sms`](h
 ```
 
 Replace _`123456789`_ with your chosen source address.  
-
-:::tip
-Follow the [Getting started](https://cdn.emnify.net/api/doc/getting-started.html) guide in the emnify System Documentation to learn how to authenticate and use the API.
-:::
