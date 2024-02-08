@@ -8,7 +8,7 @@ slug: /apn-configuration/gps-trackers
 
 # Configure the APN on GPS trackers
 
-<!-- markdownlint-disable MD040 -->
+import PortalSmsConsolePartial from './_portal-sms-console-partial.mdx'
 
 :::info
 For GPS vendors that aren't listed, please consult their respective manuals and configure the APN to be `em` or `emnify`.
@@ -39,20 +39,11 @@ For usage instructions, see [Teltonika's Universal Device Test Guide](https://wi
 Newer Teltonika GPS versions automatically detect the emnify APN setting.
 :::
 
-First, turn on your device and ensure the device and emnify SIM card are activated.
-If you still need to do this, follow the [Create device](/quickstart/create-device) guide.
-
-Then, follow these steps to set up the APN:
-
-1. Log in to your [emnify account](https://portal.emnify.com/sign).
-2. Navigate to **Connected Devices** and find your Teltonika GPS tracker.
-Turning on the GPS tracker for the first time after installing the SIM shows the status as **Attached**.
-The device can receive SMS at this point but only establish a data session if the APN is set up or detected.
-3. [Open the SMS console](/portal/sms#open-the-sms-console) and send the command corresponding to your device settings.
+<PortalSmsConsolePartial name="Teltonika" alternateCommandPrompt="command corresponding to your device settings." />
 
 If you've set a username and password for the device, use the following SMS command to set the APN:
 
-```
+```shell
 USERNAME PASSWORD setparam 2001:em
 ```
 
@@ -60,7 +51,7 @@ Replace _`USERNAME`_ and _`PASSWORD`_ with your credentials.
 
 Otherwise, if there's no username or password configured, use the following:
 
-```
+```shell
   setparam 2001:em
 ```
 
@@ -114,16 +105,7 @@ Leave the **Username** and **Password** blank.
 
 ### emnify Portal SMS console \{#sms-console-ruptela}
 
-First, turn on your device and ensure the device and emnify SIM card are activated.
-If you still need to do this, follow the [Create device](/quickstart/create-device) guide.
-
-Then, follow these steps to set up the APN:
-
-1. Log in to your [emnify account](https://portal.emnify.com/sign).
-2. Navigate to **Connected Devices** and find your Ruptela GPS tracker.
-Turning on the GPS tracker for the first time after installing the SIM shows the status as **Attached**.
-The device can receive SMS at this point but only establish a data session if the APN is set up or detected.
-3. [Open the SMS console](/portal/sms#open-the-sms-console) and send the following SMS command:
+<PortalSmsConsolePartial name="Ruptela" />
 
 ```shell
 [SMSpassword] setconnection em
@@ -171,16 +153,7 @@ You have two options for configuring the APN on Concox GPS trackers:
 
 ### emnify Portal SMS console \{#sms-console-concox}
 
-First, turn on your device and ensure the device and emnify SIM card are activated.
-If you still need to do this, follow the [Create device](/quickstart/create-device) guide.
-
-Then, follow these steps to set up the APN:
-
-1. Log in to your [emnify account](https://portal.emnify.com/sign).
-2. Navigate to **Connected Devices** and find your Concox GPS tracker.
-Turning on the GPS tracker for the first time after installing the SIM shows the status as **Attached**.
-The device can receive SMS at this point but only establish a data session if the APN is set up or detected.
-3. [Open the SMS console](/portal/sms#open-the-sms-console) and send the following command:
+<PortalSmsConsolePartial name="Concox" />
 
 ```shell
 APN em#
@@ -226,21 +199,15 @@ You have two options for configuring the APN on Coban GPS trackers:
 
 ### emnify Portal SMS console \{#sms-console-coban}
 
-First, turn on your device and ensure the device and emnify SIM card are activated.
-If you still need to do this, follow the [Create device](/quickstart/create-device) guide.
+<PortalSmsConsolePartial name="Coban" alternateCommandPrompt="following commands." />
 
-Then, follow these steps to set up the APN:
-
-1. Log in to your [emnify account](https://portal.emnify.com/sign).
-2. Navigate to **Connected Devices** and find your Coban GPS tracker.
-Turning on the GPS tracker for the first time after installing the SIM shows the status as **Attached**.
-The device can receive SMS at this point but only establish a data session if the APN is set up or detected.
-3. [Open the SMS console](/portal/sms#open-the-sms-console) and send the following commands.
-You can specify the source address in the **Source** field.
+:::note
+You also can specify the source address in the **Source** field.
+:::
 
 To turn on GPSR:
 
-```
+```shell
 gprs[PASSWORD]
 ```
 
@@ -248,7 +215,7 @@ Replace _`[PASSWORD]`_ with your password.
 
 To set the APN:
 
-```
+```shell
 APN[PASSWORD] em
 ```
 
@@ -298,16 +265,7 @@ For usage instructions, see the [Meitrack Manager User Guide](https://www.meitra
 
 ### emnify Portal SMS console \{#sms-console-meitrack}
 
-First, turn on your device and ensure the device and emnify SIM card are activated.
-If you still need to do this, follow the [Create device](/quickstart/create-device) guide.
-
-Then, follow these steps to set up the APN:
-
-1. Log in to your [emnify account](https://portal.emnify.com/sign).
-2. Navigate to **Connected Devices** and find your Meitrack GPS tracker.
-Turning on the GPS tracker for the first time after installing the SIM shows the status as **Attached**.
-The device can receive SMS at this point but only establish a data session if the APN is set up or detected.
-3. [Open the SMS console](/portal/sms#open-the-sms-console) and send the following command:
+<PortalSmsConsolePartial name="Meitrack" />
 
 ```shell
 0000,A81,em,,
@@ -341,16 +299,7 @@ You have two options for configuring the APN on Elinz GPS trackers:
 
 ### emnify Portal SMS console \{#sms-console-elinz}
 
-First, turn on your device and ensure the device and emnify SIM card are activated.
-If you still need to do this, follow the [Create device](/quickstart/create-device) guide.
-
-Then, follow these steps to set up the APN:
-
-1. Log in to your [emnify account](https://portal.emnify.com/sign).
-2. Navigate to **Connected Devices** and find your Elinz GPS tracker.
-Turning on the GPS tracker for the first time after installing the SIM shows the status as **Attached**.
-The device can receive SMS at this point but only establish a data session if the APN is set up or detected.
-3. [Open the SMS console](/portal/sms#open-the-sms-console) and send the command corresponding to your device model.
+<PortalSmsConsolePartial name="Elinz" alternateCommandPrompt="command corresponding to your device model." />
 
 For Elinz GPS trackers:
 
@@ -379,16 +328,7 @@ You have two options for configuring the APN on ReachFar GPS trackers:
 
 ### emnify Portal SMS console \{#sms-console-reachfar}
 
-First, turn on your device and ensure the device and emnify SIM card are activated.
-If you still need to do this, follow the [Create device](/quickstart/create-device) guide.
-
-Then, follow these steps to set up the APN:
-
-1. Log in to your [emnify account](https://portal.emnify.com/sign).
-2. Navigate to **Connected Devices** and find your ReachFar GPS tracker.
-Turning on the GPS tracker for the first time after installing the SIM shows the status as **Attached**.
-The device can receive SMS at this point but only establish a data session if the APN is set up or detected.
-3. [Open the SMS console](/portal/sms#open-the-sms-console) and send the command corresponding to your device model.
+<PortalSmsConsolePartial name="ReachFar" alternateCommandPrompt="command corresponding to your device model." />
 
 > Applies to RF-V6+, RF-V8, RF-V8S, RF-V13, RF-V16, RF-V18, RF-V20
 
@@ -445,16 +385,7 @@ You have two options for configuring the APN on Queclink GPS trackers:
 
 ### emnify Portal SMS console \{#sms-console-queclink}
 
-First, turn on your device and ensure the device and emnify SIM card are activated.
-If you still need to do this, follow the [Create device](/quickstart/create-device) guide.
-
-Then, follow these steps to set up the APN:
-
-1. Log in to your [emnify account](https://portal.emnify.com/sign).
-2. Navigate to **Connected Devices** and find your Queclink GPS tracker.
-Turning on the GPS tracker for the first time after installing the SIM shows the status as **Attached**.
-The device can receive SMS at this point but only establish a data session if the APN is set up or detected.
-3. [Open the SMS console](/portal/sms#open-the-sms-console) and send the following command:
+<PortalSmsConsolePartial name="Queclink" />
 
 ```shell
 AT+GTBSI=PASSWORD,em,,,,,,,0002$
@@ -475,16 +406,7 @@ You have two options for configuring the APN on Bitrek GPS trackers:
 
 ### emnify Portal SMS console \{#sms-console-bitrek}
 
-First, turn on your device and ensure the device and emnify SIM card are activated.
-If you still need to do this, follow the [Create device](/quickstart/create-device) guide.
-
-Then, follow these steps to set up the APN:
-
-1. Log in to your [emnify account](https://portal.emnify.com/sign).
-2. Navigate to **Connected Devices** and find your Bitrek GPS tracker.
-Turning on the GPS tracker for the first time after installing the SIM shows the status as **Attached**.
-The device can receive SMS at this point but only establish a data session if the APN is set up or detected.
-3. [Open the SMS console](/portal/sms#open-the-sms-console) and send the following command:
+<PortalSmsConsolePartial name="Bitrek" />
 
 ```shell
 setparam 0242 em
