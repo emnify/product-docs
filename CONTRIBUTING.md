@@ -50,6 +50,17 @@ The `react-prism-render` library is used for code block syntax highlighting.
 From v2.0+, [less languages are included by default](https://github.com/FormidableLabs/prism-react-renderer/blob/prism-react-renderer%402.1.0/packages/generate-prism-languages/index.ts#L9).
 If the language you need isn't listed, check the [Docusaurus configuration](https://github.com/emnify/product-docs/blob/main/docusaurus.config.js#L171) and add it if necessary.
 
+### Partials
+
+When pages contain repetitive content, you can extract the content into a "partial" and import it into other documents.
+
+Each category with the [`docs` directory](./docs/) that uses partials has a `partials` directory containing the source files.
+These files must use the `_` filename prefix (for example, `_config-instructions.mdx`) to bypass page creation and linting.
+The imported component name should end with `Partial` (for example, `ConfigInstructionsPartial`).
+
+> [!TIP]
+> Learn more about [partials in Docusaurus](https://docusaurus.io/docs/markdown-features/react#importing-markdown).
+
 ## Images
 
 Each category within the [`docs` directory](./docs/) has an `assets` directory containing all the infographics, screenshots, or other images used on those pages.
