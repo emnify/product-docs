@@ -8,7 +8,8 @@ slug: /apn-configuration/gps-trackers
 
 # Configure the APN on GPS trackers
 
-import PortalSmsConsolePartial from './_portal-sms-console-partial.mdx'
+import PortalSmsConsolePartial from './partials/_portal-sms-console.mdx'
+import RestApiSmsPartial from './partials/_rest-api-sms.mdx'
 
 :::info
 For GPS vendors that aren't listed, please consult their respective manuals and configure the APN to be `em` or `emnify`.
@@ -65,9 +66,7 @@ Refer to the [Teltonika FMB Device Family Parameter list](https://wiki.teltonika
 
 ### emnify REST API \{#rest-api-teltonika}
 
-You can use the [SMS calls in the emnify REST API](https://cdn.emnify.net/api/doc/swagger.html#/Endpoint) to automate the device configuration.
-
-To send SMS to a device, use [**POST** `/api/v1/endpoint/{endpoint_id}/sms`](https://cdn.emnify.net/api/doc/swagger.html#/Endpoint/EndpointSmsByIdPost) with the following request body:
+<RestApiSmsPartial />
 
 ```json
 { 
@@ -77,10 +76,6 @@ To send SMS to a device, use [**POST** `/api/v1/endpoint/{endpoint_id}/sms`](htt
 ```
 
 Replace _`123456789`_ with your chosen source address.  
-
-:::tip
-Follow the [Getting started](https://cdn.emnify.net/api/doc/getting-started.html) guide in the emnify System Documentation to learn how to authenticate and use the API.
-:::
 
 ## Ruptela
 
@@ -125,22 +120,16 @@ setconnection em
 
 ### emnify REST API \{#rest-api-ruptela}
 
-You can use the [SMS calls in the emnify REST API](https://cdn.emnify.net/api/doc/swagger.html#/Endpoint) to automate the device configuration.
-
-To send SMS to a device, use [**POST** `/api/v1/endpoint/{endpoint_id}/sms`](https://cdn.emnify.net/api/doc/swagger.html#/Endpoint/EndpointSmsByIdPost) with the following request body:
+<RestApiSmsPartial />
 
 ```json
 { 
   "source_address": "123456789",
-  "payload": "setconnection em" 
+  "payload": "setconnection em"
 }
 ```
 
-Replace _`123456789`_ with your chosen source address.  
-
-:::tip
-Follow the [Getting started](https://cdn.emnify.net/api/doc/getting-started.html) guide in the emnify System Documentation to learn how to authenticate and use the API.
-:::
+Replace _`123456789`_ with your chosen source address.
 
 ## Concox
 
@@ -171,9 +160,7 @@ The default password is `666666`.
 
 ### emnify REST API \{#rest-api-concox}
 
-You can use the [SMS calls in the emnify REST API](https://cdn.emnify.net/api/doc/swagger.html#/Endpoint) to automate the device provisioning.
-
-To send SMS to a device, use [**POST** `/api/v1/endpoint/{endpoint_id}/sms`](https://cdn.emnify.net/api/doc/swagger.html#/Endpoint/EndpointSmsByIdPost) with the following request body:
+<RestApiSmsPartial />
 
 ```json
 { 
@@ -183,10 +170,6 @@ To send SMS to a device, use [**POST** `/api/v1/endpoint/{endpoint_id}/sms`](htt
 ```
 
 Replace _`123456789`_ with your chosen source address and _`666666`_ with your password if it varies from the default.
-
-:::tip
-Follow the [Getting started](https://cdn.emnify.net/api/doc/getting-started.html) guide in the emnify System Documentation to learn how to authenticate and use the API.
-:::
 
 ## Coban
 
@@ -231,9 +214,7 @@ There are no spaces between `gprs`/`APN` and the password.
 
 ### emnify REST API \{#rest-api-coban}
 
-You can use the [SMS calls in the emnify REST API](https://cdn.emnify.net/api/doc/swagger.html#/Endpoint) to automate the device provisioning.
-
-To send SMS to a device, use [**POST** `/api/v1/endpoint/{endpoint_id}/sms`](https://cdn.emnify.net/api/doc/swagger.html#/Endpoint/EndpointSmsByIdPost) with the following request body:
+<RestApiSmsPartial />
 
 ```json
 { 
@@ -242,11 +223,7 @@ To send SMS to a device, use [**POST** `/api/v1/endpoint/{endpoint_id}/sms`](htt
 }
 ```
 
-Replace _`7890`_ with your chosen source address and _`123456`_ with your password if it varies from the default.  
-
-:::tip
-Follow the [Getting started](https://cdn.emnify.net/api/doc/getting-started.html) guide in the emnify System Documentation to learn how to authenticate and use the API.
-:::
+Replace _`7890`_ with your chosen source address and _`123456`_ with your password if it varies from the default.
 
 ## Meitrack
 
