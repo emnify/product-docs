@@ -1,0 +1,39 @@
+---
+draft: true
+last_update: 
+  date: 02-09-2024
+---
+
+# Configure a satellite data limit
+
+import ConfigureLimitsIntroductionPartial from './partials/_configure-limits-introduction.mdx'
+import SetLimitInstructionsPartial from './partials/_set-limit-instructions.mdx'
+import TurnOffLimitInstructionsPartial from './partials/_turn-off-limit-instructions.mdx'
+
+<ConfigureLimitsIntroductionPartial />
+
+## Set limits
+
+:::info
+You have to switch on the **Devices may use data** toggle to use satellite data.
+For instructions on how to set other limits, see [Configure data and SMS limits](/how-tos/configure-data-sms-limits).
+:::
+
+<SetLimitInstructionsPartial
+  limitType="satellite"
+  limitValue="Bytes"
+  dropdownLabel="Monthly Satellite Limit"
+  toggleLabel="Satellite Data"
+  exampleLimit="500 Bytes"
+/>
+
+## Turn off limits
+
+<TurnOffLimitInstructionsPartial
+  limitType="satellite"
+  dropdownLabel="Monthly Satellite Limit"
+/>
+
+:::warning
+Don't switch off the **Devices may use data** toggle as this completely turns off data connectivity and takes your devices offline.
+:::

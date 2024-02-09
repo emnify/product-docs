@@ -7,10 +7,11 @@ slug: /how-tos/configure-data-sms-limits
 
 # Configure data and SMS limits
 
+import ConfigureLimitsIntroductionPartial from '../device-policies/partials/_configure-limits-introduction.mdx'
 import SetLimitInstructionsPartial from './partials/_set-limit-instructions.mdx'
 import TurnOffLimitInstructionsPartial from './partials/_turn-off-limit-instructions.mdx'
 
-Limits are an important function that lets you control your device's usage policies and avoid extra consumption in your monthly bill.
+<ConfigureLimitsIntroductionPartial />
 
 :::info
 When you set a data limit for your devices, you need to make sure your devices don't try to connect every few seconds once the limit is reached.
@@ -26,7 +27,7 @@ It's your responsibility to introduce a random backup timer.
   limitValue="MB"
   dropdownLabel="Data Limit"
   toggleLabel="Devices may use data"
-  exampleLimit="1 MB"
+  exampleLimit="1 MB per 1 month"
 />
 
 :::warning
@@ -40,14 +41,17 @@ Don't switch off the **Devices may use data** toggle as this completely turns of
   limitValue="SMS"
   dropdownLabel="SMS Sending Limit or SMS Receiving Limit"
   toggleLabel="Devices may send SMS (SMS MO) or Devices may receive SMS (SMS MT)"
-  exampleLimit="10 SMS"
+  exampleLimit="10 SMS per 1 month"
 />
 
 ## Turn off limits
 
 ### Data \{#turn-off-limits-data}
 
-<TurnOffLimitInstructionsPartial dropdownLabel="Data Limit" />
+<TurnOffLimitInstructionsPartial
+  limitType="data"
+  dropdownLabel="Data Limit"
+/>
 
 :::warning
 Don't switch off the **Devices may use data** toggle as this completely turns off data connectivity and takes your devices offline.
@@ -55,7 +59,10 @@ Don't switch off the **Devices may use data** toggle as this completely turns of
 
 ### SMS \{#turn-off-limits-sms}
 
-<TurnOffLimitInstructionsPartial dropdownLabel="SMS Sending Limit or SMS Receiving Limit" />
+<TurnOffLimitInstructionsPartial
+  limitType="sms"
+  dropdownLabel="SMS Sending Limit or SMS Receiving Limit"
+/>
 
 :::note
 If you don't want your device to send or receive SMS, switch off both or one of the toggles.
