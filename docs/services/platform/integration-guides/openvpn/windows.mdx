@@ -9,54 +9,27 @@ slug: /integration-guides/openvpn-windows
 
 # Integrate OpenVPN on Windows
 
-Using emnify, you can create a [virtual private network (VPN)](/glossary#vpn) for your mobile IoT/M2M devices fitted with emnify SIMs.
-Data traffic is exchanged between the devices and the application server through an OpenVPN tunnel, enabling direct communication with the IPs of the mobile devices (no NAT applied).
+import OpenVpnIntroductionPartial from './partials/_openvpn-introduction.mdx'
+import PortalPreparationSummaryPartial from './partials/_portal-preparation-summary.mdx'
+import DownloadConfigInstructionsPartial from './partials/_download-config-instructions.mdx'
+import ChangeBreakoutRegionInstructionsPartial from './partials/_change-breakout-region-instructions.mdx'
 
-The tunnel is established between the emnify Core Network and the customer's VPN gateway or server.
-
-:::tip
-The [Cellular IoT University: Secure your devices with OpenVPN video](https://www.youtube.com/watch?v=yt44fJpfkQ4) provides a step-by-step walk-through.
-:::
+<OpenVpnIntroductionPartial />
 
 ## Required preparation in the emnify Portal
 
-Any traffic exchanged with mobile devices is encrypted before being transmitted over the public internet, which adds an additional layer of security and privacy.
-No VPN software needs to be installed on the device, or there aren't any required configuration changes necessary.
-The default emnify APN also supports VPN flows.
+<PortalPreparationSummaryPartial />
 
 ### Download the VPN configuration file
 
-1. [Log in to your emnify account](https://portal.emnify.com/sign).
-2. Navigate to **Integrations** and find the [**Secure Connection**](https://portal.emnify.com/integrations#secure-connection) section.
-3. Under **OpenVPN**, select **Show instructions**.
-
-<img
-  src={require('./assets/portal-integrations-secure-connection-openvpn-show-instructions.png').default}
-  alt=""
+<DownloadConfigInstructionsPartial
+  imageSrc="windows"
+  operatingSystem="Windows"
 />
-
-4. Make sure you're on the **Windows** tab, then click **Download client.ovpn**.
-
-<img
-  src={require('./assets/portal-integrations-secure-connections-openvpn-windows-download.png').default}
-  alt=""
-/>
-
-Select the desired region or choose **Download all regions**.
-
-<img
-  src={require('./assets/portal-integrations-secure-connections-openvpn-windows-download-dropdown.png').default}
-  alt=""
-  style={{ height: 400 }}
-/>
-
-Once downloaded, store that file on your server in the folder `\OpenVPN\config`.
 
 ### Change the internet breakout region
 
-1. Navigate to [**Device Policies**](https://portal.emnify.com/device-policies) in the emnify Portal.
-1. In the **Service Policies** section, select the policy assigned to the devices you want to secure and click **Details**.
-1. Under **Internet Breakout Region**, set the service policy to a VPN breakout region (for example, `eu-west-1 (VPN)`).
+<ChangeBreakoutRegionInstructionsPartial />
 
 ## Set up the OpenVPN client on Windows
 

@@ -7,13 +7,14 @@ slug: /workspaces/switch
 
 # Switch between workspaces
 
+import PermissionsInfoPartial from './partials/_permissions-info.mdx'
+import FeatureRequestsTipPartial from './partials/_feature-requests-tip.mdx'
+
 One benefit of having linked workspaces is that you can manage multiple organizations using one emnify account.
 
 This guide shows you how to switch between your organizations via the workspace switcher in the emnify Portal.
 
-:::info
-Only **Administrator** user accounts of the main organization can switch between workspaces.
-:::
+<PermissionsInfoPartial orgData="the main organization" action="switch between" />
 
 1. [Log in to your emnify account](https://portal.emnify.com/sign).
 You should see your organization's name at the top of the primary sidebar.
@@ -44,7 +45,4 @@ Now you should be in another workspace. 🎉
   style={{ width: 650 }}
 />
 
-:::tip[feature requests]
-Workspaces are new to emnify, so feedback and suggestions are very welcome.
-Please [open a ticket on Canny](https://emnify.canny.io/).
-:::
+<FeatureRequestsTipPartial />
