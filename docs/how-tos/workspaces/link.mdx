@@ -7,15 +7,16 @@ slug: /workspaces/link
 
 # Link an existing workspace
 
+import PermissionsInfoPartial from './partials/_permissions-info.mdx'
+import FeatureRequestsTipPartial from './partials/_feature-requests-tip.mdx'
+
 If you already have two or more workspaces created, you can link these to a shared main organization.
 These linked workspaces can be centrally or individually managed.
 
 This guide shows you how to submit a request to link existing workspaces via the emnify Portal.
 Alternatively, you can also [create a new workspace](/workspaces/create).
 
-:::info
-Only **Administrator** user accounts of customers with the **Pro Package** can link existing workspaces.
-:::
+<PermissionsInfoPartial orgData="customers with the Pro Package" action="link existing" />
 
 1. [Log in to your emnify account](https://portal.emnify.com/sign).
 You should see your organization's name at the top of the primary sidebar.
@@ -50,7 +51,4 @@ It usually takes 2-7 days for your workspaces to be linked.
 
 Once linked, **Administrator** user accounts of the main organization are able to [switch between workspaces](/workspaces/switch).
 
-:::tip[feature requests]
-Workspaces are new to emnify, so feedback and suggestions are very welcome.
-Please [open a ticket on Canny](https://emnify.canny.io/).
-:::
+<FeatureRequestsTipPartial />
