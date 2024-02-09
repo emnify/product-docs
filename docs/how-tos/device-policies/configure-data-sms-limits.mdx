@@ -7,6 +7,9 @@ slug: /how-tos/configure-data-sms-limits
 
 # Configure data and SMS limits
 
+import SetLimitInstructionsPartial from './partials/_set-limit-instructions.mdx'
+import TurnOffLimitInstructionsPartial from './partials/_turn-off-limit-instructions.mdx'
+
 Limits are an important function that lets you control your device's usage policies and avoid extra consumption in your monthly bill.
 
 :::info
@@ -16,105 +19,43 @@ It's your responsibility to introduce a random backup timer.
 
 ## Set limits
 
-### Data
+### Data \{#set-limits-data}
 
-1. [Log in to your emnify account](https://portal.emnify.com/sign).
-2. Navigate to [**Device Policies**](https://portal.emnify.com/device-policies).
-3. Find your desired service policy in the **Service Policies** section and click **Details**.
-
-<img
-  src={require('./assets/portal-device-policies-service-policies-details.png').default}
-  alt=""
+<SetLimitInstructionsPartial
+  limitType="data"
+  limitValue="MB"
+  dropdownLabel="Data Limit"
+  toggleLabel="Devices may use data"
+  exampleLimit="1 MB"
 />
-
-4. Ensure the **Devices may use data** toggle is switched on.
-
-<img
-  src={require('./assets/portal-device-policies-service-policies-details-data-usage.png').default}
-  alt=""
-/>
-
-5. Open the **Data Limit** dropdown menu and select the MB limit based on the expected consumption of your device.
-
-<img
-  src={require('./assets/portal-device-policies-service-policies-details-data-usage-limit-dropdown.png').default}
-  alt=""
-  style={{ height: 400 }}
-/>
-
-Changes save automatically.
-In this example, the data limit changed from **No limit** to **1 MB per 1 month**.
-
-<img
-  src={require('./assets/portal-device-policies-service-policies-data-usage-data-limit-example.png').default}
-  alt=""
-  style={{ width: 350 }}
-/>
-
-:::note
-The limit is applied to all the devices associated with the selected service policy.
-The limit is valid for the current month and resets to 0 MB on the first day of each month.
-:::
 
 :::warning
 Don't switch off the **Devices may use data** toggle as this completely turns off data connectivity and takes your devices offline.
 :::
 
-### SMS
+### SMS \{#set-limits-sms}
 
-1. [Log in to your emnify account](https://portal.emnify.com/sign).
-2. Navigate to **Device Policies**.
-3. Find your desired service policy in the **Service Policies** section and click **Details**.
-
-<img
-  src={require('./assets/portal-device-policies-service-policies-details.png').default}
-  alt=""
+<SetLimitInstructionsPartial
+  limitType="sms"
+  limitValue="SMS"
+  dropdownLabel="SMS Sending Limit or SMS Receiving Limit"
+  toggleLabel="Devices may send SMS (SMS MO) or Devices may receive SMS (SMS MT)"
+  exampleLimit="10 SMS"
 />
-
-4. Click the **Devices may send SMS (SMS MO)**, or **Devices may receive SMS (SMS MT)** toggle to the on position.
-
-<img
-  src={require('./assets/portal-device-policies-service-policies-details-sms-usage.png').default}
-  alt=""
-/>
-
-5. Use the **SMS Sending Limit** or **SMS Receiving Limit** dropdown menus to select the limits based on your device usage.
-
-<img
-  src={require('./assets/portal-device-policies-service-policies-details-sms-receiving-limit-dropdown.png').default}
-  alt=""
-  style={{ height: 400 }}
-/>
-
-Changes save automatically.
-In this example, the SMS receiving limit changed from **No limit** to **10 SMS per 1 month**.
-
-<img
-  src={require('./assets/portal-device-policies-service-policies-details-sms-receiving-limit-example.png').default}
-  alt=""
-  style={{ width: 400 }}
-/>
-
-:::note
-The limit is applied to all the devices associated with the selected service policy.
-The limit is valid for the current month and resets to 0 SMS on the first day of each month.
-:::
 
 ## Turn off limits
 
-For all limits, click the relevant **Devices may** toggle to the off position.
+### Data \{#turn-off-limits-data}
 
-### Data limits only
-
-In the **Data Limit** dropdown menu, select **No limit**.
+<TurnOffLimitInstructionsPartial dropdownLabel="Data Limit" />
 
 :::warning
 Don't switch off the **Devices may use data** toggle as this completely turns off data connectivity and takes your devices offline.
 :::
 
-### SMS limits only
+### SMS \{#turn-off-limits-sms}
 
-In the **Devices may send SMS (SMS MO)** or **Devices may receive SMS (SMS MT)** dropdown menu, select **No limit**.
+<TurnOffLimitInstructionsPartial dropdownLabel="SMS Sending Limit or SMS Receiving Limit" />
 
 :::note
 If you don't want your device to send or receive SMS, switch off both or one of the toggles.

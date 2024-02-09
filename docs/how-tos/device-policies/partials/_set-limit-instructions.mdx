@@ -1,0 +1,37 @@
+1. [Log in to your emnify account](https://portal.emnify.com/sign).
+2. Navigate to [**Device Policies**](https://portal.emnify.com/device-policies).
+3. Find your desired service policy in the **Service Policies** section and click **Details**.
+
+<img
+  src={require('../assets/portal-device-policies-service-policies-details.png').default}
+  alt=""
+/>
+
+4. Ensure the **{props.toggleLabel}** toggle is switched on.
+
+<img
+  src={require(`../assets/portal-device-policies-service-policies-details-${props.limitType}-usage.png`).default}
+  alt=""
+/>
+
+5. Use the **{props.dropdownLabel}** dropdown menu to select the limits based on your device usage.
+
+<img
+  src={require(`../assets/portal-device-policies-service-policies-details-${props.limitType}-limit-dropdown.png`).default}
+  alt=""
+  style={{ height: 400 }}
+/>
+
+Changes save automatically.
+In this example, the limit changed from **No limit** to **{props.exampleLimit} per 1 month**.
+
+<img
+  src={require(`../assets/portal-device-policies-service-policies-details-${props.limitType}-limit-example.png`).default}
+  alt=""
+  style={{ width: 350 }}
+/>
+
+:::note
+The limit is applied to all the devices associated with the selected service policy.
+The limit is valid for the current month and resets to 0 {props.limitValue} on the first day of each month.
+:::
