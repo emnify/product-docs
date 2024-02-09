@@ -1,5 +1,5 @@
 ---
-description: Setup SSO for your emnify account with Microsoft Active Directory
+description: Set up SSO for your emnify account with Microsoft Active Directory
 last_update:
   date: 12-20-2022
 pagination_next: how-tos/sso/google-cloud-platform
@@ -7,22 +7,16 @@ sidebar_label: Microsoft Active Directory
 slug: /sso/microsoft-active-directory
 ---
 
-# Setup SSO with Microsoft Active Directory
+# Set up SSO with Microsoft Active Directory
 
-This guide walks through enabling single sign-on (SSO), so your organization can access the emnify Portal using your Microsoft Business credentials.
+import SsoGuideIntroductionPartial from './partials/_sso-guide-introduction.mdx'
+import PortalConfigurationPartial from './partials/_portal-configuration.mdx'
 
-**Prerequisites:**
-
-- An Azure Subscription with an Active Directory license
-- An [emnify account](/quickstart) using the same email address as the one used to sign in to Microsoft Azure
-
-:::warning
-If your email address used in the emnify Portal differs from the one used to log in to Azure, this setup won't work.
-You can verify your email in [**User Settings**](https://portal.emnify.com/user-settings).
-
-Instead, add an additional user with the **Administrator** role.
-To do this, go to **Workspace settings**&nbsp;<span aria-label="and then">></span> [**Users**](https://portal.emnify.com/organisation-settings/users).
-:::
+<SsoGuideIntroductionPartial
+  provider="Microsoft Business"
+  prereq="An Azure Subscription with an Active Directory license"
+  platform="Azure"
+/>
 
 ## SSO with Microsoft
 
@@ -127,20 +121,4 @@ Navigate to **Overview** in the sidebar and copy the **Application (client) I
 
 ## Configure the emnify Portal
 
-[Log in to your emnify account](https://portal.emnify.com/sign/), go to Workspace settings (building icon) in the top-level navigation, and click [**Single Sign-On**](https://portal.emnify.com/organisation-settings/federation).
-
-If you need SSO enabled for your account, contact support by selecting **Upgrade**.
-Otherwise, click **Add** under the Microsoft SSO provider.
-
-Enter the **Client ID** and **Client Secret** with the values you copied earlier, then click **Create and Activate**.
-
-The final step is to verify the provider.
-Click **Verify Integration** and follow the prompts.
-
-:::warning
-You must complete the final step and verify the provider to configure SSO.
-:::
-
-:::tip
-Refer to the [Troubleshooting page](/sso/troubleshooting#microsoft-active-directory) if you encounter issues while setting up SSO.
-:::
+<PortalConfigurationPartial provider="Microsoft" />
