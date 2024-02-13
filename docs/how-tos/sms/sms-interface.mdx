@@ -1,0 +1,98 @@
+---
+description: How to access the SMS console and send SMS on the emnify Portal
+last_update:
+  date: 02-13-2024
+pagination_next: how-tos/sms/portal
+sidebar_label: Configure the SMS interface
+slug: /how-tos/configure-sms-interface
+---
+
+# Configure the SMS interface
+
+The **SMS interface** specifies how and where to forward SMS from devices under this device policy.
+
+The following connections are available:
+
+- [**Web Portal**](/how-tos/send-sms-portal) (default) - Access SMS directly in the emnify Portal
+- [**Webhook**](#webhook) - Configure a URL to receive SMS sent from your device
+- [**SMPP**](#smpp) - Set up a direct SMPP connection to emnify
+
+## Webhook
+
+You can use the SMS webhook to receive SMS and delivery notifications for SMS in your application.
+
+Follow these steps to configure the webhook as your SMS interface:
+
+1. [Log in to your emnify account](https://portal.emnify.com/sign).
+2. Navigate to your [**Device Policies**](https://portal.emnify.com/device-policies).
+3. Under **Service Policies**, choose the policy you want to update and click **Details**.
+4. Find the **SMS interface** section.
+Select **Webhook**, then click **Configure Webhook**.
+
+<img
+  src={require('./assets/portal-service-policies-sms-interface-configure-webhook.png').default}
+  alt=""
+  style={{ width: 500 }}
+/>
+
+5. Provide the URL for your webhook.
+Optionally, you can provide a secret key to prevent unauthorized access.
+Then, click **Add Webhook**.
+
+<img
+  src={require('./assets/portal-service-policies-sms-interface-add-webhook.png').default}
+  alt=""
+/>
+
+:::info
+When you want to send an SMS from the device to your application, your device should send the SMS to an invalid [MSISDN](/glossary#msisdn) with seven digits or less.
+:::
+
+<figure>
+  <img
+    src={require('./assets/delivery-notification.png').default}
+    alt=""
+    style={{ width: 400 }}
+  />
+  <figcaption>
+    <em>
+      Delivery notification as received in Make (Integromat) webhook for SMS with ID: 46638644
+    </em>
+  </figcaption>
+</figure>
+
+<figure>
+  <img
+    src={require('./assets/mosms.png').default}
+    alt=""
+    style={{ width: 400 }}
+  />
+  <figcaption>
+    <em>
+      Mobile originated SMS from the device as received in Integromat webhook
+    </em>
+  </figcaption>
+</figure>
+
+## SMPP
+
+[Short Message Peer-to-Peer (SMPP)](/glossary#smpp) is a protocol that the telecommunication industry uses to exchange SMS messages between short message service centers (SMSC) and external short messaging entities (ESME).
+Telematics platforms, SMS services, and operators often use SMPP to enable sending SMS to and from devices.
+
+Follow these steps to configure SMPP as your SMS interface:
+
+1. [Log in to your emnify account](https://portal.emnify.com/sign).
+2. Navigate to your [**Device Policies**](https://portal.emnify.com/device-policies).
+3. Under **Service Policies**, choose the policy you want to update and click **Details**.
+4. Find the **SMS interface** section and select **SMPP**.
+
+When you select **SMPP** as your **SMS interface**, you're given a **System ID** and **Password** to access the emnify **SMPP Server**.
+
+<img
+  src={require('./assets/portal-service-policies-sms-interface-smpp.png').default}
+  alt=""
+/>
+
+:::tip
+For an example of integrating SMPP with a third-party application, see [emnify SMS via SMPP integration with Gurtams' flespi and Wialon](https://www.emnify.com/integration-guides/smpp-integration-flespi-wialon-gurtam).
+:::

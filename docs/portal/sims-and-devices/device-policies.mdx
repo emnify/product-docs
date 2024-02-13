@@ -21,42 +21,7 @@ However, by creating a service policy, you can control the following attributes:
 | Breakout Region | Automatic or manual selection  |
 | Data            | <ul><li>Usage limit</li><li>Service type (for example, 2G, 3G, 4G, NB-IoT)</li></ul> |
 | SMS             | <ul><li>SMS MO (devices may send SMS)</li><ul><li>Sending limit</li></ul><li>SMS MT (devices may receive SMS)</li><ul><li>Receiving limit</li></ul><li>Allow/deny the exchange of SMS</li><ul><li>Between devices</li><li>With external parties</li></ul></ul> |
-| SMS Interface   | <ul><li>[Web Portal](/portal/sms#send-sms-using-the-emnify-portal) (default)</li><li>[Webhook](#webhook-sms-interface)</li><li>[SMPP](/portal/sms#sms-via-smpp)</li></ul> |
-
-### Webhook SMS interface
-
-When selecting **Webhook** as your **SMS Interface**, you must provide the URL for your webhook.
-Optionally, you can provide a secret key to prevent unauthorized access.
-
-<details className="custom-details-troubleshooting">
-  <summary>Show how to configure a webhook</summary>
-
-  Select **Configure Webhook**.
-
-  <img
-    src={require('./assets/portal-service-policies-sms-interface-configure-webhook.png').default}
-    alt=""
-  />
-
-  Provide the URL, optional secret key, and select **Add Webhook**.
-
-  <img
-    src={require('./assets/portal-service-policies-sms-interface-add-webhook.png').default}
-    alt=""
-  />
-</details>
-
-### SMPP SMS interface
-
-When selecting **SMPP** as your **SMS Interface**, you are given a **System ID** and **Password** for accessing the emnify **SMPP Server**.
-
-<details className="custom-details-troubleshooting">
-  <summary>Show where this happens in the Portal</summary>
-  <img
-    src={require('./assets/portal-service-policies-sms-interface-smpp.png').default}
-    alt=""
-  />
-</details>
+| SMS Interface   | <ul><li>[Web Portal](/how-tos/send-sms-portal) (default)</li><li>[Webhook](/how-tos/configure-sms-interface#webhook)</li><li>[SMPP](/how-tos/configure-sms-interface#smpp)</li></ul> |
 
 ## Coverage policies
 

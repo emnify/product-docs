@@ -335,6 +335,19 @@ const sidebars = {
             "how-tos/sso/troubleshooting",
           ],
         },
+        {
+          type: "category",
+          label: "SMS",
+          link: {
+            type: "doc",
+            id: "how-tos/sms/sms-interface",
+          },
+          items: [
+            "how-tos/sms/sms-interface",
+            "how-tos/sms/portal",
+            "how-tos/sms/zapier",
+          ],
+        },
         "how-tos/update-company-details",
         "how-tos/upgrade-trial-plan",
         {
