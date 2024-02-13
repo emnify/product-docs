@@ -128,7 +128,8 @@ Data usage records are created:
             "symbol": "€"
         },
         "end_timestamp": "2022-04-26T12:02:43Z",
-        "imsi_id": 9624042
+        "imsi_id": 9624042,
+        "session_id": "722aeb56-c4de-4753-ac23-4f99c1980c5e"
     }
 ]
 ```
@@ -216,7 +217,8 @@ Usage records for SMS are created when an SMS is successfully delivered either:
             "symbol": "€"
         },
         "end_timestamp": "2022-04-26T13:13:56Z",
-        "imsi_id": 9624042
+        "imsi_id": 9624042,
+        "session_id": "beafcbbf-48b7-49c5-b493-fce36bad466a"
     }
 ]
 ```
