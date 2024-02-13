@@ -218,7 +218,6 @@ const sidebars = {
               label: "Getting started",
               id: "rest/index",
             },
-            "rest/sms-operations",
             {
               type: "link",
               label: "API reference",

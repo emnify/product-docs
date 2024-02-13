@@ -2,8 +2,6 @@
 description: Introduce the OpenAPI structure and code samples
 last_update: 
   date: 11-02-2021
-pagination_next: rest/sms-operations
-pagination_prev: null
 slug: /rest
 ---
 

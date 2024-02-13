@@ -309,10 +309,6 @@ const config = {
             from: "/rest/authentication",
           },
           {
-            to: "/rest/sms-operations",
-            from: "/rest-api/sms-operations",
-          },
-          {
             to: "/graphql",
             from: "/graphql/preview",
           },
