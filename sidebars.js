@@ -346,6 +346,7 @@ const sidebars = {
             "how-tos/sms/sms-interface",
             "how-tos/sms/portal",
             "how-tos/sms/zapier",
+            "how-tos/sms/sms-console",
           ],
         },
         "how-tos/update-company-details",
