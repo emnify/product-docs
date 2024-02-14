@@ -26,7 +26,7 @@ Be sure to [reset its connectivity](/portal/connected-devices#reset-connectivity
 ## Single device assignment
 
 1. Navigate to [**Connected Devices**](https://portal.emnify.com/connected-devices).
-1. Find the device you wish to assign to a policy, then click **Details**.
+1. Find the device you wish to assign to a policy, then expand the policy details.
 1. When viewing the device details, select **Edit** for either **Service Policy** or **Coverage Policy** to show a dropdown list of available policies.
 1. Select your policy from the list.
 
