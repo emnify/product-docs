@@ -11,7 +11,7 @@
 <script src="/scripts/optanonWrapper.js" defer="defer"></script>
 <script src="/scripts/googleTagManager.js" async></script>
 <script src="/scripts/jentisTagManager.js"></script><link rel="stylesheet" href="/assets/css/styles.5ccdc7b1.css">
-<script src="/assets/js/runtime~main.9d8e6c9c.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.c5686952.js" defer="defer"></script>
 <script src="/assets/js/main.46239209.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -32,11 +32,12 @@
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="filter-users">Filter users<a href="#filter-users" class="hash-link" aria-label="Direct link to Filter users" title="Direct link to Filter users">​</a></h2>
 <p>Three filters are available for the <strong>Workspace users</strong> list.
 These filters allow you to query users based on one or more properties (for example, name or email).</p>
-<p>Select the filter you want to edit, enter a value, then press the <code>Tab</code> or <code>Enter</code> key.
-Once you&#x27;ve entered all the values you want to filter by, click <strong>Apply</strong>.</p>
+<p>Select the filter you want to edit and enter a value.
+To add multiple filter values, press the <code>Tab</code> key.
+Once you&#x27;ve entered all the values you want to filter by, press the <code>Enter</code> key or click <strong>Apply</strong>.</p>
 <p>To remove a filter or value, click the corresponding <strong>X</strong>.</p>
 <p>Filters can be combined or used together with the search bar.
-Filtered values are saved in the URL as a query parameter (for example, after filtering for users named <code>Dana</code>, the URL includes <code>&amp;name=Dana</code> at the end).</p>
+Filtered values are saved in the URL as a query parameter (for example, after filtering for <!-- -->users<!-- --> named <code>Alexa</code>, the URL includes <code>&amp;name=Alexa</code> at the end).</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="available-filters">Available filters<a href="#available-filters" class="hash-link" aria-label="Direct link to Available filters" title="Direct link to Available filters">​</a></h3>
 <table><thead><tr><th style="text-align:left">Property</th><th style="text-align:left">Value</th><th style="text-align:center"><a href="#wildcard-support">Wildcard support</a></th><th style="text-align:left">Description</th></tr></thead><tbody><tr><td style="text-align:left">Name</td><td style="text-align:left">String</td><td style="text-align:center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" alt="Yes"><path d="m20.5 6.41-12 12-5.5-5.5 1.41-1.41 4.09 4.08L19.09 5l1.41 1.41Z" fill="#33B147"></path></svg></td><td style="text-align:left">Name of a user.</td></tr><tr><td style="text-align:left">Email</td><td style="text-align:left">String</td><td style="text-align:center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" alt="Yes"><path d="m20.5 6.41-12 12-5.5-5.5 1.41-1.41 4.09 4.08L19.09 5l1.41 1.41Z" fill="#33B147"></path></svg></td><td style="text-align:left">Email address associated with the users&#x27; emnify account.</td></tr><tr><td style="text-align:left">Workspaces</td><td style="text-align:left">Predefined</td><td style="text-align:center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" alt="No"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z" fill="#FF5757"></path></svg></td><td style="text-align:left">List of workspaces the users belong to.</td></tr></tbody></table>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="wildcard-support">Wildcard support<a href="#wildcard-support" class="hash-link" aria-label="Direct link to Wildcard support" title="Direct link to Wildcard support">​</a></h3>
@@ -47,16 +48,16 @@ You can also use character matching with an asterisk <code>*</code>.</p>
 Another example is filtering emails using <code>@example.*</code> shows all results regardless of whether the email address ends in <code>example.com</code> or <code>example.org</code>.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="upload-a-csv-file">Upload a CSV file<a href="#upload-a-csv-file" class="hash-link" aria-label="Direct link to Upload a CSV file" title="Direct link to Upload a CSV file">​</a></h3>
 <p>You can use a comma-separated values (CSV) file to apply multiple values to any filter that accepts string values.</p>
-<p>This feature is especially useful if you have dozens of values (for example, 100 names).
+<p>This feature is especially useful if you have dozens of values (for example, 100 <!-- -->Name<!-- -->s).
 Importing values through a CSV file lets you skip the tedious task of entering each value individually.</p>
 <p>To upload a CSV file, follow these steps:</p>
 <ol>
-<li>On <a href="https://portal.emnify.com/organisation-settings/users" target="_blank" rel="noopener noreferrer"><strong>Users</strong></a>, choose the corresponding filter for the property in your CSV file (for example, <strong>Name</strong>).</li>
+<li>On <strong>Users</strong>, choose the corresponding filter for the property in your CSV file (for example, <strong>Name</strong>).</li>
 <li>Click <strong>Import a CSV file</strong>.</li>
 <li>Drag and drop the file or select <strong>Browse file</strong> to find the file you want to import.</li>
 <li>Verify the file name and line count are correct, then click <strong>Confirm</strong>.</li>
 </ol>
-<p>Each value is parsed, and the table shows any devices with the corresponding values.</p>
+<p>Each value is parsed, and the table shows any <!-- -->users<!-- --> with the corresponding values.</p>
 <div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>note</div><div class="admonitionContent_BuS1"><p>Uploading a CSV file won&#x27;t overwrite any existing filters.
 To add or remove any values, select the filter again.</p></div></div>
 <p>Please note the following limits:</p>

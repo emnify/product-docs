@@ -11,7 +11,7 @@
 <script src="/scripts/optanonWrapper.js" defer="defer"></script>
 <script src="/scripts/googleTagManager.js" async></script>
 <script src="/scripts/jentisTagManager.js"></script><link rel="stylesheet" href="/assets/css/styles.5ccdc7b1.css">
-<script src="/assets/js/runtime~main.9d8e6c9c.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.c5686952.js" defer="defer"></script>
 <script src="/assets/js/main.46239209.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -28,12 +28,12 @@ After providing a name for the new device and selecting device policies, you can
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="filter-devices">Filter devices<a href="#filter-devices" class="hash-link" aria-label="Direct link to Filter devices" title="Direct link to Filter devices">​</a></h2>
 <p>Filters are available for both the <strong>Extensive</strong> and <strong>Plain</strong> view of the <strong>Connected Devices</strong> table.
 These filters allow you to query devices based on one or more properties (for example, assigned tags or the device ID).</p>
-<p>Select the filter you want to edit, enter a value, then press the <code>Tab</code> or <code>Enter</code> key.
-Once you&#x27;ve entered all the values you want to filter by, click <strong>Apply</strong>.</p>
+<p>Select the filter you want to edit and enter a value.
+To add multiple filter values, press the <code>Tab</code> key.
+Once you&#x27;ve entered all the values you want to filter by, press the <code>Enter</code> key or click <strong>Apply</strong>.</p>
 <p>To remove a filter or value, click the corresponding <strong>X</strong>.</p>
-<img src="/assets/images/portal-connected-devices-filters-34fc9f1073c1e4b8c7f2dd77b06cfe2f.png" alt="" style="height:450px">
-<p>Filters can be combined or used together with the <a href="#search-devices">search bar</a>.
-Filtered values are saved in the URL as a query parameter (for example, after filtering for devices with the <code>Zapier</code> tag, the URL includes <code>&amp;tags=Zapier</code> at the end).</p>
+<p>Filters can be combined or used together with the search bar.
+Filtered values are saved in the URL as a query parameter (for example, after filtering for <!-- -->devices<!-- --> named <code>Alexa</code>, the URL includes <code>&amp;name=Alexa</code> at the end).</p>
 <div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>warning</div><div class="admonitionContent_BuS1"><p>Your selected filters remain active when you visit a device&#x27;s <strong>Details</strong> page.
 However, the filters reset if you go to another page in the Portal.</p></div></div>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="available-filters">Available filters<a href="#available-filters" class="hash-link" aria-label="Direct link to Available filters" title="Direct link to Available filters">​</a></h3>
@@ -46,16 +46,16 @@ You can also use character matching with an asterisk <code>*</code>.</p>
 Another example is filtering names using <code>organi*ation</code> shows all results regardless of whether the device name uses American (organization) or British (organisation) spelling.</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="upload-a-csv-file">Upload a CSV file<a href="#upload-a-csv-file" class="hash-link" aria-label="Direct link to Upload a CSV file" title="Direct link to Upload a CSV file">​</a></h3>
 <p>You can use a comma-separated values (CSV) file to apply multiple values to any filter that accepts string values.</p>
-<p>This feature is especially useful if you have dozens of values (for example, 100 ICCIDs).
+<p>This feature is especially useful if you have dozens of values (for example, 100 <!-- -->ICCID<!-- -->s).
 Importing values through a CSV file lets you skip the tedious task of entering each value individually.</p>
 <p>To upload a CSV file, follow these steps:</p>
 <ol>
-<li>On <a href="https://portal.emnify.com/connected-devices" target="_blank" rel="noopener noreferrer"><strong>Connected Devices</strong></a>, choose the corresponding filter for the property in your CSV file (for example, <strong>ICCID</strong>).</li>
+<li>On <strong>Connected Devices</strong>, choose the corresponding filter for the property in your CSV file (for example, <strong>ICCID</strong>).</li>
 <li>Click <strong>Import a CSV file</strong>.</li>
 <li>Drag and drop the file or select <strong>Browse file</strong> to find the file you want to import.</li>
 <li>Verify the file name and line count are correct, then click <strong>Confirm</strong>.</li>
 </ol>
-<p>Each value is parsed, and the table shows any devices with the corresponding values.</p>
+<p>Each value is parsed, and the table shows any <!-- -->devices<!-- --> with the corresponding values.</p>
 <div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>note</div><div class="admonitionContent_BuS1"><p>Uploading a CSV file won&#x27;t overwrite any existing filters.
 To add or remove any values, select the filter again.</p></div></div>
 <p>Please note the following limits:</p>
@@ -75,7 +75,6 @@ Write the values exactly as they appear in the Portal.</p>
 <p>To demonstrate, if you enter the following in the <strong>Tag</strong> filter and press the <code>Enter</code> key:</p>
 <div class="language-txt codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#000000;--prism-background-color:#ffffff"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-txt codeBlock_bY9V thin-scrollbar" style="color:#000000;background-color:#ffffff"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#000000"><span class="token plain">test</span><br></span><span class="token-line" style="color:#000000"><span class="token plain">v1</span><br></span><span class="token-line" style="color:#000000"><span class="token plain">beta</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 <p>Each value is parsed, and the table shows any devices with the <code>test</code>, <code>v1</code>, and <code>beta</code> tags.</p>
-<img src="/assets/images/portal-connected-devices-filters-tag-26d1851f8802790f5d7f0514306de17d.png" alt="" style="height:400px">
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="search-devices">Search devices<a href="#search-devices" class="hash-link" aria-label="Direct link to Search devices" title="Direct link to Search devices">​</a></h2>
 <p>The <strong>Connected Devices</strong> search bar is next to the <strong>Add device</strong> button.
 It&#x27;s visible on both the <strong>Extensive</strong> and <strong>Plain</strong> table view.</p>
