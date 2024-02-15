@@ -1,7 +1,7 @@
 ---
 description: List of all available event types
 last_update: 
-  date: 09-08-2023
+  date: 02-15-2024
 slug: /system-events/event-types
 ---
 
@@ -470,44 +470,45 @@ This device appears as **Online** in the [emnify Portal](/system-events/usage#em
   },
   "detail": {
     "country": {
-      "country_code": "49",
       "mcc": "262",
       "name": "Germany",
+      "country_code": "49",
       "iso_code": "de",
       "id": 74
     },
-    "name": "Vodafone",
+    "id": 3,
+    "session_id": "d12c574f-e219-45a4-8836-d17a50f66fb1",
     "pdp_context": {
-      "tariff_profile_id": "395978", // coverage policy
-      "tx_teid_control_plane": 570842943,
       "breakout_ip": "97.106.216.29",
-      "tariff_id": "555", // data plan
       "rac": null,
-      "ratezone_id": "8178", // coverage area
-      "ci": 5174,
-      "imeisv": "6887426203768011",
-      "lac": 921,
-      "sac": null,
-      "gtp_version": 1,
-      "rat_type": 2,
-      "mcc": "262",
-      "tx_teid_data_plane": 557727595,
-      "ue_ip_address": "101.124.109.214",
-      "ggsn_data_plane_ip_address": "150.85.110.76",
-      "tunnel_created": "2021-10-27T08:38:02",
-      "pdp_context_id": 51755555,
-      "ggsn_control_plane_ip_address": "60.195.159.61",
       "sgsn_control_plane_ip_address": "117.72.59.30",
-      "nsapi": 5,
+      "rat_type": 2,
+      "tx_teid_data_plane": 557727595,
       "region": "eu-west-1",
       "apn": "em",
-      "mnc": "02",
+      "tx_teid_control_plane": 570842943,
+      "tunnel_created": "2021-10-27T08:38:02",
+      "ggsn_data_plane_ip_address": "150.85.110.76",
       "sgsn_data_plane_ip_address": "223.253.0.120",
-      "operator_id": "3",
+      "rx_teid": 96601675,
+      "ci": 5174,
       "imsi": "82186563190127",
-      "rx_teid": 96601675
+      "lac": 921,
+      "mcc": "262",
+      "sac": null,
+      "ggsn_control_plane_ip_address": "60.195.159.61",
+      "mnc": "02",
+      "nsapi": 5,
+      "ue_ip_address": "101.124.109.214",
+      "imeisv": "6887426203768011",
+      "pdp_context_id": 51755555,
+      "gtp_version": 1,
+      "operator_id": "3",
+      "tariff_profile_id": "395978", // coverage policy
+      "ratezone_id": "8178", // coverage area
+      "tariff_id": "555" // data plan
     },
-    "id": 3
+    "name": "Vodafone"
   }
 }
 ```
@@ -759,39 +760,40 @@ The event details also show the data transmitted, and the device appears as **At
             "iso_code": "de",
             "id": 82
         },
-        "name": "Vodafone",
         "volume": {
             "total": 0.641984,
             "rx": 0.418811,
             "tx": 0.223173
         },
+        "id": 3,
+        "session_id": "2a4ff039-fbb9-4eaa-b74c-2f0eaafaf624",
         "pdp_context": {
-            "tx_teid_control_plane": 397629956,
             "breakout_ip": null,
             "rac": null,
-            "ci": 6471,
-            "imeisv": "4555797980633712",
-            "lac": 767,
-            "sac": null,
-            "gtp_version": 1,
-            "rat_type": 2,
-            "mcc": "262",
-            "tx_teid_data_plane": 966839357,
-            "ue_ip_address": "66.185.97.229",
-            "ggsn_data_plane_ip_address": "225.129.61.136",
-            "tunnel_created": "2021-10-27T08:38:02",
-            "pdp_context_id": 79790039,
-            "ggsn_control_plane_ip_address": "67.185.18.116",
             "sgsn_control_plane_ip_address": "234.39.123.228",
-            "nsapi": 5,
+            "rat_type": 2,
+            "tx_teid_data_plane": 966839357,
             "region": "eu-west-1",
             "apn": null,
-            "mnc": "02",
+            "tx_teid_control_plane": 397629956,
+            "tunnel_created": "2021-10-27T08:38:02",
+            "ggsn_data_plane_ip_address": "225.129.61.136",
             "sgsn_data_plane_ip_address": "173.69.12.45",
+            "rx_teid": 18195957,
+            "ci": 6471,
             "imsi": "369573775632443",
-            "rx_teid": 18195957
+            "lac": 767,
+            "mcc": "262",
+            "sac": null,
+            "ggsn_control_plane_ip_address": "67.185.18.116",
+            "mnc": "02",
+            "nsapi": 5,
+            "ue_ip_address": "66.185.97.229",
+            "imeisv": "4555797980633712",
+            "pdp_context_id": 79790039,
+            "gtp_version": 1
         },
-        "id": 3
+        "name": "Vodafone"
     }
 }
 ```

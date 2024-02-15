@@ -1,7 +1,7 @@
 ---
 description: Configure the type of content delivered by the data stream
 last_update: 
-  date: 12-31-2022
+  date: 02-15-2024
 slug: /multicloud-data-streamer/stream-types
 ---
 
@@ -64,8 +64,8 @@ Data usage records are created:
 ```json
 [
     {
-        "cost": 0.00439866,
-        "id": 393533342974012,
+        "cost": 0.00188512,
+        "id": 333333333333333,
         "operator": { // network
             "id": 5,
             "name": "Telefonica O2",
@@ -77,15 +77,15 @@ Data usage records are created:
             }
         },
         "organisation": {
-            "id": 11060,
-            "name": "emnify LTEM Demo"
+            "id": 12345,
+            "name": "Example Organization"
         },
         "tariff": { // data plan
-            "id": 557,
-            "name": "Regional Pro EUR",
+            "id": 1,
+            "name": "Internal Test Data Plan",
             "ratezone": { // coverage area
-                "id": 3398,
-                "name": "Europe Basic"
+                "id": 2,
+                "name": "Area 2"
             }
         },
         "traffic_type": { // usage type
@@ -93,21 +93,12 @@ Data usage records are created:
             "description": "Data"
         },
         "endpoint": { // device
-            "id": 10830095,
-            "name": "Wallbox 232",
-            "ip_address": "10.196.67.7",
+            "id": 123456789,
+            "name": "Example Device",
+            "ip_address": "192.0.2.7",
             "tags": "V1",
             "imei": "8677300511111142",
-            "balance": {
-                "amount": -0.684147,
-                "last_updated": "2022-04-26T12:02:21Z",
-                "expiry_date": "2022-04-06T08:00:00Z",
-                "currency": {
-                    "id": 1,
-                    "code": "EUR",
-                    "symbol": "€"
-                }
-            }
+            "balance": null
         },
         "imsi": "295050901064821",
         "volume": {
@@ -118,7 +109,7 @@ Data usage records are created:
         "start_timestamp": "2022-04-26T11:53:43Z",
         "sim": {
             "id": 3324192,
-            "iccid": "8988303000005555555",
+            "iccid": "89883030000080139311",
             "msisdn": "423663920123456",
             "production_date": "2020-09-09T06:42:59Z"
         },
@@ -127,7 +118,7 @@ Data usage records are created:
             "code": "EUR",
             "symbol": "€"
         },
-        "end_timestamp": "2022-04-26T12:02:43Z",
+        "end_timestamp": "2024-02-15T14:56:15.260Z",
         "imsi_id": 9624042,
         "session_id": "722aeb56-c4de-4753-ac23-4f99c1980c5e"
     }
@@ -154,7 +145,7 @@ Usage records for SMS are created when an SMS is successfully delivered either:
 [
     {
         "cost": 0.07,
-        "id": 393603365044284,
+        "id": 333333333333333,
         "operator": { // network
             "id": 5,
             "name": "Telefonica O2",
@@ -166,8 +157,8 @@ Usage records for SMS are created when an SMS is successfully delivered either:
             }
         },
         "organisation": {
-            "id": 11060,
-            "name": "emnify LTEM Demo"
+            "id": 12345,
+            "name": "Example Organization"
         },
         "tariff": { // data plan
             "id": 1,
@@ -182,21 +173,12 @@ Usage records for SMS are created when an SMS is successfully delivered either:
             "description": "SMS"
         },
         "endpoint": { // device
-            "id": 10830095,
-            "name": "Wallbox 232",
-            "ip_address": "10.196.67.7",
+            "id": 123456789,
+            "name": "Example Device",
+            "ip_address": "192.0.2.88",
             "tags": "V1",
             "imei": "8677300511111142",
-            "balance": {
-                "amount": -0.754147,
-                "last_updated": "2022-04-26T13:13:56Z",
-                "expiry_date": "2022-04-06T08:00:00Z",
-                "currency": {
-                    "id": 1,
-                    "code": "EUR",
-                    "symbol": "€"
-                }
-            }
+            "balance": null
         },
         "imsi": "901430111111111",
         "volume": {
@@ -206,8 +188,8 @@ Usage records for SMS are created when an SMS is successfully delivered either:
         },
         "start_timestamp": "2022-04-26T13:13:56Z",
         "sim": {
-            "id": 3324192,
-            "iccid": "8988303000005555555",
+            "id": 123456,
+            "iccid": "89883030000080139312",
             "msisdn": "423663920123456",
             "production_date": "2020-09-09T06:42:59Z"
         },
@@ -216,7 +198,7 @@ Usage records for SMS are created when an SMS is successfully delivered either:
             "code": "EUR",
             "symbol": "€"
         },
-        "end_timestamp": "2022-04-26T13:13:56Z",
+        "end_timestamp": "2024-02-15T14:56:15.260Z",
         "imsi_id": 9624042,
         "session_id": "beafcbbf-48b7-49c5-b493-fce36bad466a"
     }
