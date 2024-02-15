@@ -1,7 +1,7 @@
 ---
 description: Step-by-step how to guides that teach you how to use the emnify platform
 last_update: 
-  date: 02-01-2024
+  date: 02-15-2024
 pagination_next: how-tos/add-ip-address-spaces
 slug: /how-tos
 ---
@@ -51,7 +51,6 @@ slug: /how-tos
 ## SMS
 
 - [4 ways to send SMS to your devices manually and automatically](https://www.emnify.com/developer-blog/4-ways-to-send-sms)
-- [How to send and receive SMS via the API](https://www.emnify.com/developer-blog/how-to-send-and-receive-sms-via-the-api)
 
 ## Single sign-on
 
