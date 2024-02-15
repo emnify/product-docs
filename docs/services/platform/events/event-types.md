@@ -505,7 +505,8 @@ This device appears as **Online** in the [emnify Portal](/system-events/usage#em
       "sgsn_data_plane_ip_address": "223.253.0.120",
       "operator_id": "3",
       "imsi": "82186563190127",
-      "rx_teid": 96601675
+      "rx_teid": 96601675,
+      "session_id": "d12c574f-e219-45a4-8836-d17a50f66fb1"
     },
     "id": 3
   }
@@ -789,7 +790,8 @@ The event details also show the data transmitted, and the device appears as **At
             "mnc": "02",
             "sgsn_data_plane_ip_address": "173.69.12.45",
             "imsi": "369573775632443",
-            "rx_teid": 18195957
+            "rx_teid": 18195957,
+            "session_id": "2a4ff039-fbb9-4eaa-b74c-2f0eaafaf624"
         },
         "id": 3
     }
