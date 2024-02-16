@@ -2,7 +2,7 @@
 title: Workspaces
 description: Organizations with complex business structures or diverse product lines can benefit from Workspaces in the emnify Portal
 last_update: 
-  date: 01-10-2024
+  date: 02-16-2024
 slug: /workspaces
 ---
 
