@@ -62,3 +62,8 @@ The following guides offer step-by-step guidance for configuring Workspaces for 
 - [Create a new workspace](/workspaces/create)
 - [Link an existing workspace](/workspaces/link)
 - [Switch between workspaces](/workspaces/switch)
+
+:::info[API reference]
+Many operations are also executable using the emnify REST API.
+Available endpoints are listed under the [Workspaces tag in the OpenAPI specification](https://cdn.emnify.net/api/doc/swagger.html#/Workspaces).
+:::
