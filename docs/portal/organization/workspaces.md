@@ -2,7 +2,7 @@
 title: Workspaces
 description: Organizations with complex business structures or diverse product lines can benefit from Workspaces in the emnify Portal
 last_update: 
-  date: 01-10-2024
+  date: 02-16-2024
 slug: /workspaces
 ---
 
@@ -62,3 +62,8 @@ The following guides offer step-by-step guidance for configuring Workspaces for 
 - [Create a new workspace](/workspaces/create)
 - [Link an existing workspace](/workspaces/link)
 - [Switch between workspaces](/workspaces/switch)
+
+:::info[API reference]
+Many operations are also executable using the emnify REST API.
+Available endpoints are listed under the [Workspaces tag in the OpenAPI specification](https://cdn.emnify.net/api/doc/swagger.html#/Workspaces).
+:::
