@@ -1,7 +1,7 @@
 ---
 description: Step-by-step guide for integrating OpenVPN on Linux to use on devices with emnify eSIMs.
 last_update: 
-  date: 01-29-2024
+  date: 02-19-2024
 pagination_label: OpenVPN on Linux
 pagination_next: services/platform/integration-guides/openvpn/macos
 sidebar_label: Linux
@@ -12,6 +12,7 @@ slug: /integration-guides/openvpn-linux-ubuntu
 
 import OpenVpnIntroductionPartial from './partials/_openvpn-introduction.mdx'
 import PortalPreparationSummaryPartial from './partials/_portal-preparation-summary.mdx'
+import TotpMfaWarningPartial from '../../../partials/_totp-mfa-warning.mdx'
 import DownloadConfigInstructionsPartial from './partials/_download-config-instructions.mdx'
 import ChangeBreakoutRegionInstructionsPartial from './partials/_change-breakout-region-instructions.mdx'
 
@@ -22,6 +23,8 @@ import ChangeBreakoutRegionInstructionsPartial from './partials/_change-breakout
 <PortalPreparationSummaryPartial />
 
 ### Download the VPN configuration file
+
+<TotpMfaWarningPartial />
 
 <DownloadConfigInstructionsPartial
   imageSrc="linux"
@@ -43,10 +46,6 @@ sudo apt-get install openvpn
 ```
 
 ### Create credentials for authentication
-
-:::warning
-User accounts with MFA enabled can't be used to authenticate the OpenVPN tunnel.
-:::
 
 Once you install the software and [download the configuration file](#download-the-vpn-configuration-file), setting up authentication is next.
 Create a file called `credentials.txt` in the folder `/etc/openvpn`.

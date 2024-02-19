@@ -1,7 +1,7 @@
 ---
 description: Step-by-step guide for integrating OpenVPN on Windows to use on devices with emnify eSIMs.
 last_update: 
-  date: 01-29-2024
+  date: 02-19-2024
 pagination_label: OpenVPN on Windows
 sidebar_label: Windows
 slug: /integration-guides/openvpn-windows
@@ -11,6 +11,7 @@ slug: /integration-guides/openvpn-windows
 
 import OpenVpnIntroductionPartial from './partials/_openvpn-introduction.mdx'
 import PortalPreparationSummaryPartial from './partials/_portal-preparation-summary.mdx'
+import TotpMfaWarningPartial from '../../../partials/_totp-mfa-warning.mdx'
 import DownloadConfigInstructionsPartial from './partials/_download-config-instructions.mdx'
 import ChangeBreakoutRegionInstructionsPartial from './partials/_change-breakout-region-instructions.mdx'
 
@@ -21,6 +22,8 @@ import ChangeBreakoutRegionInstructionsPartial from './partials/_change-breakout
 <PortalPreparationSummaryPartial />
 
 ### Download the VPN configuration file
+
+<TotpMfaWarningPartial />
 
 <DownloadConfigInstructionsPartial
   imageSrc="windows"
