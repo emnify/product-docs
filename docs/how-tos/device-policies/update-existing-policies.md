@@ -36,7 +36,6 @@ Resetting connectivity is also available as a bulk option.
 1. A new menu at the top of the page provides bulk operations.
 Select **Reset**.
 1. Finally, click **Confirm**.
-
 :::danger
 Once you confirm, the network detaches your device and waits for the modem to connect again.
 :::

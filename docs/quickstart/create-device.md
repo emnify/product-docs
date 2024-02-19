@@ -15,7 +15,6 @@ After [registering SIMs](/quickstart/register-sims), you need to create a virtua
 2. Navigate to **Connected Devices** and click **Add device**.
 3. Name your device and assign a service policy and coverage policy.
 Optionally, add tags, indicate the IP address, [lock the IMEI](/services/security#imei-lock), or assign a SIM.
-
 :::note
 Assigning a SIM to the device is a necessary step for getting your device online.
 :::
