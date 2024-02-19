@@ -46,6 +46,7 @@ Once MFA becomes mandatory for your organization, follow these steps to access y
 2. Navigate to the email account you use to access the Portal. 
 Open the message from emnify with your 6-digit verification code.
 The code is valid for 20 minutes and should contain letters and numbers.
+
 :::tip
 Check your spam folder if you haven't received a code after a few minutes.
 :::
