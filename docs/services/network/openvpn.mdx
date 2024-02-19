@@ -1,0 +1,28 @@
+---
+description: Overview and setup
+last_update: 
+  date: 02-19-2024
+slug: /services/openvpn
+---
+
+# OpenVPN
+
+import TotpMfaWarningPartial from '../partials/_totp-mfa-warning.mdx'
+
+emnify's communication platform hosts an OpenVPN service that allows you to establish a private network between a device and any remote client location.
+The remote client can be on the application server or any machine that wants to access the device remotely (such as operational staff).
+
+## IoT device requirements
+
+Your IoT device doesn't need a private APN, OpenVPN software, or dynamic DNS resolution to use the OpenVPN service.
+Through the emnify SIM, each device has a [static](/glossary#static-ip) [private IP address](/glossary#private-ip) that you can use to identify and address the device.
+
+At the same time, the IoT device can send data through the private tunnel to the IP address of the remote machine.
+
+## Available guides
+
+- [Linux](/integration-guides/openvpn-linux-ubuntu)
+- [macOS](/integration-guides/openvpn-macos)
+- [Windows](/integration-guides/openvpn-windows) 
+
+<TotpMfaWarningPartial />
