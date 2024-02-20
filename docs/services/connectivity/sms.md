@@ -1,7 +1,7 @@
 ---
 description: Available SMS services offered by the emnify IoT SuperNetwork, including SMS MO, SMS MT, A2P, P2P, and more
 last_update:
-  date: 02-13-2024
+  date: 02-14-2024
 slug: /services/sms
 ---
 
@@ -33,12 +33,18 @@ A2P SMS provides a powerful way to interact with IoT devices, with two distingui
 1. Forward information from applications through SMS to the device (for example, to trigger a specific command).
 1. Retrieve the SMS information sent from the device (for example, so that the device can trigger a particular action on the application side).
 
-You can manage A2P SMS communication through four different interfaces:
+You can manage A2P SMS communication through five different interfaces:
 
-- **SMS Console on the web portal** - The emnify Portal provides an SMS console that allows you to send SMS to the device with a configurable source address. The console also lists SMS received and sent by the device.
-- **REST API** - Through the REST API, you can send SMS with a POST request and receive SMS via a webhook. Information about SMS delivery is also available.
-- **SMPP** - Several IoT platforms (for example, in telematics) provide a short message peer-to-peer protocol (SMPP) interface to send SMS to a connected device. When connecting the third-party platform via SMPP, the SMS delivers through the emnify SMSC with higher reliability and lower cost.
-- **Zapier** - Instead of implementing the APIs in your application, emnify and Zapier provides a no-code alternative to automate SMS workflows. You can send SMS on specific triggers (for example, email or Slack message) or use the SMS webhook to define an automated flow after receiving an SMS from the device.
+- **Web portal** - The emnify Portal provides an SMS console that allows you to send SMS to the device with a configurable source address.
+The console also lists SMS received and sent by the device.
+- **SMS console** - emnify's [SMS console](https://sms.emnify.com) allows individuals without direct access to the emnify Portal to interact with a device using SMS.
+This functionality is particularly interesting for third parties installing and managing devices for manufacturers.
+- **REST API** - Through the REST API, you can send SMS with a POST request and receive SMS via a webhook.
+Information about SMS delivery is also available.
+- **SMPP** - Several IoT platforms (for example, in telematics) provide a short message peer-to-peer protocol (SMPP) interface to send SMS to a connected device.
+When connecting the third-party platform via SMPP, the SMS delivers through the emnify SMSC with higher reliability and lower cost.
+- **Zapier** - Instead of implementing the APIs in your application, emnify and Zapier provides a no-code alternative to automate SMS workflows.
+You can send SMS on specific triggers (for example, email or Slack message) or use the SMS webhook to define an automated flow after receiving an SMS from the device.
 
 ## Short codes
 

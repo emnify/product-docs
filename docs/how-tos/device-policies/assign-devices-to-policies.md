@@ -36,6 +36,7 @@ You should see a real-time notification confirming the change.
 
 1. Navigate to [**Connected Devices**](https://portal.emnify.com/connected-devices).
 2. Search for the devices you wish to assign to a policy and select the checkbox next to every relevant device.
+
 :::tip
 You can filter by tag or any other property to show only the devices to be assigned.
 If the filtered list looks good, select the top checkbox in the table heading to select them all.

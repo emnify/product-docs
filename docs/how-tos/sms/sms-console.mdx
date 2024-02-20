@@ -1,0 +1,55 @@
+---
+description: How to enable emnify's SMS console for your customers to send and receive device SMS
+last_update:
+  date: 02-14-2024
+slug: /how-tos/use-sms-console
+---
+
+# Use the emnify SMS console
+
+emnify's SMS console allows individuals without direct access to the emnify Portal to interact with a device using SMS.
+The console is designed to enable the configuration and troubleshooting of a device.
+This functionality is particularly interesting for third parties installing and managing devices for manufacturers.
+
+:::warning
+Currently, the availability of SMS console is limited to customers of emnify's Brazilian entity.
+Access for additional customers is coming soon.
+:::
+
+## Enable console access for your customers
+
+Access to the SMS console is managed through emnify's tagging mechanism.
+Follow these steps to enable access for your customer:
+
+1. [Log in to your emnify account](https://portal.emnify.com/sign).
+1. Navigate to your [**Connected Devices**](https://portal.emnify.com/connected-devices).
+1. Find the device you want to manage using the SMS console and click **Details**.
+1. Select **+ Add tag** under the device name.
+1. Tag the devices using the following syntax:
+
+```txt
+sms-UNIQUE_IDENTIFIER
+```
+
+Replace _`UNIQUE_IDENTIFIER`_ with a unique string of letters and numbers to identify the tagged devices. **Minimum 5** characters are required.
+Choosing a proper unique identifier is essential to the security of the device and your customers' data.
+
+:::danger
+Never use an email address or other identifiable information as a unique identifier.
+Instead, use a long and random string of **minimum 5** numbers and letters.
+For example `sms-939ffa9eksdf`
+:::
+
+Once a device is tagged using this syntax, you can manage it using the SMS console.
+
+## Send and receive SMS
+
+To access the emnify SMS console, follow these steps:
+
+1. Navigate to [https://sms.emnify.com](https://sms.emnify.com)
+1. Enter your unique identifier and [MSISDN](/glossary#msisdn), then select **Manage Device**.
+1. Enter the SMS you want to send and select **Send**.
+
+:::note
+Any responses are displayed in the SMS console.
+:::
