@@ -1,7 +1,7 @@
 ---
 description: Learn the basics and structure of emnify system events
 last_update: 
-  date: 01-03-2023
+  date: 02-21-2024
 pagination_next: services/platform/events/event-types
 slug: /system-events
 ---
@@ -10,6 +10,10 @@ slug: /system-events
 
 The emnify system generates several types of events.
 These events allow you to track notable system occurrences based on behavior and provide information about lifecycle transitions and configuration changes.
+
+:::info
+Event history is stored for 30 days.
+:::
 
 ## Use cases
 
