@@ -1,37 +1,16 @@
 1. [Log in to your emnify account](https://portal.emnify.com/sign).
-2. Navigate to [**Device Policies**](https://portal.emnify.com/device-policies).
-3. Find your desired service policy in the **Service Policies** section and expand the policy details.
-
-<img
-  src={require('../assets/portal-device-policies-service-policies-details.png').default}
-  alt=""
-/>
-
-4. Ensure the **{props.toggleLabel}** toggle is switched on.
-
-<img
-  src={require(`../assets/portal-device-policies-service-policies-details-${props.limitType}-usage.png`).default}
-  alt=""
-/>
-
-5. Use the **{props.dropdownLabel}** dropdown menu to select the limits based on your device usage.
-
-<img
-  src={require(`../assets/portal-device-policies-service-policies-details-${props.limitType}-limit-dropdown.png`).default}
-  alt=""
-  style={{ height: 400 }}
-/>
-
-Changes save automatically.
-In this example, the limit changed from **No limit** to **{props.exampleLimit} per 1 month**.
-
-<img
-  src={require(`../assets/portal-device-policies-service-policies-details-${props.limitType}-limit-example.png`).default}
-  alt=""
-  style={{ width: 350 }}
-/>
+1. Navigate to [**Device Policies**](https://portal.emnify.com/device-policies).
+1. Find your desired service policy in the **Service Policies** section and expand the policy details.
+1. In **{props.usageType}**, ensure the **{props.toggleLabel}** toggle is switched on.
+  Then, click **Edit** (pencil icon) next to **{props.sectionTitle}**.
+1. Fill in your **{props.sectionTitle}** details as follows:
+  - In the **Manage {props.limitType } limit** field, enter a non-negative {props.usageType == 'Data' ? 'number with up to two decimal places and select a unit' : 'whole number'}.
+  - For **Schedule period**, choose an option.
+  - In the **Warning event threshold** field, enter a number for the percentage.
+    You [see an event](/system-events/usage#events-in-the-portal) after your devices reach this percentage.
+1. Click **Save**.
 
 :::note
 The limit is applied to all the devices associated with the selected service policy.
-The limit is valid for the current month and resets to 0 {props.limitValue} on the first day of each month.
+The limit is valid for the current month and resets to 0 on the first day of each month.
 :::

@@ -1,7 +1,7 @@
 ---
 description: How to configure data and SMS limits for your device policies on the emnify Portal
 last_update: 
-  date: 01-29-2024
+  date: 02-21-2024
 slug: /how-tos/configure-data-sms-limits
 ---
 
@@ -23,10 +23,9 @@ It's your responsibility to introduce a random backup timer.
 
 <SetLimitInstructionsPartial
   limitType="data"
-  limitValue="MB"
-  dropdownLabel="Data Limit"
   toggleLabel="Devices may use data"
-  exampleLimit="1 MB"
+  usageType="Data"
+  sectionTitle="Cellular data limit"
 />
 
 :::warning
@@ -36,18 +35,20 @@ Don't switch off the **Devices may use data** toggle as this completely turns of
 ### SMS \{#set-limits-sms}
 
 <SetLimitInstructionsPartial
-  limitType="sms"
-  limitValue="SMS"
-  dropdownLabel="SMS Sending Limit or SMS Receiving Limit"
-  toggleLabel="Devices may send SMS (SMS MO) or Devices may receive SMS (SMS MT)"
-  exampleLimit="10 SMS"
+  limitType="SMS"
+  toggleLabel="SMS outbound or SMS inbound"
+  usageType="SMS"
+  sectionTitle="SMS outbound limit or SMS inbound limit"
 />
 
 ## Turn off limits
 
 ### Data \{#turn-off-limits-data}
 
-<TurnOffLimitInstructionsPartial dropdownLabel="Data Limit" />
+<TurnOffLimitInstructionsPartial
+  sectionTitle="Cellular data limit"
+  limitType="data"
+/>
 
 :::warning
 Don't switch off the **Devices may use data** toggle as this completely turns off data connectivity and takes your devices offline.
@@ -55,7 +56,10 @@ Don't switch off the **Devices may use data** toggle as this completely turns of
 
 ### SMS \{#turn-off-limits-sms}
 
-<TurnOffLimitInstructionsPartial dropdownLabel="SMS Sending Limit or SMS Receiving Limit" />
+<TurnOffLimitInstructionsPartial
+  sectionTitle="SMS outbound limit or SMS inbound limit"
+  limitType="SMS"
+/>
 
 :::note
 If you don't want your device to send or receive SMS, switch off both or one of the toggles.
