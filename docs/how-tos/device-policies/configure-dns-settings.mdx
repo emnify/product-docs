@@ -1,7 +1,7 @@
 ---
-description: How to configure DNS settings
+description: How to configure a custom DNS and other DNS settings in the emnify Portal
 last_update:
-  date: 01-31-2024
+  date: 02-22-2024
 slug: /how-tos/configure-dns-settings
 ---
 
@@ -23,100 +23,47 @@ See [DNS Filtering with emnify Cloud Connect and AWS Route53](https://www.emnify
 ## Add a custom DNS
 
 1. [Log in to your emnify account](https://portal.emnify.com/sign).
-2. Navigate to [**Device Policies**](https://portal.emnify.com/device-policies).
-3. Find your desired service policy in the **Service Policies** section and click **Details**.
+1. Navigate to [**Device Policies**](https://portal.emnify.com/device-policies).
+1. Find your desired service policy in the **Service Policies** section and expand the policy details.
+1. In **Data**, find the **Custom DNS Server** section.
+  By default, the badge next to the section title reads **Default DNS**.
+1. Click **Edit** (pencil icon) to open the configuration modal.
+1. Enter a valid IP address in the **Primary NS** and **Secondary NS** fields.
+  Click **&#10003; Confirm** to save your changes.
 
-<img
-  src={require('./assets/portal-device-policies-service-policies-details.png').default}
-  alt=""
-/>
-
-4. Select the **More options** tab to find the **Custom DNS** section.
-5. Click **Configure custom DNS**.
-
-<img
-  src={require('./assets/portal-device-policies-service-policies-details-more-options-configure-custom-dns.png').default}
-  alt=""
-/>
-
-6. Enter the primary and secondary DNS, then click **Add custom DNS**.
-
-<img
-  src={require('./assets/portal-device-policies-service-policies-details-more-options-custom-dns-add.png').default}
-  alt=""
-/>
+The **Custom DNS Server** section of the policy details should display the **Configured DNS** badge and the updated IP address values.
 
 <ResetConnectivityWarningPartial />
 
 ## Edit a custom DNS
 
 1. [Log in to your emnify account](https://portal.emnify.com/sign).
-2. Navigate to [**Device Policies**](https://portal.emnify.com/device-policies).
-3. Find your desired service policy in the **Service Policies** section and expand the policy details.
+1. Navigate to [**Device Policies**](https://portal.emnify.com/device-policies).
+1. Find your desired service policy in the **Service Policies** section and expand the policy details.
+1. In **Data**, find the **Custom DNS Server** section.
+  The badge next to the section title should read **Configured DNS**.
+1. Click **Edit** (pencil icon) to open the configuration modal.
+1. Edit the **Primary NS** or **Secondary NS** field, then click **&#10003; Confirm** to save your changes.
 
-<img
-  src={require('./assets/portal-device-policies-service-policies-details.png').default}
-  alt=""
-/>
-
-4. Select the **More options** tab to find the **Custom DNS** section.
-
-<img
-  src={require('./assets/portal-device-policies-service-policies-details-more-options-custom-dns.png').default}
-  alt=""
-/>
-
-5. Click **Edit**.
-
-<img
-  src={require('./assets/portal-device-policies-service-policies-details-more-options-custom-dns-edit.png').default}
-  alt=""
-/>
-
-6. Edit the primary or secondary DNS, then select **Save custom DNS**.
-
-<img
-  src={require('./assets/portal-device-policies-service-policies-more-options-custom-dns-save.png').default}
-  alt=""
-/>
+The **Custom DNS Server** section of the policy details should display the updated IP address values.
 
 <ResetConnectivityWarningPartial />
 
 ## Delete a custom DNS
 
 1. [Log in to your emnify account](https://portal.emnify.com/sign).
-2. Navigate to [**Device Policies**](https://portal.emnify.com/device-policies).
-3. Find your desired service policy in the **Service Policies** section and click **Details**.
+1. Navigate to [**Device Policies**](https://portal.emnify.com/device-policies).
+1. Find your desired service policy in the **Service Policies** section and expand the policy details.
+1. In **Data**, find the **Custom DNS Server** section.
+  The badge next to the section title should read **Configured DNS**.
+1. Click **Edit** (pencil icon) to open the configuration modal.
+1. Remove the values from the **Primary NS** and **Secondary NS** fields, then click **&#10003; Confirm** to save your changes.
 
-<img
-  src={require('./assets/portal-device-policies-service-policies-details.png').default}
-  alt=""
-/>
-
-4. Select the **More options** tab to find the **Custom DNS** section.
-
-<img
-  src={require('./assets/portal-device-policies-service-policies-details-more-options-custom-dns.png').default}
-  alt=""
-/>
-
-5. Click **Edit**.
-
-<img
-  src={require('./assets/portal-device-policies-service-policies-details-more-options-custom-dns-edit.png').default}
-  alt=""
-/>
-
-6. Finally, select **Remove custom DNS**.
-
-<img
-  src={require('./assets/portal-device-policies-service-policies-more-options-custom-dns-remove.png').default}
-  alt=""
-/>
+The **Custom DNS Server** section of the policy details should display the **Default DNS** badge and the updated IP address values.
 
 <ResetConnectivityWarningPartial />
 
 ## Configure DNS settings with the emnify REST API
 
-You can also add, list, or delete DNS configurations using the emnify Rest API.
+You can also add, list, or delete DNS configurations using the emnify REST API.
 For step-by-step instructions, see [Configure DNS Settings](https://cdn.emnify.net/api/doc/configure-dns-settings.html) in the emnify System Documentation.
