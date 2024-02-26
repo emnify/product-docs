@@ -27,7 +27,7 @@ The following tables describe the permissions for different roles.
 ## Device management
 
 | Action | Administrator | Observer | User |
-| ------ | :---: | :------: | :--: |
+| ------ | :-----------: | :------: | :--: |
 | Retrieve a device by ID | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
 | Update or delete a device by ID | <Check alt="Yes" /> | <Close alt="No" /> | <Check alt="Yes" /> |
 | Retrieve the blocked networks for a device | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
@@ -39,7 +39,7 @@ The following tables describe the permissions for different roles.
 ## SIM management
 
 | Action | Administrator | Observer | User |
-| ------ | :---: | :------: | :--: |
+| ------ | :-----------: | :------: | :--: |
 | Retrieve SIMs by ID | <Check alt="✓" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
 | Update or delete SIMs by ID | <Check alt="Yes" /> | <Close alt="No" /> | <Check alt="Yes" /> |
 | List available SIM statuses | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
@@ -48,7 +48,7 @@ The following tables describe the permissions for different roles.
 ## Service profile
 
 | Action | Administrator | Observer | User |
-| ------ | :---: | :------: | :--: |
+| ------ | :-----------: | :------: | :--: |
 | Retrieve a list of available countries | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
 | Retrieve a list of available currencies | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
 | Retrieve single currency details by ID | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
@@ -65,7 +65,7 @@ The following tables describe the permissions for different roles.
 ## Coverage policy
 
 | Action | Administrator | Observer | User |
-| ------ | :---: | :------: | :--: |
+| ------ | :-----------: | :------: | :--: |
 | List of available coverage area statuses | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
 | List of available data plan statuses | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
 | Retrieve data plan details by ID | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
@@ -80,7 +80,7 @@ The following tables describe the permissions for different roles.
 
 ## User management
 
-<table>
+<table className="user-management-roles">
   <colgroup></colgroup>
   <colgroup></colgroup>
   <colgroup span="3"></colgroup>
@@ -99,32 +99,46 @@ The following tables describe the permissions for different roles.
   </thead>
   <tbody>
     <tr>
-      <td scope="row">Access to all workspaces linked by emnify</td>
+      <td scope="row">Automatic access to all workspaces linked by emnify</td>
       <td><Check alt="Yes" /></td>
       <td><Close alt="No" /></td>
       <td><Close alt="No" /></td>
       <td><Close alt="No" /></td>
     </tr>
     <tr>
-      <td scope="row">Create support token to assume permissions of a user by ID</td>
-      <td><Close alt="No" /></td>
-      <td><Close alt="No" /></td>
-      <td><Close alt="No" /></td>
-      <td><Close alt="No" /></td>
-    </tr>
-    <tr>
-      <td scope="row">Update or delete users</td>
+      <td scope="row">Create or list workspace users</td>
       <td><Check alt="Yes" /></td>
       <td><Check alt="Yes" /></td>
       <td><Close alt="No" /></td>
       <td><Close alt="No" /></td>
     </tr>
     <tr>
-      <td scope="row">Retrieve your user role permissions</td>
+      <td scope="row">Update or delete workspace users</td>
+      <td><Check alt="Yes" /></td>
+      <td><Check alt="Yes" /></td>
+      <td><Close alt="No" /></td>
+      <td><Close alt="No" /></td>
+    </tr>
+    <tr>
+      <td scope="row">Reassign or delete a SuperAdmin</td>
+      <td><Close alt="No" /></td>
+      <td><Close alt="No" /></td>
+      <td><Close alt="No" /></td>
+      <td><Close alt="No" /></td>
+    </tr>
+    <tr>
+      <td scope="row">Retrieve your user role</td>
       <td><Check alt="Yes" /></td>
       <td><Check alt="Yes" /></td>
       <td><Check alt="Yes" /></td>
       <td><Check alt="Yes" /></td>
+    </tr>
+    <tr>
+      <td scope="row">Add or delete per workspace roles from a user</td>
+      <td><Check alt="Yes" /></td>
+      <td><Check alt="Yes" /></td>
+      <td><Close alt="No" /></td>
+      <td><Close alt="No" /></td>
     </tr>
     <tr>
       <td scope="row">Update your password</td>
@@ -134,21 +148,7 @@ The following tables describe the permissions for different roles.
       <td><Check alt="Yes" /></td>
     </tr>
     <tr>
-      <td scope="row">Create or list users</td>
-      <td><Check alt="Yes" /></td>
-      <td><Check alt="Yes" /></td>
-      <td><Close alt="No" /></td>
-      <td><Close alt="No" /></td>
-    </tr>
-    <tr>
-      <td scope="row">Add or delete roles from a user</td>
-      <td><Check alt="Yes" /></td>
-      <td><Check alt="Yes" /></td>
-      <td><Close alt="No" /></td>
-      <td><Close alt="No" /></td>
-    </tr>
-    <tr>
-      <td scope="row">Delete or list trusted devices for a given user</td>
+      <td scope="row">Delete or list trusted devices for a user</td>
       <td><Check alt="Yes" /></td>
       <td><Check alt="Yes" /></td>
       <td><Close alt="No" /></td>
@@ -168,13 +168,20 @@ The following tables describe the permissions for different roles.
       <td><Close alt="No" /></td>
       <td><Close alt="No" /></td>
     </tr>
+    <tr>
+      <td scope="row">Create a support token to assume user permissions by ID</td>
+      <td><Close alt="No" /></td>
+      <td><Close alt="No" /></td>
+      <td><Close alt="No" /></td>
+      <td><Close alt="No" /></td>
+    </tr>
   </tbody>
 </table>
 
 ## Alerts
 
 | Action | Administrator | Observer | User |
-| ------ | :---: | :------: | :--: |
+| ------ | :-----------: | :------: | :--: |
 | Retrieve organization or device alerts | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
 | Retrieve user events by ID | <Check alt="Yes" /> | <Close alt="No" /> | <Close alt="No" /> |
 | Retrieve IMSI and SIM events | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
@@ -182,7 +189,7 @@ The following tables describe the permissions for different roles.
 ## MFA keys
 
 | Action | Administrator | Observer | User |
-| ------ | :---: | :------: | :--: |
+| ------ | :-----------: | :------: | :--: |
 | Generate user shared secret key for MFA | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
 | Activate user shared secret key for MFA | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
 | List available MFA key statuses | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |

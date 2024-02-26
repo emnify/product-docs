@@ -144,6 +144,10 @@ _________________
   border: none !important;
 }
 
+table.user-management-roles tr td:not(:first-child) {
+  text-align: center;
+}
+
 /* Inline code elements wrapped in an anchor tag */
 a:has(> code) {
   text-decoration: none;
