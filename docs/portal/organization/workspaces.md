@@ -88,7 +88,7 @@ By default, the former SuperAdmin becomes an administrator of any workspace they
 
 :::note
 Unlinked workspaces only affects the SuperAdmin's role and access.
-There's no difference for other users because they still have access to their workspaces and see the workspace switcher, if applicable.
+There's no visual difference or permission changes for other users.
 :::
 
 ## Available guides
