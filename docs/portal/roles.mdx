@@ -1,7 +1,7 @@
 ---
 description: Review the emnify account permissions for various roles
 last_update: 
-  date: 09-07-2023
+  date: 02-26-2024
 slug: /portal/roles
 ---
 
@@ -79,17 +79,96 @@ The following tables describe the permissions for different roles.
 
 ## User management
 
-| Action | Administrator | Observer | User |
-| ------ | :---: | :------: | :--: |
-| Create support token to assume permissions of a user by ID | <Close alt="No" /> | <Close alt="No" /> | <Close alt="No" /> |
-| Update or delete users | <Check alt="Yes" /> | <Close alt="No" /> | <Close alt="No" /> |
-| Retrieve my user role permissions | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
-| Update user password | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
-| Create or list users | <Check alt="Yes" /> | <Close alt="No" /> | <Close alt="No" /> |
-| Add or delete role from a user | <Check alt="Yes" /> | <Close alt="No" /> | <Close alt="No" /> |
-| Delete or list trusted devices for a given user | <Check alt="Yes" /> | <Close alt="No" /> | <Close alt="No" /> |
-| Create or retrieve an application token | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
-| Edit an application token | <Check alt="Yes" /> | <Close alt="No" /> | <Close alt="No" /> |
+<table>
+  <colgroup></colgroup>
+  <colgroup></colgroup>
+  <colgroup span="3"></colgroup>
+  <thead>
+    <tr>
+      <th rowSpan="2">Action</th>
+      <th colSpan="1" scope="colgroup">All workspaces</th>
+      <th colSpan="3" scope="colgroup">Per workspace</th>
+    </tr>
+    <tr>
+      <th scope="col">SuperAdmin</th>
+      <th scope="col">Administrator</th>
+      <th scope="col">Observer</th>
+      <th scope="col">User</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td scope="row">Access to all workspaces linked by emnify</td>
+      <td><Check alt="Yes" /></td>
+      <td><Close alt="No" /></td>
+      <td><Close alt="No" /></td>
+      <td><Close alt="No" /></td>
+    </tr>
+    <tr>
+      <td scope="row">Create support token to assume permissions of a user by ID</td>
+      <td><Close alt="No" /></td>
+      <td><Close alt="No" /></td>
+      <td><Close alt="No" /></td>
+      <td><Close alt="No" /></td>
+    </tr>
+    <tr>
+      <td scope="row">Update or delete users</td>
+      <td><Check alt="Yes" /></td>
+      <td><Check alt="Yes" /></td>
+      <td><Close alt="No" /></td>
+      <td><Close alt="No" /></td>
+    </tr>
+    <tr>
+      <td scope="row">Retrieve your user role permissions</td>
+      <td><Check alt="Yes" /></td>
+      <td><Check alt="Yes" /></td>
+      <td><Check alt="Yes" /></td>
+      <td><Check alt="Yes" /></td>
+    </tr>
+    <tr>
+      <td scope="row">Update your password</td>
+      <td><Check alt="Yes" /></td>
+      <td><Check alt="Yes" /></td>
+      <td><Check alt="Yes" /></td>
+      <td><Check alt="Yes" /></td>
+    </tr>
+    <tr>
+      <td scope="row">Create or list users</td>
+      <td><Check alt="Yes" /></td>
+      <td><Check alt="Yes" /></td>
+      <td><Close alt="No" /></td>
+      <td><Close alt="No" /></td>
+    </tr>
+    <tr>
+      <td scope="row">Add or delete roles from a user</td>
+      <td><Check alt="Yes" /></td>
+      <td><Check alt="Yes" /></td>
+      <td><Close alt="No" /></td>
+      <td><Close alt="No" /></td>
+    </tr>
+    <tr>
+      <td scope="row">Delete or list trusted devices for a given user</td>
+      <td><Check alt="Yes" /></td>
+      <td><Check alt="Yes" /></td>
+      <td><Close alt="No" /></td>
+      <td><Close alt="No" /></td>
+    </tr>
+    <tr>
+      <td scope="row">Create or retrieve an application token</td>
+      <td><Check alt="Yes" /></td>
+      <td><Check alt="Yes" /></td>
+      <td><Check alt="Yes" /></td>
+      <td><Check alt="Yes" /></td>
+    </tr>
+    <tr>
+      <td scope="row">Edit an application token</td>
+      <td><Check alt="Yes" /></td>
+      <td><Check alt="Yes" /></td>
+      <td><Close alt="No" /></td>
+      <td><Close alt="No" /></td>
+    </tr>
+  </tbody>
+</table>
 
 ## Alerts
 
