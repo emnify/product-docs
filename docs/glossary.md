@@ -121,6 +121,11 @@ _Distributed Denial of Service Attack_
 
 An attack where the attacker sends multiple requests to a web resource with the aim of exceeding the website’s capacity to handle multiple requests and prevent the website from functioning correctly.
 
+## Default workspace
+
+The [workspace](#workspace) you log into when you visit the [emnify Portal](https://portal.emnify.com/).
+This value is independent and defined on a per-user basis.
+
 ## Device status
 
 _Referred to as [**Endpoint status**](https://cdn.emnify.net/api/doc/endpoint.html#endpoint-status-object) in the API_
@@ -340,11 +345,20 @@ Luhn checksum digits are most notably used to validate [ICCID](#iccid) and [IMEI
 
 ## Linked workspaces
 
-Two or more [workspaces](#workspace) linked together as part of the [multiple workspaces](/workspaces) feature.
-Linked workspaces can be centrally or individually managed.
+Two or more [workspaces](#workspace) linked together by a [main organization](#main-organization).
+Part of the [multiple workspaces](/workspaces) feature in the emnify Portal.
 
 :::tip[step-by-step guide]
 [Link an existing workspace](/workspaces/link)
+:::
+
+## Main organization
+
+The [organization](#organization) that has permission to manage [multiple workspaces](/workspaces).
+Typically, this is the organization that has the initial contract with emnify.
+
+:::note
+Unlike a traditional sub-account structure, the main organization doesn't inherit any additional roles or benefits besides the [**SuperAdmin** user role](/workspaces#superadmin-user-role) in [linked workspaces](#linked-workspaces).
 :::
 
 ## MFA
@@ -387,7 +401,7 @@ The emnify NOC is used primarily for [incident management](/support#incident-man
 
 ## Organization
 
-The [company](#company-account) (or subsidiary, branch, division, department, etc.) associated with a [workspace](#workspace).
+The billable entity (company, subsidiary, branch, division, department, etc.) associated with a [workspace](#workspace).
 
 :::info
 Information on your organization, users, subscriptions, and more are available in the emnify Portal under [**Workspace settings**](https://portal.emnify.com/organisation-settings/).
@@ -595,11 +609,11 @@ For more information, see [IPsec vs OpenVPN: What's the difference?](https://www
 
 ## Workspace
 
-An independent entity in the [emnify Portal](https://portal.emnify.com/) associated with an [organization](#organization).
-Workspaces can be managed individually or, if [linked](#linked-workspaces), centrally while being billed and accessed separately.
+An independent entity in the emnify Portal associated with an [organization](#organization).
+Workspaces can be managed individually or, if [linked](#linked-workspaces), centrally by the [main organization](#main-organization) while being billed and accessed separately.
 
-:::info
-Every [company account](#company-account) (with any package) is a workspace by default.
+:::note
+Every emnify customer has free access to a single workspace.
 Accounts with the **Pro Package** can have up to three workspaces.
 
 For more information, see [Multiple workspaces](/workspaces).
@@ -607,7 +621,7 @@ For more information, see [Multiple workspaces](/workspaces).
 
 ## Workspace switcher
 
-The feature in the [emnify Portal](https://portal.emnify.com/) allowing **Administrator** [user accounts](#user-account) to switch between workspaces.
+The feature in the emnify Portal that allows [specific user roles](/portal/roles#user-management) to switch between workspaces.
 
 :::tip[step-by-step guide]
 [Switch between workspaces](/workspaces/switch)
