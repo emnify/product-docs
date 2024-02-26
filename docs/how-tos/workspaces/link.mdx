@@ -1,7 +1,7 @@
 ---
 description: What to do if you already have two or more workspaces created in the emnify Portal
 last_update:
-  date: 01-17-2024
+  date: 02-26-2024
 slug: /workspaces/link
 ---
 
@@ -10,16 +10,15 @@ slug: /workspaces/link
 import PermissionsInfoPartial from './partials/_permissions-info.mdx'
 import FeatureRequestsTipPartial from './partials/_feature-requests-tip.mdx'
 
-If you already have two or more workspaces created, you can link these to a shared main organization.
-These linked workspaces can be centrally or individually managed.
+If you already have two or more workspaces created, you can link these workspaces and manage them using one emnify account.
 
 This guide shows you how to submit a request to link existing workspaces via the emnify Portal.
 Alternatively, you can also [create a new workspace](/workspaces/create).
 
-<PermissionsInfoPartial orgData="customers with the Pro Package" action="link existing" />
+<PermissionsInfoPartial action="link existing" />
 
 1. [Log in to your emnify account](https://portal.emnify.com/sign).
-You should see your organization's name at the top of the primary sidebar.
+You should see your workspace name at the top of the primary sidebar.
 
 <img
   src={require('./assets/portal-sidebar-workspaces.png').default}
@@ -27,7 +26,7 @@ You should see your organization's name at the top of the primary sidebar.
   style={{ width: 650 }}
 />
 
-2. Click your organization's name (or the corresponding icons) to reveal the **Workspaces** modal.
+2. Click your workspace name (or the corresponding icons) to reveal the **Workspaces** modal.
 3. Select **Link existing workspace**.
 
 <img
@@ -49,6 +48,6 @@ The process may take time, as each new workspace requires a new contract.
 It usually takes 2-7 days for your workspaces to be linked.
 :::
 
-Once linked, **Administrator** user accounts of the main organization are able to [switch between workspaces](/workspaces/switch).
+Once linked, invited **Administrator** user accounts are able to [switch between workspaces](/workspaces/switch).
 
 <FeatureRequestsTipPartial />

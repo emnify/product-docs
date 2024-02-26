@@ -340,16 +340,12 @@ Luhn checksum digits are most notably used to validate [ICCID](#iccid) and [IMEI
 
 ## Linked workspaces
 
-[Workspaces](#workspace) linked together by a [main organization](#main-organization).
+Two or more [workspaces](#workspace) linked together.
 Linked workspaces can be centrally or individually managed.
 
 :::tip[step-by-step guide]
 [Link an existing workspace](/workspaces/link)
 :::
-
-## Main organization
-
-The [organization](#organization) that has permission to manage multiple [workspaces](#workspace).
 
 ## MFA
 
@@ -600,7 +596,7 @@ For more information, see [IPsec vs OpenVPN: What's the difference?](https://www
 ## Workspace
 
 An independent entity in the [emnify Portal](https://portal.emnify.com/) associated with an [organization](#organization).
-Workspaces can be managed individually or, if [linked](#linked-workspaces), centrally by the [main organization](#main-organization) while being billed and accessed separately.
+Workspaces can be managed individually or, if [linked](#linked-workspaces), centrally while being billed and accessed separately.
 
 :::note
 Every [company account](#company-account) (with any package) is a workspace by default.

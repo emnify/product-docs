@@ -1,20 +1,19 @@
 ---
-title: Workspaces
-description: Organizations with complex business structures or diverse product lines can benefit from Workspaces in the emnify Portal
-last_update: 
-  date: 02-23-2024
+description: Multiple workspaces is designed to help companies with complex business structures manage entities in the emnify Portal
+last_update:
+  date: 02-26-2024
 slug: /workspaces
 ---
 
-# Workspaces
+# Multiple workspaces
 
 A workspace is where you manage the IoT cellular connectivity for your devices.
 Every emnify customer has free access to a single workspace.
 
 When you need more than one workspace to manage independent aspects of your business, you can use multiple workspaces.
-This feature is designed to address the needs of organizations with complex business structures, particularly those with entities that should remain independent in functionality but may have users managing both aspects.
+This feature is designed to address the needs of companies with complex business structures, particularly those with entities that should remain independent in functionality but may have users managing both aspects.
 
-Potential use cases for workspaces include:
+Potential use cases for multiple workspaces include:
 
 - Entities that require independent billing
 - Diverse product lines within the same company with varying technical requirements
@@ -22,7 +21,7 @@ Potential use cases for workspaces include:
 - Entities that need independent contracts
 
 :::info
-Multiple workspaces comes with the **Pro Package**.
+Multiple workspaces comes with the **Pro Package** and you can have up to three workspaces.
 :::
 
 ## Useful terms
@@ -32,16 +31,15 @@ Each listed term includes a link to its associated glossary entry:
 
 - [Workspaces](/glossary#workspace)
 - [Linked workspaces](/glossary#linked-workspaces)
-- [Main organization](/glossary#main-organization)
 - [Workspace switcher](/glossary#workspace-switcher)
 - [SuperAdmin](#superadmin-user-role)
 
 ## Features
 
-Implementing **Workspaces** reduces operational costs and management complexity for organizations that meet the specified criteria.
+Implementing multiple workspaces reduces operational costs and management complexity for businesses that meet the specified criteria.
 Administrators with privileges to manage linked workspaces only need one set of login credentials to administer them all.
 
-There are other benefits and solutions that **Workspaces** can provide, but these vary depending on the organization, such as:
+There are other benefits and solutions that multiple workspaces can provide, but these vary depending on need.
 
 ### Partition of business units
 
@@ -87,7 +85,7 @@ Reassigning the SuperAdmin role can only be done by the emnify team.
 
 ## Available guides
 
-The following guides offer step-by-step guidance for configuring Workspaces for your organization:
+The following guides offer step-by-step guidance for configuring workspaces:
 
 - [Create a new workspace](/workspaces/create)
 - [Link an existing workspace](/workspaces/link)
