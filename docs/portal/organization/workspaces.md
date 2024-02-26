@@ -53,8 +53,10 @@ Using multiple workspaces to partition business units helps facilitate requireme
 
 ### Partition access and visibility
 
-- Workspace users see only the IoT assets they need to manage.
-- Administrators manage only the users in their business unit.
+- **Users** in a workspace see only the IoT assets they need to manage.
+- **Administrators** manage only the users in their workspace.
+
+For more information, see [User management roles and permissions](/portal/roles#user-management).
 
 ### Single sign-on
 
