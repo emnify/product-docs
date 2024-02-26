@@ -22,7 +22,7 @@ Potential use cases for multiple workspaces include:
 
 :::info
 Multiple workspaces come with the **Pro Package**.
-You can have up to three workspaces.
+By default, you can have up to three workspaces.
 :::
 
 ## Useful terms
@@ -63,7 +63,7 @@ For more information, see [user management roles and permissions](/portal/roles#
 ### Single sign-on
 
 Users with the **Administrator** role can set single sign-on (SSO) for their default workspace.
-Once SSO is enabled for the workspace, subsequent users with this workspace as their default must use SSO to log in to all invited workspaces.
+Once SSO is enabled for the workspace, subsequent users with this workspace as their default must use SSO to log in to the emnify Portal.
 If SSO is enabled in a workspace that isn't your default, you continue to use your email and password.
 
 :::note
@@ -81,8 +81,8 @@ The SuperAdmin can see all linked workspaces in the workspace switcher and has a
 They also automatically receive access to any new workspaces linked to the main organization.
 This role can manage other users across multiple accounts in the **Users** tab of the **Workspace settings** in the emnify Portal.
 
-There is only one SuperAdmin, and users with this role can't be removed from any workspace linked to the main organization, as they are the assumed owner.
-However, a user can be a SuperAdmin in one organization but hold another role (for example, **Observer**) in a workspace associated with a different organization.
+There is only one SuperAdmin per main organization, and users with this role can't be removed from any workspace linked to that organization, as they are the assumed owner.
+However, a user can be a SuperAdmin in one main organization but hold another role (for example, **Observer**) in an unrelated workspace with a different main organization.
 In those workspaces, this user can be updated or deleted as usual.
 For more information, see [user management roles and permissions](/portal/roles#user-management).
 

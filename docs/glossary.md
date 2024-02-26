@@ -68,14 +68,6 @@ Several identifiers have a check digits but can be calculated differently and ha
 For example, [ICCID](#iccid) numbers use a [_Luhn checksum digit_](#luhn-checksum-digit), while the last digits of the [EID](#eid) are called _check digits_.
 :::
 
-## Company account
-
-A company's emnify account (that is, an [**Organization**](#organization) in the [emnify Portal](https://portal.emnify.com/)).
-
-:::note
-Every company account (on any package) is a [workspace](#workspace) by default.
-:::
-
 ## Connectivity status
 
 This is the connectivity status of a device.
@@ -125,6 +117,10 @@ An attack where the attacker sends multiple requests to a web resource with the 
 
 The [workspace](#workspace) you log into when you visit the [emnify Portal](https://portal.emnify.com/).
 This value is independent and defined on a per-user basis.
+
+:::note
+You can't log in directly to a workspace that isn't your default.
+:::
 
 ## Device status
 
@@ -614,7 +610,7 @@ Workspaces can be managed individually or, if [linked](#linked-workspaces), cent
 
 :::note
 Every emnify customer has free access to a single workspace.
-Accounts with the **Pro Package** can have up to three workspaces.
+By default, accounts with the **Pro Package** can have up to three workspaces.
 
 For more information, see [Multiple workspaces](/workspaces).
 :::
