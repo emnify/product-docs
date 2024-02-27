@@ -1,6 +1,6 @@
 ---
 last_update:
-  date: 11-16-2023
+  date: 02-26-2024
 ---
 
 # Glossary
@@ -68,14 +68,6 @@ Several identifiers have a check digits but can be calculated differently and ha
 For example, [ICCID](#iccid) numbers use a [_Luhn checksum digit_](#luhn-checksum-digit), while the last digits of the [EID](#eid) are called _check digits_.
 :::
 
-## Company account
-
-A company's emnify account (that is, an [**Organization**](#organization) in the [emnify Portal](https://portal.emnify.com/)).
-
-:::note
-Every company account (on any package) is a [workspace](#workspace) by default.
-:::
-
 ## Connectivity status
 
 This is the connectivity status of a device.
@@ -120,6 +112,15 @@ The data that has been used by a device, both transmitted and received.
 _Distributed Denial of Service Attack_
 
 An attack where the attacker sends multiple requests to a web resource with the aim of exceeding the website’s capacity to handle multiple requests and prevent the website from functioning correctly.
+
+## Default workspace
+
+The [workspace](#workspace) you log into when you visit the [emnify Portal](https://portal.emnify.com/).
+This value is independent and defined on a per-user basis.
+
+:::note
+You can't log in directly to a workspace that isn't your default.
+:::
 
 ## Device status
 
@@ -340,8 +341,8 @@ Luhn checksum digits are most notably used to validate [ICCID](#iccid) and [IMEI
 
 ## Linked workspaces
 
-[Workspaces](#workspace) linked together by a [main organization](#main-organization).
-Linked workspaces can be centrally or individually managed.
+Two or more [workspaces](#workspace) linked together by a [main organization](#main-organization).
+Part of the [multiple workspaces](/workspaces) feature in the emnify Portal.
 
 :::tip[step-by-step guide]
 [Link an existing workspace](/workspaces/link)
@@ -349,7 +350,12 @@ Linked workspaces can be centrally or individually managed.
 
 ## Main organization
 
-The [organization](#organization) that has permission to manage multiple [workspaces](#workspace).
+The [organization](#organization) that determines the [**SuperAdmin** user role](/workspaces#superadmin-user-role) when managing [multiple workspaces](/workspaces).
+Typically, this is the organization that has the initial contract with emnify.
+
+:::note
+Unlike a traditional sub-account structure, the main organization doesn't inherit any additional roles or permissions in [linked workspaces](#linked-workspaces) besides the **SuperAdmin**.
+:::
 
 ## MFA
 
@@ -391,7 +397,7 @@ The emnify NOC is used primarily for [incident management](/support#incident-man
 
 ## Organization
 
-The [company](#company-account) (or subsidiary, branch, division, department, etc.) associated with a [workspace](#workspace).
+The billable entity (company, subsidiary, branch, division, department, etc.) associated with a [workspace](#workspace).
 
 :::info
 Information on your organization, users, subscriptions, and more are available in the emnify Portal under [**Workspace settings**](https://portal.emnify.com/organisation-settings/).
@@ -599,21 +605,19 @@ For more information, see [IPsec vs OpenVPN: What's the difference?](https://www
 
 ## Workspace
 
-An independent entity in the [emnify Portal](https://portal.emnify.com/) associated with an [organization](#organization).
-Workspaces can be managed individually or, if [linked](#linked-workspaces), centrally by the [main organization](#main-organization) while being billed and accessed separately.
+An independent entity in the emnify Portal associated with an [organization](#organization).
+Workspaces can be managed individually or centrally (if [linked](#linked-workspaces)) while billed and accessed separately.
 
 :::note
-Every [company account](#company-account) (with any package) is a workspace by default.
-Accounts with the **Pro Package** can have up to three workspaces.
-:::
+Every emnify customer has free access to a single workspace.
+By default, accounts with the **Pro Package** can have up to three workspaces.
 
-:::tip[step-by-step guide]
-[Create a new workspace](/workspaces/create)
+For more information, see [Multiple workspaces](/workspaces).
 :::
 
 ## Workspace switcher
 
-The feature in the [emnify Portal](https://portal.emnify.com/) allowing **Administrator** [user accounts](#user-account) to switch between workspaces.
+The feature in the emnify Portal that allows [specific user roles](/portal/roles#user-management) to switch between workspaces.
 
 :::tip[step-by-step guide]
 [Switch between workspaces](/workspaces/switch)
