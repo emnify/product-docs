@@ -14,7 +14,7 @@ import WildcardSupportPartial from '../partials/_wildcard-support.mdx'
 import UploadCsvFilePartial from '../partials/_upload-csv-file.mdx'
 import EnterValuesListPartial from '../partials/_enter-values-list.mdx'
 
-You can view and administer your Workspace users by navigating to [**Users**](https://portal.emnify.com/organisation-settings/users).
+You can view and manage your Workspace users by navigating to [**Users**](https://portal.emnify.com/organisation-settings/users).
 
 :::info
 Only users with the **Administrator** role can see the list of Workspace users, invite new users, remove users, or edit roles.
@@ -24,22 +24,17 @@ Only users with the **Administrator** role can see the list of Workspace users, 
 
 The paged list shows the following information for each user.
 
-| Property         | Description           |
-|:-----------------|:----------------------|
-| User ID          | A unique numeric value associated with a user.  |
-| Name             | Names can be first names only and aren't required to be unique.  |
-| Email            | The email address used for sending the invitation.  |
-| Created          | Date the users' emnify account was created.  |
-| User role        | Either **Administrator**, **Observer**, or **User**.  |
-| Workspace access | Number of Workspaces the user has access to. Workspace names are listed under the user details, along with the associated role and invitation status (either **Active**, **Invite pending**, or **Invite expired**). |
-| Account security | Multi-factor authentication (MFA) status, either **Active** or **Disable**.  |
-| Delete user      | For deleting the user's account.  |
-
-## Add a new user
-
-1. On [**Users**](https://portal.emnify.com/organisation-settings/users), click **Invite user**. 
-1. Provide the recipient's email address and select a [**User role**](/portal/roles).
-1. Review, then click **Invite user**.
+| Property          | Description           |
+|:------------------|:----------------------|
+| User ID           | Unique numeric value associated with a user.  |
+| Name              | Names can be first names only and aren't required to be unique.  |
+| Email             | Email address used for sending the invitation.  |
+| Created           | Date the users' emnify account was created, formatted based on language settings.  |
+| User role         | Either **SuperAdmin**, **Administrator**, **Observer**, or **User**. For more information, see [Roles and permissions](/portal/roles). |
+| Workspace access  | Number of Workspaces you have in common with the user. Workspace names are listed under the user details, along with the associated role and status (**Active**, **Invite sent**, **Suspended**, or **Invite expired**). |
+| Account security  | Multi-factor authentication (MFA) status, either **Active** or **Disabled**.  |
+| Resend invitation | Action to send the user another invitation to the Workspace. Only visible if the **Workspace access** status is **Invite expired**. |
+| Delete user       | Action to remove the user's account from the Workspace. |
 
 ## Filter users
 
@@ -83,7 +78,28 @@ example.net
 
 Each value is parsed, and the table shows any emails that use `example.com`, `example.org`, and `example.net`.
 
-## Update a user's account
+## Manage Workspace users
+
+### Invite a new user
+
+1. On [**Users**](https://portal.emnify.com/organisation-settings/users), click **Invite user**. 
+1. Provide the recipient's email address and select a [**User role**](/portal/roles).
+1. Review, then click **Invite user**.
+
+### Add a user to a Workspace
+
+1. On [**Users**](https://portal.emnify.com/organisation-settings/users), find the user you want to remove from the Workspace and click **Edit** (pencil icon).
+1. Select **Add to Workspace**.
+1. In the **Workspace** list, choose an option and click **✓ Confirm**.
+
+### Delete an existing user
+
+1. On [**Users**](https://portal.emnify.com/organisation-settings/users), find the user you want to remove from the Workspace and click **Edit** (pencil icon).
+1. Click **More** (vertical dots icon) next to the Workspace name.
+1. Select **Delete user**.
+1. Review the information on the **Remove user from selected Workspace** modal, then select **Yes, remove user**.
+
+### Update a user's account
 
 The only user account attribute administrators can change is the **User role**.
 Administrators can also remove a user's account from the Workspace.
