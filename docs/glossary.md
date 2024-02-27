@@ -350,11 +350,11 @@ Part of the [multiple workspaces](/workspaces) feature in the emnify Portal.
 
 ## Main organization
 
-The [organization](#organization) that has permission to manage [multiple workspaces](/workspaces).
+The [organization](#organization) that determines the [**SuperAdmin** user role](/workspaces#superadmin-user-role) when managing [multiple workspaces](/workspaces).
 Typically, this is the organization that has the initial contract with emnify.
 
 :::note
-Unlike a traditional sub-account structure, the main organization doesn't inherit any additional roles or benefits besides the [**SuperAdmin** user role](/workspaces#superadmin-user-role) in [linked workspaces](#linked-workspaces).
+Unlike a traditional sub-account structure, the main organization doesn't inherit any additional roles or permissions in [linked workspaces](#linked-workspaces) besides the **SuperAdmin**.
 :::
 
 ## MFA
@@ -606,7 +606,7 @@ For more information, see [IPsec vs OpenVPN: What's the difference?](https://www
 ## Workspace
 
 An independent entity in the emnify Portal associated with an [organization](#organization).
-Workspaces can be managed individually or, if [linked](#linked-workspaces), centrally by the [main organization](#main-organization) while being billed and accessed separately.
+Workspaces can be managed individually or centrally (if [linked](#linked-workspaces)) while billed and accessed separately.
 
 :::note
 Every emnify customer has free access to a single workspace.

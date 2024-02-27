@@ -77,9 +77,9 @@ For the available SSO providers and implementation guides, see [Single sign-on](
 The **SuperAdmin** role is provided when emnify sets up your multiple workspace architecture.
 By default, this role is assigned to the longest-standing **Administrator** in the main organization.
 
-The SuperAdmin can see all linked workspaces in the workspace switcher and has administrator permissions in each workspace.
-They also automatically receive access to any new workspaces linked to the main organization.
-This role can manage other users across multiple accounts in the **Users** tab of the **Workspace settings** in the emnify Portal.
+The SuperAdmin automatically receives access to all existing and any new workspaces linked to the main organization.
+In the workspace switcher, they can see all of these workspaces, plus any other workspaces they have access to.
+This role can manage other users like administrators across multiple workspaces in the [**Users**](https://portal.emnify.com/organisation-settings/users) tab of the **Workspace settings** in the emnify Portal.
 
 There is only one SuperAdmin per main organization, and users with this role can't be removed from any workspace linked to that organization, as they are the assumed owner.
 However, a user can be a SuperAdmin in one main organization but hold another role (for example, **Observer**) in an unrelated workspace with a different main organization.
