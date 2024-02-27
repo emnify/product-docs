@@ -7,6 +7,10 @@ slug: /workspaces
 
 # Multiple Workspaces
 
+import Check from '../assets/check.svg';
+import Close from '../assets/close.svg';
+import FeatureRequestsTipPartial from '../../partials/_feature-requests-tip.mdx'
+
 A Workspace is where you manage the IoT cellular connectivity for your devices.
 Every emnify customer has free access to a single Workspace.
 
@@ -35,29 +39,38 @@ Each listed term includes a link to its associated glossary entry:
 - [SuperAdmin](#superadmin-user-role)
 - [Workspace switcher](/glossary#workspace-switcher)
 
-## Features
+## Supported features
 
-Implementing multiple Workspaces reduces operational costs and management complexity for organizations that meet the specified criteria.
-Administrators with privileges to manage linked Workspaces only need one set of login credentials to administer them all.
+The following table describes whether a feature is supported in the context of multiple workspaces.
+How the feature is supported can vary, so be sure to refer to the preceding descriptions for more details.
 
-Multiple Workspaces can provide other benefits and solutions, but these vary depending on need.
+:::note
+Most features marked as unsupported are still available but are currently limited to a specific workspace and unable to share instances or configurations across linked workspaces.
+:::
 
-### Partition of business units
+| Feature                                 | Supported with multiple workspaces |
+| :-------------------------------------- | :--------------------------------: |
+| [User management](#user-management)     | <Check alt="Yes" />                |
+| [Single sign-on (SSO)](#single-sign-on) | <Check alt="Yes" />                |
+| Reports                                 | <Close alt="No" />                 |
+| SIM inventory                           | <Close alt="No" />                 |
+| Policy management                       | <Close alt="No" />                 |
+| Cloud Connect                           | <Close alt="No" />                 |
+| Virtual private networks (VPNs)         | <Close alt="No" />                 |
+| User logs for auditing                  | <Close alt="No" />                 |
+| Centralized billing                     | <Close alt="No" />                 |
+| Split billing and reporting             | <Close alt="No" />                 |
 
-Using multiple Workspaces to partition business units helps facilitate requirements for supporting fundamental differences in the following:
+<FeatureRequestsTipPartial />
 
-- IoT businesses
-- Services or product lines
-- Billing conditions
-- Currencies
-- Tax requirements
+### User management
 
-### Partition access and visibility
+Multiple workspaces allow you to partition access and visibility based on user roles.
+A user can have different roles in different workspaces, even if they're linked.
+For example, someone can be a **User** in one workspace and only see the IoT assets they need to manage but be an **Administrator** in another and able to manage other users in that particular workspace.
+When emnify sets up your multiple workspace architecture, a [**SuperAdmin**](#superadmin-user-role) role is also provided.
 
-- **Users** in a Workspace see only the IoT assets they need to manage.
-- **Administrators** manage only the users in their Workspace.
-
-For more information, see [user management roles and permissions](/portal/roles#user-management).
+For more information, see [Roles and permissions](/portal/roles).
 
 ### Single sign-on
 
