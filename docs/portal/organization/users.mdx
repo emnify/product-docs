@@ -1,7 +1,7 @@
 ---
-description: Invite, assign a role, suspend, and delete users within your organization on the emnify Portal
-last_update: 
-  date: 01-10-2024
+description: Manage users within your Workspace on the emnify Portal
+last_update:
+  date: 02-28-2024
 slug: /portal/org/employees
 ---
 
@@ -14,13 +14,13 @@ import WildcardSupportPartial from '../partials/_wildcard-support.mdx'
 import UploadCsvFilePartial from '../partials/_upload-csv-file.mdx'
 import EnterValuesListPartial from '../partials/_enter-values-list.mdx'
 
-You can view and administer your workspace users by navigating to [**Users**](https://portal.emnify.com/organisation-settings/users).
+You can view and administer your Workspace users by navigating to [**Users**](https://portal.emnify.com/organisation-settings/users).
 
 :::info
-Only users with the **Administrator** role can see the list of workspace users, invite new users, remove users, or edit roles.
+Only users with the **Administrator** role can see the list of Workspace users, invite new users, remove users, or edit roles.
 :::
 
-## View workspace users
+## View Workspace users
 
 The paged list shows the following information for each user.
 
@@ -31,7 +31,7 @@ The paged list shows the following information for each user.
 | Email            | The email address used for sending the invitation.  |
 | Created          | Date the users' emnify account was created.  |
 | User role        | Either **Administrator**, **Observer**, or **User**.  |
-| Workspace access | Number of workspaces the user has access to. Workspace names are listed under the user details, along with the associated role and invitation status (either **Active**, **Invite pending**, or **Invite expired**). |
+| Workspace access | Number of Workspaces the user has access to. Workspace names are listed under the user details, along with the associated role and invitation status (either **Active**, **Invite pending**, or **Invite expired**). |
 | Account security | Multi-factor authentication (MFA) status, either **Active** or **Disable**.  |
 | Delete user      | For deleting the user's account.  |
 
@@ -54,7 +54,7 @@ These filters allow you to query users based on one or more properties (for exam
 |:----------------|:-----------|:--------------------------------------:|:-------------------|
 | Name            | String     | <Check alt="Yes" />         | Name of a user. |
 | Email           | String     | <Check alt="Yes" />         | Email address associated with the users' emnify account. |
-| Workspaces      | Predefined | <Close alt="No" />          | List of workspaces the users belong to.  |
+| Workspaces      | Predefined | <Close alt="No" />          | List of Workspaces the users belong to.  |
 
 ### Wildcard support
 
@@ -86,4 +86,4 @@ Each value is parsed, and the table shows any emails that use `example.com`, `ex
 ## Update a user's account
 
 The only user account attribute administrators can change is the **User role**.
-Administrators can also remove a user's account from the workspace.
+Administrators can also remove a user's account from the Workspace.

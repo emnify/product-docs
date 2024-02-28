@@ -1,6 +1,6 @@
 ---
 last_update:
-  date: 02-26-2024
+  date: 02-28-2024
 ---
 
 # Glossary
@@ -113,13 +113,13 @@ _Distributed Denial of Service Attack_
 
 An attack where the attacker sends multiple requests to a web resource with the aim of exceeding the website’s capacity to handle multiple requests and prevent the website from functioning correctly.
 
-## Default workspace
+## Default Workspace
 
-The [workspace](#workspace) you log into when you visit the [emnify Portal](https://portal.emnify.com/).
+The [Workspace](#workspace) you log into when you visit the [emnify Portal](https://portal.emnify.com/).
 This value is independent and defined on a per-user basis.
 
 :::note
-You can't log in directly to a workspace that isn't your default.
+You can't log in directly to a Workspace that isn't your default.
 :::
 
 ## Device status
@@ -339,22 +339,21 @@ A [check digit](#check-digit) calculated from the previous digits using the [Luh
 Luhn checksum digits are most notably used to validate [ICCID](#iccid) and [IMEI](#imei) numbers.
 :::
 
-## Linked workspaces
+## Linked Workspaces
 
-Two or more [workspaces](#workspace) linked together by a [main organization](#main-organization).
-Part of the [multiple workspaces](/workspaces) feature in the emnify Portal.
+Two or more [Workspaces](/workspaces) in the emnify Portal linked together by a [main organization](#main-organization).
 
 :::tip[step-by-step guide]
-[Link an existing workspace](/workspaces/link)
+[Link existing Workspaces](/workspaces/link)
 :::
 
 ## Main organization
 
-The [organization](#organization) that determines the [**SuperAdmin** user role](/workspaces#superadmin-user-role) when managing [multiple workspaces](/workspaces).
+The [organization](#organization) that determines the [**SuperAdmin** user role](/workspaces#superadmin-user-role) when managing [multiple Workspaces](/workspaces).
 Typically, this is the organization that has the initial contract with emnify.
 
 :::note
-Unlike a traditional sub-account structure, the main organization doesn't inherit any additional roles or permissions in [linked workspaces](#linked-workspaces) besides the **SuperAdmin**.
+Unlike a traditional sub-account structure, the main organization doesn't inherit any additional roles or permissions in [linked Workspaces](#linked-workspaces) besides the **SuperAdmin**.
 :::
 
 ## MFA
@@ -494,15 +493,11 @@ The [mobile network operator (MNO)](https://www.emnify.com/iot-glossary/mno) ID 
 
 ## SIM registration
 
-A process to allow your SIM cards to be registered within your organization and visible in the [**SIM Inventory**](https://portal.emnify.com/sim-inventory).
+A process to allow your SIM cards to be registered within your Workspace and visible in the [**SIM Inventory**](https://portal.emnify.com/sim-inventory).
 
 :::tip[step-by-step guide]
 [Register emnify SIMs](/quickstart/register-sims)
 :::
-
-## SIM repository
-
-All SIMs assigned to your organization.
 
 ## SIM status
 
@@ -609,16 +604,16 @@ An independent entity in the emnify Portal associated with an [organization](#or
 Workspaces can be managed individually or centrally (if [linked](#linked-workspaces)) while billed and accessed separately.
 
 :::note
-Every emnify customer has free access to a single workspace.
-By default, accounts with the **Pro Package** can have up to three workspaces.
+Every emnify customer has free access to a single Workspace.
+By default, accounts with the **Pro Package** can have up to three Workspaces.
 
-For more information, see [Multiple workspaces](/workspaces).
+For more information, see [Multiple Workspaces](/workspaces).
 :::
 
 ## Workspace switcher
 
-The feature in the emnify Portal that allows [specific user roles](/portal/roles#user-management) to switch between workspaces.
+The feature in the emnify Portal that allows [specific user roles](/portal/roles#user-management) to switch between Workspaces.
 
 :::tip[step-by-step guide]
-[Switch between workspaces](/workspaces/switch)
+[Switch between Workspaces](/workspaces/switch)
 :::
