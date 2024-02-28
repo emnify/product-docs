@@ -9,6 +9,8 @@ slug: /portal/org/employees
 
 import Check from '../assets/check.svg';
 import Close from '../assets/close.svg';
+import DotsVertical from '../assets/dots-vertical.svg';
+import Edit from '../assets/edit.svg';
 import EditFilterInstructionsPartial from '../partials/_edit-filter-instructions.mdx'
 import WildcardSupportPartial from '../partials/_wildcard-support.mdx'
 import UploadCsvFilePartial from '../partials/_upload-csv-file.mdx'
@@ -88,18 +90,23 @@ Each value is parsed, and the table shows any emails that use `example.com`, `ex
 
 ### Add a user to a Workspace
 
-1. On [**Users**](https://portal.emnify.com/organisation-settings/users), find the user you want to remove from the Workspace and click **Edit** (pencil icon).
+1. On [**Users**](https://portal.emnify.com/organisation-settings/users), find the user you want to remove from the Workspace and click **<Edit className="inline-icon" alt="" /> Edit**.
 1. Select **Add to Workspace**.
-1. In the **Workspace** list, choose an option and click **✓ Confirm**.
+1. In the **Workspace** list, choose an option and click **<Check className="inline-icon" alt="" /> Confirm**.
 
-### Delete an existing user
+### Delete a user from a Workspace
 
-1. On [**Users**](https://portal.emnify.com/organisation-settings/users), find the user you want to remove from the Workspace and click **Edit** (pencil icon).
-1. Click **More** (vertical dots icon) next to the Workspace name.
+1. On [**Users**](https://portal.emnify.com/organisation-settings/users), find the user you want to remove from the Workspace and click **<Edit className="inline-icon" alt="" /> Edit**.
+1. Click **<DotsVertical className="inline-icon" alt="" /> More** next to the Workspace name.
 1. Select **Delete user**.
 1. Review the information on the **Remove user from selected Workspace** modal, then select **Yes, remove user**.
 
-### Update a user's account
+### Change a user's role
 
 The only user account attribute administrators can change is the **User role**.
-Administrators can also remove a user's account from the Workspace.
+
+1. On [**Users**](https://portal.emnify.com/organisation-settings/users), find the relevant user and click **<Edit className="inline-icon" alt="" /> Edit**.
+1. The **User role** is listed next to the Workspace name.
+  Find the Workspace where the user's role should change and choose another option from this list.
+
+Changes save automatically.
