@@ -73,7 +73,7 @@ const sidebars = {
         "portal/reports",
         {
           type: "category",
-          label: "Organization management",
+          label: "Workspace management",
           link: {
             type: "doc",
             id: "portal/organization/settings",

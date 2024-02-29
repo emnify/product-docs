@@ -1,7 +1,7 @@
 ---
 description: Step-by-step how to guides that teach you how to use the emnify platform
 last_update: 
-  date: 02-15-2024
+  date: 02-28-2024
 pagination_next: how-tos/add-ip-address-spaces
 slug: /how-tos
 ---
@@ -35,13 +35,13 @@ slug: /how-tos
 - [Configure data and SMS limits](/how-tos/configure-data-sms-limits)
 - [Manage data or SMS quotas](/how-tos/manage-data-sms-quotas)
 
-## Organization management
+## Workspace management
 
 - [Update your company details](/how-tos/update-company-details)
 - [Upgrade your Trial plan](/how-tos/upgrade-trial-plan)
-- [Create a new workspace](/workspaces/create)
-- [Link an existing workspace](/workspaces/link)
-- [Switch between workspaces](/workspaces/switch)
+- [Create a new Workspace](/workspaces/create)
+- [Link existing Workspaces](/workspaces/link)
+- [Switch between Workspaces](/workspaces/switch)
 
 ## Security features
 

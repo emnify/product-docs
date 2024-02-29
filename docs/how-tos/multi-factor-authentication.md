@@ -40,7 +40,7 @@ This process is only required if you haven't enabled MFA for your account.
 [Configure TOTP MFA in the Portal](#configure-totp-mfa-in-the-emnify-portal) before it becomes mandatory to avoid any potential disruptions to your workflow.
 :::
 
-Once MFA becomes mandatory for your organization, follow these steps to access your account:
+Once MFA becomes mandatory for you, follow these steps to access your account:
 
 1. [Log in to your emnify account](https://portal.emnify.com/sign) with your email and password as usual.
 2. Navigate to the email account you use to access the Portal. 
@@ -55,7 +55,7 @@ Check your spam folder if you haven't received a code after a few minutes.
 
 <details className="custom-details-troubleshooting">
   <summary>Need help verifying your identity?</summary>
-    <p>You may have issues verifying your identity once MFA becomes mandatory for your organization.</p>
+    <p>You may have issues verifying your identity once MFA becomes mandatory.</p>
     <p>Here are a few common error messages and what to do if you see them:</p>
     <b>This code is invalid. Try again.</b>
     <ul>
@@ -94,7 +94,7 @@ MFA isn't required if you're on the [Trial plan](/quickstart#emnifys-trial), but
 
 ### Invited users
 
-You don't need to set up MFA initially when you're invited to join an organization, as you'll be invited via email.
+You don't need to set up MFA initially when you're invited to join a Workspace, as you'll be invited via email.
 After you access your account, you can either [configure TOTP MFA in the Portal](#configure-totp-mfa-in-the-emnify-portal) or [set up email-based MFA](#existing-accounts) the next time you log in.
 
 ## Configure TOTP MFA in the emnify Portal
@@ -141,5 +141,5 @@ Your changes are saved automatically.
 To turn off your existing MFA setup, go to **User Settings**, find the [**Two-Factor Authentication**](https://portal.emnify.com/user-settings#two-factor-authentication) section, and click **Disable**.
 
 :::warning
-You won't be able to disable MFA once it's enforced for your organization.
+You won't be able to disable MFA once it's enforced.
 :::

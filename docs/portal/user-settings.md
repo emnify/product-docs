@@ -1,18 +1,18 @@
 ---
 description: Managing your profile and preferences in the emnify Portal
 last_update: 
-  date: 11-16-2023
+  date: 02-28-2024
 slug: /portal/user-settings
 ---
 
 # User settings
 
 [**User Settings**](https://portal.emnify.com/user-settings) is where you can manage your profile and preferences.
-It's readily accessible from any page in the emnify Portal by selecting your initials to the right of the **Workspace settings** icon.
+It's readily accessible from any page in the emnify Portal by selecting the avatar with your initials in the top-level navigation.
 
 ## User profile
 
-You can create a profile picture, edit your name, or select your organization's name to be taken to the [**Organization Details**](https://portal.emnify.com/organisation-settings/details) form.
+In **User Profile**, you can edit your name or select your organization's name to be taken to the [**Organization Details**](https://portal.emnify.com/organisation-settings/details) form.
 
 The **Language** dropdown lets you switch the emnify Portal to one of the following languages:
 
@@ -25,7 +25,7 @@ The **Language** dropdown lets you switch the emnify Portal to one of the follow
 
 ## Authorization
 
-In the **Authorization** section, there's your email address with a **Change Password** link.
+In the **Authorization** section, there's your email address with a **Change password** link.
 However, you can't change the email address used to log in to the emnify Portal.
 
 ## Two-factor authentication

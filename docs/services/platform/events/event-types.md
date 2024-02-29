@@ -898,7 +898,7 @@ Failed authentication request from 'Application Token Name', Reason: TokenStatus
 
 ### Support Access
 
-emnify team accessed your organization on behalf of one of your users for service or support purposes.
+emnify team accessed your Workspace on behalf of one of your users for service or support purposes.
 
 <details className="custom-details-example">
   <summary>Example JSON response</summary>
@@ -1268,7 +1268,7 @@ Activating a SIM with the **Suspended** status again is possible at any time.
 
 ### SIM deletion
 
-The SIM is deleted and permanently removed from the SIM repository.
+The SIM is deleted and permanently removed from the SIM inventory.
 
 :::warning
 Once deleted, the SIM cannot be restored for network access.
@@ -1429,10 +1429,10 @@ SIM is patched from **Issued** to **Factory Test** [status](/glossary#sim-status
 
 ### SIM registration
 
-SIM or SIM batch is registered to an organization via a [Batch Identification Code (BIC)](/glossary#bic).
+SIM or SIM batch is registered to a Workspace via a [Batch Identification Code (BIC)](/glossary#bic).
 
 :::note
-This event doesn't trigger when the emnify team assigns SIMs to an organization.
+This event doesn't trigger when the emnify team assigns SIMs to a Workspace.
 It also doesn't trigger for every SIM of a SIM batch, so the event log is only be visible on the individual SIM when registering single SIM batches.
 :::
 
@@ -2916,8 +2916,8 @@ Organization's billing configuration changed.
 
 ### User switched workspaces
 
-A user switched to a different workspace.
-The description indicates the user ID and the ID of the workspace they're currently in.
+A user switched to a different Workspace.
+The description indicates the user ID and the ID of the Workspace they're currently in.
 
 <details className="custom-details-example">
   <summary>Example JSON response</summary>
