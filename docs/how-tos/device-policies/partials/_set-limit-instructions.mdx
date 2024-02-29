@@ -1,8 +1,10 @@
+import Edit from '../../assets/edit.svg'
+
 1. [Log in to your emnify account](https://portal.emnify.com/sign).
 1. Navigate to [**Device Policies**](https://portal.emnify.com/device-policies).
 1. Find your desired service policy in the **Service Policies** section and expand the policy details.
 1. In **{props.usageType}**, ensure the **{props.toggleLabel}** toggle is switched on.
-  Then, click **Edit** (pencil icon) next to **{props.sectionTitle}**.
+  Then, click **<Edit className="inline-icon" alt="" /> Edit** next to **{props.sectionTitle}**.
 1. Fill in your **{props.sectionTitle}** details as follows:
   - In the **Manage {props.limitType } limit** field, enter a non-negative {props.usageType == 'Data' ? 'number with up to two decimal places and select a unit' : 'whole number'}.
   - For **Schedule period**, choose an option.

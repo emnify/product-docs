@@ -7,6 +7,9 @@ slug: /how-tos/configure-dns-settings
 
 # Configure DNS settings
 
+import Check from '../assets/check.svg'
+import Delete from '../assets/delete.svg'
+import Edit from '../assets/edit.svg'
 import ResetConnectivityWarningPartial from './partials/_reset-connectivity-warning.mdx'
 
 You have the option to configure your own DNS settings, no matter if it's a public or a private server.
@@ -27,9 +30,9 @@ See [DNS Filtering with emnify Cloud Connect and AWS Route53](https://www.emnify
 1. Find your desired service policy in the **Service Policies** section and expand the policy details.
 1. In **Data**, find the **Custom DNS Server** section.
   By default, the badge next to the section title reads **Default DNS**.
-1. Click **Edit** (pencil icon) to open the configuration modal.
+1. Click **<Edit className="inline-icon" alt="" /> Edit** to open the configuration modal.
 1. Enter a valid IP address in the **Primary NS** and **Secondary NS** fields.
-  Click **&#10003; Confirm** to save your changes.
+  Click **<Check className="inline-icon" alt="" /> Confirm** to save your changes.
 
 The **Custom DNS Server** section of the policy details should display the **Configured DNS** badge and the updated IP address values.
 
@@ -42,8 +45,8 @@ The **Custom DNS Server** section of the policy details should display the **Con
 1. Find your desired service policy in the **Service Policies** section and expand the policy details.
 1. In **Data**, find the **Custom DNS Server** section.
   The badge next to the section title should read **Configured DNS**.
-1. Click **Edit** (pencil icon) to open the configuration modal.
-1. Edit the **Primary NS** or **Secondary NS** field, then click **&#10003; Confirm** to save your changes.
+1. Click **<Edit className="inline-icon" alt="" /> Edit** to open the configuration modal.
+1. Edit the **Primary NS** or **Secondary NS** field, then click **<Check className="inline-icon" alt="" /> Confirm** to save your changes.
 
 The **Custom DNS Server** section of the policy details should display the updated IP address values.
 
@@ -56,8 +59,8 @@ The **Custom DNS Server** section of the policy details should display the updat
 1. Find your desired service policy in the **Service Policies** section and expand the policy details.
 1. In **Data**, find the **Custom DNS Server** section.
   The badge next to the section title should read **Configured DNS**.
-1. Click **Edit** (pencil icon) to open the configuration modal.
-1. Remove the values from the **Primary NS** and **Secondary NS** fields, then click **&#10003; Confirm** to save your changes.
+1. Click **<Edit className="inline-icon" alt="" /> Edit** to open the configuration modal.
+1. Click <Delete className="inline-icon" alt="" /> **Delete**, then select **<Check className="inline-icon" alt="" /> Confirm** to save your changes.
 
 The **Custom DNS Server** section of the policy details should display the **Default DNS** badge and the updated IP address values.
 
