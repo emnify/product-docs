@@ -144,6 +144,7 @@ _________________
   border: none !important;
 }
 
+/* Center SVG icons in tables built with HTML tables */
 table.user-management-roles tr td:not(:first-child) {
   text-align: center;
 }
