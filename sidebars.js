@@ -348,11 +348,9 @@ const sidebars = {
             "how-tos/sms/sms-console",
           ],
         },
-        "how-tos/update-company-details",
-        "how-tos/upgrade-trial-plan",
         {
           type: "category",
-          label: "Workspaces",
+          label: "Workspace management",
           link: {
             type: "doc",
             id: "how-tos/workspaces/create",
@@ -361,6 +359,9 @@ const sidebars = {
             "how-tos/workspaces/create",
             "how-tos/workspaces/link",
             "how-tos/workspaces/switch",
+            "how-tos/workspaces/manage-users",
+            "how-tos/update-company-details",
+            "how-tos/upgrade-trial-plan",
           ],
         },
       ],
