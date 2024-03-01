@@ -1,4 +1,4 @@
-.badge--primary {
+.badge--primary-header {
   border: none;
   background-color: var(--eui-sys-brand-secondary-01);
   font-size: 50%;
@@ -6,4 +6,13 @@
   margin-bottom: 10px;
   text-transform: capitalize;
   vertical-align: middle !important;
+}
+
+.badge--primary-inline {
+  border: none;
+  background-color: var(--eui-sys-brand-secondary-01);
+  font-size: 50%;
+  font-weight: var(--eui-sys-typescale-label-small-font-weight);
+  text-transform: none;
+  vertical-align: middle;
 }
