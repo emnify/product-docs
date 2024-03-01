@@ -1,7 +1,7 @@
 ---
 description: Step-by-step how to guides that teach you how to use the emnify platform
 last_update: 
-  date: 02-28-2024
+  date: 02-29-2024
 pagination_next: how-tos/add-ip-address-spaces
 slug: /how-tos
 ---
@@ -37,11 +37,12 @@ slug: /how-tos
 
 ## Workspace management
 
-- [Update your company details](/how-tos/update-company-details)
-- [Upgrade your Trial plan](/how-tos/upgrade-trial-plan)
 - [Create a new Workspace](/workspaces/create)
 - [Link existing Workspaces](/workspaces/link)
 - [Switch between Workspaces](/workspaces/switch)
+- [Manage Workspace users](/workspaces/manage-users)
+- [Update your company details](/how-tos/update-company-details)
+- [Upgrade your Trial plan](/how-tos/upgrade-trial-plan)
 
 ## Security features
 

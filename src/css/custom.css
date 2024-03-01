@@ -149,6 +149,15 @@ a:has(> code) {
   text-decoration: none;
 }
 
+/* Inline SVG icons */
+svg.inline-icon {
+  vertical-align: middle;
+}
+
+svg.inline-icon path {
+  fill: #000;
+}
+
 /*
 *****************
 -----------------
