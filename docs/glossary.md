@@ -120,6 +120,7 @@ This value is independent and defined on a per-user basis.
 
 :::note
 You can't log in directly to a Workspace that isn't your default.
+For most people, the first Workspace you were invited to is your default.
 :::
 
 ## Device status

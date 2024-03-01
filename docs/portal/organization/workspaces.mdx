@@ -1,7 +1,7 @@
 ---
 description: Implementing multiple Workspaces helps organizations with complex business structures manage entities in the emnify Portal
 last_update:
-  date: 02-28-2024
+  date: 03-01-2024
 slug: /workspaces
 ---
 
@@ -39,27 +39,21 @@ Each listed term includes a link to its associated glossary entry:
 - [SuperAdmin](#superadmin-user-role)
 - [Workspace switcher](/glossary#workspace-switcher)
 
-## Supported features
+## Centralized features
 
-The following table describes whether a feature is supported in the context of multiple workspaces.
-How the feature is supported can vary, so be sure to refer to the preceding descriptions for more details.
+The following table describes how popular emnify features are supported in the context of multiple Workspaces.
+In this table, **Per Workspace** means the feature is limited to a specific Workspace and unable to share instances or configurations across linked Workspaces.
 
-:::note
-Most features marked as unsupported are still available but are currently limited to a specific workspace and unable to share instances or configurations across linked workspaces.
-:::
-
-| Feature                                 | Supported with multiple workspaces |
-| :-------------------------------------- | :--------------------------------: |
-| [User management](#user-management)     | <Check alt="Yes" />                |
-| [Single sign-on (SSO)](#single-sign-on) | <Check alt="Yes" />                |
-| Reports                                 | <Close alt="No" />                 |
-| SIM inventory                           | <Close alt="No" />                 |
-| Policy management                       | <Close alt="No" />                 |
-| Cloud Connect                           | <Close alt="No" />                 |
-| Virtual private networks (VPNs)         | <Close alt="No" />                 |
-| User logs for auditing                  | <Close alt="No" />                 |
-| Centralized billing                     | <Close alt="No" />                 |
-| Split billing and reporting             | <Close alt="No" />                 |
+| Feature                                 | Centralized         | Per Workspace       |
+| :-------------------------------------- | :-----------------: | :-----------------: |
+| Cloud Connect                           | <Close alt="No" />  | <Check alt="Yes" /> |
+| Billing                                 | <Close alt="No" />  | <Check alt="Yes" /> |
+| Reports                                 | <Close alt="No" />  | <Check alt="Yes" /> |
+| SIM inventory                           | <Close alt="No" />  | <Check alt="Yes" /> |
+| [Single sign-on (SSO)](#single-sign-on) | <Check alt="Yes" /> | <Close alt="No" />  |
+| User logs for auditing                  | <Close alt="No" />  | <Close alt="No" />  |
+| [User management](#user-management)     | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| Virtual private networks (VPNs)         | <Close alt="No" />  | <Check alt="Yes" /> |
 
 <FeatureRequestsTipPartial />
 
@@ -68,7 +62,7 @@ Most features marked as unsupported are still available but are currently limite
 Multiple workspaces allow you to partition access and visibility based on user roles.
 A user can have different roles in different workspaces, even if they're linked.
 For example, someone can be a **User** in one workspace and only see the IoT assets they need to manage but be an **Administrator** in another and able to manage other users in that particular workspace.
-When emnify sets up your multiple workspace architecture, a [**SuperAdmin**](#superadmin-user-role) role is also provided.
+When emnify sets up your multiple workspace architecture, a centralized [**SuperAdmin**](#superadmin-user-role) role is also provided.
 
 For more information, see [Roles and permissions](/portal/roles).
 
@@ -79,7 +73,7 @@ Once SSO is enabled for the Workspace, subsequent users with this Workspace as t
 If SSO is enabled in a Workspace that isn't your default, you continue to use your email and password.
 
 :::note
-For most people, the default Workspace is the first one you were invited to and is always shown at the top of the list.
+You can't log in directly to a Workspace that isn't your default.
 :::
 
 For the available SSO providers and implementation guides, see [Single sign-on](/sso).
