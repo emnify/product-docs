@@ -9,13 +9,13 @@ export default function NotFoundContent({ className }) {
   return (
     <main className={clsx("container margin-vert--xl", className)}>
       <div className="row">
-        <div className="col col--6 col--offset-3 page-not-found-content">
+        <div className="col col--6 col--offset-3">
           <Heading as="h1" className="hero__title">
             <Translate
               id="theme.NotFound.title"
               description="The title of the 404 page"
             >
-              Page Not Found
+              Page not found
             </Translate>
           </Heading>
           <p>
@@ -35,6 +35,7 @@ export default function NotFoundContent({ className }) {
           >
             Please{" "}
             <a
+              className="link"
               href="https://github.com/emnify/product-docs/issues/new"
               target="_blank"
               rel="noopener noreferrer"
@@ -42,10 +43,12 @@ export default function NotFoundContent({ className }) {
               open an issue on GitHub
             </a>{" "}
             or{" "}
-            <a href="mailto:docs@emnify.com">contact our documentation team</a>{" "}
+            <a className="link" href="mailto:docs@emnify.com">
+              contact our documentation team
+            </a>{" "}
             if you are struggling to find what you need.
           </p>
-          <Link to="/" className="button primary-button-large-text-only">
+          <Link to="/" className="button button--primary">
             Go to homepage
           </Link>
         </div>

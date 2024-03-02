@@ -6,7 +6,7 @@
 @import "./navbar.css";
 @import "./sidebar.css";
 @import "./table-of-contents.css";
-@import "./toggle.css";
+@import "./details.css";
 
 /* Tokens */
 @import url("./design-tokens/colors-light.css");
@@ -87,13 +87,11 @@ _________________
 }
 
 /* Links within documentation content */
-.theme-doc-markdown a,
-.theme-edit-this-page {
+.theme-doc-markdown a {
   --ifm-link-decoration: var(--eui-sys-typescale-link-medium-text-decoration);
 }
 
-.theme-doc-markdown a:hover,
-.theme-edit-this-page:hover {
+.theme-doc-markdown a:hover {
   color: var(--eui-sys-brand-state-secondary-01-hover);
 }
 
@@ -134,14 +132,9 @@ _________________
 }
 
 /* Add border to screenshots */
-.theme-doc-markdown img:not(.no-border) {
+.theme-doc-markdown img:not(.img--no-border) {
   border: 1px solid var(--eui-sys-layout-container-01);
   border-radius: 5px;
-}
-
-/* Remove border from img tags within tables */
-.theme-doc-markdown table tr td img {
-  border: none !important;
 }
 
 /* Center SVG icons in tables built with HTML tables */
@@ -154,13 +147,27 @@ a:has(> code) {
   text-decoration: none;
 }
 
-/* Inline SVG icons */
-svg.inline-icon {
+/* SVG icons */
+.icon {
+  height: 24px;
+  width: 24px;
+  fill: none;
+}
+
+.icon--inline {
   vertical-align: middle;
 }
 
-svg.inline-icon path {
-  fill: #000;
+.icon__path {
+  fill: var(--eui-sys-layout-on-surface);
+}
+
+.icon__path--green {
+  fill: var(--eui-sys-brand-tertiary-01);
+}
+
+.icon__path--red {
+  fill: var(--eui-sys-support-primary-critical);
 }
 
 /*
@@ -171,6 +178,6 @@ _________________
 *****************
 */
 
-.page-not-found-content a {
+.link {
   --ifm-link-decoration: var(--eui-sys-typescale-link-medium-text-decoration);
 }

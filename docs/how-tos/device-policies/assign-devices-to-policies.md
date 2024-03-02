@@ -48,7 +48,7 @@ Select **More** and then either **Change Service Policy** or **Change Coverage P
 
 The devices you selected are assigned to their new policy, and you should see a real-time notification confirming the change.
 
-<details className="custom-details-example">
+<details className="details details--example">
   <summary>Show an example</summary>
   <img
     src={require('./assets/portal-connected-devices-bulk-policy-change.png').default}

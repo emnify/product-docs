@@ -58,7 +58,7 @@ Data usage records are created:
 - Every 45 seconds for open PDP contexts (when at least 100 KB of data is consumed)
 - After the PDP context is closed
 
-<details className="custom-details-example">
+<details className="details details--example">
   <summary>Example JSON response</summary>
 
 ```json
@@ -138,7 +138,7 @@ Usage records for SMS are created when an SMS is successfully delivered either:
 - From the device (`"rx": 1`)
 - Towards the device (`"tx": 1`)
 
-<details className="custom-details-example">
+<details className="details details--example">
   <summary>Example JSON response</summary>
 
 ```json

@@ -1,17 +1,17 @@
-aside nav,
+.theme-doc-sidebar-container nav.menu,
 button[title="Collapse sidebar"] {
   border-right: 1px solid var(--eui-sys-layout-container-01);
 }
 
-aside nav,
-nav.navbar--fixed-top {
+.theme-doc-sidebar-container nav.menu,
+.navbar--fixed-top {
   background-color: var(--eui-sys-layout-surface-02);
 }
 
 /* Collapse sidebar button */
 button[title="Collapse sidebar"] {
   background-color: var(--eui-sys-layout-surface-02);
-  border: none;
+  border-top: none;
 }
 
 button[title="Collapse sidebar"]:hover {
@@ -35,6 +35,6 @@ div[title="Expand sidebar"]:hover {
   background-color: var(--eui-sys-brand-state-primary-02-hover);
 }
 
-div.menu__list-item-collapsible--active:has(> a.menu__link--active) {
+.menu__list-item-collapsible--active:has(> a.menu__link--active) {
   background: var(--eui-sys-layout-surface-02);
 }

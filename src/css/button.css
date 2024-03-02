@@ -1,4 +1,4 @@
-.primary-button-large-text-only {
+.button--primary {
   border: none;
   background-color: var(--eui-comp-primary-button-container-color-default);
   border-radius: var(--eui-comp-primary-button-container-border-border-radius);
@@ -22,15 +22,15 @@
   );
 }
 
-.primary-button-large-text-only:hover {
+.button--primary:hover {
   background-color: var(--eui-comp-primary-button-container-color-hovered);
 }
 
-.primary-button-large-text-only:active {
+.button--primary:active {
   background-color: var(--eui-comp-primary-button-container-color-active);
 }
 
-.primary-button-large-text-only:focus {
+.button--primary:focus {
   background-color: var(--eui-comp-primary-button-container-color-focused);
   outline-color: var(--eui-comp-primary-button-container-outline-color);
   outline-width: var(--eui-comp-primary-button-container-outline-width);
