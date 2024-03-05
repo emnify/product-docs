@@ -7,7 +7,7 @@ pagination_next: graphql/graphiql-ide
 slug: /graphql
 ---
 
-# emnify GraphQL API <span className="theme-doc-version-badge badge badge--primary">preview</span>
+# emnify GraphQL API <span className="badge badge--heading">preview</span>
 
 :::warning[compatibility notes]
 **The emnify GraphQL API is under active development** and is subject to change.

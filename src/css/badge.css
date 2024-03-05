@@ -1,9 +1,12 @@
-.badge--primary {
+.badge {
   border: none;
   background-color: var(--eui-sys-brand-secondary-01);
   font-size: 50%;
   font-weight: var(--eui-sys-typescale-label-small-font-weight);
+  vertical-align: middle;
+}
+
+.badge--heading {
   margin-bottom: 10px;
   text-transform: capitalize;
-  vertical-align: middle !important;
 }
