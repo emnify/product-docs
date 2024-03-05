@@ -1,7 +1,7 @@
 ---
 description: SASE approach, DNS, IMEI lock
 last_update: 
-  date: 11-16-2023
+  date: 03-05-2024
 slug: /services/security
 ---
 

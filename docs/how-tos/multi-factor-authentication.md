@@ -1,7 +1,7 @@
 ---
 description: How to set up multi-factor authentication on your emnify account
 last_update: 
-  date: 11-16-2023
+  date: 03-05-2024
 slug: /how-tos/multi-factor-authentication
 ---
 
