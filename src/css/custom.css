@@ -138,7 +138,7 @@ _________________
 }
 
 /* Center SVG icons in tables built with HTML tables */
-table.user-management-roles tr td:not(:first-child) {
+.table__icon--center tr td:not(:first-child) {
   text-align: center;
 }
 
