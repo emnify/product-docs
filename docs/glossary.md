@@ -570,7 +570,12 @@ User-defined limit of consumption for a certain service (data, SMS) per device.
 ## User account
 
 An account associated with a specific person and used to log in to one or more [workspaces](#workspace).
-User accounts can be assigned a role (for example, **Administrator**).
+User accounts can be assigned a role (for example, **Administrator**) per workspace.
+
+:::info
+A user can have different roles in different workspaces.
+For more information, see [Roles and permissions](/portal/roles).
+:::
 
 ## User-defined coverage
 

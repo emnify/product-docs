@@ -1,7 +1,7 @@
 ---
 description: Review the emnify account permissions for various roles
 last_update: 
-  date: 09-07-2023
+  date: 02-27-2024
 slug: /portal/roles
 ---
 
@@ -13,8 +13,9 @@ import Close from './assets/close.svg';
 The [emnify Portal](https://portal.emnify.com/) is a powerful application to control the connectivity of devices of a production system.
 
 Users across your Workspace may use the Portal, from operations and finance to development and product.
-That's why emnify offers three levels of access (referred to as **Roles**) to use and manage Portal features:
+That's why emnify offers four levels of access (referred to as **Roles**) to use and manage Portal features:
 
+- **SuperAdmin** (provided for organizations with [multiple Workspaces](/workspaces))
 - **Administrator** (has access to all services and user management)
 - **Observer** (has access to limited services)
 - **User** (has access to all services)
@@ -25,89 +26,192 @@ The following tables describe the permissions for different roles.
 
 ## Device management
 
-| Action | Administrator | Observer | User |
-| ------ | :---: | :------: | :--: |
-| Retrieve a device by ID | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
-| Update or delete a device by ID | <Check alt="Yes" /> | <Close alt="No" /> | <Check alt="Yes" /> |
-| Retrieve the blocked networks for a device | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
-| Add or remove networks from the device blocklist by ID | <Check alt="Yes" /> | <Close alt="No" /> | <Check alt="Yes" /> |
-| List all devices | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
-| Create a new device | <Check alt="Yes" /> | <Close alt="No" /> | <Check alt="Yes" /> |
-| Retrieve connectivity information for a device | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| Action | SuperAdmin | Administrator | Observer | User |
+| ------ | :--------: | :-----------: | :------: | :--: |
+| Retrieve a device by ID | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| Update or delete a device by ID | <Check alt="Yes" /> | <Check alt="Yes" /> | <Close alt="No" /> | <Check alt="Yes" /> |
+| Retrieve the blocked networks for a device | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| Add or remove networks from the device blocklist by ID | <Check alt="Yes" /> | <Check alt="Yes" /> | <Close alt="No" /> | <Check alt="Yes" /> |
+| List all devices | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| Create a new device | <Check alt="Yes" /> | <Check alt="Yes" /> | <Close alt="No" /> | <Check alt="Yes" /> |
+| Retrieve connectivity information for a device | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
 
 ## SIM management
 
-| Action | Administrator | Observer | User |
-| ------ | :---: | :------: | :--: |
-| Retrieve SIMs by ID | <Check alt="✓" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
-| Update or delete SIMs by ID | <Check alt="Yes" /> | <Close alt="No" /> | <Check alt="Yes" /> |
-| List available SIM statuses | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
-| List available SIMs | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| Action | SuperAdmin | Administrator | Observer | User |
+| ------ | :--------: | :-----------: | :------: | :--: |
+| Retrieve SIMs by ID | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| Update or delete SIMs by ID | <Check alt="Yes" /> | <Check alt="Yes" /> | <Close alt="No" /> | <Check alt="Yes" /> |
+| List available SIM statuses | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| List available SIMs | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
 
-## Service profile
+## Service policy
 
-| Action | Administrator | Observer | User |
-| ------ | :---: | :------: | :--: |
-| Retrieve a list of available countries | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
-| Retrieve a list of available currencies | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
-| Retrieve single currency details by ID | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
-| Retrieve a list of available services | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
-| List available traffic limits for a service by ID | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
-| Retrieve service profiles | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
-| Create service profiles | <Check alt="Yes" /> | <Close alt="No" /> | <Check alt="Yes" /> |
-| Retrieve service profiles by ID | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
-| Update or delete service profiles by ID | <Check alt="Yes" /> | <Close alt="No" /> | <Check alt="Yes" /> |
-| Add or delete services from service profiles | <Check alt="Yes" /> | <Close alt="No" /> | <Check alt="Yes" /> |
-| Add or delete traffic limit from a service | <Check alt="Yes" /> | <Close alt="No" /> | <Check alt="Yes" /> |
-| Retrieve the ESME interface types | <Check alt="Yes" /> | <Close alt="No" /> | <Check alt="Yes" /> |
+| Action | SuperAdmin | Administrator | Observer | User |
+| ------ | :--------: | :-----------: | :------: | :--: |
+| Retrieve a list of available countries | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| Retrieve a list of available currencies | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| Retrieve single currency details by ID | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| Retrieve a list of available services | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| List available traffic limits for a service by ID | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| Retrieve service policies | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| Create service policies | <Check alt="Yes" /> | <Check alt="Yes" /> | <Close alt="No" /> | <Check alt="Yes" /> |
+| Retrieve service policies by ID | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| Update or delete service policies by ID | <Check alt="Yes" /> | <Check alt="Yes" /> | <Close alt="No" /> | <Check alt="Yes" /> |
+| Add or delete services from service policies | <Check alt="Yes" /> | <Check alt="Yes" /> | <Close alt="No" /> | <Check alt="Yes" /> |
+| Add or delete traffic limit from a service | <Check alt="Yes" /> | <Check alt="Yes" /> | <Close alt="No" /> | <Check alt="Yes" /> |
+| Retrieve the SMS interface types | <Check alt="Yes" /> | <Check alt="Yes" /> | <Close alt="No" /> | <Check alt="Yes" /> |
 
 ## Coverage policy
 
-| Action | Administrator | Observer | User |
-| ------ | :---: | :------: | :--: |
-| List of available coverage area statuses | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
-| List of available data plan statuses | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
-| Retrieve data plan details by ID | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
-| Retrieve data plans | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
-| Retrieve list of data plan statuses | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
-| Create coverage policies | <Check alt="Yes" /> | <Close alt="No" /> | <Check alt="Yes" /> |
-| List coverage policies | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
-| Retrieve coverage area of a coverage policy | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
-| Retrieve country details by ID | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
-| List networks | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
-| Retrieve my currently active data plan | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| Action | SuperAdmin | Administrator | Observer | User |
+| ------ | :--------: | :-----------: | :------: | :--: |
+| List of available coverage area statuses | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| List of available data plan statuses | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| Retrieve data plan details by ID | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| Retrieve data plans | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| Retrieve list of data plan statuses | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| Create coverage policies | <Check alt="Yes" /> | <Check alt="Yes" /> | <Close alt="No" /> | <Check alt="Yes" /> |
+| List coverage policies | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| Retrieve coverage area of a coverage policy | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| Retrieve country details by ID | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| List networks | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| Retrieve my currently active data plan | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
 
 ## User management
 
-| Action | Administrator | Observer | User |
-| ------ | :---: | :------: | :--: |
-| Create support token to assume permissions of a user by ID | <Close alt="No" /> | <Close alt="No" /> | <Close alt="No" /> |
-| Update or delete users | <Check alt="Yes" /> | <Close alt="No" /> | <Close alt="No" /> |
-| Retrieve my user role permissions | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
-| Update user password | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
-| Create or list users | <Check alt="Yes" /> | <Close alt="No" /> | <Close alt="No" /> |
-| Add or delete role from a user | <Check alt="Yes" /> | <Close alt="No" /> | <Close alt="No" /> |
-| Delete or list trusted devices for a given user | <Check alt="Yes" /> | <Close alt="No" /> | <Close alt="No" /> |
-| Create or retrieve an application token | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
-| Edit an application token | <Check alt="Yes" /> | <Close alt="No" /> | <Close alt="No" /> |
+<table className="user-management-roles">
+  <colgroup></colgroup>
+  <colgroup></colgroup>
+  <colgroup span="3"></colgroup>
+  <thead>
+    <tr>
+      <th rowSpan="2">Action</th>
+      <th colSpan="1" scope="colgroup">All Workspaces</th>
+      <th colSpan="3" scope="colgroup">Per Workspace</th>
+    </tr>
+    <tr>
+      <th scope="col">SuperAdmin</th>
+      <th scope="col">Administrator</th>
+      <th scope="col">Observer</th>
+      <th scope="col">User</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td scope="row">Create or list Workspace users</td>
+      <td><Check alt="Yes" /></td>
+      <td><Check alt="Yes" /></td>
+      <td><Close alt="No" /></td>
+      <td><Close alt="No" /></td>
+    </tr>
+    <tr>
+      <td scope="row">Update or delete Workspace users</td>
+      <td><Check alt="Yes" /></td>
+      <td><Check alt="Yes" /></td>
+      <td><Close alt="No" /></td>
+      <td><Close alt="No" /></td>
+    </tr>
+    <tr>
+      <td scope="row">Reassign or delete a SuperAdmin</td>
+      <td><Close alt="No" /></td>
+      <td><Close alt="No" /></td>
+      <td><Close alt="No" /></td>
+      <td><Close alt="No" /></td>
+    </tr>
+    <tr>
+      <td scope="row">Retrieve your user role</td>
+      <td><Check alt="Yes" /></td>
+      <td><Check alt="Yes" /></td>
+      <td><Check alt="Yes" /></td>
+      <td><Check alt="Yes" /></td>
+    </tr>
+    <tr>
+      <td scope="row">Modify your user role</td>
+      <td><Close alt="No" /></td>
+      <td><Close alt="No" /></td>
+      <td><Close alt="No" /></td>
+      <td><Close alt="No" /></td>
+    </tr>
+    <tr>
+      <td scope="row">Add or delete per Workspace roles from a user</td>
+      <td><Check alt="Yes" /></td>
+      <td><Check alt="Yes" /></td>
+      <td><Close alt="No" /></td>
+      <td><Close alt="No" /></td>
+    </tr>
+    <tr>
+      <td scope="row">Update your password</td>
+      <td><Check alt="Yes" /></td>
+      <td><Check alt="Yes" /></td>
+      <td><Check alt="Yes" /></td>
+      <td><Check alt="Yes" /></td>
+    </tr>
+    <tr>
+      <td scope="row">Delete or list trusted devices for a user</td>
+      <td><Check alt="Yes" /></td>
+      <td><Check alt="Yes" /></td>
+      <td><Close alt="No" /></td>
+      <td><Close alt="No" /></td>
+    </tr>
+    <tr>
+      <td scope="row">Create or retrieve an application token</td>
+      <td><Check alt="Yes" /></td>
+      <td><Check alt="Yes" /></td>
+      <td><Check alt="Yes" /></td>
+      <td><Check alt="Yes" /></td>
+    </tr>
+    <tr>
+      <td scope="row">Edit an application token</td>
+      <td><Check alt="Yes" /></td>
+      <td><Check alt="Yes" /></td>
+      <td><Close alt="No" /></td>
+      <td><Close alt="No" /></td>
+    </tr>
+    <tr>
+      <td scope="row">Create a support token to assume user permissions by ID</td>
+      <td><Close alt="No" /></td>
+      <td><Close alt="No" /></td>
+      <td><Close alt="No" /></td>
+      <td><Close alt="No" /></td>
+    </tr>
+  </tbody>
+</table>
+
+:::info
+A user can have different roles in different Workspaces, even if they're linked.
+**SuperAdmin** is the only role that is consistent across linked Workspaces by default.
+However, a user can be a SuperAdmin in one main organization but hold another role (for example, **Observer**) in an unrelated Workspace with a different main organization.
+
+For more information, see [Multiple Workspaces](/workspaces).
+:::
+
+## Workspace management
+
+| Action | SuperAdmin | Administrator | Observer | User |
+| ------ | :--------: | :-----------: | :------: | :--: |
+| Automatically access Workspaces linked to your main organization by emnify | <Check alt="Yes" /> | <Close alt="No" /> | <Close alt="No" /> | <Close alt="No" /> |
+| Send a request to create a new Workspace   | <Check alt="Yes" /> | <Check alt="Yes" /> | <Close alt="No" /> | <Close alt="No" /> |
+| Send a request to link existing Workspaces | <Check alt="Yes" /> | <Check alt="Yes" /> | <Close alt="No" /> | <Close alt="No" /> |
+| Switch between Workspaces you have access to | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
 
 ## Alerts
 
-| Action | Administrator | Observer | User |
-| ------ | :---: | :------: | :--: |
-| Retrieve organization or device alerts | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
-| Retrieve user events by ID | <Check alt="Yes" /> | <Close alt="No" /> | <Close alt="No" /> |
-| Retrieve IMSI and SIM events | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| Action | SuperAdmin | Administrator | Observer | User |
+| ------ | :--------: | :-----------: | :------: | :--: |
+| Retrieve organization or device alerts | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| Retrieve user events by ID | <Check alt="Yes" /> | <Check alt="Yes" /> | <Close alt="No" /> | <Close alt="No" /> |
+| Retrieve IMSI and SIM events | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
 
 ## MFA keys
 
-| Action | Administrator | Observer | User |
-| ------ | :---: | :------: | :--: |
-| Generate user shared secret key for MFA | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
-| Activate user shared secret key for MFA | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
-| List available MFA key statuses | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
-| Delete shared secret key for MFA of a user by ID | <Check alt="Yes" /> | <Close alt="No" /> | <Close alt="No" /> |
-| List your trusted devices | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
-| Delete a trusted device from your list by ID | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
-| List available MFA key types | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
-| Delete my shared secret for MFA | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| Action | SuperAdmin | Administrator | Observer | User |
+| ------ | :--------: | :-----------: | :------: | :--: |
+| Generate user shared secret key for MFA | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| Activate user shared secret key for MFA | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| List available MFA key statuses | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| Delete shared secret key for MFA of a user by ID | <Check alt="Yes" /> | <Check alt="Yes" /> | <Close alt="No" /> | <Close alt="No" /> |
+| List your trusted devices | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| Delete a trusted device from your list by ID | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| List available MFA key types | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
+| Delete my shared secret for MFA | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> | <Check alt="Yes" /> |
