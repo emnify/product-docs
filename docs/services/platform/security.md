@@ -1,7 +1,7 @@
 ---
 description: SASE approach, DNS, IMEI lock
 last_update: 
-  date: 11-16-2023
+  date: 03-05-2024
 slug: /services/security
 ---
 
@@ -59,7 +59,7 @@ All future device connections are restricted to this specific device.
 
 ### Multi-factor authentication
 
-Starting January 2024, multi-factor authentication (MFA) will be mandatory for all emnify Portal accounts.
+Starting March 2024, multi-factor authentication (MFA) will be mandatory for all emnify Portal accounts.
 This enforcement allows us to proactively safeguard our IoT ecosystem, follow best practices, and meet regulatory security compliance.
 
 For more information, see [Set up multi-factor authentication](/how-tos/multi-factor-authentication).
