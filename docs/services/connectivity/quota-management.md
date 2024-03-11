@@ -1,19 +1,21 @@
 ---
 description: Functionality and limitations of emnify's quota management for data and SMS
 last_update: 
-  date: 12-31-2021
+  date: 03-11-2024
 slug: /services/quota-management
 ---
 
 # Quota management
 
-The emnify service core provides quota management on an individual device basis.
-Data quotas offer the possibility to limit your devices individually and define the permitted data consumption per device and the time frame in which the data quota is active.
+emnify provides data and SMS quota management for devices.
+These quotas are defined in the service policy.
 
-This function enables the configuration of the device behavior when the quota is reached (blocking or throttling to configurable speeds), the refill behavior, the automatic sequence, and the alerting options via emnify's event stream when the configured alarm threshold is reached.
+Quotas allow you to restrict daily usage and define the permitted consumption on individual devices and the time frame in which the quota is active.
+You can also use quotas to customize settings like refill behavior, automatic expiry, and alerts.
 
-The quota limit can be applied to SMS and data services and is defined per a configurable time range (for example, 50 MB per month or 10 SMS per day).
-The platform sends a warning threshold event when the quota limit is about to be reached for a specific device and sends an event when the quota limit is reached.
+You can apply quotas for data and SMS services, which are defined within a configurable time range (for example, 50 MB per month or 10 SMS per day).
+emnify sends a warning threshold event when a device's quota limit is about to be reached and another event after the quota limit is reached.
+You can also configure the device behavior when your device reaches the quota (for example, blocking or throttling to configurable speeds).
 
 ## Manage quotas in the emnify Portal
 
