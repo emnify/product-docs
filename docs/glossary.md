@@ -397,7 +397,7 @@ The emnify NOC is used primarily for [incident management](/support#incident-man
 
 ## Organization
 
-The billable entity (company, subsidiary, branch, division, department, etc.) associated with a [workspace](#workspace).
+The billable entity (company, subsidiary, branch, division, department, etc.) associated with a [Workspace](#workspace).
 
 :::info
 Information on your organization, users, subscriptions, and more are available in the emnify Portal under [**Workspace settings**](https://portal.emnify.com/organisation-settings/).
@@ -570,11 +570,11 @@ User-defined limit of consumption for a certain service (data, SMS) per device.
 
 ## User account
 
-An account associated with a specific person and used to log in to one or more [workspaces](#workspace).
-User accounts can be assigned a role (for example, **Administrator**) per workspace.
+An account associated with a specific person and used to log in to one or more [Workspaces](#workspace).
+User accounts can be assigned a role (for example, **Administrator**) per Workspace.
 
 :::info
-A user can have different roles in different workspaces.
+A user can have different roles in different Workspaces.
 For more information, see [Roles and permissions](/portal/roles).
 :::
 

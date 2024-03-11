@@ -1,9 +1,8 @@
 # emnify.WordList
 # Extends Google.WordList and applies any exceptions for the emnify Documentation
-#
-# Full list and explanation of terms: https://developers.google.com/style/word-list
 extends: substitution
 message: "Use '%s' instead of '%s'."
+link: https://developers.google.com/style/word-list
 level: warning
 ignorecase: false
 action:
@@ -24,6 +23,8 @@ swap:
   "(?:rate zone|ratezone)": coverage area
   "(?:REST-API|Rest-API|Rest API)": REST API
   "(?:SMSes|SMSs)": SMS
+  "(?:subaccounts?|sub-accounts?)": Workspace|Workspaces
+  "(?:Superadmin|superadmin|super admin|Super Admin)": SuperAdmin
   "(?:tariff|tariff plan|usage tariff)": data plan
   "(?:two-factor authentication|two factor authentication|multi factor authentication)": multi-factor authentication
   "(?:WiFi|wifi|Wifi)": Wi-Fi
@@ -94,4 +95,5 @@ swap:
   touch: tap
   url: URL
   vs\.: versus
+  workspaces?: Workspace|Workspaces
   World Wide Web: web
