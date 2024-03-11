@@ -1,7 +1,7 @@
 ---
 description: How to access the SMS console and send SMS on the emnify Portal
 last_update:
-  date: 02-13-2024
+  date: 02-22-2024
 pagination_next: how-tos/sms/portal
 sidebar_label: Configure the SMS interface
 slug: /how-tos/configure-sms-interface
@@ -9,7 +9,7 @@ slug: /how-tos/configure-sms-interface
 
 # Configure the SMS interface
 
-The **SMS interface** specifies how and where to forward SMS from devices under this device policy.
+The **SMS interface** specifies how and where to forward SMS from devices under this service policy.
 
 The following connections are available:
 
@@ -19,30 +19,28 @@ The following connections are available:
 
 ## Webhook
 
-You can use the SMS webhook to receive SMS and delivery notifications for SMS in your application.
+You can use the SMS webhook to receive SMS and delivery notifications in your application.
 
-Follow these steps to configure the webhook as your SMS interface:
+### Add webhook
 
 1. [Log in to your emnify account](https://portal.emnify.com/sign).
 2. Navigate to your [**Device Policies**](https://portal.emnify.com/device-policies).
-3. Under **Service Policies**, choose the policy you want to update and click **Details**.
-4. Find the **SMS interface** section.
-Select **Webhook**, then click **Configure Webhook**.
+3. Under **Service Policies**, choose the policy you want to update and expand the policy details.
+4. In **SMS**, find the **SMS interface** section.
+  By default, the badge next to the section title reads **Web Portal**.
+5. Click **Edit** (pencil icon) to open the **SMS console settings** configuration modal.
+6. In the **SMS console** list, select **Webhook**.
+7. In **Add Webhook to forward SMS to**, provide the following:
 
-<img
-  src={require('./assets/portal-service-policies-sms-interface-configure-webhook.png').default}
-  alt=""
-  style={{ width: 500 }}
-/>
+- In the **URL** field, enter the public URL of your server to receive API requests.
+- In the **Secret key** field, enter a key to prevent unauthorized access and your server can decline requests if the key is incorrect.
 
-5. Provide the URL for your webhook.
-Optionally, you can provide a secret key to prevent unauthorized access.
-Then, click **Add Webhook**.
+8. Review your configuration, then click **Add Webhook**.
 
-<img
-  src={require('./assets/portal-service-policies-sms-interface-add-webhook.png').default}
-  alt=""
-/>
+:::warning
+The secret key isn't displayed after you add the webhook.
+Keep this key in a safe place.
+:::
 
 :::info
 When you want to send an SMS from the device to your application, your device should send the SMS to an invalid [MSISDN](/glossary#msisdn) with seven digits or less.
@@ -74,25 +72,52 @@ When you want to send an SMS from the device to your application, your device sh
   </figcaption>
 </figure>
 
+### Edit webhook
+
+1. [Log in to your emnify account](https://portal.emnify.com/sign).
+1. Navigate to your [**Device Policies**](https://portal.emnify.com/device-policies).
+1. Under **Service Policies**, choose the policy you want to update and expand the policy details.
+1. In **SMS**, find the **SMS interface** section with the **Webhook** badge.
+1. Click **Edit** (pencil icon) to open the **SMS console settings** configuration modal.
+1. In **Add Webhook to forward SMS to**, edit the **URL** or remove the **Secret key**.
+  You can also click **Reset all** to clear both fields.
+1. Review and select **Save changes**.
+
 ## SMPP
 
 [Short Message Peer-to-Peer (SMPP)](/glossary#smpp) is a protocol that the telecommunication industry uses to exchange SMS messages between short message service centers (SMSC) and external short messaging entities (ESME).
 Telematics platforms, SMS services, and operators often use SMPP to enable sending SMS to and from devices.
 
-Follow these steps to configure SMPP as your SMS interface:
+### Configure SMPP as your SMS interface
 
 1. [Log in to your emnify account](https://portal.emnify.com/sign).
-2. Navigate to your [**Device Policies**](https://portal.emnify.com/device-policies).
-3. Under **Service Policies**, choose the policy you want to update and click **Details**.
-4. Find the **SMS interface** section and select **SMPP**.
+1. Navigate to your [**Device Policies**](https://portal.emnify.com/device-policies).
+1. Under **Service Policies**, choose the policy you want to update and expand the policy details.
+1. In **SMS**, find the **SMS interface** section.
+  By default, the badge next to the section title reads **Web Portal**.
+1. Click **Edit** (pencil icon) to open the **SMS console settings** configuration modal.
+1. In the **SMS console** list, select **SMPP**.
+  When you select **SMPP**, you're given a **SMPP Server**, **Workspace ID**, and **SMPP Password**.
+1. Review and select **Add SMPP**.
 
-When you select **SMPP** as your **SMS interface**, you're given a **System ID** and **Password** to access the emnify **SMPP Server**.
-
-<img
-  src={require('./assets/portal-service-policies-sms-interface-smpp.png').default}
-  alt=""
-/>
+:::warning
+The **SMPP Password** isn't displayed again, so store it in a safe place.
+:::
 
 :::tip
 For an example of integrating SMPP with a third-party application, see [emnify SMS via SMPP integration with Gurtams' flespi and Wialon](https://www.emnify.com/integration-guides/smpp-integration-flespi-wialon-gurtam).
+:::
+
+### Reset the SMPP password
+
+1. [Log in to your emnify account](https://portal.emnify.com/sign).
+1. Navigate to your [**Device Policies**](https://portal.emnify.com/device-policies).
+1. Under **Service Policies**, choose the policy you want to update and expand the policy details.
+1. In **SMS**, find the **SMS interface** section with the **SMPP** badge.
+1. Click **Edit** (pencil icon) to open the **SMS console settings** configuration modal.
+1. In **SMPP details**, click **Reset** next to **SMPP Password**.
+1. Review and select **Save changes**.
+
+:::warning
+The **SMPP Password** isn't displayed again, so store it in a safe place.
 :::
