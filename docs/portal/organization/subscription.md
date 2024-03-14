@@ -52,7 +52,7 @@ Go to [**Subscription**](https://portal.emnify.com/organisation-settings/subscri
 - Pro (Select **Contact Sales**)
 
 :::note
-The Standard Package is included in the Trial plan.
+The Standard Package is included in the [Trial plan](/quickstart/trial).
 :::
 
 ## Pricing

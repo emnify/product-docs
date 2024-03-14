@@ -89,7 +89,7 @@ You don't need to set up MFA when creating a new account, as the sign up process
 After you access your account, you can either [configure TOTP MFA in the Portal](#configure-totp-mfa-in-the-emnify-portal) or [set up email-based MFA](#existing-accounts) the next time you log in.
 
 :::note
-MFA isn't required if you're on the [Trial plan](/quickstart#emnifys-trial), but you can still [configure TOTP MFA](#configure-totp-mfa-in-the-emnify-portal) to secure your account.
+MFA isn't required if you're on the [Trial plan](/quickstart/trial), but you can still [configure TOTP MFA](#configure-totp-mfa-in-the-emnify-portal) to secure your account.
 :::
 
 ### Invited users
