@@ -7,6 +7,8 @@ slug: /system-events/usage
 
 # Work with system events
 
+import Image from '@site/src/components/Image';
+
 There are three ways you can access and trigger available events:
 
 - [Data Streamer](#data-streamer)
@@ -40,10 +42,8 @@ Data streams marked as **Running** are properly operating.
 Failed streams exhibit an **Error** status.
 Paused streams are marked as **Paused**.
 
-<img
-  className="img"
-  src={require('../assets/portal-integrations-data-streams-status.png').default}
-  alt=""
+<Image
+  srcPath={require('../assets/portal-integrations-data-streams-status.png').default}
 />
 
 The **Details** button allows you to inspect the configuration of the specific stream.
@@ -56,10 +56,9 @@ The Data Streamer can apply filtering for event data streams based on event type
 Under **Event Options**, you can choose to **Stream all events** or **Stream specific events only**.
 Selecting the latter displays a searchable dropdown listing all [event types](/system-events/event-types) available as filters.
 
-<img
-  className="img img--width-550"
-  src={require('../assets/portal-integrations-data-streams-details-events-filter.png').default}
-  alt=""
+<Image
+  srcPath={require('../assets/portal-integrations-data-streams-details-events-filter.png').default}
+  modifiers="img--width-550"
 />
 
 :::tip
@@ -127,9 +126,9 @@ Here's where you can find event information in the Portal:
 
 |  Destination  |   Event information  |
 | --- | --- |
-| [**Dashboard**](https://portal.emnify.com/) | Overview of all event activity within your organization. <br/> <img className="img img--no-border" src={require('./assets/portal-dashboard-events.png').default} alt="" /> |
-|  [**Connected Devices**](https://portal.emnify.com/connected-devices)&nbsp;<span aria-label="and then">></span> **Details**&nbsp;<span aria-label="and then">></span> **Events** | List of triggered events for a particular device (also referred to as an "endpoint"). <br/> <img className="img img--no-border" src={require('./assets/portal-connected-devices-details-events.png').default} alt="" /> |
-| [**SIM Inventory**](https://portal.emnify.com/sim-inventory)&nbsp;<span aria-label="and then">></span> **Details**&nbsp;<span aria-label="and then">></span> **Events** | List of triggered events for a particular SIM card. <br/> <img className="img img--no-border" src={require('./assets/portal-sim-inventory-details-events.png').default} alt="" /> |
+| [**Dashboard**](https://portal.emnify.com/) | Overview of all event activity within your organization. <br/> <Image srcPath={require('./assets/portal-dashboard-events.png').default} modifiers="img--no-border" /> |
+|  [**Connected Devices**](https://portal.emnify.com/connected-devices)&nbsp;<span aria-label="and then">></span> **Details**&nbsp;<span aria-label="and then">></span> **Events** | List of triggered events for a particular device (also referred to as an "endpoint"). <br/> <Image srcPath={require('./assets/portal-connected-devices-details-events.png').default} modifiers="img--no-border" /> |
+| [**SIM Inventory**](https://portal.emnify.com/sim-inventory)&nbsp;<span aria-label="and then">></span> **Details**&nbsp;<span aria-label="and then">></span> **Events** | List of triggered events for a particular SIM card. <br/> <Image srcPath={require('./assets/portal-sim-inventory-details-events.png').default} modifiers="img--no-border" /> |
 
 :::info
 Any events triggered in the [Portal](https://portal.emnify.com/) show **API** as the [event source](/system-events#event-source).

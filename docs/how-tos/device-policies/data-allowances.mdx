@@ -8,6 +8,8 @@ slug: /how-tos/data-allowances
 
 # Change the assigned data allowance
 
+import Image from '@site/src/components/Image';
+
 Data plans and the associated allowances are managed within [coverage policies](/portal/device-policies#coverage-policies).
 
 With the **Pro Package**, you can manage up to 6 data plans.
@@ -38,19 +40,15 @@ Any changes are reflected on your invoice within a few hours.
 1. Navigate to your [**Connected Devices**](https://portal.emnify.com/connected-devices).
 2. Decide which device you want to adjust and click **Details**.
 
-<img
-  className="img"
-  src={require('./assets/portal-connected-devices-details-button.png').default}
-  alt=""
+<Image
+  srcPath={require('./assets/portal-connected-devices-details-button.png').default}
 />
 
 3. Find your device's **Coverage policy** information under the **Devices** section of the **General** tab.
 4. Click **Edit** and select the coverage policy with the corresponding data allowance you want the device to use.
 
-<img
-  className="img"
-  src={require('./assets/portal-connected-devices-details-device-policies-coverage-policy-edit-button.png').default}
-  alt=""
+<Image
+  srcPath={require('./assets/portal-connected-devices-details-device-policies-coverage-policy-edit-button.png').default}
 />
 
 :::note
@@ -59,10 +57,9 @@ Your changes are saved automatically.
 
 In the following example, the device switches from **Europe 1 MB** included to **Europe 500 MB** included.
 
-<img
-  className="img img--width-450"
-  src={require('./assets/portal-connected-devices-details-device-policies-coverage-policy-dropdown.png').default}
-  alt=""
+<Image
+  srcPath={require('./assets/portal-connected-devices-details-device-policies-coverage-policy-dropdown.png').default}
+  modifiers="img--width-450"
 />
 
 ### Multiple devices in bulk
@@ -70,26 +67,20 @@ In the following example, the device switches from **Europe 1 MB** included to *
 1. Navigate to your [**Connected Devices**](https://portal.emnify.com/connected-devices).
 2. Select multiple devices by clicking the checkboxes next to the device **Name**.
 
-<img
-  className="img"
-  src={require('./assets/portal-connected-devices-select-multiple-devices.png').default}
-  alt=""
+<Image
+  srcPath={require('./assets/portal-connected-devices-select-multiple-devices.png').default}
 />
 
 3. Locate the **More** dropdown menu on the banner and select **Change Coverage Policy**.
 
-<img
-  className="img"
-  src={require('./assets/portal-connected-devices-bulk-actions-more-change-coverage-policy.png').default}
-  alt=""
+<Image
+  srcPath={require('./assets/portal-connected-devices-bulk-actions-more-change-coverage-policy.png').default}
 />
 
 4. Once the **Change Coverage Policy** modal appears, use the **Coverage Policy** dropdown to choose the policy you want to assign to the selected devices and click **Save**.
 
-<img
-  className="img"
-  src={require('./assets/portal-connected-devices-bulk-actions-change-coverage-policy-modal.png').default}
-  alt=""
+<Image
+  srcPath={require('./assets/portal-connected-devices-bulk-actions-change-coverage-policy-modal.png').default}
 />
 
 In the preceding example, the two selected devices (**Walking Mobile** and **TravelSpot**) are assigned to **New coverage policy**.

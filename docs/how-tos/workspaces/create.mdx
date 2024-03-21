@@ -9,6 +9,7 @@ slug: /workspaces/create
 
 # Create a new Workspace
 
+import Image from '@site/src/components/Image';
 import PermissionsInfoPartial from './partials/_permissions-info.mdx'
 import FeatureRequestsTipPartial from '../../partials/_feature-requests-tip.mdx'
 
@@ -25,19 +26,17 @@ Alternatively, you can also [link existing Workspaces](/workspaces/link) if you 
 1. [Log in to your emnify account](https://portal.emnify.com/sign).
 You should see your Workspace name at the top of the primary sidebar.
 
-<img
-  className="img img--width-650"
-  src={require('./assets/portal-sidebar-workspaces.png').default}
-  alt=""
+<Image
+  srcPath={require('./assets/portal-sidebar-workspaces.png').default}
+  modifiers="img--width-650"
 />
 
 2. Click your Workspace name (or the corresponding icons) to reveal the **Workspaces** modal.
 3. Select **Create a new Workspace**.
 
-<img
-  className="img img--width-650"
-  src={require('./assets/portal-sidebar-workspaces-create.png').default}
-  alt=""
+<Image
+  srcPath={require('./assets/portal-sidebar-workspaces-create.png').default}
+  modifiers="img--width-650"
 />
 
 4. Once the **Request for a new Workspace** modal appears, enter your **Contact email** and provide more details or any requirements for the new Workspace.

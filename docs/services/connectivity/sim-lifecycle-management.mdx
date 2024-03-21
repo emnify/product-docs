@@ -7,6 +7,8 @@ slug: /services/sim-lifecycle-management
 
 # SIM lifecycle management
 
+import Image from '@site/src/components/Image';
+
 When selling connected devices, it's difficult to determine when devices are in use and when not.
 Using SIM cards that can't align with the device lifecycle incur unnecessary costs.
 emnify SIM cards don't incur any costs unless activated.
@@ -31,9 +33,9 @@ In this case, you'll continue to accrue costs as emnify charges for activated SI
 Be sure to suspend the assigned SIM to avoid unexpected charges.
 
 You can also check the Portal **Dashboard** to see if you have unused but charged SIMs.
-<img
-  className="img"
-  src={require('./assets/portal-dashboard-unused-sim-warning.png').default}
+
+<Image
+  srcPath={require('./assets/portal-dashboard-unused-sim-warning.png').default}
   alt="Warning banner displayed for unused SIMs displayed on the emnify Portal Dashboard. It reads, '2 unused but charged SIM cards detected. We found active SIMs not connected to any device. In this case we may still charge for them, but they won't be of any use for you.' Next to this text, there's a link to the SIM Inventory and a button reading 'Deactivate SIMs now.'"
 />
 

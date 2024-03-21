@@ -7,6 +7,7 @@ slug: /workspaces/switch
 
 # Switch between Workspaces
 
+import Image from '@site/src/components/Image';
 import FeatureRequestsTipPartial from '../../partials/_feature-requests-tip.mdx'
 
 This guide shows you how to switch between your [linked Workspaces](/glossary#linked-workspaces) via the Workspace switcher in the emnify Portal.
@@ -14,10 +15,9 @@ This guide shows you how to switch between your [linked Workspaces](/glossary#li
 1. [Log in to your emnify account](https://portal.emnify.com/sign).
 You should see your Workspace name at the top of the primary sidebar.
 
-<img
-  className="img img--width-650"
-  src={require('./assets/portal-sidebar-workspaces.png').default}
-  alt=""
+<Image
+  srcPath={require('./assets/portal-sidebar-workspaces.png').default}
+  modifiers="img--width-650"
 />
 
 2. Click your Workspace name (or the corresponding icons) to reveal the **Workspaces** modal.
@@ -26,18 +26,16 @@ This displays a list of all the linked Workspaces, as well as **Link existing Wo
 
 The following example starts from the main **Example Organization** Workspace and selects the **Another Organization** Workspace.
 
-<img
-  className="img img--width-650"
-  src={require('./assets/portal-sidebar-workspaces-org-list.png').default}
-  alt=""
+<Image
+  srcPath={require('./assets/portal-sidebar-workspaces-org-list.png').default}
+  modifiers="img--width-650"
 />
 
 Now you should be in another Workspace. 🎉
 
-<img
-  className="img img--width-650"
-  src={require('./assets/portal-sidebar-workspaces-second-org.png').default}
-  alt=""
+<Image
+  srcPath={require('./assets/portal-sidebar-workspaces-second-org.png').default}
+  modifiers="img--width-650"
 />
 
 <FeatureRequestsTipPartial />

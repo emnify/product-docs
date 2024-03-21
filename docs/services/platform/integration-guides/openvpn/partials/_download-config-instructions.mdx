@@ -1,27 +1,24 @@
+import Image from '@site/src/components/Image';
+
 1. [Log in to your emnify account](https://portal.emnify.com/sign).
 2. Navigate to **Integrations** and find the [**Secure Connection**](https://portal.emnify.com/integrations#secure-connection) section.
 3. Under **OpenVPN**, select **Show instructions**.
 
-<img
-  className="img"
-  src={require('../assets/portal-integrations-secure-connection-openvpn-show-instructions.png').default}
-  alt=""
+<Image
+  srcPath={require('../assets/portal-integrations-secure-connection-openvpn-show-instructions.png').default}
 />
 
 4. Make sure you're on the **{props.operatingSystem}** tab, then click **Download {props.operatingSystem == 'Linux' ? 'client.conf' : 'client.ovpn'}**.
 
-<img
-  className="img"
-  src={require(`../assets/portal-integrations-secure-connections-openvpn-${props.imageSrc}-download.png`).default}
-  alt=""
+<Image
+  srcPath={require(`../assets/portal-integrations-secure-connections-openvpn-${props.imageSrc}-download.png`).default}
 />
 
 Select the desired region or choose **Download all regions**.
 
-<img
-  className="img img--height-400"
-  src={require(`../assets/portal-integrations-secure-connections-openvpn-${props.imageSrc}-download-dropdown.png`).default}
-  alt=""
+<Image
+  srcPath={require(`../assets/portal-integrations-secure-connections-openvpn-${props.imageSrc}-download-dropdown.png`).default}
+  modifiers="img--height-400"
 />
 
 Once downloaded, store that file on your server in the folder <code>{props.operatingSystem == 'Windows' ? '\\OpenVPN\\config' : '/etc/openvpn'}</code>.

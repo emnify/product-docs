@@ -7,6 +7,8 @@ slug: /portal/sms
 
 # SMS
 
+import Image from '@site/src/components/Image';
+
 Short Message Service (SMS) uses the same basic technology on IoT devices as that employed with consumer mobile devices.
 However, in the context of IoT devices, there are more modes of SMS operation and use cases that provide additional capabilities.
 
@@ -46,28 +48,23 @@ To open a device's SMS console, select its message icon.
 
 <details className="details details--example">
   <summary>From Connected Devices</summary>
-  <img
-    className="img"
-    src={require('./assets/portal-connected-devices-open-sms-console.png').default}
-    alt=""
+  <Image
+    srcPath={require('./assets/portal-connected-devices-open-sms-console.png').default}
   />
 </details>
 
 <details className="details details--example">
   <summary>From Device Details</summary>
-  <img
-    className="img"
-    src={require('./assets/portal-device-details-open-sms-console.png').default}
-    alt=""
+  <Image
+    srcPath={require('./assets/portal-device-details-open-sms-console.png').default}
   />
 </details>
 
 <details className="details details--info">
   <summary>Show the Device SMS console</summary>
-  <img
-    className="img img--width-550"
-    src={require('./assets/portal-device-sms-console.png').default}
-    alt=""
+  <Image
+    srcPath={require('./assets/portal-device-sms-console.png').default}
+    modifiers="img--width-550"
   />
 </details>
 
