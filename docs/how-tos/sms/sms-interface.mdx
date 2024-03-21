@@ -9,6 +9,8 @@ slug: /how-tos/configure-sms-interface
 
 # Configure the SMS interface
 
+import Image from '@site/src/components/Image';
+
 The **SMS interface** specifies how and where to forward SMS from devices under this device policy.
 
 The following connections are available:
@@ -29,20 +31,17 @@ Follow these steps to configure the webhook as your SMS interface:
 4. Find the **SMS interface** section.
 Select **Webhook**, then click **Configure Webhook**.
 
-<img
-  className="img img--width-500"
-  src={require('./assets/portal-service-policies-sms-interface-configure-webhook.png').default}
-  alt=""
+<Image
+  srcPath={require('./assets/portal-service-policies-sms-interface-configure-webhook.png').default}
+  modifiers="img--width-500"
 />
 
 5. Provide the URL for your webhook.
 Optionally, you can provide a secret key to prevent unauthorized access.
 Then, click **Add Webhook**.
 
-<img
-  className="img"
-  src={require('./assets/portal-service-policies-sms-interface-add-webhook.png').default}
-  alt=""
+<Image
+  srcPath={require('./assets/portal-service-policies-sms-interface-add-webhook.png').default}
 />
 
 :::info
@@ -50,10 +49,9 @@ When you want to send an SMS from the device to your application, your device sh
 :::
 
 <figure>
-  <img
-    className="img img--width-450"
-    src={require('./assets/delivery-notification.png').default}
-    alt=""
+  <Image
+    srcPath={require('./assets/delivery-notification.png').default}
+    modifiers="img--width-450"
   />
   <figcaption>
     <em>
@@ -63,10 +61,9 @@ When you want to send an SMS from the device to your application, your device sh
 </figure>
 
 <figure>
-  <img
-    className="img img--width-450"
-    src={require('./assets/mosms.png').default}
-    alt=""
+  <Image
+    srcPath={require('./assets/mosms.png').default}
+    modifiers="img--width-450"
   />
   <figcaption>
     <em>
@@ -89,10 +86,8 @@ Follow these steps to configure SMPP as your SMS interface:
 
 When you select **SMPP** as your **SMS interface**, you're given a **System ID** and **Password** to access the emnify **SMPP Server**.
 
-<img
-  className="img"
-  src={require('./assets/portal-service-policies-sms-interface-smpp.png').default}
-  alt=""
+<Image
+  srcPath={require('./assets/portal-service-policies-sms-interface-smpp.png').default}
 />
 
 :::tip

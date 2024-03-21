@@ -61,58 +61,45 @@ The imported component name should end with `Partial` (for example, `ConfigInstr
 > [!TIP]
 > Learn more about [partials in Docusaurus](https://docusaurus.io/docs/markdown-features/react#importing-markdown).
 
-## Images
+## Assets
 
-Each category within the [`docs` directory](./docs/) has an `assets` directory containing all the infographics, screenshots, or other images used on those pages.
-
-### Display images
+Each category within the [`docs` directory](./docs/) has a co-located `assets` directory containing all the images and icons used on those pages.
 
 > [!TIP]
-> For image guidelines, including file naming and formatting, refer to the [contributing guide](CONTRIBUTING.md#images).
+> Learn more about [assets in Docusaurus](https://docusaurus.io/docs/markdown-features/assets).
 
-With [Docusaurus](https://docusaurus.io/docs/markdown-features/assets#images), you can display images in three ways: [Markdown syntax](#markdown-syntax), [CommonJS require](#commonjs-require), or [ES import statement](#es-import-statement).
-The following are suggestions of when to use each format.
+### Images
 
-#### Markdown syntax
+Images are screenshots, infographics, and other diagrams shown in the main documentation content.
+[Icons](#icons) have a separate workflow.
 
-- Non-decorative images that require `alt` text
-- No additional attributes are needed.
+To display images in the emnify documentation, use the custom [`Image`](./src/components/Image.jsx).
 
-Example of how to display images using Markdown syntax:
-
-```markdown
-![Portal screenshot from the Integrations page. The featured integration reads, "Enable devices and send SMS via emnify from newly caught webhooks. emnify + Webhooks by Zapier". Next to the text, there's a "Use this Zap" button.](assets/portal-integrations-sms-webhooks-zapier.png)
-```
-
-#### CommonJS require
-
-- Additional attributes are needed (for example, custom width)
-- Appears only once on a page
-- Empty `alt` value for decorative images
-
-Example of how to display images using inline CommonJS `require` in JSX image tag:
+> [!IMPORTANT]
+> The `srcPath` value should use the [inline CommonJS `require`](https://docusaurus.io/docs/markdown-features/assets#images) (unless the image source is an external URL).
 
 ```jsx
-<img
-  src={require('./assets/graphiql-sidebar-show-documentation-explorer-button.png').default}
-  alt=""
-  style={{ width: 350 }}
+<Image
+  srcPath={require('./path/to/name-of-image.png').default}
+  alt="Optional descriptive alt text for the image. Defaults to an empty attribute."
+  modifiers="img--some-mod img--another-mod"
 />
 ```
 
-You must also use this syntax to apply the [docusaurus-plugin-image-zoom](https://github.com/gabrielcsapo/docusaurus-plugin-image-zoom) feature to an SVG file.
-To do this, you need to add `!!url-loader!` at the beginning of the `src` path—otherwise, the [webpack `svg-loader` kicks in](https://github.com/facebook/docusaurus/issues/8398#issuecomment-1331694452).
+#### SVGs
+
+To apply the [docusaurus-plugin-image-zoom](https://github.com/gabrielcsapo/docusaurus-plugin-image-zoom) feature to an SVG file, you need to add `!!url-loader!` at the beginning of the asset path—otherwise, the [webpack `svg-loader` kicks in](https://github.com/facebook/docusaurus/issues/8398#issuecomment-1331694452).
 
 ```jsx
-<img
-  src={require('!!url-loader!./assets/graphiql-logo.svg').default}
+<Image
+  srcPath={require('!!url-loader!./assets/graphiql-logo.svg').default}
   alt="GraphiQL"
 />
 ```
 
-#### ES import statement
+### Icons
 
-- Image is used multiple times on a page (for example, a checkmark icon used within a table column)
+In most cases, use an [ES import statement](https://docusaurus.io/docs/markdown-features/assets#images) to display icons in the emnify Documentation.
 
 > [!IMPORTANT]
 > Because of the [markdownlint configuration](./.markdownlint.jsonc), any import statements must be _after_ the top-level header.
@@ -124,9 +111,6 @@ import Check from '../assets/check.svg';
 
 <Check alt="Yes" />
 ```
-
-> [!TIP]
-> Learn more about [assets in Docusaurus](https://docusaurus.io/docs/markdown-features/assets).
 
 ### File management tips
 
