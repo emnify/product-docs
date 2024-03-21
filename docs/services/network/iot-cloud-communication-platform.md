@@ -15,9 +15,17 @@ Being deployed in three AWS cloud regions within 2-3 availability zones / data c
 Traditional connectivity providers have a centrally located network core.
 All data is backhauled to the home country of the operator which means that customer data travels across the globe and distributed latency optimized application infrastructure isn't possible.
 
-![Traditional operators](assets/traditional-operators.png)
+<img
+  className="img"
+  src={require('./assets/traditional-operators.png').default}
+  alt=""
+/>
 
-![emnify](assets/emnify-distributed-plane.png)
+<img
+  className="img"
+  src={require('./assets/emnify-distributed-plane.png').default}
+  alt=""
+/>
 
 ## Traditional operators vs emnify
 

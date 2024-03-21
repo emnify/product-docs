@@ -3,6 +3,7 @@
 3. Under **OpenVPN**, select **Show instructions**.
 
 <img
+  className="img"
   src={require('../assets/portal-integrations-secure-connection-openvpn-show-instructions.png').default}
   alt=""
 />
@@ -10,6 +11,7 @@
 4. Make sure you're on the **{props.operatingSystem}** tab, then click **Download {props.operatingSystem == 'Linux' ? 'client.conf' : 'client.ovpn'}**.
 
 <img
+  className="img"
   src={require(`../assets/portal-integrations-secure-connections-openvpn-${props.imageSrc}-download.png`).default}
   alt=""
 />
@@ -17,9 +19,9 @@
 Select the desired region or choose **Download all regions**.
 
 <img
+  className="img img--height-400"
   src={require(`../assets/portal-integrations-secure-connections-openvpn-${props.imageSrc}-download-dropdown.png`).default}
   alt=""
-  style={{ height: 400 }}
 />
 
 Once downloaded, store that file on your server in the folder <code>{props.operatingSystem == 'Windows' ? '\\OpenVPN\\config' : '/etc/openvpn'}</code>.

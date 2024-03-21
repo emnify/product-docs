@@ -26,7 +26,11 @@ Key features of SASE for IoT architecture include:
   emnify offers centralized policy definition for devices, including networks that can be accessed and authorized IP addresses for remote device access.
   All configurations are managed through the central platform and applied wherever the device is.
 
-![IoT security threats](assets/security-threats.png)
+<img
+  className="img"
+  src={require('./assets/security-threats.png').default}
+  alt=""
+/>
 
 ## Security features
 

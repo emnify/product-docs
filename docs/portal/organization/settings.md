@@ -12,6 +12,7 @@ The [**Workspace settings**](https://portal.emnify.com/organisation-settings/) i
 It's your starting point for managing all aspects of your Workspace.
 
 <img
+  className="img"
   src={require('./assets/portal-dashboard-workspace-settings-icon.png').default}
   alt=""
 />

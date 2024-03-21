@@ -161,7 +161,11 @@ _eUICC Identifier_
 The eUICC Identifier (EID) provides a unique global serial number for an [eUICC](#euicc).
 It has a fixed length of 32 digits, as indicated in the following diagram:
 
-![A 32-digit EID number: "89049011803455664400046832584675" The first 18 digits are the EUM Identification Number (EIN). Within those 18 digits, the first two digits are the Major Industry Identifier (Telecom in this example). The next three digits are the Country Code (GER in this example). The next three digits are the eUICC Manufacturer. The final 10 digits of the EIN contain information about the chip, OS, and its version. After the EIN, the following 11 digits are the EUM Specific Identification Number (ESIN). This value is also the eUICC Individual Identification Number. The final two digits of the EID are the Check Digits.](assets/infographic-eid-digits.png)
+<img
+  className="img"
+  src={require('./assets/infographic-eid-digits.png').default}
+  alt="A 32-digit EID number: '89049011803455664400046832584675' The first 18 digits are the EUM Identification Number (EIN). Within those 18 digits, the first two digits are the Major Industry Identifier (Telecom in this example). The next three digits are the Country Code (GER in this example). The next three digits are the eUICC Manufacturer. The final 10 digits of the EIN contain information about the chip, OS, and its version. After the EIN, the following 11 digits are the EUM Specific Identification Number (ESIN). This value is also the eUICC Individual Identification Number. The final two digits of the EID are the Check Digits."
+/>
 
 :::note
 The EUM specific identification number (ESIN) and [check digits](#check-digit) are for example purposes only, and the values aren't real.
@@ -249,7 +253,11 @@ _Integrated Circuit Card Identifier_
 The integrated circuit card identifier (ICCID) is a 20-digit code used to identify a SIM card.
 It includes a SIM card's country, home network, and identification number, as indicated in the following diagram:
 
-![A 20-digit ICCID number: "89883030000080139311" The first two digits are the Major Industry Identifier (Telecom in this example). The next three digits are the Country Code (non-terrestrial). The following two digits are the Issuer Identifier (emnify). After that, the next 11 digits are the Individual Account Identification. The final digit is the Check Digit.](assets/infographic-iccid-digits.png)
+<img
+  className="img"
+  src={require('./assets/infographic-iccid-digits.png').default}
+  alt="A 20-digit ICCID number: '89883030000080139311' The first two digits are the Major Industry Identifier (Telecom in this example). The next three digits are the Country Code (non-terrestrial). The following two digits are the Issuer Identifier (emnify). After that, the next 11 digits are the Individual Account Identification. The final digit is the Check Digit."
+/>
 
 :::info
 Following the introduction of [eUICC](#euicc) SIM cards in 2021, there are situations where the ICCID can no longer be unique.
@@ -296,8 +304,8 @@ Therefore it changes if a device connects to a different operator while roaming.
   <p>An IMSI is usually a 15-digit number but can be 14 digits in some cases. It comprises three components: MCC, MNC, and MSIN.</p>
   <p>MCC: 3-digit country identifier<br />MNC: operator identifier (two or three digits)<br />MSIN: identifier for the connected device (nine or 10 digits)</p>
   <img
+    className="img img--width-300"
     src={require('./assets/imsi-components-table.png').default}
-    style={{width:300}}
     alt=""
   />
 </details>

@@ -34,6 +34,7 @@ Failed streams exhibit an **Error** status.
 Paused streams are marked as **Paused**.
 
 <img
+  className="img"
   src={require('../assets/portal-integrations-data-streams-status.png').default}
   alt=""
 />
@@ -42,6 +43,7 @@ The **Details** button allows you to inspect the configuration of the specific s
 The **Destination** configuration varies depending on the connection type.
 
 <img
+  className="img"
   src={require('./assets/portal-integrations-data-streams-details-usage.png').default}
   alt=""
 />
@@ -53,6 +55,7 @@ Otherwise, click **Add New Stream** at the top of the existing [**Data Streams**
 This shows the connection type tiles. You can choose your preferred connection type and click **Add**.
 
 <img
+  className="img"
   src={require('./assets/portal-integrations-data-streams-add-new-button.png').default}
   alt=""
 />
@@ -82,9 +85,9 @@ If this happens, the stream isn't created and you must correct the configuration
 With the **Details** button on the Data Stream tiles, you can inspect the configuration and update the [filters for event data streams](/multicloud-data-streamer/manage-data-streams#filter-event-data-streams).
 
 <img
+  className="img img--width-550"
   src={require('../assets/portal-integrations-data-streams-details-events-filter.png').default}
   alt=""
-  style={{ width: 550 }}
 />
 
 ### Delete data streams

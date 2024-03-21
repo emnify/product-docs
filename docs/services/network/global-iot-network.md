@@ -209,7 +209,11 @@ Regular smartphones don't continuously listen on the radio for an incoming messa
 They do this only every 1.28 seconds or 2.56 seconds which is called DRX (discontinuous Reception).
 eDRX allows configuration of custom intervals of up to 40-175 minutes - depending on the configuration the visited network allows.
 
-![eDRX and the 3412 and T3324 timers](./assets/edrx.png)  
+<img
+  className="img"
+  src={require('./assets/edrx.png').default}
+  alt="eDRX and the 3412 and T3324 timers."
+/>
 
 Roaming with eDRX  
 

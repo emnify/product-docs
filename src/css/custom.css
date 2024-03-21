@@ -125,16 +125,58 @@ _________________
 */
 
 /* Center img elements within the main content */
-.theme-doc-markdown img {
+.img {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
 /* Add border to screenshots */
-.theme-doc-markdown img:not(.img--no-border) {
+.img:not(.img--no-border) {
   border: 1px solid var(--eui-sys-layout-container-01);
   border-radius: 5px;
+}
+
+/* Various img widths */
+.img--width-300 {
+  width: 300px;
+}
+
+.img--width-350 {
+  width: 350px;
+}
+
+.img--width-450 {
+  width: 450px;
+}
+
+.img--width-500 {
+  width: 500px;
+}
+
+.img--width-550 {
+  width: 550px;
+}
+
+.img--width-600 {
+  width: 600px;
+}
+
+.img--width-650 {
+  width: 650px;
+}
+
+.img--width-700 {
+  width: 700px;
+}
+
+/* Various img heights */
+.img--height-400 {
+  height: 400px;
+}
+
+.img--height-500 {
+  height: 500px;
 }
 
 /* Center SVG icons in tables built with HTML tables */

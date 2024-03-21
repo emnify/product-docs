@@ -51,8 +51,8 @@ The devices you selected are assigned to their new policy, and you should see a 
 <details className="details details--example">
   <summary>Show an example</summary>
   <img
+    className="img"
     src={require('./assets/portal-connected-devices-bulk-policy-change.png').default}
-    style={{width:900}}
     alt=""
   />
 </details>
