@@ -7,6 +7,8 @@ slug: /services/cloud-connect
 
 # Cloud Connect
 
+import Image from '@site/src/components/Image';
+
 The data traffic of regular SIM cards is secured within the mobile network—but traverses the public internet between the mobile network and the application, which makes the device and application susceptible to attacks and prohibits establishing a remote device session.
 
 With emnify Cloud Connect, your devices and application servers can communicate through a secure private network—with a secure tunnel being established between the emnify platform and your cloud or on-premises application.
@@ -23,9 +25,8 @@ emnify's communication platform is deployed on AWS, which simplifies integration
 The integration is done directly with AWS services without using the public internet.
 To establish a secure private network between your devices and your application, you only need to attach your VPC to emnify's Transit Gateway.
 
-<img
-  className="img"
-  src={require('./assets/tgw.png').default}
+<Image
+  srcPath={require('./assets/tgw.png').default}
   alt="emnify Cloud Connect with AWS Transit gateway."
 />
 

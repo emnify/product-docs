@@ -7,6 +7,8 @@ slug: /services/security
 
 # Security
 
+import Image from '@site/src/components/Image';
+
 Given the globally distributed nature of the devices, smaller footprints and lack of resources, it can get difficult to individually secure IoT devices.
 
 emnify uses a SASE approach to simplify securing devices—using several services specifically to protect customer data, filtering malicious content and preventing unauthorized access.
@@ -26,10 +28,8 @@ Key features of SASE for IoT architecture include:
   emnify offers centralized policy definition for devices, including networks that can be accessed and authorized IP addresses for remote device access.
   All configurations are managed through the central platform and applied wherever the device is.
 
-<img
-  className="img"
-  src={require('./assets/security-threats.png').default}
-  alt=""
+<Image
+  srcPath={require('./assets/security-threats.png').default}
 />
 
 ## Security features

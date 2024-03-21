@@ -21,6 +21,8 @@
   "MD029": false,
   // MD033/no-inline-html - Inline HTML
   "MD033": false,
+  // MD036/no-emphasis-as-header - Emphasis used instead of a header
+  "MD036": false,
   // MD044/proper-names - Proper names should have the correct capitalization
   "MD044": false, // Handled by Vale
   // MD048/code-fence-style - Code fence style

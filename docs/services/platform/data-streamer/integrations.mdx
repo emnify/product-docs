@@ -7,6 +7,8 @@ slug: /multicloud-data-streamer/integrations
 
 # Available integrations
 
+import Image from '@site/src/components/Image';
+
 ## Amazon
 
 ### Amazon Kinesis Data Streams
@@ -40,9 +42,8 @@ The following steps are the minimum security requirements for storing this data 
 1. Ensure that the S3 bucket isn't publicly accessible.
   You can block public access in the **Permissions** tab of the S3 bucket:
 
-<img
-  className="img"
-  src={require('./assets/aws-s3-bucket-permissions-blocking-public-access.png').default}
+<Image
+  srcPath={require('./assets/aws-s3-bucket-permissions-blocking-public-access.png').default}
   alt="Screenshot from a test S3 bucket in the AWS console. The 'Permissions' tab is active at the top. Underneath, 'Block public access' is selected. There is a description about the block public access bucket settings, followed by a panel indicating that 'Block all public access' is marked as 'On.' There is also an 'Edit' button in this panel."
 />
 
@@ -50,9 +51,8 @@ The following steps are the minimum security requirements for storing this data 
   Decryption performs when downloading the objects.
   You can enable this in the **Properties** tab of the S3 bucket:
 
-<img
-  className="img"
-  src={require('./assets/aws-s3-bucket-properties-encryption.png').default}
+<Image
+  srcPath={require('./assets/aws-s3-bucket-properties-encryption.png').default}
   alt="Screenshot from the same test S3 bucket. The 'Properties' tab is active, showing various available properties and their status. In this screenshot, all are disabled except 'Default encryption,' which has 'AES-256' as the selected value. A modal is visible, prompting you to 'View bucket policy.'"
 />
 
