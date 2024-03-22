@@ -271,11 +271,8 @@ A unique number used to identify cellular modems.
 
 <details className="custom-details-example">
   <summary>Learn more about how IMEIs are constructed</summary>
-  An IMEI has 15 digits (14 digits plus a check digit).
-
-  An IMEISV has 16 digits (14 digits plus two software version digits).
-
-  For more detailed information, see emnify's IoT Glossary article: [What is an IMEI number?](https://www.emnify.com/iot-glossary/imei-number)
+  <p>An IMEI has 15 digits (14 digits plus a check digit). An IMEISV has 16 digits (14 digits plus two software version digits).</p>
+  <p>For more detailed information, see emnify's IoT Glossary article: <a href="https://www.emnify.com/iot-glossary/imei-number">What is an IMEI number?</a></p>
 </details>
 
 :::info
@@ -296,14 +293,8 @@ Therefore it changes if a device connects to a different operator while roaming.
 
 <details className="custom-details-example">
   <summary>See how the IMSI is constructed</summary>
-  An IMSI is usually a 15-digit number but can be 14 digits in some cases.
-
-  It comprises three components: MCC, MNC, and MSIN.
-
-  MCC: 3-digit country identifier
-  MNC: operator identifier (two or three digits)
-  MSIN: identifier for the connected device (nine or 10 digits)
-
+  <p>An IMSI is usually a 15-digit number but can be 14 digits in some cases. It comprises three components: MCC, MNC, and MSIN.</p>
+  <p>MCC: 3-digit country identifier<br />MNC: operator identifier (two or three digits)<br />MSIN: identifier for the connected device (nine or 10 digits)</p>
   <img
     src={require('./assets/imsi-components-table.png').default}
     style={{width:300}}

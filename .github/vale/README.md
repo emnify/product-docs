@@ -57,9 +57,8 @@ Used in `Spelling.yml` to ignore non-dictionary words.
 Extends `Vale.Spelling` to include emnify-specific spelling exceptions.
 
 <details>
-<summary>Why not use the alex package?</summary>
-The emnify Documentation only requires two of the 10 rules in the alex package for Vale.
-These two rules are also further customized (more terms added, altered severity levels, etc.), so it makes more sense to maintain an emnify-specific version of the rules.
+  <summary>Why not use the alex package?</summary>
+  <p>The emnify Documentation only requires two of the 10 rules in the alex package for Vale. These two rules are also further customized (more terms added, altered severity levels, etc.), so it makes more sense to maintain an emnify-specific version of the rules.</p>
 </details>
 
 > [!NOTE]
