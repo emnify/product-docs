@@ -86,6 +86,9 @@ To display images in the emnify documentation, use the custom [`Image`](./src/co
 />
 ```
 
+> [!NOTE]
+> You don't need to import the `Image` component because it's registered to the [global scope](./src/theme/MDXComponents.js).
+
 #### SVGs
 
 To apply the [docusaurus-plugin-image-zoom](https://github.com/gabrielcsapo/docusaurus-plugin-image-zoom) feature to an SVG file, you need to add `!!url-loader!` at the beginning of the asset path—otherwise, the [webpack `svg-loader` kicks in](https://github.com/facebook/docusaurus/issues/8398#issuecomment-1331694452).
