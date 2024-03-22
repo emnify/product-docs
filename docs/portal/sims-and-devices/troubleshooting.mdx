@@ -27,12 +27,9 @@ If it's present and the active time (shown in hh:mm:ss format) increases with ea
 
 <details className="custom-details-troubleshooting">
   <summary>What's a PDP context?</summary>
-  A Packet Data Protocol (PDP) context is a data structure that enables a device to transmit and receive data using Internet Protocol (IP).
-  This data structure includes a device's IP address, IMSI, and additional parameters to properly route data to and from the network.
-
- If a device's most recent PDP context event is **Create PDP Context**, the device should be **online** with an active network connection.
-
-  The device is offline if a device's most recent PDP context event is **Delete PDP Context**.
+  <p>A Packet Data Protocol (PDP) context is a data structure that enables a device to transmit and receive data using Internet Protocol (IP). This data structure includes a device's IP address, IMSI, and additional parameters to properly route data to and from the network.</p>
+  <p>If a device's most recent PDP context event is <b>Create PDP Context</b>, the device should be <b>online</b> with an active network connection.</p>
+  <p>The device is offline if a device's most recent PDP context event is <b>Delete PDP Context</b>.</p>
 </details>
 
 ## Usage charts
@@ -51,9 +48,7 @@ The event log often contains information that can be used to determine what went
     style={{ width: 655 }}
     alt=""
   />
-
-  **Note**: events are always shown in reverse chronological order, with the newest ones at the top.
-
+  <p><b>Note</b>: events are always shown in reverse chronological order, with the newest ones at the top.</p>
 </details>
 
 :::warning
