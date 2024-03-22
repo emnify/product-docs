@@ -1,58 +1,23 @@
 ---
-description: Start developing your IoT solutions with emnify
+description: The Trial plan offers prepaid credit and free trial SIMs to test emnify's services
 last_update: 
   date: 11-16-2023
-pagination_next: quickstart/order-sims
-sidebar_label: Sign up for an account
-slug: /quickstart
+slug: /quickstart/trial
 ---
 
-# Sign up for an emnify account
-
-To begin developing your IoT solutions with emnify, you'll need an emnify account.
-[Sign up](https://portal.emnify.com/sign/up) for a free 2-month trial.
-
-<details className="custom-details-troubleshooting">
-  <summary>Need help verifying your phone number?</summary>
-    <p>When filling out the <a href="https://portal.emnify.com/sign/up">sign-up form</a>, you may have issues verifying your phone number.</p>
-    <p>Here are a few common error messages and what to do if you see them:</p>
-    <b>SMS verification not possible</b>
-    <ul>
-      <li>Try registering with another phone number.</li>
-      <li><a href="https://www.emnify.com/talk-to-us">Contact the emnify sales team</a> to set up your account.</li>
-    </ul>
-    <b>You've reached the maximum login attempts</b>
-    <ul>
-      <li>Wait at least 10 minutes, and then try to log in again.</li>
-      <li>If you've waited and your next attempt is blocked, <a href="https://www.emnify.com/talk-to-us">contact the emnify sales team</a>.</li>
-    </ul>
-    <b>The verification code you entered is incorrect</b>
-    <ul>
-      <li>Re-enter your code and click <b>Verify</b> again.</li>
-      <li>Click <b>Resend Code</b> and enter the new verification code once you've received it.</li>
-      <li>Still having trouble? <a href="https://www.emnify.com/talk-to-us">Contact the emnify sales team</a>.</li>
-    </ul>
-    <b>The CAPTCHA you entered is incorrect</b>
-    <ul>
-      <li>Re-enter the displayed CAPTCHA characters.</li>
-      <li>Keep in mind that CAPTCHA shows both upper and lowercase letters, so it's important to capitalize them exactly as they're shown.</li>
-      <li>Still having trouble? <a href="https://www.emnify.com/talk-to-us">Contact the emnify sales team</a>.</li>
-    </ul>
-</details>
-
-## emnify's trial
+# emnify Trial plan
 
 After signing up, your account is automatically assigned to the **Trial plan**.
 During this trial, you have 60 days to use the issued prepaid credit for testing emnify's services.
 
-Once this expires, you'll need to [choose a new package](https://portal.emnify.com/organisation-settings/subscription#plans) and [set up multi-factor authentication (MFA)](/how-tos/multi-factor-authentication) if you haven't already.
+Once this expires, you'll need to [choose a new package](/how-tos/upgrade-trial-plan) and [set up multi-factor authentication (MFA)](/how-tos/multi-factor-authentication) if you haven't already.
 
 :::tip
 Your current balance and other trial details are available in the emnify Portal.
 In the **Workspace settings**, select [**Subscription**](https://portal.emnify.com/organisation-settings/subscription).
 :::
 
-### Supported features
+## Supported features
 
 In addition to the standard emnify services, you can use the following features during your trial:
 

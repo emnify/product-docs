@@ -12,6 +12,7 @@ const sidebars = {
       },
       items: [
         "quickstart/index",
+        "quickstart/trial",
         "quickstart/order-sims",
         "quickstart/register-sims",
         "quickstart/create-device",
