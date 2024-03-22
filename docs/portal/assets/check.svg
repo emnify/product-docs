@@ -1,3 +1,3 @@
-<svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-  <path class="icon__path--green" d="M20.5 6.41L8.5 18.41L3 12.91L4.41 11.5L8.5 15.58L19.09 5L20.5 6.41Z" />
+<svg class="icon icon--align-center" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <path class="icon__path--color-green" d="M20.5 6.41L8.5 18.41L3 12.91L4.41 11.5L8.5 15.58L19.09 5L20.5 6.41Z" />
 </svg>
