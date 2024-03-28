@@ -1,7 +1,7 @@
 ---
 description: How to set up multi-factor authentication on your emnify account
 last_update: 
-  date: 03-05-2024
+  date: 03-20-2024
 slug: /how-tos/multi-factor-authentication
 ---
 
@@ -127,7 +127,7 @@ Reaching for your device and entering a one-time password every time you need to
 To bypass this process, select **Trust this device** before entering the MFA code from your authentication app.
 
 Then, [**Trusted Devices**](https://portal.emnify.com/user-settings#trusted-devices) should be visible in the **Two-Factor Authentication** section of **User Settings**.
-These devices remain trusted for 30 days.
+These devices remain trusted for 90 days.
 After that, you'll need to verify your identity again.
 
 To remove a device from **Trusted Devices**, click **Remove**.
