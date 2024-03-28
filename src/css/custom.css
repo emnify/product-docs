@@ -6,7 +6,7 @@
 @import "./navbar.css";
 @import "./sidebar.css";
 @import "./table-of-contents.css";
-@import "./toggle.css";
+@import "./details.css";
 
 /* Tokens */
 @import url("./design-tokens/colors-light.css");
@@ -87,13 +87,11 @@ _________________
 }
 
 /* Links within documentation content */
-.theme-doc-markdown a,
-.theme-edit-this-page {
+.theme-doc-markdown a {
   --ifm-link-decoration: var(--eui-sys-typescale-link-medium-text-decoration);
 }
 
-.theme-doc-markdown a:hover,
-.theme-edit-this-page:hover {
+.theme-doc-markdown a:hover {
   color: var(--eui-sys-brand-state-secondary-01-hover);
 }
 
@@ -103,6 +101,16 @@ _________________
 
 .theme-doc-markdown .hash-link:hover {
   text-decoration: var(--eui-sys-typescale-link-medium-text-decoration);
+}
+
+/* Inline code elements wrapped in an anchor tag */
+a:has(> code) {
+  text-decoration: none;
+}
+
+/* Center SVG icons in tables built with HTML tables */
+.table__td--align-center {
+  text-align: center;
 }
 
 /* Main content container padding */
@@ -127,40 +135,79 @@ _________________
 */
 
 /* Center img elements within the main content */
-.theme-doc-markdown img {
+.img {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
 /* Add border to screenshots */
-.theme-doc-markdown img:not(.no-border) {
+.img:where(:not(.img--no-border)) {
   border: 1px solid var(--eui-sys-layout-container-01);
   border-radius: 5px;
 }
 
-/* Remove border from img tags within tables */
-.theme-doc-markdown table tr td img {
-  border: none !important;
+.img--width-300 {
+  width: 300px;
 }
 
-/* Center SVG icons in tables built with HTML tables */
-table.user-management-roles tr td:not(:first-child) {
-  text-align: center;
+.img--width-350 {
+  width: 350px;
 }
 
-/* Inline code elements wrapped in an anchor tag */
-a:has(> code) {
-  text-decoration: none;
+.img--width-450 {
+  width: 450px;
 }
 
-/* Inline SVG icons */
-svg.inline-icon {
+.img--width-500 {
+  width: 500px;
+}
+
+.img--width-550 {
+  width: 550px;
+}
+
+.img--width-600 {
+  width: 600px;
+}
+
+.img--width-650 {
+  width: 650px;
+}
+
+.img--width-700 {
+  width: 700px;
+}
+
+.img--height-400 {
+  height: 400px;
+}
+
+.img--height-500 {
+  height: 500px;
+}
+
+/* SVG icons */
+.icon {
+  height: 24px;
+  width: 24px;
+  fill: none;
+}
+
+.icon--align-inline {
   vertical-align: middle;
 }
 
-svg.inline-icon path {
-  fill: #000;
+.icon__path {
+  fill: var(--eui-sys-layout-on-surface);
+}
+
+.icon__path--color-green {
+  fill: var(--eui-sys-brand-tertiary-01);
+}
+
+.icon__path--color-red {
+  fill: var(--eui-sys-support-primary-critical);
 }
 
 /*
@@ -171,6 +218,6 @@ _________________
 *****************
 */
 
-.page-not-found-content a {
+.link {
   --ifm-link-decoration: var(--eui-sys-typescale-link-medium-text-decoration);
 }

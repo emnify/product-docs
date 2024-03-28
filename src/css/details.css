@@ -1,58 +1,58 @@
-details {
+.details {
   border: none !important;
   box-shadow: none !important;
 }
 
 /* Details and summary elements - Examples */
-.custom-details-example {
+.details--example {
   background-color: var(--eui-sys-layout-container-01);
   color: var(--eui-sys-layout-on-container);
 }
 
-.custom-details-example summary::before {
+.details--example summary::before {
   border-color: transparent transparent transparent
     var(--eui-sys-layout-on-container) !important;
 }
 
-.custom-details-example .collapsibleContent_i85q {
+.details--example .collapsibleContent_i85q {
   border-top: 1px solid var(--eui-sys-layout-on-container) !important;
 }
 
-.custom-details-example .collapsibleContent_i85q a {
+.details--example .collapsibleContent_i85q a {
   color: inherit;
   text-decoration-color: var(--eui-sys-layout-on-container) !important;
 }
 
-.custom-details-example .collapsibleContent_i85q a:hover {
+.details--example .collapsibleContent_i85q a:hover {
   text-decoration-color: var(
     --eui-sys-brand-state-secondary-01-hover
   ) !important;
   color: var(--eui-sys-brand-state-secondary-01-hover) !important;
 }
 
-/* Details and summary elements - Troubleshooting */
-.custom-details-troubleshooting {
+/* Details and summary elements - Info */
+.details--info {
   background-color: var(--eui-sys-support-containers-info-container);
   color: var(--eui-sys-layout-on-surface);
 }
 
-.custom-details-troubleshooting summary::before {
+.details--info summary::before {
   border-color: transparent transparent transparent
     var(--eui-sys-support-containers-on-info-container) !important;
 }
 
-.custom-details-troubleshooting .collapsibleContent_i85q {
+.details--info .collapsibleContent_i85q {
   border-top: 1px solid var(--eui-sys-support-containers-on-info-container) !important;
 }
 
-.custom-details-troubleshooting .collapsibleContent_i85q a {
+.details--info .collapsibleContent_i85q a {
   color: inherit;
   text-decoration-color: var(
     --eui-sys-support-containers-on-info-container
   ) !important;
 }
 
-.custom-details-troubleshooting .collapsibleContent_i85q a:hover {
+.details--info .collapsibleContent_i85q a:hover {
   text-decoration-color: var(
     --eui-sys-brand-state-secondary-01-hover
   ) !important;

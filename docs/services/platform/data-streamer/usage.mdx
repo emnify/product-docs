@@ -33,28 +33,25 @@ Data streams are marked as **Running** are properly operating.
 Failed streams exhibit an **Error** status.
 Paused streams are marked as **Paused**.
 
-<img
-  src={require('../assets/portal-integrations-data-streams-status.png').default}
-  alt=""
+<Image
+  srcPath={require('../assets/portal-integrations-data-streams-status.png').default}
 />
 
 The **Details** button allows you to inspect the configuration of the specific stream.
 The **Destination** configuration varies depending on the connection type.
 
-<img
-  src={require('./assets/portal-integrations-data-streams-details-usage.png').default}
-  alt=""
+<Image
+  srcPath={require('./assets/portal-integrations-data-streams-details-usage.png').default}
 />
 
-### Create data streams
+### Create data streams \{#create-data-streams-portal}
 
 When no configured data streams are available, click **Add** on the preferred connection type tile.
 Otherwise, click **Add New Stream** at the top of the existing [**Data Streams**](https://portal.emnify.com/integrations#data-streams) list.
 This shows the connection type tiles. You can choose your preferred connection type and click **Add**.
 
-<img
-  src={require('./assets/portal-integrations-data-streams-add-new-button.png').default}
-  alt=""
+<Image
+  srcPath={require('./assets/portal-integrations-data-streams-add-new-button.png').default}
 />
 
 Configure the source by selecting your desired [stream type](/multicloud-data-streamer/stream-types).
@@ -81,18 +78,17 @@ If this happens, the stream isn't created and you must correct the configuration
 
 With the **Details** button on the Data Stream tiles, you can inspect the configuration and update the [filters for event data streams](/multicloud-data-streamer/manage-data-streams#filter-event-data-streams).
 
-<img
-  src={require('../assets/portal-integrations-data-streams-details-events-filter.png').default}
-  alt=""
-  style={{ width: 550 }}
+<Image
+  srcPath={require('../assets/portal-integrations-data-streams-details-events-filter.png').default}
+  modifiers="img--width-550"
 />
 
-### Delete data streams
+### Delete data streams \{#delete-data-streams-portal}
 
 To permanently delete a data stream, click the trash bin icon near the **Details** button.
 
 :::note
-You’ll need to confirm this action.
+You'll need to confirm this action.
 :::
 
 ## Data Streamer API
@@ -155,8 +151,7 @@ The following lookup entry points are available for retrieving possible configur
 | `GET`  | `/api/v2/data_stream/type`              | List possible data stream types.            |
 | `GET`  | `/api/v2/data_stream/filter_field_type` | List possible data stream filter fields.    |
 
-<!-- markdownlint-disable-next-line MD024 -->
-### Create data streams
+### Create data streams \{#create-data-streams-api}
 
 Once authenticated, users can create data streams by sending `POST` requests to `/api/v2/data_stream`.
 
@@ -299,8 +294,7 @@ The following example shows how to pause a stream and erase any filters:
 [Modify existing data stream](https://cdn.emnify.net/api/doc/swagger.html#/Integrations/PatchV2DataStream)
 :::
 
-<!-- markdownlint-disable-next-line MD024 -->
-### Delete data streams
+### Delete data streams \{#delete-data-streams-api}
 
 Sending a `DELETE` request to `/api/v2/data_stream/{data_stream_id}` deletes the data stream with that ID.
 

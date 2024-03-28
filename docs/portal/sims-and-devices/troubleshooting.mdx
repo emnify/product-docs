@@ -25,7 +25,7 @@ The most efficient way to see if your device has connectivity is to look for the
 If it's present and the active time (shown in hh:mm:ss format) increases with each refresh, then you know your device is connected to the network.
 :::
 
-<details className="custom-details-troubleshooting">
+<details className="details details--info">
   <summary>What's a PDP context?</summary>
   <p>A Packet Data Protocol (PDP) context is a data structure that enables a device to transmit and receive data using Internet Protocol (IP). This data structure includes a device's IP address, IMSI, and additional parameters to properly route data to and from the network.</p>
   <p>If a device's most recent PDP context event is <b>Create PDP Context</b>, the device should be <b>online</b> with an active network connection.</p>
@@ -41,12 +41,11 @@ The absence of data usage or spikes in data usage could indicate abnormal behavi
 
 The event log often contains information that can be used to determine what went wrong.
 
-<details className="custom-details-troubleshooting">
+<details className="details details--info">
   <summary>Where to find a device's events</summary>
-  <img
-    src={require('./assets/portal-device-details-events.png').default}
-    style={{ width: 655 }}
-    alt=""
+  <Image
+    srcPath={require('./assets/portal-device-details-events.png').default}
+    modifiers="img--width-650"
   />
   <p><b>Note</b>: events are always shown in reverse chronological order, with the newest ones at the top.</p>
 </details>
@@ -65,11 +64,10 @@ Also, since its **Event Source** is only shown if you expand its details, you wo
 The only hint that something might have gone wrong is its severity, **Warning**.
 In contrast, a successful **Create PDP Context** event has an **Event Source** of **Network** and a completely different **Description**.
 
-<details className="custom-details-example">
+<details className="details details--example">
   <summary>Compare a failed Update Location event with a successful one</summary>
-  <img
-    src={require('./assets/portal-events-update-location-failure-and-success.png').default}
-    alt=""
+  <Image
+    srcPath={require('./assets/portal-events-update-location-failure-and-success.png').default}
   />
 </details>
 

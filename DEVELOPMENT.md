@@ -129,7 +129,14 @@ yarn markdownlint:fix
 Vale is run via a [CI pipeline](.github/workflows/content.yml) and [pre-commit hook](./.husky/pre-commit) that fail on errors.
 See the [Vale README](.github/vale/README.md) for more information.
 
-## Update design tokens
+## Styling
+
+### Modify CSS
+
+To apply custom styles, use the [stable class names provided by Docusaurus](https://docusaurus.io/docs/styling-layout#theme-class-names) when possible.
+Otherwise, follow the [BEM methodology](https://getbem.com/introduction/) when creating additional CSS classes.
+
+### Update design tokens
 
 To pull the latest version of the [emnify design tokens](https://github.com/emnify/design-tokens) and import them into this repository, run:
 

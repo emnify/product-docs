@@ -29,19 +29,17 @@ Follow these steps to configure the webhook as your SMS interface:
 4. Find the **SMS interface** section.
 Select **Webhook**, then click **Configure Webhook**.
 
-<img
-  src={require('./assets/portal-service-policies-sms-interface-configure-webhook.png').default}
-  alt=""
-  style={{ width: 500 }}
+<Image
+  srcPath={require('./assets/portal-service-policies-sms-interface-configure-webhook.png').default}
+  modifiers="img--width-500"
 />
 
 5. Provide the URL for your webhook.
 Optionally, you can provide a secret key to prevent unauthorized access.
 Then, click **Add Webhook**.
 
-<img
-  src={require('./assets/portal-service-policies-sms-interface-add-webhook.png').default}
-  alt=""
+<Image
+  srcPath={require('./assets/portal-service-policies-sms-interface-add-webhook.png').default}
 />
 
 :::info
@@ -49,10 +47,9 @@ When you want to send an SMS from the device to your application, your device sh
 :::
 
 <figure>
-  <img
-    src={require('./assets/delivery-notification.png').default}
-    alt=""
-    style={{ width: 400 }}
+  <Image
+    srcPath={require('./assets/delivery-notification.png').default}
+    modifiers="img--width-450"
   />
   <figcaption>
     <em>
@@ -62,10 +59,9 @@ When you want to send an SMS from the device to your application, your device sh
 </figure>
 
 <figure>
-  <img
-    src={require('./assets/mosms.png').default}
-    alt=""
-    style={{ width: 400 }}
+  <Image
+    srcPath={require('./assets/mosms.png').default}
+    modifiers="img--width-450"
   />
   <figcaption>
     <em>
@@ -88,9 +84,8 @@ Follow these steps to configure SMPP as your SMS interface:
 
 When you select **SMPP** as your **SMS interface**, you're given a **System ID** and **Password** to access the emnify **SMPP Server**.
 
-<img
-  src={require('./assets/portal-service-policies-sms-interface-smpp.png').default}
-  alt=""
+<Image
+  srcPath={require('./assets/portal-service-policies-sms-interface-smpp.png').default}
 />
 
 :::tip

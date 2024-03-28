@@ -27,9 +27,8 @@ The UI is divided into three parts:
 - **Left panel** where you write your queries
 - **Right panel** where the results of your queries are displayed
 
-<img
-  src="https://user-images.githubusercontent.com/25433336/225385087-37c5fa5c-4b23-4fca-a1b5-675974392473.png"
-  alt=""
+<Image
+  srcPath="https://user-images.githubusercontent.com/25433336/225385087-37c5fa5c-4b23-4fca-a1b5-675974392473.png"
 />
 
 At the top of the sidebar, there are buttons for the documentation explorer, history, and GraphiQL explorer.
@@ -89,10 +88,9 @@ GraphiQL's interactive documentation is used throughout this example.
 To follow along, click the **Show Documentation Explorer** button in the sidebar.
 Once the **Docs** are visible, choose `Query`, then select `myUser`.
 
-<img
-  src={require('./assets/graphiql-sidebar-show-documentation-explorer-button.png').default}
-  alt=""
-  style={{ width: 350 }}
+<Image
+  srcPath={require('./assets/graphiql-sidebar-show-documentation-explorer-button.png').default}
+  modifiers="img--width-350"
 />
 
 :::
@@ -112,10 +110,9 @@ When you first visit the GraphiQL IDE, there's a pre-populated example query in 
 
 In this example, `myUser` is a [query](https://graphql.org/learn/queries/) that can return your user and organization details, including endpoint (device) status and active tariff plan (data plan).
 
-<img
-  src={require('./assets/graphiql-docs-query-myuser.png').default}
-  alt=""
-  style={{ width: 700 }}
+<Image
+  srcPath={require('./assets/graphiql-docs-query-myuser.png').default}
+  modifiers="img--width-700"
 />
 
 :::tip
@@ -125,26 +122,23 @@ In GraphQL, the `!` means that [variable definition](https://graphql.org/learn/q
 Within `myUser`, `User` is listed as a required [object type](https://graphql.org/learn/schema/#object-types-and-fields) and indicates which [fields](https://graphql.org/learn/queries/#fields) you can use in this query.
 Because `User` is the only type available, you don't need to type it out explicitly.
 
-<img
-  src={require('./assets/graphiql-docs-query-myuser-user.png').default}
-  alt=""
-  style={{ width: 700 }}
+<Image
+  srcPath={require('./assets/graphiql-docs-query-myuser-user.png').default}
+  modifiers="img--width-700"
 />
 
 This example uses the `organisation` field, which requires the `Organisation` object type.
 You want to receive the `name` and `id` fields from that object type.
 
-<img
-  src={require('./assets/graphiql-docs-query-myuser-user-organisation.png').default}
-  alt=""
-  style={{ width: 700 }}
+<Image
+  srcPath={require('./assets/graphiql-docs-query-myuser-user-organisation.png').default}
+  modifiers="img--width-700"
 />
 
 Finally, when you execute the query, it returns a `data` object with your requested information.
 
-<img
-  src={require('./assets/graphiql-default-query-response.png').default}
-  alt=""
+<Image
+  srcPath={require('./assets/graphiql-default-query-response.png').default}
 />
 
 ## Write your own query
@@ -161,37 +155,34 @@ Inside the curly braces, you can start typing or use the keyboard shortcuts to o
 
 In the following example, the IDE suggests `endpoint`, `endpoints`, and `endpointsQuery` once you've started typing "end":
 
-<img
-  src={require('./assets/graphiql-query-autocomplete.png').default}
-  alt=""
-  style={{ width: 450 }}
+<Image
+  srcPath={require('./assets/graphiql-query-autocomplete.png').default}
+  modifiers="img--width-450"
 />
 
 If you need help with what to write, click the **Show GraphiQL Explorer** button on the sidebar.
 
-<img
-  src={require('./assets/graphiql-sidebar-show-graphiql-explorer-button.png').default}
-  alt=""
-  style={{ width: 450 }}
+<Image
+  srcPath={require('./assets/graphiql-sidebar-show-graphiql-explorer-button.png').default}
+  modifiers="img--width-450"
 />
 
 This displays an interactive overview of the current GraphQL schema.
 Open and select your desired fields, and the query builds and formats itself automatically.
 
-<img
-  src={require('./assets/graphiql-graphiql-explorer-endpoints.png').default}
-  alt=""
-  style={{ width: 800 }}
+<Image
+  srcPath={require('./assets/graphiql-graphiql-explorer-endpoints.png').default}
+  modifiers="img--width-700"
 />
 
 :::tip
 To see the queries you've executed during a session, click the **Show history** button on the sidebar.
 
-<img
-  src={require('./assets/graphiql-sidebar-show-history-button.png').default}
-  alt=""
-  style={{ width: 350 }}
+<Image
+  srcPath={require('./assets/graphiql-sidebar-show-history-button.png').default}
+  modifiers="img--width-350"
 />
+
 :::
 
 ## Generate code from your query
@@ -199,10 +190,9 @@ To see the queries you've executed during a session, click the **Show history** 
 On the left panel are buttons allowing you to generate a cURL query, Node.js code, or Python code from your GraphQL query.
 Click these buttons to copy this code to your clipboard.
 
-<img
-  src={require('./assets/graphiql-default-generate-code-buttons.png').default}
-  alt=""
-  style={{ width:450 }}
+<Image
+  srcPath={require('./assets/graphiql-default-generate-code-buttons.png').default}
+  modifiers="img--width-450"
 />
 
 The following examples show code generated from the default query:

@@ -53,7 +53,7 @@ Check your spam folder if you haven't received a code after a few minutes.
 
 3. Go back to the Portal. Enter the code and click **Verify code** to verify your identity.
 
-<details className="custom-details-troubleshooting">
+<details className="details details--info">
   <summary>Need help verifying your identity?</summary>
     <p>You may have issues verifying your identity once MFA becomes mandatory.</p>
     <p>Here are a few common error messages and what to do if you see them:</p>

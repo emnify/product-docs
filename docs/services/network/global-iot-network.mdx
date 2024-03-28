@@ -8,11 +8,7 @@ slug: /services/global-iot-network
 
 # Global IoT Network
 
-<!-- markdownlint-disable MD040 -->
-
 Even when IoT devices are more often only deployed at a single location and aren't moving, for a vendor selling to multiple countries it's important to have a global connectivity solution, so that there is no need to have different SIM cards in stock or have multiple contracts and data plans.
-
-<!-- TODO: Find place for service_stack.png -->
 
 ## Mobile network aggregation
 
@@ -179,7 +175,7 @@ The 3GPP defined AT command to configure PSM is `AT+CPSMS` which sets the T341
   
 An example command is:
 
-```
+```shell
 AT+CPSMS=1,,,01001110,00000101
 ```
 
@@ -188,7 +184,7 @@ The network doesn't necessarily use the desired values but utilizes supported va
 
 To read the effective PSM configuration, use the command:
 
-```
+```shell
 AT+CPSMS?
 ```
 
@@ -209,7 +205,10 @@ Regular smartphones don't continuously listen on the radio for an incoming messa
 They do this only every 1.28 seconds or 2.56 seconds which is called DRX (discontinuous Reception).
 eDRX allows configuration of custom intervals of up to 40-175 minutes - depending on the configuration the visited network allows.
 
-![eDRX and the 3412 and T3324 timers](./assets/edrx.png)  
+<Image
+  srcPath={require('./assets/edrx.png').default}
+  alt="eDRX and the 3412 and T3324 timers."
+/>
 
 Roaming with eDRX  
 
@@ -222,7 +221,7 @@ The standard 3GPP defined AT-command to configure eDRX is `AT+CEDRXS`.
   
 As an example the following command enables (`1`) eDRX for LTE-M (`4`) and an eDRX cycle of 143.36 seconds (`1000`):
 
-```
+```shell
 AT+CEDRXS=1,4,"1000"
 ```
 
@@ -249,7 +248,7 @@ The setting for NB-IoT would be `5` and the timer values are shown in followin
 
 The network responds with the actual effective interval.
 
-```
+```shell
 +CEDRXS: [4,"1000","1000","0111"]
 ```
 
